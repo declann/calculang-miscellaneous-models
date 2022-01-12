@@ -1,0 +1,34 @@
+{
+  "name": "@declann/calculang-miscellaneous-models",
+  "version": "0.1.0-alpha.1",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/declann/calculang-miscellaneous-models.git",
+    "directory": "packages/calculang-models"
+  },
+  "homepage": "https://github.com/declann/calculang-miscellaneous-models/tree/main",
+  "author": "Declan Naughton working for DCN Consulting",
+  "keywords": [
+    "calculang",
+    "calculations",
+    "numbers",
+    "math",
+    "mathematics",
+    "models",
+    "modeling",
+    "modelling",
+    "functional",
+    "functional programming",
+    "fp"
+  ],
+  "dependencies": {
+    "date-fns": "^2.25.0",
+    "lru-memoize": "^1.1.0",
+    "raw-loader": "^4.0.2",
+    "underscore": "^1.13.1"
+  },
+  "devDependencies": {
+    "@calculang/calculang-js": "file:../../../../programming/PROJECTS/github/DECLANN/calculang/packages/calculang-js"
+  }
+}
