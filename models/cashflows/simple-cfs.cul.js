@@ -19,7 +19,7 @@ export const total_cf = () => mrr_cf() + rent_cf() + vc_cf() + payroll_cf();
 
 export const npv = () => {
   if (month() > last_month()) return 0;
-  return npv({ t_in: t() + 1 }) - total_cf({ t_in: t() + 1 }) / (1 + npv_i());
+  return (npv({ t_in: t() + 1 }) - total_cf({ t_in: t() + 1 })) / (1 + npv_i());
 };
 
 // inputs
