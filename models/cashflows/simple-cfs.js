@@ -106,6 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "employees", function() { return employees; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "payroll_cf", function() { return payroll_cf; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "total_cf", function() { return total_cf; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "npv", function() { return npv; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mrr", function() { return mrr; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "month", function() { return month; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mrr_growth", function() { return mrr_growth; });
@@ -115,7 +116,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "employees_0", function() { return employees_0; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "new_employees_per_month", function() { return new_employees_per_month; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_per_employee", function() { return salary_per_employee; });
-
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "last_month", function() { return last_month; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "npv_i", function() { return npv_i; });
 const mrr_cf = ({ mrr_in, month_in, mrr_growth_in }) => mrr({ mrr_in }) * Math.exp(month({ month_in }) * mrr_growth({ mrr_growth_in }));
 
 const vc_cf = ({ month_in, vc_1_in, vc_2_in }) => {
@@ -135,6 +137,11 @@ const payroll_cf = ({ salary_per_employee_in, month_in, employees_0_in, new_empl
 
 const total_cf = ({ mrr_in, month_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in }) => mrr_cf({ mrr_in, month_in, mrr_growth_in }) + rent_cf({ rent_in }) + vc_cf({ month_in, vc_1_in, vc_2_in }) + payroll_cf({ salary_per_employee_in, month_in, employees_0_in, new_employees_per_month_in });
 
+const npv = ({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in }) => {
+  if (month({ month_in }) > last_month({ last_month_in })) return 0;
+  return npv({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in, t_in: t() + 1 }) - total_cf({ mrr_in, month_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, t_in: t() + 1 }) / (1 + npv_i({ npv_i_in }));
+};
+
 // inputs
 const mrr = ({ mrr_in }) => mrr_in;
 const month = ({ month_in }) => month_in;
@@ -145,6 +152,8 @@ const rent = ({ rent_in }) => rent_in;
 const employees_0 = ({ employees_0_in }) => employees_0_in;
 const new_employees_per_month = ({ new_employees_per_month_in }) => new_employees_per_month_in;
 const salary_per_employee = ({ salary_per_employee_in }) => salary_per_employee_in;
+const last_month = ({ last_month_in }) => last_month_in;
+const npv_i = ({ npv_i_in }) => npv_i_in;
 
 /***/ })
 /******/ ]);
