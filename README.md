@@ -1,6 +1,6 @@
 # declanns miscellaneous models
 
-🏡 for some miscellaneous [calculang](https://github.com/calculang/calculang) models ✨🎁
+🏡 to some miscellaneous [calculang](https://github.com/calculang/calculang) models ✨🎁
 
 Some notebooks 📓:
 
