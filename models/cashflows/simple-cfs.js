@@ -139,7 +139,10 @@ const total_cf = ({ mrr_in, month_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, 
 
 const npv = ({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in }) => {
   if (month({ month_in }) > last_month({ last_month_in })) return 0;
-  return (npv({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in, t_in: t() + 1 }) - total_cf({ mrr_in, month_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, t_in: t() + 1 })) / (1 + npv_i({ npv_i_in }));
+  return (
+    (npv({ last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in, month_in: month({ month_in }) + 1 }) - total_cf({ mrr_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, month_in: month({ month_in }) + 1 })) / (
+    1 + npv_i({ npv_i_in })));
+
 };
 
 // inputs
