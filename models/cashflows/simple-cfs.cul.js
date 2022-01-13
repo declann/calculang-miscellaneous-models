@@ -1,4 +1,7 @@
-export const mrr_cf = () => mrr() * Math.exp(month() * mrr_growth());
+export const mrr_cf = () => {
+  if (month() == -1) return 0;
+  else return mrr() * Math.exp(month() * mrr_growth());
+}
 
 export const vc_cf = () => {
   if (month() == 3) return vc_1();
@@ -6,9 +9,13 @@ export const vc_cf = () => {
   else return 0;
 };
 
-export const rent_cf = () => -rent();
+export const rent_cf = () => {
+  if (month() == -1) return 0;
+  else return -rent();
+}
 
 export const employees = () => {
+  if (month() == -1) return 0;
   if (month() == 0) return employees_0();
   else return employees({ month_in: month() - 1 }) + new_employees_per_month();
 };
