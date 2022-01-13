@@ -6,8 +6,8 @@
       "cul_source_scope_id": 0,
       "reason": "definition",
       "inputs": [
-        "mrr_in",
         "month_in",
+        "mrr_in",
         "mrr_growth_in"
       ]
     },
@@ -28,6 +28,7 @@
       "cul_source_scope_id": 0,
       "reason": "definition",
       "inputs": [
+        "month_in",
         "rent_in"
       ]
     },
@@ -60,8 +61,8 @@
       "cul_source_scope_id": 0,
       "reason": "definition",
       "inputs": [
-        "mrr_in",
         "month_in",
+        "mrr_in",
         "mrr_growth_in",
         "rent_in",
         "vc_1_in",
@@ -292,6 +293,14 @@
   "cul_links": [
     {
       "to": "0_mrr_cf",
+      "from": "0_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "0_mrr_cf",
       "from": "0_mrr",
       "reason": "call",
       "negs": [
@@ -348,7 +357,23 @@
     },
     {
       "to": "0_rent_cf",
+      "from": "0_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "0_rent_cf",
       "from": "0_rent",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "0_employees",
+      "from": "0_month",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -563,8 +588,8 @@
   "import_sources_to_resource": {},
   "cul_input_map": {
     "0_mrr_cf": [
-      "mrr_in",
       "month_in",
+      "mrr_in",
       "mrr_growth_in"
     ],
     "0_vc_cf": [
@@ -573,6 +598,7 @@
       "vc_2_in"
     ],
     "0_rent_cf": [
+      "month_in",
       "rent_in"
     ],
     "0_employees": [
@@ -587,8 +613,8 @@
       "new_employees_per_month_in"
     ],
     "0_total_cf": [
-      "mrr_in",
       "month_in",
+      "mrr_in",
       "mrr_growth_in",
       "rent_in",
       "vc_1_in",
@@ -677,5 +703,5 @@
       "npv_i_in"
     ]
   },
-  "dot": "digraph {\n  \"0_mrr_cf\" [cul_scope_id=0,name=mrr_cf,cul_source_scope_id=0,reason=definition,inputs=\"mrr_in,month_in,mrr_growth_in\",label=\"0_mrr_cf inputs: mrr_in,month_in,mrr_growth_in\"]\n  \"0_vc_cf\" [cul_scope_id=0,name=vc_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,vc_1_in,vc_2_in\",label=\"0_vc_cf inputs: month_in,vc_1_in,vc_2_in\"]\n  \"0_rent_cf\" [cul_scope_id=0,name=rent_cf,cul_source_scope_id=0,reason=definition,inputs=rent_in,label=\"0_rent_cf inputs: rent_in\"]\n  \"0_employees\" [cul_scope_id=0,name=employees,cul_source_scope_id=0,reason=definition,inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"0_employees inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_payroll_cf\" [cul_scope_id=0,name=payroll_cf,cul_source_scope_id=0,reason=definition,inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"0_payroll_cf inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_total_cf\" [cul_scope_id=0,name=total_cf,cul_source_scope_id=0,reason=definition,inputs=\"mrr_in,month_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"0_total_cf inputs: mrr_in,month_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_npv\" [cul_scope_id=0,name=npv,cul_source_scope_id=0,reason=definition,inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"0_npv inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"0_mrr\" [cul_scope_id=0,name=mrr,cul_source_scope_id=0,reason=definition,inputs=mrr_in,label=\"0_mrr inputs: mrr_in\"]\n  \"0_mrr_in\" [cul_scope_id=0,name=mrr_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_in,label=\"0_mrr_in inputs: mrr_in\"]\n  \"0_month\" [cul_scope_id=0,name=month,cul_source_scope_id=0,reason=definition,inputs=month_in,label=\"0_month inputs: month_in\"]\n  \"0_month_in\" [cul_scope_id=0,name=month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=month_in,label=\"0_month_in inputs: month_in\"]\n  \"0_mrr_growth\" [cul_scope_id=0,name=mrr_growth,cul_source_scope_id=0,reason=definition,inputs=mrr_growth_in,label=\"0_mrr_growth inputs: mrr_growth_in\"]\n  \"0_mrr_growth_in\" [cul_scope_id=0,name=mrr_growth_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_growth_in,label=\"0_mrr_growth_in inputs: mrr_growth_in\"]\n  \"0_vc_1\" [cul_scope_id=0,name=vc_1,cul_source_scope_id=0,reason=definition,inputs=vc_1_in,label=\"0_vc_1 inputs: vc_1_in\"]\n  \"0_vc_1_in\" [cul_scope_id=0,name=vc_1_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_1_in,label=\"0_vc_1_in inputs: vc_1_in\"]\n  \"0_vc_2\" [cul_scope_id=0,name=vc_2,cul_source_scope_id=0,reason=definition,inputs=vc_2_in,label=\"0_vc_2 inputs: vc_2_in\"]\n  \"0_vc_2_in\" [cul_scope_id=0,name=vc_2_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_2_in,label=\"0_vc_2_in inputs: vc_2_in\"]\n  \"0_rent\" [cul_scope_id=0,name=rent,cul_source_scope_id=0,reason=definition,inputs=rent_in,label=\"0_rent inputs: rent_in\"]\n  \"0_rent_in\" [cul_scope_id=0,name=rent_in,cul_source_scope_id=0,reason=\"input definition\",inputs=rent_in,label=\"0_rent_in inputs: rent_in\"]\n  \"0_employees_0\" [cul_scope_id=0,name=employees_0,cul_source_scope_id=0,reason=definition,inputs=employees_0_in,label=\"0_employees_0 inputs: employees_0_in\"]\n  \"0_employees_0_in\" [cul_scope_id=0,name=employees_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=employees_0_in,label=\"0_employees_0_in inputs: employees_0_in\"]\n  \"0_new_employees_per_month\" [cul_scope_id=0,name=new_employees_per_month,cul_source_scope_id=0,reason=definition,inputs=new_employees_per_month_in,label=\"0_new_employees_per_month inputs: new_employees_per_month_in\"]\n  \"0_new_employees_per_month_in\" [cul_scope_id=0,name=new_employees_per_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=new_employees_per_month_in,label=\"0_new_employees_per_month_in inputs: new_employees_per_month_in\"]\n  \"0_salary_per_employee\" [cul_scope_id=0,name=salary_per_employee,cul_source_scope_id=0,reason=definition,inputs=salary_per_employee_in,label=\"0_salary_per_employee inputs: salary_per_employee_in\"]\n  \"0_salary_per_employee_in\" [cul_scope_id=0,name=salary_per_employee_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_per_employee_in,label=\"0_salary_per_employee_in inputs: salary_per_employee_in\"]\n  \"0_last_month\" [cul_scope_id=0,name=last_month,cul_source_scope_id=0,reason=definition,inputs=last_month_in,label=\"0_last_month inputs: last_month_in\"]\n  \"0_last_month_in\" [cul_scope_id=0,name=last_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=last_month_in,label=\"0_last_month_in inputs: last_month_in\"]\n  \"0_npv_i\" [cul_scope_id=0,name=npv_i,cul_source_scope_id=0,reason=definition,inputs=npv_i_in,label=\"0_npv_i inputs: npv_i_in\"]\n  \"0_npv_i_in\" [cul_scope_id=0,name=npv_i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=npv_i_in,label=\"0_npv_i_in inputs: npv_i_in\"]\n  \"0_mrr\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_growth\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_1\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_2\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees_0\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_new_employees_per_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_salary_per_employee\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_payroll_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_last_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_npv\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_total_cf\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_npv_i\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_in\" -> \"0_mrr\" [value=\"[object Object]\",label=\"input +mrr_in\"]\n  \"0_month_in\" -> \"0_month\" [value=\"[object Object]\",label=\"input +month_in\"]\n  \"0_mrr_growth_in\" -> \"0_mrr_growth\" [value=\"[object Object]\",label=\"input +mrr_growth_in\"]\n  \"0_vc_1_in\" -> \"0_vc_1\" [value=\"[object Object]\",label=\"input +vc_1_in\"]\n  \"0_vc_2_in\" -> \"0_vc_2\" [value=\"[object Object]\",label=\"input +vc_2_in\"]\n  \"0_rent_in\" -> \"0_rent\" [value=\"[object Object]\",label=\"input +rent_in\"]\n  \"0_employees_0_in\" -> \"0_employees_0\" [value=\"[object Object]\",label=\"input +employees_0_in\"]\n  \"0_new_employees_per_month_in\" -> \"0_new_employees_per_month\" [value=\"[object Object]\",label=\"input +new_employees_per_month_in\"]\n  \"0_salary_per_employee_in\" -> \"0_salary_per_employee\" [value=\"[object Object]\",label=\"input +salary_per_employee_in\"]\n  \"0_last_month_in\" -> \"0_last_month\" [value=\"[object Object]\",label=\"input +last_month_in\"]\n  \"0_npv_i_in\" -> \"0_npv_i\" [value=\"[object Object]\",label=\"input +npv_i_in\"]\n}\n"
+  "dot": "digraph {\n  \"0_mrr_cf\" [cul_scope_id=0,name=mrr_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"0_mrr_cf inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"0_vc_cf\" [cul_scope_id=0,name=vc_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,vc_1_in,vc_2_in\",label=\"0_vc_cf inputs: month_in,vc_1_in,vc_2_in\"]\n  \"0_rent_cf\" [cul_scope_id=0,name=rent_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,rent_in\",label=\"0_rent_cf inputs: month_in,rent_in\"]\n  \"0_employees\" [cul_scope_id=0,name=employees,cul_source_scope_id=0,reason=definition,inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"0_employees inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_payroll_cf\" [cul_scope_id=0,name=payroll_cf,cul_source_scope_id=0,reason=definition,inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"0_payroll_cf inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_total_cf\" [cul_scope_id=0,name=total_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"0_total_cf inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_npv\" [cul_scope_id=0,name=npv,cul_source_scope_id=0,reason=definition,inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"0_npv inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"0_mrr\" [cul_scope_id=0,name=mrr,cul_source_scope_id=0,reason=definition,inputs=mrr_in,label=\"0_mrr inputs: mrr_in\"]\n  \"0_mrr_in\" [cul_scope_id=0,name=mrr_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_in,label=\"0_mrr_in inputs: mrr_in\"]\n  \"0_month\" [cul_scope_id=0,name=month,cul_source_scope_id=0,reason=definition,inputs=month_in,label=\"0_month inputs: month_in\"]\n  \"0_month_in\" [cul_scope_id=0,name=month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=month_in,label=\"0_month_in inputs: month_in\"]\n  \"0_mrr_growth\" [cul_scope_id=0,name=mrr_growth,cul_source_scope_id=0,reason=definition,inputs=mrr_growth_in,label=\"0_mrr_growth inputs: mrr_growth_in\"]\n  \"0_mrr_growth_in\" [cul_scope_id=0,name=mrr_growth_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_growth_in,label=\"0_mrr_growth_in inputs: mrr_growth_in\"]\n  \"0_vc_1\" [cul_scope_id=0,name=vc_1,cul_source_scope_id=0,reason=definition,inputs=vc_1_in,label=\"0_vc_1 inputs: vc_1_in\"]\n  \"0_vc_1_in\" [cul_scope_id=0,name=vc_1_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_1_in,label=\"0_vc_1_in inputs: vc_1_in\"]\n  \"0_vc_2\" [cul_scope_id=0,name=vc_2,cul_source_scope_id=0,reason=definition,inputs=vc_2_in,label=\"0_vc_2 inputs: vc_2_in\"]\n  \"0_vc_2_in\" [cul_scope_id=0,name=vc_2_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_2_in,label=\"0_vc_2_in inputs: vc_2_in\"]\n  \"0_rent\" [cul_scope_id=0,name=rent,cul_source_scope_id=0,reason=definition,inputs=rent_in,label=\"0_rent inputs: rent_in\"]\n  \"0_rent_in\" [cul_scope_id=0,name=rent_in,cul_source_scope_id=0,reason=\"input definition\",inputs=rent_in,label=\"0_rent_in inputs: rent_in\"]\n  \"0_employees_0\" [cul_scope_id=0,name=employees_0,cul_source_scope_id=0,reason=definition,inputs=employees_0_in,label=\"0_employees_0 inputs: employees_0_in\"]\n  \"0_employees_0_in\" [cul_scope_id=0,name=employees_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=employees_0_in,label=\"0_employees_0_in inputs: employees_0_in\"]\n  \"0_new_employees_per_month\" [cul_scope_id=0,name=new_employees_per_month,cul_source_scope_id=0,reason=definition,inputs=new_employees_per_month_in,label=\"0_new_employees_per_month inputs: new_employees_per_month_in\"]\n  \"0_new_employees_per_month_in\" [cul_scope_id=0,name=new_employees_per_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=new_employees_per_month_in,label=\"0_new_employees_per_month_in inputs: new_employees_per_month_in\"]\n  \"0_salary_per_employee\" [cul_scope_id=0,name=salary_per_employee,cul_source_scope_id=0,reason=definition,inputs=salary_per_employee_in,label=\"0_salary_per_employee inputs: salary_per_employee_in\"]\n  \"0_salary_per_employee_in\" [cul_scope_id=0,name=salary_per_employee_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_per_employee_in,label=\"0_salary_per_employee_in inputs: salary_per_employee_in\"]\n  \"0_last_month\" [cul_scope_id=0,name=last_month,cul_source_scope_id=0,reason=definition,inputs=last_month_in,label=\"0_last_month inputs: last_month_in\"]\n  \"0_last_month_in\" [cul_scope_id=0,name=last_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=last_month_in,label=\"0_last_month_in inputs: last_month_in\"]\n  \"0_npv_i\" [cul_scope_id=0,name=npv_i,cul_source_scope_id=0,reason=definition,inputs=npv_i_in,label=\"0_npv_i inputs: npv_i_in\"]\n  \"0_npv_i_in\" [cul_scope_id=0,name=npv_i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=npv_i_in,label=\"0_npv_i_in inputs: npv_i_in\"]\n  \"0_month\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_growth\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_1\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_2\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees_0\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_new_employees_per_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_salary_per_employee\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_payroll_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_last_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_npv\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_total_cf\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_npv_i\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_in\" -> \"0_mrr\" [value=\"[object Object]\",label=\"input +mrr_in\"]\n  \"0_month_in\" -> \"0_month\" [value=\"[object Object]\",label=\"input +month_in\"]\n  \"0_mrr_growth_in\" -> \"0_mrr_growth\" [value=\"[object Object]\",label=\"input +mrr_growth_in\"]\n  \"0_vc_1_in\" -> \"0_vc_1\" [value=\"[object Object]\",label=\"input +vc_1_in\"]\n  \"0_vc_2_in\" -> \"0_vc_2\" [value=\"[object Object]\",label=\"input +vc_2_in\"]\n  \"0_rent_in\" -> \"0_rent\" [value=\"[object Object]\",label=\"input +rent_in\"]\n  \"0_employees_0_in\" -> \"0_employees_0\" [value=\"[object Object]\",label=\"input +employees_0_in\"]\n  \"0_new_employees_per_month_in\" -> \"0_new_employees_per_month\" [value=\"[object Object]\",label=\"input +new_employees_per_month_in\"]\n  \"0_salary_per_employee_in\" -> \"0_salary_per_employee\" [value=\"[object Object]\",label=\"input +salary_per_employee_in\"]\n  \"0_last_month_in\" -> \"0_last_month\" [value=\"[object Object]\",label=\"input +last_month_in\"]\n  \"0_npv_i_in\" -> \"0_npv_i\" [value=\"[object Object]\",label=\"input +npv_i_in\"]\n}\n"
 }
