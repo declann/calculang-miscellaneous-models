@@ -18,7 +18,7 @@ export const payroll_cf = () => -salary_per_employee() * employees();
 export const total_cf = () => mrr_cf() + rent_cf() + vc_cf() + payroll_cf();
 
 export const npv = () => {
-  if (month() > last_month()) return 0;
+  if (month() >= last_month()) return 0;
   return (
     (npv({ month_in: month() + 1 }) + total_cf({ month_in: month() + 1 })) /
     (1 + npv_i())

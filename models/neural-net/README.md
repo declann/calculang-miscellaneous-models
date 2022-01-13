@@ -1,3 +1,5 @@
+# neural net calculang example
+
 wip guided by https://dev.to/liashchynskyi/creating-of-neural-network-using-javascript-in-7minutes-o21
 
 NN from first principles : totally crazy, but interesting.

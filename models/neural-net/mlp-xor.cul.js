@@ -26,7 +26,7 @@ export const weight = () => {
 };
 
 // inputs
-export const input_nodes = () => input_nodes_in;
+export const input_nodes = () => input_nodes_in; // 2-3-1 ?
 export const hidden_nodes = () => hidden_nodes_in;
 export const output_nodes = () => output_nodes_in;
 export const epoch = () => epoch_in; // 50000
