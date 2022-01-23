@@ -19,7 +19,7 @@ export const weight_y = () => {
 export const weight_x = () => {
   if (coords() == 'ground') return 0;
   else if (coords() == 'plane')
-    return weight_y(/*!*/ { coords_in: 'ground' }) * Math.sin(theta());
+    return weight_y(/*!*/ { coords_in: 'ground' }) * Math.sin(theta()); // notation development as-in Julia would benefit a lot here
 };
 
 // other forces: Normal reaction which offsets weight_y on 'plane'
@@ -27,10 +27,15 @@ export const weight_x = () => {
 
 // => net force on 'plane' is (?, 0)
 // but on 'ground' is (?, ?)
+// weight_x is the only force contributing to the net force (weight_y is offset by normal)
 
+// F is net force
+// only use weight_x
 export const F_x = () => 1; // todo
+// convert weight_x 'plane' to 'ground', so weight_x works directly?
 
 export const F_y = () => 1; // todo
+// convert weight_x 'plane' to 'ground', so weight_x('plane') is manipulated
 
 export const a_x = () => F_x() / m(); // ?
 
