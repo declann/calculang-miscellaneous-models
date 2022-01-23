@@ -28,9 +28,13 @@ export const weight_x = () => {
 // => net force on 'plane' is (?, 0)
 // but on 'ground' is (?, ?)
 
-export const a_x = () => 1; // todo
+export const F_x = () => 1; // todo
 
-export const a_y = () => 1; // todo
+export const F_y = () => 1; // todo
+
+export const a_x = () => F_x() / m(); // ?
+
+export const a_y = () => F_y() / m(); // ?
 
 //export const a = () => g() * Math.sin(theta()); // relative to inclined plane, no coord stuff happening yet
 
