@@ -31,10 +31,15 @@ export const weight_x = () => {
 
 // F is net force
 // only use weight_x
-export const F_x = () => 1; // todo
+export const F_x = () => weight_x();
 // convert weight_x 'plane' to 'ground', so weight_x works directly?
 
-export const F_y = () => 1; // todo
+export const F_y = () => {
+  if (coords() == 'plane') return 0;
+  // necessary? This is where normal+weight_y would cancel
+  else if (coords() == 'ground')
+    return weight_x({ coords_in: 'plane' }) * Math.sin(theta()); // ?
+};
 // convert weight_x 'plane' to 'ground', so weight_x('plane') is manipulated
 
 export const a_x = () => F_x() / m(); // ?

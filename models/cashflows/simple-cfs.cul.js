@@ -10,7 +10,7 @@ export const vc_cf = () => {
 };
 
 export const rent_cf = () => {
-  if (month() == -1) return 0;
+  if (month() == -1) return 0; // => rent_cf now dept on month
   else return -rent();
 }
 
