@@ -1840,14 +1840,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 59,
+          "line": 60,
           "column": 17,
-          "index": 2358
+          "index": 2373
         },
         "end": {
-          "line": 63,
+          "line": 64,
           "column": 65,
-          "index": 2527
+          "index": 2542
         }
       },
       "inputs": [

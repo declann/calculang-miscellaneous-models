@@ -649,6 +649,7 @@ Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K2"])({ K2_in }) + Object(_do
 const xp_ = ({ screen_width_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_width"])({ screen_width_in }) / 2 + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ K1_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
 const yp_ = ({ screen_height_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_height"])({ screen_height_in }) / 2 - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ K1_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
 
+// luminosity
 const L_ = ({ phi_in, theta_in, frame_in }) =>
 Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosPhi"])({ phi_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinB"])({ frame_in }) -
 Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }) -

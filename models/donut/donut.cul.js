@@ -56,6 +56,7 @@ export const z = () =>
 export const xp = () => screen_width() / 2 + (K1() * x()) / z();
 export const yp = () => screen_height() / 2 - (K1() * y()) / z();
 
+// luminosity
 export const L = () =>
   cosPhi() * cosTheta() * sinB() -
   cosA() * cosTheta() * sinPhi() -
