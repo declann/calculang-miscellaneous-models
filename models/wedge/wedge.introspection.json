@@ -1,0 +1,477 @@
+{
+  "cul_functions": {
+    "0_weight_y": {
+      "cul_scope_id": 0,
+      "name": "weight_y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 24,
+          "index": 580
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 737
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_weight_x": {
+      "cul_scope_id": 0,
+      "name": "weight_x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 24,
+          "index": 766
+        },
+        "end": {
+          "line": 23,
+          "column": 1,
+          "index": 982
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_F_x": {
+      "cul_scope_id": 0,
+      "name": "F_x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 19,
+          "index": 1297
+        },
+        "end": {
+          "line": 34,
+          "column": 35,
+          "index": 1313
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_F_y": {
+      "cul_scope_id": 0,
+      "name": "F_y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 19,
+          "index": 1407
+        },
+        "end": {
+          "line": 42,
+          "column": 1,
+          "index": 1620
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_a_x": {
+      "cul_scope_id": 0,
+      "name": "a_x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 19,
+          "index": 1722
+        },
+        "end": {
+          "line": 45,
+          "column": 36,
+          "index": 1739
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_a_y": {
+      "cul_scope_id": 0,
+      "name": "a_y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 19,
+          "index": 1768
+        },
+        "end": {
+          "line": 47,
+          "column": 36,
+          "index": 1785
+        }
+      },
+      "inputs": [
+        "coords_in",
+        "m_in",
+        "g_in",
+        "theta_in"
+      ]
+    },
+    "0_coords": {
+      "cul_scope_id": 0,
+      "name": "coords",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 51,
+          "column": 22,
+          "index": 1930
+        },
+        "end": {
+          "line": 51,
+          "column": 37,
+          "index": 1945
+        }
+      },
+      "inputs": [
+        "coords_in"
+      ]
+    },
+    "0_coords_in": {
+      "cul_scope_id": 0,
+      "name": "coords_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "coords_in"
+      ]
+    },
+    "0_theta": {
+      "cul_scope_id": 0,
+      "name": "theta",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 21,
+          "index": 2012
+        },
+        "end": {
+          "line": 52,
+          "column": 35,
+          "index": 2026
+        }
+      },
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_theta_in": {
+      "cul_scope_id": 0,
+      "name": "theta_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_g": {
+      "cul_scope_id": 0,
+      "name": "g",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 53,
+          "column": 17,
+          "index": 2100
+        },
+        "end": {
+          "line": 53,
+          "column": 27,
+          "index": 2110
+        }
+      },
+      "inputs": [
+        "g_in"
+      ]
+    },
+    "0_g_in": {
+      "cul_scope_id": 0,
+      "name": "g_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "g_in"
+      ]
+    },
+    "0_m": {
+      "cul_scope_id": 0,
+      "name": "m",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 54,
+          "column": 17,
+          "index": 2130
+        },
+        "end": {
+          "line": 54,
+          "column": 27,
+          "index": 2140
+        }
+      },
+      "inputs": [
+        "m_in"
+      ]
+    },
+    "0_m_in": {
+      "cul_scope_id": 0,
+      "name": "m_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "m_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_weight_y",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_y",
+      "from": "0_m",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_y",
+      "from": "0_g",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_y",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_y",
+      "from": "0_weight_y",
+      "reason": "call",
+      "negs": [
+        "coords_in"
+      ]
+    },
+    {
+      "to": "0_weight_y",
+      "from": "0_theta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_x",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_x",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_weight_x",
+      "from": "0_weight_y",
+      "reason": "call",
+      "negs": [
+        "coords_in"
+      ]
+    },
+    {
+      "to": "0_weight_x",
+      "from": "0_theta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_F_x",
+      "from": "0_weight_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_F_y",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_F_y",
+      "from": "0_coords",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_F_y",
+      "from": "0_weight_x",
+      "reason": "call",
+      "negs": [
+        "coords_in"
+      ]
+    },
+    {
+      "to": "0_F_y",
+      "from": "0_theta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_a_x",
+      "from": "0_F_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_a_x",
+      "from": "0_m",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_a_y",
+      "from": "0_F_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_a_y",
+      "from": "0_m",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_coords",
+      "from": "0_coords_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_theta",
+      "from": "0_theta_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_g",
+      "from": "0_g_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_m",
+      "from": "0_m_in",
+      "reason": "input"
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./wedge.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {
+    "0_weight_y": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_weight_x": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_F_x": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_F_y": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_a_x": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_a_y": [
+      "coords_in",
+      "m_in",
+      "g_in",
+      "theta_in"
+    ],
+    "0_coords": [
+      "coords_in"
+    ],
+    "0_coords_in": [
+      "coords_in"
+    ],
+    "0_theta": [
+      "theta_in"
+    ],
+    "0_theta_in": [
+      "theta_in"
+    ],
+    "0_g": [
+      "g_in"
+    ],
+    "0_g_in": [
+      "g_in"
+    ],
+    "0_m": [
+      "m_in"
+    ],
+    "0_m_in": [
+      "m_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_weight_y\" [cul_scope_id=0,name=weight_y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_weight_y inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_weight_x\" [cul_scope_id=0,name=weight_x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_weight_x inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_F_x\" [cul_scope_id=0,name=F_x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_F_x inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_F_y\" [cul_scope_id=0,name=F_y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_F_y inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_a_x\" [cul_scope_id=0,name=a_x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_a_x inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_a_y\" [cul_scope_id=0,name=a_y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"coords_in,m_in,g_in,theta_in\",label=\"0_a_y inputs: coords_in,m_in,g_in,theta_in\"]\n  \"0_coords\" [cul_scope_id=0,name=coords,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=coords_in,label=\"0_coords inputs: coords_in\"]\n  \"0_coords_in\" [cul_scope_id=0,name=coords_in,cul_source_scope_id=0,reason=\"input definition\",inputs=coords_in,label=\"0_coords_in inputs: coords_in\"]\n  \"0_theta\" [cul_scope_id=0,name=theta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_theta inputs: theta_in\"]\n  \"0_theta_in\" [cul_scope_id=0,name=theta_in,cul_source_scope_id=0,reason=\"input definition\",inputs=theta_in,label=\"0_theta_in inputs: theta_in\"]\n  \"0_g\" [cul_scope_id=0,name=g,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=g_in,label=\"0_g inputs: g_in\"]\n  \"0_g_in\" [cul_scope_id=0,name=g_in,cul_source_scope_id=0,reason=\"input definition\",inputs=g_in,label=\"0_g_in inputs: g_in\"]\n  \"0_m\" [cul_scope_id=0,name=m,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=m_in,label=\"0_m inputs: m_in\"]\n  \"0_m_in\" [cul_scope_id=0,name=m_in,cul_source_scope_id=0,reason=\"input definition\",inputs=m_in,label=\"0_m_in inputs: m_in\"]\n  \"0_coords\" -> \"0_weight_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_m\" -> \"0_weight_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_g\" -> \"0_weight_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_weight_y\" -> \"0_weight_y\" [value=\"[object Object]\",label=\"call -coords_in\"]\n  \"0_theta\" -> \"0_weight_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_coords\" -> \"0_weight_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_weight_y\" -> \"0_weight_x\" [value=\"[object Object]\",label=\"call -coords_in\"]\n  \"0_theta\" -> \"0_weight_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_weight_x\" -> \"0_F_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_coords\" -> \"0_F_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_weight_x\" -> \"0_F_y\" [value=\"[object Object]\",label=\"call -coords_in\"]\n  \"0_theta\" -> \"0_F_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_F_x\" -> \"0_a_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_m\" -> \"0_a_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_F_y\" -> \"0_a_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_m\" -> \"0_a_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_coords_in\" -> \"0_coords\" [value=\"[object Object]\",label=\"input +coords_in\"]\n  \"0_theta_in\" -> \"0_theta\" [value=\"[object Object]\",label=\"input +theta_in\"]\n  \"0_g_in\" -> \"0_g\" [value=\"[object Object]\",label=\"input +g_in\"]\n  \"0_m_in\" -> \"0_m\" [value=\"[object Object]\",label=\"input +m_in\"]\n}\n"
+}
