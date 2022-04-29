@@ -9,7 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
-    "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js",
+    "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js"
   },
   "homepage": "https://github.com/declann/calculang-miscellaneous-models/tree/main",
   "author": "Declan Naughton working for DCN Consulting",
