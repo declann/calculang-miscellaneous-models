@@ -17,7 +17,7 @@ export const B_ = ({ frame_in }) => 1 + 0.03 * frame({ frame_in });
 export const frame_ = ({ frame_in }) => frame_in;
 
 export const K2_ = ({ K2_in }) => K2_in;
-export const K1_ = ({ screen_width_in, K2_in, R1_in, R2_in }) => screen_width({ screen_width_in }) * K2({ K2_in }) * 3 / (8 * (R1({ R1_in }) + R2({ R2_in })));
+export const K1_ = ({ K1_in }) => K1_in; //(screen_width() * K2() * 3) / (8 * (R1() + R2()));
 export const screen_width_ = ({ screen_width_in }) => screen_width_in;
 export const screen_height_ = ({ screen_height_in }) => screen_height_in;
 
@@ -53,8 +53,8 @@ export const z_ = ({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in }) =>
 K2({ K2_in }) + cosA({ frame_in }) * circlex({ R2_in, R1_in, theta_in }) * sinPhi({ phi_in }) + circley({ R1_in, theta_in }) * sinA({ frame_in });
 
 // coordinates in 2d projection
-export const xp_ = ({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => screen_width({ screen_width_in }) / 2 + K1({ screen_width_in, K2_in, R1_in, R2_in }) * x({ R2_in, R1_in, theta_in, frame_in, phi_in }) / z({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
-export const yp_ = ({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => screen_height({ screen_height_in }) / 2 - K1({ screen_width_in, K2_in, R1_in, R2_in }) * y({ R2_in, R1_in, theta_in, frame_in, phi_in }) / z({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
+export const xp_ = ({ screen_width_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => screen_width({ screen_width_in }) / 2 + K1({ K1_in }) * x({ R2_in, R1_in, theta_in, frame_in, phi_in }) / z({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
+export const yp_ = ({ screen_height_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => screen_height({ screen_height_in }) / 2 - K1({ K1_in }) * y({ R2_in, R1_in, theta_in, frame_in, phi_in }) / z({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
 
 export const L_ = ({ phi_in, theta_in, frame_in }) =>
 cosPhi({ phi_in }) * cosTheta({ theta_in }) * sinB({ frame_in }) -

@@ -17,7 +17,7 @@ export const B = () => 1 + 0.03 * frame();
 export const frame = () => frame_in;
 
 export const K2 = () => K2_in;
-export const K1 = () => (screen_width() * K2() * 3) / (8 * (R1() + R2()));
+export const K1 = () => K1_in; //(screen_width() * K2() * 3) / (8 * (R1() + R2()));
 export const screen_width = () => screen_width_in;
 export const screen_height = () => screen_height_in;
 

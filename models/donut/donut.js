@@ -243,7 +243,7 @@ const K1$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(
 const K1 = (a) => {
   return K1$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* K1_ */ "c"])({ screen_width_in, K2_in, R1_in, R2_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* K1_ */ "c"])({ K1_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end K1 memo-loader code //////////
 
@@ -459,7 +459,7 @@ const xp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(
 const xp = (a) => {
   return xp$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "x"])({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "x"])({ screen_width_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end xp memo-loader code //////////
 
@@ -471,7 +471,7 @@ const yp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(
 const yp = (a) => {
   return yp$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "z"])({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "z"])({ screen_height_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end yp memo-loader code //////////
 
@@ -610,7 +610,7 @@ const B_ = ({ frame_in }) => 1 + 0.03 * Object(_donut_cul_js__WEBPACK_IMPORTED_M
 const frame_ = ({ frame_in }) => frame_in;
 
 const K2_ = ({ K2_in }) => K2_in;
-const K1_ = ({ screen_width_in, K2_in, R1_in, R2_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_width"])({ screen_width_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K2"])({ K2_in }) * 3 / (8 * (Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["R1"])({ R1_in }) + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["R2"])({ R2_in })));
+const K1_ = ({ K1_in }) => K1_in; //(screen_width() * K2() * 3) / (8 * (R1() + R2()));
 const screen_width_ = ({ screen_width_in }) => screen_width_in;
 const screen_height_ = ({ screen_height_in }) => screen_height_in;
 
@@ -646,8 +646,8 @@ const z_ = ({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in }) =>
 Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K2"])({ K2_in }) + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["circlex"])({ R2_in, R1_in, theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }) + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["circley"])({ R1_in, theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in });
 
 // coordinates in 2d projection
-const xp_ = ({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_width"])({ screen_width_in }) / 2 + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ screen_width_in, K2_in, R1_in, R2_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
-const yp_ = ({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_height"])({ screen_height_in }) / 2 - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ screen_width_in, K2_in, R1_in, R2_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
+const xp_ = ({ screen_width_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_width"])({ screen_width_in }) / 2 + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ K1_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
+const yp_ = ({ screen_height_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_height"])({ screen_height_in }) / 2 - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ K1_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
 
 const L_ = ({ phi_in, theta_in, frame_in }) =>
 Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosPhi"])({ phi_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinB"])({ frame_in }) -

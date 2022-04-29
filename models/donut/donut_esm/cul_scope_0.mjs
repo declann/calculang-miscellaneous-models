@@ -85,7 +85,7 @@ export const K1$m = memoize(K1$, JSON.stringify);
 export const K1 = (a) => {
   return K1$m(a);
   // eslint-disable-next-line no-undef
-  K1$({ screen_width_in, K2_in, R1_in, R2_in }); // never run, but here to "trick" calculang graph logic
+  K1$({ K1_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end K1 memo-loader code //////////
 
@@ -301,7 +301,7 @@ export const xp$m = memoize(xp$, JSON.stringify);
 export const xp = (a) => {
   return xp$m(a);
   // eslint-disable-next-line no-undef
-  xp$({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  xp$({ screen_width_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end xp memo-loader code //////////
 
@@ -313,7 +313,7 @@ export const yp$m = memoize(yp$, JSON.stringify);
 export const yp = (a) => {
   return yp$m(a);
   // eslint-disable-next-line no-undef
-  yp$({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  yp$({ screen_height_in, K1_in, R2_in, R1_in, theta_in, frame_in, phi_in, K2_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end yp memo-loader code //////////
 
