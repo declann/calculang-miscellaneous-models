@@ -4,7 +4,7 @@
 // also interesting to compare separation of concerns.
 // go to Andys blog (also https://www.a1k0n.net/2021/01/13/optimizing-donut.html)
 // to understand the math in this hurried conversion!
-// soon I will elaborate more on how calculang can be used to understand the math.
+// soon I will elaborate more on how calculang can be used to understand the math/numbers.
 
 // torus params
 export const R1 = () => R1_in;
