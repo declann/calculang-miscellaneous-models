@@ -292,6 +292,18 @@
         "phi_in"
       ]
     },
+    "0_L$": {
+      "cul_scope_id": 0,
+      "name": "L$",
+      "imported": "L_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "phi_in",
+        "theta_in",
+        "frame_in"
+      ]
+    },
     "0_R1": {
       "cul_scope_id": 0,
       "name": "R1",
@@ -301,12 +313,12 @@
         "start": {
           "line": 13,
           "column": 18,
-          "index": 1039
+          "index": 1049
         },
         "end": {
           "line": 17,
           "column": 1,
-          "index": 1171
+          "index": 1181
         }
       },
       "inputs": [
@@ -322,12 +334,12 @@
         "start": {
           "line": 25,
           "column": 18,
-          "index": 1384
+          "index": 1394
         },
         "end": {
           "line": 29,
           "column": 1,
-          "index": 1516
+          "index": 1526
         }
       },
       "inputs": [
@@ -343,12 +355,12 @@
         "start": {
           "line": 37,
           "column": 17,
-          "index": 1723
+          "index": 1733
         },
         "end": {
           "line": 41,
           "column": 1,
-          "index": 1853
+          "index": 1863
         }
       },
       "inputs": [
@@ -364,12 +376,12 @@
         "start": {
           "line": 49,
           "column": 17,
-          "index": 2059
+          "index": 2069
         },
         "end": {
           "line": 53,
           "column": 1,
-          "index": 2189
+          "index": 2199
         }
       },
       "inputs": [
@@ -385,12 +397,12 @@
         "start": {
           "line": 61,
           "column": 21,
-          "index": 2419
+          "index": 2429
         },
         "end": {
           "line": 65,
           "column": 1,
-          "index": 2557
+          "index": 2567
         }
       },
       "inputs": [
@@ -406,12 +418,12 @@
         "start": {
           "line": 73,
           "column": 18,
-          "index": 2773
+          "index": 2783
         },
         "end": {
           "line": 77,
           "column": 1,
-          "index": 2905
+          "index": 2915
         }
       },
       "inputs": [
@@ -427,12 +439,12 @@
         "start": {
           "line": 85,
           "column": 18,
-          "index": 3118
+          "index": 3128
         },
         "end": {
           "line": 89,
           "column": 1,
-          "index": 3250
+          "index": 3260
         }
       },
       "inputs": [
@@ -451,12 +463,12 @@
         "start": {
           "line": 97,
           "column": 28,
-          "index": 3523
+          "index": 3533
         },
         "end": {
           "line": 101,
           "column": 1,
-          "index": 3675
+          "index": 3685
         }
       },
       "inputs": [
@@ -472,12 +484,12 @@
         "start": {
           "line": 109,
           "column": 29,
-          "index": 3964
+          "index": 3974
         },
         "end": {
           "line": 113,
           "column": 1,
-          "index": 4118
+          "index": 4128
         }
       },
       "inputs": [
@@ -493,12 +505,12 @@
         "start": {
           "line": 121,
           "column": 21,
-          "index": 4360
+          "index": 4370
         },
         "end": {
           "line": 125,
           "column": 1,
-          "index": 4498
+          "index": 4508
         }
       },
       "inputs": [
@@ -514,12 +526,12 @@
         "start": {
           "line": 133,
           "column": 19,
-          "index": 4720
+          "index": 4730
         },
         "end": {
           "line": 137,
           "column": 1,
-          "index": 4854
+          "index": 4864
         }
       },
       "inputs": [
@@ -535,12 +547,12 @@
         "start": {
           "line": 145,
           "column": 20,
-          "index": 5080
+          "index": 5090
         },
         "end": {
           "line": 149,
           "column": 1,
-          "index": 5216
+          "index": 5226
         }
       },
       "inputs": [
@@ -556,12 +568,12 @@
         "start": {
           "line": 157,
           "column": 20,
-          "index": 5443
+          "index": 5453
         },
         "end": {
           "line": 161,
           "column": 1,
-          "index": 5579
+          "index": 5589
         }
       },
       "inputs": [
@@ -577,12 +589,12 @@
         "start": {
           "line": 169,
           "column": 20,
-          "index": 5806
+          "index": 5816
         },
         "end": {
           "line": 173,
           "column": 1,
-          "index": 5942
+          "index": 5952
         }
       },
       "inputs": [
@@ -598,12 +610,12 @@
         "start": {
           "line": 181,
           "column": 20,
-          "index": 6169
+          "index": 6179
         },
         "end": {
           "line": 185,
           "column": 1,
-          "index": 6305
+          "index": 6315
         }
       },
       "inputs": [
@@ -619,12 +631,12 @@
         "start": {
           "line": 193,
           "column": 24,
-          "index": 6556
+          "index": 6566
         },
         "end": {
           "line": 197,
           "column": 1,
-          "index": 6700
+          "index": 6710
         }
       },
       "inputs": [
@@ -640,12 +652,12 @@
         "start": {
           "line": 205,
           "column": 24,
-          "index": 6955
+          "index": 6965
         },
         "end": {
           "line": 209,
           "column": 1,
-          "index": 7099
+          "index": 7109
         }
       },
       "inputs": [
@@ -661,12 +673,12 @@
         "start": {
           "line": 217,
           "column": 22,
-          "index": 7342
+          "index": 7352
         },
         "end": {
           "line": 221,
           "column": 1,
-          "index": 7482
+          "index": 7492
         }
       },
       "inputs": [
@@ -682,12 +694,12 @@
         "start": {
           "line": 229,
           "column": 22,
-          "index": 7723
+          "index": 7733
         },
         "end": {
           "line": 233,
           "column": 1,
-          "index": 7863
+          "index": 7873
         }
       },
       "inputs": [
@@ -703,12 +715,12 @@
         "start": {
           "line": 241,
           "column": 23,
-          "index": 8110
+          "index": 8120
         },
         "end": {
           "line": 245,
           "column": 1,
-          "index": 8252
+          "index": 8262
         }
       },
       "inputs": [
@@ -726,12 +738,12 @@
         "start": {
           "line": 253,
           "column": 23,
-          "index": 8500
+          "index": 8510
         },
         "end": {
           "line": 257,
           "column": 1,
-          "index": 8642
+          "index": 8652
         }
       },
       "inputs": [
@@ -748,12 +760,12 @@
         "start": {
           "line": 265,
           "column": 17,
-          "index": 8854
+          "index": 8864
         },
         "end": {
           "line": 269,
           "column": 1,
-          "index": 8984
+          "index": 8994
         }
       },
       "inputs": [
@@ -773,12 +785,12 @@
         "start": {
           "line": 277,
           "column": 17,
-          "index": 9190
+          "index": 9200
         },
         "end": {
           "line": 281,
           "column": 1,
-          "index": 9320
+          "index": 9330
         }
       },
       "inputs": [
@@ -798,12 +810,12 @@
         "start": {
           "line": 289,
           "column": 17,
-          "index": 9526
+          "index": 9536
         },
         "end": {
           "line": 293,
           "column": 1,
-          "index": 9656
+          "index": 9666
         }
       },
       "inputs": [
@@ -824,12 +836,12 @@
         "start": {
           "line": 301,
           "column": 18,
-          "index": 9868
+          "index": 9878
         },
         "end": {
           "line": 305,
           "column": 1,
-          "index": 10000
+          "index": 10010
         }
       },
       "inputs": [
@@ -851,12 +863,12 @@
         "start": {
           "line": 313,
           "column": 18,
-          "index": 10213
+          "index": 10223
         },
         "end": {
           "line": 317,
           "column": 1,
-          "index": 10345
+          "index": 10355
         }
       },
       "inputs": [
@@ -868,6 +880,29 @@
         "theta_in",
         "frame_in",
         "phi_in"
+      ]
+    },
+    "0_L": {
+      "cul_scope_id": 0,
+      "name": "L",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 325,
+          "column": 17,
+          "index": 10562
+        },
+        "end": {
+          "line": 329,
+          "column": 1,
+          "index": 10692
+        }
+      },
+      "inputs": [
+        "phi_in",
+        "theta_in",
+        "frame_in"
       ]
     },
     "1_R1": {
@@ -1136,6 +1171,17 @@
         "phi_in"
       ]
     },
+    "1_L": {
+      "cul_scope_id": 1,
+      "name": "L",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "phi_in",
+        "theta_in",
+        "frame_in"
+      ]
+    },
     "1_R1_": {
       "cul_scope_id": 1,
       "name": "R1_",
@@ -1145,12 +1191,12 @@
         "start": {
           "line": 10,
           "column": 18,
-          "index": 507
+          "index": 529
         },
         "end": {
           "line": 10,
           "column": 29,
-          "index": 518
+          "index": 540
         }
       },
       "inputs": [
@@ -1175,12 +1221,12 @@
         "start": {
           "line": 11,
           "column": 18,
-          "index": 539
+          "index": 561
         },
         "end": {
           "line": 11,
           "column": 29,
-          "index": 550
+          "index": 572
         }
       },
       "inputs": [
@@ -1205,12 +1251,12 @@
         "start": {
           "line": 15,
           "column": 17,
-          "index": 660
+          "index": 682
         },
         "end": {
           "line": 15,
           "column": 41,
-          "index": 684
+          "index": 706
         }
       },
       "inputs": [
@@ -1226,12 +1272,12 @@
         "start": {
           "line": 16,
           "column": 17,
-          "index": 704
+          "index": 726
         },
         "end": {
           "line": 16,
           "column": 41,
-          "index": 728
+          "index": 750
         }
       },
       "inputs": [
@@ -1247,12 +1293,12 @@
         "start": {
           "line": 17,
           "column": 21,
-          "index": 752
+          "index": 774
         },
         "end": {
           "line": 17,
           "column": 35,
-          "index": 766
+          "index": 788
         }
       },
       "inputs": [
@@ -1277,12 +1323,12 @@
         "start": {
           "line": 19,
           "column": 18,
-          "index": 789
+          "index": 811
         },
         "end": {
           "line": 19,
           "column": 29,
-          "index": 800
+          "index": 822
         }
       },
       "inputs": [
@@ -1307,12 +1353,12 @@
         "start": {
           "line": 20,
           "column": 18,
-          "index": 821
+          "index": 843
         },
         "end": {
           "line": 20,
           "column": 73,
-          "index": 876
+          "index": 898
         }
       },
       "inputs": [
@@ -1331,12 +1377,12 @@
         "start": {
           "line": 21,
           "column": 28,
-          "index": 907
+          "index": 929
         },
         "end": {
           "line": 21,
           "column": 49,
-          "index": 928
+          "index": 950
         }
       },
       "inputs": [
@@ -1361,12 +1407,12 @@
         "start": {
           "line": 22,
           "column": 29,
-          "index": 960
+          "index": 982
         },
         "end": {
           "line": 22,
           "column": 51,
-          "index": 982
+          "index": 1004
         }
       },
       "inputs": [
@@ -1391,12 +1437,12 @@
         "start": {
           "line": 25,
           "column": 21,
-          "index": 1068
+          "index": 1090
         },
         "end": {
           "line": 25,
           "column": 35,
-          "index": 1082
+          "index": 1104
         }
       },
       "inputs": [
@@ -1421,12 +1467,12 @@
         "start": {
           "line": 27,
           "column": 19,
-          "index": 1158
+          "index": 1180
         },
         "end": {
           "line": 27,
           "column": 31,
-          "index": 1170
+          "index": 1192
         }
       },
       "inputs": [
@@ -1451,12 +1497,12 @@
         "start": {
           "line": 30,
           "column": 20,
-          "index": 1234
+          "index": 1256
         },
         "end": {
           "line": 30,
           "column": 39,
-          "index": 1253
+          "index": 1275
         }
       },
       "inputs": [
@@ -1472,12 +1518,12 @@
         "start": {
           "line": 31,
           "column": 20,
-          "index": 1276
+          "index": 1298
         },
         "end": {
           "line": 31,
           "column": 39,
-          "index": 1295
+          "index": 1317
         }
       },
       "inputs": [
@@ -1493,12 +1539,12 @@
         "start": {
           "line": 32,
           "column": 20,
-          "index": 1318
+          "index": 1340
         },
         "end": {
           "line": 32,
           "column": 39,
-          "index": 1337
+          "index": 1359
         }
       },
       "inputs": [
@@ -1514,12 +1560,12 @@
         "start": {
           "line": 33,
           "column": 20,
-          "index": 1360
+          "index": 1382
         },
         "end": {
           "line": 33,
           "column": 39,
-          "index": 1379
+          "index": 1401
         }
       },
       "inputs": [
@@ -1535,12 +1581,12 @@
         "start": {
           "line": 34,
           "column": 24,
-          "index": 1406
+          "index": 1428
         },
         "end": {
           "line": 34,
           "column": 47,
-          "index": 1429
+          "index": 1451
         }
       },
       "inputs": [
@@ -1556,12 +1602,12 @@
         "start": {
           "line": 35,
           "column": 24,
-          "index": 1456
+          "index": 1478
         },
         "end": {
           "line": 35,
           "column": 47,
-          "index": 1479
+          "index": 1501
         }
       },
       "inputs": [
@@ -1577,12 +1623,12 @@
         "start": {
           "line": 36,
           "column": 22,
-          "index": 1504
+          "index": 1526
         },
         "end": {
           "line": 36,
           "column": 43,
-          "index": 1525
+          "index": 1547
         }
       },
       "inputs": [
@@ -1598,12 +1644,12 @@
         "start": {
           "line": 37,
           "column": 22,
-          "index": 1550
+          "index": 1572
         },
         "end": {
           "line": 37,
           "column": 43,
-          "index": 1571
+          "index": 1593
         }
       },
       "inputs": [
@@ -1619,12 +1665,12 @@
         "start": {
           "line": 40,
           "column": 23,
-          "index": 1649
+          "index": 1671
         },
         "end": {
           "line": 40,
           "column": 53,
-          "index": 1679
+          "index": 1701
         }
       },
       "inputs": [
@@ -1642,12 +1688,12 @@
         "start": {
           "line": 41,
           "column": 23,
-          "index": 1705
+          "index": 1727
         },
         "end": {
           "line": 41,
           "column": 46,
-          "index": 1728
+          "index": 1750
         }
       },
       "inputs": [
@@ -1664,12 +1710,12 @@
         "start": {
           "line": 45,
           "column": 17,
-          "index": 1856
+          "index": 1878
         },
         "end": {
           "line": 46,
           "column": 68,
-          "index": 1931
+          "index": 1953
         }
       },
       "inputs": [
@@ -1689,12 +1735,12 @@
         "start": {
           "line": 48,
           "column": 17,
-          "index": 1953
+          "index": 1975
         },
         "end": {
           "line": 50,
           "column": 29,
-          "index": 2055
+          "index": 2077
         }
       },
       "inputs": [
@@ -1714,12 +1760,12 @@
         "start": {
           "line": 52,
           "column": 17,
-          "index": 2077
+          "index": 2099
         },
         "end": {
           "line": 53,
           "column": 59,
-          "index": 2143
+          "index": 2165
         }
       },
       "inputs": [
@@ -1740,12 +1786,12 @@
         "start": {
           "line": 56,
           "column": 18,
-          "index": 2199
+          "index": 2221
         },
         "end": {
           "line": 56,
           "column": 63,
-          "index": 2244
+          "index": 2266
         }
       },
       "inputs": [
@@ -1767,12 +1813,12 @@
         "start": {
           "line": 57,
           "column": 18,
-          "index": 2265
+          "index": 2287
         },
         "end": {
           "line": 57,
           "column": 64,
-          "index": 2311
+          "index": 2333
         }
       },
       "inputs": [
@@ -1784,6 +1830,29 @@
         "theta_in",
         "frame_in",
         "phi_in"
+      ]
+    },
+    "1_L_": {
+      "cul_scope_id": 1,
+      "name": "L_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 59,
+          "column": 17,
+          "index": 2355
+        },
+        "end": {
+          "line": 63,
+          "column": 65,
+          "index": 2524
+        }
+      },
+      "inputs": [
+        "phi_in",
+        "theta_in",
+        "frame_in"
       ]
     }
   },
@@ -1916,6 +1985,11 @@
     {
       "to": "0_yp$",
       "from": "1_yp_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_L$",
+      "from": "1_L_",
       "reason": "explicit import"
     },
     {
@@ -2075,6 +2149,12 @@
       "negs": []
     },
     {
+      "to": "0_L",
+      "from": "0_L$",
+      "reason": "call",
+      "negs": []
+    },
+    {
       "to": "1_R1",
       "from": "0_R1",
       "reason": "implicit import"
@@ -2202,6 +2282,11 @@
     {
       "to": "1_yp",
       "from": "0_yp",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_L",
+      "from": "0_L",
       "reason": "implicit import"
     },
     {
@@ -2531,6 +2616,90 @@
       "from": "1_z",
       "reason": "call",
       "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_L_",
+      "from": "1_sinPhi",
+      "reason": "call",
+      "negs": []
     }
   ],
   "cul_scope_ids_to_resource": {
@@ -2651,6 +2820,11 @@
       "frame_in",
       "phi_in"
     ],
+    "0_L$": [
+      "phi_in",
+      "theta_in",
+      "frame_in"
+    ],
     "0_R1": [
       "R1_in"
     ],
@@ -2761,6 +2935,11 @@
       "frame_in",
       "phi_in"
     ],
+    "0_L": [
+      "phi_in",
+      "theta_in",
+      "frame_in"
+    ],
     "1_R1": [
       "R1_in"
     ],
@@ -2870,6 +3049,11 @@
       "theta_in",
       "frame_in",
       "phi_in"
+    ],
+    "1_L": [
+      "phi_in",
+      "theta_in",
+      "frame_in"
     ],
     "1_R1_": [
       "R1_in"
@@ -3004,7 +3188,12 @@
       "theta_in",
       "frame_in",
       "phi_in"
+    ],
+    "1_L_": [
+      "phi_in",
+      "theta_in",
+      "frame_in"
     ]
   },
-  "dot": "digraph {\n  \"0_R1$\" [cul_scope_id=0,name=\"R1$\",imported=R1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=R1_in,label=\"0_R1$ inputs: R1_in\"]\n  \"0_R2$\" [cul_scope_id=0,name=\"R2$\",imported=R2_,cul_source_scope_id=1,reason=\"explicit import\",inputs=R2_in,label=\"0_R2$ inputs: R2_in\"]\n  \"0_A$\" [cul_scope_id=0,name=\"A$\",imported=A_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_A$ inputs: frame_in\"]\n  \"0_B$\" [cul_scope_id=0,name=\"B$\",imported=B_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_B$ inputs: frame_in\"]\n  \"0_frame$\" [cul_scope_id=0,name=\"frame$\",imported=frame_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_frame$ inputs: frame_in\"]\n  \"0_K2$\" [cul_scope_id=0,name=\"K2$\",imported=K2_,cul_source_scope_id=1,reason=\"explicit import\",inputs=K2_in,label=\"0_K2$ inputs: K2_in\"]\n  \"0_K1$\" [cul_scope_id=0,name=\"K1$\",imported=K1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"0_K1$ inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"0_screen_width$\" [cul_scope_id=0,name=\"screen_width$\",imported=screen_width_,cul_source_scope_id=1,reason=\"explicit import\",inputs=screen_width_in,label=\"0_screen_width$ inputs: screen_width_in\"]\n  \"0_screen_height$\" [cul_scope_id=0,name=\"screen_height$\",imported=screen_height_,cul_source_scope_id=1,reason=\"explicit import\",inputs=screen_height_in,label=\"0_screen_height$ inputs: screen_height_in\"]\n  \"0_theta$\" [cul_scope_id=0,name=\"theta$\",imported=theta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_theta$ inputs: theta_in\"]\n  \"0_phi$\" [cul_scope_id=0,name=\"phi$\",imported=phi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_phi$ inputs: phi_in\"]\n  \"0_cosA$\" [cul_scope_id=0,name=\"cosA$\",imported=cosA_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_cosA$ inputs: frame_in\"]\n  \"0_sinA$\" [cul_scope_id=0,name=\"sinA$\",imported=sinA_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_sinA$ inputs: frame_in\"]\n  \"0_cosB$\" [cul_scope_id=0,name=\"cosB$\",imported=cosB_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_cosB$ inputs: frame_in\"]\n  \"0_sinB$\" [cul_scope_id=0,name=\"sinB$\",imported=sinB_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_sinB$ inputs: frame_in\"]\n  \"0_cosTheta$\" [cul_scope_id=0,name=\"cosTheta$\",imported=cosTheta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_cosTheta$ inputs: theta_in\"]\n  \"0_sinTheta$\" [cul_scope_id=0,name=\"sinTheta$\",imported=sinTheta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_sinTheta$ inputs: theta_in\"]\n  \"0_cosPhi$\" [cul_scope_id=0,name=\"cosPhi$\",imported=cosPhi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_cosPhi$ inputs: phi_in\"]\n  \"0_sinPhi$\" [cul_scope_id=0,name=\"sinPhi$\",imported=sinPhi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_sinPhi$ inputs: phi_in\"]\n  \"0_circlex$\" [cul_scope_id=0,name=\"circlex$\",imported=circlex_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in\",label=\"0_circlex$ inputs: R2_in,R1_in,theta_in\"]\n  \"0_circley$\" [cul_scope_id=0,name=\"circley$\",imported=circley_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R1_in,theta_in\",label=\"0_circley$ inputs: R1_in,theta_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_x$ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_y$ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_z$\" [cul_scope_id=0,name=\"z$\",imported=z_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"0_z$ inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"0_xp$\" [cul_scope_id=0,name=\"xp$\",imported=xp_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_xp$ inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_yp$\" [cul_scope_id=0,name=\"yp$\",imported=yp_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_yp$ inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_R1\" [cul_scope_id=0,name=R1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R1_in,label=\"0_R1 inputs: R1_in\"]\n  \"0_R2\" [cul_scope_id=0,name=R2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R2_in,label=\"0_R2 inputs: R2_in\"]\n  \"0_A\" [cul_scope_id=0,name=A,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_A inputs: frame_in\"]\n  \"0_B\" [cul_scope_id=0,name=B,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_B inputs: frame_in\"]\n  \"0_frame\" [cul_scope_id=0,name=frame,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_frame inputs: frame_in\"]\n  \"0_K2\" [cul_scope_id=0,name=K2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=K2_in,label=\"0_K2 inputs: K2_in\"]\n  \"0_K1\" [cul_scope_id=0,name=K1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"0_K1 inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"0_screen_width\" [cul_scope_id=0,name=screen_width,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_width_in,label=\"0_screen_width inputs: screen_width_in\"]\n  \"0_screen_height\" [cul_scope_id=0,name=screen_height,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_height_in,label=\"0_screen_height inputs: screen_height_in\"]\n  \"0_theta\" [cul_scope_id=0,name=theta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_theta inputs: theta_in\"]\n  \"0_phi\" [cul_scope_id=0,name=phi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_phi inputs: phi_in\"]\n  \"0_cosA\" [cul_scope_id=0,name=cosA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosA inputs: frame_in\"]\n  \"0_sinA\" [cul_scope_id=0,name=sinA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinA inputs: frame_in\"]\n  \"0_cosB\" [cul_scope_id=0,name=cosB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosB inputs: frame_in\"]\n  \"0_sinB\" [cul_scope_id=0,name=sinB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinB inputs: frame_in\"]\n  \"0_cosTheta\" [cul_scope_id=0,name=cosTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_cosTheta inputs: theta_in\"]\n  \"0_sinTheta\" [cul_scope_id=0,name=sinTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_sinTheta inputs: theta_in\"]\n  \"0_cosPhi\" [cul_scope_id=0,name=cosPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_cosPhi inputs: phi_in\"]\n  \"0_sinPhi\" [cul_scope_id=0,name=sinPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_sinPhi inputs: phi_in\"]\n  \"0_circlex\" [cul_scope_id=0,name=circlex,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in\",label=\"0_circlex inputs: R2_in,R1_in,theta_in\"]\n  \"0_circley\" [cul_scope_id=0,name=circley,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R1_in,theta_in\",label=\"0_circley inputs: R1_in,theta_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_x inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_y inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_z\" [cul_scope_id=0,name=z,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"0_z inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"0_xp\" [cul_scope_id=0,name=xp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_xp inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_yp\" [cul_scope_id=0,name=yp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_yp inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_R1\" [cul_scope_id=1,name=R1,cul_source_scope_id=0,reason=\"implicit import\",inputs=R1_in,label=\"1_R1 inputs: R1_in\"]\n  \"1_R2\" [cul_scope_id=1,name=R2,cul_source_scope_id=0,reason=\"implicit import\",inputs=R2_in,label=\"1_R2 inputs: R2_in\"]\n  \"1_A\" [cul_scope_id=1,name=A,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_A inputs: frame_in\"]\n  \"1_B\" [cul_scope_id=1,name=B,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_B inputs: frame_in\"]\n  \"1_frame\" [cul_scope_id=1,name=frame,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_frame inputs: frame_in\"]\n  \"1_K2\" [cul_scope_id=1,name=K2,cul_source_scope_id=0,reason=\"implicit import\",inputs=K2_in,label=\"1_K2 inputs: K2_in\"]\n  \"1_K1\" [cul_scope_id=1,name=K1,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"1_K1 inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"1_screen_width\" [cul_scope_id=1,name=screen_width,cul_source_scope_id=0,reason=\"implicit import\",inputs=screen_width_in,label=\"1_screen_width inputs: screen_width_in\"]\n  \"1_screen_height\" [cul_scope_id=1,name=screen_height,cul_source_scope_id=0,reason=\"implicit import\",inputs=screen_height_in,label=\"1_screen_height inputs: screen_height_in\"]\n  \"1_theta\" [cul_scope_id=1,name=theta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_theta inputs: theta_in\"]\n  \"1_phi\" [cul_scope_id=1,name=phi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_phi inputs: phi_in\"]\n  \"1_cosA\" [cul_scope_id=1,name=cosA,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_cosA inputs: frame_in\"]\n  \"1_sinA\" [cul_scope_id=1,name=sinA,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_sinA inputs: frame_in\"]\n  \"1_cosB\" [cul_scope_id=1,name=cosB,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_cosB inputs: frame_in\"]\n  \"1_sinB\" [cul_scope_id=1,name=sinB,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_sinB inputs: frame_in\"]\n  \"1_cosTheta\" [cul_scope_id=1,name=cosTheta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_cosTheta inputs: theta_in\"]\n  \"1_sinTheta\" [cul_scope_id=1,name=sinTheta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_sinTheta inputs: theta_in\"]\n  \"1_cosPhi\" [cul_scope_id=1,name=cosPhi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_cosPhi inputs: phi_in\"]\n  \"1_sinPhi\" [cul_scope_id=1,name=sinPhi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_sinPhi inputs: phi_in\"]\n  \"1_circlex\" [cul_scope_id=1,name=circlex,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in\",label=\"1_circlex inputs: R2_in,R1_in,theta_in\"]\n  \"1_circley\" [cul_scope_id=1,name=circley,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R1_in,theta_in\",label=\"1_circley inputs: R1_in,theta_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_x inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_y inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_z\" [cul_scope_id=1,name=z,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"1_z inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"1_xp\" [cul_scope_id=1,name=xp,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_xp inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_yp\" [cul_scope_id=1,name=yp,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_yp inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_R1_\" [cul_scope_id=1,name=R1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=R1_in,label=\"1_R1_ inputs: R1_in\"]\n  \"1_R1_in\" [cul_scope_id=1,name=R1_in,cul_source_scope_id=1,reason=\"input definition\",inputs=R1_in,label=\"1_R1_in inputs: R1_in\"]\n  \"1_R2_\" [cul_scope_id=1,name=R2_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=R2_in,label=\"1_R2_ inputs: R2_in\"]\n  \"1_R2_in\" [cul_scope_id=1,name=R2_in,cul_source_scope_id=1,reason=\"input definition\",inputs=R2_in,label=\"1_R2_in inputs: R2_in\"]\n  \"1_A_\" [cul_scope_id=1,name=A_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_A_ inputs: frame_in\"]\n  \"1_B_\" [cul_scope_id=1,name=B_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_B_ inputs: frame_in\"]\n  \"1_frame_\" [cul_scope_id=1,name=frame_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_frame_ inputs: frame_in\"]\n  \"1_frame_in\" [cul_scope_id=1,name=frame_in,cul_source_scope_id=1,reason=\"input definition\",inputs=frame_in,label=\"1_frame_in inputs: frame_in\"]\n  \"1_K2_\" [cul_scope_id=1,name=K2_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=K2_in,label=\"1_K2_ inputs: K2_in\"]\n  \"1_K2_in\" [cul_scope_id=1,name=K2_in,cul_source_scope_id=1,reason=\"input definition\",inputs=K2_in,label=\"1_K2_in inputs: K2_in\"]\n  \"1_K1_\" [cul_scope_id=1,name=K1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"1_K1_ inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"1_screen_width_\" [cul_scope_id=1,name=screen_width_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=screen_width_in,label=\"1_screen_width_ inputs: screen_width_in\"]\n  \"1_screen_width_in\" [cul_scope_id=1,name=screen_width_in,cul_source_scope_id=1,reason=\"input definition\",inputs=screen_width_in,label=\"1_screen_width_in inputs: screen_width_in\"]\n  \"1_screen_height_\" [cul_scope_id=1,name=screen_height_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=screen_height_in,label=\"1_screen_height_ inputs: screen_height_in\"]\n  \"1_screen_height_in\" [cul_scope_id=1,name=screen_height_in,cul_source_scope_id=1,reason=\"input definition\",inputs=screen_height_in,label=\"1_screen_height_in inputs: screen_height_in\"]\n  \"1_theta_\" [cul_scope_id=1,name=theta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_theta_ inputs: theta_in\"]\n  \"1_theta_in\" [cul_scope_id=1,name=theta_in,cul_source_scope_id=1,reason=\"input definition\",inputs=theta_in,label=\"1_theta_in inputs: theta_in\"]\n  \"1_phi_\" [cul_scope_id=1,name=phi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_phi_ inputs: phi_in\"]\n  \"1_phi_in\" [cul_scope_id=1,name=phi_in,cul_source_scope_id=1,reason=\"input definition\",inputs=phi_in,label=\"1_phi_in inputs: phi_in\"]\n  \"1_cosA_\" [cul_scope_id=1,name=cosA_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_cosA_ inputs: frame_in\"]\n  \"1_sinA_\" [cul_scope_id=1,name=sinA_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_sinA_ inputs: frame_in\"]\n  \"1_cosB_\" [cul_scope_id=1,name=cosB_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_cosB_ inputs: frame_in\"]\n  \"1_sinB_\" [cul_scope_id=1,name=sinB_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_sinB_ inputs: frame_in\"]\n  \"1_cosTheta_\" [cul_scope_id=1,name=cosTheta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_cosTheta_ inputs: theta_in\"]\n  \"1_sinTheta_\" [cul_scope_id=1,name=sinTheta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_sinTheta_ inputs: theta_in\"]\n  \"1_cosPhi_\" [cul_scope_id=1,name=cosPhi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_cosPhi_ inputs: phi_in\"]\n  \"1_sinPhi_\" [cul_scope_id=1,name=sinPhi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_sinPhi_ inputs: phi_in\"]\n  \"1_circlex_\" [cul_scope_id=1,name=circlex_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in\",label=\"1_circlex_ inputs: R2_in,R1_in,theta_in\"]\n  \"1_circley_\" [cul_scope_id=1,name=circley_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R1_in,theta_in\",label=\"1_circley_ inputs: R1_in,theta_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_x_ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_y_ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_z_\" [cul_scope_id=1,name=z_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"1_z_ inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"1_xp_\" [cul_scope_id=1,name=xp_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_xp_ inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_yp_\" [cul_scope_id=1,name=yp_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_yp_ inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_R1_\" -> \"0_R1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_R2_\" -> \"0_R2$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_A_\" -> \"0_A$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_B_\" -> \"0_B$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_frame_\" -> \"0_frame$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_K2_\" -> \"0_K2$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_K1_\" -> \"0_K1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_screen_width_\" -> \"0_screen_width$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_screen_height_\" -> \"0_screen_height$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_theta_\" -> \"0_theta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_phi_\" -> \"0_phi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosA_\" -> \"0_cosA$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinA_\" -> \"0_sinA$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosB_\" -> \"0_cosB$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinB_\" -> \"0_sinB$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosTheta_\" -> \"0_cosTheta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinTheta_\" -> \"0_sinTheta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosPhi_\" -> \"0_cosPhi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinPhi_\" -> \"0_sinPhi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_circlex_\" -> \"0_circlex$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_circley_\" -> \"0_circley$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_z_\" -> \"0_z$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_xp_\" -> \"0_xp$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_yp_\" -> \"0_yp$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_R1$\" -> \"0_R1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R2$\" -> \"0_R2\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_A$\" -> \"0_A\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_B$\" -> \"0_B\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_frame$\" -> \"0_frame\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K2$\" -> \"0_K2\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K1$\" -> \"0_K1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_width$\" -> \"0_screen_width\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_height$\" -> \"0_screen_height\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_theta$\" -> \"0_theta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_phi$\" -> \"0_phi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosA$\" -> \"0_cosA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA$\" -> \"0_sinA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosB$\" -> \"0_cosB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinB$\" -> \"0_sinB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosTheta$\" -> \"0_cosTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinTheta$\" -> \"0_sinTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosPhi$\" -> \"0_cosPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi$\" -> \"0_sinPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circlex$\" -> \"0_circlex\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circley$\" -> \"0_circley\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z$\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_xp$\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_yp$\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R1\" -> \"1_R1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_R2\" -> \"1_R2\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_A\" -> \"1_A\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_B\" -> \"1_B\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_frame\" -> \"1_frame\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_K2\" -> \"1_K2\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_K1\" -> \"1_K1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_screen_width\" -> \"1_screen_width\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_screen_height\" -> \"1_screen_height\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_theta\" -> \"1_theta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_phi\" -> \"1_phi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosA\" -> \"1_cosA\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinA\" -> \"1_sinA\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosB\" -> \"1_cosB\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinB\" -> \"1_sinB\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosTheta\" -> \"1_cosTheta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinTheta\" -> \"1_sinTheta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosPhi\" -> \"1_cosPhi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinPhi\" -> \"1_sinPhi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_circlex\" -> \"1_circlex\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_circley\" -> \"1_circley\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_z\" -> \"1_z\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_xp\" -> \"1_xp\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_yp\" -> \"1_yp\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_R1_in\" -> \"1_R1_\" [value=\"[object Object]\",label=\"input +R1_in\"]\n  \"1_R2_in\" -> \"1_R2_\" [value=\"[object Object]\",label=\"input +R2_in\"]\n  \"1_frame\" -> \"1_A_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_frame\" -> \"1_B_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_frame_in\" -> \"1_frame_\" [value=\"[object Object]\",label=\"input +frame_in\"]\n  \"1_K2_in\" -> \"1_K2_\" [value=\"[object Object]\",label=\"input +K2_in\"]\n  \"1_screen_width\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K2\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R2\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_width_in\" -> \"1_screen_width_\" [value=\"[object Object]\",label=\"input +screen_width_in\"]\n  \"1_screen_height_in\" -> \"1_screen_height_\" [value=\"[object Object]\",label=\"input +screen_height_in\"]\n  \"1_theta_in\" -> \"1_theta_\" [value=\"[object Object]\",label=\"input +theta_in\"]\n  \"1_phi_in\" -> \"1_phi_\" [value=\"[object Object]\",label=\"input +phi_in\"]\n  \"1_A\" -> \"1_cosA_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_A\" -> \"1_sinA_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_B\" -> \"1_cosB_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_B\" -> \"1_sinB_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_theta\" -> \"1_cosTheta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_theta\" -> \"1_sinTheta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_cosPhi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_sinPhi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R2\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosTheta\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_circley_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinTheta\" -> \"1_circley_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosB\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinTheta\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosTheta\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinB\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosPhi\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosB\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circley\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosA\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K2\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosA\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circley\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_width\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K1\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_height\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K1\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_R1$\" [cul_scope_id=0,name=\"R1$\",imported=R1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=R1_in,label=\"0_R1$ inputs: R1_in\"]\n  \"0_R2$\" [cul_scope_id=0,name=\"R2$\",imported=R2_,cul_source_scope_id=1,reason=\"explicit import\",inputs=R2_in,label=\"0_R2$ inputs: R2_in\"]\n  \"0_A$\" [cul_scope_id=0,name=\"A$\",imported=A_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_A$ inputs: frame_in\"]\n  \"0_B$\" [cul_scope_id=0,name=\"B$\",imported=B_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_B$ inputs: frame_in\"]\n  \"0_frame$\" [cul_scope_id=0,name=\"frame$\",imported=frame_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_frame$ inputs: frame_in\"]\n  \"0_K2$\" [cul_scope_id=0,name=\"K2$\",imported=K2_,cul_source_scope_id=1,reason=\"explicit import\",inputs=K2_in,label=\"0_K2$ inputs: K2_in\"]\n  \"0_K1$\" [cul_scope_id=0,name=\"K1$\",imported=K1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"0_K1$ inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"0_screen_width$\" [cul_scope_id=0,name=\"screen_width$\",imported=screen_width_,cul_source_scope_id=1,reason=\"explicit import\",inputs=screen_width_in,label=\"0_screen_width$ inputs: screen_width_in\"]\n  \"0_screen_height$\" [cul_scope_id=0,name=\"screen_height$\",imported=screen_height_,cul_source_scope_id=1,reason=\"explicit import\",inputs=screen_height_in,label=\"0_screen_height$ inputs: screen_height_in\"]\n  \"0_theta$\" [cul_scope_id=0,name=\"theta$\",imported=theta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_theta$ inputs: theta_in\"]\n  \"0_phi$\" [cul_scope_id=0,name=\"phi$\",imported=phi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_phi$ inputs: phi_in\"]\n  \"0_cosA$\" [cul_scope_id=0,name=\"cosA$\",imported=cosA_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_cosA$ inputs: frame_in\"]\n  \"0_sinA$\" [cul_scope_id=0,name=\"sinA$\",imported=sinA_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_sinA$ inputs: frame_in\"]\n  \"0_cosB$\" [cul_scope_id=0,name=\"cosB$\",imported=cosB_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_cosB$ inputs: frame_in\"]\n  \"0_sinB$\" [cul_scope_id=0,name=\"sinB$\",imported=sinB_,cul_source_scope_id=1,reason=\"explicit import\",inputs=frame_in,label=\"0_sinB$ inputs: frame_in\"]\n  \"0_cosTheta$\" [cul_scope_id=0,name=\"cosTheta$\",imported=cosTheta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_cosTheta$ inputs: theta_in\"]\n  \"0_sinTheta$\" [cul_scope_id=0,name=\"sinTheta$\",imported=sinTheta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=theta_in,label=\"0_sinTheta$ inputs: theta_in\"]\n  \"0_cosPhi$\" [cul_scope_id=0,name=\"cosPhi$\",imported=cosPhi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_cosPhi$ inputs: phi_in\"]\n  \"0_sinPhi$\" [cul_scope_id=0,name=\"sinPhi$\",imported=sinPhi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=phi_in,label=\"0_sinPhi$ inputs: phi_in\"]\n  \"0_circlex$\" [cul_scope_id=0,name=\"circlex$\",imported=circlex_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in\",label=\"0_circlex$ inputs: R2_in,R1_in,theta_in\"]\n  \"0_circley$\" [cul_scope_id=0,name=\"circley$\",imported=circley_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R1_in,theta_in\",label=\"0_circley$ inputs: R1_in,theta_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_x$ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_y$ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_z$\" [cul_scope_id=0,name=\"z$\",imported=z_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"0_z$ inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"0_xp$\" [cul_scope_id=0,name=\"xp$\",imported=xp_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_xp$ inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_yp$\" [cul_scope_id=0,name=\"yp$\",imported=yp_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_yp$ inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_L$\" [cul_scope_id=0,name=\"L$\",imported=L_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"phi_in,theta_in,frame_in\",label=\"0_L$ inputs: phi_in,theta_in,frame_in\"]\n  \"0_R1\" [cul_scope_id=0,name=R1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R1_in,label=\"0_R1 inputs: R1_in\"]\n  \"0_R2\" [cul_scope_id=0,name=R2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R2_in,label=\"0_R2 inputs: R2_in\"]\n  \"0_A\" [cul_scope_id=0,name=A,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_A inputs: frame_in\"]\n  \"0_B\" [cul_scope_id=0,name=B,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_B inputs: frame_in\"]\n  \"0_frame\" [cul_scope_id=0,name=frame,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_frame inputs: frame_in\"]\n  \"0_K2\" [cul_scope_id=0,name=K2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=K2_in,label=\"0_K2 inputs: K2_in\"]\n  \"0_K1\" [cul_scope_id=0,name=K1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"0_K1 inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"0_screen_width\" [cul_scope_id=0,name=screen_width,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_width_in,label=\"0_screen_width inputs: screen_width_in\"]\n  \"0_screen_height\" [cul_scope_id=0,name=screen_height,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_height_in,label=\"0_screen_height inputs: screen_height_in\"]\n  \"0_theta\" [cul_scope_id=0,name=theta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_theta inputs: theta_in\"]\n  \"0_phi\" [cul_scope_id=0,name=phi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_phi inputs: phi_in\"]\n  \"0_cosA\" [cul_scope_id=0,name=cosA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosA inputs: frame_in\"]\n  \"0_sinA\" [cul_scope_id=0,name=sinA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinA inputs: frame_in\"]\n  \"0_cosB\" [cul_scope_id=0,name=cosB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosB inputs: frame_in\"]\n  \"0_sinB\" [cul_scope_id=0,name=sinB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinB inputs: frame_in\"]\n  \"0_cosTheta\" [cul_scope_id=0,name=cosTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_cosTheta inputs: theta_in\"]\n  \"0_sinTheta\" [cul_scope_id=0,name=sinTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_sinTheta inputs: theta_in\"]\n  \"0_cosPhi\" [cul_scope_id=0,name=cosPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_cosPhi inputs: phi_in\"]\n  \"0_sinPhi\" [cul_scope_id=0,name=sinPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_sinPhi inputs: phi_in\"]\n  \"0_circlex\" [cul_scope_id=0,name=circlex,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in\",label=\"0_circlex inputs: R2_in,R1_in,theta_in\"]\n  \"0_circley\" [cul_scope_id=0,name=circley,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R1_in,theta_in\",label=\"0_circley inputs: R1_in,theta_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_x inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_y inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_z\" [cul_scope_id=0,name=z,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"0_z inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"0_xp\" [cul_scope_id=0,name=xp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_xp inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_yp\" [cul_scope_id=0,name=yp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"0_yp inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"0_L\" [cul_scope_id=0,name=L,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"phi_in,theta_in,frame_in\",label=\"0_L inputs: phi_in,theta_in,frame_in\"]\n  \"1_R1\" [cul_scope_id=1,name=R1,cul_source_scope_id=0,reason=\"implicit import\",inputs=R1_in,label=\"1_R1 inputs: R1_in\"]\n  \"1_R2\" [cul_scope_id=1,name=R2,cul_source_scope_id=0,reason=\"implicit import\",inputs=R2_in,label=\"1_R2 inputs: R2_in\"]\n  \"1_A\" [cul_scope_id=1,name=A,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_A inputs: frame_in\"]\n  \"1_B\" [cul_scope_id=1,name=B,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_B inputs: frame_in\"]\n  \"1_frame\" [cul_scope_id=1,name=frame,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_frame inputs: frame_in\"]\n  \"1_K2\" [cul_scope_id=1,name=K2,cul_source_scope_id=0,reason=\"implicit import\",inputs=K2_in,label=\"1_K2 inputs: K2_in\"]\n  \"1_K1\" [cul_scope_id=1,name=K1,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"1_K1 inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"1_screen_width\" [cul_scope_id=1,name=screen_width,cul_source_scope_id=0,reason=\"implicit import\",inputs=screen_width_in,label=\"1_screen_width inputs: screen_width_in\"]\n  \"1_screen_height\" [cul_scope_id=1,name=screen_height,cul_source_scope_id=0,reason=\"implicit import\",inputs=screen_height_in,label=\"1_screen_height inputs: screen_height_in\"]\n  \"1_theta\" [cul_scope_id=1,name=theta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_theta inputs: theta_in\"]\n  \"1_phi\" [cul_scope_id=1,name=phi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_phi inputs: phi_in\"]\n  \"1_cosA\" [cul_scope_id=1,name=cosA,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_cosA inputs: frame_in\"]\n  \"1_sinA\" [cul_scope_id=1,name=sinA,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_sinA inputs: frame_in\"]\n  \"1_cosB\" [cul_scope_id=1,name=cosB,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_cosB inputs: frame_in\"]\n  \"1_sinB\" [cul_scope_id=1,name=sinB,cul_source_scope_id=0,reason=\"implicit import\",inputs=frame_in,label=\"1_sinB inputs: frame_in\"]\n  \"1_cosTheta\" [cul_scope_id=1,name=cosTheta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_cosTheta inputs: theta_in\"]\n  \"1_sinTheta\" [cul_scope_id=1,name=sinTheta,cul_source_scope_id=0,reason=\"implicit import\",inputs=theta_in,label=\"1_sinTheta inputs: theta_in\"]\n  \"1_cosPhi\" [cul_scope_id=1,name=cosPhi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_cosPhi inputs: phi_in\"]\n  \"1_sinPhi\" [cul_scope_id=1,name=sinPhi,cul_source_scope_id=0,reason=\"implicit import\",inputs=phi_in,label=\"1_sinPhi inputs: phi_in\"]\n  \"1_circlex\" [cul_scope_id=1,name=circlex,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in\",label=\"1_circlex inputs: R2_in,R1_in,theta_in\"]\n  \"1_circley\" [cul_scope_id=1,name=circley,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R1_in,theta_in\",label=\"1_circley inputs: R1_in,theta_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_x inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_y inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_z\" [cul_scope_id=1,name=z,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"1_z inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"1_xp\" [cul_scope_id=1,name=xp,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_xp inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_yp\" [cul_scope_id=1,name=yp,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_yp inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_L\" [cul_scope_id=1,name=L,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"phi_in,theta_in,frame_in\",label=\"1_L inputs: phi_in,theta_in,frame_in\"]\n  \"1_R1_\" [cul_scope_id=1,name=R1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=R1_in,label=\"1_R1_ inputs: R1_in\"]\n  \"1_R1_in\" [cul_scope_id=1,name=R1_in,cul_source_scope_id=1,reason=\"input definition\",inputs=R1_in,label=\"1_R1_in inputs: R1_in\"]\n  \"1_R2_\" [cul_scope_id=1,name=R2_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=R2_in,label=\"1_R2_ inputs: R2_in\"]\n  \"1_R2_in\" [cul_scope_id=1,name=R2_in,cul_source_scope_id=1,reason=\"input definition\",inputs=R2_in,label=\"1_R2_in inputs: R2_in\"]\n  \"1_A_\" [cul_scope_id=1,name=A_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_A_ inputs: frame_in\"]\n  \"1_B_\" [cul_scope_id=1,name=B_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_B_ inputs: frame_in\"]\n  \"1_frame_\" [cul_scope_id=1,name=frame_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_frame_ inputs: frame_in\"]\n  \"1_frame_in\" [cul_scope_id=1,name=frame_in,cul_source_scope_id=1,reason=\"input definition\",inputs=frame_in,label=\"1_frame_in inputs: frame_in\"]\n  \"1_K2_\" [cul_scope_id=1,name=K2_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=K2_in,label=\"1_K2_ inputs: K2_in\"]\n  \"1_K2_in\" [cul_scope_id=1,name=K2_in,cul_source_scope_id=1,reason=\"input definition\",inputs=K2_in,label=\"1_K2_in inputs: K2_in\"]\n  \"1_K1_\" [cul_scope_id=1,name=K1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in\",label=\"1_K1_ inputs: screen_width_in,K2_in,R1_in,R2_in\"]\n  \"1_screen_width_\" [cul_scope_id=1,name=screen_width_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=screen_width_in,label=\"1_screen_width_ inputs: screen_width_in\"]\n  \"1_screen_width_in\" [cul_scope_id=1,name=screen_width_in,cul_source_scope_id=1,reason=\"input definition\",inputs=screen_width_in,label=\"1_screen_width_in inputs: screen_width_in\"]\n  \"1_screen_height_\" [cul_scope_id=1,name=screen_height_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=screen_height_in,label=\"1_screen_height_ inputs: screen_height_in\"]\n  \"1_screen_height_in\" [cul_scope_id=1,name=screen_height_in,cul_source_scope_id=1,reason=\"input definition\",inputs=screen_height_in,label=\"1_screen_height_in inputs: screen_height_in\"]\n  \"1_theta_\" [cul_scope_id=1,name=theta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_theta_ inputs: theta_in\"]\n  \"1_theta_in\" [cul_scope_id=1,name=theta_in,cul_source_scope_id=1,reason=\"input definition\",inputs=theta_in,label=\"1_theta_in inputs: theta_in\"]\n  \"1_phi_\" [cul_scope_id=1,name=phi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_phi_ inputs: phi_in\"]\n  \"1_phi_in\" [cul_scope_id=1,name=phi_in,cul_source_scope_id=1,reason=\"input definition\",inputs=phi_in,label=\"1_phi_in inputs: phi_in\"]\n  \"1_cosA_\" [cul_scope_id=1,name=cosA_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_cosA_ inputs: frame_in\"]\n  \"1_sinA_\" [cul_scope_id=1,name=sinA_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_sinA_ inputs: frame_in\"]\n  \"1_cosB_\" [cul_scope_id=1,name=cosB_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_cosB_ inputs: frame_in\"]\n  \"1_sinB_\" [cul_scope_id=1,name=sinB_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=frame_in,label=\"1_sinB_ inputs: frame_in\"]\n  \"1_cosTheta_\" [cul_scope_id=1,name=cosTheta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_cosTheta_ inputs: theta_in\"]\n  \"1_sinTheta_\" [cul_scope_id=1,name=sinTheta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=theta_in,label=\"1_sinTheta_ inputs: theta_in\"]\n  \"1_cosPhi_\" [cul_scope_id=1,name=cosPhi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_cosPhi_ inputs: phi_in\"]\n  \"1_sinPhi_\" [cul_scope_id=1,name=sinPhi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=phi_in,label=\"1_sinPhi_ inputs: phi_in\"]\n  \"1_circlex_\" [cul_scope_id=1,name=circlex_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in\",label=\"1_circlex_ inputs: R2_in,R1_in,theta_in\"]\n  \"1_circley_\" [cul_scope_id=1,name=circley_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R1_in,theta_in\",label=\"1_circley_ inputs: R1_in,theta_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_x_ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"1_y_ inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"1_z_\" [cul_scope_id=1,name=z_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"1_z_ inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"1_xp_\" [cul_scope_id=1,name=xp_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_xp_ inputs: screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_yp_\" [cul_scope_id=1,name=yp_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\",label=\"1_yp_ inputs: screen_height_in,screen_width_in,K2_in,R1_in,R2_in,theta_in,frame_in,phi_in\"]\n  \"1_L_\" [cul_scope_id=1,name=L_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"phi_in,theta_in,frame_in\",label=\"1_L_ inputs: phi_in,theta_in,frame_in\"]\n  \"1_R1_\" -> \"0_R1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_R2_\" -> \"0_R2$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_A_\" -> \"0_A$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_B_\" -> \"0_B$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_frame_\" -> \"0_frame$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_K2_\" -> \"0_K2$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_K1_\" -> \"0_K1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_screen_width_\" -> \"0_screen_width$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_screen_height_\" -> \"0_screen_height$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_theta_\" -> \"0_theta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_phi_\" -> \"0_phi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosA_\" -> \"0_cosA$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinA_\" -> \"0_sinA$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosB_\" -> \"0_cosB$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinB_\" -> \"0_sinB$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosTheta_\" -> \"0_cosTheta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinTheta_\" -> \"0_sinTheta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_cosPhi_\" -> \"0_cosPhi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sinPhi_\" -> \"0_sinPhi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_circlex_\" -> \"0_circlex$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_circley_\" -> \"0_circley$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_z_\" -> \"0_z$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_xp_\" -> \"0_xp$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_yp_\" -> \"0_yp$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_L_\" -> \"0_L$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_R1$\" -> \"0_R1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R2$\" -> \"0_R2\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_A$\" -> \"0_A\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_B$\" -> \"0_B\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_frame$\" -> \"0_frame\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K2$\" -> \"0_K2\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K1$\" -> \"0_K1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_width$\" -> \"0_screen_width\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_height$\" -> \"0_screen_height\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_theta$\" -> \"0_theta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_phi$\" -> \"0_phi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosA$\" -> \"0_cosA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA$\" -> \"0_sinA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosB$\" -> \"0_cosB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinB$\" -> \"0_sinB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosTheta$\" -> \"0_cosTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinTheta$\" -> \"0_sinTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosPhi$\" -> \"0_cosPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi$\" -> \"0_sinPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circlex$\" -> \"0_circlex\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circley$\" -> \"0_circley\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z$\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_xp$\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_yp$\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_L$\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R1\" -> \"1_R1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_R2\" -> \"1_R2\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_A\" -> \"1_A\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_B\" -> \"1_B\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_frame\" -> \"1_frame\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_K2\" -> \"1_K2\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_K1\" -> \"1_K1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_screen_width\" -> \"1_screen_width\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_screen_height\" -> \"1_screen_height\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_theta\" -> \"1_theta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_phi\" -> \"1_phi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosA\" -> \"1_cosA\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinA\" -> \"1_sinA\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosB\" -> \"1_cosB\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinB\" -> \"1_sinB\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosTheta\" -> \"1_cosTheta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinTheta\" -> \"1_sinTheta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_cosPhi\" -> \"1_cosPhi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sinPhi\" -> \"1_sinPhi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_circlex\" -> \"1_circlex\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_circley\" -> \"1_circley\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_z\" -> \"1_z\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_xp\" -> \"1_xp\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_yp\" -> \"1_yp\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_L\" -> \"1_L\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_R1_in\" -> \"1_R1_\" [value=\"[object Object]\",label=\"input +R1_in\"]\n  \"1_R2_in\" -> \"1_R2_\" [value=\"[object Object]\",label=\"input +R2_in\"]\n  \"1_frame\" -> \"1_A_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_frame\" -> \"1_B_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_frame_in\" -> \"1_frame_\" [value=\"[object Object]\",label=\"input +frame_in\"]\n  \"1_K2_in\" -> \"1_K2_\" [value=\"[object Object]\",label=\"input +K2_in\"]\n  \"1_screen_width\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K2\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R2\" -> \"1_K1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_width_in\" -> \"1_screen_width_\" [value=\"[object Object]\",label=\"input +screen_width_in\"]\n  \"1_screen_height_in\" -> \"1_screen_height_\" [value=\"[object Object]\",label=\"input +screen_height_in\"]\n  \"1_theta_in\" -> \"1_theta_\" [value=\"[object Object]\",label=\"input +theta_in\"]\n  \"1_phi_in\" -> \"1_phi_\" [value=\"[object Object]\",label=\"input +phi_in\"]\n  \"1_A\" -> \"1_cosA_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_A\" -> \"1_sinA_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_B\" -> \"1_cosB_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_B\" -> \"1_sinB_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_theta\" -> \"1_cosTheta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_theta\" -> \"1_sinTheta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_cosPhi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_sinPhi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R2\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosTheta\" -> \"1_circlex_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_R1\" -> \"1_circley_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinTheta\" -> \"1_circley_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosB\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinTheta\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosTheta\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinB\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosPhi\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosB\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circley\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosA\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K2\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosA\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circlex\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_circley\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_width\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K1\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_xp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_screen_height\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_K1\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_yp_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosPhi\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosTheta\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinB\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosA\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinPhi\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinA\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sinTheta\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_cosB\" -> \"1_L_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

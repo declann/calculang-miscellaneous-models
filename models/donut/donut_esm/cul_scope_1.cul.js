@@ -4,7 +4,7 @@
 // also interesting to compare separation of concerns.
 // go to Andys blog (also https://www.a1k0n.net/2021/01/13/optimizing-donut.html)
 // to understand the math in this hurried conversion!
-// soon I will elaborate more on how calculang helps to understand the math.
+// soon I will elaborate specifically on how calculang can be used to understand the math/numbers.
 
 // torus params
 export const R1 = () => R1_in;
@@ -55,3 +55,9 @@ export const z = () =>
 // coordinates in 2d projection
 export const xp = () => screen_width() / 2 + (K1() * x()) / z();
 export const yp = () => screen_height() / 2 - (K1() * y()) / z();
+
+export const L = () =>
+  cosPhi() * cosTheta() * sinB() -
+  cosA() * cosTheta() * sinPhi() -
+  sinA() * sinTheta() +
+  cosB() * (cosA() * sinTheta() - cosTheta() * sinA() * sinPhi());

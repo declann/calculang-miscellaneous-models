@@ -3,7 +3,7 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { R1_ as R1$, R2_ as R2$, A_ as A$, B_ as B$, frame_ as frame$, K2_ as K2$, K1_ as K1$, screen_width_ as screen_width$, screen_height_ as screen_height$, theta_ as theta$, phi_ as phi$, cosA_ as cosA$, sinA_ as sinA$, cosB_ as cosB$, sinB_ as sinB$, cosTheta_ as cosTheta$, sinTheta_ as sinTheta$, cosPhi_ as cosPhi$, sinPhi_ as sinPhi$, circlex_ as circlex$, circley_ as circley$, x_ as x$, y_ as y$, z_ as z$, xp_ as xp$, yp_ as yp$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+import { R1_ as R1$, R2_ as R2$, A_ as A$, B_ as B$, frame_ as frame$, K2_ as K2$, K1_ as K1$, screen_width_ as screen_width$, screen_height_ as screen_height$, theta_ as theta$, phi_ as phi$, cosA_ as cosA$, sinA_ as sinA$, cosB_ as cosB$, sinB_ as sinB$, cosTheta_ as cosTheta$, sinTheta_ as sinTheta$, cosPhi_ as cosPhi$, sinPhi_ as sinPhi$, circlex_ as circlex$, circley_ as circley$, x_ as x$, y_ as y$, z_ as z$, xp_ as xp$, yp_ as yp$, L_ as L$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
 
 
 
@@ -316,3 +316,15 @@ export const yp = (a) => {
   yp$({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end yp memo-loader code //////////
+
+
+
+////////// start L memo-loader code //////////
+//const L$m = memoize(999999, isEqual)(L$);
+export const L$m = memoize(L$, JSON.stringify);
+export const L = (a) => {
+  return L$m(a);
+  // eslint-disable-next-line no-undef
+  L$({ phi_in, theta_in, frame_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end L memo-loader code //////////

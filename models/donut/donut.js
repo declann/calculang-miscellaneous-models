@@ -152,7 +152,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "xp", function() { return xp; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yp$m", function() { return yp$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yp", function() { return yp; });
-/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "L$m", function() { return L$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "L", function() { return L; });
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
 /* harmony import */ var _donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 
 
@@ -165,11 +167,11 @@ __webpack_require__.r(__webpack_exports__);
 
 ////////// start R1 memo-loader code //////////
 //const R1$m = memoize(999999, isEqual)(R1$);
-const R1$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R1_ */ "e"], JSON.stringify);
+const R1$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R1_ */ "f"], JSON.stringify);
 const R1 = (a) => {
   return R1$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R1_ */ "e"])({ R1_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R1_ */ "f"])({ R1_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end R1 memo-loader code //////////
 
@@ -177,11 +179,11 @@ const R1 = (a) => {
 
 ////////// start R2 memo-loader code //////////
 //const R2$m = memoize(999999, isEqual)(R2$);
-const R2$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R2_ */ "f"], JSON.stringify);
+const R2$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R2_ */ "g"], JSON.stringify);
 const R2 = (a) => {
   return R2$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R2_ */ "f"])({ R2_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* R2_ */ "g"])({ R2_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end R2 memo-loader code //////////
 
@@ -213,11 +215,11 @@ const B = (a) => {
 
 ////////// start frame memo-loader code //////////
 //const frame$m = memoize(999999, isEqual)(frame$);
-const frame$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* frame_ */ "m"], JSON.stringify);
+const frame$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* frame_ */ "n"], JSON.stringify);
 const frame = (a) => {
   return frame$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* frame_ */ "m"])({ frame_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* frame_ */ "n"])({ frame_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end frame memo-loader code //////////
 
@@ -249,11 +251,11 @@ const K1 = (a) => {
 
 ////////// start screen_width memo-loader code //////////
 //const screen_width$m = memoize(999999, isEqual)(screen_width$);
-const screen_width$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_width_ */ "p"], JSON.stringify);
+const screen_width$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_width_ */ "q"], JSON.stringify);
 const screen_width = (a) => {
   return screen_width$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_width_ */ "p"])({ screen_width_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_width_ */ "q"])({ screen_width_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end screen_width memo-loader code //////////
 
@@ -261,11 +263,11 @@ const screen_width = (a) => {
 
 ////////// start screen_height memo-loader code //////////
 //const screen_height$m = memoize(999999, isEqual)(screen_height$);
-const screen_height$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_height_ */ "o"], JSON.stringify);
+const screen_height$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_height_ */ "p"], JSON.stringify);
 const screen_height = (a) => {
   return screen_height$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_height_ */ "o"])({ screen_height_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* screen_height_ */ "p"])({ screen_height_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end screen_height memo-loader code //////////
 
@@ -273,11 +275,11 @@ const screen_height = (a) => {
 
 ////////// start theta memo-loader code //////////
 //const theta$m = memoize(999999, isEqual)(theta$);
-const theta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* theta_ */ "u"], JSON.stringify);
+const theta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* theta_ */ "v"], JSON.stringify);
 const theta = (a) => {
   return theta$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* theta_ */ "u"])({ theta_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* theta_ */ "v"])({ theta_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end theta memo-loader code //////////
 
@@ -285,11 +287,11 @@ const theta = (a) => {
 
 ////////// start phi memo-loader code //////////
 //const phi$m = memoize(999999, isEqual)(phi$);
-const phi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "n"], JSON.stringify);
+const phi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "o"], JSON.stringify);
 const phi = (a) => {
   return phi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "n"])({ phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "o"])({ phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end phi memo-loader code //////////
 
@@ -297,11 +299,11 @@ const phi = (a) => {
 
 ////////// start cosA memo-loader code //////////
 //const cosA$m = memoize(999999, isEqual)(cosA$);
-const cosA$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosA_ */ "i"], JSON.stringify);
+const cosA$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosA_ */ "j"], JSON.stringify);
 const cosA = (a) => {
   return cosA$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosA_ */ "i"])({ frame_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosA_ */ "j"])({ frame_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end cosA memo-loader code //////////
 
@@ -309,11 +311,11 @@ const cosA = (a) => {
 
 ////////// start sinA memo-loader code //////////
 //const sinA$m = memoize(999999, isEqual)(sinA$);
-const sinA$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinA_ */ "q"], JSON.stringify);
+const sinA$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinA_ */ "r"], JSON.stringify);
 const sinA = (a) => {
   return sinA$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinA_ */ "q"])({ frame_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinA_ */ "r"])({ frame_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sinA memo-loader code //////////
 
@@ -321,11 +323,11 @@ const sinA = (a) => {
 
 ////////// start cosB memo-loader code //////////
 //const cosB$m = memoize(999999, isEqual)(cosB$);
-const cosB$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosB_ */ "j"], JSON.stringify);
+const cosB$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosB_ */ "k"], JSON.stringify);
 const cosB = (a) => {
   return cosB$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosB_ */ "j"])({ frame_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosB_ */ "k"])({ frame_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end cosB memo-loader code //////////
 
@@ -333,11 +335,11 @@ const cosB = (a) => {
 
 ////////// start sinB memo-loader code //////////
 //const sinB$m = memoize(999999, isEqual)(sinB$);
-const sinB$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinB_ */ "r"], JSON.stringify);
+const sinB$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinB_ */ "s"], JSON.stringify);
 const sinB = (a) => {
   return sinB$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinB_ */ "r"])({ frame_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinB_ */ "s"])({ frame_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sinB memo-loader code //////////
 
@@ -345,11 +347,11 @@ const sinB = (a) => {
 
 ////////// start cosTheta memo-loader code //////////
 //const cosTheta$m = memoize(999999, isEqual)(cosTheta$);
-const cosTheta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosTheta_ */ "l"], JSON.stringify);
+const cosTheta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosTheta_ */ "m"], JSON.stringify);
 const cosTheta = (a) => {
   return cosTheta$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosTheta_ */ "l"])({ theta_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosTheta_ */ "m"])({ theta_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end cosTheta memo-loader code //////////
 
@@ -357,11 +359,11 @@ const cosTheta = (a) => {
 
 ////////// start sinTheta memo-loader code //////////
 //const sinTheta$m = memoize(999999, isEqual)(sinTheta$);
-const sinTheta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinTheta_ */ "t"], JSON.stringify);
+const sinTheta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinTheta_ */ "u"], JSON.stringify);
 const sinTheta = (a) => {
   return sinTheta$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinTheta_ */ "t"])({ theta_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinTheta_ */ "u"])({ theta_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sinTheta memo-loader code //////////
 
@@ -369,11 +371,11 @@ const sinTheta = (a) => {
 
 ////////// start cosPhi memo-loader code //////////
 //const cosPhi$m = memoize(999999, isEqual)(cosPhi$);
-const cosPhi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosPhi_ */ "k"], JSON.stringify);
+const cosPhi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosPhi_ */ "l"], JSON.stringify);
 const cosPhi = (a) => {
   return cosPhi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosPhi_ */ "k"])({ phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* cosPhi_ */ "l"])({ phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end cosPhi memo-loader code //////////
 
@@ -381,11 +383,11 @@ const cosPhi = (a) => {
 
 ////////// start sinPhi memo-loader code //////////
 //const sinPhi$m = memoize(999999, isEqual)(sinPhi$);
-const sinPhi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinPhi_ */ "s"], JSON.stringify);
+const sinPhi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinPhi_ */ "t"], JSON.stringify);
 const sinPhi = (a) => {
   return sinPhi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinPhi_ */ "s"])({ phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sinPhi_ */ "t"])({ phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sinPhi memo-loader code //////////
 
@@ -393,11 +395,11 @@ const sinPhi = (a) => {
 
 ////////// start circlex memo-loader code //////////
 //const circlex$m = memoize(999999, isEqual)(circlex$);
-const circlex$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circlex_ */ "g"], JSON.stringify);
+const circlex$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circlex_ */ "h"], JSON.stringify);
 const circlex = (a) => {
   return circlex$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circlex_ */ "g"])({ R2_in, R1_in, theta_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circlex_ */ "h"])({ R2_in, R1_in, theta_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end circlex memo-loader code //////////
 
@@ -405,11 +407,11 @@ const circlex = (a) => {
 
 ////////// start circley memo-loader code //////////
 //const circley$m = memoize(999999, isEqual)(circley$);
-const circley$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circley_ */ "h"], JSON.stringify);
+const circley$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circley_ */ "i"], JSON.stringify);
 const circley = (a) => {
   return circley$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circley_ */ "h"])({ R1_in, theta_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* circley_ */ "i"])({ R1_in, theta_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end circley memo-loader code //////////
 
@@ -417,11 +419,11 @@ const circley = (a) => {
 
 ////////// start x memo-loader code //////////
 //const x$m = memoize(999999, isEqual)(x$);
-const x$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "v"], JSON.stringify);
+const x$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "w"], JSON.stringify);
 const x = (a) => {
   return x$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "v"])({ R2_in, R1_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "w"])({ R2_in, R1_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end x memo-loader code //////////
 
@@ -429,11 +431,11 @@ const x = (a) => {
 
 ////////// start y memo-loader code //////////
 //const y$m = memoize(999999, isEqual)(y$);
-const y$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "x"], JSON.stringify);
+const y$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "y"], JSON.stringify);
 const y = (a) => {
   return y$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "x"])({ R2_in, R1_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "y"])({ R2_in, R1_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end y memo-loader code //////////
 
@@ -441,11 +443,11 @@ const y = (a) => {
 
 ////////// start z memo-loader code //////////
 //const z$m = memoize(999999, isEqual)(z$);
-const z$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "z"], JSON.stringify);
+const z$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "A"], JSON.stringify);
 const z = (a) => {
   return z$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "A"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end z memo-loader code //////////
 
@@ -453,11 +455,11 @@ const z = (a) => {
 
 ////////// start xp memo-loader code //////////
 //const xp$m = memoize(999999, isEqual)(xp$);
-const xp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "w"], JSON.stringify);
+const xp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "x"], JSON.stringify);
 const xp = (a) => {
   return xp$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "w"])({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* xp_ */ "x"])({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end xp memo-loader code //////////
 
@@ -465,13 +467,25 @@ const xp = (a) => {
 
 ////////// start yp memo-loader code //////////
 //const yp$m = memoize(999999, isEqual)(yp$);
-const yp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "y"], JSON.stringify);
+const yp$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "z"], JSON.stringify);
 const yp = (a) => {
   return yp$m(a);
   // eslint-disable-next-line no-undef
-  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "y"])({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* yp_ */ "z"])({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end yp memo-loader code //////////
+
+
+
+////////// start L memo-loader code //////////
+//const L$m = memoize(999999, isEqual)(L$);
+const L$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* L_ */ "e"], JSON.stringify);
+const L = (a) => {
+  return L$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_donut_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* L_ */ "e"])({ phi_in, theta_in, frame_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end L memo-loader code //////////
 
 /***/ }),
 /* 1 */
@@ -549,32 +563,33 @@ var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return R1_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return R2_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return R1_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return R2_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return A_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return B_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return frame_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return frame_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return K2_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return K1_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return screen_width_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return screen_height_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return theta_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return phi_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return cosA_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return sinA_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return cosB_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return sinB_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return cosTheta_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return sinTheta_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return cosPhi_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return sinPhi_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return circlex_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return circley_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return x_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return y_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return z_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return xp_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return yp_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return screen_width_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return screen_height_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return theta_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return phi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return cosA_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return sinA_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return cosB_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return sinB_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return cosTheta_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return sinTheta_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return cosPhi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return sinPhi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return circlex_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return circley_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return x_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return y_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return z_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return xp_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return yp_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return L_; });
 /* harmony import */ var _donut_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
  // this code reflects math and code listings written by Andy Sloane in:
 //  https://www.a1k0n.net/2011/07/20/donut-math.html
@@ -582,7 +597,7 @@ var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 // also interesting to compare separation of concerns.
 // go to Andys blog (also https://www.a1k0n.net/2021/01/13/optimizing-donut.html)
 // to understand the math in this hurried conversion!
-// soon I will elaborate more on how calculang helps to understand the math.
+// soon I will elaborate specifically on how calculang can be used to understand the math/numbers.
 
 // torus params
 const R1_ = ({ R1_in }) => R1_in;
@@ -633,6 +648,12 @@ Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K2"])({ K2_in }) + Object(_do
 // coordinates in 2d projection
 const xp_ = ({ screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_width"])({ screen_width_in }) / 2 + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ screen_width_in, K2_in, R1_in, R2_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
 const yp_ = ({ screen_height_in, screen_width_in, K2_in, R1_in, R2_in, theta_in, frame_in, phi_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["screen_height"])({ screen_height_in }) / 2 - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["K1"])({ screen_width_in, K2_in, R1_in, R2_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ R2_in, R1_in, theta_in, frame_in, phi_in }) / Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ K2_in, frame_in, R2_in, R1_in, theta_in, phi_in });
+
+const L_ = ({ phi_in, theta_in, frame_in }) =>
+Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosPhi"])({ phi_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinB"])({ frame_in }) -
+Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }) -
+Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinTheta"])({ theta_in }) +
+Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosB"])({ frame_in }) * (Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinTheta"])({ theta_in }) - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }));
 
 /***/ }),
 /* 3 */
@@ -740,6 +761,35 @@ function cb(value, context, argCount) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var _index_default_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(98);
+/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _index_js__WEBPACK_IMPORTED_MODULE_1__["memoize"]; });
+
+// ESM Exports
+// ===========
+// This module is the package entry point for ES module users. In other words,
+// it is the module they are interfacing with when they import from the whole
+// package instead of from a submodule, like this:
+//
+// ```js
+// import { map } from 'underscore';
+// ```
+//
+// The difference with `./index-default`, which is the package entry point for
+// CommonJS, AMD and UMD users, is purely technical. In ES modules, named and
+// default exports are considered to be siblings, so when you have a default
+// export, its properties are not automatically available as named exports. For
+// this reason, we re-export the named exports in addition to providing the same
+// default export as in `./index-default`.
+
+
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return restArguments; });
 // Some functions take a variable number of arguments, or a few expected
 // arguments at the beginning and then a variable number of values to operate
@@ -771,7 +821,7 @@ function restArguments(func, startIndex) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -792,35 +842,6 @@ if ( true && typeof Int8Array != 'object' && typeof nodelist != 'function') {
 }
 
 /* harmony default export */ __webpack_exports__["a"] = (isFunction);
-
-
-/***/ }),
-/* 9 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _index_default_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(98);
-/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _index_js__WEBPACK_IMPORTED_MODULE_1__["memoize"]; });
-
-// ESM Exports
-// ===========
-// This module is the package entry point for ES module users. In other words,
-// it is the module they are interfacing with when they import from the whole
-// package instead of from a submodule, like this:
-//
-// ```js
-// import { map } from 'underscore';
-// ```
-//
-// The difference with `./index-default`, which is the package entry point for
-// CommonJS, AMD and UMD users, is purely technical. In ES modules, named and
-// default exports are considered to be siblings, so when you have a default
-// export, its properties are not automatically available as named exports. For
-// this reason, we re-export the named exports in addition to providing the same
-// default export as in `./index-default`.
-
-
 
 
 /***/ }),
@@ -1186,7 +1207,7 @@ function matcher(attrs) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return weakMapMethods; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return setMethods; });
 /* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
 
 
@@ -1232,7 +1253,7 @@ var mapMethods = commonInit.concat(forEachName, mapTail),
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _executeBound_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(87);
 /* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
 
@@ -1319,7 +1340,7 @@ function group(behavior, partition) {
 
 "use strict";
 /* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56);
 /* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
 
@@ -1376,7 +1397,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return _setup_js__WEBPACK_IMPORTED_MODULE_0__["e"]; });
 
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "restArguments", function() { return _restArguments_js__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
@@ -1421,7 +1442,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(15);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return _isArray_js__WEBPACK_IMPORTED_MODULE_15__["a"]; });
 
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(9);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return _isFunction_js__WEBPACK_IMPORTED_MODULE_16__["a"]; });
 
 /* harmony import */ var _isArguments_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(36);
@@ -2134,7 +2155,7 @@ function deepGet(obj, path) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return functions; });
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
 
 
 // Return a sorted list of the function names available on the object.
@@ -2549,8 +2570,8 @@ function noop(){}
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _executeBound_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(87);
 
 
@@ -2572,7 +2593,7 @@ function noop(){}
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 
 
 // Delays a function for the given number of milliseconds, and then calls
@@ -2803,8 +2824,8 @@ function toArray(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
 /* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
 /* harmony import */ var _keyInObj_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(162);
@@ -2859,7 +2880,7 @@ function initial(array, n, guard) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
 /* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(16);
@@ -2917,7 +2938,7 @@ function shallowProperty(key) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return collectNonEnumProps; });
 /* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
 
 
@@ -2996,7 +3017,7 @@ function baseCreate(prototype) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseIteratee; });
 /* harmony import */ var _identity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
 /* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 /* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(25);
@@ -3470,7 +3491,7 @@ function isEmpty(obj) {
 /* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(32);
 /* harmony import */ var _isTypedArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(58);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9);
 /* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(22);
 /* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(31);
 /* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3);
@@ -3986,7 +4007,7 @@ function template(text, settings, oldSettings) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return result; });
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
 /* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 
 
@@ -4049,7 +4070,7 @@ function chain(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var _bind_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(67);
 
@@ -4172,7 +4193,7 @@ function throttle(func, wait, options) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return debounce; });
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
 
 
@@ -4341,8 +4362,8 @@ function reject(obj, predicate, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
 /* harmony import */ var _deepGet_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(43);
 /* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(23);
@@ -4573,8 +4594,8 @@ function size(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
 /* harmony import */ var _negate_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(39);
 /* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(17);
 /* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
@@ -4658,7 +4679,7 @@ function flatten(array, depth) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _difference_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(79);
 
 
@@ -4674,7 +4695,7 @@ function flatten(array, depth) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _uniq_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(46);
 /* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
 
@@ -4722,7 +4743,7 @@ function intersection(array) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8);
 /* harmony import */ var _unzip_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(47);
 
 
