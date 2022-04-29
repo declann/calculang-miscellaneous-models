@@ -43,7 +43,7 @@ export const circley = () => R1() * sinTheta();
 // (x,y,z) coordinates after rotations:
 // [for math: https://www.a1k0n.net/2011/07/20/donut-math.html]
 export const x = () =>
-  circlex() * (cosB() * sinTheta() - cosTheta() * sinA() * sinPhi());
+  circlex() * (cosB() * cosPhi() + sinA() * sinB() * sinPhi());
 
 export const y = () =>
   circlex() * (sinB() * cosPhi() - sinA() * cosB() * sinPhi()) +

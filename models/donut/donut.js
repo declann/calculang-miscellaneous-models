@@ -636,7 +636,7 @@ const circley_ = ({ R1_in, theta_in }) => Object(_donut_cul_js__WEBPACK_IMPORTED
 // (x,y,z) coordinates after rotations:
 // [for math: https://www.a1k0n.net/2011/07/20/donut-math.html]
 const x_ = ({ R2_in, R1_in, theta_in, frame_in, phi_in }) =>
-Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["circlex"])({ R2_in, R1_in, theta_in }) * (Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosB"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinTheta"])({ theta_in }) - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosTheta"])({ theta_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }));
+Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["circlex"])({ R2_in, R1_in, theta_in }) * (Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosB"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosPhi"])({ phi_in }) + Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinB"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in }));
 
 const y_ = ({ R2_in, R1_in, theta_in, frame_in, phi_in }) =>
 Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["circlex"])({ R2_in, R1_in, theta_in }) * (Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinB"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosPhi"])({ phi_in }) - Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinA"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["cosB"])({ frame_in }) * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["sinPhi"])({ phi_in })) +

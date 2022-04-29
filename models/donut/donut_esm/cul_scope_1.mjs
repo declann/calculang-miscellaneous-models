@@ -43,7 +43,7 @@ export const circley_ = ({ R1_in, theta_in }) => R1({ R1_in }) * sinTheta({ thet
 // (x,y,z) coordinates after rotations:
 // [for math: https://www.a1k0n.net/2011/07/20/donut-math.html]
 export const x_ = ({ R2_in, R1_in, theta_in, frame_in, phi_in }) =>
-circlex({ R2_in, R1_in, theta_in }) * (cosB({ frame_in }) * sinTheta({ theta_in }) - cosTheta({ theta_in }) * sinA({ frame_in }) * sinPhi({ phi_in }));
+circlex({ R2_in, R1_in, theta_in }) * (cosB({ frame_in }) * cosPhi({ phi_in }) + sinA({ frame_in }) * sinB({ frame_in }) * sinPhi({ phi_in }));
 
 export const y_ = ({ R2_in, R1_in, theta_in, frame_in, phi_in }) =>
 circlex({ R2_in, R1_in, theta_in }) * (sinB({ frame_in }) * cosPhi({ phi_in }) - sinA({ frame_in }) * cosB({ frame_in }) * sinPhi({ phi_in })) +
