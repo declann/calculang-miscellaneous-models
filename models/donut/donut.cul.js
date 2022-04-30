@@ -12,7 +12,7 @@ export const R2 = () => R2_in;
 // rotations time params
 //export const A = () => A_in;
 //export const B = () => B_in;
-export const A = () => 1 + 0.07 * frame();
+export const A = () => 1 + 0.07 * frame(); // todo make rotation params out of 0.07, 0.03
 export const B = () => 1 + 0.03 * frame();
 export const frame = () => frame_in;
 
