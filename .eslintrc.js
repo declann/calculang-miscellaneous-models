@@ -11,7 +11,7 @@ module.exports = {
   },
   ignorePatterns: ['**/*.cul.js'], // how to ignore bundles? or just add define as a global?
   rules: {
-    'no-undef': ['error', { "globals": { "define": "readonly" } }],
+    'no-undef': ['error'/*, { "globals": { "define": "readonly" } }*/], // some version of eslint don't like the global define !
     'no-restricted-syntax': [
       'error',
       {
