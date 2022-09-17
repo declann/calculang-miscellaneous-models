@@ -9,7 +9,9 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
-    "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js"
+    "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js",
+    "build:tax-revenues": "cul-js compile ./models/tax-revenues/tax-revenues.cul.js",
+    "use:tax-revenues": "node ./models/tax-revenues/use-tax-revenues-esm.mjs"
   },
   "homepage": "https://github.com/declann/calculang-miscellaneous-models/tree/main",
   "author": "Declan Naughton working for DCN Consulting",
