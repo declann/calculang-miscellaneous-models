@@ -1,10 +1,13 @@
-import { z } from "./cul_scope_0.mjs";import { y } from "./cul_scope_0.mjs";import { x } from "./cul_scope_0.mjs";import { i } from "./cul_scope_0.mjs";import { t } from "./cul_scope_0.mjs";import { c } from "./cul_scope_0.mjs";import { b } from "./cul_scope_0.mjs";import { a } from "./cul_scope_0.mjs";export const a_ = ({ a_in }) => a_in;
+import { z } from "./cul_scope_0.mjs";import { y } from "./cul_scope_0.mjs";import { x } from "./cul_scope_0.mjs";import { i } from "./cul_scope_0.mjs";import { t } from "./cul_scope_0.mjs";import { c } from "./cul_scope_0.mjs";import { b } from "./cul_scope_0.mjs";import { a } from "./cul_scope_0.mjs"; // based off C code in https://www.algosome.com/articles/lorenz-attractor-programming-code.html
+// also includes useful background
+
+export const a_ = ({ a_in }) => a_in;
 export const b_ = ({ b_in }) => b_in;
 export const c_ = ({ c_in }) => c_in;
 
-export const t_ = ({}) => 0.01;
+export const t_ = ({}) => 0.01; // time step
 
-export const i_ = ({ i_in }) => i_in;
+export const i_ = ({ i_in }) => i_in; // iteration
 
 export const x_ = ({ i_in, a_in, b_in, c_in }) => {
   if (i({ i_in }) == 0) return 0.1;

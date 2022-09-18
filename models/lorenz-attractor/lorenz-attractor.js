@@ -188,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z$m", function() { return z$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return z; });
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
-/* harmony import */ var _LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 
 
 //import memoize from 'lru-memoize';
@@ -200,11 +200,11 @@ __webpack_require__.r(__webpack_exports__);
 
 ////////// start a memo-loader code //////////
 //const a$m = memoize(999999, isEqual)(a$);
-const a$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"], JSON.stringify);
+const a$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"], JSON.stringify);
 const a = (a) => {
   return a$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"])({ a_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"])({ a_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end a memo-loader code //////////
 
@@ -212,11 +212,11 @@ const a = (a) => {
 
 ////////// start b memo-loader code //////////
 //const b$m = memoize(999999, isEqual)(b$);
-const b$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"], JSON.stringify);
+const b$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"], JSON.stringify);
 const b = (a) => {
   return b$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"])({ b_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"])({ b_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end b memo-loader code //////////
 
@@ -224,11 +224,11 @@ const b = (a) => {
 
 ////////// start c memo-loader code //////////
 //const c$m = memoize(999999, isEqual)(c$);
-const c$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"], JSON.stringify);
+const c$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"], JSON.stringify);
 const c = (a) => {
   return c$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"])({ c_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"])({ c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end c memo-loader code //////////
 
@@ -236,11 +236,11 @@ const c = (a) => {
 
 ////////// start t memo-loader code //////////
 //const t$m = memoize(999999, isEqual)(t$);
-const t$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* t_ */ "e"], JSON.stringify);
+const t$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* t_ */ "e"], JSON.stringify);
 const t = (a) => {
   return t$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* t_ */ "e"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* t_ */ "e"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end t memo-loader code //////////
 
@@ -248,11 +248,11 @@ const t = (a) => {
 
 ////////// start i memo-loader code //////////
 //const i$m = memoize(999999, isEqual)(i$);
-const i$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* i_ */ "d"], JSON.stringify);
+const i$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* i_ */ "d"], JSON.stringify);
 const i = (a) => {
   return i$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* i_ */ "d"])({ i_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* i_ */ "d"])({ i_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end i memo-loader code //////////
 
@@ -260,11 +260,11 @@ const i = (a) => {
 
 ////////// start x memo-loader code //////////
 //const x$m = memoize(999999, isEqual)(x$);
-const x$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"], JSON.stringify);
+const x$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"], JSON.stringify);
 const x = (a) => {
   return x$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end x memo-loader code //////////
 
@@ -272,11 +272,11 @@ const x = (a) => {
 
 ////////// start y memo-loader code //////////
 //const y$m = memoize(999999, isEqual)(y$);
-const y$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"], JSON.stringify);
+const y$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"], JSON.stringify);
 const y = (a) => {
   return y$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end y memo-loader code //////////
 
@@ -284,11 +284,11 @@ const y = (a) => {
 
 ////////// start z memo-loader code //////////
 //const z$m = memoize(999999, isEqual)(z$);
-const z$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"], JSON.stringify);
+const z$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"], JSON.stringify);
 const z = (a) => {
   return z$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
+  Object(_lorenz_attractor_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end z memo-loader code //////////
 
@@ -494,39 +494,42 @@ if ( true && typeof Int8Array != 'object' && typeof nodelist != 'function') {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return x_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return y_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return z_; });
-/* harmony import */ var _LA_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+ // based off C code in https://www.algosome.com/articles/lorenz-attractor-programming-code.html
+// also includes useful background
+
 const a_ = ({ a_in }) => a_in;
 const b_ = ({ b_in }) => b_in;
 const c_ = ({ c_in }) => c_in;
 
-const t_ = ({}) => 0.01;
+const t_ = ({}) => 0.01; // time step
 
-const i_ = ({ i_in }) => i_in;
+const i_ = ({ i_in }) => i_in; // iteration
 
 const x_ = ({ i_in, a_in, b_in, c_in }) => {
-  if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0.1;
+  if (Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0.1;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["a"])({ a_in }) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["a"])({ a_in }) * (Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 
 const y_ = ({ i_in, a_in, b_in, c_in }) => {
-  if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
+  if (Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({ b_in }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })) -
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * (Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({ b_in }) - Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })) -
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 
 const z_ = ({ i_in, a_in, b_in, c_in }) => {
-  if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
+  if (Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["c"])({ c_in }) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
+    Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["c"])({ c_in }) * Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_lorenz_attractor_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 
@@ -4659,4 +4662,4 @@ module.exports = g;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=LA.js.map
+//# sourceMappingURL=lorenz-attractor.js.map

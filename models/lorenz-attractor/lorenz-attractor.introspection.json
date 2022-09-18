@@ -96,12 +96,12 @@
         "start": {
           "line": 13,
           "column": 17,
-          "index": 676
+          "index": 690
         },
         "end": {
           "line": 17,
           "column": 1,
-          "index": 806
+          "index": 820
         }
       },
       "inputs": [
@@ -117,12 +117,12 @@
         "start": {
           "line": 25,
           "column": 17,
-          "index": 1012
+          "index": 1026
         },
         "end": {
           "line": 29,
           "column": 1,
-          "index": 1142
+          "index": 1156
         }
       },
       "inputs": [
@@ -138,12 +138,12 @@
         "start": {
           "line": 37,
           "column": 17,
-          "index": 1348
+          "index": 1362
         },
         "end": {
           "line": 41,
           "column": 1,
-          "index": 1478
+          "index": 1492
         }
       },
       "inputs": [
@@ -159,12 +159,12 @@
         "start": {
           "line": 49,
           "column": 17,
-          "index": 1684
+          "index": 1698
         },
         "end": {
           "line": 53,
           "column": 1,
-          "index": 1814
+          "index": 1828
         }
       },
       "inputs": []
@@ -178,12 +178,12 @@
         "start": {
           "line": 61,
           "column": 17,
-          "index": 2020
+          "index": 2034
         },
         "end": {
           "line": 65,
           "column": 1,
-          "index": 2150
+          "index": 2164
         }
       },
       "inputs": [
@@ -199,12 +199,12 @@
         "start": {
           "line": 73,
           "column": 17,
-          "index": 2356
+          "index": 2370
         },
         "end": {
           "line": 77,
           "column": 1,
-          "index": 2486
+          "index": 2500
         }
       },
       "inputs": [
@@ -223,12 +223,12 @@
         "start": {
           "line": 85,
           "column": 17,
-          "index": 2692
+          "index": 2706
         },
         "end": {
           "line": 89,
           "column": 1,
-          "index": 2822
+          "index": 2836
         }
       },
       "inputs": [
@@ -247,12 +247,12 @@
         "start": {
           "line": 97,
           "column": 17,
-          "index": 3028
+          "index": 3042
         },
         "end": {
           "line": 101,
           "column": 1,
-          "index": 3158
+          "index": 3172
         }
       },
       "inputs": [
@@ -348,14 +348,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 1,
+          "line": 4,
           "column": 17,
-          "index": 17
+          "index": 152
         },
         "end": {
-          "line": 1,
+          "line": 4,
           "column": 27,
-          "index": 27
+          "index": 162
         }
       },
       "inputs": [
@@ -378,14 +378,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 2,
+          "line": 5,
           "column": 17,
-          "index": 47
+          "index": 182
         },
         "end": {
-          "line": 2,
+          "line": 5,
           "column": 27,
-          "index": 57
+          "index": 192
         }
       },
       "inputs": [
@@ -408,14 +408,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 3,
+          "line": 6,
           "column": 17,
-          "index": 77
+          "index": 212
         },
         "end": {
-          "line": 3,
+          "line": 6,
           "column": 27,
-          "index": 87
+          "index": 222
         }
       },
       "inputs": [
@@ -438,14 +438,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 5,
+          "line": 8,
           "column": 17,
-          "index": 109
+          "index": 244
         },
         "end": {
-          "line": 5,
+          "line": 8,
           "column": 27,
-          "index": 119
+          "index": 254
         }
       },
       "inputs": []
@@ -457,14 +457,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 7,
+          "line": 10,
           "column": 17,
-          "index": 141
+          "index": 289
         },
         "end": {
-          "line": 7,
+          "line": 10,
           "column": 27,
-          "index": 151
+          "index": 299
         }
       },
       "inputs": [
@@ -487,14 +487,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 9,
+          "line": 12,
           "column": 17,
-          "index": 173
+          "index": 334
         },
         "end": {
-          "line": 15,
+          "line": 18,
           "column": 1,
-          "index": 321
+          "index": 482
         }
       },
       "inputs": [
@@ -511,14 +511,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 17,
+          "line": 20,
           "column": 17,
-          "index": 343
+          "index": 504
         },
         "end": {
-          "line": 25,
+          "line": 28,
           "column": 1,
-          "index": 530
+          "index": 691
         }
       },
       "inputs": [
@@ -535,14 +535,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 27,
+          "line": 30,
           "column": 17,
-          "index": 552
+          "index": 713
         },
         "end": {
-          "line": 34,
+          "line": 37,
           "column": 1,
-          "index": 728
+          "index": 889
         }
       },
       "inputs": [
@@ -912,11 +912,11 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./LA.cul.js",
-    "1": "./LA.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+    "0": "./lorenz-attractor.cul.js",
+    "1": "./lorenz-attractor.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
   "import_sources_to_resource": {
-    "0_./LA.cul.js?+memoed": "./LA.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+    "0_./lorenz-attractor.cul.js?+memoed": "./lorenz-attractor.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
   "cul_input_map": {
     "0_a$": [

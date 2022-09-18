@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { a_ as a$, b_ as b$, c_ as c$, t_ as t$, i_ as i$, x_ as x$, y_ as y$, z_ as z$ } from './LA.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { a_ as a$, b_ as b$, c_ as c$, t_ as t$, i_ as i$, x_ as x$, y_ as y$, z_ as z$ } from './lorenz-attractor.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 

@@ -1,10 +1,13 @@
+// based off C code in https://www.algosome.com/articles/lorenz-attractor-programming-code.html
+// also includes useful background
+
 export const a = () => a_in;
 export const b = () => b_in;
 export const c = () => c_in;
 
-export const t = () => 0.01;
+export const t = () => 0.01; // time step
 
-export const i = () => i_in;
+export const i = () => i_in; // iteration
 
 export const x = () => {
   if (i() == 0) return 0.1;

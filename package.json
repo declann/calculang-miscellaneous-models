@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js",
-    "build:LA": "cul-js compile --memo ./models/LA/LA.cul.js",
+    "build:lorenz-attractor": "cul-js compile --memo ./models/lorenz-attractor/lorenz-attractor.cul.js",
     "build:tax-revenues": "cul-js compile ./models/tax-revenues/tax-revenues.cul.js",
     "use:tax-revenues": "node ./models/tax-revenues/use-tax-revenues-esm.mjs"
   },
