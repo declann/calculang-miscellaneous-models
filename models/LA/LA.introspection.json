@@ -6,7 +6,9 @@
       "imported": "a_",
       "cul_source_scope_id": 1,
       "reason": "explicit import",
-      "inputs": []
+      "inputs": [
+        "a_in"
+      ]
     },
     "0_b$": {
       "cul_scope_id": 0,
@@ -14,7 +16,9 @@
       "imported": "b_",
       "cul_source_scope_id": 1,
       "reason": "explicit import",
-      "inputs": []
+      "inputs": [
+        "b_in"
+      ]
     },
     "0_c$": {
       "cul_scope_id": 0,
@@ -22,7 +26,9 @@
       "imported": "c_",
       "cul_source_scope_id": 1,
       "reason": "explicit import",
-      "inputs": []
+      "inputs": [
+        "c_in"
+      ]
     },
     "0_t$": {
       "cul_scope_id": 0,
@@ -49,7 +55,10 @@
       "cul_source_scope_id": 1,
       "reason": "explicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "0_y$": {
@@ -59,7 +68,10 @@
       "cul_source_scope_id": 1,
       "reason": "explicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "0_z$": {
@@ -69,7 +81,10 @@
       "cul_source_scope_id": 1,
       "reason": "explicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "0_a": {
@@ -89,7 +104,9 @@
           "index": 806
         }
       },
-      "inputs": []
+      "inputs": [
+        "a_in"
+      ]
     },
     "0_b": {
       "cul_scope_id": 0,
@@ -108,7 +125,9 @@
           "index": 1142
         }
       },
-      "inputs": []
+      "inputs": [
+        "b_in"
+      ]
     },
     "0_c": {
       "cul_scope_id": 0,
@@ -127,7 +146,9 @@
           "index": 1478
         }
       },
-      "inputs": []
+      "inputs": [
+        "c_in"
+      ]
     },
     "0_t": {
       "cul_scope_id": 0,
@@ -187,7 +208,10 @@
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "0_y": {
@@ -208,7 +232,10 @@
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "0_z": {
@@ -229,7 +256,10 @@
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_a": {
@@ -237,21 +267,27 @@
       "name": "a",
       "cul_source_scope_id": 0,
       "reason": "implicit import",
-      "inputs": []
+      "inputs": [
+        "a_in"
+      ]
     },
     "1_b": {
       "cul_scope_id": 1,
       "name": "b",
       "cul_source_scope_id": 0,
       "reason": "implicit import",
-      "inputs": []
+      "inputs": [
+        "b_in"
+      ]
     },
     "1_c": {
       "cul_scope_id": 1,
       "name": "c",
       "cul_source_scope_id": 0,
       "reason": "implicit import",
-      "inputs": []
+      "inputs": [
+        "c_in"
+      ]
     },
     "1_t": {
       "cul_scope_id": 1,
@@ -275,7 +311,10 @@
       "cul_source_scope_id": 0,
       "reason": "implicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_y": {
@@ -284,7 +323,10 @@
       "cul_source_scope_id": 0,
       "reason": "implicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_z": {
@@ -293,7 +335,10 @@
       "cul_source_scope_id": 0,
       "reason": "implicit import",
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_a_": {
@@ -313,7 +358,18 @@
           "index": 27
         }
       },
-      "inputs": []
+      "inputs": [
+        "a_in"
+      ]
+    },
+    "1_a_in": {
+      "cul_scope_id": 1,
+      "name": "a_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "a_in"
+      ]
     },
     "1_b_": {
       "cul_scope_id": 1,
@@ -332,7 +388,18 @@
           "index": 57
         }
       },
-      "inputs": []
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "1_b_in": {
+      "cul_scope_id": 1,
+      "name": "b_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "b_in"
+      ]
     },
     "1_c_": {
       "cul_scope_id": 1,
@@ -347,11 +414,22 @@
         },
         "end": {
           "line": 3,
-          "column": 32,
-          "index": 92
+          "column": 27,
+          "index": 87
         }
       },
-      "inputs": []
+      "inputs": [
+        "c_in"
+      ]
+    },
+    "1_c_in": {
+      "cul_scope_id": 1,
+      "name": "c_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "c_in"
+      ]
     },
     "1_t_": {
       "cul_scope_id": 1,
@@ -362,12 +440,12 @@
         "start": {
           "line": 5,
           "column": 17,
-          "index": 114
+          "index": 109
         },
         "end": {
           "line": 5,
           "column": 27,
-          "index": 124
+          "index": 119
         }
       },
       "inputs": []
@@ -381,12 +459,12 @@
         "start": {
           "line": 7,
           "column": 17,
-          "index": 146
+          "index": 141
         },
         "end": {
           "line": 7,
           "column": 27,
-          "index": 156
+          "index": 151
         }
       },
       "inputs": [
@@ -411,16 +489,19 @@
         "start": {
           "line": 9,
           "column": 17,
-          "index": 178
+          "index": 173
         },
         "end": {
           "line": 15,
           "column": 1,
-          "index": 326
+          "index": 321
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_y_": {
@@ -432,16 +513,19 @@
         "start": {
           "line": 17,
           "column": 17,
-          "index": 348
+          "index": 343
         },
         "end": {
           "line": 25,
           "column": 1,
-          "index": 535
+          "index": 530
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     },
     "1_z_": {
@@ -453,16 +537,19 @@
         "start": {
           "line": 27,
           "column": 17,
-          "index": 557
+          "index": 552
         },
         "end": {
           "line": 34,
           "column": 1,
-          "index": 733
+          "index": 728
         }
       },
       "inputs": [
-        "i_in"
+        "i_in",
+        "a_in",
+        "b_in",
+        "c_in"
       ]
     }
   },
@@ -594,6 +681,21 @@
       "to": "1_z",
       "from": "0_z",
       "reason": "implicit import"
+    },
+    {
+      "to": "1_a_",
+      "from": "1_a_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_b_",
+      "from": "1_b_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_c_",
+      "from": "1_c_in",
+      "reason": "input"
     },
     {
       "to": "1_i_",
@@ -817,57 +919,117 @@
     "0_./LA.cul.js?+memoed": "./LA.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
   "cul_input_map": {
-    "0_a$": [],
-    "0_b$": [],
-    "0_c$": [],
+    "0_a$": [
+      "a_in"
+    ],
+    "0_b$": [
+      "b_in"
+    ],
+    "0_c$": [
+      "c_in"
+    ],
     "0_t$": [],
     "0_i$": [
       "i_in"
     ],
     "0_x$": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "0_y$": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "0_z$": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
-    "0_a": [],
-    "0_b": [],
-    "0_c": [],
+    "0_a": [
+      "a_in"
+    ],
+    "0_b": [
+      "b_in"
+    ],
+    "0_c": [
+      "c_in"
+    ],
     "0_t": [],
     "0_i": [
       "i_in"
     ],
     "0_x": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "0_y": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "0_z": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
-    "1_a": [],
-    "1_b": [],
-    "1_c": [],
+    "1_a": [
+      "a_in"
+    ],
+    "1_b": [
+      "b_in"
+    ],
+    "1_c": [
+      "c_in"
+    ],
     "1_t": [],
     "1_i": [
       "i_in"
     ],
     "1_x": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "1_y": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "1_z": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
-    "1_a_": [],
-    "1_b_": [],
-    "1_c_": [],
+    "1_a_": [
+      "a_in"
+    ],
+    "1_a_in": [
+      "a_in"
+    ],
+    "1_b_": [
+      "b_in"
+    ],
+    "1_b_in": [
+      "b_in"
+    ],
+    "1_c_": [
+      "c_in"
+    ],
+    "1_c_in": [
+      "c_in"
+    ],
     "1_t_": [],
     "1_i_": [
       "i_in"
@@ -876,14 +1038,23 @@
       "i_in"
     ],
     "1_x_": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "1_y_": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ],
     "1_z_": [
-      "i_in"
+      "i_in",
+      "a_in",
+      "b_in",
+      "c_in"
     ]
   },
-  "dot": "digraph {\n  \"0_a$\" [cul_scope_id=0,name=\"a$\",imported=a_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_a$ inputs: \"]\n  \"0_b$\" [cul_scope_id=0,name=\"b$\",imported=b_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_b$ inputs: \"]\n  \"0_c$\" [cul_scope_id=0,name=\"c$\",imported=c_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_c$ inputs: \"]\n  \"0_t$\" [cul_scope_id=0,name=\"t$\",imported=t_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_t$ inputs: \"]\n  \"0_i$\" [cul_scope_id=0,name=\"i$\",imported=i_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_i$ inputs: i_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_x$ inputs: i_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_y$ inputs: i_in\"]\n  \"0_z$\" [cul_scope_id=0,name=\"z$\",imported=z_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_z$ inputs: i_in\"]\n  \"0_a\" [cul_scope_id=0,name=a,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_a inputs: \"]\n  \"0_b\" [cul_scope_id=0,name=b,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_b inputs: \"]\n  \"0_c\" [cul_scope_id=0,name=c,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_c inputs: \"]\n  \"0_t\" [cul_scope_id=0,name=t,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_t inputs: \"]\n  \"0_i\" [cul_scope_id=0,name=i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_i inputs: i_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_x inputs: i_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_y inputs: i_in\"]\n  \"0_z\" [cul_scope_id=0,name=z,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_z inputs: i_in\"]\n  \"1_a\" [cul_scope_id=1,name=a,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_a inputs: \"]\n  \"1_b\" [cul_scope_id=1,name=b,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_b inputs: \"]\n  \"1_c\" [cul_scope_id=1,name=c,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_c inputs: \"]\n  \"1_t\" [cul_scope_id=1,name=t,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_t inputs: \"]\n  \"1_i\" [cul_scope_id=1,name=i,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_i inputs: i_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_x inputs: i_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_y inputs: i_in\"]\n  \"1_z\" [cul_scope_id=1,name=z,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_z inputs: i_in\"]\n  \"1_a_\" [cul_scope_id=1,name=a_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_a_ inputs: \"]\n  \"1_b_\" [cul_scope_id=1,name=b_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_b_ inputs: \"]\n  \"1_c_\" [cul_scope_id=1,name=c_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_c_ inputs: \"]\n  \"1_t_\" [cul_scope_id=1,name=t_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_t_ inputs: \"]\n  \"1_i_\" [cul_scope_id=1,name=i_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_i_ inputs: i_in\"]\n  \"1_i_in\" [cul_scope_id=1,name=i_in,cul_source_scope_id=1,reason=\"input definition\",inputs=i_in,label=\"1_i_in inputs: i_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_x_ inputs: i_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_y_ inputs: i_in\"]\n  \"1_z_\" [cul_scope_id=1,name=z_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_z_ inputs: i_in\"]\n  \"1_a_\" -> \"0_a$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_b_\" -> \"0_b$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_c_\" -> \"0_c$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_t_\" -> \"0_t$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_i_\" -> \"0_i$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_z_\" -> \"0_z$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_a$\" -> \"0_a\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_b$\" -> \"0_b\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_c$\" -> \"0_c\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_t$\" -> \"0_t\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_i$\" -> \"0_i\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z$\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_a\" -> \"1_a\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_b\" -> \"1_b\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_c\" -> \"1_c\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_t\" -> \"1_t\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_i\" -> \"1_i\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_z\" -> \"1_z\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_i_in\" -> \"1_i_\" [value=\"[object Object]\",label=\"input +i_in\"]\n  \"1_i\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_a\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_i\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_b\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_i\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_y\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_c\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_a$\" [cul_scope_id=0,name=\"a$\",imported=a_,cul_source_scope_id=1,reason=\"explicit import\",inputs=a_in,label=\"0_a$ inputs: a_in\"]\n  \"0_b$\" [cul_scope_id=0,name=\"b$\",imported=b_,cul_source_scope_id=1,reason=\"explicit import\",inputs=b_in,label=\"0_b$ inputs: b_in\"]\n  \"0_c$\" [cul_scope_id=0,name=\"c$\",imported=c_,cul_source_scope_id=1,reason=\"explicit import\",inputs=c_in,label=\"0_c$ inputs: c_in\"]\n  \"0_t$\" [cul_scope_id=0,name=\"t$\",imported=t_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_t$ inputs: \"]\n  \"0_i$\" [cul_scope_id=0,name=\"i$\",imported=i_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_i$ inputs: i_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_x$ inputs: i_in,a_in,b_in,c_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_y$ inputs: i_in,a_in,b_in,c_in\"]\n  \"0_z$\" [cul_scope_id=0,name=\"z$\",imported=z_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_z$ inputs: i_in,a_in,b_in,c_in\"]\n  \"0_a\" [cul_scope_id=0,name=a,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=a_in,label=\"0_a inputs: a_in\"]\n  \"0_b\" [cul_scope_id=0,name=b,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=b_in,label=\"0_b inputs: b_in\"]\n  \"0_c\" [cul_scope_id=0,name=c,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=c_in,label=\"0_c inputs: c_in\"]\n  \"0_t\" [cul_scope_id=0,name=t,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_t inputs: \"]\n  \"0_i\" [cul_scope_id=0,name=i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_i inputs: i_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_x inputs: i_in,a_in,b_in,c_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_y inputs: i_in,a_in,b_in,c_in\"]\n  \"0_z\" [cul_scope_id=0,name=z,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"0_z inputs: i_in,a_in,b_in,c_in\"]\n  \"1_a\" [cul_scope_id=1,name=a,cul_source_scope_id=0,reason=\"implicit import\",inputs=a_in,label=\"1_a inputs: a_in\"]\n  \"1_b\" [cul_scope_id=1,name=b,cul_source_scope_id=0,reason=\"implicit import\",inputs=b_in,label=\"1_b inputs: b_in\"]\n  \"1_c\" [cul_scope_id=1,name=c,cul_source_scope_id=0,reason=\"implicit import\",inputs=c_in,label=\"1_c inputs: c_in\"]\n  \"1_t\" [cul_scope_id=1,name=t,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_t inputs: \"]\n  \"1_i\" [cul_scope_id=1,name=i,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_i inputs: i_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_x inputs: i_in,a_in,b_in,c_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_y inputs: i_in,a_in,b_in,c_in\"]\n  \"1_z\" [cul_scope_id=1,name=z,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_z inputs: i_in,a_in,b_in,c_in\"]\n  \"1_a_\" [cul_scope_id=1,name=a_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=a_in,label=\"1_a_ inputs: a_in\"]\n  \"1_a_in\" [cul_scope_id=1,name=a_in,cul_source_scope_id=1,reason=\"input definition\",inputs=a_in,label=\"1_a_in inputs: a_in\"]\n  \"1_b_\" [cul_scope_id=1,name=b_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=b_in,label=\"1_b_ inputs: b_in\"]\n  \"1_b_in\" [cul_scope_id=1,name=b_in,cul_source_scope_id=1,reason=\"input definition\",inputs=b_in,label=\"1_b_in inputs: b_in\"]\n  \"1_c_\" [cul_scope_id=1,name=c_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=c_in,label=\"1_c_ inputs: c_in\"]\n  \"1_c_in\" [cul_scope_id=1,name=c_in,cul_source_scope_id=1,reason=\"input definition\",inputs=c_in,label=\"1_c_in inputs: c_in\"]\n  \"1_t_\" [cul_scope_id=1,name=t_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_t_ inputs: \"]\n  \"1_i_\" [cul_scope_id=1,name=i_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_i_ inputs: i_in\"]\n  \"1_i_in\" [cul_scope_id=1,name=i_in,cul_source_scope_id=1,reason=\"input definition\",inputs=i_in,label=\"1_i_in inputs: i_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_x_ inputs: i_in,a_in,b_in,c_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_y_ inputs: i_in,a_in,b_in,c_in\"]\n  \"1_z_\" [cul_scope_id=1,name=z_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"i_in,a_in,b_in,c_in\",label=\"1_z_ inputs: i_in,a_in,b_in,c_in\"]\n  \"1_a_\" -> \"0_a$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_b_\" -> \"0_b$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_c_\" -> \"0_c$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_t_\" -> \"0_t$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_i_\" -> \"0_i$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_z_\" -> \"0_z$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_a$\" -> \"0_a\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_b$\" -> \"0_b\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_c$\" -> \"0_c\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_t$\" -> \"0_t\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_i$\" -> \"0_i\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z$\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_a\" -> \"1_a\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_b\" -> \"1_b\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_c\" -> \"1_c\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_t\" -> \"1_t\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_i\" -> \"1_i\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_z\" -> \"1_z\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_a_in\" -> \"1_a_\" [value=\"[object Object]\",label=\"input +a_in\"]\n  \"1_b_in\" -> \"1_b_\" [value=\"[object Object]\",label=\"input +b_in\"]\n  \"1_c_in\" -> \"1_c_\" [value=\"[object Object]\",label=\"input +c_in\"]\n  \"1_i_in\" -> \"1_i_\" [value=\"[object Object]\",label=\"input +i_in\"]\n  \"1_i\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_a\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_i\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_b\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_i\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_z\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_t\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_y\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"1_c\" -> \"1_z_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

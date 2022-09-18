@@ -204,7 +204,7 @@ const a$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const a = (a) => {
   return a$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* a_ */ "a"])({ a_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end a memo-loader code //////////
 
@@ -216,7 +216,7 @@ const b$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const b = (a) => {
   return b$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* b_ */ "b"])({ b_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end b memo-loader code //////////
 
@@ -228,7 +228,7 @@ const c$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const c = (a) => {
   return c$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* c_ */ "c"])({ c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end c memo-loader code //////////
 
@@ -264,7 +264,7 @@ const x$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const x = (a) => {
   return x$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"])({ i_in }); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* x_ */ "f"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end x memo-loader code //////////
 
@@ -276,7 +276,7 @@ const y$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const y = (a) => {
   return y$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"])({ i_in }); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* y_ */ "g"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end y memo-loader code //////////
 
@@ -288,7 +288,7 @@ const z$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_
 const z = (a) => {
   return z$m(a);
   // eslint-disable-next-line no-undef
-  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"])({ i_in }); // never run, but here to "trick" calculang graph logic
+  Object(_LA_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* z_ */ "h"])({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end z memo-loader code //////////
 
@@ -495,38 +495,38 @@ if ( true && typeof Int8Array != 'object' && typeof nodelist != 'function') {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return y_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return z_; });
 /* harmony import */ var _LA_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-const a_ = ({}) => 10.0;
-const b_ = ({}) => 28.0;
-const c_ = ({}) => 8.0 / 3.0;
+const a_ = ({ a_in }) => a_in;
+const b_ = ({ b_in }) => b_in;
+const c_ = ({ c_in }) => c_in;
 
 const t_ = ({}) => 0.01;
 
 const i_ = ({ i_in }) => i_in;
 
-const x_ = ({ i_in }) => {
+const x_ = ({ i_in, a_in, b_in, c_in }) => {
   if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0.1;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["a"])({}) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["a"])({ a_in }) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 
-const y_ = ({ i_in }) => {
+const y_ = ({ i_in, a_in, b_in, c_in }) => {
   if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
     Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({}) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })) -
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({ b_in }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })) -
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 
-const z_ = ({ i_in }) => {
+const z_ = ({ i_in, a_in, b_in, c_in }) => {
   if (Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) == 0) return 0;
   return (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) +
     Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({}) * (
-    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["c"])({}) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
+    Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 }) - Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["c"])({ c_in }) * Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["z"])({ a_in, b_in, c_in, i_in: Object(_LA_cul_js__WEBPACK_IMPORTED_MODULE_0__["i"])({ i_in }) - 1 })));
 
 };
 

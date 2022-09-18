@@ -1,6 +1,6 @@
-export const a = () => 10.0;
-export const b = () => 28.0;
-export const c = () => 8.0 / 3.0;
+export const a = () => a_in;
+export const b = () => b_in;
+export const c = () => c_in;
 
 export const t = () => 0.01;
 

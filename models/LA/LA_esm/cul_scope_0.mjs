@@ -13,7 +13,7 @@ export const a$m = memoize(a$, JSON.stringify);
 export const a = (a) => {
   return a$m(a);
   // eslint-disable-next-line no-undef
-  a$({}); // never run, but here to "trick" calculang graph logic
+  a$({ a_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end a memo-loader code //////////
 
@@ -25,7 +25,7 @@ export const b$m = memoize(b$, JSON.stringify);
 export const b = (a) => {
   return b$m(a);
   // eslint-disable-next-line no-undef
-  b$({}); // never run, but here to "trick" calculang graph logic
+  b$({ b_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end b memo-loader code //////////
 
@@ -37,7 +37,7 @@ export const c$m = memoize(c$, JSON.stringify);
 export const c = (a) => {
   return c$m(a);
   // eslint-disable-next-line no-undef
-  c$({}); // never run, but here to "trick" calculang graph logic
+  c$({ c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end c memo-loader code //////////
 
@@ -73,7 +73,7 @@ export const x$m = memoize(x$, JSON.stringify);
 export const x = (a) => {
   return x$m(a);
   // eslint-disable-next-line no-undef
-  x$({ i_in }); // never run, but here to "trick" calculang graph logic
+  x$({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end x memo-loader code //////////
 
@@ -85,7 +85,7 @@ export const y$m = memoize(y$, JSON.stringify);
 export const y = (a) => {
   return y$m(a);
   // eslint-disable-next-line no-undef
-  y$({ i_in }); // never run, but here to "trick" calculang graph logic
+  y$({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end y memo-loader code //////////
 
@@ -97,6 +97,6 @@ export const z$m = memoize(z$, JSON.stringify);
 export const z = (a) => {
   return z$m(a);
   // eslint-disable-next-line no-undef
-  z$({ i_in }); // never run, but here to "trick" calculang graph logic
+  z$({ i_in, a_in, b_in, c_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end z memo-loader code //////////
