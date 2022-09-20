@@ -1,14 +1,12 @@
-import { income_tax } from './simple-incometax.cul';
-export { income_tax };
+// a simple one
 
-export const taxpayer_id = () => taxpayer_id_in;
-export const taxpayer_table = () => taxpayer_table_in;
+export const net_salary = () => gross_salary() - income_tax();
 
-export const gross_salary = () => taxpayer_table()[taxpayer_id()].gross_salary;
+export const gross_salary = () => gross_salary_in;
 
-// -taxpayer_id_in
-export const income_tax_sum = () =>
-  taxpayer_table().reduce(
-    (acc, val) => acc + income_tax({ taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
-    0
-  );
+export const tax_rate = () => 0.15;
+
+export const income_tax = () =>
+  Math.max(tax_rate() * gross_salary() - tax_credit(), 0);
+
+export const tax_credit = () => 1000;

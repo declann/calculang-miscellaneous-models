@@ -15,7 +15,7 @@
     "build:incometax-set": "cul-js compile ./models/tax-revenues/incometax-set.cul.js",
     "build:incometax-impact": "cul-js compile ./models/tax-revenues/impact.cul.js",
     "use:incometax-set": "node ./models/tax-revenues/use-incometax-set-esm.mjs",
-    "use:impact": "node ./models/tax-revenues/use-impact-esm.mjs",
+    "use:impact": "node ./models/tax-revenues/use-impact.js > ./models/tax-revenues/use-impact-out.txt",
     "use:tax-revenues": "node ./models/tax-revenues/use-tax-revenues-esm.mjs"
   },
   "homepage": "https://github.com/declann/calculang-miscellaneous-models/tree/main",

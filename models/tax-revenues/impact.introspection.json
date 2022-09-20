@@ -10,6 +10,17 @@
         "taxpayer_table_in"
       ]
     },
+    "0_income_tax_current": {
+      "cul_scope_id": 0,
+      "name": "income_tax_current",
+      "imported": "income_tax",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
     "0_income_tax_sum_proposed": {
       "cul_scope_id": 0,
       "name": "income_tax_sum_proposed",
@@ -21,61 +32,11 @@
         "tax_rate_in"
       ]
     },
-    "0_income_tax_sum_impact": {
+    "0_income_tax_proposed": {
       "cul_scope_id": 0,
-      "name": "income_tax_sum_impact",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 6,
-          "column": 37,
-          "index": 260
-        },
-        "end": {
-          "line": 7,
-          "column": 54,
-          "index": 321
-        }
-      },
-      "inputs": [
-        "taxpayer_table_in",
-        "tax_rate_in"
-      ]
-    },
-    "2_income_tax_sum_current": {
-      "cul_scope_id": 2,
-      "name": "income_tax_sum_current",
-      "cul_source_scope_id": 1,
-      "reason": "implicit import",
-      "inputs": []
-    },
-    "2_income_tax_sum_impact": {
-      "cul_scope_id": 2,
-      "name": "income_tax_sum_impact",
-      "cul_source_scope_id": 0,
-      "reason": "implicit import",
-      "inputs": [
-        "taxpayer_table_in",
-        "tax_rate_in"
-      ]
-    },
-    "2_income_tax_sum": {
-      "cul_scope_id": 2,
-      "name": "income_tax_sum",
-      "imported": "income_tax_sum",
-      "cul_source_scope_id": 3,
-      "reason": "explicit import",
-      "inputs": [
-        "taxpayer_table_in",
-        "tax_rate_in"
-      ]
-    },
-    "2_income_tax": {
-      "cul_scope_id": 2,
-      "name": "income_tax",
+      "name": "income_tax_proposed",
       "imported": "income_tax",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 2,
       "reason": "explicit import",
       "inputs": [
         "tax_rate_in",
@@ -83,39 +44,61 @@
         "taxpayer_id_in"
       ]
     },
-    "2_tax_rate": {
-      "cul_scope_id": 2,
-      "name": "tax_rate",
-      "cul_source_scope_id": 2,
+    "0_income_tax_sum_impact": {
+      "cul_scope_id": 0,
+      "name": "income_tax_sum_impact",
+      "cul_source_scope_id": 0,
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 5,
-          "column": 24,
-          "index": 155
+          "line": 7,
+          "column": 37,
+          "index": 382
         },
         "end": {
-          "line": 5,
-          "column": 43,
-          "index": 174
+          "line": 8,
+          "column": 54,
+          "index": 443
         }
       },
       "inputs": [
+        "taxpayer_table_in",
         "tax_rate_in"
       ]
     },
-    "2_tax_rate_in": {
-      "cul_scope_id": 2,
-      "name": "tax_rate_in",
-      "cul_source_scope_id": 2,
-      "reason": "input definition",
+    "0_income_tax_impact": {
+      "cul_scope_id": 0,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 33,
+          "index": 481
+        },
+        "end": {
+          "line": 11,
+          "column": 46,
+          "index": 534
+        }
+      },
       "inputs": [
-        "tax_rate_in"
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
       ]
     },
     "1_income_tax_sum_proposed": {
       "cul_scope_id": 1,
       "name": "income_tax_sum_proposed",
+      "cul_source_scope_id": 2,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_income_tax_proposed": {
+      "cul_scope_id": 1,
+      "name": "income_tax_proposed",
       "cul_source_scope_id": 2,
       "reason": "implicit import",
       "inputs": []
@@ -130,11 +113,22 @@
         "tax_rate_in"
       ]
     },
+    "1_income_tax_impact": {
+      "cul_scope_id": 1,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
     "1_income_tax": {
       "cul_scope_id": 1,
       "name": "income_tax",
       "imported": "income_tax",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "explicit import",
       "inputs": [
         "taxpayer_table_in",
@@ -244,15 +238,22 @@
         "taxpayer_table_in"
       ]
     },
-    "3_income_tax_sum_current": {
-      "cul_scope_id": 3,
+    "2_income_tax_sum_current": {
+      "cul_scope_id": 2,
       "name": "income_tax_sum_current",
       "cul_source_scope_id": 1,
       "reason": "implicit import",
       "inputs": []
     },
-    "3_income_tax_sum_impact": {
-      "cul_scope_id": 3,
+    "2_income_tax_current": {
+      "cul_scope_id": 2,
+      "name": "income_tax_current",
+      "cul_source_scope_id": 1,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "2_income_tax_sum_impact": {
+      "cul_scope_id": 2,
       "name": "income_tax_sum_impact",
       "cul_source_scope_id": 0,
       "reason": "implicit import",
@@ -261,8 +262,107 @@
         "tax_rate_in"
       ]
     },
-    "3_tax_rate": {
-      "cul_scope_id": 3,
+    "2_income_tax_impact": {
+      "cul_scope_id": 2,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "2_income_tax_sum": {
+      "cul_scope_id": 2,
+      "name": "income_tax_sum",
+      "imported": "income_tax_sum",
+      "cul_source_scope_id": 4,
+      "reason": "explicit import",
+      "inputs": [
+        "taxpayer_table_in",
+        "tax_rate_in"
+      ]
+    },
+    "2_income_tax": {
+      "cul_scope_id": 2,
+      "name": "income_tax",
+      "imported": "income_tax",
+      "cul_source_scope_id": 4,
+      "reason": "explicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "2_tax_rate": {
+      "cul_scope_id": 2,
+      "name": "tax_rate",
+      "cul_source_scope_id": 2,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 24,
+          "index": 155
+        },
+        "end": {
+          "line": 5,
+          "column": 43,
+          "index": 174
+        }
+      },
+      "inputs": [
+        "tax_rate_in"
+      ]
+    },
+    "2_tax_rate_in": {
+      "cul_scope_id": 2,
+      "name": "tax_rate_in",
+      "cul_source_scope_id": 2,
+      "reason": "input definition",
+      "inputs": [
+        "tax_rate_in"
+      ]
+    },
+    "4_income_tax_sum_current": {
+      "cul_scope_id": 4,
+      "name": "income_tax_sum_current",
+      "cul_source_scope_id": 1,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "4_income_tax_current": {
+      "cul_scope_id": 4,
+      "name": "income_tax_current",
+      "cul_source_scope_id": 1,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "4_income_tax_sum_impact": {
+      "cul_scope_id": 4,
+      "name": "income_tax_sum_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "taxpayer_table_in",
+        "tax_rate_in"
+      ]
+    },
+    "4_income_tax_impact": {
+      "cul_scope_id": 4,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "4_tax_rate": {
+      "cul_scope_id": 4,
       "name": "tax_rate",
       "cul_source_scope_id": 2,
       "reason": "implicit import",
@@ -270,8 +370,8 @@
         "tax_rate_in"
       ]
     },
-    "3_income_tax": {
-      "cul_scope_id": 3,
+    "4_income_tax": {
+      "cul_scope_id": 4,
       "name": "income_tax",
       "imported": "income_tax",
       "cul_source_scope_id": 5,
@@ -282,10 +382,10 @@
         "taxpayer_id_in"
       ]
     },
-    "3_taxpayer_id": {
-      "cul_scope_id": 3,
+    "4_taxpayer_id": {
+      "cul_scope_id": 4,
       "name": "taxpayer_id",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "definition",
       "loc": {
         "start": {
@@ -303,19 +403,19 @@
         "taxpayer_id_in"
       ]
     },
-    "3_taxpayer_id_in": {
-      "cul_scope_id": 3,
+    "4_taxpayer_id_in": {
+      "cul_scope_id": 4,
       "name": "taxpayer_id_in",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "input definition",
       "inputs": [
         "taxpayer_id_in"
       ]
     },
-    "3_taxpayer_table": {
-      "cul_scope_id": 3,
+    "4_taxpayer_table": {
+      "cul_scope_id": 4,
       "name": "taxpayer_table",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "definition",
       "loc": {
         "start": {
@@ -333,19 +433,19 @@
         "taxpayer_table_in"
       ]
     },
-    "3_taxpayer_table_in": {
-      "cul_scope_id": 3,
+    "4_taxpayer_table_in": {
+      "cul_scope_id": 4,
       "name": "taxpayer_table_in",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "input definition",
       "inputs": [
         "taxpayer_table_in"
       ]
     },
-    "3_gross_salary": {
-      "cul_scope_id": 3,
+    "4_gross_salary": {
+      "cul_scope_id": 4,
       "name": "gross_salary",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "definition",
       "loc": {
         "start": {
@@ -364,10 +464,10 @@
         "taxpayer_id_in"
       ]
     },
-    "3_income_tax_sum": {
-      "cul_scope_id": 3,
+    "4_income_tax_sum": {
+      "cul_scope_id": 4,
       "name": "income_tax_sum",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "definition",
       "loc": {
         "start": {
@@ -386,15 +486,22 @@
         "tax_rate_in"
       ]
     },
-    "4_income_tax_sum_proposed": {
-      "cul_scope_id": 4,
+    "3_income_tax_sum_proposed": {
+      "cul_scope_id": 3,
       "name": "income_tax_sum_proposed",
       "cul_source_scope_id": 2,
       "reason": "implicit import",
       "inputs": []
     },
-    "4_income_tax_sum_impact": {
-      "cul_scope_id": 4,
+    "3_income_tax_proposed": {
+      "cul_scope_id": 3,
+      "name": "income_tax_proposed",
+      "cul_source_scope_id": 2,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "3_income_tax_sum_impact": {
+      "cul_scope_id": 3,
       "name": "income_tax_sum_impact",
       "cul_source_scope_id": 0,
       "reason": "implicit import",
@@ -403,8 +510,19 @@
         "tax_rate_in"
       ]
     },
-    "4_taxpayer_id": {
-      "cul_scope_id": 4,
+    "3_income_tax_impact": {
+      "cul_scope_id": 3,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "3_taxpayer_id": {
+      "cul_scope_id": 3,
       "name": "taxpayer_id",
       "cul_source_scope_id": 1,
       "reason": "implicit import",
@@ -412,8 +530,8 @@
         "taxpayer_id_in"
       ]
     },
-    "4_taxpayer_table": {
-      "cul_scope_id": 4,
+    "3_taxpayer_table": {
+      "cul_scope_id": 3,
       "name": "taxpayer_table",
       "cul_source_scope_id": 1,
       "reason": "implicit import",
@@ -421,8 +539,8 @@
         "taxpayer_table_in"
       ]
     },
-    "4_gross_salary": {
-      "cul_scope_id": 4,
+    "3_gross_salary": {
+      "cul_scope_id": 3,
       "name": "gross_salary",
       "cul_source_scope_id": 1,
       "reason": "implicit import",
@@ -431,8 +549,8 @@
         "taxpayer_id_in"
       ]
     },
-    "4_income_tax_sum": {
-      "cul_scope_id": 4,
+    "3_income_tax_sum": {
+      "cul_scope_id": 3,
       "name": "income_tax_sum",
       "cul_source_scope_id": 1,
       "reason": "implicit import",
@@ -440,10 +558,10 @@
         "taxpayer_table_in"
       ]
     },
-    "4_net_salary": {
-      "cul_scope_id": 4,
+    "3_net_salary": {
+      "cul_scope_id": 3,
       "name": "net_salary",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "definition",
       "loc": {
         "start": {
@@ -462,10 +580,10 @@
         "taxpayer_id_in"
       ]
     },
-    "4_gross_salary_": {
-      "cul_scope_id": 4,
+    "3_gross_salary_": {
+      "cul_scope_id": 3,
       "name": "gross_salary_",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "definition (renamed)",
       "loc": {
         "start": {
@@ -483,19 +601,19 @@
         "gross_salary_in"
       ]
     },
-    "4_gross_salary_in": {
-      "cul_scope_id": 4,
+    "3_gross_salary_in": {
+      "cul_scope_id": 3,
       "name": "gross_salary_in",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "input definition",
       "inputs": [
         "gross_salary_in"
       ]
     },
-    "4_tax_rate": {
-      "cul_scope_id": 4,
+    "3_tax_rate": {
+      "cul_scope_id": 3,
       "name": "tax_rate",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "definition",
       "loc": {
         "start": {
@@ -511,10 +629,10 @@
       },
       "inputs": []
     },
-    "4_income_tax": {
-      "cul_scope_id": 4,
+    "3_income_tax": {
+      "cul_scope_id": 3,
       "name": "income_tax",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "definition",
       "loc": {
         "start": {
@@ -533,10 +651,10 @@
         "taxpayer_id_in"
       ]
     },
-    "4_tax_credit": {
-      "cul_scope_id": 4,
+    "3_tax_credit": {
+      "cul_scope_id": 3,
       "name": "tax_credit",
-      "cul_source_scope_id": 4,
+      "cul_source_scope_id": 3,
       "reason": "definition",
       "loc": {
         "start": {
@@ -559,6 +677,13 @@
       "reason": "implicit import",
       "inputs": []
     },
+    "5_income_tax_current": {
+      "cul_scope_id": 5,
+      "name": "income_tax_current",
+      "cul_source_scope_id": 1,
+      "reason": "implicit import",
+      "inputs": []
+    },
     "5_income_tax_sum_impact": {
       "cul_scope_id": 5,
       "name": "income_tax_sum_impact",
@@ -567,6 +692,17 @@
       "inputs": [
         "taxpayer_table_in",
         "tax_rate_in"
+      ]
+    },
+    "5_income_tax_impact": {
+      "cul_scope_id": 5,
+      "name": "income_tax_impact",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "tax_rate_in",
+        "taxpayer_table_in",
+        "taxpayer_id_in"
       ]
     },
     "5_tax_rate": {
@@ -581,7 +717,7 @@
     "5_taxpayer_id": {
       "cul_scope_id": 5,
       "name": "taxpayer_id",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "implicit import",
       "inputs": [
         "taxpayer_id_in"
@@ -590,7 +726,7 @@
     "5_taxpayer_table": {
       "cul_scope_id": 5,
       "name": "taxpayer_table",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in"
@@ -599,7 +735,7 @@
     "5_gross_salary": {
       "cul_scope_id": 5,
       "name": "gross_salary",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
@@ -609,7 +745,7 @@
     "5_income_tax_sum": {
       "cul_scope_id": 5,
       "name": "income_tax_sum",
-      "cul_source_scope_id": 3,
+      "cul_source_scope_id": 4,
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
@@ -738,8 +874,18 @@
       "reason": "explicit import"
     },
     {
+      "to": "0_income_tax_current",
+      "from": "1_income_tax",
+      "reason": "explicit import"
+    },
+    {
       "to": "0_income_tax_sum_proposed",
       "from": "2_income_tax_sum",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_income_tax_proposed",
+      "from": "2_income_tax",
       "reason": "explicit import"
     },
     {
@@ -755,33 +901,25 @@
       "negs": []
     },
     {
-      "to": "2_income_tax_sum_current",
-      "from": "1_income_tax_sum_current",
-      "reason": "implicit import"
+      "to": "0_income_tax_impact",
+      "from": "0_income_tax_proposed",
+      "reason": "call",
+      "negs": []
     },
     {
-      "to": "2_income_tax_sum_impact",
-      "from": "0_income_tax_sum_impact",
-      "reason": "implicit import"
-    },
-    {
-      "to": "2_income_tax_sum",
-      "from": "3_income_tax_sum",
-      "reason": "explicit import"
-    },
-    {
-      "to": "2_income_tax",
-      "from": "3_income_tax",
-      "reason": "explicit import"
-    },
-    {
-      "to": "2_tax_rate",
-      "from": "2_tax_rate_in",
-      "reason": "input"
+      "to": "0_income_tax_impact",
+      "from": "0_income_tax_current",
+      "reason": "call",
+      "negs": []
     },
     {
       "to": "1_income_tax_sum_proposed",
       "from": "2_income_tax_sum_proposed",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_income_tax_proposed",
+      "from": "2_income_tax_proposed",
       "reason": "implicit import"
     },
     {
@@ -790,8 +928,13 @@
       "reason": "implicit import"
     },
     {
+      "to": "1_income_tax_impact",
+      "from": "0_income_tax_impact",
+      "reason": "implicit import"
+    },
+    {
       "to": "1_income_tax",
-      "from": "4_income_tax",
+      "from": "3_income_tax",
       "reason": "explicit import"
     },
     {
@@ -831,64 +974,48 @@
       ]
     },
     {
-      "to": "3_income_tax_sum_current",
+      "to": "2_income_tax_sum_current",
       "from": "1_income_tax_sum_current",
       "reason": "implicit import"
     },
     {
-      "to": "3_income_tax_sum_impact",
+      "to": "2_income_tax_current",
+      "from": "1_income_tax_current",
+      "reason": "implicit import"
+    },
+    {
+      "to": "2_income_tax_sum_impact",
       "from": "0_income_tax_sum_impact",
       "reason": "implicit import"
     },
     {
-      "to": "3_tax_rate",
-      "from": "2_tax_rate",
+      "to": "2_income_tax_impact",
+      "from": "0_income_tax_impact",
       "reason": "implicit import"
     },
     {
-      "to": "3_income_tax",
-      "from": "5_income_tax",
+      "to": "2_income_tax_sum",
+      "from": "4_income_tax_sum",
       "reason": "explicit import"
     },
     {
-      "to": "3_taxpayer_id",
-      "from": "3_taxpayer_id_in",
+      "to": "2_income_tax",
+      "from": "4_income_tax",
+      "reason": "explicit import"
+    },
+    {
+      "to": "2_tax_rate",
+      "from": "2_tax_rate_in",
       "reason": "input"
     },
     {
-      "to": "3_taxpayer_table",
-      "from": "3_taxpayer_table_in",
-      "reason": "input"
+      "to": "4_income_tax_sum_current",
+      "from": "1_income_tax_sum_current",
+      "reason": "implicit import"
     },
     {
-      "to": "3_gross_salary",
-      "from": "3_taxpayer_table",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "3_gross_salary",
-      "from": "3_taxpayer_id",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "3_income_tax_sum",
-      "from": "3_taxpayer_table",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "3_income_tax_sum",
-      "from": "3_income_tax",
-      "reason": "call",
-      "negs": [
-        "taxpayer_id_in"
-      ]
-    },
-    {
-      "to": "4_income_tax_sum_proposed",
-      "from": "2_income_tax_sum_proposed",
+      "to": "4_income_tax_current",
+      "from": "1_income_tax_current",
       "reason": "implicit import"
     },
     {
@@ -897,57 +1024,128 @@
       "reason": "implicit import"
     },
     {
+      "to": "4_income_tax_impact",
+      "from": "0_income_tax_impact",
+      "reason": "implicit import"
+    },
+    {
+      "to": "4_tax_rate",
+      "from": "2_tax_rate",
+      "reason": "implicit import"
+    },
+    {
+      "to": "4_income_tax",
+      "from": "5_income_tax",
+      "reason": "explicit import"
+    },
+    {
       "to": "4_taxpayer_id",
+      "from": "4_taxpayer_id_in",
+      "reason": "input"
+    },
+    {
+      "to": "4_taxpayer_table",
+      "from": "4_taxpayer_table_in",
+      "reason": "input"
+    },
+    {
+      "to": "4_gross_salary",
+      "from": "4_taxpayer_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "4_gross_salary",
+      "from": "4_taxpayer_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "4_income_tax_sum",
+      "from": "4_taxpayer_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "4_income_tax_sum",
+      "from": "4_income_tax",
+      "reason": "call",
+      "negs": [
+        "taxpayer_id_in"
+      ]
+    },
+    {
+      "to": "3_income_tax_sum_proposed",
+      "from": "2_income_tax_sum_proposed",
+      "reason": "implicit import"
+    },
+    {
+      "to": "3_income_tax_proposed",
+      "from": "2_income_tax_proposed",
+      "reason": "implicit import"
+    },
+    {
+      "to": "3_income_tax_sum_impact",
+      "from": "0_income_tax_sum_impact",
+      "reason": "implicit import"
+    },
+    {
+      "to": "3_income_tax_impact",
+      "from": "0_income_tax_impact",
+      "reason": "implicit import"
+    },
+    {
+      "to": "3_taxpayer_id",
       "from": "1_taxpayer_id",
       "reason": "implicit import"
     },
     {
-      "to": "4_taxpayer_table",
+      "to": "3_taxpayer_table",
       "from": "1_taxpayer_table",
       "reason": "implicit import"
     },
     {
-      "to": "4_gross_salary",
+      "to": "3_gross_salary",
       "from": "1_gross_salary",
       "reason": "implicit import"
     },
     {
-      "to": "4_income_tax_sum",
+      "to": "3_income_tax_sum",
       "from": "1_income_tax_sum",
       "reason": "implicit import"
     },
     {
-      "to": "4_net_salary",
-      "from": "4_gross_salary",
+      "to": "3_net_salary",
+      "from": "3_gross_salary",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "4_net_salary",
-      "from": "4_income_tax",
+      "to": "3_net_salary",
+      "from": "3_income_tax",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "4_gross_salary_",
-      "from": "4_gross_salary_in",
+      "to": "3_gross_salary_",
+      "from": "3_gross_salary_in",
       "reason": "input"
     },
     {
-      "to": "4_income_tax",
-      "from": "4_tax_rate",
+      "to": "3_income_tax",
+      "from": "3_tax_rate",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "4_income_tax",
-      "from": "4_gross_salary",
+      "to": "3_income_tax",
+      "from": "3_gross_salary",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "4_income_tax",
-      "from": "4_tax_credit",
+      "to": "3_income_tax",
+      "from": "3_tax_credit",
       "reason": "call",
       "negs": []
     },
@@ -957,8 +1155,18 @@
       "reason": "implicit import"
     },
     {
+      "to": "5_income_tax_current",
+      "from": "1_income_tax_current",
+      "reason": "implicit import"
+    },
+    {
       "to": "5_income_tax_sum_impact",
       "from": "0_income_tax_sum_impact",
+      "reason": "implicit import"
+    },
+    {
+      "to": "5_income_tax_impact",
+      "from": "0_income_tax_impact",
       "reason": "implicit import"
     },
     {
@@ -968,22 +1176,22 @@
     },
     {
       "to": "5_taxpayer_id",
-      "from": "3_taxpayer_id",
+      "from": "4_taxpayer_id",
       "reason": "implicit import"
     },
     {
       "to": "5_taxpayer_table",
-      "from": "3_taxpayer_table",
+      "from": "4_taxpayer_table",
       "reason": "implicit import"
     },
     {
       "to": "5_gross_salary",
-      "from": "3_gross_salary",
+      "from": "4_gross_salary",
       "reason": "implicit import"
     },
     {
       "to": "5_income_tax_sum",
-      "from": "3_income_tax_sum",
+      "from": "4_income_tax_sum",
       "reason": "implicit import"
     },
     {
@@ -1026,53 +1234,53 @@
     "0": "./impact.cul.js",
     "1": "./incometax-set.cul?cul_scope_id=1&cul_parent_scope_id=0",
     "2": "./proposed.cul?cul_scope_id=2&cul_parent_scope_id=0",
-    "3": "./incometax-set.cul?cul_scope_id=3&cul_parent_scope_id=2",
-    "4": "./simple-incometax.cul?cul_scope_id=4&cul_parent_scope_id=1",
-    "5": "./simple-incometax.cul?cul_scope_id=5&cul_parent_scope_id=3"
+    "3": "./simple-incometax.cul?cul_scope_id=3&cul_parent_scope_id=1",
+    "4": "./incometax-set.cul?cul_scope_id=4&cul_parent_scope_id=2",
+    "5": "./simple-incometax.cul?cul_scope_id=5&cul_parent_scope_id=4"
   },
   "import_sources_to_resource": {
     "0_./incometax-set.cul": "./incometax-set.cul?cul_scope_id=1&cul_parent_scope_id=0",
     "0_./proposed.cul": "./proposed.cul?cul_scope_id=2&cul_parent_scope_id=0",
-    "2_./incometax-set.cul": "./incometax-set.cul?cul_scope_id=3&cul_parent_scope_id=2",
-    "1_./simple-incometax.cul": "./simple-incometax.cul?cul_scope_id=4&cul_parent_scope_id=1",
-    "3_./simple-incometax.cul": "./simple-incometax.cul?cul_scope_id=5&cul_parent_scope_id=3"
+    "1_./simple-incometax.cul": "./simple-incometax.cul?cul_scope_id=3&cul_parent_scope_id=1",
+    "2_./incometax-set.cul": "./incometax-set.cul?cul_scope_id=4&cul_parent_scope_id=2",
+    "4_./simple-incometax.cul": "./simple-incometax.cul?cul_scope_id=5&cul_parent_scope_id=4"
   },
   "cul_input_map": {
     "0_income_tax_sum_current": [
       "taxpayer_table_in"
     ],
+    "0_income_tax_current": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
     "0_income_tax_sum_proposed": [
       "taxpayer_table_in",
       "tax_rate_in"
+    ],
+    "0_income_tax_proposed": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
     ],
     "0_income_tax_sum_impact": [
       "taxpayer_table_in",
       "tax_rate_in"
     ],
-    "2_income_tax_sum_current": [],
-    "2_income_tax_sum_impact": [
-      "taxpayer_table_in",
-      "tax_rate_in"
-    ],
-    "2_income_tax_sum": [
-      "taxpayer_table_in",
-      "tax_rate_in"
-    ],
-    "2_income_tax": [
+    "0_income_tax_impact": [
       "tax_rate_in",
       "taxpayer_table_in",
       "taxpayer_id_in"
     ],
-    "2_tax_rate": [
-      "tax_rate_in"
-    ],
-    "2_tax_rate_in": [
-      "tax_rate_in"
-    ],
     "1_income_tax_sum_proposed": [],
+    "1_income_tax_proposed": [],
     "1_income_tax_sum_impact": [
       "taxpayer_table_in",
       "tax_rate_in"
+    ],
+    "1_income_tax_impact": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
     ],
     "1_income_tax": [
       "taxpayer_table_in",
@@ -1097,48 +1305,61 @@
     "1_income_tax_sum": [
       "taxpayer_table_in"
     ],
-    "3_income_tax_sum_current": [],
-    "3_income_tax_sum_impact": [
+    "2_income_tax_sum_current": [],
+    "2_income_tax_current": [],
+    "2_income_tax_sum_impact": [
       "taxpayer_table_in",
       "tax_rate_in"
     ],
-    "3_tax_rate": [
-      "tax_rate_in"
-    ],
-    "3_income_tax": [
+    "2_income_tax_impact": [
       "tax_rate_in",
       "taxpayer_table_in",
       "taxpayer_id_in"
     ],
-    "3_taxpayer_id": [
-      "taxpayer_id_in"
-    ],
-    "3_taxpayer_id_in": [
-      "taxpayer_id_in"
-    ],
-    "3_taxpayer_table": [
-      "taxpayer_table_in"
-    ],
-    "3_taxpayer_table_in": [
-      "taxpayer_table_in"
-    ],
-    "3_gross_salary": [
-      "taxpayer_table_in",
-      "taxpayer_id_in"
-    ],
-    "3_income_tax_sum": [
+    "2_income_tax_sum": [
       "taxpayer_table_in",
       "tax_rate_in"
     ],
-    "4_income_tax_sum_proposed": [],
+    "2_income_tax": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "2_tax_rate": [
+      "tax_rate_in"
+    ],
+    "2_tax_rate_in": [
+      "tax_rate_in"
+    ],
+    "4_income_tax_sum_current": [],
+    "4_income_tax_current": [],
     "4_income_tax_sum_impact": [
       "taxpayer_table_in",
       "tax_rate_in"
     ],
+    "4_income_tax_impact": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "4_tax_rate": [
+      "tax_rate_in"
+    ],
+    "4_income_tax": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
     "4_taxpayer_id": [
       "taxpayer_id_in"
     ],
+    "4_taxpayer_id_in": [
+      "taxpayer_id_in"
+    ],
     "4_taxpayer_table": [
+      "taxpayer_table_in"
+    ],
+    "4_taxpayer_table_in": [
       "taxpayer_table_in"
     ],
     "4_gross_salary": [
@@ -1146,28 +1367,59 @@
       "taxpayer_id_in"
     ],
     "4_income_tax_sum": [
+      "taxpayer_table_in",
+      "tax_rate_in"
+    ],
+    "3_income_tax_sum_proposed": [],
+    "3_income_tax_proposed": [],
+    "3_income_tax_sum_impact": [
+      "taxpayer_table_in",
+      "tax_rate_in"
+    ],
+    "3_income_tax_impact": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "3_taxpayer_id": [
+      "taxpayer_id_in"
+    ],
+    "3_taxpayer_table": [
       "taxpayer_table_in"
     ],
-    "4_net_salary": [
+    "3_gross_salary": [
       "taxpayer_table_in",
       "taxpayer_id_in"
     ],
-    "4_gross_salary_": [
-      "gross_salary_in"
+    "3_income_tax_sum": [
+      "taxpayer_table_in"
     ],
-    "4_gross_salary_in": [
-      "gross_salary_in"
-    ],
-    "4_tax_rate": [],
-    "4_income_tax": [
+    "3_net_salary": [
       "taxpayer_table_in",
       "taxpayer_id_in"
     ],
-    "4_tax_credit": [],
+    "3_gross_salary_": [
+      "gross_salary_in"
+    ],
+    "3_gross_salary_in": [
+      "gross_salary_in"
+    ],
+    "3_tax_rate": [],
+    "3_income_tax": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "3_tax_credit": [],
     "5_income_tax_sum_current": [],
+    "5_income_tax_current": [],
     "5_income_tax_sum_impact": [
       "taxpayer_table_in",
       "tax_rate_in"
+    ],
+    "5_income_tax_impact": [
+      "tax_rate_in",
+      "taxpayer_table_in",
+      "taxpayer_id_in"
     ],
     "5_tax_rate": [
       "tax_rate_in"
@@ -1205,5 +1457,5 @@
     ],
     "5_tax_credit": []
   },
-  "dot": "digraph {\n  \"0_income_tax_sum_current\" [cul_scope_id=0,name=income_tax_sum_current,imported=income_tax_sum,cul_source_scope_id=1,reason=\"explicit import\",inputs=taxpayer_table_in,label=\"0_income_tax_sum_current inputs: taxpayer_table_in\"]\n  \"0_income_tax_sum_proposed\" [cul_scope_id=0,name=income_tax_sum_proposed,imported=income_tax_sum,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"0_income_tax_sum_proposed inputs: taxpayer_table_in,tax_rate_in\"]\n  \"0_income_tax_sum_impact\" [cul_scope_id=0,name=income_tax_sum_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"0_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"2_income_tax_sum_current\" [cul_scope_id=2,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_sum_current inputs: \"]\n  \"2_income_tax_sum_impact\" [cul_scope_id=2,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"2_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"2_income_tax_sum\" [cul_scope_id=2,name=income_tax_sum,imported=income_tax_sum,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"2_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"2_income_tax\" [cul_scope_id=2,name=income_tax,imported=income_tax,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"2_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"2_tax_rate\" [cul_scope_id=2,name=tax_rate,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=tax_rate_in,label=\"2_tax_rate inputs: tax_rate_in\"]\n  \"2_tax_rate_in\" [cul_scope_id=2,name=tax_rate_in,cul_source_scope_id=2,reason=\"input definition\",inputs=tax_rate_in,label=\"2_tax_rate_in inputs: tax_rate_in\"]\n  \"1_income_tax_sum_proposed\" [cul_scope_id=1,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_sum_proposed inputs: \"]\n  \"1_income_tax_sum_impact\" [cul_scope_id=1,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"1_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,imported=income_tax,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_taxpayer_id\" [cul_scope_id=1,name=taxpayer_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"1_taxpayer_id inputs: taxpayer_id_in\"]\n  \"1_taxpayer_id_in\" [cul_scope_id=1,name=taxpayer_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_id_in,label=\"1_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"1_taxpayer_table\" [cul_scope_id=1,name=taxpayer_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_taxpayer_table inputs: taxpayer_table_in\"]\n  \"1_taxpayer_table_in\" [cul_scope_id=1,name=taxpayer_table_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_table_in,label=\"1_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" [cul_scope_id=1,name=income_tax_sum,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_income_tax_sum inputs: taxpayer_table_in\"]\n  \"3_income_tax_sum_current\" [cul_scope_id=3,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_sum_current inputs: \"]\n  \"3_income_tax_sum_impact\" [cul_scope_id=3,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"3_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"3_tax_rate\" [cul_scope_id=3,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"3_tax_rate inputs: tax_rate_in\"]\n  \"3_income_tax\" [cul_scope_id=3,name=income_tax,imported=income_tax,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"3_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"3_taxpayer_id\" [cul_scope_id=3,name=taxpayer_id,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"3_taxpayer_id inputs: taxpayer_id_in\"]\n  \"3_taxpayer_id_in\" [cul_scope_id=3,name=taxpayer_id_in,cul_source_scope_id=3,reason=\"input definition\",inputs=taxpayer_id_in,label=\"3_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"3_taxpayer_table\" [cul_scope_id=3,name=taxpayer_table,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"3_taxpayer_table inputs: taxpayer_table_in\"]\n  \"3_taxpayer_table_in\" [cul_scope_id=3,name=taxpayer_table_in,cul_source_scope_id=3,reason=\"input definition\",inputs=taxpayer_table_in,label=\"3_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"3_gross_salary\" [cul_scope_id=3,name=gross_salary,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_income_tax_sum\" [cul_scope_id=3,name=income_tax_sum,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"3_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"4_income_tax_sum_proposed\" [cul_scope_id=4,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_sum_proposed inputs: \"]\n  \"4_income_tax_sum_impact\" [cul_scope_id=4,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"4_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"4_taxpayer_id\" [cul_scope_id=4,name=taxpayer_id,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"4_taxpayer_id inputs: taxpayer_id_in\"]\n  \"4_taxpayer_table\" [cul_scope_id=4,name=taxpayer_table,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"4_taxpayer_table inputs: taxpayer_table_in\"]\n  \"4_gross_salary\" [cul_scope_id=4,name=gross_salary,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_income_tax_sum\" [cul_scope_id=4,name=income_tax_sum,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"4_income_tax_sum inputs: taxpayer_table_in\"]\n  \"4_net_salary\" [cul_scope_id=4,name=net_salary,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_net_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_gross_salary_\" [cul_scope_id=4,name=gross_salary_,cul_source_scope_id=4,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"4_gross_salary_ inputs: gross_salary_in\"]\n  \"4_gross_salary_in\" [cul_scope_id=4,name=gross_salary_in,cul_source_scope_id=4,reason=\"input definition\",inputs=gross_salary_in,label=\"4_gross_salary_in inputs: gross_salary_in\"]\n  \"4_tax_rate\" [cul_scope_id=4,name=tax_rate,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"4_tax_rate inputs: \"]\n  \"4_income_tax\" [cul_scope_id=4,name=income_tax,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_tax_credit\" [cul_scope_id=4,name=tax_credit,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"4_tax_credit inputs: \"]\n  \"5_income_tax_sum_current\" [cul_scope_id=5,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_sum_current inputs: \"]\n  \"5_income_tax_sum_impact\" [cul_scope_id=5,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"5_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"5_tax_rate\" [cul_scope_id=5,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"5_tax_rate inputs: tax_rate_in\"]\n  \"5_taxpayer_id\" [cul_scope_id=5,name=taxpayer_id,cul_source_scope_id=3,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"5_taxpayer_id inputs: taxpayer_id_in\"]\n  \"5_taxpayer_table\" [cul_scope_id=5,name=taxpayer_table,cul_source_scope_id=3,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"5_taxpayer_table inputs: taxpayer_table_in\"]\n  \"5_gross_salary\" [cul_scope_id=5,name=gross_salary,cul_source_scope_id=3,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum\" [cul_scope_id=5,name=income_tax_sum,cul_source_scope_id=3,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"5_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"5_net_salary\" [cul_scope_id=5,name=net_salary,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,tax_rate_in\",label=\"5_net_salary inputs: taxpayer_table_in,taxpayer_id_in,tax_rate_in\"]\n  \"5_gross_salary_\" [cul_scope_id=5,name=gross_salary_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"5_gross_salary_ inputs: gross_salary_in\"]\n  \"5_gross_salary_in\" [cul_scope_id=5,name=gross_salary_in,cul_source_scope_id=5,reason=\"input definition\",inputs=gross_salary_in,label=\"5_gross_salary_in inputs: gross_salary_in\"]\n  \"5_tax_rate_\" [cul_scope_id=5,name=tax_rate_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_tax_rate_ inputs: \"]\n  \"5_income_tax\" [cul_scope_id=5,name=income_tax,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"5_tax_credit\" [cul_scope_id=5,name=tax_credit,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"5_tax_credit inputs: \"]\n  \"1_income_tax_sum\" -> \"0_income_tax_sum_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax_sum\" -> \"0_income_tax_sum_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_income_tax_sum_proposed\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_current\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"2_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_income_tax_sum\" -> \"2_income_tax_sum\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"3_income_tax\" -> \"2_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_tax_rate_in\" -> \"2_tax_rate\" [value=\"[object Object]\",label=\"input +tax_rate_in\"]\n  \"0_income_tax_sum_impact\" -> \"1_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_taxpayer_id_in\" -> \"1_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"1_taxpayer_table_in\" -> \"1_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"1_taxpayer_table\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_id\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_table\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"3_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"3_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_income_tax\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"3_taxpayer_id_in\" -> \"3_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"3_taxpayer_table_in\" -> \"3_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"3_taxpayer_table\" -> \"3_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_taxpayer_id\" -> \"3_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_taxpayer_table\" -> \"3_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_income_tax\" -> \"3_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"4_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_id\" -> \"4_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_table\" -> \"4_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_income_tax_sum\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_gross_salary\" -> \"4_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_income_tax\" -> \"4_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_gross_salary_in\" -> \"4_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"4_tax_rate\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_gross_salary\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_tax_credit\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"5_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"5_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_taxpayer_id\" -> \"5_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_taxpayer_table\" -> \"5_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_gross_salary\" -> \"5_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_income_tax_sum\" -> \"5_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_gross_salary\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_income_tax\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary_in\" -> \"5_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"5_tax_rate\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_tax_credit\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_income_tax_sum_current\" [cul_scope_id=0,name=income_tax_sum_current,imported=income_tax_sum,cul_source_scope_id=1,reason=\"explicit import\",inputs=taxpayer_table_in,label=\"0_income_tax_sum_current inputs: taxpayer_table_in\"]\n  \"0_income_tax_current\" [cul_scope_id=0,name=income_tax_current,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax_current inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_income_tax_sum_proposed\" [cul_scope_id=0,name=income_tax_sum_proposed,imported=income_tax_sum,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"0_income_tax_sum_proposed inputs: taxpayer_table_in,tax_rate_in\"]\n  \"0_income_tax_proposed\" [cul_scope_id=0,name=income_tax_proposed,imported=income_tax,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax_proposed inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" [cul_scope_id=0,name=income_tax_sum_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"0_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"0_income_tax_impact\" [cul_scope_id=0,name=income_tax_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum_proposed\" [cul_scope_id=1,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_sum_proposed inputs: \"]\n  \"1_income_tax_proposed\" [cul_scope_id=1,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_proposed inputs: \"]\n  \"1_income_tax_sum_impact\" [cul_scope_id=1,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"1_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"1_income_tax_impact\" [cul_scope_id=1,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,imported=income_tax,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_taxpayer_id\" [cul_scope_id=1,name=taxpayer_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"1_taxpayer_id inputs: taxpayer_id_in\"]\n  \"1_taxpayer_id_in\" [cul_scope_id=1,name=taxpayer_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_id_in,label=\"1_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"1_taxpayer_table\" [cul_scope_id=1,name=taxpayer_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_taxpayer_table inputs: taxpayer_table_in\"]\n  \"1_taxpayer_table_in\" [cul_scope_id=1,name=taxpayer_table_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_table_in,label=\"1_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" [cul_scope_id=1,name=income_tax_sum,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_income_tax_sum inputs: taxpayer_table_in\"]\n  \"2_income_tax_sum_current\" [cul_scope_id=2,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_sum_current inputs: \"]\n  \"2_income_tax_current\" [cul_scope_id=2,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_current inputs: \"]\n  \"2_income_tax_sum_impact\" [cul_scope_id=2,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"2_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"2_income_tax_impact\" [cul_scope_id=2,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"2_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"2_income_tax_sum\" [cul_scope_id=2,name=income_tax_sum,imported=income_tax_sum,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"2_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"2_income_tax\" [cul_scope_id=2,name=income_tax,imported=income_tax,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"2_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"2_tax_rate\" [cul_scope_id=2,name=tax_rate,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=tax_rate_in,label=\"2_tax_rate inputs: tax_rate_in\"]\n  \"2_tax_rate_in\" [cul_scope_id=2,name=tax_rate_in,cul_source_scope_id=2,reason=\"input definition\",inputs=tax_rate_in,label=\"2_tax_rate_in inputs: tax_rate_in\"]\n  \"4_income_tax_sum_current\" [cul_scope_id=4,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_sum_current inputs: \"]\n  \"4_income_tax_current\" [cul_scope_id=4,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_current inputs: \"]\n  \"4_income_tax_sum_impact\" [cul_scope_id=4,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"4_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"4_income_tax_impact\" [cul_scope_id=4,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"4_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"4_tax_rate\" [cul_scope_id=4,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"4_tax_rate inputs: tax_rate_in\"]\n  \"4_income_tax\" [cul_scope_id=4,name=income_tax,imported=income_tax,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"4_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"4_taxpayer_id\" [cul_scope_id=4,name=taxpayer_id,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"4_taxpayer_id inputs: taxpayer_id_in\"]\n  \"4_taxpayer_id_in\" [cul_scope_id=4,name=taxpayer_id_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_id_in,label=\"4_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"4_taxpayer_table\" [cul_scope_id=4,name=taxpayer_table,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"4_taxpayer_table inputs: taxpayer_table_in\"]\n  \"4_taxpayer_table_in\" [cul_scope_id=4,name=taxpayer_table_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_table_in,label=\"4_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"4_gross_salary\" [cul_scope_id=4,name=gross_salary,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_income_tax_sum\" [cul_scope_id=4,name=income_tax_sum,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"4_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"3_income_tax_sum_proposed\" [cul_scope_id=3,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_sum_proposed inputs: \"]\n  \"3_income_tax_proposed\" [cul_scope_id=3,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_proposed inputs: \"]\n  \"3_income_tax_sum_impact\" [cul_scope_id=3,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"3_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"3_income_tax_impact\" [cul_scope_id=3,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"3_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"3_taxpayer_id\" [cul_scope_id=3,name=taxpayer_id,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"3_taxpayer_id inputs: taxpayer_id_in\"]\n  \"3_taxpayer_table\" [cul_scope_id=3,name=taxpayer_table,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_taxpayer_table inputs: taxpayer_table_in\"]\n  \"3_gross_salary\" [cul_scope_id=3,name=gross_salary,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_income_tax_sum\" [cul_scope_id=3,name=income_tax_sum,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_income_tax_sum inputs: taxpayer_table_in\"]\n  \"3_net_salary\" [cul_scope_id=3,name=net_salary,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_net_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_gross_salary_\" [cul_scope_id=3,name=gross_salary_,cul_source_scope_id=3,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"3_gross_salary_ inputs: gross_salary_in\"]\n  \"3_gross_salary_in\" [cul_scope_id=3,name=gross_salary_in,cul_source_scope_id=3,reason=\"input definition\",inputs=gross_salary_in,label=\"3_gross_salary_in inputs: gross_salary_in\"]\n  \"3_tax_rate\" [cul_scope_id=3,name=tax_rate,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_tax_rate inputs: \"]\n  \"3_income_tax\" [cul_scope_id=3,name=income_tax,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_tax_credit\" [cul_scope_id=3,name=tax_credit,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_tax_credit inputs: \"]\n  \"5_income_tax_sum_current\" [cul_scope_id=5,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_sum_current inputs: \"]\n  \"5_income_tax_current\" [cul_scope_id=5,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_current inputs: \"]\n  \"5_income_tax_sum_impact\" [cul_scope_id=5,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"5_income_tax_sum_impact inputs: taxpayer_table_in,tax_rate_in\"]\n  \"5_income_tax_impact\" [cul_scope_id=5,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_income_tax_impact inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"5_tax_rate\" [cul_scope_id=5,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"5_tax_rate inputs: tax_rate_in\"]\n  \"5_taxpayer_id\" [cul_scope_id=5,name=taxpayer_id,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"5_taxpayer_id inputs: taxpayer_id_in\"]\n  \"5_taxpayer_table\" [cul_scope_id=5,name=taxpayer_table,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"5_taxpayer_table inputs: taxpayer_table_in\"]\n  \"5_gross_salary\" [cul_scope_id=5,name=gross_salary,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum\" [cul_scope_id=5,name=income_tax_sum,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,tax_rate_in\",label=\"5_income_tax_sum inputs: taxpayer_table_in,tax_rate_in\"]\n  \"5_net_salary\" [cul_scope_id=5,name=net_salary,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,tax_rate_in\",label=\"5_net_salary inputs: taxpayer_table_in,taxpayer_id_in,tax_rate_in\"]\n  \"5_gross_salary_\" [cul_scope_id=5,name=gross_salary_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"5_gross_salary_ inputs: gross_salary_in\"]\n  \"5_gross_salary_in\" [cul_scope_id=5,name=gross_salary_in,cul_source_scope_id=5,reason=\"input definition\",inputs=gross_salary_in,label=\"5_gross_salary_in inputs: gross_salary_in\"]\n  \"5_tax_rate_\" [cul_scope_id=5,name=tax_rate_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_tax_rate_ inputs: \"]\n  \"5_income_tax\" [cul_scope_id=5,name=income_tax,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"tax_rate_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_income_tax inputs: tax_rate_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"5_tax_credit\" [cul_scope_id=5,name=tax_credit,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"5_tax_credit inputs: \"]\n  \"1_income_tax_sum\" -> \"0_income_tax_sum_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_income_tax\" -> \"0_income_tax_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax_sum\" -> \"0_income_tax_sum_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax\" -> \"0_income_tax_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_income_tax_sum_proposed\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_current\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_proposed\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_current\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"1_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"1_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_income_tax\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_taxpayer_id_in\" -> \"1_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"1_taxpayer_table_in\" -> \"1_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"1_taxpayer_table\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_id\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_table\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"2_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"2_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"2_income_tax_sum\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_income_tax\" -> \"2_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_tax_rate_in\" -> \"2_tax_rate\" [value=\"[object Object]\",label=\"input +tax_rate_in\"]\n  \"0_income_tax_sum_impact\" -> \"4_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"4_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"4_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_income_tax\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_taxpayer_id_in\" -> \"4_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"4_taxpayer_table_in\" -> \"4_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"4_taxpayer_table\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_id\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_table\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_income_tax\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"3_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"3_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_id\" -> \"3_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_table\" -> \"3_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary\" -> \"3_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_income_tax_sum\" -> \"3_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_gross_salary\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_income_tax\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary_in\" -> \"3_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"3_tax_rate\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_tax_credit\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"5_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"5_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"5_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_id\" -> \"5_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_table\" -> \"5_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_gross_salary\" -> \"5_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"5_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_gross_salary\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_income_tax\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary_in\" -> \"5_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"5_tax_rate\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_tax_credit\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }
