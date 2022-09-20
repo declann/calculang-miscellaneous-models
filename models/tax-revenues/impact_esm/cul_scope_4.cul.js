@@ -1,5 +1,5 @@
-import { income_tax } from './simple-incometax.cul';
-export { income_tax };
+import { income_tax, effective_rate } from './simple-incometax.cul';
+export { income_tax, effective_rate };
 
 export const taxpayer_id = () => taxpayer_id_in;
 export const taxpayer_table = () => taxpayer_table_in;

@@ -1,8 +1,9 @@
-import { income_tax_sum as income_tax_sum_current, income_tax as income_tax_current } from './incometax-set.cul';
-import { income_tax_sum as income_tax_sum_proposed, income_tax as income_tax_proposed } from './proposed.cul';
+import { income_tax_sum as income_tax_sum_current, income_tax as income_tax_current, effective_rate as effective_rate_current } from './incometax-set.cul';
+import { income_tax_sum as income_tax_sum_proposed, income_tax as income_tax_proposed, effective_rate as effective_rate_proposed } from './proposed.cul';
 
 export { income_tax_sum_current, income_tax_sum_proposed };
 export { income_tax_current, income_tax_proposed };
+export { effective_rate_current, effective_rate_proposed };
 
 export const income_tax_sum_impact = () =>
   income_tax_sum_proposed() - income_tax_sum_current();

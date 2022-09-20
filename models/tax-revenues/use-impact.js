@@ -22,3 +22,6 @@ console.log(m.income_tax_impact({taxpayer_table_in, taxpayer_id_in:0, tax_rate_i
 console.log(m.income_tax_impact({taxpayer_table_in, taxpayer_id_in:0, tax_rate_in:0.16}))
 console.log(m.income_tax_impact({taxpayer_table_in, taxpayer_id_in:0, tax_rate_in:0.30}))
 
+console.log(m.effective_rate_current({taxpayer_table_in, taxpayer_id_in:1, tax_rate_in:0.30}))
+console.log(m.effective_rate_proposed({taxpayer_table_in, taxpayer_id_in:1, tax_rate_in:0.30}))
+
