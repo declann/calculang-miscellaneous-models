@@ -4,7 +4,7 @@ var m = require('./impact.js')
 const taxpayer_table_in = [
   {
     taxpayer_id: 0,
-    gross_salary: 10000,
+    gross_salary: 1000,
   },
   {
     taxpayer_id: 1,
