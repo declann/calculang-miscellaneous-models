@@ -1,0 +1,401 @@
+{
+  "cul_functions": {
+    "0_income_tax": {
+      "cul_scope_id": 0,
+      "name": "income_tax",
+      "imported": "income_tax",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "0_taxpayer_id": {
+      "cul_scope_id": 0,
+      "name": "taxpayer_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 27,
+          "index": 107
+        },
+        "end": {
+          "line": 4,
+          "column": 47,
+          "index": 127
+        }
+      },
+      "inputs": [
+        "taxpayer_id_in"
+      ]
+    },
+    "0_taxpayer_id_in": {
+      "cul_scope_id": 0,
+      "name": "taxpayer_id_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "taxpayer_id_in"
+      ]
+    },
+    "0_taxpayer_table": {
+      "cul_scope_id": 0,
+      "name": "taxpayer_table",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 30,
+          "index": 160
+        },
+        "end": {
+          "line": 5,
+          "column": 53,
+          "index": 183
+        }
+      },
+      "inputs": [
+        "taxpayer_table_in"
+      ]
+    },
+    "0_taxpayer_table_in": {
+      "cul_scope_id": 0,
+      "name": "taxpayer_table_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "taxpayer_table_in"
+      ]
+    },
+    "0_gross_salary": {
+      "cul_scope_id": 0,
+      "name": "gross_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 28,
+          "index": 216
+        },
+        "end": {
+          "line": 7,
+          "column": 78,
+          "index": 266
+        }
+      },
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "0_income_tax_sum": {
+      "cul_scope_id": 0,
+      "name": "income_tax_sum",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 30,
+          "index": 321
+        },
+        "end": {
+          "line": 14,
+          "column": 3,
+          "index": 514
+        }
+      },
+      "inputs": [
+        "taxpayer_table_in"
+      ]
+    },
+    "1_taxpayer_id": {
+      "cul_scope_id": 1,
+      "name": "taxpayer_id",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "taxpayer_id_in"
+      ]
+    },
+    "1_taxpayer_table": {
+      "cul_scope_id": 1,
+      "name": "taxpayer_table",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "taxpayer_table_in"
+      ]
+    },
+    "1_gross_salary": {
+      "cul_scope_id": 1,
+      "name": "gross_salary",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "1_income_tax_sum": {
+      "cul_scope_id": 1,
+      "name": "income_tax_sum",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "taxpayer_table_in"
+      ]
+    },
+    "1_net_salary": {
+      "cul_scope_id": 1,
+      "name": "net_salary",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 26,
+          "index": 45
+        },
+        "end": {
+          "line": 3,
+          "column": 61,
+          "index": 80
+        }
+      },
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "1_gross_salary_": {
+      "cul_scope_id": 1,
+      "name": "gross_salary_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 28,
+          "index": 113
+        },
+        "end": {
+          "line": 5,
+          "column": 49,
+          "index": 134
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "1_gross_salary_in": {
+      "cul_scope_id": 1,
+      "name": "gross_salary_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "1_income_tax": {
+      "cul_scope_id": 1,
+      "name": "income_tax",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 26,
+          "index": 165
+        },
+        "end": {
+          "line": 7,
+          "column": 81,
+          "index": 220
+        }
+      },
+      "inputs": [
+        "taxpayer_table_in",
+        "taxpayer_id_in"
+      ]
+    },
+    "1_tax_credit": {
+      "cul_scope_id": 1,
+      "name": "tax_credit",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 26,
+          "index": 251
+        },
+        "end": {
+          "line": 9,
+          "column": 38,
+          "index": 263
+        }
+      },
+      "inputs": []
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_income_tax",
+      "from": "1_income_tax",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_taxpayer_id",
+      "from": "0_taxpayer_id_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_taxpayer_table",
+      "from": "0_taxpayer_table_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_gross_salary",
+      "from": "0_taxpayer_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_gross_salary",
+      "from": "0_taxpayer_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_income_tax_sum",
+      "from": "0_taxpayer_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_income_tax_sum",
+      "from": "0_income_tax",
+      "reason": "call",
+      "negs": [
+        "taxpayer_id_in"
+      ]
+    },
+    {
+      "to": "1_taxpayer_id",
+      "from": "0_taxpayer_id",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_taxpayer_table",
+      "from": "0_taxpayer_table",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_gross_salary",
+      "from": "0_gross_salary",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_income_tax_sum",
+      "from": "0_income_tax_sum",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_net_salary",
+      "from": "1_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_net_salary",
+      "from": "1_income_tax",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gross_salary_",
+      "from": "1_gross_salary_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_income_tax",
+      "from": "1_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_income_tax",
+      "from": "1_tax_credit",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./incometax-set.cul.js",
+    "1": "./simple-incometax.cul?cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./simple-incometax.cul": "./simple-incometax.cul?cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_income_tax": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "0_taxpayer_id": [
+      "taxpayer_id_in"
+    ],
+    "0_taxpayer_id_in": [
+      "taxpayer_id_in"
+    ],
+    "0_taxpayer_table": [
+      "taxpayer_table_in"
+    ],
+    "0_taxpayer_table_in": [
+      "taxpayer_table_in"
+    ],
+    "0_gross_salary": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "0_income_tax_sum": [
+      "taxpayer_table_in"
+    ],
+    "1_taxpayer_id": [
+      "taxpayer_id_in"
+    ],
+    "1_taxpayer_table": [
+      "taxpayer_table_in"
+    ],
+    "1_gross_salary": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "1_income_tax_sum": [
+      "taxpayer_table_in"
+    ],
+    "1_net_salary": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "1_gross_salary_": [
+      "gross_salary_in"
+    ],
+    "1_gross_salary_in": [
+      "gross_salary_in"
+    ],
+    "1_income_tax": [
+      "taxpayer_table_in",
+      "taxpayer_id_in"
+    ],
+    "1_tax_credit": []
+  },
+  "dot": "digraph {\n  \"0_income_tax\" [cul_scope_id=0,name=income_tax,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_taxpayer_id\" [cul_scope_id=0,name=taxpayer_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"0_taxpayer_id inputs: taxpayer_id_in\"]\n  \"0_taxpayer_id_in\" [cul_scope_id=0,name=taxpayer_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=taxpayer_id_in,label=\"0_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"0_taxpayer_table\" [cul_scope_id=0,name=taxpayer_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"0_taxpayer_table inputs: taxpayer_table_in\"]\n  \"0_taxpayer_table_in\" [cul_scope_id=0,name=taxpayer_table_in,cul_source_scope_id=0,reason=\"input definition\",inputs=taxpayer_table_in,label=\"0_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"0_gross_salary\" [cul_scope_id=0,name=gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_income_tax_sum\" [cul_scope_id=0,name=income_tax_sum,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"0_income_tax_sum inputs: taxpayer_table_in\"]\n  \"1_taxpayer_id\" [cul_scope_id=1,name=taxpayer_id,cul_source_scope_id=0,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"1_taxpayer_id inputs: taxpayer_id_in\"]\n  \"1_taxpayer_table\" [cul_scope_id=1,name=taxpayer_table,cul_source_scope_id=0,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"1_taxpayer_table inputs: taxpayer_table_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" [cul_scope_id=1,name=income_tax_sum,cul_source_scope_id=0,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"1_income_tax_sum inputs: taxpayer_table_in\"]\n  \"1_net_salary\" [cul_scope_id=1,name=net_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_net_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_gross_salary_\" [cul_scope_id=1,name=gross_salary_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_gross_salary_ inputs: gross_salary_in\"]\n  \"1_gross_salary_in\" [cul_scope_id=1,name=gross_salary_in,cul_source_scope_id=1,reason=\"input definition\",inputs=gross_salary_in,label=\"1_gross_salary_in inputs: gross_salary_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_tax_credit\" [cul_scope_id=1,name=tax_credit,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_tax_credit inputs: \"]\n  \"1_income_tax\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_taxpayer_id_in\" -> \"0_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"0_taxpayer_table_in\" -> \"0_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"0_taxpayer_table\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_taxpayer_id\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_taxpayer_table\" -> \"0_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax\" -> \"0_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_taxpayer_id\" -> \"1_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_taxpayer_table\" -> \"1_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_gross_salary\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_sum\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary_in\" -> \"1_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"1_gross_salary\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_tax_credit\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

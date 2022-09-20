@@ -1,0 +1,13 @@
+import { income_tax } from "./cul_scope_1.mjs";
+export { income_tax };
+
+export const taxpayer_id = ({ taxpayer_id_in }) => taxpayer_id_in;
+export const taxpayer_table = ({ taxpayer_table_in }) => taxpayer_table_in;
+
+export const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].gross_salary;
+
+// -taxpayer_id_in
+export const income_tax_sum = ({ taxpayer_table_in }) =>
+taxpayer_table({ taxpayer_table_in }).reduce(
+(acc, val) => acc + income_tax({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
+0);
