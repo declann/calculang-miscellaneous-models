@@ -1,4 +1,4 @@
-import { tax_rate } from "./cul_scope_2.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs";import { income_tax, effective_rate } from "./cul_scope_5.mjs";
+import { band } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs";import { income_tax, effective_rate } from "./cul_scope_5.mjs";
 export { income_tax, effective_rate };
 
 export const taxpayer_id = ({ taxpayer_id_in }) => taxpayer_id_in;

@@ -14,7 +14,7 @@ export const effective_rate = () => 1 - net_salary() / gross_salary();
 
 export const prsi = () => gross_salary() * 0.04;
 
-export const band = () => band_in;
+export const band = () => 30000;
 
 export const paye = () => {
   return 0.2 * gross_salary() + 0.2 * Math.min(gross_salary() - band(), 0);
