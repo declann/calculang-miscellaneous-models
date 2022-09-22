@@ -17,5 +17,5 @@ export const prsi = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ ta
 export const band = ({}) => 30000;
 
 export const paye = ({ taxpayer_table_in, taxpayer_id_in }) => {
-  return 0.2 * gross_salary({ taxpayer_table_in, taxpayer_id_in }) + 0.2 * Math.min(gross_salary({ taxpayer_table_in, taxpayer_id_in }) - band({}), 0);
+  return 0.2 * gross_salary({ taxpayer_table_in, taxpayer_id_in }) + 0.2 * Math.max(gross_salary({ taxpayer_table_in, taxpayer_id_in }) - band({}), 0);
 };
