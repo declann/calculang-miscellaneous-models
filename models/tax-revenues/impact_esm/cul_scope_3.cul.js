@@ -17,5 +17,5 @@ export const prsi = () => gross_salary() * 0.04;
 export const band = () => band_in;
 
 export const paye = () => {
-  0.2 * gross_salary() + 0.2 * Math.min(gross_salary() - band(), 0);
+  return 0.2 * gross_salary() + 0.2 * Math.min(gross_salary() - band(), 0);
 };
