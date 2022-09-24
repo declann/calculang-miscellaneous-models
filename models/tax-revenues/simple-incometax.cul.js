@@ -46,7 +46,7 @@ export const usc_by_band_id = () =>
     usc_band_end() - usc_band_start(),
     Math.max(gross_salary() - usc_band_start(), 0)
   );
-export const usc = () => usc_table().reduce((a, v) => a + usc_band_by_id({band_id:v.band_id}),0)
+export const usc = () => usc_table().reduce((a, v) => a + usc_by_band_id({band_id:v.band_id}),0)
 /*
 export const usc_by_band_id = () => {
   return (({ band_id, band_co, rate }) => Math.max(gross_salary() - 1))(

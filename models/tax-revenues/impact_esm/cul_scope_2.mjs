@@ -2,7 +2,7 @@ import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_im
 income_tax_sum,
 income_tax,
 effective_rate } from
-"./cul_scope_4.mjs";
+"./cul_scope_3.mjs";
 export { income_tax_sum, income_tax, effective_rate };
 
 // tax rate an input
