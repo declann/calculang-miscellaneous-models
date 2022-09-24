@@ -4,7 +4,7 @@ export const net_salary = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salar
 
 export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
-export const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
+export const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max( /*paye() +*/prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
 
 export const tax_credit = ({}) => 1000;
 
@@ -33,13 +33,13 @@ export const band_id = ({ band_id_in }) => band_id_in;
 
 export const usc_band_end = ({ band_id_in }) => {
   if (band_id({ band_id_in }) == usc_table({}).length) return 999999999;
-  return usc_table({})[band_id({ band_id_in }) - 1];
+  return usc_table({})[band_id({ band_id_in }) - 1].band_co;
 };
 export const usc_band_start = ({ band_id_in }) => {
   if (band_id({ band_id_in }) == 1) return 0;
-  return usc_table({})[band_id({ band_id_in }) - 2];
+  return usc_table({})[band_id({ band_id_in }) - 2].band_co;
 };
-export const usc_rate = ({ band_id_in }) => usc_table({})[band_id({ band_id_in }) - 1];
+export const usc_rate = ({ band_id_in }) => usc_table({})[band_id({ band_id_in }) - 1].rate;
 export const usc_by_band_id = ({ band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
 usc_rate({ band_id_in }) *
 Math.min(

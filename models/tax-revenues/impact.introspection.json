@@ -40,7 +40,6 @@
       "reason": "explicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -53,7 +52,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -66,7 +64,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -89,7 +86,6 @@
       },
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -113,7 +109,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -145,7 +140,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -157,7 +151,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -314,7 +307,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -326,7 +318,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -338,7 +329,6 @@
       "reason": "explicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -351,7 +341,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -364,7 +353,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -486,7 +474,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -498,7 +485,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -538,7 +524,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -551,7 +536,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -656,7 +640,6 @@
       },
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -688,7 +671,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -700,7 +682,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -806,8 +787,8 @@
         },
         "end": {
           "line": 7,
-          "column": 83,
-          "index": 222
+          "column": 87,
+          "index": 226
         }
       },
       "inputs": [
@@ -824,12 +805,12 @@
         "start": {
           "line": 9,
           "column": 26,
-          "index": 253
+          "index": 257
         },
         "end": {
           "line": 9,
           "column": 36,
-          "index": 263
+          "index": 267
         }
       },
       "inputs": []
@@ -843,12 +824,12 @@
         "start": {
           "line": 11,
           "column": 30,
-          "index": 298
+          "index": 302
         },
         "end": {
           "line": 11,
           "column": 69,
-          "index": 337
+          "index": 341
         }
       },
       "inputs": [
@@ -865,12 +846,12 @@
         "start": {
           "line": 13,
           "column": 20,
-          "index": 362
+          "index": 366
         },
         "end": {
           "line": 13,
           "column": 47,
-          "index": 389
+          "index": 393
         }
       },
       "inputs": [
@@ -887,12 +868,12 @@
         "start": {
           "line": 15,
           "column": 20,
-          "index": 414
+          "index": 418
         },
         "end": {
           "line": 15,
           "column": 31,
-          "index": 425
+          "index": 429
         }
       },
       "inputs": []
@@ -906,12 +887,12 @@
         "start": {
           "line": 17,
           "column": 20,
-          "index": 450
+          "index": 454
         },
         "end": {
           "line": 19,
           "column": 1,
-          "index": 537
+          "index": 541
         }
       },
       "inputs": [
@@ -928,12 +909,12 @@
         "start": {
           "line": 21,
           "column": 25,
-          "index": 567
+          "index": 571
         },
         "end": {
           "line": 30,
           "column": 1,
-          "index": 782
+          "index": 786
         }
       },
       "inputs": []
@@ -947,12 +928,12 @@
         "start": {
           "line": 32,
           "column": 23,
-          "index": 810
+          "index": 814
         },
         "end": {
           "line": 32,
           "column": 39,
-          "index": 826
+          "index": 830
         }
       },
       "inputs": [
@@ -977,12 +958,12 @@
         "start": {
           "line": 34,
           "column": 28,
-          "index": 859
+          "index": 863
         },
         "end": {
           "line": 37,
           "column": 1,
-          "index": 965
+          "index": 977
         }
       },
       "inputs": [
@@ -998,12 +979,12 @@
         "start": {
           "line": 38,
           "column": 30,
-          "index": 998
+          "index": 1010
         },
         "end": {
           "line": 41,
           "column": 1,
-          "index": 1079
+          "index": 1099
         }
       },
       "inputs": [
@@ -1019,12 +1000,12 @@
         "start": {
           "line": 42,
           "column": 24,
-          "index": 1106
+          "index": 1126
         },
         "end": {
           "line": 42,
-          "column": 56,
-          "index": 1138
+          "column": 61,
+          "index": 1163
         }
       },
       "inputs": [
@@ -1040,12 +1021,12 @@
         "start": {
           "line": 43,
           "column": 30,
-          "index": 1171
+          "index": 1196
         },
         "end": {
           "line": 48,
           "column": 3,
-          "index": 1302
+          "index": 1327
         }
       },
       "inputs": [
@@ -1063,12 +1044,12 @@
         "start": {
           "line": 49,
           "column": 19,
-          "index": 1324
+          "index": 1349
         },
         "end": {
           "line": 49,
           "column": 99,
-          "index": 1404
+          "index": 1429
         }
       },
       "inputs": [
@@ -1104,7 +1085,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1116,7 +1096,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1182,7 +1161,6 @@
       "reason": "implicit import",
       "inputs": [
         "taxpayer_table_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1206,7 +1184,6 @@
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1253,14 +1230,13 @@
         },
         "end": {
           "line": 7,
-          "column": 83,
-          "index": 222
+          "column": 87,
+          "index": 226
         }
       },
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1273,12 +1249,12 @@
         "start": {
           "line": 9,
           "column": 26,
-          "index": 253
+          "index": 257
         },
         "end": {
           "line": 9,
           "column": 36,
-          "index": 263
+          "index": 267
         }
       },
       "inputs": []
@@ -1292,18 +1268,17 @@
         "start": {
           "line": 11,
           "column": 30,
-          "index": 298
+          "index": 302
         },
         "end": {
           "line": 11,
           "column": 69,
-          "index": 337
+          "index": 341
         }
       },
       "inputs": [
         "taxpayer_table_in",
         "taxpayer_id_in",
-        "band_in",
         "usc_table_in"
       ]
     },
@@ -1316,12 +1291,12 @@
         "start": {
           "line": 13,
           "column": 20,
-          "index": 362
+          "index": 366
         },
         "end": {
           "line": 13,
           "column": 47,
-          "index": 389
+          "index": 393
         }
       },
       "inputs": [
@@ -1338,12 +1313,12 @@
         "start": {
           "line": 15,
           "column": 20,
-          "index": 414
+          "index": 418
         },
         "end": {
           "line": 15,
           "column": 31,
-          "index": 425
+          "index": 429
         }
       },
       "inputs": []
@@ -1357,12 +1332,12 @@
         "start": {
           "line": 17,
           "column": 20,
-          "index": 450
+          "index": 454
         },
         "end": {
           "line": 19,
           "column": 1,
-          "index": 537
+          "index": 541
         }
       },
       "inputs": [
@@ -1380,12 +1355,12 @@
         "start": {
           "line": 21,
           "column": 25,
-          "index": 567
+          "index": 571
         },
         "end": {
           "line": 30,
           "column": 1,
-          "index": 782
+          "index": 786
         }
       },
       "inputs": []
@@ -1399,12 +1374,12 @@
         "start": {
           "line": 32,
           "column": 23,
-          "index": 810
+          "index": 814
         },
         "end": {
           "line": 32,
           "column": 39,
-          "index": 826
+          "index": 830
         }
       },
       "inputs": [
@@ -1429,12 +1404,12 @@
         "start": {
           "line": 34,
           "column": 28,
-          "index": 859
+          "index": 863
         },
         "end": {
           "line": 37,
           "column": 1,
-          "index": 965
+          "index": 977
         }
       },
       "inputs": [
@@ -1451,12 +1426,12 @@
         "start": {
           "line": 38,
           "column": 30,
-          "index": 998
+          "index": 1010
         },
         "end": {
           "line": 41,
           "column": 1,
-          "index": 1079
+          "index": 1099
         }
       },
       "inputs": [
@@ -1473,12 +1448,12 @@
         "start": {
           "line": 42,
           "column": 24,
-          "index": 1106
+          "index": 1126
         },
         "end": {
           "line": 42,
-          "column": 56,
-          "index": 1138
+          "column": 61,
+          "index": 1163
         }
       },
       "inputs": [
@@ -1495,12 +1470,12 @@
         "start": {
           "line": 43,
           "column": 30,
-          "index": 1171
+          "index": 1196
         },
         "end": {
           "line": 48,
           "column": 3,
-          "index": 1302
+          "index": 1327
         }
       },
       "inputs": [
@@ -1519,12 +1494,12 @@
         "start": {
           "line": 49,
           "column": 19,
-          "index": 1324
+          "index": 1349
         },
         "end": {
           "line": 49,
           "column": 99,
-          "index": 1404
+          "index": 1429
         }
       },
       "inputs": [
@@ -1865,12 +1840,6 @@
     },
     {
       "to": "3_income_tax",
-      "from": "3_paye",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "3_income_tax",
       "from": "3_prsi",
       "reason": "call",
       "negs": []
@@ -2105,12 +2074,6 @@
     },
     {
       "to": "5_income_tax",
-      "from": "5_paye",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "5_income_tax",
       "from": "5_prsi",
       "reason": "call",
       "negs": []
@@ -2296,30 +2259,25 @@
     ],
     "0_income_tax_sum_proposed": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "0_income_tax_proposed": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "0_effective_rate_proposed": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "0_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "0_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "1_income_tax_sum_proposed": [],
@@ -2327,13 +2285,11 @@
     "1_effective_rate_proposed": [],
     "1_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "1_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "1_income_tax": [
@@ -2368,30 +2324,25 @@
     "2_effective_rate_current": [],
     "2_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "2_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "2_income_tax_sum": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "2_income_tax": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "2_effective_rate": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "2_tax_rate": [
@@ -2417,13 +2368,11 @@
     "4_effective_rate_current": [],
     "4_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "4_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "4_tax_rate": [
@@ -2438,13 +2387,11 @@
     "4_income_tax": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "4_effective_rate": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "4_taxpayer_id": [
@@ -2465,7 +2412,6 @@
     ],
     "4_income_tax_sum": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "3_income_tax_sum_proposed": [],
@@ -2473,13 +2419,11 @@
     "3_effective_rate_proposed": [],
     "3_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "3_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "3_taxpayer_id": [
@@ -2553,13 +2497,11 @@
     "5_effective_rate_current": [],
     "5_income_tax_sum_impact": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_income_tax_impact": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_tax_rate": [
@@ -2583,13 +2525,11 @@
     ],
     "5_income_tax_sum": [
       "taxpayer_table_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_net_salary": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_gross_salary_": [
@@ -2601,14 +2541,12 @@
     "5_income_tax": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_tax_credit": [],
     "5_effective_rate": [
       "taxpayer_table_in",
       "taxpayer_id_in",
-      "band_in",
       "usc_table_in"
     ],
     "5_prsi": [
@@ -2652,5 +2590,5 @@
       "taxpayer_id_in"
     ]
   },
-  "dot": "digraph {\n  \"0_income_tax_sum_current\" [cul_scope_id=0,name=income_tax_sum_current,imported=income_tax_sum,cul_source_scope_id=1,reason=\"explicit import\",inputs=taxpayer_table_in,label=\"0_income_tax_sum_current inputs: taxpayer_table_in\"]\n  \"0_income_tax_current\" [cul_scope_id=0,name=income_tax_current,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax_current inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_effective_rate_current\" [cul_scope_id=0,name=effective_rate_current,imported=effective_rate,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_effective_rate_current inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_income_tax_sum_proposed\" [cul_scope_id=0,name=income_tax_sum_proposed,imported=income_tax_sum,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"0_income_tax_sum_proposed inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"0_income_tax_proposed\" [cul_scope_id=0,name=income_tax_proposed,imported=income_tax,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"0_income_tax_proposed inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"0_effective_rate_proposed\" [cul_scope_id=0,name=effective_rate_proposed,imported=effective_rate,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"0_effective_rate_proposed inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"0_income_tax_sum_impact\" [cul_scope_id=0,name=income_tax_sum_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"0_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"0_income_tax_impact\" [cul_scope_id=0,name=income_tax_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"0_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"1_income_tax_sum_proposed\" [cul_scope_id=1,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_sum_proposed inputs: \"]\n  \"1_income_tax_proposed\" [cul_scope_id=1,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_proposed inputs: \"]\n  \"1_effective_rate_proposed\" [cul_scope_id=1,name=effective_rate_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_effective_rate_proposed inputs: \"]\n  \"1_income_tax_sum_impact\" [cul_scope_id=1,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"1_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"1_income_tax_impact\" [cul_scope_id=1,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"1_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,imported=income_tax,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_effective_rate\" [cul_scope_id=1,name=effective_rate,imported=effective_rate,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_effective_rate inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_taxpayer_id\" [cul_scope_id=1,name=taxpayer_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"1_taxpayer_id inputs: taxpayer_id_in\"]\n  \"1_taxpayer_id_in\" [cul_scope_id=1,name=taxpayer_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_id_in,label=\"1_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"1_taxpayer_table\" [cul_scope_id=1,name=taxpayer_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_taxpayer_table inputs: taxpayer_table_in\"]\n  \"1_taxpayer_table_in\" [cul_scope_id=1,name=taxpayer_table_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_table_in,label=\"1_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" [cul_scope_id=1,name=income_tax_sum,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_income_tax_sum inputs: taxpayer_table_in\"]\n  \"2_income_tax_sum_current\" [cul_scope_id=2,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_sum_current inputs: \"]\n  \"2_income_tax_current\" [cul_scope_id=2,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_current inputs: \"]\n  \"2_effective_rate_current\" [cul_scope_id=2,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_effective_rate_current inputs: \"]\n  \"2_income_tax_sum_impact\" [cul_scope_id=2,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"2_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"2_income_tax_impact\" [cul_scope_id=2,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"2_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"2_income_tax_sum\" [cul_scope_id=2,name=income_tax_sum,imported=income_tax_sum,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"2_income_tax_sum inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"2_income_tax\" [cul_scope_id=2,name=income_tax,imported=income_tax,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"2_income_tax inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"2_effective_rate\" [cul_scope_id=2,name=effective_rate,imported=effective_rate,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"2_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"2_tax_rate\" [cul_scope_id=2,name=tax_rate,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=tax_rate_in,label=\"2_tax_rate inputs: tax_rate_in\"]\n  \"2_tax_rate_in\" [cul_scope_id=2,name=tax_rate_in,cul_source_scope_id=2,reason=\"input definition\",inputs=tax_rate_in,label=\"2_tax_rate_in inputs: tax_rate_in\"]\n  \"2_band\" [cul_scope_id=2,name=band,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=band_in,label=\"2_band inputs: band_in\"]\n  \"2_band_in\" [cul_scope_id=2,name=band_in,cul_source_scope_id=2,reason=\"input definition\",inputs=band_in,label=\"2_band_in inputs: band_in\"]\n  \"2_usc_table\" [cul_scope_id=2,name=usc_table,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=usc_table_in,label=\"2_usc_table inputs: usc_table_in\"]\n  \"2_usc_table_in\" [cul_scope_id=2,name=usc_table_in,cul_source_scope_id=2,reason=\"input definition\",inputs=usc_table_in,label=\"2_usc_table_in inputs: usc_table_in\"]\n  \"4_income_tax_sum_current\" [cul_scope_id=4,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_sum_current inputs: \"]\n  \"4_income_tax_current\" [cul_scope_id=4,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_current inputs: \"]\n  \"4_effective_rate_current\" [cul_scope_id=4,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_effective_rate_current inputs: \"]\n  \"4_income_tax_sum_impact\" [cul_scope_id=4,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"4_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"4_income_tax_impact\" [cul_scope_id=4,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"4_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"4_tax_rate\" [cul_scope_id=4,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"4_tax_rate inputs: tax_rate_in\"]\n  \"4_band\" [cul_scope_id=4,name=band,cul_source_scope_id=2,reason=\"implicit import\",inputs=band_in,label=\"4_band inputs: band_in\"]\n  \"4_usc_table\" [cul_scope_id=4,name=usc_table,cul_source_scope_id=2,reason=\"implicit import\",inputs=usc_table_in,label=\"4_usc_table inputs: usc_table_in\"]\n  \"4_income_tax\" [cul_scope_id=4,name=income_tax,imported=income_tax,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"4_income_tax inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"4_effective_rate\" [cul_scope_id=4,name=effective_rate,imported=effective_rate,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"4_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"4_taxpayer_id\" [cul_scope_id=4,name=taxpayer_id,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"4_taxpayer_id inputs: taxpayer_id_in\"]\n  \"4_taxpayer_id_in\" [cul_scope_id=4,name=taxpayer_id_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_id_in,label=\"4_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"4_taxpayer_table\" [cul_scope_id=4,name=taxpayer_table,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"4_taxpayer_table inputs: taxpayer_table_in\"]\n  \"4_taxpayer_table_in\" [cul_scope_id=4,name=taxpayer_table_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_table_in,label=\"4_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"4_gross_salary\" [cul_scope_id=4,name=gross_salary,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_income_tax_sum\" [cul_scope_id=4,name=income_tax_sum,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"4_income_tax_sum inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"3_income_tax_sum_proposed\" [cul_scope_id=3,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_sum_proposed inputs: \"]\n  \"3_income_tax_proposed\" [cul_scope_id=3,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_proposed inputs: \"]\n  \"3_effective_rate_proposed\" [cul_scope_id=3,name=effective_rate_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_effective_rate_proposed inputs: \"]\n  \"3_income_tax_sum_impact\" [cul_scope_id=3,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"3_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"3_income_tax_impact\" [cul_scope_id=3,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"3_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"3_taxpayer_id\" [cul_scope_id=3,name=taxpayer_id,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"3_taxpayer_id inputs: taxpayer_id_in\"]\n  \"3_taxpayer_table\" [cul_scope_id=3,name=taxpayer_table,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_taxpayer_table inputs: taxpayer_table_in\"]\n  \"3_gross_salary\" [cul_scope_id=3,name=gross_salary,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_income_tax_sum\" [cul_scope_id=3,name=income_tax_sum,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_income_tax_sum inputs: taxpayer_table_in\"]\n  \"3_net_salary\" [cul_scope_id=3,name=net_salary,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_net_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_gross_salary_\" [cul_scope_id=3,name=gross_salary_,cul_source_scope_id=3,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"3_gross_salary_ inputs: gross_salary_in\"]\n  \"3_gross_salary_in\" [cul_scope_id=3,name=gross_salary_in,cul_source_scope_id=3,reason=\"input definition\",inputs=gross_salary_in,label=\"3_gross_salary_in inputs: gross_salary_in\"]\n  \"3_income_tax\" [cul_scope_id=3,name=income_tax,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_tax_credit\" [cul_scope_id=3,name=tax_credit,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_tax_credit inputs: \"]\n  \"3_effective_rate\" [cul_scope_id=3,name=effective_rate,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_effective_rate inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_prsi\" [cul_scope_id=3,name=prsi,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_prsi inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_band\" [cul_scope_id=3,name=band,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_band inputs: \"]\n  \"3_paye\" [cul_scope_id=3,name=paye,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_paye inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_usc_table\" [cul_scope_id=3,name=usc_table,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_usc_table inputs: \"]\n  \"3_band_id\" [cul_scope_id=3,name=band_id,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_band_id inputs: band_id_in\"]\n  \"3_band_id_in\" [cul_scope_id=3,name=band_id_in,cul_source_scope_id=3,reason=\"input definition\",inputs=band_id_in,label=\"3_band_id_in inputs: band_id_in\"]\n  \"3_usc_band_end\" [cul_scope_id=3,name=usc_band_end,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_band_end inputs: band_id_in\"]\n  \"3_usc_band_start\" [cul_scope_id=3,name=usc_band_start,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_band_start inputs: band_id_in\"]\n  \"3_usc_rate\" [cul_scope_id=3,name=usc_rate,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_rate inputs: band_id_in\"]\n  \"3_usc_by_band_id\" [cul_scope_id=3,name=usc_by_band_id,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,taxpayer_table_in,taxpayer_id_in\",label=\"3_usc_by_band_id inputs: band_id_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"3_usc\" [cul_scope_id=3,name=usc,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_usc inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum_current\" [cul_scope_id=5,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_sum_current inputs: \"]\n  \"5_income_tax_current\" [cul_scope_id=5,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_current inputs: \"]\n  \"5_effective_rate_current\" [cul_scope_id=5,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_effective_rate_current inputs: \"]\n  \"5_income_tax_sum_impact\" [cul_scope_id=5,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"5_income_tax_sum_impact inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"5_income_tax_impact\" [cul_scope_id=5,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"5_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"5_tax_rate\" [cul_scope_id=5,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"5_tax_rate inputs: tax_rate_in\"]\n  \"5_band\" [cul_scope_id=5,name=band,cul_source_scope_id=2,reason=\"implicit import\",inputs=band_in,label=\"5_band inputs: band_in\"]\n  \"5_usc_table\" [cul_scope_id=5,name=usc_table,cul_source_scope_id=2,reason=\"implicit import\",inputs=usc_table_in,label=\"5_usc_table inputs: usc_table_in\"]\n  \"5_taxpayer_id\" [cul_scope_id=5,name=taxpayer_id,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"5_taxpayer_id inputs: taxpayer_id_in\"]\n  \"5_taxpayer_table\" [cul_scope_id=5,name=taxpayer_table,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"5_taxpayer_table inputs: taxpayer_table_in\"]\n  \"5_gross_salary\" [cul_scope_id=5,name=gross_salary,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum\" [cul_scope_id=5,name=income_tax_sum,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,band_in,usc_table_in\",label=\"5_income_tax_sum inputs: taxpayer_table_in,band_in,usc_table_in\"]\n  \"5_net_salary\" [cul_scope_id=5,name=net_salary,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"5_net_salary inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"5_gross_salary_\" [cul_scope_id=5,name=gross_salary_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"5_gross_salary_ inputs: gross_salary_in\"]\n  \"5_gross_salary_in\" [cul_scope_id=5,name=gross_salary_in,cul_source_scope_id=5,reason=\"input definition\",inputs=gross_salary_in,label=\"5_gross_salary_in inputs: gross_salary_in\"]\n  \"5_income_tax\" [cul_scope_id=5,name=income_tax,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"5_income_tax inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"5_tax_credit\" [cul_scope_id=5,name=tax_credit,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"5_tax_credit inputs: \"]\n  \"5_effective_rate\" [cul_scope_id=5,name=effective_rate,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\",label=\"5_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,band_in,usc_table_in\"]\n  \"5_prsi\" [cul_scope_id=5,name=prsi,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_prsi inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_band_\" [cul_scope_id=5,name=band_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_band_ inputs: \"]\n  \"5_paye\" [cul_scope_id=5,name=paye,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in\",label=\"5_paye inputs: taxpayer_table_in,taxpayer_id_in,band_in\"]\n  \"5_usc_table_\" [cul_scope_id=5,name=usc_table_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_usc_table_ inputs: \"]\n  \"5_band_id\" [cul_scope_id=5,name=band_id,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"5_band_id inputs: band_id_in\"]\n  \"5_band_id_in\" [cul_scope_id=5,name=band_id_in,cul_source_scope_id=5,reason=\"input definition\",inputs=band_id_in,label=\"5_band_id_in inputs: band_id_in\"]\n  \"5_usc_band_end\" [cul_scope_id=5,name=usc_band_end,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,usc_table_in\",label=\"5_usc_band_end inputs: band_id_in,usc_table_in\"]\n  \"5_usc_band_start\" [cul_scope_id=5,name=usc_band_start,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,usc_table_in\",label=\"5_usc_band_start inputs: band_id_in,usc_table_in\"]\n  \"5_usc_rate\" [cul_scope_id=5,name=usc_rate,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,band_id_in\",label=\"5_usc_rate inputs: usc_table_in,band_id_in\"]\n  \"5_usc_by_band_id\" [cul_scope_id=5,name=usc_by_band_id,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,band_id_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_usc_by_band_id inputs: usc_table_in,band_id_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"5_usc\" [cul_scope_id=5,name=usc,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_usc inputs: usc_table_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" -> \"0_income_tax_sum_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_income_tax\" -> \"0_income_tax_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_effective_rate\" -> \"0_effective_rate_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax_sum\" -> \"0_income_tax_sum_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax\" -> \"0_income_tax_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_effective_rate\" -> \"0_effective_rate_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_income_tax_sum_proposed\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_current\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_proposed\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_current\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"1_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"1_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_income_tax\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"3_effective_rate\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_taxpayer_id_in\" -> \"1_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"1_taxpayer_table_in\" -> \"1_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"1_taxpayer_table\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_id\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_table\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"2_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"2_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"2_income_tax_sum\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_income_tax\" -> \"2_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_effective_rate\" -> \"2_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_tax_rate_in\" -> \"2_tax_rate\" [value=\"[object Object]\",label=\"input +tax_rate_in\"]\n  \"2_band_in\" -> \"2_band\" [value=\"[object Object]\",label=\"input +band_in\"]\n  \"2_usc_table_in\" -> \"2_usc_table\" [value=\"[object Object]\",label=\"input +usc_table_in\"]\n  \"0_income_tax_sum_impact\" -> \"4_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"4_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"4_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_band\" -> \"4_band\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_usc_table\" -> \"4_usc_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_income_tax\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"5_effective_rate\" -> \"4_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_taxpayer_id_in\" -> \"4_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"4_taxpayer_table_in\" -> \"4_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"4_taxpayer_table\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_id\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_table\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_income_tax\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"3_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"3_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_id\" -> \"3_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_table\" -> \"3_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary\" -> \"3_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_income_tax_sum\" -> \"3_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_gross_salary\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_income_tax\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary_in\" -> \"3_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"3_paye\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_prsi\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_tax_credit\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_net_salary\" -> \"3_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band\" -> \"3_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id_in\" -> \"3_band_id\" [value=\"[object Object]\",label=\"input +band_id_in\"]\n  \"3_band_id\" -> \"3_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id\" -> \"3_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id\" -> \"3_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_rate\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_band_end\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_band_start\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_by_band_id\" -> \"3_usc\" [value=\"[object Object]\",label=\"call -band_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"5_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"5_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"5_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_band\" -> \"5_band\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_usc_table\" -> \"5_usc_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_id\" -> \"5_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_table\" -> \"5_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_gross_salary\" -> \"5_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"5_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_gross_salary\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_income_tax\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary_in\" -> \"5_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"5_paye\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_prsi\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_tax_credit\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_net_salary\" -> \"5_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band\" -> \"5_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id_in\" -> \"5_band_id\" [value=\"[object Object]\",label=\"input +band_id_in\"]\n  \"5_band_id\" -> \"5_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id\" -> \"5_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id\" -> \"5_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_rate\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_band_end\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_band_start\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_by_band_id\" -> \"5_usc\" [value=\"[object Object]\",label=\"call -band_id_in\"]\n}\n"
+  "dot": "digraph {\n  \"0_income_tax_sum_current\" [cul_scope_id=0,name=income_tax_sum_current,imported=income_tax_sum,cul_source_scope_id=1,reason=\"explicit import\",inputs=taxpayer_table_in,label=\"0_income_tax_sum_current inputs: taxpayer_table_in\"]\n  \"0_income_tax_current\" [cul_scope_id=0,name=income_tax_current,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_income_tax_current inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_effective_rate_current\" [cul_scope_id=0,name=effective_rate_current,imported=effective_rate,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"0_effective_rate_current inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"0_income_tax_sum_proposed\" [cul_scope_id=0,name=income_tax_sum_proposed,imported=income_tax_sum,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"0_income_tax_sum_proposed inputs: taxpayer_table_in,usc_table_in\"]\n  \"0_income_tax_proposed\" [cul_scope_id=0,name=income_tax_proposed,imported=income_tax,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"0_income_tax_proposed inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"0_effective_rate_proposed\" [cul_scope_id=0,name=effective_rate_proposed,imported=effective_rate,cul_source_scope_id=2,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"0_effective_rate_proposed inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"0_income_tax_sum_impact\" [cul_scope_id=0,name=income_tax_sum_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"0_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"0_income_tax_impact\" [cul_scope_id=0,name=income_tax_impact,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"0_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"1_income_tax_sum_proposed\" [cul_scope_id=1,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_sum_proposed inputs: \"]\n  \"1_income_tax_proposed\" [cul_scope_id=1,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_income_tax_proposed inputs: \"]\n  \"1_effective_rate_proposed\" [cul_scope_id=1,name=effective_rate_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"1_effective_rate_proposed inputs: \"]\n  \"1_income_tax_sum_impact\" [cul_scope_id=1,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"1_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"1_income_tax_impact\" [cul_scope_id=1,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"1_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,imported=income_tax,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_effective_rate\" [cul_scope_id=1,name=effective_rate,imported=effective_rate,cul_source_scope_id=3,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_effective_rate inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_taxpayer_id\" [cul_scope_id=1,name=taxpayer_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"1_taxpayer_id inputs: taxpayer_id_in\"]\n  \"1_taxpayer_id_in\" [cul_scope_id=1,name=taxpayer_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_id_in,label=\"1_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"1_taxpayer_table\" [cul_scope_id=1,name=taxpayer_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_taxpayer_table inputs: taxpayer_table_in\"]\n  \"1_taxpayer_table_in\" [cul_scope_id=1,name=taxpayer_table_in,cul_source_scope_id=1,reason=\"input definition\",inputs=taxpayer_table_in,label=\"1_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"1_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" [cul_scope_id=1,name=income_tax_sum,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"1_income_tax_sum inputs: taxpayer_table_in\"]\n  \"2_income_tax_sum_current\" [cul_scope_id=2,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_sum_current inputs: \"]\n  \"2_income_tax_current\" [cul_scope_id=2,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_income_tax_current inputs: \"]\n  \"2_effective_rate_current\" [cul_scope_id=2,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"2_effective_rate_current inputs: \"]\n  \"2_income_tax_sum_impact\" [cul_scope_id=2,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"2_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"2_income_tax_impact\" [cul_scope_id=2,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"2_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"2_income_tax_sum\" [cul_scope_id=2,name=income_tax_sum,imported=income_tax_sum,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"2_income_tax_sum inputs: taxpayer_table_in,usc_table_in\"]\n  \"2_income_tax\" [cul_scope_id=2,name=income_tax,imported=income_tax,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"2_income_tax inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"2_effective_rate\" [cul_scope_id=2,name=effective_rate,imported=effective_rate,cul_source_scope_id=4,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"2_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"2_tax_rate\" [cul_scope_id=2,name=tax_rate,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=tax_rate_in,label=\"2_tax_rate inputs: tax_rate_in\"]\n  \"2_tax_rate_in\" [cul_scope_id=2,name=tax_rate_in,cul_source_scope_id=2,reason=\"input definition\",inputs=tax_rate_in,label=\"2_tax_rate_in inputs: tax_rate_in\"]\n  \"2_band\" [cul_scope_id=2,name=band,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=band_in,label=\"2_band inputs: band_in\"]\n  \"2_band_in\" [cul_scope_id=2,name=band_in,cul_source_scope_id=2,reason=\"input definition\",inputs=band_in,label=\"2_band_in inputs: band_in\"]\n  \"2_usc_table\" [cul_scope_id=2,name=usc_table,cul_source_scope_id=2,reason=definition,loc=\"[object Object]\",inputs=usc_table_in,label=\"2_usc_table inputs: usc_table_in\"]\n  \"2_usc_table_in\" [cul_scope_id=2,name=usc_table_in,cul_source_scope_id=2,reason=\"input definition\",inputs=usc_table_in,label=\"2_usc_table_in inputs: usc_table_in\"]\n  \"4_income_tax_sum_current\" [cul_scope_id=4,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_sum_current inputs: \"]\n  \"4_income_tax_current\" [cul_scope_id=4,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_income_tax_current inputs: \"]\n  \"4_effective_rate_current\" [cul_scope_id=4,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"4_effective_rate_current inputs: \"]\n  \"4_income_tax_sum_impact\" [cul_scope_id=4,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"4_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"4_income_tax_impact\" [cul_scope_id=4,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"4_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"4_tax_rate\" [cul_scope_id=4,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"4_tax_rate inputs: tax_rate_in\"]\n  \"4_band\" [cul_scope_id=4,name=band,cul_source_scope_id=2,reason=\"implicit import\",inputs=band_in,label=\"4_band inputs: band_in\"]\n  \"4_usc_table\" [cul_scope_id=4,name=usc_table,cul_source_scope_id=2,reason=\"implicit import\",inputs=usc_table_in,label=\"4_usc_table inputs: usc_table_in\"]\n  \"4_income_tax\" [cul_scope_id=4,name=income_tax,imported=income_tax,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"4_income_tax inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"4_effective_rate\" [cul_scope_id=4,name=effective_rate,imported=effective_rate,cul_source_scope_id=5,reason=\"explicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"4_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"4_taxpayer_id\" [cul_scope_id=4,name=taxpayer_id,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_id_in,label=\"4_taxpayer_id inputs: taxpayer_id_in\"]\n  \"4_taxpayer_id_in\" [cul_scope_id=4,name=taxpayer_id_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_id_in,label=\"4_taxpayer_id_in inputs: taxpayer_id_in\"]\n  \"4_taxpayer_table\" [cul_scope_id=4,name=taxpayer_table,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=taxpayer_table_in,label=\"4_taxpayer_table inputs: taxpayer_table_in\"]\n  \"4_taxpayer_table_in\" [cul_scope_id=4,name=taxpayer_table_in,cul_source_scope_id=4,reason=\"input definition\",inputs=taxpayer_table_in,label=\"4_taxpayer_table_in inputs: taxpayer_table_in\"]\n  \"4_gross_salary\" [cul_scope_id=4,name=gross_salary,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"4_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"4_income_tax_sum\" [cul_scope_id=4,name=income_tax_sum,cul_source_scope_id=4,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"4_income_tax_sum inputs: taxpayer_table_in,usc_table_in\"]\n  \"3_income_tax_sum_proposed\" [cul_scope_id=3,name=income_tax_sum_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_sum_proposed inputs: \"]\n  \"3_income_tax_proposed\" [cul_scope_id=3,name=income_tax_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_income_tax_proposed inputs: \"]\n  \"3_effective_rate_proposed\" [cul_scope_id=3,name=effective_rate_proposed,cul_source_scope_id=2,reason=\"implicit import\",inputs=\"\",label=\"3_effective_rate_proposed inputs: \"]\n  \"3_income_tax_sum_impact\" [cul_scope_id=3,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"3_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"3_income_tax_impact\" [cul_scope_id=3,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"3_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"3_taxpayer_id\" [cul_scope_id=3,name=taxpayer_id,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"3_taxpayer_id inputs: taxpayer_id_in\"]\n  \"3_taxpayer_table\" [cul_scope_id=3,name=taxpayer_table,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_taxpayer_table inputs: taxpayer_table_in\"]\n  \"3_gross_salary\" [cul_scope_id=3,name=gross_salary,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_income_tax_sum\" [cul_scope_id=3,name=income_tax_sum,cul_source_scope_id=1,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"3_income_tax_sum inputs: taxpayer_table_in\"]\n  \"3_net_salary\" [cul_scope_id=3,name=net_salary,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_net_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_gross_salary_\" [cul_scope_id=3,name=gross_salary_,cul_source_scope_id=3,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"3_gross_salary_ inputs: gross_salary_in\"]\n  \"3_gross_salary_in\" [cul_scope_id=3,name=gross_salary_in,cul_source_scope_id=3,reason=\"input definition\",inputs=gross_salary_in,label=\"3_gross_salary_in inputs: gross_salary_in\"]\n  \"3_income_tax\" [cul_scope_id=3,name=income_tax,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_income_tax inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_tax_credit\" [cul_scope_id=3,name=tax_credit,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_tax_credit inputs: \"]\n  \"3_effective_rate\" [cul_scope_id=3,name=effective_rate,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_effective_rate inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_prsi\" [cul_scope_id=3,name=prsi,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_prsi inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_band\" [cul_scope_id=3,name=band,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_band inputs: \"]\n  \"3_paye\" [cul_scope_id=3,name=paye,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_paye inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"3_usc_table\" [cul_scope_id=3,name=usc_table,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"3_usc_table inputs: \"]\n  \"3_band_id\" [cul_scope_id=3,name=band_id,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_band_id inputs: band_id_in\"]\n  \"3_band_id_in\" [cul_scope_id=3,name=band_id_in,cul_source_scope_id=3,reason=\"input definition\",inputs=band_id_in,label=\"3_band_id_in inputs: band_id_in\"]\n  \"3_usc_band_end\" [cul_scope_id=3,name=usc_band_end,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_band_end inputs: band_id_in\"]\n  \"3_usc_band_start\" [cul_scope_id=3,name=usc_band_start,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_band_start inputs: band_id_in\"]\n  \"3_usc_rate\" [cul_scope_id=3,name=usc_rate,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"3_usc_rate inputs: band_id_in\"]\n  \"3_usc_by_band_id\" [cul_scope_id=3,name=usc_by_band_id,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,taxpayer_table_in,taxpayer_id_in\",label=\"3_usc_by_band_id inputs: band_id_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"3_usc\" [cul_scope_id=3,name=usc,cul_source_scope_id=3,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"3_usc inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum_current\" [cul_scope_id=5,name=income_tax_sum_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_sum_current inputs: \"]\n  \"5_income_tax_current\" [cul_scope_id=5,name=income_tax_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_income_tax_current inputs: \"]\n  \"5_effective_rate_current\" [cul_scope_id=5,name=effective_rate_current,cul_source_scope_id=1,reason=\"implicit import\",inputs=\"\",label=\"5_effective_rate_current inputs: \"]\n  \"5_income_tax_sum_impact\" [cul_scope_id=5,name=income_tax_sum_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"5_income_tax_sum_impact inputs: taxpayer_table_in,usc_table_in\"]\n  \"5_income_tax_impact\" [cul_scope_id=5,name=income_tax_impact,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"5_income_tax_impact inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"5_tax_rate\" [cul_scope_id=5,name=tax_rate,cul_source_scope_id=2,reason=\"implicit import\",inputs=tax_rate_in,label=\"5_tax_rate inputs: tax_rate_in\"]\n  \"5_band\" [cul_scope_id=5,name=band,cul_source_scope_id=2,reason=\"implicit import\",inputs=band_in,label=\"5_band inputs: band_in\"]\n  \"5_usc_table\" [cul_scope_id=5,name=usc_table,cul_source_scope_id=2,reason=\"implicit import\",inputs=usc_table_in,label=\"5_usc_table inputs: usc_table_in\"]\n  \"5_taxpayer_id\" [cul_scope_id=5,name=taxpayer_id,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_id_in,label=\"5_taxpayer_id inputs: taxpayer_id_in\"]\n  \"5_taxpayer_table\" [cul_scope_id=5,name=taxpayer_table,cul_source_scope_id=4,reason=\"implicit import\",inputs=taxpayer_table_in,label=\"5_taxpayer_table inputs: taxpayer_table_in\"]\n  \"5_gross_salary\" [cul_scope_id=5,name=gross_salary,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_gross_salary inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_income_tax_sum\" [cul_scope_id=5,name=income_tax_sum,cul_source_scope_id=4,reason=\"implicit import\",inputs=\"taxpayer_table_in,usc_table_in\",label=\"5_income_tax_sum inputs: taxpayer_table_in,usc_table_in\"]\n  \"5_net_salary\" [cul_scope_id=5,name=net_salary,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"5_net_salary inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"5_gross_salary_\" [cul_scope_id=5,name=gross_salary_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=gross_salary_in,label=\"5_gross_salary_ inputs: gross_salary_in\"]\n  \"5_gross_salary_in\" [cul_scope_id=5,name=gross_salary_in,cul_source_scope_id=5,reason=\"input definition\",inputs=gross_salary_in,label=\"5_gross_salary_in inputs: gross_salary_in\"]\n  \"5_income_tax\" [cul_scope_id=5,name=income_tax,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"5_income_tax inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"5_tax_credit\" [cul_scope_id=5,name=tax_credit,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"5_tax_credit inputs: \"]\n  \"5_effective_rate\" [cul_scope_id=5,name=effective_rate,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,usc_table_in\",label=\"5_effective_rate inputs: taxpayer_table_in,taxpayer_id_in,usc_table_in\"]\n  \"5_prsi\" [cul_scope_id=5,name=prsi,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in\",label=\"5_prsi inputs: taxpayer_table_in,taxpayer_id_in\"]\n  \"5_band_\" [cul_scope_id=5,name=band_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_band_ inputs: \"]\n  \"5_paye\" [cul_scope_id=5,name=paye,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"taxpayer_table_in,taxpayer_id_in,band_in\",label=\"5_paye inputs: taxpayer_table_in,taxpayer_id_in,band_in\"]\n  \"5_usc_table_\" [cul_scope_id=5,name=usc_table_,cul_source_scope_id=5,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"5_usc_table_ inputs: \"]\n  \"5_band_id\" [cul_scope_id=5,name=band_id,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=band_id_in,label=\"5_band_id inputs: band_id_in\"]\n  \"5_band_id_in\" [cul_scope_id=5,name=band_id_in,cul_source_scope_id=5,reason=\"input definition\",inputs=band_id_in,label=\"5_band_id_in inputs: band_id_in\"]\n  \"5_usc_band_end\" [cul_scope_id=5,name=usc_band_end,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,usc_table_in\",label=\"5_usc_band_end inputs: band_id_in,usc_table_in\"]\n  \"5_usc_band_start\" [cul_scope_id=5,name=usc_band_start,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"band_id_in,usc_table_in\",label=\"5_usc_band_start inputs: band_id_in,usc_table_in\"]\n  \"5_usc_rate\" [cul_scope_id=5,name=usc_rate,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,band_id_in\",label=\"5_usc_rate inputs: usc_table_in,band_id_in\"]\n  \"5_usc_by_band_id\" [cul_scope_id=5,name=usc_by_band_id,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,band_id_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_usc_by_band_id inputs: usc_table_in,band_id_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"5_usc\" [cul_scope_id=5,name=usc,cul_source_scope_id=5,reason=definition,loc=\"[object Object]\",inputs=\"usc_table_in,taxpayer_table_in,taxpayer_id_in\",label=\"5_usc inputs: usc_table_in,taxpayer_table_in,taxpayer_id_in\"]\n  \"1_income_tax_sum\" -> \"0_income_tax_sum_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_income_tax\" -> \"0_income_tax_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_effective_rate\" -> \"0_effective_rate_current\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax_sum\" -> \"0_income_tax_sum_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_income_tax\" -> \"0_income_tax_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_effective_rate\" -> \"0_effective_rate_proposed\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_income_tax_sum_proposed\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_current\" -> \"0_income_tax_sum_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_proposed\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_current\" -> \"0_income_tax_impact\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax_sum_impact\" -> \"1_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"1_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_income_tax\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"3_effective_rate\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_taxpayer_id_in\" -> \"1_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"1_taxpayer_table_in\" -> \"1_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"1_taxpayer_table\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_id\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_taxpayer_table\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"2_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"2_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"2_income_tax_sum\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_income_tax\" -> \"2_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_effective_rate\" -> \"2_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"2_tax_rate_in\" -> \"2_tax_rate\" [value=\"[object Object]\",label=\"input +tax_rate_in\"]\n  \"2_band_in\" -> \"2_band\" [value=\"[object Object]\",label=\"input +band_in\"]\n  \"2_usc_table_in\" -> \"2_usc_table\" [value=\"[object Object]\",label=\"input +usc_table_in\"]\n  \"0_income_tax_sum_impact\" -> \"4_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"4_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"4_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_band\" -> \"4_band\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_usc_table\" -> \"4_usc_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_income_tax\" -> \"4_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"5_effective_rate\" -> \"4_effective_rate\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"4_taxpayer_id_in\" -> \"4_taxpayer_id\" [value=\"[object Object]\",label=\"input +taxpayer_id_in\"]\n  \"4_taxpayer_table_in\" -> \"4_taxpayer_table\" [value=\"[object Object]\",label=\"input +taxpayer_table_in\"]\n  \"4_taxpayer_table\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_id\" -> \"4_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_taxpayer_table\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -\"]\n  \"4_income_tax\" -> \"4_income_tax_sum\" [value=\"[object Object]\",label=\"call -taxpayer_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"3_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"3_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_id\" -> \"3_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_taxpayer_table\" -> \"3_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary\" -> \"3_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_income_tax_sum\" -> \"3_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"3_gross_salary\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_income_tax\" -> \"3_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary_in\" -> \"3_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"3_prsi\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_tax_credit\" -> \"3_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_net_salary\" -> \"3_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band\" -> \"3_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id_in\" -> \"3_band_id\" [value=\"[object Object]\",label=\"input +band_id_in\"]\n  \"3_band_id\" -> \"3_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id\" -> \"3_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_band_id\" -> \"3_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_rate\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_band_end\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_band_start\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_gross_salary\" -> \"3_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_table\" -> \"3_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"3_usc_by_band_id\" -> \"3_usc\" [value=\"[object Object]\",label=\"call -band_id_in\"]\n  \"0_income_tax_sum_impact\" -> \"5_income_tax_sum_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_income_tax_impact\" -> \"5_income_tax_impact\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_tax_rate\" -> \"5_tax_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_band\" -> \"5_band\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"2_usc_table\" -> \"5_usc_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_id\" -> \"5_taxpayer_id\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_taxpayer_table\" -> \"5_taxpayer_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_gross_salary\" -> \"5_gross_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"4_income_tax_sum\" -> \"5_income_tax_sum\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"5_gross_salary\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_income_tax\" -> \"5_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary_in\" -> \"5_gross_salary_\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"5_prsi\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_tax_credit\" -> \"5_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_net_salary\" -> \"5_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band\" -> \"5_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id_in\" -> \"5_band_id\" [value=\"[object Object]\",label=\"input +band_id_in\"]\n  \"5_band_id\" -> \"5_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id\" -> \"5_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_band_id\" -> \"5_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_rate\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_band_end\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_band_start\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_gross_salary\" -> \"5_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_table\" -> \"5_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"5_usc_by_band_id\" -> \"5_usc\" [value=\"[object Object]\",label=\"call -band_id_in\"]\n}\n"
 }
