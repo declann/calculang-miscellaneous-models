@@ -4,7 +4,7 @@ export const net_salary = () => gross_salary() - income_tax();
 
 export const gross_salary = () => gross_salary_in;
 
-export const income_tax = () => Math.max(paye() + prsi() - usc() - tax_credit(), 0);
+export const income_tax = () => Math.max(paye() + prsi() + usc() - tax_credit(), 0);
 
 export const tax_credit = () => 1000;
 
@@ -26,7 +26,7 @@ export const usc_table = () => [
     band_co: 70144,
     rate: 0.045,
   },
-  { band_id: 3, band_co: 0, rate: 0.08 },
+  { band_id: 4, band_co: 0, rate: 0.08 },
 ];
 
 export const band_id = () => band_id_in;
@@ -46,7 +46,7 @@ export const usc_by_band_id = () =>
     usc_band_end() - usc_band_start(),
     Math.max(gross_salary() - usc_band_start(), 0)
   );
-export const usc = () => usc_table().reduce((a, v) => a + usc_by_band_id({band_id:v.band_id}),0)
+export const usc = () => usc_table().reduce((a, v) => a + usc_by_band_id({band_id_in:v.band_id}),0)
 /*
 export const usc_by_band_id = () => {
   return (({ band_id, band_co, rate }) => Math.max(gross_salary() - 1))(

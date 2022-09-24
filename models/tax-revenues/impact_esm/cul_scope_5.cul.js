@@ -26,7 +26,7 @@ export const usc_table = () => [
     band_co: 70144,
     rate: 0.045,
   },
-  { band_id: 3, band_co: 0, rate: 0.08 },
+  { band_id: 4, band_co: 0, rate: 0.08 },
 ];
 
 export const band_id = () => band_id_in;

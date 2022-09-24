@@ -1,4 +1,4 @@
-import { income_tax_sum } from "./cul_scope_3.mjs";import { gross_salary } from "./cul_scope_3.mjs";import { taxpayer_table } from "./cul_scope_3.mjs";import { taxpayer_id } from "./cul_scope_3.mjs";import { usc_table } from "./cul_scope_2.mjs";import { band } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs"; // a simple one
+import { income_tax_sum } from "./cul_scope_4.mjs";import { gross_salary } from "./cul_scope_4.mjs";import { taxpayer_table } from "./cul_scope_4.mjs";import { taxpayer_id } from "./cul_scope_4.mjs";import { usc_table } from "./cul_scope_2.mjs";import { band } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs"; // a simple one
 
 export const net_salary = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in });
 
@@ -26,7 +26,7 @@ export const usc_table_ = ({}) => [
   band_co: 70144,
   rate: 0.045 },
 
-{ band_id: 3, band_co: 0, rate: 0.08 }];
+{ band_id: 4, band_co: 0, rate: 0.08 }];
 
 
 export const band_id = ({ band_id_in }) => band_id_in;
