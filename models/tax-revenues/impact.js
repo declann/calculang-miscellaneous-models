@@ -119,9 +119,9 @@ const taxpayer_table = ({ taxpayer_table_in }) => taxpayer_table_in;
 const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].gross_salary;
 
 // -taxpayer_id_in
-const income_tax_sum = ({ taxpayer_table_in, band_id_in }) =>
+const income_tax_sum = ({ taxpayer_table_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) => acc + Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, band_id_in, taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
+(acc, val) => acc + Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
 0);
 
 /***/ }),
@@ -177,9 +177,9 @@ const taxpayer_table = ({ taxpayer_table_in }) => taxpayer_table_in;
 const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].gross_salary;
 
 // -taxpayer_id_in
-const income_tax_sum = ({ taxpayer_table_in, band_in, usc_table_in, band_id_in }) =>
+const income_tax_sum = ({ taxpayer_table_in, band_in, usc_table_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) => acc + Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ taxpayer_table_in, band_in, usc_table_in, band_id_in, taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
+(acc, val) => acc + Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ taxpayer_table_in, band_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }), //income_tax({ gross_salary_in: gross_salary({ taxpayer_id_in: val }) }),
 0);
 
 /***/ }),
@@ -211,11 +211,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const income_tax_sum_impact = ({ taxpayer_table_in, band_in, usc_table_in, band_id_in }) =>
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum */ "d"])({ taxpayer_table_in, band_in, usc_table_in, band_id_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_sum */ "d"])({ taxpayer_table_in, band_id_in });
+const income_tax_sum_impact = ({ taxpayer_table_in, band_in, usc_table_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum */ "d"])({ taxpayer_table_in, band_in, usc_table_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_sum */ "d"])({ taxpayer_table_in });
 
-const income_tax_impact = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) =>
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, band_id_in });
+const income_tax_impact = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in });
 
 /***/ }),
 /* 4 */
@@ -243,15 +243,15 @@ Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODU
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
  // a simple one
 
-const net_salary = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in });
+const net_salary = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in });
 
 const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
-const income_tax = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in, band_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) - usc({ usc_table_in, band_id_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
+const income_tax = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in, band_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
 
 const tax_credit = ({}) => 1000;
 
-const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in, band_id_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, band_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04;
 
@@ -289,7 +289,7 @@ Math.min(
 usc_band_end({ band_id_in, usc_table_in }) - usc_band_start({ band_id_in, usc_table_in }),
 Math.max(Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - usc_band_start({ band_id_in, usc_table_in }), 0));
 
-const usc = ({ usc_table_in, band_id_in, taxpayer_table_in, taxpayer_id_in }) => Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "e"])({ usc_table_in }).reduce((a, v) => a + usc_by_band_id({ usc_table_in, band_id_in, taxpayer_table_in, taxpayer_id_in, band_id: v.band_id }), 0);
+const usc = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) => Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "e"])({ usc_table_in }).reduce((a, v) => a + usc_by_band_id({ usc_table_in, taxpayer_table_in, taxpayer_id_in, band_id_in: v.band_id }), 0);
 /*
 export const usc_by_band_id = () => {
   return (({ band_id, band_co, rate }) => Math.max(gross_salary() - 1))(
@@ -324,15 +324,15 @@ export const usc_by_band_id = () => {
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
  // a simple one
 
-const net_salary = ({ taxpayer_table_in, taxpayer_id_in, band_id_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, band_id_in });
+const net_salary = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in });
 
 const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
-const income_tax = ({ taxpayer_table_in, taxpayer_id_in, band_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) - usc({ band_id_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
+const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({}), 0);
 
 const tax_credit = ({}) => 1000;
 
-const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, band_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, band_id_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const effective_rate = ({ taxpayer_table_in, taxpayer_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04;
 
@@ -370,7 +370,7 @@ Math.min(
 usc_band_end({ band_id_in }) - usc_band_start({ band_id_in }),
 Math.max(Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - usc_band_start({ band_id_in }), 0));
 
-const usc = ({ band_id_in, taxpayer_table_in, taxpayer_id_in }) => usc_table({}).reduce((a, v) => a + usc_by_band_id({ band_id_in, taxpayer_table_in, taxpayer_id_in, band_id: v.band_id }), 0);
+const usc = ({ taxpayer_table_in, taxpayer_id_in }) => usc_table({}).reduce((a, v) => a + usc_by_band_id({ taxpayer_table_in, taxpayer_id_in, band_id_in: v.band_id }), 0);
 /*
 export const usc_by_band_id = () => {
   return (({ band_id, band_co, rate }) => Math.max(gross_salary() - 1))(
