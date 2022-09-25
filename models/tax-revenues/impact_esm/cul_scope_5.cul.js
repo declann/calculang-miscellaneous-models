@@ -5,7 +5,7 @@ export const net_salary = () => gross_salary() - income_tax();
 
 export const gross_salary = () => gross_salary_in;
 
-export const income_tax = () => Math.max(Math.max(paye()-tax_credit(),0) + prsi() + usc(), 0);
+export const income_tax = () => paye() + prsi() + usc();
 
 export const tax_credit = () => tax_credit_in;
 
@@ -83,7 +83,7 @@ export const paye_by_band_id = () =>
     Math.max(gross_salary() - paye_band_start(), 0)
   );
 
-export const paye = () =>
+export const paye_over_bands = () =>
   Math.max(
     0,
     paye_table().reduce(
@@ -91,3 +91,5 @@ export const paye = () =>
       0
     ) //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
   );
+
+export const paye = () => paye_over_bands() - tax_credit();

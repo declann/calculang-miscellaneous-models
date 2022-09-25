@@ -9,7 +9,7 @@ paye_sum,
 income_tax_by_taxpayer,
 usc_by_taxpayer,
 paye_by_taxpayer } from
-"./cul_scope_3.mjs";
+"./cul_scope_4.mjs";
 export {
 income_tax_sum,
 income_tax,
