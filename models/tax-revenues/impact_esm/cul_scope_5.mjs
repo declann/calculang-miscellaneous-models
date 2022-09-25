@@ -7,7 +7,7 @@ export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
 export const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) => Math.max(paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }), 0);
 
-export const tax_credit = ({}) => 2000; //tax_credit_in;
+export const tax_credit = ({}) => 4000; //tax_credit_in;
 
 export const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) / gross_salary({ taxpayer_table_in, taxpayer_id_in });
 

@@ -7,7 +7,7 @@ export const gross_salary = () => gross_salary_in;
 
 export const income_tax = () => Math.max(paye() + prsi() + usc(), 0);
 
-export const tax_credit = () => 2000//tax_credit_in;
+export const tax_credit = () => 4000//tax_credit_in;
 
 export const effective_rate = () => 1 - net_salary() / gross_salary();
 

@@ -417,7 +417,7 @@ const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
 const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) => Math.max(paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit = ({}) => 2000; //tax_credit_in;
+const tax_credit = ({}) => 4000; //tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
@@ -539,7 +539,7 @@ const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
 const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit = ({}) => 2000; //tax_credit_in;
+const tax_credit = ({}) => 4000; //tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
