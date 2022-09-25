@@ -495,7 +495,7 @@ paye_band_end({ paye_band_id_in, paye_table_in }) - paye_band_start({ paye_band_
 Math.max(Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in, paye_table_in }), 0));
 
 
-const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) =>
+const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) =>
 Math.max(
 0,
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
@@ -616,7 +616,7 @@ paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
 Math.max(Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in }), 0));
 
 
-const paye = ({ taxpayer_table_in, taxpayer_id_in }) =>
+const paye = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
 Math.max(
 0,
 paye_table({}).reduce(
