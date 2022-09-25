@@ -5,7 +5,7 @@ effective_rate,
 usc, paye, usc_sum, paye_sum,
 income_tax_by_taxpayer, usc_by_taxpayer, paye_by_taxpayer } from
 "./cul_scope_4.mjs";
-export { income_tax_sum, income_tax, effective_rate, usc, paye, usc_sum, paye_sum };
+export { income_tax_sum, income_tax, effective_rate, usc, paye, usc_sum, paye_sum, income_tax_by_taxpayer, usc_by_taxpayer, paye_by_taxpayer };
 
 // tax rate an input
 export const tax_rate = ({ tax_rate_in }) => tax_rate_in;
