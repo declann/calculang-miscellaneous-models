@@ -89,5 +89,5 @@ export const paye = () =>
     paye_table().reduce(
       (a, v) => a + paye_by_band_id({ paye_band_id_in: v.band_id }),
       0
-    ) - tax_credit() // input not working here, related to reduce/- above?
+    ) //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
   );
