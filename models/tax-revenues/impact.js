@@ -132,15 +132,15 @@ const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({
 const proportion = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].proportion;
 
 
-const income_tax_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
+const income_tax_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 const paye_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye */ "c"])({ taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 const usc_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc */ "d"])({ taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 
-const income_tax_sum = ({ taxpayer_table_in, taxpayer_count_in }) =>
+const income_tax_sum = ({ taxpayer_table_in, tax_credit_in, taxpayer_count_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
 (acc, val) =>
 acc +
-Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ taxpayer_table_in, tax_credit_in, taxpayer_id_in: val.taxpayer_id }) *
 proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * // this should be abstracted e.g. income_tax = income_tax * proportion * taxpayer_calc in sep. scaling model, for now creating _by_taxpayer variables
 taxpayer_count({ taxpayer_count_in }),
 0);
@@ -286,18 +286,18 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-const income_tax_by_taxpayer_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) =>
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer */ "c"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_by_taxpayer */ "d"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+const income_tax_by_taxpayer_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in, taxpayer_count_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer */ "c"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_by_taxpayer */ "d"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
 const usc_by_taxpayer_impact = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_by_taxpayer */ "j"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* usc_by_taxpayer */ "j"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 const paye_by_taxpayer_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer */ "f"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* paye_by_taxpayer */ "g"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 
-const income_tax_sum_impact = ({ taxpayer_table_in, paye_table_in, usc_table_in, taxpayer_count_in }) =>
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum */ "d"])({ taxpayer_table_in, paye_table_in, usc_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_sum */ "e"])({ taxpayer_table_in, taxpayer_count_in });
+const income_tax_sum_impact = ({ taxpayer_table_in, paye_table_in, tax_credit_in, usc_table_in, taxpayer_count_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum */ "d"])({ taxpayer_table_in, paye_table_in, tax_credit_in, usc_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_sum */ "e"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
-const income_tax_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) =>
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in });
+const income_tax_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
 const paye_sum_impact = ({ taxpayer_table_in, paye_table_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_sum */ "g"])({ taxpayer_table_in, paye_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* paye_sum */ "h"])({ taxpayer_table_in, taxpayer_count_in });
 
@@ -346,15 +346,15 @@ const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({
 const proportion = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].proportion;
 
 
-const income_tax_by_taxpayer = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
+const income_tax_by_taxpayer = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 const paye_by_taxpayer = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* paye */ "c"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 const usc_by_taxpayer = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* usc */ "d"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
 
-const income_tax_sum = ({ taxpayer_table_in, paye_table_in, usc_table_in, taxpayer_count_in }) =>
+const income_tax_sum = ({ taxpayer_table_in, paye_table_in, tax_credit_in, usc_table_in, taxpayer_count_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
 (acc, val) =>
 acc +
-Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, tax_credit_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) *
 proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * // this should be abstracted e.g. income_tax = income_tax * proportion * taxpayer_calc in sep. scaling model, for now creating _by_taxpayer variables
 taxpayer_count({ taxpayer_count_in }),
 0);
@@ -411,15 +411,15 @@ taxpayer_count({ taxpayer_count_in }),
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters. Many limitations
 
-const net_salary = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in });
+const net_salary = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in });
 
 const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
-const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) => Math.max(paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }), 0);
+const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, usc_table_in }) => Math.max(Math.max(paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_in }), 0) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit = ({}) => 4000; //tax_credit_in;
+const tax_credit = ({ tax_credit_in }) => tax_credit_in;
 
-const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) =>
 Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0);
@@ -499,7 +499,7 @@ Math.max(
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
 (a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-tax_credit({}) // input not working here, related to reduce/- above?
+tax_credit({ tax_credit_in }) // input not working here, related to reduce/- above?
 );
 
 /***/ }),
@@ -533,15 +533,15 @@ tax_credit({}) // input not working here, related to reduce/- above?
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters. Many limitations
 
-const net_salary = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in });
+const net_salary = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
 const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
-const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }), 0);
+const income_tax = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_in }), 0) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit = ({}) => 4000; //tax_credit_in;
+const tax_credit = ({ tax_credit_in }) => tax_credit_in;
 
-const effective_rate = ({ taxpayer_table_in, taxpayer_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) =>
 Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0);
@@ -621,7 +621,7 @@ Math.max(
 paye_table({}).reduce(
 (a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-tax_credit({}) // input not working here, related to reduce/- above?
+tax_credit({ tax_credit_in }) // input not working here, related to reduce/- above?
 );
 
 /***/ })
