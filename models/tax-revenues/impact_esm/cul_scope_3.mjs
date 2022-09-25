@@ -89,4 +89,5 @@ Math.max(
 paye_table({}).reduce(
 (a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-tax_credit({}));
+tax_credit({}) // input not working here, related to reduce/- above?
+);

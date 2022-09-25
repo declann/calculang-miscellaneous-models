@@ -500,7 +500,8 @@ Math.max(
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
 (a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_in }));
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_in }) // input not working here, related to reduce/- above?
+);
 
 /***/ }),
 /* 5 */
@@ -621,7 +622,8 @@ Math.max(
 paye_table({}).reduce(
 (a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-tax_credit({}));
+tax_credit({}) // input not working here, related to reduce/- above?
+);
 
 /***/ })
 /******/ ]);
