@@ -26,9 +26,9 @@ paye_by_taxpayer };
 // tax rate an input
 export const tax_rate = ({ tax_rate_in }) => tax_rate_in;
 
-export const tax_credit_proposed = ({ tax_credit_proposed_in }) => tax_credit_proposed_in;
+//export const tax_credit_proposed = () => tax_credit_proposed_in;
 
-export const tax_credit = ({ tax_credit_proposed_in }) => tax_credit_proposed({ tax_credit_proposed_in });
+export const tax_credit = ({ tax_credit_in }) => tax_credit_in;
 
 export const band = ({ band_in }) => band_in;
 

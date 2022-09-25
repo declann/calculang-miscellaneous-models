@@ -171,7 +171,6 @@ taxpayer_count({ taxpayer_count_in }),
 
 "use strict";
 /* unused harmony export tax_rate */
-/* unused harmony export tax_credit_proposed */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return tax_credit; });
 /* unused harmony export band */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return usc_table; });
@@ -206,9 +205,9 @@ taxpayer_count({ taxpayer_count_in }),
 // tax rate an input
 const tax_rate = ({ tax_rate_in }) => tax_rate_in;
 
-const tax_credit_proposed = ({ tax_credit_proposed_in }) => tax_credit_proposed_in;
+//export const tax_credit_proposed = () => tax_credit_proposed_in;
 
-const tax_credit = ({ tax_credit_proposed_in }) => tax_credit_proposed({ tax_credit_proposed_in });
+const tax_credit = ({ tax_credit_in }) => tax_credit_in;
 
 const band = ({ band_in }) => band_in;
 
@@ -419,7 +418,7 @@ const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
 const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) => Math.max(paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
+const tax_credit_ = ({}) => 2000; //tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
@@ -495,13 +494,13 @@ paye_band_end({ paye_band_id_in, paye_table_in }) - paye_band_start({ paye_band_
 Math.max(Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in, paye_table_in }), 0));
 
 
-const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) =>
+const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) =>
 Math.max(
 0,
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
 (a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_proposed_in }));
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_in }));
 
 /***/ }),
 /* 5 */
@@ -540,7 +539,7 @@ const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
 
 const income_tax = ({ taxpayer_table_in, taxpayer_id_in }) => Math.max(paye({ taxpayer_table_in, taxpayer_id_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in }), 0);
 
-const tax_credit = ({ tax_credit_in }) => tax_credit_in;
+const tax_credit = ({}) => 2000; //tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
@@ -616,13 +615,13 @@ paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
 Math.max(Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in }), 0));
 
 
-const paye = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
+const paye = ({ taxpayer_table_in, taxpayer_id_in }) =>
 Math.max(
 0,
 paye_table({}).reduce(
 (a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0) -
-tax_credit({ tax_credit_in }));
+tax_credit({}));
 
 /***/ })
 /******/ ]);
