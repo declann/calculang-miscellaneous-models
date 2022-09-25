@@ -7,19 +7,19 @@ export const taxpayer_table = ({ taxpayer_table_in }) => taxpayer_table_in;
 export const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].gross_salary;
 export const proportion = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].proportion;
 
-export const income_tax_sum = ({ taxpayer_table_in, paye_table_in, taxpayer_id_in, usc_table_in }) =>
+export const income_tax_sum = ({ taxpayer_table_in, paye_table_in, usc_table_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) => acc + income_tax({ paye_table_in, taxpayer_table_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in }),
+(acc, val) => acc + income_tax({ paye_table_in, taxpayer_table_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }),
 0);
 
 
-export const paye_sum = ({ taxpayer_table_in, paye_table_in, taxpayer_id_in }) =>
+export const paye_sum = ({ taxpayer_table_in, paye_table_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) => acc + paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in }),
+(acc, val) => acc + paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }),
 0);
 
 
-export const usc_sum = ({ taxpayer_table_in, usc_table_in, taxpayer_id_in }) =>
+export const usc_sum = ({ taxpayer_table_in, usc_table_in }) =>
 taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) => acc + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in }),
+(acc, val) => acc + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }),
 0);

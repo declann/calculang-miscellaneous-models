@@ -9,18 +9,18 @@ export const proportion = () => taxpayer_table()[taxpayer_id()].proportion;
 
 export const income_tax_sum = () =>
   taxpayer_table().reduce(
-    (acc, val) => acc + income_tax({ taxpayer_id_in: val.taxpayer_id }) * proportion(),
+    (acc, val) => acc + income_tax({ taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_id_in: val.taxpayer_id }),
     0
   );
 
 export const paye_sum = () =>
   taxpayer_table().reduce(
-    (acc, val) => acc + paye({ taxpayer_id_in: val.taxpayer_id }) * proportion(),
+    (acc, val) => acc + paye({ taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_id_in: val.taxpayer_id }),
     0
   );
 
 export const usc_sum = () =>
   taxpayer_table().reduce(
-    (acc, val) => acc + usc({ taxpayer_id_in: val.taxpayer_id }) * proportion(),
+    (acc, val) => acc + usc({ taxpayer_id_in: val.taxpayer_id }) * proportion({ taxpayer_id_in: val.taxpayer_id }),
     0
   );
