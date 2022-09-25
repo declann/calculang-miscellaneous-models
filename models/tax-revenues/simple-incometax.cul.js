@@ -92,4 +92,4 @@ export const paye_over_bands = () =>
     ) //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
   );
 
-export const paye = () => paye_over_bands() - tax_credit();
+export const paye = () => Math.max(paye_over_bands() - tax_credit(),0);

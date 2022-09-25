@@ -92,4 +92,4 @@ paye_table({ paye_table_in }).reduce(
 //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
 );
 
-export const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_proposed_in });
+export const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_proposed_in }), 0);

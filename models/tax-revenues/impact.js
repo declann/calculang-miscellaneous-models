@@ -505,7 +505,7 @@ Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODU
 //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
 );
 
-const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_proposed_in });
+const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_proposed_in }), 0);
 
 /***/ }),
 /* 5 */
@@ -630,7 +630,7 @@ paye_table({}).reduce(
 //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
 );
 
-const paye = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => paye_over_bands({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_in });
+const paye = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(paye_over_bands({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_in }), 0);
 
 /***/ })
 /******/ ]);
