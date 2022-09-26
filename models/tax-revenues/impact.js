@@ -386,10 +386,10 @@ taxpayer_count({ taxpayer_count_in }),
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export net_salary */
 /* unused harmony export gross_salary_ */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax; });
 /* unused harmony export tax_credit_ */
+/* unused harmony export net_salary */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate; });
 /* unused harmony export prsi */
 /* unused harmony export usc_table_ */
@@ -412,21 +412,25 @@ taxpayer_count({ taxpayer_count_in }),
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
  // heavily simplified incometax calculation for Irish incometax
-// set to 2022 parameters. Many limitations
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
+// inputs:
+const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
+const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
+
+// functions:
 const net_salary = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, usc_table_in });
 
-const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
-
 const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, usc_table_in }) => paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in });
-
-const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0);
+Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
 const usc_table_ = ({}) => [
 { band_id: 1, band_co: 12012, rate: 0.005 },
 { band_id: 2, band_co: 21295, rate: 0.02 },
@@ -465,6 +469,7 @@ Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODU
 0) * (
 Object(_incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
 
+// PAYE, "
 const paye_table_ = ({}) => [
 { band_id: 1, band_co: 36800, rate: 0.2 },
 { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -502,7 +507,7 @@ Math.max(
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
 (a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0)
-//- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
+//- tax_credit() // input not working here => placed outside. Issue #95
 );
 
 const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "i"])({ tax_credit_proposed_in }), 0);
@@ -512,10 +517,10 @@ const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_pro
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export net_salary */
 /* unused harmony export gross_salary_ */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax; });
 /* unused harmony export tax_credit */
+/* unused harmony export net_salary */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate; });
 /* unused harmony export prsi */
 /* unused harmony export usc_table */
@@ -537,21 +542,25 @@ const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_pro
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
  // heavily simplified incometax calculation for Irish incometax
-// set to 2022 parameters. Many limitations
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
+// inputs:
+const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
+const tax_credit = ({ tax_credit_in }) => tax_credit_in;
+
+// functions:
 const net_salary = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
-
 const income_tax = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => paye({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in });
-
-const tax_credit = ({ tax_credit_in }) => tax_credit_in;
 
 const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) / Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0);
+Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
 const usc_table = ({}) => [
 { band_id: 1, band_co: 12012, rate: 0.005 },
 { band_id: 2, band_co: 21295, rate: 0.02 },
@@ -590,6 +599,7 @@ usc_table({}).reduce(
 0) * (
 Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
 
+// PAYE, "
 const paye_table = ({}) => [
 { band_id: 1, band_co: 36800, rate: 0.2 },
 { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -627,7 +637,7 @@ Math.max(
 paye_table({}).reduce(
 (a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0)
-//- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
+//- tax_credit() // input not working here => placed outside. Issue #95
 );
 
 const paye = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(paye_over_bands({ taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_in }), 0);

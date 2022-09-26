@@ -1,19 +1,23 @@
 // heavily simplified incometax calculation for Irish incometax
-// set to 2022 parameters. Many limitations
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
+// inputs:
+export const gross_salary = () => gross_salary_in;
+export const tax_credit = () => tax_credit_in;
+
+// functions:
 export const net_salary = () => gross_salary() - income_tax();
 
-export const gross_salary = () => gross_salary_in;
-
 export const income_tax = () => paye() + prsi() + usc();
-
-export const tax_credit = () => tax_credit_in;
 
 export const effective_rate = () => 1 - net_salary() / gross_salary();
 
 export const prsi = () =>
-  gross_salary() * 0.04 * (gross_salary() > 352 * 52 ? 1 : 0);
+  gross_salary() * 0.04 * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
 export const usc_table = () => [
   { band_id: 1, band_co: 12012, rate: 0.005 },
   { band_id: 2, band_co: 21295, rate: 0.02 },
@@ -52,6 +56,7 @@ export const usc = () =>
     0
   ) * (gross_salary() > 13000 ? 1 : 0);
 
+// PAYE, "
 export const paye_table = () => [
   { band_id: 1, band_co: 36800, rate: 0.2 },
   { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -89,7 +94,7 @@ export const paye_over_bands = () =>
     paye_table().reduce(
       (a, v) => a + paye_by_band_id({ paye_band_id_in: v.band_id }),
       0
-    ) //- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
+    ) //- tax_credit() // input not working here => placed outside. Issue #95
   );
 
 export const paye = () => Math.max(paye_over_bands() - tax_credit(),0);

@@ -1,19 +1,23 @@
 import { usc_sum } from "./cul_scope_4.mjs";import { paye_sum } from "./cul_scope_4.mjs";import { income_tax_sum } from "./cul_scope_4.mjs";import { usc_by_taxpayer } from "./cul_scope_4.mjs";import { paye_by_taxpayer } from "./cul_scope_4.mjs";import { income_tax_by_taxpayer } from "./cul_scope_4.mjs";import { proportion } from "./cul_scope_4.mjs";import { gross_salary } from "./cul_scope_4.mjs";import { taxpayer_count } from "./cul_scope_4.mjs";import { taxpayer_table } from "./cul_scope_4.mjs";import { taxpayer_id } from "./cul_scope_4.mjs";import { paye_table } from "./cul_scope_2.mjs";import { usc_table } from "./cul_scope_2.mjs";import { band } from "./cul_scope_2.mjs";import { tax_credit } from "./cul_scope_2.mjs";import { tax_credit_proposed } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_1.mjs";import { usc_by_taxpayer_current } from "./cul_scope_1.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_1.mjs";import { usc_current } from "./cul_scope_1.mjs";import { usc_sum_current } from "./cul_scope_1.mjs";import { paye_current } from "./cul_scope_1.mjs";import { paye_sum_current } from "./cul_scope_1.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs"; // heavily simplified incometax calculation for Irish incometax
-// set to 2022 parameters. Many limitations
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
+// inputs:
+export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
+export const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
+
+// functions:
 export const net_salary = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, usc_table_in });
 
-export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
-
 export const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, usc_table_in }) => paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in });
-
-export const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
 
 export const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, usc_table_in }) / gross_salary({ taxpayer_table_in, taxpayer_id_in });
 
 export const prsi = ({ taxpayer_table_in, taxpayer_id_in }) =>
-gross_salary({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (gross_salary({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0);
+gross_salary({ taxpayer_table_in, taxpayer_id_in }) * 0.04 * (gross_salary({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
 export const usc_table_ = ({}) => [
 { band_id: 1, band_co: 12012, rate: 0.005 },
 { band_id: 2, band_co: 21295, rate: 0.02 },
@@ -52,6 +56,7 @@ usc_table({ usc_table_in }).reduce(
 0) * (
 gross_salary({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
 
+// PAYE, "
 export const paye_table_ = ({}) => [
 { band_id: 1, band_co: 36800, rate: 0.2 },
 { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -89,7 +94,7 @@ Math.max(
 paye_table({ paye_table_in }).reduce(
 (a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0)
-//- tax_credit() // input not working here, related to reduce/- above? CONFIRMED. works when moved to above
+//- tax_credit() // input not working here => placed outside. Issue #95
 );
 
 export const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credit({ tax_credit_proposed_in }), 0);
