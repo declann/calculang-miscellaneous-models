@@ -10,6 +10,7 @@ import {
   prsi as prsi_current,
   income_tax_by_taxpayer as income_tax_by_taxpayer_current,
   usc_by_taxpayer as usc_by_taxpayer_current,
+  prsi_by_taxpayer as prsi_by_taxpayer_current,
   paye_by_taxpayer as paye_by_taxpayer_current,
 } from './incometax-set.cul';
 import {
@@ -24,6 +25,7 @@ import {
   prsi as prsi_proposed,
   income_tax_by_taxpayer as income_tax_by_taxpayer_proposed,
   usc_by_taxpayer as usc_by_taxpayer_proposed,
+  prsi_by_taxpayer as prsi_by_taxpayer_proposed,
   paye_by_taxpayer as paye_by_taxpayer_proposed,
 } from './proposed.cul';
 
@@ -40,11 +42,13 @@ export {
   paye_by_taxpayer_proposed,
   income_tax_by_taxpayer_proposed,
   usc_by_taxpayer_proposed,
+  prsi_by_taxpayer_proposed,
 };
 export {
   paye_by_taxpayer_current,
   income_tax_by_taxpayer_current,
   usc_by_taxpayer_current,
+  prsi_by_taxpayer_current,
 };
 
 export const income_tax_by_taxpayer_impact = () =>

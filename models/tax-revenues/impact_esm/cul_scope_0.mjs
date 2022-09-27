@@ -10,6 +10,7 @@ prsi_sum as prsi_sum_current,
 prsi as prsi_current,
 income_tax_by_taxpayer as income_tax_by_taxpayer_current,
 usc_by_taxpayer as usc_by_taxpayer_current,
+prsi_by_taxpayer as prsi_by_taxpayer_current,
 paye_by_taxpayer as paye_by_taxpayer_current } from
 "./cul_scope_1.mjs";
 import {
@@ -24,6 +25,7 @@ prsi_sum as prsi_sum_proposed,
 prsi as prsi_proposed,
 income_tax_by_taxpayer as income_tax_by_taxpayer_proposed,
 usc_by_taxpayer as usc_by_taxpayer_proposed,
+prsi_by_taxpayer as prsi_by_taxpayer_proposed,
 paye_by_taxpayer as paye_by_taxpayer_proposed } from
 "./cul_scope_2.mjs";
 
@@ -39,12 +41,14 @@ export { effective_rate_current, effective_rate_proposed };
 export {
 paye_by_taxpayer_proposed,
 income_tax_by_taxpayer_proposed,
-usc_by_taxpayer_proposed };
+usc_by_taxpayer_proposed,
+prsi_by_taxpayer_proposed };
 
 export {
 paye_by_taxpayer_current,
 income_tax_by_taxpayer_current,
-usc_by_taxpayer_current };
+usc_by_taxpayer_current,
+prsi_by_taxpayer_current };
 
 
 export const income_tax_by_taxpayer_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
