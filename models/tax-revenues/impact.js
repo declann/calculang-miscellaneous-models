@@ -249,6 +249,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "income_tax_by_taxpayer_impact", function() { return income_tax_by_taxpayer_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usc_by_taxpayer_impact", function() { return usc_by_taxpayer_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_by_taxpayer_impact", function() { return paye_by_taxpayer_impact; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_by_taxpayer_impact", function() { return prsi_by_taxpayer_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "income_tax_sum_impact", function() { return income_tax_sum_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "income_tax_impact", function() { return income_tax_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_sum_impact", function() { return paye_sum_impact; });
@@ -334,6 +335,9 @@ const usc_by_taxpayer_impact = ({ usc_table_in, taxpayer_table_in, taxpayer_id_i
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_by_taxpayer */ "o"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* usc_by_taxpayer */ "m"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 const paye_by_taxpayer_impact = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) =>
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer */ "f"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* paye_by_taxpayer */ "g"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+const prsi_by_taxpayer_impact = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) =>
+Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_by_taxpayer */ "j"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* prsi_by_taxpayer */ "j"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+
 
 const income_tax_sum_impact = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
 Object(_proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum */ "d"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - Object(_incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_sum */ "e"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });

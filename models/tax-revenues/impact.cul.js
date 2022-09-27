@@ -57,6 +57,9 @@ export const usc_by_taxpayer_impact = () =>
   usc_by_taxpayer_proposed() - usc_by_taxpayer_current();
 export const paye_by_taxpayer_impact = () =>
   paye_by_taxpayer_proposed() - paye_by_taxpayer_current();
+export const prsi_by_taxpayer_impact = () =>
+  prsi_by_taxpayer_proposed() - prsi_by_taxpayer_current();
+
 
 export const income_tax_sum_impact = () =>
   income_tax_sum_proposed() - income_tax_sum_current();
