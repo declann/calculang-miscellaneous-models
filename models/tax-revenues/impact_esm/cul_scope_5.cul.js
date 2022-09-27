@@ -14,7 +14,9 @@ export const income_tax = () => paye() + prsi() + usc();
 export const effective_rate = () => 1 - net_salary() / gross_salary();
 
 export const prsi = () =>
-  gross_salary() * 0.04 * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+  gross_salary() * prsi_rate() * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+
+export const prsi_rate = () => 0.04;
 
 // USC, should be mostly abstracted to a table loader
 // issues: #11 #76
@@ -97,4 +99,4 @@ export const paye_over_bands = () =>
     ) //- tax_credit() // input not working here => placed outside. Issue #95
   );
 
-export const paye = () => Math.max(paye_over_bands() - tax_credit(),0);
+export const paye = () => Math.max(paye_over_bands() - tax_credit(), 0);
