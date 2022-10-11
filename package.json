@@ -9,6 +9,9 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "use:fern": "node ./models/fern/use-fern.js",
+    "write:fern": "node ./models/fern/use-fern.js > ./models/fern/fern.out.txt",
+    "build:fern": "cul-js compile --memo ./models/fern/fern.cul.js",
     "build:donut": "cul-js compile --memo ./models/donut/donut.cul.js",
     "build:lorenz-attractor": "cul-js compile --memo ./models/lorenz-attractor/lorenz-attractor.cul.js",
     "build:tax-revenues": "cul-js compile ./models/tax-revenues/tax-revenues.cul.js",
