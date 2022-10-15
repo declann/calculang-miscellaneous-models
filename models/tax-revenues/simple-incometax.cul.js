@@ -4,7 +4,8 @@
 
 // inputs:
 export const gross_salary = () => gross_salary_in;
-export const tax_credit = () => tax_credit_in;
+export const tax_credits = () => tax_credits_in;
+export const pension_contribution = () => pension_contribution_in;
 
 // functions:
 export const net_salary = () => gross_salary() - income_tax();
@@ -12,6 +13,8 @@ export const net_salary = () => gross_salary() - income_tax();
 export const income_tax = () => paye() + prsi() + usc();
 
 export const effective_rate = () => 1 - net_salary() / gross_salary();
+
+export const prsi_taxable_salary = () => gross_salary();
 
 export const prsi = () =>
   gross_salary() * prsi_rate() * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
@@ -45,11 +48,13 @@ export const usc_band_start = () => {
 
 export const usc_rate = () => usc_table()[usc_band_id() - 1].rate;
 
+export const usc_taxable_salary = () => gross_salary(); // pay usc on pension contribution
+
 export const usc_by_band_id = () =>
   usc_rate() *
   Math.min(
     usc_band_end() - usc_band_start(),
-    Math.max(gross_salary() - usc_band_start(), 0)
+    Math.max(usc_taxable_salary() - usc_band_start(), 0)
   );
 
 export const usc = () =>
@@ -83,11 +88,14 @@ export const paye_band_start = () => {
 
 export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 
+export const paye_taxable_salary = () =>
+  gross_salary() - pension_contribution();
+
 export const paye_by_band_id = () =>
   paye_rate() *
   Math.min(
     paye_band_end() - paye_band_start(),
-    Math.max(gross_salary() - paye_band_start(), 0)
+    Math.max(paye_taxable_salary() - paye_band_start(), 0)
   );
 
 export const paye_over_bands = () =>
@@ -99,4 +107,4 @@ export const paye_over_bands = () =>
     ) //- tax_credit() // input not working here => placed outside. Issue #95
   );
 
-export const paye = () => Math.max(paye_over_bands() - tax_credit(), 0);
+export const paye = () => Math.max(paye_over_bands() - tax_credits(), 0);
