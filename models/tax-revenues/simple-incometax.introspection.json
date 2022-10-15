@@ -1,0 +1,1034 @@
+{
+  "cul_functions": {
+    "0_gross_salary": {
+      "cul_scope_id": 0,
+      "name": "gross_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 28,
+          "index": 203
+        },
+        "end": {
+          "line": 6,
+          "column": 49,
+          "index": 224
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_gross_salary_in": {
+      "cul_scope_id": 0,
+      "name": "gross_salary_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_tax_credits": {
+      "cul_scope_id": 0,
+      "name": "tax_credits",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 27,
+          "index": 254
+        },
+        "end": {
+          "line": 7,
+          "column": 47,
+          "index": 274
+        }
+      },
+      "inputs": [
+        "tax_credits_in"
+      ]
+    },
+    "0_tax_credits_in": {
+      "cul_scope_id": 0,
+      "name": "tax_credits_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "tax_credits_in"
+      ]
+    },
+    "0_pension_contribution": {
+      "cul_scope_id": 0,
+      "name": "pension_contribution",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 36,
+          "index": 313
+        },
+        "end": {
+          "line": 8,
+          "column": 65,
+          "index": 342
+        }
+      },
+      "inputs": [
+        "pension_contribution_in"
+      ]
+    },
+    "0_pension_contribution_in": {
+      "cul_scope_id": 0,
+      "name": "pension_contribution_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "pension_contribution_in"
+      ]
+    },
+    "0_net_salary": {
+      "cul_scope_id": 0,
+      "name": "net_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 26,
+          "index": 388
+        },
+        "end": {
+          "line": 11,
+          "column": 61,
+          "index": 423
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in",
+        "tax_credits_in"
+      ]
+    },
+    "0_income_tax": {
+      "cul_scope_id": 0,
+      "name": "income_tax",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 26,
+          "index": 454
+        },
+        "end": {
+          "line": 13,
+          "column": 55,
+          "index": 483
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in",
+        "tax_credits_in"
+      ]
+    },
+    "0_effective_rate": {
+      "cul_scope_id": 0,
+      "name": "effective_rate",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 30,
+          "index": 518
+        },
+        "end": {
+          "line": 15,
+          "column": 69,
+          "index": 557
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in",
+        "tax_credits_in"
+      ]
+    },
+    "0_prsi_taxable_salary": {
+      "cul_scope_id": 0,
+      "name": "prsi_taxable_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 35,
+          "index": 597
+        },
+        "end": {
+          "line": 17,
+          "column": 55,
+          "index": 617
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_prsi": {
+      "cul_scope_id": 0,
+      "name": "prsi",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 20,
+          "index": 642
+        },
+        "end": {
+          "line": 20,
+          "column": 73,
+          "index": 722
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_prsi_rate": {
+      "cul_scope_id": 0,
+      "name": "prsi_rate",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 25,
+          "index": 786
+        },
+        "end": {
+          "line": 22,
+          "column": 35,
+          "index": 796
+        }
+      },
+      "inputs": []
+    },
+    "0_usc_table": {
+      "cul_scope_id": 0,
+      "name": "usc_table",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 26,
+          "column": 25,
+          "index": 901
+        },
+        "end": {
+          "line": 35,
+          "column": 1,
+          "index": 1116
+        }
+      },
+      "inputs": []
+    },
+    "0_usc_band_id": {
+      "cul_scope_id": 0,
+      "name": "usc_band_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 27,
+          "index": 1148
+        },
+        "end": {
+          "line": 37,
+          "column": 47,
+          "index": 1168
+        }
+      },
+      "inputs": [
+        "usc_band_id_in"
+      ]
+    },
+    "0_usc_band_id_in": {
+      "cul_scope_id": 0,
+      "name": "usc_band_id_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "usc_band_id_in"
+      ]
+    },
+    "0_usc_band_end": {
+      "cul_scope_id": 0,
+      "name": "usc_band_end",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 28,
+          "index": 1201
+        },
+        "end": {
+          "line": 42,
+          "column": 1,
+          "index": 1323
+        }
+      },
+      "inputs": [
+        "usc_band_id_in"
+      ]
+    },
+    "0_usc_band_start": {
+      "cul_scope_id": 0,
+      "name": "usc_band_start",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 30,
+          "index": 1358
+        },
+        "end": {
+          "line": 47,
+          "column": 1,
+          "index": 1455
+        }
+      },
+      "inputs": [
+        "usc_band_id_in"
+      ]
+    },
+    "0_usc_rate": {
+      "cul_scope_id": 0,
+      "name": "usc_rate",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 24,
+          "index": 1484
+        },
+        "end": {
+          "line": 49,
+          "column": 65,
+          "index": 1525
+        }
+      },
+      "inputs": [
+        "usc_band_id_in"
+      ]
+    },
+    "0_usc_taxable_salary": {
+      "cul_scope_id": 0,
+      "name": "usc_taxable_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 51,
+          "column": 34,
+          "index": 1564
+        },
+        "end": {
+          "line": 51,
+          "column": 54,
+          "index": 1584
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_usc_by_band_id": {
+      "cul_scope_id": 0,
+      "name": "usc_by_band_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 53,
+          "column": 30,
+          "index": 1654
+        },
+        "end": {
+          "line": 58,
+          "column": 3,
+          "index": 1791
+        }
+      },
+      "inputs": [
+        "usc_band_id_in",
+        "gross_salary_in"
+      ]
+    },
+    "0_usc": {
+      "cul_scope_id": 0,
+      "name": "usc",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 60,
+          "column": 19,
+          "index": 1815
+        },
+        "end": {
+          "line": 64,
+          "column": 38,
+          "index": 1956
+        }
+      },
+      "inputs": [
+        "gross_salary_in"
+      ]
+    },
+    "0_paye_table": {
+      "cul_scope_id": 0,
+      "name": "paye_table",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 67,
+          "column": 26,
+          "index": 1999
+        },
+        "end": {
+          "line": 75,
+          "column": 1,
+          "index": 2163
+        }
+      },
+      "inputs": []
+    },
+    "0_paye_band_id": {
+      "cul_scope_id": 0,
+      "name": "paye_band_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 77,
+          "column": 28,
+          "index": 2196
+        },
+        "end": {
+          "line": 77,
+          "column": 49,
+          "index": 2217
+        }
+      },
+      "inputs": [
+        "paye_band_id_in"
+      ]
+    },
+    "0_paye_band_id_in": {
+      "cul_scope_id": 0,
+      "name": "paye_band_id_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "paye_band_id_in"
+      ]
+    },
+    "0_paye_band_end": {
+      "cul_scope_id": 0,
+      "name": "paye_band_end",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 79,
+          "column": 29,
+          "index": 2251
+        },
+        "end": {
+          "line": 82,
+          "column": 1,
+          "index": 2377
+        }
+      },
+      "inputs": [
+        "paye_band_id_in"
+      ]
+    },
+    "0_paye_band_start": {
+      "cul_scope_id": 0,
+      "name": "paye_band_start",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 31,
+          "index": 2413
+        },
+        "end": {
+          "line": 87,
+          "column": 1,
+          "index": 2513
+        }
+      },
+      "inputs": [
+        "paye_band_id_in"
+      ]
+    },
+    "0_paye_rate": {
+      "cul_scope_id": 0,
+      "name": "paye_rate",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 89,
+          "column": 25,
+          "index": 2543
+        },
+        "end": {
+          "line": 89,
+          "column": 68,
+          "index": 2586
+        }
+      },
+      "inputs": [
+        "paye_band_id_in"
+      ]
+    },
+    "0_paye_taxable_salary": {
+      "cul_scope_id": 0,
+      "name": "paye_taxable_salary",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 91,
+          "column": 35,
+          "index": 2626
+        },
+        "end": {
+          "line": 92,
+          "column": 41,
+          "index": 2674
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in"
+      ]
+    },
+    "0_paye_by_band_id": {
+      "cul_scope_id": 0,
+      "name": "paye_by_band_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 94,
+          "column": 31,
+          "index": 2710
+        },
+        "end": {
+          "line": 99,
+          "column": 3,
+          "index": 2852
+        }
+      },
+      "inputs": [
+        "paye_band_id_in",
+        "gross_salary_in",
+        "pension_contribution_in"
+      ]
+    },
+    "0_paye_over_bands": {
+      "cul_scope_id": 0,
+      "name": "paye_over_bands",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 101,
+          "column": 31,
+          "index": 2888
+        },
+        "end": {
+          "line": 108,
+          "column": 3,
+          "index": 3103
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in"
+      ]
+    },
+    "0_paye": {
+      "cul_scope_id": 0,
+      "name": "paye",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 110,
+          "column": 20,
+          "index": 3128
+        },
+        "end": {
+          "line": 110,
+          "column": 72,
+          "index": 3180
+        }
+      },
+      "inputs": [
+        "gross_salary_in",
+        "pension_contribution_in",
+        "tax_credits_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_gross_salary",
+      "from": "0_gross_salary_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_tax_credits",
+      "from": "0_tax_credits_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_pension_contribution",
+      "from": "0_pension_contribution_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_net_salary",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_net_salary",
+      "from": "0_income_tax",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_income_tax",
+      "from": "0_paye",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_income_tax",
+      "from": "0_prsi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_income_tax",
+      "from": "0_usc",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_effective_rate",
+      "from": "0_net_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_effective_rate",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_prsi_taxable_salary",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_prsi",
+      "from": "0_prsi_taxable_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_prsi",
+      "from": "0_prsi_rate",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_prsi",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_id",
+      "from": "0_usc_band_id_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_usc_band_end",
+      "from": "0_usc_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_end",
+      "from": "0_usc_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_end",
+      "from": "0_usc_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_end",
+      "from": "0_usc_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_start",
+      "from": "0_usc_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_start",
+      "from": "0_usc_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_band_start",
+      "from": "0_usc_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_rate",
+      "from": "0_usc_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_rate",
+      "from": "0_usc_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_taxable_salary",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_by_band_id",
+      "from": "0_usc_rate",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_by_band_id",
+      "from": "0_usc_band_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_by_band_id",
+      "from": "0_usc_band_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_by_band_id",
+      "from": "0_usc_taxable_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc_by_band_id",
+      "from": "0_usc_band_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc",
+      "from": "0_usc_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_usc",
+      "from": "0_usc_by_band_id",
+      "reason": "call",
+      "negs": [
+        "usc_band_id_in"
+      ]
+    },
+    {
+      "to": "0_undefined",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_id",
+      "from": "0_paye_band_id_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_paye_band_end",
+      "from": "0_paye_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_end",
+      "from": "0_paye_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_end",
+      "from": "0_paye_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_end",
+      "from": "0_paye_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_start",
+      "from": "0_paye_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_start",
+      "from": "0_paye_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_band_start",
+      "from": "0_paye_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_rate",
+      "from": "0_paye_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_rate",
+      "from": "0_paye_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_taxable_salary",
+      "from": "0_gross_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_taxable_salary",
+      "from": "0_pension_contribution",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_by_band_id",
+      "from": "0_paye_rate",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_by_band_id",
+      "from": "0_paye_band_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_by_band_id",
+      "from": "0_paye_band_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_by_band_id",
+      "from": "0_paye_taxable_salary",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_by_band_id",
+      "from": "0_paye_band_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_over_bands",
+      "from": "0_paye_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_over_bands",
+      "from": "0_paye_by_band_id",
+      "reason": "call",
+      "negs": [
+        "paye_band_id_in"
+      ]
+    },
+    {
+      "to": "0_paye",
+      "from": "0_paye_over_bands",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye",
+      "from": "0_tax_credits",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./simple-incometax.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {
+    "0_gross_salary": [
+      "gross_salary_in"
+    ],
+    "0_gross_salary_in": [
+      "gross_salary_in"
+    ],
+    "0_tax_credits": [
+      "tax_credits_in"
+    ],
+    "0_tax_credits_in": [
+      "tax_credits_in"
+    ],
+    "0_pension_contribution": [
+      "pension_contribution_in"
+    ],
+    "0_pension_contribution_in": [
+      "pension_contribution_in"
+    ],
+    "0_net_salary": [
+      "gross_salary_in",
+      "pension_contribution_in",
+      "tax_credits_in"
+    ],
+    "0_income_tax": [
+      "gross_salary_in",
+      "pension_contribution_in",
+      "tax_credits_in"
+    ],
+    "0_effective_rate": [
+      "gross_salary_in",
+      "pension_contribution_in",
+      "tax_credits_in"
+    ],
+    "0_prsi_taxable_salary": [
+      "gross_salary_in"
+    ],
+    "0_prsi": [
+      "gross_salary_in"
+    ],
+    "0_prsi_rate": [],
+    "0_usc_table": [],
+    "0_usc_band_id": [
+      "usc_band_id_in"
+    ],
+    "0_usc_band_id_in": [
+      "usc_band_id_in"
+    ],
+    "0_usc_band_end": [
+      "usc_band_id_in"
+    ],
+    "0_usc_band_start": [
+      "usc_band_id_in"
+    ],
+    "0_usc_rate": [
+      "usc_band_id_in"
+    ],
+    "0_usc_taxable_salary": [
+      "gross_salary_in"
+    ],
+    "0_usc_by_band_id": [
+      "usc_band_id_in",
+      "gross_salary_in"
+    ],
+    "0_usc": [
+      "gross_salary_in"
+    ],
+    "0_paye_table": [],
+    "0_paye_band_id": [
+      "paye_band_id_in"
+    ],
+    "0_paye_band_id_in": [
+      "paye_band_id_in"
+    ],
+    "0_paye_band_end": [
+      "paye_band_id_in"
+    ],
+    "0_paye_band_start": [
+      "paye_band_id_in"
+    ],
+    "0_paye_rate": [
+      "paye_band_id_in"
+    ],
+    "0_paye_taxable_salary": [
+      "gross_salary_in",
+      "pension_contribution_in"
+    ],
+    "0_paye_by_band_id": [
+      "paye_band_id_in",
+      "gross_salary_in",
+      "pension_contribution_in"
+    ],
+    "0_paye_over_bands": [
+      "gross_salary_in",
+      "pension_contribution_in"
+    ],
+    "0_paye": [
+      "gross_salary_in",
+      "pension_contribution_in",
+      "tax_credits_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_gross_salary\" [cul_scope_id=0,name=gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"0_gross_salary inputs: gross_salary_in\"]\n  \"0_gross_salary_in\" [cul_scope_id=0,name=gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=gross_salary_in,label=\"0_gross_salary_in inputs: gross_salary_in\"]\n  \"0_tax_credits\" [cul_scope_id=0,name=tax_credits,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=tax_credits_in,label=\"0_tax_credits inputs: tax_credits_in\"]\n  \"0_tax_credits_in\" [cul_scope_id=0,name=tax_credits_in,cul_source_scope_id=0,reason=\"input definition\",inputs=tax_credits_in,label=\"0_tax_credits_in inputs: tax_credits_in\"]\n  \"0_pension_contribution\" [cul_scope_id=0,name=pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pension_contribution_in,label=\"0_pension_contribution inputs: pension_contribution_in\"]\n  \"0_pension_contribution_in\" [cul_scope_id=0,name=pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pension_contribution_in,label=\"0_pension_contribution_in inputs: pension_contribution_in\"]\n  \"0_net_salary\" [cul_scope_id=0,name=net_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,tax_credits_in\",label=\"0_net_salary inputs: gross_salary_in,pension_contribution_in,tax_credits_in\"]\n  \"0_income_tax\" [cul_scope_id=0,name=income_tax,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,tax_credits_in\",label=\"0_income_tax inputs: gross_salary_in,pension_contribution_in,tax_credits_in\"]\n  \"0_effective_rate\" [cul_scope_id=0,name=effective_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,tax_credits_in\",label=\"0_effective_rate inputs: gross_salary_in,pension_contribution_in,tax_credits_in\"]\n  \"0_prsi_taxable_salary\" [cul_scope_id=0,name=prsi_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"0_prsi_taxable_salary inputs: gross_salary_in\"]\n  \"0_prsi\" [cul_scope_id=0,name=prsi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"0_prsi inputs: gross_salary_in\"]\n  \"0_prsi_rate\" [cul_scope_id=0,name=prsi_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_prsi_rate inputs: \"]\n  \"0_usc_table\" [cul_scope_id=0,name=usc_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_usc_table inputs: \"]\n  \"0_usc_band_id\" [cul_scope_id=0,name=usc_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_band_id inputs: usc_band_id_in\"]\n  \"0_usc_band_id_in\" [cul_scope_id=0,name=usc_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=usc_band_id_in,label=\"0_usc_band_id_in inputs: usc_band_id_in\"]\n  \"0_usc_band_end\" [cul_scope_id=0,name=usc_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_band_end inputs: usc_band_id_in\"]\n  \"0_usc_band_start\" [cul_scope_id=0,name=usc_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_band_start inputs: usc_band_id_in\"]\n  \"0_usc_rate\" [cul_scope_id=0,name=usc_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_rate inputs: usc_band_id_in\"]\n  \"0_usc_taxable_salary\" [cul_scope_id=0,name=usc_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"0_usc_taxable_salary inputs: gross_salary_in\"]\n  \"0_usc_by_band_id\" [cul_scope_id=0,name=usc_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,gross_salary_in\",label=\"0_usc_by_band_id inputs: usc_band_id_in,gross_salary_in\"]\n  \"0_usc\" [cul_scope_id=0,name=usc,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"0_usc inputs: gross_salary_in\"]\n  \"0_paye_table\" [cul_scope_id=0,name=paye_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_paye_table inputs: \"]\n  \"0_paye_band_id\" [cul_scope_id=0,name=paye_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_band_id inputs: paye_band_id_in\"]\n  \"0_paye_band_id_in\" [cul_scope_id=0,name=paye_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=paye_band_id_in,label=\"0_paye_band_id_in inputs: paye_band_id_in\"]\n  \"0_paye_band_end\" [cul_scope_id=0,name=paye_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_band_end inputs: paye_band_id_in\"]\n  \"0_paye_band_start\" [cul_scope_id=0,name=paye_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_band_start inputs: paye_band_id_in\"]\n  \"0_paye_rate\" [cul_scope_id=0,name=paye_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_rate inputs: paye_band_id_in\"]\n  \"0_paye_taxable_salary\" [cul_scope_id=0,name=paye_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in\",label=\"0_paye_taxable_salary inputs: gross_salary_in,pension_contribution_in\"]\n  \"0_paye_by_band_id\" [cul_scope_id=0,name=paye_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,gross_salary_in,pension_contribution_in\",label=\"0_paye_by_band_id inputs: paye_band_id_in,gross_salary_in,pension_contribution_in\"]\n  \"0_paye_over_bands\" [cul_scope_id=0,name=paye_over_bands,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in\",label=\"0_paye_over_bands inputs: gross_salary_in,pension_contribution_in\"]\n  \"0_paye\" [cul_scope_id=0,name=paye,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,tax_credits_in\",label=\"0_paye inputs: gross_salary_in,pension_contribution_in,tax_credits_in\"]\n  \"0_undefined\"\n  \"0_gross_salary_in\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"0_tax_credits_in\" -> \"0_tax_credits\" [value=\"[object Object]\",label=\"input +tax_credits_in\"]\n  \"0_pension_contribution_in\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"input +pension_contribution_in\"]\n  \"0_gross_salary\" -> \"0_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax\" -> \"0_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_prsi\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_net_salary\" -> \"0_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_prsi_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_prsi_taxable_salary\" -> \"0_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_prsi_rate\" -> \"0_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id_in\" -> \"0_usc_band_id\" [value=\"[object Object]\",label=\"input +usc_band_id_in\"]\n  \"0_usc_band_id\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_usc_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_rate\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_end\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_start\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_taxable_salary\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_by_band_id\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -usc_band_id_in\"]\n  \"0_gross_salary\" -> \"0_undefined\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id_in\" -> \"0_paye_band_id\" [value=\"[object Object]\",label=\"input +paye_band_id_in\"]\n  \"0_paye_band_id\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pension_contribution\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_rate\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_end\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_start\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_taxable_salary\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_by_band_id\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -paye_band_id_in\"]\n  \"0_paye_over_bands\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_tax_credits\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

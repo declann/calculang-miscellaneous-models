@@ -17,6 +17,7 @@
     "build:tax-revenues": "cul-js compile ./models/tax-revenues/tax-revenues.cul.js",
     "build:incometax-set": "cul-js compile ./models/tax-revenues/incometax-set.cul.js",
     "build:incometax-impact": "cul-js compile ./models/tax-revenues/impact.cul.js",
+    "build:simple-incometax": "cul-js compile ./models/tax-revenues/simple-incometax.cul.js",
     "use:incometax-set": "node ./models/tax-revenues/use-incometax-set-esm.mjs",
     "use:impact": "node ./models/tax-revenues/use-impact.js > ./models/tax-revenues/use-impact-out.txt",
     "use:tax-revenues": "node ./models/tax-revenues/use-tax-revenues-esm.mjs"
