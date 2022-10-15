@@ -218,7 +218,7 @@ const paye_band_start = ({ paye_band_id_in }) => {
 const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
 const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in }) =>
-gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in });
+Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }));
 
 const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
 paye_rate({ paye_band_id_in }) *
