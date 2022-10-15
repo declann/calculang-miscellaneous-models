@@ -126,6 +126,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_by_band_id", function() { return paye_by_band_id; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_over_bands", function() { return paye_over_bands; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye", function() { return paye; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "net_salary_plus_pension_contribution", function() { return net_salary_plus_pension_contribution; });
 // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
@@ -236,6 +237,9 @@ paye_table({}).reduce(
 );
 
 const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
+
+const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
+net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
 
 /***/ })
 /******/ ]);

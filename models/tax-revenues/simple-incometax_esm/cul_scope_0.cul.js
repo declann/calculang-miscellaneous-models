@@ -17,7 +17,7 @@ export const effective_rate = () => 1 - net_salary() / gross_salary();
 export const prsi_taxable_salary = () => gross_salary();
 
 export const prsi = () =>
-prsi_taxable_salary() * prsi_rate() * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+  prsi_taxable_salary() * prsi_rate() * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
 export const prsi_rate = () => 0.04;
 
@@ -108,3 +108,6 @@ export const paye_over_bands = () =>
   );
 
 export const paye = () => Math.max(paye_over_bands() - tax_credits(), 0);
+
+export const net_salary_plus_pension_contribution = () =>
+  net_salary() + pension_contribution();
