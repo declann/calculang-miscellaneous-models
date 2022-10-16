@@ -41,7 +41,10 @@ import {
 export { paye_taxable_salary, pension_contribution, gross_salary, net_salary };
 */
 export const pension_contribution_impact = () =>
-  pension_contribution_B() - pension_contribution_A();
+pension_contribution_B() - pension_contribution_A();
+
+export const net_salary_plus_pension_contribution_impact = () =>
+net_salary_plus_pension_contribution_B() - net_salary_plus_pension_contribution_A();
 
 export const paye_taxable_salary_impact = () =>
   paye_taxable_salary_B() - paye_taxable_salary_A();
