@@ -8,7 +8,7 @@ export const tax_credits = () => tax_credits_in;
 export const pension_contribution = () => pension_contribution_in;
 
 // functions:
-export const net_salary = () => gross_salary() - income_tax();
+export const net_salary = () => gross_salary() - pension_contribution() - income_tax();
 
 export const income_tax = () => paye() + prsi() + usc();
 
