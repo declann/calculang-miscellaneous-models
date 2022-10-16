@@ -47,7 +47,7 @@ export const paye_taxable_salary_impact = ({ gross_salary_in, pension_contributi
 paye_taxable_salary_B({ gross_salary_in, pension_contribution_in }) - paye_taxable_salary_A({ gross_salary_A_in, pension_contribution_A_in });
 
 export const net_salary_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) => net_salary_B({ gross_salary_in, pension_contribution_in, tax_credits_in }) - net_salary_A({ gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in });
-export const gross_salary_impact = ({ gross_salary_A_in }) => gross_salary_B({}) - gross_salary_A({ gross_salary_A_in });
+export const gross_salary_impact = ({ gross_salary_in, gross_salary_A_in }) => gross_salary_B({ gross_salary_in }) - gross_salary_A({ gross_salary_A_in });
 export const income_tax_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) => income_tax_B({ gross_salary_in, pension_contribution_in, tax_credits_in }) - income_tax_A({ gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in });
 
 //export const net_salary_impact = () => ()

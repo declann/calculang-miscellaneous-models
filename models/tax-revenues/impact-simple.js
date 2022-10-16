@@ -137,15 +137,17 @@ const tax_credits = ({ tax_credits_A_in }) => tax_credits_A({ tax_credits_A_in }
 /* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["b"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["d"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["c"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["c"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["e"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["e"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["d"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["a"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["f"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["b"]; });
 
 
 
@@ -176,7 +178,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "income_tax_A", function() { return _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
 /* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "gross_salary_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["gross_salary_B"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "gross_salary_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["c"]; });
 
@@ -211,7 +213,7 @@ const paye_taxable_salary_impact = ({ gross_salary_in, pension_contribution_in, 
 Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_taxable_salary_B */ "e"])({ gross_salary_in, pension_contribution_in }) - Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* paye_taxable_salary_A */ "f"])({ gross_salary_A_in, pension_contribution_A_in });
 
 const net_salary_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) => Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* net_salary_B */ "c"])({ gross_salary_in, pension_contribution_in, tax_credits_in }) - Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* net_salary_A */ "d"])({ gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in });
-const gross_salary_impact = ({ gross_salary_A_in }) => Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["gross_salary_B"])({}) - Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary_A */ "b"])({ gross_salary_A_in });
+const gross_salary_impact = ({ gross_salary_in, gross_salary_A_in }) => Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary_B */ "a"])({ gross_salary_in }) - Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary_A */ "b"])({ gross_salary_A_in });
 const income_tax_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) => Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_B */ "b"])({ gross_salary_in, pension_contribution_in, tax_credits_in }) - Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax_A */ "c"])({ gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in });
 
 //export const net_salary_impact = () => ()
@@ -221,11 +223,11 @@ const income_tax_impact = ({ gross_salary_in, pension_contribution_in, tax_credi
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* unused harmony export gross_salary */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return gross_salary; });
 /* unused harmony export tax_credits */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return pension_contribution; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return net_salary; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return income_tax; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return pension_contribution; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return net_salary; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax; });
 /* unused harmony export effective_rate */
 /* unused harmony export prsi_taxable_salary */
 /* unused harmony export prsi */
@@ -243,11 +245,11 @@ const income_tax_impact = ({ gross_salary_in, pension_contribution_in, tax_credi
 /* unused harmony export paye_band_end */
 /* unused harmony export paye_band_start */
 /* unused harmony export paye_rate */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return paye_taxable_salary; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return paye_taxable_salary; });
 /* unused harmony export paye_by_band_id */
 /* unused harmony export paye_over_bands */
 /* unused harmony export paye */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return net_salary_plus_pension_contribution; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return net_salary_plus_pension_contribution; });
 /* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
  // heavily simplified incometax calculation for Irish incometax
