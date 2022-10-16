@@ -103,6 +103,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gross_salary_A", function() { return gross_salary_A; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution_A", function() { return pension_contribution_A; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits_A", function() { return tax_credits_A; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution_impact", function() { return pension_contribution_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_taxable_salary_impact", function() { return paye_taxable_salary_impact; });
 /* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_A", function() { return _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
@@ -132,9 +133,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const gross_salary_A = ({ gross_salary_A_in }) => gross_salary_A_in;
 const pension_contribution_A = ({ pension_contribution_A_in }) => pension_contribution_A_in;
 const tax_credits_A = ({ tax_credits_A_in }) => tax_credits_A_in;
+
+const pension_contribution_impact = ({ pension_contribution_A_in }) =>
+pension_contribution_B() - pension_contribution_A({ pension_contribution_A_in });
 
 const paye_taxable_salary_impact = ({ gross_salary_in, pension_contribution_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) =>
 Object(_B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_taxable_salary_B */ "c"])({ gross_salary_in, pension_contribution_in }) -
