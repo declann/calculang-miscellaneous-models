@@ -4,6 +4,7 @@ import {
   net_salary_A,
   paye_taxable_salary_A,
   net_salary_plus_pension_contribution_A,
+  income_tax_A
 } from './A.cul';
 
 import {
@@ -11,7 +12,8 @@ import {
   pension_contribution_B,
   net_salary_B,
   paye_taxable_salary_B,
-  net_salary_plus_pension_contribution_B
+  net_salary_plus_pension_contribution_B,
+  income_tax_B
 } from './B.cul';
 
 export {
@@ -20,6 +22,7 @@ export {
   net_salary_A,
   paye_taxable_salary_A,
   net_salary_plus_pension_contribution_A,
+  income_tax_A
 };
 export {
   gross_salary_B,
@@ -27,6 +30,7 @@ export {
   paye_taxable_salary_B,
   net_salary_plus_pension_contribution_B,
   pension_contribution_B,
+  income_tax_B
 };
 /*
 import {
@@ -44,5 +48,6 @@ export const paye_taxable_salary_impact = () =>
 
 export const net_salary_impact = () => net_salary_B() - net_salary_A();
 export const gross_salary_impact = () => gross_salary_B() - gross_salary_A();
+export const income_tax_impact = () => income_tax_B() - income_tax_A();
 
 //export const net_salary_impact = () => ()
