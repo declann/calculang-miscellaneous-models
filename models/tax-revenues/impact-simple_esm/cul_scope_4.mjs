@@ -1,16 +1,16 @@
-import { gross_salary_impact } from "./cul_scope_0.mjs";import { net_salary_impact } from "./cul_scope_0.mjs";import { paye_taxable_salary_impact } from "./cul_scope_0.mjs";import { pension_contribution_impact } from "./cul_scope_0.mjs";import { pension_contribution } from "./cul_scope_3.mjs";import { paye_taxable_salary } from "./cul_scope_3.mjs";import { net_salary_plus_pension_contribution_A } from "./cul_scope_1.mjs";import { paye_taxable_salary_A } from "./cul_scope_1.mjs";import { net_salary_A } from "./cul_scope_1.mjs"; // heavily simplified incometax calculation for Irish incometax
+import { tax_credits } from "./cul_scope_1.mjs";import { tax_credits_A } from "./cul_scope_1.mjs";import { pension_contribution_A } from "./cul_scope_1.mjs";import { gross_salary_A } from "./cul_scope_1.mjs";import { gross_salary_impact } from "./cul_scope_0.mjs";import { net_salary_impact } from "./cul_scope_0.mjs";import { paye_taxable_salary_impact } from "./cul_scope_0.mjs";import { pension_contribution_impact } from "./cul_scope_0.mjs";import { net_salary } from "./cul_scope_3.mjs";import { gross_salary } from "./cul_scope_3.mjs";import { pension_contribution } from "./cul_scope_3.mjs";import { paye_taxable_salary } from "./cul_scope_3.mjs";import { net_salary_plus_pension_contribution_B } from "./cul_scope_2.mjs";import { paye_taxable_salary_B } from "./cul_scope_2.mjs";import { net_salary_B } from "./cul_scope_2.mjs";import { pension_contribution_B } from "./cul_scope_2.mjs";import { gross_salary_B } from "./cul_scope_2.mjs"; // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
 
 // inputs:
-export const gross_salary = ({ gross_salary_in }) => gross_salary_in;
-export const tax_credits = ({ tax_credits_in }) => tax_credits_in;
+export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
+export const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
 export const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-export const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });
+export const net_salary_ = ({ gross_salary_in, pension_contribution_in, tax_credits_A_in }) => gross_salary({ gross_salary_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_A_in });
 
-export const income_tax = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => paye({ gross_salary_in, pension_contribution_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
+export const income_tax = ({ gross_salary_in, pension_contribution_in, tax_credits_A_in }) => paye({ gross_salary_in, pension_contribution_in, tax_credits_A_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
 
 export const effective_rate = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) / gross_salary({ gross_salary_in });
 
@@ -107,7 +107,7 @@ paye_table({}).reduce(
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-export const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
+export const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_A_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_A_in }), 0);
 
 export const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
 net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
