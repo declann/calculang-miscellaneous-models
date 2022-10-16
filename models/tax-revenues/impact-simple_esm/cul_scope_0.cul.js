@@ -10,6 +10,7 @@ import {
   net_salary_B,
   paye_taxable_salary_B,
   net_salary_plus_pension_contribution_B,
+  pension_contribution_B
 } from './B.cul';
 
 export {
@@ -21,6 +22,7 @@ export {
   net_salary_B,
   paye_taxable_salary_B,
   net_salary_plus_pension_contribution_B,
+  pension_contribution_B
 };
 
 import { paye_taxable_salary, pension_contribution } from './simple-incometax.cul';

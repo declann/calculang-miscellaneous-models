@@ -3,7 +3,8 @@ import { paye_taxable_salary_impact } from "./cul_scope_0.mjs";import { pension_
 //pension_contribution as pension_contribution_A,
 net_salary as net_salary_B,
 paye_taxable_salary_ as paye_taxable_salary_B,
-net_salary_plus_pension_contribution as net_salary_plus_pension_contribution_B } from
+net_salary_plus_pension_contribution as net_salary_plus_pension_contribution_B,
+pension_contribution_ as pension_contribution_B } from
 "./cul_scope_5.mjs";
 
-export { net_salary_B, paye_taxable_salary_B, net_salary_plus_pension_contribution_B };
+export { net_salary_B, paye_taxable_salary_B, net_salary_plus_pension_contribution_B, pension_contribution_B };
