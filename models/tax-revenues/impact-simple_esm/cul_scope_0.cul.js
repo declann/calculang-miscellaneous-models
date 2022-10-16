@@ -28,14 +28,14 @@ export {
   net_salary_plus_pension_contribution_B,
   pension_contribution_B,
 };
-
+/*
 import {
   paye_taxable_salary,
   pension_contribution,
   gross_salary, net_salary
 } from './simple-incometax.cul';
 export { paye_taxable_salary, pension_contribution, gross_salary, net_salary };
-
+*/
 export const pension_contribution_impact = () =>
   pension_contribution_B() - pension_contribution_A();
 

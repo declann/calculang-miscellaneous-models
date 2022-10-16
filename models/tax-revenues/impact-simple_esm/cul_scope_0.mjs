@@ -28,21 +28,21 @@ paye_taxable_salary_B,
 net_salary_plus_pension_contribution_B,
 pension_contribution_B };
 
-
+/*
 import {
-paye_taxable_salary,
-pension_contribution_ as pension_contribution,
-gross_salary_ as gross_salary, net_salary } from
-"./cul_scope_3.mjs";
+  paye_taxable_salary,
+  pension_contribution,
+  gross_salary, net_salary
+} from './simple-incometax.cul';
 export { paye_taxable_salary, pension_contribution, gross_salary, net_salary };
-
+*/
 export const pension_contribution_impact = ({ pension_contribution_in, pension_contribution_A_in }) =>
 pension_contribution_B({ pension_contribution_in }) - pension_contribution_A({ pension_contribution_A_in });
 
-export const paye_taxable_salary_impact = ({ gross_salary_in, pension_contribution_in }) =>
-paye_taxable_salary_B({ gross_salary_in, pension_contribution_in }) - paye_taxable_salary_A({ gross_salary_in, pension_contribution_in });
+export const paye_taxable_salary_impact = ({ gross_salary_in, pension_contribution_in, gross_salary_A_in, pension_contribution_A_in }) =>
+paye_taxable_salary_B({ gross_salary_in, pension_contribution_in }) - paye_taxable_salary_A({ gross_salary_A_in, pension_contribution_A_in });
 
-export const net_salary_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, tax_credits_A_in }) => net_salary_B({ gross_salary_in, pension_contribution_in, tax_credits_in }) - net_salary_A({ gross_salary_in, pension_contribution_in, tax_credits_A_in });
+export const net_salary_impact = ({ gross_salary_in, pension_contribution_in, tax_credits_in, gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in }) => net_salary_B({ gross_salary_in, pension_contribution_in, tax_credits_in }) - net_salary_A({ gross_salary_A_in, pension_contribution_A_in, tax_credits_A_in });
 export const gross_salary_impact = ({ gross_salary_A_in }) => gross_salary_B({}) - gross_salary_A({ gross_salary_A_in });
 
 //export const net_salary_impact = () => ()
