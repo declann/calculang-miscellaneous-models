@@ -23,8 +23,8 @@ paye_taxable_salary_B,
 net_salary_plus_pension_contribution_B };
 
 
-import { paye_taxable_salary } from "./cul_scope_3.mjs";
-export { paye_taxable_salary };
+import { paye_taxable_salary, pension_contribution } from "./cul_scope_3.mjs";
+export { paye_taxable_salary, pension_contribution };
 
 export const gross_salary_A = ({ gross_salary_A_in }) => gross_salary_A_in;
 export const pension_contribution_A = ({ pension_contribution_A_in }) => pension_contribution_A_in;

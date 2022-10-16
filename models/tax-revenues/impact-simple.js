@@ -105,22 +105,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits_A", function() { return tax_credits_A; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution_impact", function() { return pension_contribution_impact; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_taxable_salary_impact", function() { return paye_taxable_salary_impact; });
-/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_A", function() { return _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "paye_taxable_salary_A", function() { return _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_plus_pension_contribution_A", function() { return _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "paye_taxable_salary_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "net_salary_plus_pension_contribution_B", function() { return _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["b"]; });
 
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "paye_taxable_salary", function() { return _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__["a"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pension_contribution", function() { return _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__["b"]; });
 
 
 
@@ -156,47 +158,9 @@ Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["a"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["c"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["b"]; });
-
-
-
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["a"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["c"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["b"]; });
-
-
-
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* unused harmony export gross_salary */
 /* unused harmony export tax_credits */
-/* unused harmony export pension_contribution */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return pension_contribution; });
 /* unused harmony export net_salary */
 /* unused harmony export income_tax */
 /* unused harmony export effective_rate */
@@ -222,8 +186,8 @@ Object(_A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[
 /* unused harmony export paye */
 /* unused harmony export net_salary_plus_pension_contribution */
 /* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
-/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
@@ -339,13 +303,51 @@ const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contrib
 net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
 
 /***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["a"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["c"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_4_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_3__["b"]; });
+
+
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["a"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["c"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_3__["b"]; });
+
+
+
+
+
+/***/ }),
 /* 4 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* unused harmony export gross_salary */
 /* unused harmony export tax_credits */
-/* unused harmony export pension_contribution */
+/* unused harmony export pension_contribution_ */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return net_salary; });
 /* unused harmony export income_tax */
 /* unused harmony export effective_rate */
@@ -371,8 +373,8 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 /* unused harmony export paye */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return net_salary_plus_pension_contribution; });
 /* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _A_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
@@ -380,7 +382,7 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 // inputs:
 const gross_salary = ({ gross_salary_in }) => gross_salary_in;
 const tax_credits = ({ tax_credits_in }) => tax_credits_in;
-const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
+const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
 const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });
@@ -464,7 +466,7 @@ const paye_band_start = ({ paye_band_id_in }) => {
 const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
 const paye_taxable_salary_ = ({ gross_salary_in, pension_contribution_in }) =>
-Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }));
+Math.max(0, gross_salary({ gross_salary_in }) - Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* pension_contribution */ "b"])({ pension_contribution_in }));
 
 const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
 paye_rate({ paye_band_id_in }) *
@@ -485,7 +487,7 @@ paye_table({}).reduce(
 const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
 
 const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
-net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
+net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* pension_contribution */ "b"])({ pension_contribution_in });
 
 /***/ }),
 /* 5 */
@@ -494,7 +496,7 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 "use strict";
 /* unused harmony export gross_salary */
 /* unused harmony export tax_credits */
-/* unused harmony export pension_contribution */
+/* unused harmony export pension_contribution_ */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return net_salary; });
 /* unused harmony export income_tax */
 /* unused harmony export effective_rate */
@@ -520,8 +522,8 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 /* unused harmony export paye */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return net_salary_plus_pension_contribution; });
 /* harmony import */ var _impact_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
+/* harmony import */ var _B_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
@@ -529,7 +531,7 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 // inputs:
 const gross_salary = ({ gross_salary_in }) => gross_salary_in;
 const tax_credits = ({ tax_credits_in }) => tax_credits_in;
-const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
+const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
 const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });
@@ -613,7 +615,7 @@ const paye_band_start = ({ paye_band_id_in }) => {
 const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
 const paye_taxable_salary_ = ({ gross_salary_in, pension_contribution_in }) =>
-Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }));
+Math.max(0, gross_salary({ gross_salary_in }) - Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* pension_contribution */ "b"])({ pension_contribution_in }));
 
 const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
 paye_rate({ paye_band_id_in }) *
@@ -634,7 +636,7 @@ paye_table({}).reduce(
 const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
 
 const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
-net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
+net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + Object(_simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* pension_contribution */ "b"])({ pension_contribution_in });
 
 /***/ })
 /******/ ]);

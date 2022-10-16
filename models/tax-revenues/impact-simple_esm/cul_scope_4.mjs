@@ -1,11 +1,11 @@
-import { paye_taxable_salary_impact } from "./cul_scope_0.mjs";import { pension_contribution_impact } from "./cul_scope_0.mjs";import { tax_credits_A } from "./cul_scope_0.mjs";import { pension_contribution_A } from "./cul_scope_0.mjs";import { gross_salary_A } from "./cul_scope_0.mjs";import { paye_taxable_salary } from "./cul_scope_3.mjs";import { net_salary_plus_pension_contribution_A } from "./cul_scope_1.mjs";import { paye_taxable_salary_A } from "./cul_scope_1.mjs";import { net_salary_A } from "./cul_scope_1.mjs"; // heavily simplified incometax calculation for Irish incometax
+import { paye_taxable_salary_impact } from "./cul_scope_0.mjs";import { pension_contribution_impact } from "./cul_scope_0.mjs";import { tax_credits_A } from "./cul_scope_0.mjs";import { pension_contribution_A } from "./cul_scope_0.mjs";import { gross_salary_A } from "./cul_scope_0.mjs";import { pension_contribution } from "./cul_scope_3.mjs";import { paye_taxable_salary } from "./cul_scope_3.mjs";import { net_salary_plus_pension_contribution_B } from "./cul_scope_2.mjs";import { paye_taxable_salary_B } from "./cul_scope_2.mjs";import { net_salary_B } from "./cul_scope_2.mjs"; // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
 
 // inputs:
 export const gross_salary = ({ gross_salary_in }) => gross_salary_in;
 export const tax_credits = ({ tax_credits_in }) => tax_credits_in;
-export const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
+export const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
 export const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });

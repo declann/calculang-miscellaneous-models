@@ -23,8 +23,8 @@ export {
   net_salary_plus_pension_contribution_B,
 };
 
-import { paye_taxable_salary } from './simple-incometax.cul';
-export { paye_taxable_salary };
+import { paye_taxable_salary, pension_contribution } from './simple-incometax.cul';
+export { paye_taxable_salary, pension_contribution };
 
 export const gross_salary_A = () => gross_salary_A_in;
 export const pension_contribution_A = () => pension_contribution_A_in;
