@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:payroll": "cul-js compile ./models/payroll-validator/payroll.cul.js",
     "use:fern": "node ./models/fern/use-fern.js",
     "write:fern": "node ./models/fern/use-fern.js > ./models/fern/fern.out.txt",
     "build:fern": "cul-js compile --memo ./models/fern/fern.cul.js",
