@@ -73,7 +73,7 @@ export const gross_salary = () => {
 export const op_usc_taxable_by_band_id = () => usc_taxable_by_band_id({ pay_period_in: pay_period() - 1 });*/ // leave this to application?
 //export const pay_period_usc = () => usc() - op_usc();
 
-export const usc_payable = () => usc() - usc({ time: time() - 1 });
+export const usc_payable = () => usc() - usc({ time_in: time() - 1 });
 
 export const time = () => time_in;
 
