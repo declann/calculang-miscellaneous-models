@@ -1,3 +1,5 @@
+// WIP
+
 // USC code adapted from simple-incometax.cul.js
 
 // USC, should be mostly abstracted to a table loader
@@ -46,7 +48,6 @@ export const usc = () =>
     0
   ) * 1; //(gross_salary() > 13000 ? 1 : 0);
 
-
 // end USC
 
 export const pay_period = () => pay_period_in;
@@ -55,10 +56,18 @@ export const pay_period_duration = () => pay_period_duration_in; // 'M' or 'W'
 // op = opening = pre current pay period, fut = after current pay period to end of year
 export const op_gross_salary = () => op_gross_salary_in;
 export const pay_period_gross_salary = () => pay_period_gross_salary_in;
-export const gross_salary = () => pay_period_gross_salary() + op_gross_salary();
+export const fut_gross_salary = () => fut_gross_salary_in;
+export const gross_salary = () =>
+  pay_period_gross_salary() +
+  op_gross_salary() +
+  fut_gross_salary() * (factor_for_credits_and_bands == 1 ? 1 : 0); // but fut gross salary into last pay period
 
-export const op_usc = () => usc({ pay_period_in: pay_period() - 1 });
-export const pay_period_usc = () => usc() - op_usc();
+/*export const op_usc = () => usc({ pay_period_in: pay_period() - 1 });
+export const op_usc_taxable_by_band_id = () => usc_taxable_by_band_id({ pay_period_in: pay_period() - 1 });*/ // leave this to application?
+//export const pay_period_usc = () => usc() - op_usc();
+
+export const usc_payable = () =>
+  usc() - usc({ pay_period_in: pay_period() - 1 });
 
 export const factor_for_credits_and_bands = () => {
   if (pay_period_duration() == 'W') return pay_period() / 52;

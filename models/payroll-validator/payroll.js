@@ -113,10 +113,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pay_period_duration", function() { return pay_period_duration; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "op_gross_salary", function() { return op_gross_salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pay_period_gross_salary", function() { return pay_period_gross_salary; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fut_gross_salary", function() { return fut_gross_salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "gross_salary", function() { return gross_salary; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "op_usc", function() { return op_usc; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pay_period_usc", function() { return pay_period_usc; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "usc_payable", function() { return usc_payable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "factor_for_credits_and_bands", function() { return factor_for_credits_and_bands; });
+// WIP
+
 // USC code adapted from simple-incometax.cul.js
 
 // USC, should be mostly abstracted to a table loader
@@ -149,22 +151,21 @@ const usc_band_start = ({ usc_band_id_in, pay_period_duration_in, pay_period_in 
 
 const usc_rate = ({ usc_band_id_in }) => usc_table({})[usc_band_id({ usc_band_id_in }) - 1].rate;
 
-const usc_taxable_salary = ({ pay_period_gross_salary_in, op_gross_salary_in }) => gross_salary({ pay_period_gross_salary_in, op_gross_salary_in }); // pay usc on pension contribution
+const usc_taxable_salary = ({ pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) => gross_salary({ pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }); // pay usc on pension contribution
 
-const usc_by_band_id = ({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) => usc_rate({ usc_band_id_in }) * usc_taxable_by_band_id({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in });
+const usc_by_band_id = ({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) => usc_rate({ usc_band_id_in }) * usc_taxable_by_band_id({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in });
 
-const usc_taxable_by_band_id = ({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) =>
+const usc_taxable_by_band_id = ({ usc_band_id_in, pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) =>
 Math.min(
 usc_band_end({ usc_band_id_in, pay_period_duration_in, pay_period_in }) - usc_band_start({ usc_band_id_in, pay_period_duration_in, pay_period_in }),
-Math.max(usc_taxable_salary({ pay_period_gross_salary_in, op_gross_salary_in }) - usc_band_start({ usc_band_id_in, pay_period_duration_in, pay_period_in }), 0));
+Math.max(usc_taxable_salary({ pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) - usc_band_start({ usc_band_id_in, pay_period_duration_in, pay_period_in }), 0));
 
 
-const usc = ({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) =>
+const usc = ({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) =>
 usc_table({}).reduce(
-(a, v) => a + usc_by_band_id({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, usc_band_id_in: v.band_id }),
+(a, v) => a + usc_by_band_id({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in, usc_band_id_in: v.band_id }),
 0) *
 1; //(gross_salary() > 13000 ? 1 : 0);
-
 
 // end USC
 
@@ -174,10 +175,18 @@ const pay_period_duration = ({ pay_period_duration_in }) => pay_period_duration_
 // op = opening = pre current pay period, fut = after current pay period to end of year
 const op_gross_salary = ({ op_gross_salary_in }) => op_gross_salary_in;
 const pay_period_gross_salary = ({ pay_period_gross_salary_in }) => pay_period_gross_salary_in;
-const gross_salary = ({ pay_period_gross_salary_in, op_gross_salary_in }) => pay_period_gross_salary({ pay_period_gross_salary_in }) + op_gross_salary({ op_gross_salary_in });
+const fut_gross_salary = ({ fut_gross_salary_in }) => fut_gross_salary_in;
+const gross_salary = ({ pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) =>
+pay_period_gross_salary({ pay_period_gross_salary_in }) +
+op_gross_salary({ op_gross_salary_in }) +
+fut_gross_salary({ fut_gross_salary_in }) * (factor_for_credits_and_bands == 1 ? 1 : 0); // but fut gross salary into last pay period
 
-const op_usc = ({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) => usc({ pay_period_duration_in, pay_period_gross_salary_in, op_gross_salary_in, pay_period_in: pay_period({ pay_period_in }) - 1 });
-const pay_period_usc = ({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) => usc({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in }) - op_usc({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in });
+/*export const op_usc = () => usc({ pay_period_in: pay_period() - 1 });
+export const op_usc_taxable_by_band_id = () => usc_taxable_by_band_id({ pay_period_in: pay_period() - 1 });*/ // leave this to application?
+//export const pay_period_usc = () => usc() - op_usc();
+
+const usc_payable = ({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) =>
+usc({ pay_period_duration_in, pay_period_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in }) - usc({ pay_period_duration_in, pay_period_gross_salary_in, op_gross_salary_in, fut_gross_salary_in, pay_period_in: pay_period({ pay_period_in }) - 1 });
 
 const factor_for_credits_and_bands = ({ pay_period_duration_in, pay_period_in }) => {
   if (pay_period_duration({ pay_period_duration_in }) == 'W') return pay_period({ pay_period_in }) / 52;
