@@ -57,20 +57,28 @@ export const pay_period_duration = () => pay_period_duration_in; // 'M' or 'W'
 export const op_gross_salary = () => op_gross_salary_in;
 export const pay_period_gross_salary = () => pay_period_gross_salary_in;
 export const fut_gross_salary = () => fut_gross_salary_in;
-export const gross_salary = () =>
+export const gross_salary = () => {
+  if (time() == pay_period() - 1) return op_gross_salary();
+  else if (time() == pay_period())
+    return op_gross_salary() + pay_period_gross_salary();
+  else if (factor_for_credits_and_bands() == 1)
+    return op_gross_salary() + pay_period_gross_salary() + fut_gross_salary();
+};
+/*
   pay_period_gross_salary() +
-  op_gross_salary() +
-  fut_gross_salary() * (factor_for_credits_and_bands == 1 ? 1 : 0); // but fut gross salary into last pay period
+  op_gross_salary() + // following expression means I need to define fut_gross_salary_in even if it isn't used for op/current pay period
+  fut_gross_salary() * (factor_for_credits_and_bands == 1 ? 1 : 0);*/ // but fut gross salary into last pay period
 
 /*export const op_usc = () => usc({ pay_period_in: pay_period() - 1 });
 export const op_usc_taxable_by_band_id = () => usc_taxable_by_band_id({ pay_period_in: pay_period() - 1 });*/ // leave this to application?
 //export const pay_period_usc = () => usc() - op_usc();
 
-export const usc_payable = () =>
-  usc() - usc({ pay_period_in: pay_period() - 1 });
+export const usc_payable = () => usc() - usc({ time: time() - 1 });
+
+export const time = () => time_in;
 
 export const factor_for_credits_and_bands = () => {
-  if (pay_period_duration() == 'W') return pay_period() / 52;
-  if (pay_period_duration() == 'M') return pay_period() / 12;
+  if (pay_period_duration() == 'W') return time() / 52;
+  if (pay_period_duration() == 'M') return time() / 12;
   return 999;
 };
