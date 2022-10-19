@@ -131,6 +131,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_over_bands", function() { return paye_over_bands; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits_pa", function() { return tax_credits_pa; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits", function() { return tax_credits; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits_deducted", function() { return tax_credits_deducted; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye", function() { return paye; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_payable", function() { return paye_payable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "time", function() { return time; });
@@ -283,6 +284,9 @@ const tax_credits_pa = ({ tax_credits_pa_in }) => tax_credits_pa_in;
 
 const tax_credits = ({ tax_credits_pa_in, pay_period_duration_in, time_in }) =>
 tax_credits_pa({ tax_credits_pa_in }) * factor_for_credits_and_bands({ pay_period_duration_in, time_in });
+
+const tax_credits_deducted = ({ tax_credits_pa_in, pay_period_duration_in, time_in }) =>
+tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in, tim_in: time({ time_in }) - 1 });
 
 const paye = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => Math.max(paye_over_bands({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }), 0);
 

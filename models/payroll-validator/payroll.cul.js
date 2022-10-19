@@ -147,6 +147,9 @@ export const tax_credits_pa = () => tax_credits_pa_in;
 export const tax_credits = () =>
   tax_credits_pa() * factor_for_credits_and_bands();
 
+export const tax_credits_deducted = () =>
+  tax_credits() - tax_credits({ tim_in: time() - 1 });
+
 export const paye = () => Math.max(paye_over_bands() - tax_credits(), 0);
 
 export const paye_payable = () => paye() - paye({ time_in: time() - 1 });
