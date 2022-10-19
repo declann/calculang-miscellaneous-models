@@ -128,6 +128,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution", function() { return pension_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_by_band_id", function() { return paye_by_band_id; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_over_bands", function() { return paye_over_bands; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits_pa", function() { return tax_credits_pa; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tax_credits", function() { return tax_credits; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye", function() { return paye; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_payable", function() { return paye_payable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "time", function() { return time; });
@@ -211,7 +213,6 @@ const usc_payable = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_
 
 // PAYE
 
-
 const paye_table = ({}) => [
 { band_id: 1, band_co: 36800, rate: 0.2 },
 { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -226,12 +227,16 @@ const paye_band_id = ({ paye_band_id_in }) => paye_band_id_in;
 
 const paye_band_end = ({ paye_band_id_in, pay_period_duration_in, time_in }) => {
   if (paye_band_id({ paye_band_id_in }) == paye_table({}).length) return 999999999;
-  return paye_table({})[paye_band_id({ paye_band_id_in }) - 1].band_co * factor_for_credits_and_bands({ pay_period_duration_in, time_in });
+  return (
+    paye_table({})[paye_band_id({ paye_band_id_in }) - 1].band_co * factor_for_credits_and_bands({ pay_period_duration_in, time_in }));
+
 };
 
 const paye_band_start = ({ paye_band_id_in, pay_period_duration_in, time_in }) => {
   if (paye_band_id({ paye_band_id_in }) == 1) return 0;
-  return paye_table({})[paye_band_id({ paye_band_id_in }) - 2].band_co * factor_for_credits_and_bands({ pay_period_duration_in, time_in });
+  return (
+    paye_table({})[paye_band_id({ paye_band_id_in }) - 2].band_co * factor_for_credits_and_bands({ pay_period_duration_in, time_in }));
+
 };
 
 const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
@@ -239,10 +244,9 @@ const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_ba
 const paye_taxable_salary = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) =>
 Math.max(0, gross_salary({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) - pension_contribution({ time_in, pay_period_in, op_pension_contribution_in, pay_period_pension_contribution_in, pay_period_duration_in, fut_pension_contribution_in }));
 
-
-
 const op_pension_contribution = ({ op_pension_contribution_in }) => op_pension_contribution_in;
-const pay_period_pension_contribution = ({ pay_period_pension_contribution_in }) => pay_period_pension_contribution_in;
+const pay_period_pension_contribution = ({ pay_period_pension_contribution_in }) =>
+pay_period_pension_contribution_in;
 const fut_pension_contribution = ({ fut_pension_contribution_in }) => fut_pension_contribution_in;
 
 const pension_contribution = ({ time_in, pay_period_in, op_pension_contribution_in, pay_period_pension_contribution_in, pay_period_duration_in, fut_pension_contribution_in }) => {
@@ -250,7 +254,11 @@ const pension_contribution = ({ time_in, pay_period_in, op_pension_contribution_
   if (time({ time_in }) == pay_period({ pay_period_in }))
   return op_pension_contribution({ op_pension_contribution_in }) + pay_period_pension_contribution({ pay_period_pension_contribution_in });else
   if (factor_for_credits_and_bands({ pay_period_duration_in, time_in }) == 1)
-  return op_pension_contribution({ op_pension_contribution_in }) + pay_period_pension_contribution({ pay_period_pension_contribution_in }) + fut_pension_contribution({ fut_pension_contribution_in });
+  return (
+    op_pension_contribution({ op_pension_contribution_in }) +
+    pay_period_pension_contribution({ pay_period_pension_contribution_in }) +
+    fut_pension_contribution({ fut_pension_contribution_in }));
+
 };
 
 const paye_by_band_id = ({ paye_band_id_in, pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) =>
@@ -269,13 +277,14 @@ paye_table({}).reduce(
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-const paye = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) => Math.max(paye_over_bands({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - tax_credits(), 0);
+const tax_credits_pa = ({ tax_credits_pa_in }) => tax_credits_pa_in;
 
-const paye_payable = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) => paye({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - paye({ pay_period_duration_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, time_in: time({ time_in }) - 1 });
+const tax_credits = ({ tax_credits_pa_in, pay_period_duration_in, time_in }) =>
+tax_credits_pa({ tax_credits_pa_in }) * factor_for_credits_and_bands({ pay_period_duration_in, time_in });
 
+const paye = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => Math.max(paye_over_bands({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }), 0);
 
-
-
+const paye_payable = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => paye({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) - paye({ pay_period_duration_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in, time_in: time({ time_in }) - 1 });
 
 const time = ({ time_in }) => time_in;
 

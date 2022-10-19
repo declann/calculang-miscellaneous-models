@@ -77,7 +77,6 @@ export const usc_payable = () => usc() - usc({ time_in: time() - 1 });
 
 // PAYE
 
-
 export const paye_table = () => [
   { band_id: 1, band_co: 36800, rate: 0.2 },
   { band_id: 2, band_co: 100000, rate: 0.4 },
@@ -92,12 +91,16 @@ export const paye_band_id = () => paye_band_id_in;
 
 export const paye_band_end = () => {
   if (paye_band_id() == paye_table().length) return 999999999;
-  return paye_table()[paye_band_id() - 1].band_co * factor_for_credits_and_bands();
+  return (
+    paye_table()[paye_band_id() - 1].band_co * factor_for_credits_and_bands()
+  );
 };
 
 export const paye_band_start = () => {
   if (paye_band_id() == 1) return 0;
-  return paye_table()[paye_band_id() - 2].band_co * factor_for_credits_and_bands();
+  return (
+    paye_table()[paye_band_id() - 2].band_co * factor_for_credits_and_bands()
+  );
 };
 
 export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
@@ -105,10 +108,9 @@ export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 export const paye_taxable_salary = () =>
   Math.max(0, gross_salary() - pension_contribution());
 
-  
-
 export const op_pension_contribution = () => op_pension_contribution_in;
-export const pay_period_pension_contribution = () => pay_period_pension_contribution_in;
+export const pay_period_pension_contribution = () =>
+  pay_period_pension_contribution_in;
 export const fut_pension_contribution = () => fut_pension_contribution_in;
 
 export const pension_contribution = () => {
@@ -116,7 +118,11 @@ export const pension_contribution = () => {
   else if (time() == pay_period())
     return op_pension_contribution() + pay_period_pension_contribution();
   else if (factor_for_credits_and_bands() == 1)
-    return op_pension_contribution() + pay_period_pension_contribution() + fut_pension_contribution();
+    return (
+      op_pension_contribution() +
+      pay_period_pension_contribution() +
+      fut_pension_contribution()
+    );
 };
 
 export const paye_by_band_id = () =>
@@ -135,13 +141,14 @@ export const paye_over_bands = () =>
     ) //- tax_credit() // input not working here => placed outside. Issue #95
   );
 
+export const tax_credits_pa = () => tax_credits_pa_in;
+
+export const tax_credits = () =>
+  tax_credits_pa() * factor_for_credits_and_bands();
+
 export const paye = () => Math.max(paye_over_bands() - tax_credits(), 0);
 
 export const paye_payable = () => paye() - paye({ time_in: time() - 1 });
-
-
-
-
 
 export const time = () => time_in;
 
