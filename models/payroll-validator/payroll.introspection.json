@@ -697,9 +697,39 @@
           "index": 4232
         },
         "end": {
-          "line": 133,
+          "line": 128,
+          "column": 76,
+          "index": 4277
+        }
+      },
+      "inputs": [
+        "paye_band_id_in",
+        "pay_period_duration_in",
+        "time_in",
+        "pay_period_in",
+        "op_gross_salary_in",
+        "pay_period_gross_salary_in",
+        "fut_gross_salary_in",
+        "op_pension_contribution_in",
+        "pay_period_pension_contribution_in",
+        "fut_pension_contribution_in"
+      ]
+    },
+    "0_paye_taxable_by_band_id": {
+      "cul_scope_id": 0,
+      "name": "paye_taxable_by_band_id",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 130,
+          "column": 39,
+          "index": 4321
+        },
+        "end": {
+          "line": 134,
           "column": 3,
-          "index": 4374
+          "index": 4446
         }
       },
       "inputs": [
@@ -722,14 +752,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 135,
+          "line": 136,
           "column": 31,
-          "index": 4410
+          "index": 4482
         },
         "end": {
-          "line": 142,
+          "line": 143,
           "column": 3,
-          "index": 4625
+          "index": 4697
         }
       },
       "inputs": [
@@ -751,14 +781,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 144,
+          "line": 145,
           "column": 30,
-          "index": 4660
+          "index": 4732
         },
         "end": {
-          "line": 144,
+          "line": 145,
           "column": 53,
-          "index": 4683
+          "index": 4755
         }
       },
       "inputs": [
@@ -781,14 +811,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 146,
+          "line": 147,
           "column": 27,
-          "index": 4715
+          "index": 4787
         },
         "end": {
-          "line": 147,
+          "line": 148,
           "column": 51,
-          "index": 4773
+          "index": 4845
         }
       },
       "inputs": [
@@ -804,14 +834,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 149,
+          "line": 150,
           "column": 20,
-          "index": 4798
+          "index": 4870
         },
         "end": {
-          "line": 149,
+          "line": 150,
           "column": 72,
-          "index": 4850
+          "index": 4922
         }
       },
       "inputs": [
@@ -834,14 +864,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 151,
+          "line": 152,
           "column": 28,
-          "index": 4883
+          "index": 4955
         },
         "end": {
-          "line": 151,
+          "line": 152,
           "column": 72,
-          "index": 4927
+          "index": 4999
         }
       },
       "inputs": [
@@ -864,14 +894,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 153,
+          "line": 154,
           "column": 20,
-          "index": 4952
+          "index": 5024
         },
         "end": {
-          "line": 153,
+          "line": 154,
           "column": 33,
-          "index": 4965
+          "index": 5037
         }
       },
       "inputs": [
@@ -894,14 +924,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 155,
+          "line": 156,
           "column": 44,
-          "index": 5014
+          "index": 5086
         },
         "end": {
-          "line": 159,
+          "line": 160,
           "column": 1,
-          "index": 5153
+          "index": 5225
         }
       },
       "inputs": [
@@ -1309,24 +1339,30 @@
     },
     {
       "to": "0_paye_by_band_id",
+      "from": "0_paye_taxable_by_band_id",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_paye_taxable_by_band_id",
       "from": "0_paye_band_end",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "0_paye_by_band_id",
+      "to": "0_paye_taxable_by_band_id",
       "from": "0_paye_band_start",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "0_paye_by_band_id",
+      "to": "0_paye_taxable_by_band_id",
       "from": "0_paye_taxable_salary",
       "reason": "call",
       "negs": []
     },
     {
-      "to": "0_paye_by_band_id",
+      "to": "0_paye_taxable_by_band_id",
       "from": "0_paye_band_start",
       "reason": "call",
       "negs": []
@@ -1598,6 +1634,18 @@
       "pay_period_pension_contribution_in",
       "fut_pension_contribution_in"
     ],
+    "0_paye_taxable_by_band_id": [
+      "paye_band_id_in",
+      "pay_period_duration_in",
+      "time_in",
+      "pay_period_in",
+      "op_gross_salary_in",
+      "pay_period_gross_salary_in",
+      "fut_gross_salary_in",
+      "op_pension_contribution_in",
+      "pay_period_pension_contribution_in",
+      "fut_pension_contribution_in"
+    ],
     "0_paye_over_bands": [
       "pay_period_duration_in",
       "time_in",
@@ -1655,5 +1703,5 @@
       "time_in"
     ]
   },
-  "dot": "digraph {\n  \"0_usc_table\" [cul_scope_id=0,name=usc_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_usc_table inputs: \"]\n  \"0_usc_band_id\" [cul_scope_id=0,name=usc_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_band_id inputs: usc_band_id_in\"]\n  \"0_usc_band_id_in\" [cul_scope_id=0,name=usc_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=usc_band_id_in,label=\"0_usc_band_id_in inputs: usc_band_id_in\"]\n  \"0_usc_band_end\" [cul_scope_id=0,name=usc_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in\",label=\"0_usc_band_end inputs: usc_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_usc_band_start\" [cul_scope_id=0,name=usc_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in\",label=\"0_usc_band_start inputs: usc_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_usc_rate\" [cul_scope_id=0,name=usc_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_rate inputs: usc_band_id_in\"]\n  \"0_usc_taxable_salary\" [cul_scope_id=0,name=usc_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\",label=\"0_usc_taxable_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\"]\n  \"0_usc_by_band_id\" [cul_scope_id=0,name=usc_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_by_band_id inputs: usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_usc_taxable_by_band_id\" [cul_scope_id=0,name=usc_taxable_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_taxable_by_band_id inputs: usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_usc\" [cul_scope_id=0,name=usc,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_pay_period\" [cul_scope_id=0,name=pay_period,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_in,label=\"0_pay_period inputs: pay_period_in\"]\n  \"0_pay_period_in\" [cul_scope_id=0,name=pay_period_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_in,label=\"0_pay_period_in inputs: pay_period_in\"]\n  \"0_pay_period_duration\" [cul_scope_id=0,name=pay_period_duration,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_duration_in,label=\"0_pay_period_duration inputs: pay_period_duration_in\"]\n  \"0_pay_period_duration_in\" [cul_scope_id=0,name=pay_period_duration_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_duration_in,label=\"0_pay_period_duration_in inputs: pay_period_duration_in\"]\n  \"0_op_gross_salary\" [cul_scope_id=0,name=op_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=op_gross_salary_in,label=\"0_op_gross_salary inputs: op_gross_salary_in\"]\n  \"0_op_gross_salary_in\" [cul_scope_id=0,name=op_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=op_gross_salary_in,label=\"0_op_gross_salary_in inputs: op_gross_salary_in\"]\n  \"0_pay_period_gross_salary\" [cul_scope_id=0,name=pay_period_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_gross_salary_in,label=\"0_pay_period_gross_salary inputs: pay_period_gross_salary_in\"]\n  \"0_pay_period_gross_salary_in\" [cul_scope_id=0,name=pay_period_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_gross_salary_in,label=\"0_pay_period_gross_salary_in inputs: pay_period_gross_salary_in\"]\n  \"0_fut_gross_salary\" [cul_scope_id=0,name=fut_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fut_gross_salary_in,label=\"0_fut_gross_salary inputs: fut_gross_salary_in\"]\n  \"0_fut_gross_salary_in\" [cul_scope_id=0,name=fut_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fut_gross_salary_in,label=\"0_fut_gross_salary_in inputs: fut_gross_salary_in\"]\n  \"0_gross_salary\" [cul_scope_id=0,name=gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\",label=\"0_gross_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\"]\n  \"0_usc_payable\" [cul_scope_id=0,name=usc_payable,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_payable inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_paye_table\" [cul_scope_id=0,name=paye_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_paye_table inputs: \"]\n  \"0_paye_band_id\" [cul_scope_id=0,name=paye_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_band_id inputs: paye_band_id_in\"]\n  \"0_paye_band_id_in\" [cul_scope_id=0,name=paye_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=paye_band_id_in,label=\"0_paye_band_id_in inputs: paye_band_id_in\"]\n  \"0_paye_band_end\" [cul_scope_id=0,name=paye_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in\",label=\"0_paye_band_end inputs: paye_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_paye_band_start\" [cul_scope_id=0,name=paye_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in\",label=\"0_paye_band_start inputs: paye_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_paye_rate\" [cul_scope_id=0,name=paye_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_rate inputs: paye_band_id_in\"]\n  \"0_paye_taxable_salary\" [cul_scope_id=0,name=paye_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_taxable_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_op_pension_contribution\" [cul_scope_id=0,name=op_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=op_pension_contribution_in,label=\"0_op_pension_contribution inputs: op_pension_contribution_in\"]\n  \"0_op_pension_contribution_in\" [cul_scope_id=0,name=op_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=op_pension_contribution_in,label=\"0_op_pension_contribution_in inputs: op_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution\" [cul_scope_id=0,name=pay_period_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_pension_contribution_in,label=\"0_pay_period_pension_contribution inputs: pay_period_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution_in\" [cul_scope_id=0,name=pay_period_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_pension_contribution_in,label=\"0_pay_period_pension_contribution_in inputs: pay_period_pension_contribution_in\"]\n  \"0_fut_pension_contribution\" [cul_scope_id=0,name=fut_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fut_pension_contribution_in,label=\"0_fut_pension_contribution inputs: fut_pension_contribution_in\"]\n  \"0_fut_pension_contribution_in\" [cul_scope_id=0,name=fut_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fut_pension_contribution_in,label=\"0_fut_pension_contribution_in inputs: fut_pension_contribution_in\"]\n  \"0_pension_contribution\" [cul_scope_id=0,name=pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_pension_contribution_in,pay_period_pension_contribution_in,pay_period_duration_in,fut_pension_contribution_in\",label=\"0_pension_contribution inputs: time_in,pay_period_in,op_pension_contribution_in,pay_period_pension_contribution_in,pay_period_duration_in,fut_pension_contribution_in\"]\n  \"0_paye_by_band_id\" [cul_scope_id=0,name=paye_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_by_band_id inputs: paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_paye_over_bands\" [cul_scope_id=0,name=paye_over_bands,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_over_bands inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_tax_credits_pa\" [cul_scope_id=0,name=tax_credits_pa,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=tax_credits_pa_in,label=\"0_tax_credits_pa inputs: tax_credits_pa_in\"]\n  \"0_tax_credits_pa_in\" [cul_scope_id=0,name=tax_credits_pa_in,cul_source_scope_id=0,reason=\"input definition\",inputs=tax_credits_pa_in,label=\"0_tax_credits_pa_in inputs: tax_credits_pa_in\"]\n  \"0_tax_credits\" [cul_scope_id=0,name=tax_credits,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"tax_credits_pa_in,pay_period_duration_in,time_in\",label=\"0_tax_credits inputs: tax_credits_pa_in,pay_period_duration_in,time_in\"]\n  \"0_paye\" [cul_scope_id=0,name=paye,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\",label=\"0_paye inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\"]\n  \"0_paye_payable\" [cul_scope_id=0,name=paye_payable,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\",label=\"0_paye_payable inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\"]\n  \"0_time\" [cul_scope_id=0,name=time,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=time_in,label=\"0_time inputs: time_in\"]\n  \"0_time_in\" [cul_scope_id=0,name=time_in,cul_source_scope_id=0,reason=\"input definition\",inputs=time_in,label=\"0_time_in inputs: time_in\"]\n  \"0_factor_for_credits_and_bands\" [cul_scope_id=0,name=factor_for_credits_and_bands,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in\",label=\"0_factor_for_credits_and_bands inputs: pay_period_duration_in,time_in\"]\n  \"0_usc_band_id_in\" -> \"0_usc_band_id\" [value=\"[object Object]\",label=\"input +usc_band_id_in\"]\n  \"0_usc_table\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_usc_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_rate\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_taxable_by_band_id\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_end\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_start\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_taxable_salary\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_by_band_id\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -usc_band_id_in\"]\n  \"0_pay_period_in\" -> \"0_pay_period\" [value=\"[object Object]\",label=\"input +pay_period_in\"]\n  \"0_pay_period_duration_in\" -> \"0_pay_period_duration\" [value=\"[object Object]\",label=\"input +pay_period_duration_in\"]\n  \"0_op_gross_salary_in\" -> \"0_op_gross_salary\" [value=\"[object Object]\",label=\"input +op_gross_salary_in\"]\n  \"0_pay_period_gross_salary_in\" -> \"0_pay_period_gross_salary\" [value=\"[object Object]\",label=\"input +pay_period_gross_salary_in\"]\n  \"0_fut_gross_salary_in\" -> \"0_fut_gross_salary\" [value=\"[object Object]\",label=\"input +fut_gross_salary_in\"]\n  \"0_time\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fut_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc\" -> \"0_usc_payable\" [value=\"[object Object]\",label=\"call -time_in\"]\n  \"0_time\" -> \"0_usc_payable\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id_in\" -> \"0_paye_band_id\" [value=\"[object Object]\",label=\"input +paye_band_id_in\"]\n  \"0_paye_band_id\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pension_contribution\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_pension_contribution_in\" -> \"0_op_pension_contribution\" [value=\"[object Object]\",label=\"input +op_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution_in\" -> \"0_pay_period_pension_contribution\" [value=\"[object Object]\",label=\"input +pay_period_pension_contribution_in\"]\n  \"0_fut_pension_contribution_in\" -> \"0_fut_pension_contribution\" [value=\"[object Object]\",label=\"input +fut_pension_contribution_in\"]\n  \"0_time\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fut_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_rate\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_end\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_start\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_taxable_salary\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_by_band_id\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -paye_band_id_in\"]\n  \"0_tax_credits_pa_in\" -> \"0_tax_credits_pa\" [value=\"[object Object]\",label=\"input +tax_credits_pa_in\"]\n  \"0_tax_credits_pa\" -> \"0_tax_credits\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_tax_credits\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_over_bands\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_tax_credits\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye\" -> \"0_paye_payable\" [value=\"[object Object]\",label=\"call -time_in\"]\n  \"0_time\" -> \"0_paye_payable\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_time_in\" -> \"0_time\" [value=\"[object Object]\",label=\"input +time_in\"]\n  \"0_pay_period_duration\" -> \"0_factor_for_credits_and_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_time\" -> \"0_factor_for_credits_and_bands\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_usc_table\" [cul_scope_id=0,name=usc_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_usc_table inputs: \"]\n  \"0_usc_band_id\" [cul_scope_id=0,name=usc_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_band_id inputs: usc_band_id_in\"]\n  \"0_usc_band_id_in\" [cul_scope_id=0,name=usc_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=usc_band_id_in,label=\"0_usc_band_id_in inputs: usc_band_id_in\"]\n  \"0_usc_band_end\" [cul_scope_id=0,name=usc_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in\",label=\"0_usc_band_end inputs: usc_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_usc_band_start\" [cul_scope_id=0,name=usc_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in\",label=\"0_usc_band_start inputs: usc_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_usc_rate\" [cul_scope_id=0,name=usc_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"0_usc_rate inputs: usc_band_id_in\"]\n  \"0_usc_taxable_salary\" [cul_scope_id=0,name=usc_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\",label=\"0_usc_taxable_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\"]\n  \"0_usc_by_band_id\" [cul_scope_id=0,name=usc_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_by_band_id inputs: usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_usc_taxable_by_band_id\" [cul_scope_id=0,name=usc_taxable_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_taxable_by_band_id inputs: usc_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_usc\" [cul_scope_id=0,name=usc,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_pay_period\" [cul_scope_id=0,name=pay_period,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_in,label=\"0_pay_period inputs: pay_period_in\"]\n  \"0_pay_period_in\" [cul_scope_id=0,name=pay_period_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_in,label=\"0_pay_period_in inputs: pay_period_in\"]\n  \"0_pay_period_duration\" [cul_scope_id=0,name=pay_period_duration,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_duration_in,label=\"0_pay_period_duration inputs: pay_period_duration_in\"]\n  \"0_pay_period_duration_in\" [cul_scope_id=0,name=pay_period_duration_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_duration_in,label=\"0_pay_period_duration_in inputs: pay_period_duration_in\"]\n  \"0_op_gross_salary\" [cul_scope_id=0,name=op_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=op_gross_salary_in,label=\"0_op_gross_salary inputs: op_gross_salary_in\"]\n  \"0_op_gross_salary_in\" [cul_scope_id=0,name=op_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=op_gross_salary_in,label=\"0_op_gross_salary_in inputs: op_gross_salary_in\"]\n  \"0_pay_period_gross_salary\" [cul_scope_id=0,name=pay_period_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_gross_salary_in,label=\"0_pay_period_gross_salary inputs: pay_period_gross_salary_in\"]\n  \"0_pay_period_gross_salary_in\" [cul_scope_id=0,name=pay_period_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_gross_salary_in,label=\"0_pay_period_gross_salary_in inputs: pay_period_gross_salary_in\"]\n  \"0_fut_gross_salary\" [cul_scope_id=0,name=fut_gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fut_gross_salary_in,label=\"0_fut_gross_salary inputs: fut_gross_salary_in\"]\n  \"0_fut_gross_salary_in\" [cul_scope_id=0,name=fut_gross_salary_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fut_gross_salary_in,label=\"0_fut_gross_salary_in inputs: fut_gross_salary_in\"]\n  \"0_gross_salary\" [cul_scope_id=0,name=gross_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\",label=\"0_gross_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in\"]\n  \"0_usc_payable\" [cul_scope_id=0,name=usc_payable,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\",label=\"0_usc_payable inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in\"]\n  \"0_paye_table\" [cul_scope_id=0,name=paye_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_paye_table inputs: \"]\n  \"0_paye_band_id\" [cul_scope_id=0,name=paye_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_band_id inputs: paye_band_id_in\"]\n  \"0_paye_band_id_in\" [cul_scope_id=0,name=paye_band_id_in,cul_source_scope_id=0,reason=\"input definition\",inputs=paye_band_id_in,label=\"0_paye_band_id_in inputs: paye_band_id_in\"]\n  \"0_paye_band_end\" [cul_scope_id=0,name=paye_band_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in\",label=\"0_paye_band_end inputs: paye_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_paye_band_start\" [cul_scope_id=0,name=paye_band_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in\",label=\"0_paye_band_start inputs: paye_band_id_in,pay_period_duration_in,time_in\"]\n  \"0_paye_rate\" [cul_scope_id=0,name=paye_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"0_paye_rate inputs: paye_band_id_in\"]\n  \"0_paye_taxable_salary\" [cul_scope_id=0,name=paye_taxable_salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_taxable_salary inputs: time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,pay_period_duration_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_op_pension_contribution\" [cul_scope_id=0,name=op_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=op_pension_contribution_in,label=\"0_op_pension_contribution inputs: op_pension_contribution_in\"]\n  \"0_op_pension_contribution_in\" [cul_scope_id=0,name=op_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=op_pension_contribution_in,label=\"0_op_pension_contribution_in inputs: op_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution\" [cul_scope_id=0,name=pay_period_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=pay_period_pension_contribution_in,label=\"0_pay_period_pension_contribution inputs: pay_period_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution_in\" [cul_scope_id=0,name=pay_period_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=pay_period_pension_contribution_in,label=\"0_pay_period_pension_contribution_in inputs: pay_period_pension_contribution_in\"]\n  \"0_fut_pension_contribution\" [cul_scope_id=0,name=fut_pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fut_pension_contribution_in,label=\"0_fut_pension_contribution inputs: fut_pension_contribution_in\"]\n  \"0_fut_pension_contribution_in\" [cul_scope_id=0,name=fut_pension_contribution_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fut_pension_contribution_in,label=\"0_fut_pension_contribution_in inputs: fut_pension_contribution_in\"]\n  \"0_pension_contribution\" [cul_scope_id=0,name=pension_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"time_in,pay_period_in,op_pension_contribution_in,pay_period_pension_contribution_in,pay_period_duration_in,fut_pension_contribution_in\",label=\"0_pension_contribution inputs: time_in,pay_period_in,op_pension_contribution_in,pay_period_pension_contribution_in,pay_period_duration_in,fut_pension_contribution_in\"]\n  \"0_paye_by_band_id\" [cul_scope_id=0,name=paye_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_by_band_id inputs: paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_paye_taxable_by_band_id\" [cul_scope_id=0,name=paye_taxable_by_band_id,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_taxable_by_band_id inputs: paye_band_id_in,pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_paye_over_bands\" [cul_scope_id=0,name=paye_over_bands,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\",label=\"0_paye_over_bands inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in\"]\n  \"0_tax_credits_pa\" [cul_scope_id=0,name=tax_credits_pa,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=tax_credits_pa_in,label=\"0_tax_credits_pa inputs: tax_credits_pa_in\"]\n  \"0_tax_credits_pa_in\" [cul_scope_id=0,name=tax_credits_pa_in,cul_source_scope_id=0,reason=\"input definition\",inputs=tax_credits_pa_in,label=\"0_tax_credits_pa_in inputs: tax_credits_pa_in\"]\n  \"0_tax_credits\" [cul_scope_id=0,name=tax_credits,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"tax_credits_pa_in,pay_period_duration_in,time_in\",label=\"0_tax_credits inputs: tax_credits_pa_in,pay_period_duration_in,time_in\"]\n  \"0_paye\" [cul_scope_id=0,name=paye,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\",label=\"0_paye inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\"]\n  \"0_paye_payable\" [cul_scope_id=0,name=paye_payable,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\",label=\"0_paye_payable inputs: pay_period_duration_in,time_in,pay_period_in,op_gross_salary_in,pay_period_gross_salary_in,fut_gross_salary_in,op_pension_contribution_in,pay_period_pension_contribution_in,fut_pension_contribution_in,tax_credits_pa_in\"]\n  \"0_time\" [cul_scope_id=0,name=time,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=time_in,label=\"0_time inputs: time_in\"]\n  \"0_time_in\" [cul_scope_id=0,name=time_in,cul_source_scope_id=0,reason=\"input definition\",inputs=time_in,label=\"0_time_in inputs: time_in\"]\n  \"0_factor_for_credits_and_bands\" [cul_scope_id=0,name=factor_for_credits_and_bands,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pay_period_duration_in,time_in\",label=\"0_factor_for_credits_and_bands inputs: pay_period_duration_in,time_in\"]\n  \"0_usc_band_id_in\" -> \"0_usc_band_id\" [value=\"[object Object]\",label=\"input +usc_band_id_in\"]\n  \"0_usc_table\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_id\" -> \"0_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_usc_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_rate\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_taxable_by_band_id\" -> \"0_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_end\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_band_start\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_taxable_salary\" -> \"0_usc_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_table\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc_by_band_id\" -> \"0_usc\" [value=\"[object Object]\",label=\"call -usc_band_id_in\"]\n  \"0_pay_period_in\" -> \"0_pay_period\" [value=\"[object Object]\",label=\"input +pay_period_in\"]\n  \"0_pay_period_duration_in\" -> \"0_pay_period_duration\" [value=\"[object Object]\",label=\"input +pay_period_duration_in\"]\n  \"0_op_gross_salary_in\" -> \"0_op_gross_salary\" [value=\"[object Object]\",label=\"input +op_gross_salary_in\"]\n  \"0_pay_period_gross_salary_in\" -> \"0_pay_period_gross_salary\" [value=\"[object Object]\",label=\"input +pay_period_gross_salary_in\"]\n  \"0_fut_gross_salary_in\" -> \"0_fut_gross_salary\" [value=\"[object Object]\",label=\"input +fut_gross_salary_in\"]\n  \"0_time\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fut_gross_salary\" -> \"0_gross_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_usc\" -> \"0_usc_payable\" [value=\"[object Object]\",label=\"call -time_in\"]\n  \"0_time\" -> \"0_usc_payable\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id_in\" -> \"0_paye_band_id\" [value=\"[object Object]\",label=\"input +paye_band_id_in\"]\n  \"0_paye_band_id\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_id\" -> \"0_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gross_salary\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pension_contribution\" -> \"0_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_pension_contribution_in\" -> \"0_op_pension_contribution\" [value=\"[object Object]\",label=\"input +op_pension_contribution_in\"]\n  \"0_pay_period_pension_contribution_in\" -> \"0_pay_period_pension_contribution\" [value=\"[object Object]\",label=\"input +pay_period_pension_contribution_in\"]\n  \"0_fut_pension_contribution_in\" -> \"0_fut_pension_contribution\" [value=\"[object Object]\",label=\"input +fut_pension_contribution_in\"]\n  \"0_time\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_op_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pay_period_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fut_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_rate\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_taxable_by_band_id\" -> \"0_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_end\" -> \"0_paye_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_band_start\" -> \"0_paye_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_taxable_salary\" -> \"0_paye_taxable_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_table\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_by_band_id\" -> \"0_paye_over_bands\" [value=\"[object Object]\",label=\"call -paye_band_id_in\"]\n  \"0_tax_credits_pa_in\" -> \"0_tax_credits_pa\" [value=\"[object Object]\",label=\"input +tax_credits_pa_in\"]\n  \"0_tax_credits_pa\" -> \"0_tax_credits\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_factor_for_credits_and_bands\" -> \"0_tax_credits\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye_over_bands\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_tax_credits\" -> \"0_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_paye\" -> \"0_paye_payable\" [value=\"[object Object]\",label=\"call -time_in\"]\n  \"0_time\" -> \"0_paye_payable\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_time_in\" -> \"0_time\" [value=\"[object Object]\",label=\"input +time_in\"]\n  \"0_pay_period_duration\" -> \"0_factor_for_credits_and_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_time\" -> \"0_factor_for_credits_and_bands\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

@@ -125,8 +125,9 @@ export const pension_contribution = () => {
     );
 };
 
-export const paye_by_band_id = () =>
-  paye_rate() *
+export const paye_by_band_id = () => paye_rate() * paye_taxable_by_band_id();
+
+export const paye_taxable_by_band_id = () =>
   Math.min(
     paye_band_end() - paye_band_start(),
     Math.max(paye_taxable_salary() - paye_band_start(), 0)

@@ -125,8 +125,9 @@ export const pension_contribution = ({ time_in, pay_period_in, op_pension_contri
 
 };
 
-export const paye_by_band_id = ({ paye_band_id_in, pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) =>
-paye_rate({ paye_band_id_in }) *
+export const paye_by_band_id = ({ paye_band_id_in, pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) => paye_rate({ paye_band_id_in }) * paye_taxable_by_band_id({ paye_band_id_in, pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in });
+
+export const paye_taxable_by_band_id = ({ paye_band_id_in, pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) =>
 Math.min(
 paye_band_end({ paye_band_id_in, pay_period_duration_in, time_in }) - paye_band_start({ paye_band_id_in, pay_period_duration_in, time_in }),
 Math.max(paye_taxable_salary({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - paye_band_start({ paye_band_id_in, pay_period_duration_in, time_in }), 0));
