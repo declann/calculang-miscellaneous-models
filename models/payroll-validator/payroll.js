@@ -216,12 +216,12 @@ const usc_payable = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_
 
 const paye_table = ({}) => [
 { band_id: 1, band_co: 36800, rate: 0.2 },
-{ band_id: 2, band_co: 100000, rate: 0.4 },
-{
+{ band_id: 2, band_co: 0, rate: 0.4 }
+/*{
   band_id: 3,
   band_co: 0,
-  rate: 0.4 }];
-
+  rate: 0.4,
+},*/];
 
 
 const paye_band_id = ({ paye_band_id_in }) => paye_band_id_in;
