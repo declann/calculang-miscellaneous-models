@@ -148,7 +148,7 @@ export const tax_credits = ({ tax_credits_pa_in, pay_period_duration_in, time_in
 tax_credits_pa({ tax_credits_pa_in }) * factor_for_credits_and_bands({ pay_period_duration_in, time_in });
 
 export const tax_credits_deducted = ({ tax_credits_pa_in, pay_period_duration_in, time_in }) =>
-tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in, tim_in: time({ time_in }) - 1 });
+tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in: time({ time_in }) - 1 });
 
 export const paye = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => Math.max(paye_over_bands({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in }) - tax_credits({ tax_credits_pa_in, pay_period_duration_in, time_in }), 0);
 
