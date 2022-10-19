@@ -133,6 +133,8 @@ export const paye_taxable_by_band_id = () =>
     Math.max(paye_taxable_salary() - paye_band_start(), 0)
   );
 
+export const paye_exempt = () => gross_salary() - paye_taxable_salary();
+
 export const paye_over_bands = () =>
   Math.max(
     0,
