@@ -163,3 +163,15 @@ export const factor_for_credits_and_bands = () => {
   if (pay_period_duration() == 'M') return time() / 12;
   return 999;
 };
+
+export const income_tax = () => paye() + prsi() + usc();
+
+export const prsi_taxable_salary = () => gross_salary();
+
+export const prsi = () =>
+  prsi_taxable_salary() *
+  prsi_rate(); /* * (gross_salary() > 352 * 52 ? 1 : 0);*/ // todo feature flag RE threshold
+
+export const prsi_rate = () => 0.04;
+
+export const prsi_payable = () => prsi() - prsi({ time_in: time() - 1 });

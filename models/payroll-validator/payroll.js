@@ -137,6 +137,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "paye_payable", function() { return paye_payable; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "time", function() { return time; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "factor_for_credits_and_bands", function() { return factor_for_credits_and_bands; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "income_tax", function() { return income_tax; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_taxable_salary", function() { return prsi_taxable_salary; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi", function() { return prsi; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_rate", function() { return prsi_rate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_payable", function() { return prsi_payable; });
 // WIP
 
 // USC code adapted from simple-incometax.cul.js
@@ -302,6 +307,18 @@ const factor_for_credits_and_bands = ({ pay_period_duration_in, time_in }) => {
   if (pay_period_duration({ pay_period_duration_in }) == 'M') return time({ time_in }) / 12;
   return 999;
 };
+
+const income_tax = ({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => paye({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) + prsi({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) + usc({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in });
+
+const prsi_taxable_salary = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) => gross_salary({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in });
+
+const prsi = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) =>
+prsi_taxable_salary({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) *
+prsi_rate({}); /* * (gross_salary() > 352 * 52 ? 1 : 0);*/ // todo feature flag RE threshold
+
+const prsi_rate = ({}) => 0.04;
+
+const prsi_payable = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) => prsi({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) - prsi({ pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in, time_in: time({ time_in }) - 1 });
 
 /***/ })
 /******/ ]);
