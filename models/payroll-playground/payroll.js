@@ -142,6 +142,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi", function() { return prsi; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_rate", function() { return prsi_rate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "prsi_payable", function() { return prsi_payable; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "net_salary", function() { return net_salary; });
 // WIP
 
 // USC code adapted from simple-incometax.cul.js
@@ -319,6 +320,8 @@ prsi_rate({}); /* * (gross_salary() > 352 * 52 ? 1 : 0);*/ // todo feature flag 
 const prsi_rate = ({}) => 0.04;
 
 const prsi_payable = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) => prsi({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) - prsi({ pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in, time_in: time({ time_in }) - 1 });
+
+const net_salary = ({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in }) => gross_salary({ time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, pay_period_duration_in, fut_gross_salary_in }) - pension_contribution({ time_in, pay_period_in, op_pension_contribution_in, pay_period_pension_contribution_in, pay_period_duration_in, fut_pension_contribution_in }) - income_tax({ pay_period_duration_in, time_in, pay_period_in, op_gross_salary_in, pay_period_gross_salary_in, fut_gross_salary_in, op_pension_contribution_in, pay_period_pension_contribution_in, fut_pension_contribution_in, tax_credits_pa_in });
 
 /***/ })
 /******/ ]);

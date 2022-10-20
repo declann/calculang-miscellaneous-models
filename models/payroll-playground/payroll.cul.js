@@ -175,3 +175,5 @@ export const prsi = () =>
 export const prsi_rate = () => 0.04;
 
 export const prsi_payable = () => prsi() - prsi({ time_in: time() - 1 });
+
+export const net_salary = () => gross_salary() - pension_contribution() - income_tax();
