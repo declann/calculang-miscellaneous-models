@@ -17,12 +17,13 @@ export const sunset_date_ = ({ sunset_date_in }) => sunset_date_in;
 
 export const duration_factor_ = ({ duration_factor_in }) => duration_factor_in;
 
-export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) => {
+export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) => {
   //date(); obj_in();
   //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
   lat({ lat_in });
   lng({ lng_in });
   l({ l_in });
+  duration_factor({ duration_factor_in });
   b({ b_in }); //very bad hack around calculang bugs in this fn
   if (isSameDay(sunset_date({ sunset_date_in }), new Date(2021, 9, 29))) // start date is calculang release date
     return _.range(0, 200) // ~~500 mins => over 8 hours~~
@@ -33,7 +34,7 @@ export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in,
   .map((i) =>
   addDays(
   addMinutes(
-  sunset_time_for_sunset_date({ lat_in, lng_in, l_in, b_in,
+  sunset_time_for_sunset_date({ lat_in, lng_in, l_in, duration_factor_in, b_in,
     sunset_date_in: addDays(sunset_date({ sunset_date_in }), -1) }),
 
 
@@ -47,16 +48,16 @@ export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in,
   //));
 };
 
-export const sunset_projection_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) =>
-sunset_projection_times_for_sunset_date({ lat_in, lng_in, l_in, b_in, sunset_date_in }).map((date_in) => ({
+export const sunset_projection_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
+sunset_projection_times_for_sunset_date({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).map((date_in) => ({
   date_in,
   sunset_date_in: sunset_date({ sunset_date_in }),
   altitude: altitude_obj({ lat_in, date_in, lng_in, obj_in: 'sun' }),
   azimuth: azimuth_obj({ date_in, lng_in, lat_in, obj_in: 'sun' }) }));
 
 
-export const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) =>
-sunset_projection_for_sunset_date({ lat_in, lng_in, l_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
+export const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
+sunset_projection_for_sunset_date({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
 
 
 ////// suncalc.cul.js begin:

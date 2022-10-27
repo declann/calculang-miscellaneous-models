@@ -209,7 +209,7 @@ const sunset_projection_times_for_sunset_date$m = Object(underscore__WEBPACK_IMP
 const sunset_projection_times_for_sunset_date = (a) => {
   return sunset_projection_times_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "G"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "G"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_times_for_sunset_date memo-loader code //////////
 
@@ -221,7 +221,7 @@ const sunset_projection_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_
 const sunset_projection_for_sunset_date = (a) => {
   return sunset_projection_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "F"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "F"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_for_sunset_date memo-loader code //////////
 
@@ -233,7 +233,7 @@ const sunset_time_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE
 const sunset_time_for_sunset_date = (a) => {
   return sunset_time_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "H"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "H"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_time_for_sunset_date memo-loader code //////////
 
@@ -648,12 +648,13 @@ const sunset_date_ = ({ sunset_date_in }) => sunset_date_in;
 
 const duration_factor_ = ({ duration_factor_in }) => duration_factor_in;
 
-const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) => {
+const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) => {
   //date(); obj_in();
   //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["lat"])({ lat_in });
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["lng"])({ lng_in });
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["l"])({ l_in });
+  Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["duration_factor"])({ duration_factor_in });
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({ b_in }); //very bad hack around calculang bugs in this fn
   if (Object(date_fns__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_date"])({ sunset_date_in }), new Date(2021, 9, 29))) // start date is calculang release date
     return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(0, 200) // ~~500 mins => over 8 hours~~
@@ -664,7 +665,7 @@ const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, 
   .map((i) =>
   Object(date_fns__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(
   Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(
-  Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_time_for_sunset_date"])({ lat_in, lng_in, l_in, b_in,
+  Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_time_for_sunset_date"])({ lat_in, lng_in, l_in, duration_factor_in, b_in,
     sunset_date_in: Object(date_fns__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_date"])({ sunset_date_in }), -1) }),
 
 
@@ -678,16 +679,16 @@ const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, 
   //));
 };
 
-const sunset_projection_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) =>
-Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_projection_times_for_sunset_date"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }).map((date_in) => ({
+const sunset_projection_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
+Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_projection_times_for_sunset_date"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).map((date_in) => ({
   date_in,
   sunset_date_in: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_date"])({ sunset_date_in }),
   altitude: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["altitude_obj"])({ lat_in, date_in, lng_in, obj_in: 'sun' }),
   azimuth: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["azimuth_obj"])({ date_in, lng_in, lat_in, obj_in: 'sun' }) }));
 
 
-const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) =>
-Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_projection_for_sunset_date"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
+const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
+Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_projection_for_sunset_date"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
 
 
 ////// suncalc.cul.js begin:

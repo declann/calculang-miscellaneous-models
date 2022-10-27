@@ -37,7 +37,7 @@ export const sunset_projection_times_for_sunset_date$m = memoize(sunset_projecti
 export const sunset_projection_times_for_sunset_date = (a) => {
   return sunset_projection_times_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  sunset_projection_times_for_sunset_date$({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  sunset_projection_times_for_sunset_date$({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_times_for_sunset_date memo-loader code //////////
 
@@ -49,7 +49,7 @@ export const sunset_projection_for_sunset_date$m = memoize(sunset_projection_for
 export const sunset_projection_for_sunset_date = (a) => {
   return sunset_projection_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  sunset_projection_for_sunset_date$({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  sunset_projection_for_sunset_date$({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_for_sunset_date memo-loader code //////////
 
@@ -61,7 +61,7 @@ export const sunset_time_for_sunset_date$m = memoize(sunset_time_for_sunset_date
 export const sunset_time_for_sunset_date = (a) => {
   return sunset_time_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  sunset_time_for_sunset_date$({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  sunset_time_for_sunset_date$({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_time_for_sunset_date memo-loader code //////////
 

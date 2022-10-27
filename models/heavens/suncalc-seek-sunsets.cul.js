@@ -23,6 +23,7 @@ export const sunset_projection_times_for_sunset_date = () => {
   lat();
   lng();
   l();
+  duration_factor();
   b(); //very bad hack around calculang bugs in this fn
   if (isSameDay(sunset_date(), new Date(2021, 9, 29))) // start date is calculang release date
     return _.range(0, 200) // ~~500 mins => over 8 hours~~
