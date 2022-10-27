@@ -639,8 +639,8 @@ const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, 
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["l"])({ l_in });
   Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["b"])({ b_in }); //very bad hack around calculang bugs in this fn
   if (Object(date_fns__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_date"])({ sunset_date_in }), new Date(2021, 9, 29))) // start date is calculang release date
-    return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(0, 100) // 500 mins => over 8 hours
-    .map((i) => Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(new Date(2021, 9, 29, 17 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
+    return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(0, 200) // ~~500 mins => over 8 hours~~
+    .map((i) => Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
     // assuming after 10/29/21
   else
   return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(-15, 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
