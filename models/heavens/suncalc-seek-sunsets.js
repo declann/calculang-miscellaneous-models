@@ -102,6 +102,8 @@ return /******/ (function(modules) { // webpackBootstrap
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sunset_date$m", function() { return sunset_date$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sunset_date", function() { return sunset_date; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "duration_factor$m", function() { return duration_factor$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "duration_factor", function() { return duration_factor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sunset_projection_times_for_sunset_date$m", function() { return sunset_projection_times_for_sunset_date$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sunset_projection_times_for_sunset_date", function() { return sunset_projection_times_for_sunset_date; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sunset_projection_for_sunset_date$m", function() { return sunset_projection_for_sunset_date$m; });
@@ -179,23 +181,35 @@ __webpack_require__.r(__webpack_exports__);
 
 ////////// start sunset_date memo-loader code //////////
 //const sunset_date$m = memoize(999999, isEqual)(sunset_date$);
-const sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_date_ */ "D"], JSON.stringify);
+const sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_date_ */ "E"], JSON.stringify);
 const sunset_date = (a) => {
   return sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_date_ */ "D"])({ sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_date_ */ "E"])({ sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_date memo-loader code //////////
 
 
 
+////////// start duration_factor memo-loader code //////////
+//const duration_factor$m = memoize(999999, isEqual)(duration_factor$);
+const duration_factor$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* duration_factor_ */ "n"], JSON.stringify);
+const duration_factor = (a) => {
+  return duration_factor$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* duration_factor_ */ "n"])({ duration_factor_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end duration_factor memo-loader code //////////
+
+
+
 ////////// start sunset_projection_times_for_sunset_date memo-loader code //////////
 //const sunset_projection_times_for_sunset_date$m = memoize(999999, isEqual)(sunset_projection_times_for_sunset_date$);
-const sunset_projection_times_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "F"], JSON.stringify);
+const sunset_projection_times_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "G"], JSON.stringify);
 const sunset_projection_times_for_sunset_date = (a) => {
   return sunset_projection_times_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "F"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_times_for_sunset_date_ */ "G"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_times_for_sunset_date memo-loader code //////////
 
@@ -203,11 +217,11 @@ const sunset_projection_times_for_sunset_date = (a) => {
 
 ////////// start sunset_projection_for_sunset_date memo-loader code //////////
 //const sunset_projection_for_sunset_date$m = memoize(999999, isEqual)(sunset_projection_for_sunset_date$);
-const sunset_projection_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "E"], JSON.stringify);
+const sunset_projection_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "F"], JSON.stringify);
 const sunset_projection_for_sunset_date = (a) => {
   return sunset_projection_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "E"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_projection_for_sunset_date_ */ "F"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_projection_for_sunset_date memo-loader code //////////
 
@@ -215,11 +229,11 @@ const sunset_projection_for_sunset_date = (a) => {
 
 ////////// start sunset_time_for_sunset_date memo-loader code //////////
 //const sunset_time_for_sunset_date$m = memoize(999999, isEqual)(sunset_time_for_sunset_date$);
-const sunset_time_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "G"], JSON.stringify);
+const sunset_time_for_sunset_date$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "H"], JSON.stringify);
 const sunset_time_for_sunset_date = (a) => {
   return sunset_time_for_sunset_date$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "G"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sunset_time_for_sunset_date_ */ "H"])({ lat_in, lng_in, l_in, b_in, sunset_date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_time_for_sunset_date memo-loader code //////////
 
@@ -239,11 +253,11 @@ const date = (a) => {
 
 ////////// start lat memo-loader code //////////
 //const lat$m = memoize(999999, isEqual)(lat$);
-const lat$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lat_ */ "s"], JSON.stringify);
+const lat$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lat_ */ "t"], JSON.stringify);
 const lat = (a) => {
   return lat$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lat_ */ "s"])({ lat_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lat_ */ "t"])({ lat_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end lat memo-loader code //////////
 
@@ -251,11 +265,11 @@ const lat = (a) => {
 
 ////////// start lng memo-loader code //////////
 //const lng$m = memoize(999999, isEqual)(lng$);
-const lng$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lng_ */ "t"], JSON.stringify);
+const lng$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lng_ */ "u"], JSON.stringify);
 const lng = (a) => {
   return lng$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lng_ */ "t"])({ lng_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lng_ */ "u"])({ lng_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end lng memo-loader code //////////
 
@@ -299,11 +313,11 @@ const J2000 = (a) => {
 
 ////////// start rad memo-loader code //////////
 //const rad$m = memoize(999999, isEqual)(rad$);
-const rad$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* rad_ */ "y"], JSON.stringify);
+const rad$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* rad_ */ "z"], JSON.stringify);
 const rad = (a) => {
   return rad$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* rad_ */ "y"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* rad_ */ "z"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end rad memo-loader code //////////
 
@@ -311,11 +325,11 @@ const rad = (a) => {
 
 ////////// start e memo-loader code //////////
 //const e$m = memoize(999999, isEqual)(e$);
-const e$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* e_ */ "n"], JSON.stringify);
+const e$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* e_ */ "o"], JSON.stringify);
 const e = (a) => {
   return e$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* e_ */ "n"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* e_ */ "o"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end e memo-loader code //////////
 
@@ -323,11 +337,11 @@ const e = (a) => {
 
 ////////// start lw memo-loader code //////////
 //const lw$m = memoize(999999, isEqual)(lw$);
-const lw$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lw_ */ "u"], JSON.stringify);
+const lw$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lw_ */ "v"], JSON.stringify);
 const lw = (a) => {
   return lw$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lw_ */ "u"])({ lng_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* lw_ */ "v"])({ lng_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end lw memo-loader code //////////
 
@@ -335,11 +349,11 @@ const lw = (a) => {
 
 ////////// start phi memo-loader code //////////
 //const phi$m = memoize(999999, isEqual)(phi$);
-const phi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "x"], JSON.stringify);
+const phi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "y"], JSON.stringify);
 const phi = (a) => {
   return phi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "x"])({ lat_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* phi_ */ "y"])({ lat_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end phi memo-loader code //////////
 
@@ -347,11 +361,11 @@ const phi = (a) => {
 
 ////////// start julian_1 memo-loader code //////////
 //const julian_1$m = memoize(999999, isEqual)(julian_1$);
-const julian_1$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* julian_1_ */ "q"], JSON.stringify);
+const julian_1$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* julian_1_ */ "r"], JSON.stringify);
 const julian_1 = (a) => {
   return julian_1$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* julian_1_ */ "q"])({ date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* julian_1_ */ "r"])({ date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end julian_1 memo-loader code //////////
 
@@ -359,11 +373,11 @@ const julian_1 = (a) => {
 
 ////////// start l memo-loader code //////////
 //const l$m = memoize(999999, isEqual)(l$);
-const l$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* l_ */ "r"], JSON.stringify);
+const l$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* l_ */ "s"], JSON.stringify);
 const l = (a) => {
   return l$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* l_ */ "r"])({ l_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* l_ */ "s"])({ l_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end l memo-loader code //////////
 
@@ -383,11 +397,11 @@ const b = (a) => {
 
 ////////// start right_ascension memo-loader code //////////
 //const right_ascension$m = memoize(999999, isEqual)(right_ascension$);
-const right_ascension$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_ */ "z"], JSON.stringify);
+const right_ascension$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_ */ "A"], JSON.stringify);
 const right_ascension = (a) => {
   return right_ascension$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_ */ "z"])({ l_in, b_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_ */ "A"])({ l_in, b_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end right_ascension memo-loader code //////////
 
@@ -443,11 +457,11 @@ const altitude = (a) => {
 
 ////////// start sidereal_time memo-loader code //////////
 //const sidereal_time$m = memoize(999999, isEqual)(sidereal_time$);
-const sidereal_time$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sidereal_time_ */ "B"], JSON.stringify);
+const sidereal_time$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sidereal_time_ */ "C"], JSON.stringify);
 const sidereal_time = (a) => {
   return sidereal_time$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sidereal_time_ */ "B"])({ date_in, lng_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* sidereal_time_ */ "C"])({ date_in, lng_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sidereal_time memo-loader code //////////
 
@@ -455,11 +469,11 @@ const sidereal_time = (a) => {
 
 ////////// start obj memo-loader code //////////
 //const obj$m = memoize(999999, isEqual)(obj$);
-const obj$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* obj_ */ "v"], JSON.stringify);
+const obj$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* obj_ */ "w"], JSON.stringify);
 const obj = (a) => {
   return obj$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* obj_ */ "v"])({ obj_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* obj_ */ "w"])({ obj_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end obj memo-loader code //////////
 
@@ -467,11 +481,11 @@ const obj = (a) => {
 
 ////////// start solar_mean_anomaly memo-loader code //////////
 //const solar_mean_anomaly$m = memoize(999999, isEqual)(solar_mean_anomaly$);
-const solar_mean_anomaly$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* solar_mean_anomaly_ */ "C"], JSON.stringify);
+const solar_mean_anomaly$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* solar_mean_anomaly_ */ "D"], JSON.stringify);
 const solar_mean_anomaly = (a) => {
   return solar_mean_anomaly$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* solar_mean_anomaly_ */ "C"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* solar_mean_anomaly_ */ "D"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end solar_mean_anomaly memo-loader code //////////
 
@@ -479,11 +493,11 @@ const solar_mean_anomaly = (a) => {
 
 ////////// start equation_of_center memo-loader code //////////
 //const equation_of_center$m = memoize(999999, isEqual)(equation_of_center$);
-const equation_of_center$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* equation_of_center_ */ "p"], JSON.stringify);
+const equation_of_center$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* equation_of_center_ */ "q"], JSON.stringify);
 const equation_of_center = (a) => {
   return equation_of_center$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* equation_of_center_ */ "p"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* equation_of_center_ */ "q"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end equation_of_center memo-loader code //////////
 
@@ -491,11 +505,11 @@ const equation_of_center = (a) => {
 
 ////////// start perihelion_of_earth memo-loader code //////////
 //const perihelion_of_earth$m = memoize(999999, isEqual)(perihelion_of_earth$);
-const perihelion_of_earth$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* perihelion_of_earth_ */ "w"], JSON.stringify);
+const perihelion_of_earth$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* perihelion_of_earth_ */ "x"], JSON.stringify);
 const perihelion_of_earth = (a) => {
   return perihelion_of_earth$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* perihelion_of_earth_ */ "w"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* perihelion_of_earth_ */ "x"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end perihelion_of_earth memo-loader code //////////
 
@@ -503,11 +517,11 @@ const perihelion_of_earth = (a) => {
 
 ////////// start ecliptic_longitude memo-loader code //////////
 //const ecliptic_longitude$m = memoize(999999, isEqual)(ecliptic_longitude$);
-const ecliptic_longitude$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* ecliptic_longitude_ */ "o"], JSON.stringify);
+const ecliptic_longitude$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* ecliptic_longitude_ */ "p"], JSON.stringify);
 const ecliptic_longitude = (a) => {
   return ecliptic_longitude$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* ecliptic_longitude_ */ "o"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* ecliptic_longitude_ */ "p"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end ecliptic_longitude memo-loader code //////////
 
@@ -527,11 +541,11 @@ const declination_L0 = (a) => {
 
 ////////// start right_ascension_L0 memo-loader code //////////
 //const right_ascension_L0$m = memoize(999999, isEqual)(right_ascension_L0$);
-const right_ascension_L0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_L0_ */ "A"], JSON.stringify);
+const right_ascension_L0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "b"])(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_L0_ */ "B"], JSON.stringify);
 const right_ascension_L0 = (a) => {
   return right_ascension_L0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_L0_ */ "A"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
+  Object(_suncalc_seek_sunsets_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* right_ascension_L0_ */ "B"])({ obj_in, date_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end right_ascension_L0 memo-loader code //////////
 
@@ -576,36 +590,37 @@ const altitude_obj = (a) => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return sunset_date_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return sunset_projection_times_for_sunset_date_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return sunset_projection_for_sunset_date_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return sunset_time_for_sunset_date_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return sunset_date_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return duration_factor_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return sunset_projection_times_for_sunset_date_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return sunset_projection_for_sunset_date_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return sunset_time_for_sunset_date_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return date_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return lat_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return lng_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return lat_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return lng_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return dayMs_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return J1970_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return J2000_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return rad_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return e_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return lw_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return phi_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return julian_1_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return l_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return rad_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return e_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return lw_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return phi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return julian_1_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return l_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return b_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return right_ascension_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return right_ascension_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return declination_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return dec_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return azimuth_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return altitude_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return sidereal_time_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return obj_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return solar_mean_anomaly_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return equation_of_center_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return perihelion_of_earth_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return ecliptic_longitude_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return sidereal_time_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return obj_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return solar_mean_anomaly_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return equation_of_center_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return perihelion_of_earth_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return ecliptic_longitude_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return declination_L0_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return right_ascension_L0_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return right_ascension_L0_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return H_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return azimuth_obj_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return altitude_obj_; });
@@ -631,6 +646,8 @@ const sunset_date_ = ({ sunset_date_in }) => sunset_date_in;
 // seeking: we can use the sunset time in previous day to give us a rough idea of the sunset time in the following day.
 // This just about works for my viz purposes.
 
+const duration_factor_ = ({ duration_factor_in }) => duration_factor_in;
+
 const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) => {
   //date(); obj_in();
   //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
@@ -643,7 +660,7 @@ const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, 
     .map((i) => Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
     // assuming after 10/29/21
   else
-  return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(-15, 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+  return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(-15, Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["duration_factor"])({ duration_factor_in })) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
   .map((i) =>
   Object(date_fns__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(
   Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(

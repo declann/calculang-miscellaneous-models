@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { sunset_date_ as sunset_date$, sunset_projection_times_for_sunset_date_ as sunset_projection_times_for_sunset_date$, sunset_projection_for_sunset_date_ as sunset_projection_for_sunset_date$, sunset_time_for_sunset_date_ as sunset_time_for_sunset_date$, date_ as date$, lat_ as lat$, lng_ as lng$, dayMs_ as dayMs$, J1970_ as J1970$, J2000_ as J2000$, rad_ as rad$, e_ as e$, lw_ as lw$, phi_ as phi$, julian_1_ as julian_1$, l_ as l$, b_ as b$, right_ascension_ as right_ascension$, declination_ as declination$, dec_ as dec$, azimuth_ as azimuth$, altitude_ as altitude$, sidereal_time_ as sidereal_time$, obj_ as obj$, solar_mean_anomaly_ as solar_mean_anomaly$, equation_of_center_ as equation_of_center$, perihelion_of_earth_ as perihelion_of_earth$, ecliptic_longitude_ as ecliptic_longitude$, declination_L0_ as declination_L0$, right_ascension_L0_ as right_ascension_L0$, H_ as H$, azimuth_obj_ as azimuth_obj$, altitude_obj_ as altitude_obj$ } from './suncalc-seek-sunsets.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { sunset_date_ as sunset_date$, duration_factor_ as duration_factor$, sunset_projection_times_for_sunset_date_ as sunset_projection_times_for_sunset_date$, sunset_projection_for_sunset_date_ as sunset_projection_for_sunset_date$, sunset_time_for_sunset_date_ as sunset_time_for_sunset_date$, date_ as date$, lat_ as lat$, lng_ as lng$, dayMs_ as dayMs$, J1970_ as J1970$, J2000_ as J2000$, rad_ as rad$, e_ as e$, lw_ as lw$, phi_ as phi$, julian_1_ as julian_1$, l_ as l$, b_ as b$, right_ascension_ as right_ascension$, declination_ as declination$, dec_ as dec$, azimuth_ as azimuth$, altitude_ as altitude$, sidereal_time_ as sidereal_time$, obj_ as obj$, solar_mean_anomaly_ as solar_mean_anomaly$, equation_of_center_ as equation_of_center$, perihelion_of_earth_ as perihelion_of_earth$, ecliptic_longitude_ as ecliptic_longitude$, declination_L0_ as declination_L0$, right_ascension_L0_ as right_ascension_L0$, H_ as H$, azimuth_obj_ as azimuth_obj$, altitude_obj_ as altitude_obj$ } from './suncalc-seek-sunsets.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
@@ -16,6 +16,18 @@ export const sunset_date = (a) => {
   sunset_date$(); // never run, but here to "trick" calculang graph logic
 };
 ////////// end sunset_date memo-loader code //////////
+
+
+
+////////// start duration_factor memo-loader code //////////
+//const duration_factor$m = memoize(999999, isEqual)(duration_factor$);
+export const duration_factor$m = memoize(duration_factor$, JSON.stringify);
+export const duration_factor = (a) => {
+  return duration_factor$m(a);
+  // eslint-disable-next-line no-undef
+  duration_factor$(); // never run, but here to "trick" calculang graph logic
+};
+////////// end duration_factor memo-loader code //////////
 
 
 

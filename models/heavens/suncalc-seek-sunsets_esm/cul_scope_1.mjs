@@ -1,4 +1,4 @@
-import { altitude_obj } from "./cul_scope_0.mjs";import { azimuth_obj } from "./cul_scope_0.mjs";import { H } from "./cul_scope_0.mjs";import { right_ascension_L0 } from "./cul_scope_0.mjs";import { declination_L0 } from "./cul_scope_0.mjs";import { ecliptic_longitude } from "./cul_scope_0.mjs";import { perihelion_of_earth } from "./cul_scope_0.mjs";import { equation_of_center } from "./cul_scope_0.mjs";import { solar_mean_anomaly } from "./cul_scope_0.mjs";import { obj } from "./cul_scope_0.mjs";import { sidereal_time } from "./cul_scope_0.mjs";import { altitude } from "./cul_scope_0.mjs";import { azimuth } from "./cul_scope_0.mjs";import { dec } from "./cul_scope_0.mjs";import { declination } from "./cul_scope_0.mjs";import { right_ascension } from "./cul_scope_0.mjs";import { b } from "./cul_scope_0.mjs";import { l } from "./cul_scope_0.mjs";import { julian_1 } from "./cul_scope_0.mjs";import { phi } from "./cul_scope_0.mjs";import { lw } from "./cul_scope_0.mjs";import { e } from "./cul_scope_0.mjs";import { rad } from "./cul_scope_0.mjs";import { J2000 } from "./cul_scope_0.mjs";import { J1970 } from "./cul_scope_0.mjs";import { dayMs } from "./cul_scope_0.mjs";import { lng } from "./cul_scope_0.mjs";import { lat } from "./cul_scope_0.mjs";import { date } from "./cul_scope_0.mjs";import { sunset_time_for_sunset_date } from "./cul_scope_0.mjs";import { sunset_projection_for_sunset_date } from "./cul_scope_0.mjs";import { sunset_projection_times_for_sunset_date } from "./cul_scope_0.mjs";import { sunset_date } from "./cul_scope_0.mjs"; // TERRIBLE
+import { altitude_obj } from "./cul_scope_0.mjs";import { azimuth_obj } from "./cul_scope_0.mjs";import { H } from "./cul_scope_0.mjs";import { right_ascension_L0 } from "./cul_scope_0.mjs";import { declination_L0 } from "./cul_scope_0.mjs";import { ecliptic_longitude } from "./cul_scope_0.mjs";import { perihelion_of_earth } from "./cul_scope_0.mjs";import { equation_of_center } from "./cul_scope_0.mjs";import { solar_mean_anomaly } from "./cul_scope_0.mjs";import { obj } from "./cul_scope_0.mjs";import { sidereal_time } from "./cul_scope_0.mjs";import { altitude } from "./cul_scope_0.mjs";import { azimuth } from "./cul_scope_0.mjs";import { dec } from "./cul_scope_0.mjs";import { declination } from "./cul_scope_0.mjs";import { right_ascension } from "./cul_scope_0.mjs";import { b } from "./cul_scope_0.mjs";import { l } from "./cul_scope_0.mjs";import { julian_1 } from "./cul_scope_0.mjs";import { phi } from "./cul_scope_0.mjs";import { lw } from "./cul_scope_0.mjs";import { e } from "./cul_scope_0.mjs";import { rad } from "./cul_scope_0.mjs";import { J2000 } from "./cul_scope_0.mjs";import { J1970 } from "./cul_scope_0.mjs";import { dayMs } from "./cul_scope_0.mjs";import { lng } from "./cul_scope_0.mjs";import { lat } from "./cul_scope_0.mjs";import { date } from "./cul_scope_0.mjs";import { sunset_time_for_sunset_date } from "./cul_scope_0.mjs";import { sunset_projection_for_sunset_date } from "./cul_scope_0.mjs";import { sunset_projection_times_for_sunset_date } from "./cul_scope_0.mjs";import { duration_factor } from "./cul_scope_0.mjs";import { sunset_date } from "./cul_scope_0.mjs"; // TERRIBLE
 // Seeking approach (note recursion) will be hopeless without memo
 // Until [issue #72](https://github.com/calculang/calculang/issues/72) is fixed,
 // this means I can't use modularity.
@@ -15,6 +15,8 @@ export const sunset_date_ = ({ sunset_date_in }) => sunset_date_in;
 // seeking: we can use the sunset time in previous day to give us a rough idea of the sunset time in the following day.
 // This just about works for my viz purposes.
 
+export const duration_factor_ = ({ duration_factor_in }) => duration_factor_in;
+
 export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, b_in, sunset_date_in }) => {
   //date(); obj_in();
   //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
@@ -27,7 +29,7 @@ export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in,
     .map((i) => addMinutes(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
     // assuming after 10/29/21
   else
-  return _.range(-15, 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+  return _.range(-15, duration_factor({ duration_factor_in })) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
   .map((i) =>
   addDays(
   addMinutes(

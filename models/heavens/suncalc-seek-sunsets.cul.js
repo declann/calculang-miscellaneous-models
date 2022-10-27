@@ -15,6 +15,8 @@ export const sunset_date = () => sunset_date_in;
 // seeking: we can use the sunset time in previous day to give us a rough idea of the sunset time in the following day.
 // This just about works for my viz purposes.
 
+export const duration_factor = () => (duration_factor_in);
+
 export const sunset_projection_times_for_sunset_date = () => {
   //date(); obj_in();
   //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
@@ -27,7 +29,7 @@ export const sunset_projection_times_for_sunset_date = () => {
       .map((i) => addMinutes(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
   // assuming after 10/29/21
   else
-    return _.range(-15, 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+    return _.range(-15, duration_factor()) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
       .map((i) =>
         addDays(
         addMinutes(
