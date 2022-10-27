@@ -30,7 +30,7 @@ export const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in,
     .map((i) => addMinutes(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
     // assuming after 10/29/21
   else
-  return _.range(-15, duration_factor({ duration_factor_in })) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+  return _.range(-duration_factor({ duration_factor_in }), 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
   .map((i) =>
   addDays(
   addMinutes(

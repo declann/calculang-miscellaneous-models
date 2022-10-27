@@ -661,7 +661,7 @@ const sunset_projection_times_for_sunset_date_ = ({ lat_in, lng_in, l_in, durati
     .map((i) => Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(new Date(2021, 9, 29, 12 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
     // assuming after 10/29/21
   else
-  return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(-15, Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["duration_factor"])({ duration_factor_in })) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+  return underscore__WEBPACK_IMPORTED_MODULE_4__[/* default */ "a"].range(-Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["duration_factor"])({ duration_factor_in }), 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
   .map((i) =>
   Object(date_fns__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(
   Object(date_fns__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(
