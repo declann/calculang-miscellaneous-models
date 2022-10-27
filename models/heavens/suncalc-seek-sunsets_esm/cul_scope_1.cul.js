@@ -1,3 +1,64 @@
+// TERRIBLE
+// Seeking approach (note recursion) will be hopeless without memo
+// Until [issue #72](https://github.com/calculang/calculang/issues/72) is fixed,
+// this means I can't use modularity.
+// Therefore I copy the suncalc.cul code below.
+
+// other terrible things: This exposed some other bugs in calculang.
+// So this seeking part is **not** a good example of clean, recyclable, model code, which is what calculang models should be.
+
+import { addMinutes, isSameDay, addDays } from 'date-fns';
+import _ from 'underscore';
+
+export const sunset_date = () => sunset_date_in;
+
+// seeking: we can use the sunset time in previous day to give us a rough idea of the sunset time in the following day.
+// This just about works for my viz purposes.
+
+export const sunset_projection_times_for_sunset_date = () => {
+  //date(); obj_in();
+  //sunset_time_for_sunset_date({ sunset_date_in: new Date(2021, 9, 29) });
+  lat();
+  lng();
+  l();
+  b(); //very bad hack around calculang bugs in this fn
+  if (isSameDay(sunset_date(), new Date(2021, 9, 29))) // start date is calculang release date
+    return _.range(0, 100) // 500 mins => over 8 hours
+      .map((i) => addMinutes(new Date(2021, 9, 29, 17 /* 5pm? */), i * 5)); // these are very limiting paramaters for other locations ! Maybe move to check all 5 min intervals?
+  // assuming after 10/29/21
+  else
+    return _.range(-15, 15) // ~75mins. Wide to capture time changes? +I could use the solsticies to avoid seeking both ways
+      .map((i) =>
+        addDays(
+        addMinutes(
+          sunset_time_for_sunset_date(
+            { sunset_date_in: addDays(sunset_date(), -1) },
+            0 // hack somehow?
+          ),
+          i * 5
+        ), 1)
+      );
+
+  //.map((datezz) => (
+  /*altitude:*/ 6; //altitude_obj({ obj_in: 'sun', X: date()*0+obj() }) // compiler doesn't like this
+  //,azimuth: 2//azimuth_obj({ /* obj_in: 'sun', date_in, X: date()*0+obj() */ }),
+  //));
+};
+
+export const sunset_projection_for_sunset_date = () =>
+  sunset_projection_times_for_sunset_date().map((date_in) => ({
+    date_in,
+    sunset_date_in: sunset_date(),
+    altitude: altitude_obj({ obj_in: 'sun' }),
+    azimuth: azimuth_obj({ obj_in: 'sun' }),
+  }));
+
+export const sunset_time_for_sunset_date = () =>
+  sunset_projection_for_sunset_date().find((d) => d.altitude < 0).date_in;
+
+
+////// suncalc.cul.js begin:
+
 // based on formulae in SunCalc,
 // https://github.com/mourner/suncalc
 // SunCalc is (c) Vladimir Agafonkin (http://agafonkin.com/en)
@@ -10,6 +71,9 @@
 // ideas: compare/rec against Mike Bostock solar-calculator module on npm, and/or NOAA s/s on which solar-calculator based.
 // + https://observablehq.com/@mourner/sun-position-in-900-bytes
 //   ^ "more precise" "based on formulas from the 2nd edition of [Jean Meeus's "Astronomical Algorithms" book](https://www.willbell.com/math/mc1.htm)" 
+
+// + https://observablehq.com/@mourner/sun-position-in-900-bytes
+// "based on formulas from the 2nd edition of [Jean Meeus's "Astronomical Algorithms" book](https://www.willbell.com/math/mc1.htm)" "more precise"
 
 export const date = () => date_in;
 export const lat = () => lat_in;

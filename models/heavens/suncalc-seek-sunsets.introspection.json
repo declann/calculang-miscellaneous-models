@@ -1,0 +1,3707 @@
+{
+  "cul_functions": {
+    "0_sunset_date$": {
+      "cul_scope_id": 0,
+      "name": "sunset_date$",
+      "imported": "sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_projection_times_for_sunset_date$": {
+      "cul_scope_id": 0,
+      "name": "sunset_projection_times_for_sunset_date$",
+      "imported": "sunset_projection_times_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_projection_for_sunset_date$": {
+      "cul_scope_id": 0,
+      "name": "sunset_projection_for_sunset_date$",
+      "imported": "sunset_projection_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_time_for_sunset_date$": {
+      "cul_scope_id": 0,
+      "name": "sunset_time_for_sunset_date$",
+      "imported": "sunset_time_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_date$": {
+      "cul_scope_id": 0,
+      "name": "date$",
+      "imported": "date_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "0_lat$": {
+      "cul_scope_id": 0,
+      "name": "lat$",
+      "imported": "lat_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "0_lng$": {
+      "cul_scope_id": 0,
+      "name": "lng$",
+      "imported": "lng_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "0_dayMs$": {
+      "cul_scope_id": 0,
+      "name": "dayMs$",
+      "imported": "dayMs_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_J1970$": {
+      "cul_scope_id": 0,
+      "name": "J1970$",
+      "imported": "J1970_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_J2000$": {
+      "cul_scope_id": 0,
+      "name": "J2000$",
+      "imported": "J2000_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_rad$": {
+      "cul_scope_id": 0,
+      "name": "rad$",
+      "imported": "rad_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_e$": {
+      "cul_scope_id": 0,
+      "name": "e$",
+      "imported": "e_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_lw$": {
+      "cul_scope_id": 0,
+      "name": "lw$",
+      "imported": "lw_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "0_phi$": {
+      "cul_scope_id": 0,
+      "name": "phi$",
+      "imported": "phi_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "0_julian_1$": {
+      "cul_scope_id": 0,
+      "name": "julian_1$",
+      "imported": "julian_1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "0_l$": {
+      "cul_scope_id": 0,
+      "name": "l$",
+      "imported": "l_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "l_in"
+      ]
+    },
+    "0_b$": {
+      "cul_scope_id": 0,
+      "name": "b$",
+      "imported": "b_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "0_right_ascension$": {
+      "cul_scope_id": 0,
+      "name": "right_ascension$",
+      "imported": "right_ascension_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    "0_declination$": {
+      "cul_scope_id": 0,
+      "name": "declination$",
+      "imported": "declination_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "b_in",
+        "l_in"
+      ]
+    },
+    "0_dec$": {
+      "cul_scope_id": 0,
+      "name": "dec$",
+      "imported": "dec_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "dec_in"
+      ]
+    },
+    "0_azimuth$": {
+      "cul_scope_id": 0,
+      "name": "azimuth$",
+      "imported": "azimuth_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in",
+        "dec_in"
+      ]
+    },
+    "0_altitude$": {
+      "cul_scope_id": 0,
+      "name": "altitude$",
+      "imported": "altitude_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in",
+        "dec_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "0_sidereal_time$": {
+      "cul_scope_id": 0,
+      "name": "sidereal_time$",
+      "imported": "sidereal_time_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in",
+        "lng_in"
+      ]
+    },
+    "0_obj$": {
+      "cul_scope_id": 0,
+      "name": "obj$",
+      "imported": "obj_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in"
+      ]
+    },
+    "0_solar_mean_anomaly$": {
+      "cul_scope_id": 0,
+      "name": "solar_mean_anomaly$",
+      "imported": "solar_mean_anomaly_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_equation_of_center$": {
+      "cul_scope_id": 0,
+      "name": "equation_of_center$",
+      "imported": "equation_of_center_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_perihelion_of_earth$": {
+      "cul_scope_id": 0,
+      "name": "perihelion_of_earth$",
+      "imported": "perihelion_of_earth_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": []
+    },
+    "0_ecliptic_longitude$": {
+      "cul_scope_id": 0,
+      "name": "ecliptic_longitude$",
+      "imported": "ecliptic_longitude_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_declination_L0$": {
+      "cul_scope_id": 0,
+      "name": "declination_L0$",
+      "imported": "declination_L0_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_right_ascension_L0$": {
+      "cul_scope_id": 0,
+      "name": "right_ascension_L0$",
+      "imported": "right_ascension_L0_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_H$": {
+      "cul_scope_id": 0,
+      "name": "H$",
+      "imported": "H_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "0_azimuth_obj$": {
+      "cul_scope_id": 0,
+      "name": "azimuth_obj$",
+      "imported": "azimuth_obj_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in"
+      ]
+    },
+    "0_altitude_obj$": {
+      "cul_scope_id": 0,
+      "name": "altitude_obj$",
+      "imported": "altitude_obj_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "lat_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "0_sunset_date": {
+      "cul_scope_id": 0,
+      "name": "sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 27,
+          "index": 1624
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 1774
+        }
+      },
+      "inputs": [
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_projection_times_for_sunset_date": {
+      "cul_scope_id": 0,
+      "name": "sunset_projection_times_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 55,
+          "index": 2218
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 2424
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_projection_for_sunset_date": {
+      "cul_scope_id": 0,
+      "name": "sunset_projection_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 49,
+          "index": 2860
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 3054
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_sunset_time_for_sunset_date": {
+      "cul_scope_id": 0,
+      "name": "sunset_time_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 43,
+          "index": 3448
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 3630
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "0_date": {
+      "cul_scope_id": 0,
+      "name": "date",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 20,
+          "index": 3880
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 4016
+        }
+      },
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "0_lat": {
+      "cul_scope_id": 0,
+      "name": "lat",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 19,
+          "index": 4237
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 4371
+        }
+      },
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "0_lng": {
+      "cul_scope_id": 0,
+      "name": "lng",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 19,
+          "index": 4591
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 4725
+        }
+      },
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "0_dayMs": {
+      "cul_scope_id": 0,
+      "name": "dayMs",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 21,
+          "index": 4957
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 5095
+        }
+      },
+      "inputs": []
+    },
+    "0_J1970": {
+      "cul_scope_id": 0,
+      "name": "J1970",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 21,
+          "index": 5329
+        },
+        "end": {
+          "line": 113,
+          "column": 1,
+          "index": 5467
+        }
+      },
+      "inputs": []
+    },
+    "0_J2000": {
+      "cul_scope_id": 0,
+      "name": "J2000",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 121,
+          "column": 21,
+          "index": 5701
+        },
+        "end": {
+          "line": 125,
+          "column": 1,
+          "index": 5839
+        }
+      },
+      "inputs": []
+    },
+    "0_rad": {
+      "cul_scope_id": 0,
+      "name": "rad",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 19,
+          "index": 6061
+        },
+        "end": {
+          "line": 137,
+          "column": 1,
+          "index": 6195
+        }
+      },
+      "inputs": []
+    },
+    "0_e": {
+      "cul_scope_id": 0,
+      "name": "e",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 145,
+          "column": 17,
+          "index": 6403
+        },
+        "end": {
+          "line": 149,
+          "column": 1,
+          "index": 6533
+        }
+      },
+      "inputs": []
+    },
+    "0_lw": {
+      "cul_scope_id": 0,
+      "name": "lw",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 157,
+          "column": 18,
+          "index": 6745
+        },
+        "end": {
+          "line": 161,
+          "column": 1,
+          "index": 6877
+        }
+      },
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "0_phi": {
+      "cul_scope_id": 0,
+      "name": "phi",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 169,
+          "column": 19,
+          "index": 7096
+        },
+        "end": {
+          "line": 173,
+          "column": 1,
+          "index": 7230
+        }
+      },
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "0_julian_1": {
+      "cul_scope_id": 0,
+      "name": "julian_1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 181,
+          "column": 24,
+          "index": 7480
+        },
+        "end": {
+          "line": 185,
+          "column": 1,
+          "index": 7624
+        }
+      },
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "0_l": {
+      "cul_scope_id": 0,
+      "name": "l",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 193,
+          "column": 17,
+          "index": 7837
+        },
+        "end": {
+          "line": 197,
+          "column": 1,
+          "index": 7967
+        }
+      },
+      "inputs": [
+        "l_in"
+      ]
+    },
+    "0_b": {
+      "cul_scope_id": 0,
+      "name": "b",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 205,
+          "column": 17,
+          "index": 8173
+        },
+        "end": {
+          "line": 209,
+          "column": 1,
+          "index": 8303
+        }
+      },
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "0_right_ascension": {
+      "cul_scope_id": 0,
+      "name": "right_ascension",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 217,
+          "column": 31,
+          "index": 8593
+        },
+        "end": {
+          "line": 221,
+          "column": 1,
+          "index": 8751
+        }
+      },
+      "inputs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    "0_declination": {
+      "cul_scope_id": 0,
+      "name": "declination",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 229,
+          "column": 27,
+          "index": 9031
+        },
+        "end": {
+          "line": 233,
+          "column": 1,
+          "index": 9181
+        }
+      },
+      "inputs": [
+        "b_in",
+        "l_in"
+      ]
+    },
+    "0_dec": {
+      "cul_scope_id": 0,
+      "name": "dec",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 241,
+          "column": 19,
+          "index": 9409
+        },
+        "end": {
+          "line": 245,
+          "column": 1,
+          "index": 9543
+        }
+      },
+      "inputs": [
+        "dec_in"
+      ]
+    },
+    "0_azimuth": {
+      "cul_scope_id": 0,
+      "name": "azimuth",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 253,
+          "column": 23,
+          "index": 9787
+        },
+        "end": {
+          "line": 257,
+          "column": 1,
+          "index": 9929
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in",
+        "dec_in"
+      ]
+    },
+    "0_altitude": {
+      "cul_scope_id": 0,
+      "name": "altitude",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 265,
+          "column": 24,
+          "index": 10183
+        },
+        "end": {
+          "line": 269,
+          "column": 1,
+          "index": 10327
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "dec_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "0_sidereal_time": {
+      "cul_scope_id": 0,
+      "name": "sidereal_time",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 277,
+          "column": 29,
+          "index": 10612
+        },
+        "end": {
+          "line": 281,
+          "column": 1,
+          "index": 10766
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in"
+      ]
+    },
+    "0_obj": {
+      "cul_scope_id": 0,
+      "name": "obj",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 289,
+          "column": 19,
+          "index": 10996
+        },
+        "end": {
+          "line": 293,
+          "column": 1,
+          "index": 11130
+        }
+      },
+      "inputs": [
+        "obj_in"
+      ]
+    },
+    "0_solar_mean_anomaly": {
+      "cul_scope_id": 0,
+      "name": "solar_mean_anomaly",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 301,
+          "column": 34,
+          "index": 11440
+        },
+        "end": {
+          "line": 305,
+          "column": 1,
+          "index": 11604
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_equation_of_center": {
+      "cul_scope_id": 0,
+      "name": "equation_of_center",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 313,
+          "column": 34,
+          "index": 11929
+        },
+        "end": {
+          "line": 317,
+          "column": 1,
+          "index": 12093
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_perihelion_of_earth": {
+      "cul_scope_id": 0,
+      "name": "perihelion_of_earth",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 325,
+          "column": 35,
+          "index": 12424
+        },
+        "end": {
+          "line": 329,
+          "column": 1,
+          "index": 12590
+        }
+      },
+      "inputs": []
+    },
+    "0_ecliptic_longitude": {
+      "cul_scope_id": 0,
+      "name": "ecliptic_longitude",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 337,
+          "column": 34,
+          "index": 12916
+        },
+        "end": {
+          "line": 341,
+          "column": 1,
+          "index": 13080
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_declination_L0": {
+      "cul_scope_id": 0,
+      "name": "declination_L0",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 349,
+          "column": 30,
+          "index": 13381
+        },
+        "end": {
+          "line": 353,
+          "column": 1,
+          "index": 13537
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_right_ascension_L0": {
+      "cul_scope_id": 0,
+      "name": "right_ascension_L0",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 361,
+          "column": 34,
+          "index": 13858
+        },
+        "end": {
+          "line": 365,
+          "column": 1,
+          "index": 14022
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "0_H": {
+      "cul_scope_id": 0,
+      "name": "H",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 373,
+          "column": 17,
+          "index": 14245
+        },
+        "end": {
+          "line": 377,
+          "column": 1,
+          "index": 14375
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "0_azimuth_obj": {
+      "cul_scope_id": 0,
+      "name": "azimuth_obj",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 385,
+          "column": 27,
+          "index": 14641
+        },
+        "end": {
+          "line": 389,
+          "column": 1,
+          "index": 14791
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in"
+      ]
+    },
+    "0_altitude_obj": {
+      "cul_scope_id": 0,
+      "name": "altitude_obj",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 397,
+          "column": 28,
+          "index": 15073
+        },
+        "end": {
+          "line": 401,
+          "column": 1,
+          "index": 15225
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_sunset_date": {
+      "cul_scope_id": 1,
+      "name": "sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_projection_times_for_sunset_date": {
+      "cul_scope_id": 1,
+      "name": "sunset_projection_times_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_projection_for_sunset_date": {
+      "cul_scope_id": 1,
+      "name": "sunset_projection_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_time_for_sunset_date": {
+      "cul_scope_id": 1,
+      "name": "sunset_time_for_sunset_date",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_date": {
+      "cul_scope_id": 1,
+      "name": "date",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "1_lat": {
+      "cul_scope_id": 1,
+      "name": "lat",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "1_lng": {
+      "cul_scope_id": 1,
+      "name": "lng",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "1_dayMs": {
+      "cul_scope_id": 1,
+      "name": "dayMs",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_J1970": {
+      "cul_scope_id": 1,
+      "name": "J1970",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_J2000": {
+      "cul_scope_id": 1,
+      "name": "J2000",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_rad": {
+      "cul_scope_id": 1,
+      "name": "rad",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_e": {
+      "cul_scope_id": 1,
+      "name": "e",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_lw": {
+      "cul_scope_id": 1,
+      "name": "lw",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "1_phi": {
+      "cul_scope_id": 1,
+      "name": "phi",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "1_julian_1": {
+      "cul_scope_id": 1,
+      "name": "julian_1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "1_l": {
+      "cul_scope_id": 1,
+      "name": "l",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "l_in"
+      ]
+    },
+    "1_b": {
+      "cul_scope_id": 1,
+      "name": "b",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "1_right_ascension": {
+      "cul_scope_id": 1,
+      "name": "right_ascension",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    "1_declination": {
+      "cul_scope_id": 1,
+      "name": "declination",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "b_in",
+        "l_in"
+      ]
+    },
+    "1_dec": {
+      "cul_scope_id": 1,
+      "name": "dec",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "dec_in"
+      ]
+    },
+    "1_azimuth": {
+      "cul_scope_id": 1,
+      "name": "azimuth",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in",
+        "dec_in"
+      ]
+    },
+    "1_altitude": {
+      "cul_scope_id": 1,
+      "name": "altitude",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in",
+        "dec_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_sidereal_time": {
+      "cul_scope_id": 1,
+      "name": "sidereal_time",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in",
+        "lng_in"
+      ]
+    },
+    "1_obj": {
+      "cul_scope_id": 1,
+      "name": "obj",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in"
+      ]
+    },
+    "1_solar_mean_anomaly": {
+      "cul_scope_id": 1,
+      "name": "solar_mean_anomaly",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_equation_of_center": {
+      "cul_scope_id": 1,
+      "name": "equation_of_center",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_perihelion_of_earth": {
+      "cul_scope_id": 1,
+      "name": "perihelion_of_earth",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": []
+    },
+    "1_ecliptic_longitude": {
+      "cul_scope_id": 1,
+      "name": "ecliptic_longitude",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_declination_L0": {
+      "cul_scope_id": 1,
+      "name": "declination_L0",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_right_ascension_L0": {
+      "cul_scope_id": 1,
+      "name": "right_ascension_L0",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_H": {
+      "cul_scope_id": 1,
+      "name": "H",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_azimuth_obj": {
+      "cul_scope_id": 1,
+      "name": "azimuth_obj",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in"
+      ]
+    },
+    "1_altitude_obj": {
+      "cul_scope_id": 1,
+      "name": "altitude_obj",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "lat_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_sunset_date_": {
+      "cul_scope_id": 1,
+      "name": "sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 27,
+          "index": 570
+        },
+        "end": {
+          "line": 13,
+          "column": 47,
+          "index": 590
+        }
+      },
+      "inputs": [
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_date_in": {
+      "cul_scope_id": 1,
+      "name": "sunset_date_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_projection_times_for_sunset_date_": {
+      "cul_scope_id": 1,
+      "name": "sunset_projection_times_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 55,
+          "index": 820
+        },
+        "end": {
+          "line": 46,
+          "column": 1,
+          "index": 1978
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_projection_for_sunset_date_": {
+      "cul_scope_id": 1,
+      "name": "sunset_projection_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 49,
+          "index": 2032
+        },
+        "end": {
+          "line": 54,
+          "column": 5,
+          "index": 2253
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_sunset_time_for_sunset_date_": {
+      "cul_scope_id": 1,
+      "name": "sunset_time_for_sunset_date_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 56,
+          "column": 43,
+          "index": 2301
+        },
+        "end": {
+          "line": 57,
+          "column": 73,
+          "index": 2381
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "lng_in",
+        "l_in",
+        "b_in",
+        "sunset_date_in"
+      ]
+    },
+    "1_date_": {
+      "cul_scope_id": 1,
+      "name": "date_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 78,
+          "column": 20,
+          "index": 3408
+        },
+        "end": {
+          "line": 78,
+          "column": 33,
+          "index": 3421
+        }
+      },
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "1_date_in": {
+      "cul_scope_id": 1,
+      "name": "date_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "1_lat_": {
+      "cul_scope_id": 1,
+      "name": "lat_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 79,
+          "column": 19,
+          "index": 3443
+        },
+        "end": {
+          "line": 79,
+          "column": 31,
+          "index": 3455
+        }
+      },
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "1_lat_in": {
+      "cul_scope_id": 1,
+      "name": "lat_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "1_lng_": {
+      "cul_scope_id": 1,
+      "name": "lng_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 80,
+          "column": 19,
+          "index": 3477
+        },
+        "end": {
+          "line": 80,
+          "column": 31,
+          "index": 3489
+        }
+      },
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "1_lng_in": {
+      "cul_scope_id": 1,
+      "name": "lng_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "1_dayMs_": {
+      "cul_scope_id": 1,
+      "name": "dayMs_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 83,
+          "column": 21,
+          "index": 3557
+        },
+        "end": {
+          "line": 83,
+          "column": 46,
+          "index": 3582
+        }
+      },
+      "inputs": []
+    },
+    "1_J1970_": {
+      "cul_scope_id": 1,
+      "name": "J1970_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 84,
+          "column": 21,
+          "index": 3606
+        },
+        "end": {
+          "line": 84,
+          "column": 34,
+          "index": 3619
+        }
+      },
+      "inputs": []
+    },
+    "1_J2000_": {
+      "cul_scope_id": 1,
+      "name": "J2000_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 21,
+          "index": 3643
+        },
+        "end": {
+          "line": 85,
+          "column": 34,
+          "index": 3656
+        }
+      },
+      "inputs": []
+    },
+    "1_rad_": {
+      "cul_scope_id": 1,
+      "name": "rad_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 86,
+          "column": 19,
+          "index": 3678
+        },
+        "end": {
+          "line": 86,
+          "column": 38,
+          "index": 3697
+        }
+      },
+      "inputs": []
+    },
+    "1_e_": {
+      "cul_scope_id": 1,
+      "name": "e_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 17,
+          "index": 3875
+        },
+        "end": {
+          "line": 97,
+          "column": 38,
+          "index": 3896
+        }
+      },
+      "inputs": []
+    },
+    "1_lw_": {
+      "cul_scope_id": 1,
+      "name": "lw_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 99,
+          "column": 18,
+          "index": 3945
+        },
+        "end": {
+          "line": 99,
+          "column": 38,
+          "index": 3965
+        }
+      },
+      "inputs": [
+        "lng_in"
+      ]
+    },
+    "1_phi_": {
+      "cul_scope_id": 1,
+      "name": "phi_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 100,
+          "column": 19,
+          "index": 3987
+        },
+        "end": {
+          "line": 100,
+          "column": 38,
+          "index": 4006
+        }
+      },
+      "inputs": [
+        "lat_in"
+      ]
+    },
+    "1_julian_1_": {
+      "cul_scope_id": 1,
+      "name": "julian_1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 102,
+          "column": 24,
+          "index": 4035
+        },
+        "end": {
+          "line": 102,
+          "column": 82,
+          "index": 4093
+        }
+      },
+      "inputs": [
+        "date_in"
+      ]
+    },
+    "1_l_": {
+      "cul_scope_id": 1,
+      "name": "l_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 105,
+          "column": 17,
+          "index": 4190
+        },
+        "end": {
+          "line": 105,
+          "column": 27,
+          "index": 4200
+        }
+      },
+      "inputs": [
+        "l_in"
+      ]
+    },
+    "1_l_in": {
+      "cul_scope_id": 1,
+      "name": "l_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "l_in"
+      ]
+    },
+    "1_b_": {
+      "cul_scope_id": 1,
+      "name": "b_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 106,
+          "column": 17,
+          "index": 4220
+        },
+        "end": {
+          "line": 106,
+          "column": 27,
+          "index": 4230
+        }
+      },
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "1_b_in": {
+      "cul_scope_id": 1,
+      "name": "b_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "b_in"
+      ]
+    },
+    "1_right_ascension_": {
+      "cul_scope_id": 1,
+      "name": "right_ascension_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 108,
+          "column": 31,
+          "index": 4266
+        },
+        "end": {
+          "line": 109,
+          "column": 59,
+          "index": 4332
+        }
+      },
+      "inputs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    "1_declination_": {
+      "cul_scope_id": 1,
+      "name": "declination_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 110,
+          "column": 27,
+          "index": 4362
+        },
+        "end": {
+          "line": 111,
+          "column": 60,
+          "index": 4429
+        }
+      },
+      "inputs": [
+        "b_in",
+        "l_in"
+      ]
+    },
+    "1_dec_": {
+      "cul_scope_id": 1,
+      "name": "dec_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 116,
+          "column": 19,
+          "index": 4571
+        },
+        "end": {
+          "line": 116,
+          "column": 31,
+          "index": 4583
+        }
+      },
+      "inputs": [
+        "dec_in"
+      ]
+    },
+    "1_dec_in": {
+      "cul_scope_id": 1,
+      "name": "dec_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "dec_in"
+      ]
+    },
+    "1_azimuth_": {
+      "cul_scope_id": 1,
+      "name": "azimuth_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 118,
+          "column": 23,
+          "index": 4611
+        },
+        "end": {
+          "line": 119,
+          "column": 65,
+          "index": 4683
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in",
+        "dec_in"
+      ]
+    },
+    "1_altitude_": {
+      "cul_scope_id": 1,
+      "name": "altitude_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 120,
+          "column": 24,
+          "index": 4756
+        },
+        "end": {
+          "line": 121,
+          "column": 68,
+          "index": 4831
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "dec_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_sidereal_time_": {
+      "cul_scope_id": 1,
+      "name": "sidereal_time_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 124,
+          "column": 29,
+          "index": 4899
+        },
+        "end": {
+          "line": 125,
+          "column": 52,
+          "index": 4958
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in"
+      ]
+    },
+    "1_obj_": {
+      "cul_scope_id": 1,
+      "name": "obj_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 128,
+          "column": 19,
+          "index": 5023
+        },
+        "end": {
+          "line": 128,
+          "column": 31,
+          "index": 5035
+        }
+      },
+      "inputs": [
+        "obj_in"
+      ]
+    },
+    "1_obj_in": {
+      "cul_scope_id": 1,
+      "name": "obj_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "obj_in"
+      ]
+    },
+    "1_solar_mean_anomaly_": {
+      "cul_scope_id": 1,
+      "name": "solar_mean_anomaly_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 129,
+          "column": 34,
+          "index": 5072
+        },
+        "end": {
+          "line": 133,
+          "column": 1,
+          "index": 5284
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_equation_of_center_": {
+      "cul_scope_id": 1,
+      "name": "equation_of_center_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 135,
+          "column": 34,
+          "index": 5323
+        },
+        "end": {
+          "line": 139,
+          "column": 43,
+          "index": 5469
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_perihelion_of_earth_": {
+      "cul_scope_id": 1,
+      "name": "perihelion_of_earth_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 141,
+          "column": 35,
+          "index": 5509
+        },
+        "end": {
+          "line": 141,
+          "column": 57,
+          "index": 5531
+        }
+      },
+      "inputs": []
+    },
+    "1_ecliptic_longitude_": {
+      "cul_scope_id": 1,
+      "name": "ecliptic_longitude_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 143,
+          "column": 34,
+          "index": 5570
+        },
+        "end": {
+          "line": 144,
+          "column": 79,
+          "index": 5656
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_declination_L0_": {
+      "cul_scope_id": 1,
+      "name": "declination_L0_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 148,
+          "column": 30,
+          "index": 5772
+        },
+        "end": {
+          "line": 149,
+          "column": 54,
+          "index": 5833
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_right_ascension_L0_": {
+      "cul_scope_id": 1,
+      "name": "right_ascension_L0_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 150,
+          "column": 34,
+          "index": 5870
+        },
+        "end": {
+          "line": 151,
+          "column": 58,
+          "index": 5935
+        }
+      },
+      "inputs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    "1_H_": {
+      "cul_scope_id": 1,
+      "name": "H_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 153,
+          "column": 17,
+          "index": 5957
+        },
+        "end": {
+          "line": 153,
+          "column": 61,
+          "index": 6001
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    },
+    "1_azimuth_obj_": {
+      "cul_scope_id": 1,
+      "name": "azimuth_obj_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 156,
+          "column": 27,
+          "index": 6045
+        },
+        "end": {
+          "line": 156,
+          "column": 70,
+          "index": 6088
+        }
+      },
+      "inputs": [
+        "date_in",
+        "lng_in",
+        "obj_in",
+        "lat_in"
+      ]
+    },
+    "1_altitude_obj_": {
+      "cul_scope_id": 1,
+      "name": "altitude_obj_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 157,
+          "column": 28,
+          "index": 6119
+        },
+        "end": {
+          "line": 157,
+          "column": 72,
+          "index": 6163
+        }
+      },
+      "inputs": [
+        "lat_in",
+        "date_in",
+        "lng_in",
+        "obj_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_sunset_date$",
+      "from": "1_sunset_date_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_sunset_projection_times_for_sunset_date$",
+      "from": "1_sunset_projection_times_for_sunset_date_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_sunset_projection_for_sunset_date$",
+      "from": "1_sunset_projection_for_sunset_date_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_sunset_time_for_sunset_date$",
+      "from": "1_sunset_time_for_sunset_date_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_date$",
+      "from": "1_date_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_lat$",
+      "from": "1_lat_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_lng$",
+      "from": "1_lng_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_dayMs$",
+      "from": "1_dayMs_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_J1970$",
+      "from": "1_J1970_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_J2000$",
+      "from": "1_J2000_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_rad$",
+      "from": "1_rad_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_e$",
+      "from": "1_e_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_lw$",
+      "from": "1_lw_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_phi$",
+      "from": "1_phi_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_julian_1$",
+      "from": "1_julian_1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_l$",
+      "from": "1_l_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_b$",
+      "from": "1_b_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_right_ascension$",
+      "from": "1_right_ascension_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_declination$",
+      "from": "1_declination_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_dec$",
+      "from": "1_dec_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_azimuth$",
+      "from": "1_azimuth_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_altitude$",
+      "from": "1_altitude_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_sidereal_time$",
+      "from": "1_sidereal_time_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_obj$",
+      "from": "1_obj_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_solar_mean_anomaly$",
+      "from": "1_solar_mean_anomaly_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_equation_of_center$",
+      "from": "1_equation_of_center_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_perihelion_of_earth$",
+      "from": "1_perihelion_of_earth_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_ecliptic_longitude$",
+      "from": "1_ecliptic_longitude_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_declination_L0$",
+      "from": "1_declination_L0_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_right_ascension_L0$",
+      "from": "1_right_ascension_L0_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_H$",
+      "from": "1_H_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_azimuth_obj$",
+      "from": "1_azimuth_obj_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_altitude_obj$",
+      "from": "1_altitude_obj_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_sunset_date",
+      "from": "0_sunset_date$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sunset_projection_times_for_sunset_date",
+      "from": "0_sunset_projection_times_for_sunset_date$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sunset_projection_for_sunset_date",
+      "from": "0_sunset_projection_for_sunset_date$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sunset_time_for_sunset_date",
+      "from": "0_sunset_time_for_sunset_date$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_date",
+      "from": "0_date$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_lat",
+      "from": "0_lat$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_lng",
+      "from": "0_lng$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_dayMs",
+      "from": "0_dayMs$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_J1970",
+      "from": "0_J1970$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_J2000",
+      "from": "0_J2000$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_rad",
+      "from": "0_rad$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_e",
+      "from": "0_e$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_lw",
+      "from": "0_lw$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_phi",
+      "from": "0_phi$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_julian_1",
+      "from": "0_julian_1$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_l",
+      "from": "0_l$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_b",
+      "from": "0_b$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_right_ascension",
+      "from": "0_right_ascension$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_declination",
+      "from": "0_declination$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_dec",
+      "from": "0_dec$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_azimuth",
+      "from": "0_azimuth$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_altitude",
+      "from": "0_altitude$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sidereal_time",
+      "from": "0_sidereal_time$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_obj",
+      "from": "0_obj$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_solar_mean_anomaly",
+      "from": "0_solar_mean_anomaly$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_equation_of_center",
+      "from": "0_equation_of_center$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_perihelion_of_earth",
+      "from": "0_perihelion_of_earth$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_ecliptic_longitude",
+      "from": "0_ecliptic_longitude$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_declination_L0",
+      "from": "0_declination_L0$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_right_ascension_L0",
+      "from": "0_right_ascension_L0$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_H",
+      "from": "0_H$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_azimuth_obj",
+      "from": "0_azimuth_obj$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_altitude_obj",
+      "from": "0_altitude_obj$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_date",
+      "from": "0_sunset_date",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date",
+      "from": "0_sunset_projection_times_for_sunset_date",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_sunset_projection_for_sunset_date",
+      "from": "0_sunset_projection_for_sunset_date",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_sunset_time_for_sunset_date",
+      "from": "0_sunset_time_for_sunset_date",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_date",
+      "from": "0_date",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_lat",
+      "from": "0_lat",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_lng",
+      "from": "0_lng",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_dayMs",
+      "from": "0_dayMs",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_J1970",
+      "from": "0_J1970",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_J2000",
+      "from": "0_J2000",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_rad",
+      "from": "0_rad",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_e",
+      "from": "0_e",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_lw",
+      "from": "0_lw",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_phi",
+      "from": "0_phi",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_julian_1",
+      "from": "0_julian_1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_l",
+      "from": "0_l",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_b",
+      "from": "0_b",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_right_ascension",
+      "from": "0_right_ascension",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_declination",
+      "from": "0_declination",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_dec",
+      "from": "0_dec",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_azimuth",
+      "from": "0_azimuth",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_altitude",
+      "from": "0_altitude",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_sidereal_time",
+      "from": "0_sidereal_time",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_obj",
+      "from": "0_obj",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_solar_mean_anomaly",
+      "from": "0_solar_mean_anomaly",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_equation_of_center",
+      "from": "0_equation_of_center",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_perihelion_of_earth",
+      "from": "0_perihelion_of_earth",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_ecliptic_longitude",
+      "from": "0_ecliptic_longitude",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_declination_L0",
+      "from": "0_declination_L0",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_right_ascension_L0",
+      "from": "0_right_ascension_L0",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_H",
+      "from": "0_H",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_azimuth_obj",
+      "from": "0_azimuth_obj",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_altitude_obj",
+      "from": "0_altitude_obj",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_sunset_date_",
+      "from": "1_sunset_date_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date_",
+      "from": "1_lat",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date_",
+      "from": "1_lng",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date_",
+      "from": "1_l",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date_",
+      "from": "1_b",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_times_for_sunset_date_",
+      "from": "1_sunset_date",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_undefined",
+      "from": "1_sunset_date",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_for_sunset_date_",
+      "from": "1_sunset_projection_times_for_sunset_date",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sunset_projection_for_sunset_date_",
+      "from": "1_sunset_date",
+      "reason": "call",
+      "negs": [
+        "date_in"
+      ]
+    },
+    {
+      "to": "1_sunset_projection_for_sunset_date_",
+      "from": "1_altitude_obj",
+      "reason": "call",
+      "negs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    {
+      "to": "1_sunset_projection_for_sunset_date_",
+      "from": "1_azimuth_obj",
+      "reason": "call",
+      "negs": [
+        "obj_in",
+        "date_in"
+      ]
+    },
+    {
+      "to": "1_sunset_time_for_sunset_date_",
+      "from": "1_sunset_projection_for_sunset_date",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_date_",
+      "from": "1_date_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_lat_",
+      "from": "1_lat_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_lng_",
+      "from": "1_lng_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_e_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_lw_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_lw_",
+      "from": "1_lng",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_phi_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_phi_",
+      "from": "1_lat",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_julian_1_",
+      "from": "1_undefined",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_julian_1_",
+      "from": "1_date",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_julian_1_",
+      "from": "1_dayMs",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_julian_1_",
+      "from": "1_J1970",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_julian_1_",
+      "from": "1_J2000",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_l_",
+      "from": "1_l_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_b_",
+      "from": "1_b_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_right_ascension_",
+      "from": "1_l",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_right_ascension_",
+      "from": "1_e",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_right_ascension_",
+      "from": "1_b",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_right_ascension_",
+      "from": "1_e",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_right_ascension_",
+      "from": "1_l",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_",
+      "from": "1_b",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_",
+      "from": "1_e",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_",
+      "from": "1_b",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_",
+      "from": "1_e",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_",
+      "from": "1_l",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dec_",
+      "from": "1_dec_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_azimuth_",
+      "from": "1_H",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_azimuth_",
+      "from": "1_H",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_azimuth_",
+      "from": "1_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_azimuth_",
+      "from": "1_dec",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_azimuth_",
+      "from": "1_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_",
+      "from": "1_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_",
+      "from": "1_dec",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_",
+      "from": "1_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_",
+      "from": "1_dec",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_",
+      "from": "1_H",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sidereal_time_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sidereal_time_",
+      "from": "1_julian_1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_sidereal_time_",
+      "from": "1_lw",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_obj_",
+      "from": "1_obj_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_obj",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_julian_1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_obj",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_solar_mean_anomaly_",
+      "from": "1_julian_1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_equation_of_center_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_equation_of_center_",
+      "from": "1_solar_mean_anomaly",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_equation_of_center_",
+      "from": "1_solar_mean_anomaly",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_equation_of_center_",
+      "from": "1_solar_mean_anomaly",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_perihelion_of_earth_",
+      "from": "1_rad",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_ecliptic_longitude_",
+      "from": "1_solar_mean_anomaly",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_ecliptic_longitude_",
+      "from": "1_equation_of_center",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_ecliptic_longitude_",
+      "from": "1_perihelion_of_earth",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_declination_L0_",
+      "from": "1_declination",
+      "reason": "call",
+      "negs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    {
+      "to": "1_declination_L0_",
+      "from": "1_ecliptic_longitude",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_right_ascension_L0_",
+      "from": "1_right_ascension",
+      "reason": "call",
+      "negs": [
+        "l_in",
+        "b_in"
+      ]
+    },
+    {
+      "to": "1_right_ascension_L0_",
+      "from": "1_ecliptic_longitude",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_H_",
+      "from": "1_sidereal_time",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_H_",
+      "from": "1_right_ascension_L0",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_azimuth_obj_",
+      "from": "1_azimuth",
+      "reason": "call",
+      "negs": [
+        "dec_in"
+      ]
+    },
+    {
+      "to": "1_azimuth_obj_",
+      "from": "1_declination_L0",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_altitude_obj_",
+      "from": "1_altitude",
+      "reason": "call",
+      "negs": [
+        "dec_in"
+      ]
+    },
+    {
+      "to": "1_altitude_obj_",
+      "from": "1_declination_L0",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./suncalc-seek-sunsets.cul.js",
+    "1": "./suncalc-seek-sunsets.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./suncalc-seek-sunsets.cul.js?+memoed": "./suncalc-seek-sunsets.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_sunset_date$": [
+      "sunset_date_in"
+    ],
+    "0_sunset_projection_times_for_sunset_date$": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_sunset_projection_for_sunset_date$": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_sunset_time_for_sunset_date$": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_date$": [
+      "date_in"
+    ],
+    "0_lat$": [
+      "lat_in"
+    ],
+    "0_lng$": [
+      "lng_in"
+    ],
+    "0_dayMs$": [],
+    "0_J1970$": [],
+    "0_J2000$": [],
+    "0_rad$": [],
+    "0_e$": [],
+    "0_lw$": [
+      "lng_in"
+    ],
+    "0_phi$": [
+      "lat_in"
+    ],
+    "0_julian_1$": [
+      "date_in"
+    ],
+    "0_l$": [
+      "l_in"
+    ],
+    "0_b$": [
+      "b_in"
+    ],
+    "0_right_ascension$": [
+      "l_in",
+      "b_in"
+    ],
+    "0_declination$": [
+      "b_in",
+      "l_in"
+    ],
+    "0_dec$": [
+      "dec_in"
+    ],
+    "0_azimuth$": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in",
+      "dec_in"
+    ],
+    "0_altitude$": [
+      "lat_in",
+      "dec_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "0_sidereal_time$": [
+      "date_in",
+      "lng_in"
+    ],
+    "0_obj$": [
+      "obj_in"
+    ],
+    "0_solar_mean_anomaly$": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_equation_of_center$": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_perihelion_of_earth$": [],
+    "0_ecliptic_longitude$": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_declination_L0$": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_right_ascension_L0$": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_H$": [
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "0_azimuth_obj$": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in"
+    ],
+    "0_altitude_obj$": [
+      "lat_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "0_sunset_date": [
+      "sunset_date_in"
+    ],
+    "0_sunset_projection_times_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_sunset_projection_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_sunset_time_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "0_date": [
+      "date_in"
+    ],
+    "0_lat": [
+      "lat_in"
+    ],
+    "0_lng": [
+      "lng_in"
+    ],
+    "0_dayMs": [],
+    "0_J1970": [],
+    "0_J2000": [],
+    "0_rad": [],
+    "0_e": [],
+    "0_lw": [
+      "lng_in"
+    ],
+    "0_phi": [
+      "lat_in"
+    ],
+    "0_julian_1": [
+      "date_in"
+    ],
+    "0_l": [
+      "l_in"
+    ],
+    "0_b": [
+      "b_in"
+    ],
+    "0_right_ascension": [
+      "l_in",
+      "b_in"
+    ],
+    "0_declination": [
+      "b_in",
+      "l_in"
+    ],
+    "0_dec": [
+      "dec_in"
+    ],
+    "0_azimuth": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in",
+      "dec_in"
+    ],
+    "0_altitude": [
+      "lat_in",
+      "dec_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "0_sidereal_time": [
+      "date_in",
+      "lng_in"
+    ],
+    "0_obj": [
+      "obj_in"
+    ],
+    "0_solar_mean_anomaly": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_equation_of_center": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_perihelion_of_earth": [],
+    "0_ecliptic_longitude": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_declination_L0": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_right_ascension_L0": [
+      "obj_in",
+      "date_in"
+    ],
+    "0_H": [
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "0_azimuth_obj": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in"
+    ],
+    "0_altitude_obj": [
+      "lat_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_sunset_date": [
+      "sunset_date_in"
+    ],
+    "1_sunset_projection_times_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_sunset_projection_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_sunset_time_for_sunset_date": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_date": [
+      "date_in"
+    ],
+    "1_lat": [
+      "lat_in"
+    ],
+    "1_lng": [
+      "lng_in"
+    ],
+    "1_dayMs": [],
+    "1_J1970": [],
+    "1_J2000": [],
+    "1_rad": [],
+    "1_e": [],
+    "1_lw": [
+      "lng_in"
+    ],
+    "1_phi": [
+      "lat_in"
+    ],
+    "1_julian_1": [
+      "date_in"
+    ],
+    "1_l": [
+      "l_in"
+    ],
+    "1_b": [
+      "b_in"
+    ],
+    "1_right_ascension": [
+      "l_in",
+      "b_in"
+    ],
+    "1_declination": [
+      "b_in",
+      "l_in"
+    ],
+    "1_dec": [
+      "dec_in"
+    ],
+    "1_azimuth": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in",
+      "dec_in"
+    ],
+    "1_altitude": [
+      "lat_in",
+      "dec_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_sidereal_time": [
+      "date_in",
+      "lng_in"
+    ],
+    "1_obj": [
+      "obj_in"
+    ],
+    "1_solar_mean_anomaly": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_equation_of_center": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_perihelion_of_earth": [],
+    "1_ecliptic_longitude": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_declination_L0": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_right_ascension_L0": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_H": [
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_azimuth_obj": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in"
+    ],
+    "1_altitude_obj": [
+      "lat_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_sunset_date_": [
+      "sunset_date_in"
+    ],
+    "1_sunset_date_in": [
+      "sunset_date_in"
+    ],
+    "1_sunset_projection_times_for_sunset_date_": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_sunset_projection_for_sunset_date_": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_sunset_time_for_sunset_date_": [
+      "lat_in",
+      "lng_in",
+      "l_in",
+      "b_in",
+      "sunset_date_in"
+    ],
+    "1_date_": [
+      "date_in"
+    ],
+    "1_date_in": [
+      "date_in"
+    ],
+    "1_lat_": [
+      "lat_in"
+    ],
+    "1_lat_in": [
+      "lat_in"
+    ],
+    "1_lng_": [
+      "lng_in"
+    ],
+    "1_lng_in": [
+      "lng_in"
+    ],
+    "1_dayMs_": [],
+    "1_J1970_": [],
+    "1_J2000_": [],
+    "1_rad_": [],
+    "1_e_": [],
+    "1_lw_": [
+      "lng_in"
+    ],
+    "1_phi_": [
+      "lat_in"
+    ],
+    "1_julian_1_": [
+      "date_in"
+    ],
+    "1_l_": [
+      "l_in"
+    ],
+    "1_l_in": [
+      "l_in"
+    ],
+    "1_b_": [
+      "b_in"
+    ],
+    "1_b_in": [
+      "b_in"
+    ],
+    "1_right_ascension_": [
+      "l_in",
+      "b_in"
+    ],
+    "1_declination_": [
+      "b_in",
+      "l_in"
+    ],
+    "1_dec_": [
+      "dec_in"
+    ],
+    "1_dec_in": [
+      "dec_in"
+    ],
+    "1_azimuth_": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in",
+      "dec_in"
+    ],
+    "1_altitude_": [
+      "lat_in",
+      "dec_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_sidereal_time_": [
+      "date_in",
+      "lng_in"
+    ],
+    "1_obj_": [
+      "obj_in"
+    ],
+    "1_obj_in": [
+      "obj_in"
+    ],
+    "1_solar_mean_anomaly_": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_equation_of_center_": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_perihelion_of_earth_": [],
+    "1_ecliptic_longitude_": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_declination_L0_": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_right_ascension_L0_": [
+      "obj_in",
+      "date_in"
+    ],
+    "1_H_": [
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ],
+    "1_azimuth_obj_": [
+      "date_in",
+      "lng_in",
+      "obj_in",
+      "lat_in"
+    ],
+    "1_altitude_obj_": [
+      "lat_in",
+      "date_in",
+      "lng_in",
+      "obj_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_sunset_date$\" [cul_scope_id=0,name=\"sunset_date$\",imported=sunset_date_,cul_source_scope_id=1,reason=\"explicit import\",inputs=sunset_date_in,label=\"0_sunset_date$ inputs: sunset_date_in\"]\n  \"0_sunset_projection_times_for_sunset_date$\" [cul_scope_id=0,name=\"sunset_projection_times_for_sunset_date$\",imported=sunset_projection_times_for_sunset_date_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_projection_times_for_sunset_date$ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_sunset_projection_for_sunset_date$\" [cul_scope_id=0,name=\"sunset_projection_for_sunset_date$\",imported=sunset_projection_for_sunset_date_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_projection_for_sunset_date$ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_sunset_time_for_sunset_date$\" [cul_scope_id=0,name=\"sunset_time_for_sunset_date$\",imported=sunset_time_for_sunset_date_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_time_for_sunset_date$ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_date$\" [cul_scope_id=0,name=\"date$\",imported=date_,cul_source_scope_id=1,reason=\"explicit import\",inputs=date_in,label=\"0_date$ inputs: date_in\"]\n  \"0_lat$\" [cul_scope_id=0,name=\"lat$\",imported=lat_,cul_source_scope_id=1,reason=\"explicit import\",inputs=lat_in,label=\"0_lat$ inputs: lat_in\"]\n  \"0_lng$\" [cul_scope_id=0,name=\"lng$\",imported=lng_,cul_source_scope_id=1,reason=\"explicit import\",inputs=lng_in,label=\"0_lng$ inputs: lng_in\"]\n  \"0_dayMs$\" [cul_scope_id=0,name=\"dayMs$\",imported=dayMs_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_dayMs$ inputs: \"]\n  \"0_J1970$\" [cul_scope_id=0,name=\"J1970$\",imported=J1970_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_J1970$ inputs: \"]\n  \"0_J2000$\" [cul_scope_id=0,name=\"J2000$\",imported=J2000_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_J2000$ inputs: \"]\n  \"0_rad$\" [cul_scope_id=0,name=\"rad$\",imported=rad_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_rad$ inputs: \"]\n  \"0_e$\" [cul_scope_id=0,name=\"e$\",imported=e_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_e$ inputs: \"]\n  \"0_lw$\" [cul_scope_id=0,name=\"lw$\",imported=lw_,cul_source_scope_id=1,reason=\"explicit import\",inputs=lng_in,label=\"0_lw$ inputs: lng_in\"]\n  \"0_phi$\" [cul_scope_id=0,name=\"phi$\",imported=phi_,cul_source_scope_id=1,reason=\"explicit import\",inputs=lat_in,label=\"0_phi$ inputs: lat_in\"]\n  \"0_julian_1$\" [cul_scope_id=0,name=\"julian_1$\",imported=julian_1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=date_in,label=\"0_julian_1$ inputs: date_in\"]\n  \"0_l$\" [cul_scope_id=0,name=\"l$\",imported=l_,cul_source_scope_id=1,reason=\"explicit import\",inputs=l_in,label=\"0_l$ inputs: l_in\"]\n  \"0_b$\" [cul_scope_id=0,name=\"b$\",imported=b_,cul_source_scope_id=1,reason=\"explicit import\",inputs=b_in,label=\"0_b$ inputs: b_in\"]\n  \"0_right_ascension$\" [cul_scope_id=0,name=\"right_ascension$\",imported=right_ascension_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"l_in,b_in\",label=\"0_right_ascension$ inputs: l_in,b_in\"]\n  \"0_declination$\" [cul_scope_id=0,name=\"declination$\",imported=declination_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"b_in,l_in\",label=\"0_declination$ inputs: b_in,l_in\"]\n  \"0_dec$\" [cul_scope_id=0,name=\"dec$\",imported=dec_,cul_source_scope_id=1,reason=\"explicit import\",inputs=dec_in,label=\"0_dec$ inputs: dec_in\"]\n  \"0_azimuth$\" [cul_scope_id=0,name=\"azimuth$\",imported=azimuth_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"date_in,lng_in,obj_in,lat_in,dec_in\",label=\"0_azimuth$ inputs: date_in,lng_in,obj_in,lat_in,dec_in\"]\n  \"0_altitude$\" [cul_scope_id=0,name=\"altitude$\",imported=altitude_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"lat_in,dec_in,date_in,lng_in,obj_in\",label=\"0_altitude$ inputs: lat_in,dec_in,date_in,lng_in,obj_in\"]\n  \"0_sidereal_time$\" [cul_scope_id=0,name=\"sidereal_time$\",imported=sidereal_time_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"date_in,lng_in\",label=\"0_sidereal_time$ inputs: date_in,lng_in\"]\n  \"0_obj$\" [cul_scope_id=0,name=\"obj$\",imported=obj_,cul_source_scope_id=1,reason=\"explicit import\",inputs=obj_in,label=\"0_obj$ inputs: obj_in\"]\n  \"0_solar_mean_anomaly$\" [cul_scope_id=0,name=\"solar_mean_anomaly$\",imported=solar_mean_anomaly_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"obj_in,date_in\",label=\"0_solar_mean_anomaly$ inputs: obj_in,date_in\"]\n  \"0_equation_of_center$\" [cul_scope_id=0,name=\"equation_of_center$\",imported=equation_of_center_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"obj_in,date_in\",label=\"0_equation_of_center$ inputs: obj_in,date_in\"]\n  \"0_perihelion_of_earth$\" [cul_scope_id=0,name=\"perihelion_of_earth$\",imported=perihelion_of_earth_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_perihelion_of_earth$ inputs: \"]\n  \"0_ecliptic_longitude$\" [cul_scope_id=0,name=\"ecliptic_longitude$\",imported=ecliptic_longitude_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"obj_in,date_in\",label=\"0_ecliptic_longitude$ inputs: obj_in,date_in\"]\n  \"0_declination_L0$\" [cul_scope_id=0,name=\"declination_L0$\",imported=declination_L0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"obj_in,date_in\",label=\"0_declination_L0$ inputs: obj_in,date_in\"]\n  \"0_right_ascension_L0$\" [cul_scope_id=0,name=\"right_ascension_L0$\",imported=right_ascension_L0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"obj_in,date_in\",label=\"0_right_ascension_L0$ inputs: obj_in,date_in\"]\n  \"0_H$\" [cul_scope_id=0,name=\"H$\",imported=H_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"date_in,lng_in,obj_in\",label=\"0_H$ inputs: date_in,lng_in,obj_in\"]\n  \"0_azimuth_obj$\" [cul_scope_id=0,name=\"azimuth_obj$\",imported=azimuth_obj_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"date_in,lng_in,obj_in,lat_in\",label=\"0_azimuth_obj$ inputs: date_in,lng_in,obj_in,lat_in\"]\n  \"0_altitude_obj$\" [cul_scope_id=0,name=\"altitude_obj$\",imported=altitude_obj_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"lat_in,date_in,lng_in,obj_in\",label=\"0_altitude_obj$ inputs: lat_in,date_in,lng_in,obj_in\"]\n  \"0_sunset_date\" [cul_scope_id=0,name=sunset_date,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=sunset_date_in,label=\"0_sunset_date inputs: sunset_date_in\"]\n  \"0_sunset_projection_times_for_sunset_date\" [cul_scope_id=0,name=sunset_projection_times_for_sunset_date,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_projection_times_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_sunset_projection_for_sunset_date\" [cul_scope_id=0,name=sunset_projection_for_sunset_date,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_projection_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_sunset_time_for_sunset_date\" [cul_scope_id=0,name=sunset_time_for_sunset_date,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"0_sunset_time_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"0_date\" [cul_scope_id=0,name=date,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=date_in,label=\"0_date inputs: date_in\"]\n  \"0_lat\" [cul_scope_id=0,name=lat,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=lat_in,label=\"0_lat inputs: lat_in\"]\n  \"0_lng\" [cul_scope_id=0,name=lng,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=lng_in,label=\"0_lng inputs: lng_in\"]\n  \"0_dayMs\" [cul_scope_id=0,name=dayMs,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_dayMs inputs: \"]\n  \"0_J1970\" [cul_scope_id=0,name=J1970,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_J1970 inputs: \"]\n  \"0_J2000\" [cul_scope_id=0,name=J2000,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_J2000 inputs: \"]\n  \"0_rad\" [cul_scope_id=0,name=rad,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_rad inputs: \"]\n  \"0_e\" [cul_scope_id=0,name=e,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_e inputs: \"]\n  \"0_lw\" [cul_scope_id=0,name=lw,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=lng_in,label=\"0_lw inputs: lng_in\"]\n  \"0_phi\" [cul_scope_id=0,name=phi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=lat_in,label=\"0_phi inputs: lat_in\"]\n  \"0_julian_1\" [cul_scope_id=0,name=julian_1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=date_in,label=\"0_julian_1 inputs: date_in\"]\n  \"0_l\" [cul_scope_id=0,name=l,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=l_in,label=\"0_l inputs: l_in\"]\n  \"0_b\" [cul_scope_id=0,name=b,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=b_in,label=\"0_b inputs: b_in\"]\n  \"0_right_ascension\" [cul_scope_id=0,name=right_ascension,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"l_in,b_in\",label=\"0_right_ascension inputs: l_in,b_in\"]\n  \"0_declination\" [cul_scope_id=0,name=declination,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"b_in,l_in\",label=\"0_declination inputs: b_in,l_in\"]\n  \"0_dec\" [cul_scope_id=0,name=dec,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=dec_in,label=\"0_dec inputs: dec_in\"]\n  \"0_azimuth\" [cul_scope_id=0,name=azimuth,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in,lat_in,dec_in\",label=\"0_azimuth inputs: date_in,lng_in,obj_in,lat_in,dec_in\"]\n  \"0_altitude\" [cul_scope_id=0,name=altitude,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"lat_in,dec_in,date_in,lng_in,obj_in\",label=\"0_altitude inputs: lat_in,dec_in,date_in,lng_in,obj_in\"]\n  \"0_sidereal_time\" [cul_scope_id=0,name=sidereal_time,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"date_in,lng_in\",label=\"0_sidereal_time inputs: date_in,lng_in\"]\n  \"0_obj\" [cul_scope_id=0,name=obj,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=obj_in,label=\"0_obj inputs: obj_in\"]\n  \"0_solar_mean_anomaly\" [cul_scope_id=0,name=solar_mean_anomaly,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"0_solar_mean_anomaly inputs: obj_in,date_in\"]\n  \"0_equation_of_center\" [cul_scope_id=0,name=equation_of_center,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"0_equation_of_center inputs: obj_in,date_in\"]\n  \"0_perihelion_of_earth\" [cul_scope_id=0,name=perihelion_of_earth,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_perihelion_of_earth inputs: \"]\n  \"0_ecliptic_longitude\" [cul_scope_id=0,name=ecliptic_longitude,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"0_ecliptic_longitude inputs: obj_in,date_in\"]\n  \"0_declination_L0\" [cul_scope_id=0,name=declination_L0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"0_declination_L0 inputs: obj_in,date_in\"]\n  \"0_right_ascension_L0\" [cul_scope_id=0,name=right_ascension_L0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"0_right_ascension_L0 inputs: obj_in,date_in\"]\n  \"0_H\" [cul_scope_id=0,name=H,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in\",label=\"0_H inputs: date_in,lng_in,obj_in\"]\n  \"0_azimuth_obj\" [cul_scope_id=0,name=azimuth_obj,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in,lat_in\",label=\"0_azimuth_obj inputs: date_in,lng_in,obj_in,lat_in\"]\n  \"0_altitude_obj\" [cul_scope_id=0,name=altitude_obj,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"lat_in,date_in,lng_in,obj_in\",label=\"0_altitude_obj inputs: lat_in,date_in,lng_in,obj_in\"]\n  \"1_sunset_date\" [cul_scope_id=1,name=sunset_date,cul_source_scope_id=0,reason=\"implicit import\",inputs=sunset_date_in,label=\"1_sunset_date inputs: sunset_date_in\"]\n  \"1_sunset_projection_times_for_sunset_date\" [cul_scope_id=1,name=sunset_projection_times_for_sunset_date,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_projection_times_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_sunset_projection_for_sunset_date\" [cul_scope_id=1,name=sunset_projection_for_sunset_date,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_projection_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_sunset_time_for_sunset_date\" [cul_scope_id=1,name=sunset_time_for_sunset_date,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_time_for_sunset_date inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_date\" [cul_scope_id=1,name=date,cul_source_scope_id=0,reason=\"implicit import\",inputs=date_in,label=\"1_date inputs: date_in\"]\n  \"1_lat\" [cul_scope_id=1,name=lat,cul_source_scope_id=0,reason=\"implicit import\",inputs=lat_in,label=\"1_lat inputs: lat_in\"]\n  \"1_lng\" [cul_scope_id=1,name=lng,cul_source_scope_id=0,reason=\"implicit import\",inputs=lng_in,label=\"1_lng inputs: lng_in\"]\n  \"1_dayMs\" [cul_scope_id=1,name=dayMs,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_dayMs inputs: \"]\n  \"1_J1970\" [cul_scope_id=1,name=J1970,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_J1970 inputs: \"]\n  \"1_J2000\" [cul_scope_id=1,name=J2000,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_J2000 inputs: \"]\n  \"1_rad\" [cul_scope_id=1,name=rad,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_rad inputs: \"]\n  \"1_e\" [cul_scope_id=1,name=e,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_e inputs: \"]\n  \"1_lw\" [cul_scope_id=1,name=lw,cul_source_scope_id=0,reason=\"implicit import\",inputs=lng_in,label=\"1_lw inputs: lng_in\"]\n  \"1_phi\" [cul_scope_id=1,name=phi,cul_source_scope_id=0,reason=\"implicit import\",inputs=lat_in,label=\"1_phi inputs: lat_in\"]\n  \"1_julian_1\" [cul_scope_id=1,name=julian_1,cul_source_scope_id=0,reason=\"implicit import\",inputs=date_in,label=\"1_julian_1 inputs: date_in\"]\n  \"1_l\" [cul_scope_id=1,name=l,cul_source_scope_id=0,reason=\"implicit import\",inputs=l_in,label=\"1_l inputs: l_in\"]\n  \"1_b\" [cul_scope_id=1,name=b,cul_source_scope_id=0,reason=\"implicit import\",inputs=b_in,label=\"1_b inputs: b_in\"]\n  \"1_right_ascension\" [cul_scope_id=1,name=right_ascension,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"l_in,b_in\",label=\"1_right_ascension inputs: l_in,b_in\"]\n  \"1_declination\" [cul_scope_id=1,name=declination,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"b_in,l_in\",label=\"1_declination inputs: b_in,l_in\"]\n  \"1_dec\" [cul_scope_id=1,name=dec,cul_source_scope_id=0,reason=\"implicit import\",inputs=dec_in,label=\"1_dec inputs: dec_in\"]\n  \"1_azimuth\" [cul_scope_id=1,name=azimuth,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"date_in,lng_in,obj_in,lat_in,dec_in\",label=\"1_azimuth inputs: date_in,lng_in,obj_in,lat_in,dec_in\"]\n  \"1_altitude\" [cul_scope_id=1,name=altitude,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"lat_in,dec_in,date_in,lng_in,obj_in\",label=\"1_altitude inputs: lat_in,dec_in,date_in,lng_in,obj_in\"]\n  \"1_sidereal_time\" [cul_scope_id=1,name=sidereal_time,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"date_in,lng_in\",label=\"1_sidereal_time inputs: date_in,lng_in\"]\n  \"1_obj\" [cul_scope_id=1,name=obj,cul_source_scope_id=0,reason=\"implicit import\",inputs=obj_in,label=\"1_obj inputs: obj_in\"]\n  \"1_solar_mean_anomaly\" [cul_scope_id=1,name=solar_mean_anomaly,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"obj_in,date_in\",label=\"1_solar_mean_anomaly inputs: obj_in,date_in\"]\n  \"1_equation_of_center\" [cul_scope_id=1,name=equation_of_center,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"obj_in,date_in\",label=\"1_equation_of_center inputs: obj_in,date_in\"]\n  \"1_perihelion_of_earth\" [cul_scope_id=1,name=perihelion_of_earth,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_perihelion_of_earth inputs: \"]\n  \"1_ecliptic_longitude\" [cul_scope_id=1,name=ecliptic_longitude,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"obj_in,date_in\",label=\"1_ecliptic_longitude inputs: obj_in,date_in\"]\n  \"1_declination_L0\" [cul_scope_id=1,name=declination_L0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"obj_in,date_in\",label=\"1_declination_L0 inputs: obj_in,date_in\"]\n  \"1_right_ascension_L0\" [cul_scope_id=1,name=right_ascension_L0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"obj_in,date_in\",label=\"1_right_ascension_L0 inputs: obj_in,date_in\"]\n  \"1_H\" [cul_scope_id=1,name=H,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"date_in,lng_in,obj_in\",label=\"1_H inputs: date_in,lng_in,obj_in\"]\n  \"1_azimuth_obj\" [cul_scope_id=1,name=azimuth_obj,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"date_in,lng_in,obj_in,lat_in\",label=\"1_azimuth_obj inputs: date_in,lng_in,obj_in,lat_in\"]\n  \"1_altitude_obj\" [cul_scope_id=1,name=altitude_obj,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"lat_in,date_in,lng_in,obj_in\",label=\"1_altitude_obj inputs: lat_in,date_in,lng_in,obj_in\"]\n  \"1_sunset_date_\" [cul_scope_id=1,name=sunset_date_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=sunset_date_in,label=\"1_sunset_date_ inputs: sunset_date_in\"]\n  \"1_sunset_date_in\" [cul_scope_id=1,name=sunset_date_in,cul_source_scope_id=1,reason=\"input definition\",inputs=sunset_date_in,label=\"1_sunset_date_in inputs: sunset_date_in\"]\n  \"1_sunset_projection_times_for_sunset_date_\" [cul_scope_id=1,name=sunset_projection_times_for_sunset_date_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_projection_times_for_sunset_date_ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_sunset_projection_for_sunset_date_\" [cul_scope_id=1,name=sunset_projection_for_sunset_date_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_projection_for_sunset_date_ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_sunset_time_for_sunset_date_\" [cul_scope_id=1,name=sunset_time_for_sunset_date_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"lat_in,lng_in,l_in,b_in,sunset_date_in\",label=\"1_sunset_time_for_sunset_date_ inputs: lat_in,lng_in,l_in,b_in,sunset_date_in\"]\n  \"1_date_\" [cul_scope_id=1,name=date_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=date_in,label=\"1_date_ inputs: date_in\"]\n  \"1_date_in\" [cul_scope_id=1,name=date_in,cul_source_scope_id=1,reason=\"input definition\",inputs=date_in,label=\"1_date_in inputs: date_in\"]\n  \"1_lat_\" [cul_scope_id=1,name=lat_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=lat_in,label=\"1_lat_ inputs: lat_in\"]\n  \"1_lat_in\" [cul_scope_id=1,name=lat_in,cul_source_scope_id=1,reason=\"input definition\",inputs=lat_in,label=\"1_lat_in inputs: lat_in\"]\n  \"1_lng_\" [cul_scope_id=1,name=lng_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=lng_in,label=\"1_lng_ inputs: lng_in\"]\n  \"1_lng_in\" [cul_scope_id=1,name=lng_in,cul_source_scope_id=1,reason=\"input definition\",inputs=lng_in,label=\"1_lng_in inputs: lng_in\"]\n  \"1_dayMs_\" [cul_scope_id=1,name=dayMs_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_dayMs_ inputs: \"]\n  \"1_J1970_\" [cul_scope_id=1,name=J1970_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_J1970_ inputs: \"]\n  \"1_J2000_\" [cul_scope_id=1,name=J2000_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_J2000_ inputs: \"]\n  \"1_rad_\" [cul_scope_id=1,name=rad_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_rad_ inputs: \"]\n  \"1_e_\" [cul_scope_id=1,name=e_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_e_ inputs: \"]\n  \"1_lw_\" [cul_scope_id=1,name=lw_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=lng_in,label=\"1_lw_ inputs: lng_in\"]\n  \"1_phi_\" [cul_scope_id=1,name=phi_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=lat_in,label=\"1_phi_ inputs: lat_in\"]\n  \"1_julian_1_\" [cul_scope_id=1,name=julian_1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=date_in,label=\"1_julian_1_ inputs: date_in\"]\n  \"1_l_\" [cul_scope_id=1,name=l_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=l_in,label=\"1_l_ inputs: l_in\"]\n  \"1_l_in\" [cul_scope_id=1,name=l_in,cul_source_scope_id=1,reason=\"input definition\",inputs=l_in,label=\"1_l_in inputs: l_in\"]\n  \"1_b_\" [cul_scope_id=1,name=b_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=b_in,label=\"1_b_ inputs: b_in\"]\n  \"1_b_in\" [cul_scope_id=1,name=b_in,cul_source_scope_id=1,reason=\"input definition\",inputs=b_in,label=\"1_b_in inputs: b_in\"]\n  \"1_right_ascension_\" [cul_scope_id=1,name=right_ascension_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"l_in,b_in\",label=\"1_right_ascension_ inputs: l_in,b_in\"]\n  \"1_declination_\" [cul_scope_id=1,name=declination_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"b_in,l_in\",label=\"1_declination_ inputs: b_in,l_in\"]\n  \"1_dec_\" [cul_scope_id=1,name=dec_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=dec_in,label=\"1_dec_ inputs: dec_in\"]\n  \"1_dec_in\" [cul_scope_id=1,name=dec_in,cul_source_scope_id=1,reason=\"input definition\",inputs=dec_in,label=\"1_dec_in inputs: dec_in\"]\n  \"1_azimuth_\" [cul_scope_id=1,name=azimuth_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in,lat_in,dec_in\",label=\"1_azimuth_ inputs: date_in,lng_in,obj_in,lat_in,dec_in\"]\n  \"1_altitude_\" [cul_scope_id=1,name=altitude_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"lat_in,dec_in,date_in,lng_in,obj_in\",label=\"1_altitude_ inputs: lat_in,dec_in,date_in,lng_in,obj_in\"]\n  \"1_sidereal_time_\" [cul_scope_id=1,name=sidereal_time_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"date_in,lng_in\",label=\"1_sidereal_time_ inputs: date_in,lng_in\"]\n  \"1_obj_\" [cul_scope_id=1,name=obj_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=obj_in,label=\"1_obj_ inputs: obj_in\"]\n  \"1_obj_in\" [cul_scope_id=1,name=obj_in,cul_source_scope_id=1,reason=\"input definition\",inputs=obj_in,label=\"1_obj_in inputs: obj_in\"]\n  \"1_solar_mean_anomaly_\" [cul_scope_id=1,name=solar_mean_anomaly_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"1_solar_mean_anomaly_ inputs: obj_in,date_in\"]\n  \"1_equation_of_center_\" [cul_scope_id=1,name=equation_of_center_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"1_equation_of_center_ inputs: obj_in,date_in\"]\n  \"1_perihelion_of_earth_\" [cul_scope_id=1,name=perihelion_of_earth_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_perihelion_of_earth_ inputs: \"]\n  \"1_ecliptic_longitude_\" [cul_scope_id=1,name=ecliptic_longitude_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"1_ecliptic_longitude_ inputs: obj_in,date_in\"]\n  \"1_declination_L0_\" [cul_scope_id=1,name=declination_L0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"1_declination_L0_ inputs: obj_in,date_in\"]\n  \"1_right_ascension_L0_\" [cul_scope_id=1,name=right_ascension_L0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"obj_in,date_in\",label=\"1_right_ascension_L0_ inputs: obj_in,date_in\"]\n  \"1_H_\" [cul_scope_id=1,name=H_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in\",label=\"1_H_ inputs: date_in,lng_in,obj_in\"]\n  \"1_azimuth_obj_\" [cul_scope_id=1,name=azimuth_obj_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"date_in,lng_in,obj_in,lat_in\",label=\"1_azimuth_obj_ inputs: date_in,lng_in,obj_in,lat_in\"]\n  \"1_altitude_obj_\" [cul_scope_id=1,name=altitude_obj_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"lat_in,date_in,lng_in,obj_in\",label=\"1_altitude_obj_ inputs: lat_in,date_in,lng_in,obj_in\"]\n  \"1_undefined\"\n  \"1_sunset_date_\" -> \"0_sunset_date$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sunset_projection_times_for_sunset_date_\" -> \"0_sunset_projection_times_for_sunset_date$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sunset_projection_for_sunset_date_\" -> \"0_sunset_projection_for_sunset_date$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sunset_time_for_sunset_date_\" -> \"0_sunset_time_for_sunset_date$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_date_\" -> \"0_date$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_lat_\" -> \"0_lat$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_lng_\" -> \"0_lng$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_dayMs_\" -> \"0_dayMs$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_J1970_\" -> \"0_J1970$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_J2000_\" -> \"0_J2000$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_rad_\" -> \"0_rad$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_e_\" -> \"0_e$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_lw_\" -> \"0_lw$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_phi_\" -> \"0_phi$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_julian_1_\" -> \"0_julian_1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_l_\" -> \"0_l$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_b_\" -> \"0_b$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_right_ascension_\" -> \"0_right_ascension$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_declination_\" -> \"0_declination$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_dec_\" -> \"0_dec$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_azimuth_\" -> \"0_azimuth$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_altitude_\" -> \"0_altitude$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_sidereal_time_\" -> \"0_sidereal_time$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_obj_\" -> \"0_obj$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_solar_mean_anomaly_\" -> \"0_solar_mean_anomaly$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_equation_of_center_\" -> \"0_equation_of_center$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_perihelion_of_earth_\" -> \"0_perihelion_of_earth$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_ecliptic_longitude_\" -> \"0_ecliptic_longitude$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_declination_L0_\" -> \"0_declination_L0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_right_ascension_L0_\" -> \"0_right_ascension_L0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_H_\" -> \"0_H$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_azimuth_obj_\" -> \"0_azimuth_obj$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_altitude_obj_\" -> \"0_altitude_obj$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_sunset_date$\" -> \"0_sunset_date\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sunset_projection_times_for_sunset_date$\" -> \"0_sunset_projection_times_for_sunset_date\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sunset_projection_for_sunset_date$\" -> \"0_sunset_projection_for_sunset_date\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sunset_time_for_sunset_date$\" -> \"0_sunset_time_for_sunset_date\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_date$\" -> \"0_date\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_lat$\" -> \"0_lat\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_lng$\" -> \"0_lng\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_dayMs$\" -> \"0_dayMs\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_J1970$\" -> \"0_J1970\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_J2000$\" -> \"0_J2000\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_rad$\" -> \"0_rad\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_e$\" -> \"0_e\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_lw$\" -> \"0_lw\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_phi$\" -> \"0_phi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_julian_1$\" -> \"0_julian_1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_l$\" -> \"0_l\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_b$\" -> \"0_b\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_right_ascension$\" -> \"0_right_ascension\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_declination$\" -> \"0_declination\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_dec$\" -> \"0_dec\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_azimuth$\" -> \"0_azimuth\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_altitude$\" -> \"0_altitude\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sidereal_time$\" -> \"0_sidereal_time\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_obj$\" -> \"0_obj\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_solar_mean_anomaly$\" -> \"0_solar_mean_anomaly\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_equation_of_center$\" -> \"0_equation_of_center\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_perihelion_of_earth$\" -> \"0_perihelion_of_earth\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_ecliptic_longitude$\" -> \"0_ecliptic_longitude\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_declination_L0$\" -> \"0_declination_L0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_right_ascension_L0$\" -> \"0_right_ascension_L0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_H$\" -> \"0_H\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_azimuth_obj$\" -> \"0_azimuth_obj\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_altitude_obj$\" -> \"0_altitude_obj\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sunset_date\" -> \"1_sunset_date\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sunset_projection_times_for_sunset_date\" -> \"1_sunset_projection_times_for_sunset_date\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sunset_projection_for_sunset_date\" -> \"1_sunset_projection_for_sunset_date\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sunset_time_for_sunset_date\" -> \"1_sunset_time_for_sunset_date\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_date\" -> \"1_date\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_lat\" -> \"1_lat\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_lng\" -> \"1_lng\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_dayMs\" -> \"1_dayMs\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_J1970\" -> \"1_J1970\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_J2000\" -> \"1_J2000\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_rad\" -> \"1_rad\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_e\" -> \"1_e\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_lw\" -> \"1_lw\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_phi\" -> \"1_phi\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_julian_1\" -> \"1_julian_1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_l\" -> \"1_l\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_b\" -> \"1_b\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_right_ascension\" -> \"1_right_ascension\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_declination\" -> \"1_declination\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_dec\" -> \"1_dec\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_azimuth\" -> \"1_azimuth\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_altitude\" -> \"1_altitude\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_sidereal_time\" -> \"1_sidereal_time\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_obj\" -> \"1_obj\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_solar_mean_anomaly\" -> \"1_solar_mean_anomaly\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_equation_of_center\" -> \"1_equation_of_center\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_perihelion_of_earth\" -> \"1_perihelion_of_earth\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_ecliptic_longitude\" -> \"1_ecliptic_longitude\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_declination_L0\" -> \"1_declination_L0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_right_ascension_L0\" -> \"1_right_ascension_L0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_H\" -> \"1_H\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_azimuth_obj\" -> \"1_azimuth_obj\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_altitude_obj\" -> \"1_altitude_obj\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_sunset_date_in\" -> \"1_sunset_date_\" [value=\"[object Object]\",label=\"input +sunset_date_in\"]\n  \"1_lat\" -> \"1_sunset_projection_times_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_lng\" -> \"1_sunset_projection_times_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_l\" -> \"1_sunset_projection_times_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_b\" -> \"1_sunset_projection_times_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sunset_date\" -> \"1_sunset_projection_times_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sunset_date\" -> \"1_undefined\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sunset_projection_times_for_sunset_date\" -> \"1_sunset_projection_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sunset_date\" -> \"1_sunset_projection_for_sunset_date_\" [value=\"[object Object]\",label=\"call -date_in\"]\n  \"1_altitude_obj\" -> \"1_sunset_projection_for_sunset_date_\" [value=\"[object Object]\",label=\"call -obj_in,date_in\"]\n  \"1_azimuth_obj\" -> \"1_sunset_projection_for_sunset_date_\" [value=\"[object Object]\",label=\"call -obj_in,date_in\"]\n  \"1_sunset_projection_for_sunset_date\" -> \"1_sunset_time_for_sunset_date_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_date_in\" -> \"1_date_\" [value=\"[object Object]\",label=\"input +date_in\"]\n  \"1_lat_in\" -> \"1_lat_\" [value=\"[object Object]\",label=\"input +lat_in\"]\n  \"1_lng_in\" -> \"1_lng_\" [value=\"[object Object]\",label=\"input +lng_in\"]\n  \"1_rad\" -> \"1_e_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_lw_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_lng\" -> \"1_lw_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_phi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_lat\" -> \"1_phi_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_date\" -> \"1_julian_1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_dayMs\" -> \"1_julian_1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_J1970\" -> \"1_julian_1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_J2000\" -> \"1_julian_1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_l_in\" -> \"1_l_\" [value=\"[object Object]\",label=\"input +l_in\"]\n  \"1_b_in\" -> \"1_b_\" [value=\"[object Object]\",label=\"input +b_in\"]\n  \"1_l\" -> \"1_right_ascension_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_e\" -> \"1_right_ascension_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_b\" -> \"1_right_ascension_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_b\" -> \"1_declination_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_e\" -> \"1_declination_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_l\" -> \"1_declination_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_dec_in\" -> \"1_dec_\" [value=\"[object Object]\",label=\"input +dec_in\"]\n  \"1_H\" -> \"1_azimuth_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_azimuth_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_dec\" -> \"1_azimuth_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_phi\" -> \"1_altitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_dec\" -> \"1_altitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_H\" -> \"1_altitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_sidereal_time_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_julian_1\" -> \"1_sidereal_time_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_lw\" -> \"1_sidereal_time_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_obj_in\" -> \"1_obj_\" [value=\"[object Object]\",label=\"input +obj_in\"]\n  \"1_obj\" -> \"1_solar_mean_anomaly_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_solar_mean_anomaly_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_julian_1\" -> \"1_solar_mean_anomaly_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_equation_of_center_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_solar_mean_anomaly\" -> \"1_equation_of_center_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_rad\" -> \"1_perihelion_of_earth_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_solar_mean_anomaly\" -> \"1_ecliptic_longitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_equation_of_center\" -> \"1_ecliptic_longitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_perihelion_of_earth\" -> \"1_ecliptic_longitude_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_declination\" -> \"1_declination_L0_\" [value=\"[object Object]\",label=\"call -l_in,b_in\"]\n  \"1_ecliptic_longitude\" -> \"1_declination_L0_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_right_ascension\" -> \"1_right_ascension_L0_\" [value=\"[object Object]\",label=\"call -l_in,b_in\"]\n  \"1_ecliptic_longitude\" -> \"1_right_ascension_L0_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_sidereal_time\" -> \"1_H_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_right_ascension_L0\" -> \"1_H_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_azimuth\" -> \"1_azimuth_obj_\" [value=\"[object Object]\",label=\"call -dec_in\"]\n  \"1_declination_L0\" -> \"1_azimuth_obj_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_altitude\" -> \"1_altitude_obj_\" [value=\"[object Object]\",label=\"call -dec_in\"]\n  \"1_declination_L0\" -> \"1_altitude_obj_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

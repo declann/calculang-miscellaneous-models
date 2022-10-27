@@ -7,10 +7,9 @@
 // about [position of the sun](http://aa.quae.nl/en/reken/zonpositie.html)
 // and [the planets](http://aa.quae.nl/en/reken/hemelpositie.html)."
 
-// ideas: compare/rec against Mike Bostock solar-calculator module on npm, and/or NOAA s/s on which solar-calculator based
-
+// ideas: compare/rec against Mike Bostock solar-calculator module on npm, and/or NOAA s/s on which solar-calculator based.
 // + https://observablehq.com/@mourner/sun-position-in-900-bytes
-// "based on formulas from the 2nd edition of [Jean Meeus's "Astronomical Algorithms" book](https://www.willbell.com/math/mc1.htm)" "more precise"
+//   ^ "more precise" "based on formulas from the 2nd edition of [Jean Meeus's "Astronomical Algorithms" book](https://www.willbell.com/math/mc1.htm)" 
 
 export const date = ({ date_in }) => date_in;
 export const lat = ({ lat_in }) => lat_in;
