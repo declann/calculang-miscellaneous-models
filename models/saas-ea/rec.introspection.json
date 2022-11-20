@@ -1,0 +1,1764 @@
+{
+  "cul_functions": {
+    "0_subs": {
+      "cul_scope_id": 0,
+      "name": "subs",
+      "imported": "subs",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "0_subs_new_expected": {
+      "cul_scope_id": 0,
+      "name": "subs_new_expected",
+      "imported": "subs_new_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "0_subs_churned_expected": {
+      "cul_scope_id": 0,
+      "name": "subs_churned_expected",
+      "imported": "subs_churned_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "0_year": {
+      "cul_scope_id": 0,
+      "name": "year",
+      "imported": "year",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "0_revenue": {
+      "cul_scope_id": 0,
+      "name": "revenue",
+      "imported": "revenue",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "0_expenses": {
+      "cul_scope_id": 0,
+      "name": "expenses",
+      "imported": "expenses",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in",
+        "CAC_in"
+      ]
+    },
+    "0_profit": {
+      "cul_scope_id": 0,
+      "name": "profit",
+      "imported": "profit",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "CAC_in"
+      ]
+    },
+    "0_CAC": {
+      "cul_scope_id": 0,
+      "name": "CAC",
+      "imported": "CAC",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "CAC_in"
+      ]
+    },
+    "0_actuals_table": {
+      "cul_scope_id": 0,
+      "name": "actuals_table",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 29,
+          "index": 289
+        },
+        "end": {
+          "line": 14,
+          "column": 51,
+          "index": 311
+        }
+      },
+      "inputs": [
+        "actuals_table_in"
+      ]
+    },
+    "0_actuals_table_in": {
+      "cul_scope_id": 0,
+      "name": "actuals_table_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "actuals_table_in"
+      ]
+    },
+    "0_subs_0": {
+      "cul_scope_id": 0,
+      "name": "subs_0",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 22,
+          "index": 350
+        },
+        "end": {
+          "line": 17,
+          "column": 37,
+          "index": 365
+        }
+      },
+      "inputs": [
+        "subs_0_in"
+      ]
+    },
+    "0_subs_0_in": {
+      "cul_scope_id": 0,
+      "name": "subs_0_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "subs_0_in"
+      ]
+    },
+    "0_subs_new_actual": {
+      "cul_scope_id": 0,
+      "name": "subs_new_actual",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 18,
+          "column": 31,
+          "index": 447
+        },
+        "end": {
+          "line": 19,
+          "column": 45,
+          "index": 499
+        }
+      },
+      "inputs": [
+        "actuals_table_in",
+        "year_in"
+      ]
+    },
+    "0_subs_churned_actual": {
+      "cul_scope_id": 0,
+      "name": "subs_churned_actual",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 35,
+          "index": 537
+        },
+        "end": {
+          "line": 21,
+          "column": 49,
+          "index": 593
+        }
+      },
+      "inputs": [
+        "actuals_table_in",
+        "year_in"
+      ]
+    },
+    "0_subs_new_actual_to": {
+      "cul_scope_id": 0,
+      "name": "subs_new_actual_to",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 34,
+          "index": 703
+        },
+        "end": {
+          "line": 24,
+          "column": 61,
+          "index": 730
+        }
+      },
+      "inputs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    "0_subs_new_actual_to_in": {
+      "cul_scope_id": 0,
+      "name": "subs_new_actual_to_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    "0_subs_churned_actual_to": {
+      "cul_scope_id": 0,
+      "name": "subs_churned_actual_to",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 38,
+          "index": 771
+        },
+        "end": {
+          "line": 25,
+          "column": 69,
+          "index": 802
+        }
+      },
+      "inputs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    "0_subs_churned_actual_to_in": {
+      "cul_scope_id": 0,
+      "name": "subs_churned_actual_to_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    "0_subs_new": {
+      "cul_scope_id": 0,
+      "name": "subs_new",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 28,
+          "column": 24,
+          "index": 905
+        },
+        "end": {
+          "line": 31,
+          "column": 1,
+          "index": 1119
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "0_subs_churned": {
+      "cul_scope_id": 0,
+      "name": "subs_churned",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 28,
+          "index": 1150
+        },
+        "end": {
+          "line": 35,
+          "column": 1,
+          "index": 1273
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_churned_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "0_ea_start": {
+      "cul_scope_id": 0,
+      "name": "ea_start",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 24,
+          "index": 1396
+        },
+        "end": {
+          "line": 41,
+          "column": 41,
+          "index": 1413
+        }
+      },
+      "inputs": [
+        "ea_start_in"
+      ]
+    },
+    "0_ea_start_in": {
+      "cul_scope_id": 0,
+      "name": "ea_start_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "ea_start_in"
+      ]
+    },
+    "0_ea_end": {
+      "cul_scope_id": 0,
+      "name": "ea_end",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 22,
+          "index": 1438
+        },
+        "end": {
+          "line": 42,
+          "column": 37,
+          "index": 1453
+        }
+      },
+      "inputs": [
+        "ea_end_in"
+      ]
+    },
+    "0_ea_end_in": {
+      "cul_scope_id": 0,
+      "name": "ea_end_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "ea_end_in"
+      ]
+    },
+    "0_subs_ea": {
+      "cul_scope_id": 0,
+      "name": "subs_ea",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 23,
+          "index": 1481
+        },
+        "end": {
+          "line": 72,
+          "column": 1,
+          "index": 2240
+        }
+      },
+      "inputs": [
+        "subs_0_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in",
+        "ea_end_in",
+        "ea_start_in"
+      ]
+    },
+    "0_subs_new_experience": {
+      "cul_scope_id": 0,
+      "name": "subs_new_experience",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 78,
+          "column": 35,
+          "index": 2459
+        },
+        "end": {
+          "line": 85,
+          "column": 1,
+          "index": 2689
+        }
+      },
+      "inputs": [
+        "year_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "0_subs_churned_experience": {
+      "cul_scope_id": 0,
+      "name": "subs_churned_experience",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 87,
+          "column": 39,
+          "index": 2733
+        },
+        "end": {
+          "line": 94,
+          "column": 1,
+          "index": 3021
+        }
+      },
+      "inputs": [
+        "year_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_actuals_table": {
+      "cul_scope_id": 1,
+      "name": "actuals_table",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "actuals_table_in"
+      ]
+    },
+    "1_subs_0": {
+      "cul_scope_id": 1,
+      "name": "subs_0",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "subs_0_in"
+      ]
+    },
+    "1_subs_new_actual": {
+      "cul_scope_id": 1,
+      "name": "subs_new_actual",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "actuals_table_in",
+        "year_in"
+      ]
+    },
+    "1_subs_churned_actual": {
+      "cul_scope_id": 1,
+      "name": "subs_churned_actual",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "actuals_table_in",
+        "year_in"
+      ]
+    },
+    "1_subs_new_actual_to": {
+      "cul_scope_id": 1,
+      "name": "subs_new_actual_to",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    "1_subs_churned_actual_to": {
+      "cul_scope_id": 1,
+      "name": "subs_churned_actual_to",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    "1_subs_new": {
+      "cul_scope_id": 1,
+      "name": "subs_new",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "1_subs_churned": {
+      "cul_scope_id": 1,
+      "name": "subs_churned",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "subs_churned_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_ea_start": {
+      "cul_scope_id": 1,
+      "name": "ea_start",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "ea_start_in"
+      ]
+    },
+    "1_ea_end": {
+      "cul_scope_id": 1,
+      "name": "ea_end",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "ea_end_in"
+      ]
+    },
+    "1_subs_ea": {
+      "cul_scope_id": 1,
+      "name": "subs_ea",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "subs_0_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in",
+        "ea_end_in",
+        "ea_start_in"
+      ]
+    },
+    "1_subs_new_experience": {
+      "cul_scope_id": 1,
+      "name": "subs_new_experience",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "1_subs_churned_experience": {
+      "cul_scope_id": 1,
+      "name": "subs_churned_experience",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_growth_pc_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_subs_growth_pc": {
+      "cul_scope_id": 1,
+      "name": "subs_growth_pc",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 30,
+          "index": 30
+        },
+        "end": {
+          "line": 1,
+          "column": 53,
+          "index": 53
+        }
+      },
+      "inputs": [
+        "subs_growth_pc_in"
+      ]
+    },
+    "1_subs_growth_pc_in": {
+      "cul_scope_id": 1,
+      "name": "subs_growth_pc_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "subs_growth_pc_in"
+      ]
+    },
+    "1_subs_churn_pc": {
+      "cul_scope_id": 1,
+      "name": "subs_churn_pc",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 29,
+          "index": 85
+        },
+        "end": {
+          "line": 2,
+          "column": 51,
+          "index": 107
+        }
+      },
+      "inputs": [
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_subs_churn_pc_in": {
+      "cul_scope_id": 1,
+      "name": "subs_churn_pc_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_subs_0_": {
+      "cul_scope_id": 1,
+      "name": "subs_0_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 22,
+          "index": 132
+        },
+        "end": {
+          "line": 3,
+          "column": 37,
+          "index": 147
+        }
+      },
+      "inputs": [
+        "subs_0_in"
+      ]
+    },
+    "1_subs_0_in": {
+      "cul_scope_id": 1,
+      "name": "subs_0_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "subs_0_in"
+      ]
+    },
+    "1_year": {
+      "cul_scope_id": 1,
+      "name": "year",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 20,
+          "index": 197
+        },
+        "end": {
+          "line": 4,
+          "column": 33,
+          "index": 210
+        }
+      },
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "1_year_in": {
+      "cul_scope_id": 1,
+      "name": "year_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "1_CAC": {
+      "cul_scope_id": 1,
+      "name": "CAC",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 19,
+          "index": 232
+        },
+        "end": {
+          "line": 5,
+          "column": 31,
+          "index": 244
+        }
+      },
+      "inputs": [
+        "CAC_in"
+      ]
+    },
+    "1_CAC_in": {
+      "cul_scope_id": 1,
+      "name": "CAC_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "CAC_in"
+      ]
+    },
+    "1_subs_new_": {
+      "cul_scope_id": 1,
+      "name": "subs_new_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 24,
+          "index": 273
+        },
+        "end": {
+          "line": 9,
+          "column": 75,
+          "index": 511
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in"
+      ]
+    },
+    "1_subs_churned_": {
+      "cul_scope_id": 1,
+      "name": "subs_churned_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 28,
+          "index": 544
+        },
+        "end": {
+          "line": 12,
+          "column": 72,
+          "index": 623
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_subs": {
+      "cul_scope_id": 1,
+      "name": "subs",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 20,
+          "index": 760
+        },
+        "end": {
+          "line": 18,
+          "column": 1,
+          "index": 882
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_expenses": {
+      "cul_scope_id": 1,
+      "name": "expenses",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 24,
+          "index": 971
+        },
+        "end": {
+          "line": 20,
+          "column": 48,
+          "index": 995
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_0_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "subs_growth_pc_in",
+        "CAC_in"
+      ]
+    },
+    "1_revenue": {
+      "cul_scope_id": 1,
+      "name": "revenue",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 23,
+          "index": 1031
+        },
+        "end": {
+          "line": 21,
+          "column": 41,
+          "index": 1049
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in"
+      ]
+    },
+    "1_profit": {
+      "cul_scope_id": 1,
+      "name": "profit",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 22,
+          "index": 1074
+        },
+        "end": {
+          "line": 22,
+          "column": 50,
+          "index": 1102
+        }
+      },
+      "inputs": [
+        "year_in",
+        "subs_0_in",
+        "subs_new_actual_to_in",
+        "actuals_table_in",
+        "subs_growth_pc_in",
+        "subs_churned_actual_to_in",
+        "subs_churn_pc_in",
+        "CAC_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_subs",
+      "from": "1_subs",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_subs_new_expected",
+      "from": "1_subs_new_",
+      "reason": "explicit import (renamed)"
+    },
+    {
+      "to": "0_subs_churned_expected",
+      "from": "1_subs_churned_",
+      "reason": "explicit import (renamed)"
+    },
+    {
+      "to": "0_year",
+      "from": "1_year",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_revenue",
+      "from": "1_revenue",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_expenses",
+      "from": "1_expenses",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_profit",
+      "from": "1_profit",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_CAC",
+      "from": "1_CAC",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_actuals_table",
+      "from": "0_actuals_table_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_subs_0",
+      "from": "0_subs_0_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_subs_new_actual",
+      "from": "0_actuals_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new_actual",
+      "from": "0_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned_actual",
+      "from": "0_actuals_table",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned_actual",
+      "from": "0_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new_actual_to",
+      "from": "0_subs_new_actual_to_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_subs_churned_actual_to",
+      "from": "0_subs_churned_actual_to_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_subs_new",
+      "from": "0_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new",
+      "from": "0_subs_new_actual_to",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new",
+      "from": "0_subs_new_actual",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new",
+      "from": "0_subs_new_expected",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned",
+      "from": "0_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned",
+      "from": "0_subs_churned_actual_to",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned",
+      "from": "0_subs_churned_actual",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_churned",
+      "from": "0_subs_churned_expected",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_ea_start",
+      "from": "0_ea_start_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_ea_end",
+      "from": "0_ea_end_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_subs",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_subs",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_start",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_subs",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "subs_new_actual_to_in",
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_ea",
+      "from": "0_ea_end",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_subs_new_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_new_experience",
+      "from": "0_subs_new",
+      "reason": "call",
+      "negs": [
+        "subs_new_actual_to_in",
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_new_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_new_experience",
+      "from": "0_subs_new",
+      "reason": "call",
+      "negs": [
+        "subs_new_actual_to_in",
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_new_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_churned_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_churned_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_churned_experience",
+      "from": "0_subs_churned",
+      "reason": "call",
+      "negs": [
+        "subs_churned_actual_to_in",
+        "subs_new_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_churned_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_churned_experience",
+      "from": "0_subs_churned",
+      "reason": "call",
+      "negs": [
+        "subs_churned_actual_to_in",
+        "subs_new_actual_to_in"
+      ]
+    },
+    {
+      "to": "0_subs_churned_experience",
+      "from": "0_year",
+      "reason": "call",
+      "negs": [
+        "subs_new_actual_to_in"
+      ]
+    },
+    {
+      "to": "1_actuals_table",
+      "from": "0_actuals_table",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_0",
+      "from": "0_subs_0",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_new_actual",
+      "from": "0_subs_new_actual",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_churned_actual",
+      "from": "0_subs_churned_actual",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_new_actual_to",
+      "from": "0_subs_new_actual_to",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_churned_actual_to",
+      "from": "0_subs_churned_actual_to",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_new",
+      "from": "0_subs_new",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_churned",
+      "from": "0_subs_churned",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_ea_start",
+      "from": "0_ea_start",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_ea_end",
+      "from": "0_ea_end",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_ea",
+      "from": "0_subs_ea",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_new_experience",
+      "from": "0_subs_new_experience",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_churned_experience",
+      "from": "0_subs_churned_experience",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_subs_growth_pc",
+      "from": "1_subs_growth_pc_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_subs_churn_pc",
+      "from": "1_subs_churn_pc_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_subs_0_",
+      "from": "1_subs_0_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_year",
+      "from": "1_year_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_CAC",
+      "from": "1_CAC_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_subs_new_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs_new_",
+      "from": "1_subs",
+      "reason": "call",
+      "negs": [
+        "year_in"
+      ]
+    },
+    {
+      "to": "1_subs_new_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs_new_",
+      "from": "1_subs_growth_pc",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs_churned_",
+      "from": "1_subs",
+      "reason": "call",
+      "negs": [
+        "year_in"
+      ]
+    },
+    {
+      "to": "1_subs_churned_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs_churned_",
+      "from": "1_subs_new",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs_churned_",
+      "from": "1_subs_churn_pc",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs",
+      "from": "1_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs",
+      "from": "1_subs_0",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs",
+      "from": "1_subs",
+      "reason": "call",
+      "negs": [
+        "year_in"
+      ]
+    },
+    {
+      "to": "1_subs",
+      "from": "1_year",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs",
+      "from": "1_subs_new",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_subs",
+      "from": "1_subs_churned",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_expenses",
+      "from": "1_subs_new",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_expenses",
+      "from": "1_CAC",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_revenue",
+      "from": "1_subs",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_profit",
+      "from": "1_revenue",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_profit",
+      "from": "1_expenses",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./rec.cul.js",
+    "1": "./expected.cul.js?cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./expected.cul.js": "./expected.cul.js?cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_subs": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "0_subs_new_expected": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "0_subs_churned_expected": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "0_year": [
+      "year_in"
+    ],
+    "0_revenue": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "0_expenses": [
+      "year_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in",
+      "CAC_in"
+    ],
+    "0_profit": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "CAC_in"
+    ],
+    "0_CAC": [
+      "CAC_in"
+    ],
+    "0_actuals_table": [
+      "actuals_table_in"
+    ],
+    "0_actuals_table_in": [
+      "actuals_table_in"
+    ],
+    "0_subs_0": [
+      "subs_0_in"
+    ],
+    "0_subs_0_in": [
+      "subs_0_in"
+    ],
+    "0_subs_new_actual": [
+      "actuals_table_in",
+      "year_in"
+    ],
+    "0_subs_churned_actual": [
+      "actuals_table_in",
+      "year_in"
+    ],
+    "0_subs_new_actual_to": [
+      "subs_new_actual_to_in"
+    ],
+    "0_subs_new_actual_to_in": [
+      "subs_new_actual_to_in"
+    ],
+    "0_subs_churned_actual_to": [
+      "subs_churned_actual_to_in"
+    ],
+    "0_subs_churned_actual_to_in": [
+      "subs_churned_actual_to_in"
+    ],
+    "0_subs_new": [
+      "year_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "0_subs_churned": [
+      "year_in",
+      "subs_churned_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in"
+    ],
+    "0_ea_start": [
+      "ea_start_in"
+    ],
+    "0_ea_start_in": [
+      "ea_start_in"
+    ],
+    "0_ea_end": [
+      "ea_end_in"
+    ],
+    "0_ea_end_in": [
+      "ea_end_in"
+    ],
+    "0_subs_ea": [
+      "subs_0_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in",
+      "ea_end_in",
+      "ea_start_in"
+    ],
+    "0_subs_new_experience": [
+      "year_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "0_subs_churned_experience": [
+      "year_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in"
+    ],
+    "1_actuals_table": [
+      "actuals_table_in"
+    ],
+    "1_subs_0": [
+      "subs_0_in"
+    ],
+    "1_subs_new_actual": [
+      "actuals_table_in",
+      "year_in"
+    ],
+    "1_subs_churned_actual": [
+      "actuals_table_in",
+      "year_in"
+    ],
+    "1_subs_new_actual_to": [
+      "subs_new_actual_to_in"
+    ],
+    "1_subs_churned_actual_to": [
+      "subs_churned_actual_to_in"
+    ],
+    "1_subs_new": [
+      "year_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "1_subs_churned": [
+      "year_in",
+      "subs_churned_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in"
+    ],
+    "1_ea_start": [
+      "ea_start_in"
+    ],
+    "1_ea_end": [
+      "ea_end_in"
+    ],
+    "1_subs_ea": [
+      "subs_0_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in",
+      "ea_end_in",
+      "ea_start_in"
+    ],
+    "1_subs_new_experience": [
+      "year_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "1_subs_churned_experience": [
+      "year_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_growth_pc_in",
+      "subs_churn_pc_in"
+    ],
+    "1_subs_growth_pc": [
+      "subs_growth_pc_in"
+    ],
+    "1_subs_growth_pc_in": [
+      "subs_growth_pc_in"
+    ],
+    "1_subs_churn_pc": [
+      "subs_churn_pc_in"
+    ],
+    "1_subs_churn_pc_in": [
+      "subs_churn_pc_in"
+    ],
+    "1_subs_0_": [
+      "subs_0_in"
+    ],
+    "1_subs_0_in": [
+      "subs_0_in"
+    ],
+    "1_year": [
+      "year_in"
+    ],
+    "1_year_in": [
+      "year_in"
+    ],
+    "1_CAC": [
+      "CAC_in"
+    ],
+    "1_CAC_in": [
+      "CAC_in"
+    ],
+    "1_subs_new_": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in"
+    ],
+    "1_subs_churned_": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "1_subs": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "1_expenses": [
+      "year_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_0_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "subs_growth_pc_in",
+      "CAC_in"
+    ],
+    "1_revenue": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in"
+    ],
+    "1_profit": [
+      "year_in",
+      "subs_0_in",
+      "subs_new_actual_to_in",
+      "actuals_table_in",
+      "subs_growth_pc_in",
+      "subs_churned_actual_to_in",
+      "subs_churn_pc_in",
+      "CAC_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_subs\" [cul_scope_id=0,name=subs,imported=subs,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"0_subs inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"0_subs_new_expected\" [cul_scope_id=0,name=subs_new_expected,imported=subs_new_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"0_subs_new_expected inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"0_subs_churned_expected\" [cul_scope_id=0,name=subs_churned_expected,imported=subs_churned_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"0_subs_churned_expected inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"0_year\" [cul_scope_id=0,name=year,imported=year,cul_source_scope_id=1,reason=\"explicit import\",inputs=year_in,label=\"0_year inputs: year_in\"]\n  \"0_revenue\" [cul_scope_id=0,name=revenue,imported=revenue,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"0_revenue inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"0_expenses\" [cul_scope_id=0,name=expenses,imported=expenses,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in,CAC_in\",label=\"0_expenses inputs: year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in,CAC_in\"]\n  \"0_profit\" [cul_scope_id=0,name=profit,imported=profit,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in,CAC_in\",label=\"0_profit inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in,CAC_in\"]\n  \"0_CAC\" [cul_scope_id=0,name=CAC,imported=CAC,cul_source_scope_id=1,reason=\"explicit import\",inputs=CAC_in,label=\"0_CAC inputs: CAC_in\"]\n  \"0_actuals_table\" [cul_scope_id=0,name=actuals_table,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=actuals_table_in,label=\"0_actuals_table inputs: actuals_table_in\"]\n  \"0_actuals_table_in\" [cul_scope_id=0,name=actuals_table_in,cul_source_scope_id=0,reason=\"input definition\",inputs=actuals_table_in,label=\"0_actuals_table_in inputs: actuals_table_in\"]\n  \"0_subs_0\" [cul_scope_id=0,name=subs_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=subs_0_in,label=\"0_subs_0 inputs: subs_0_in\"]\n  \"0_subs_0_in\" [cul_scope_id=0,name=subs_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=subs_0_in,label=\"0_subs_0_in inputs: subs_0_in\"]\n  \"0_subs_new_actual\" [cul_scope_id=0,name=subs_new_actual,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"actuals_table_in,year_in\",label=\"0_subs_new_actual inputs: actuals_table_in,year_in\"]\n  \"0_subs_churned_actual\" [cul_scope_id=0,name=subs_churned_actual,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"actuals_table_in,year_in\",label=\"0_subs_churned_actual inputs: actuals_table_in,year_in\"]\n  \"0_subs_new_actual_to\" [cul_scope_id=0,name=subs_new_actual_to,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=subs_new_actual_to_in,label=\"0_subs_new_actual_to inputs: subs_new_actual_to_in\"]\n  \"0_subs_new_actual_to_in\" [cul_scope_id=0,name=subs_new_actual_to_in,cul_source_scope_id=0,reason=\"input definition\",inputs=subs_new_actual_to_in,label=\"0_subs_new_actual_to_in inputs: subs_new_actual_to_in\"]\n  \"0_subs_churned_actual_to\" [cul_scope_id=0,name=subs_churned_actual_to,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=subs_churned_actual_to_in,label=\"0_subs_churned_actual_to inputs: subs_churned_actual_to_in\"]\n  \"0_subs_churned_actual_to_in\" [cul_scope_id=0,name=subs_churned_actual_to_in,cul_source_scope_id=0,reason=\"input definition\",inputs=subs_churned_actual_to_in,label=\"0_subs_churned_actual_to_in inputs: subs_churned_actual_to_in\"]\n  \"0_subs_new\" [cul_scope_id=0,name=subs_new,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"0_subs_new inputs: year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"0_subs_churned\" [cul_scope_id=0,name=subs_churned,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_churned_actual_to_in,actuals_table_in,subs_0_in,subs_new_actual_to_in,subs_growth_pc_in,subs_churn_pc_in\",label=\"0_subs_churned inputs: year_in,subs_churned_actual_to_in,actuals_table_in,subs_0_in,subs_new_actual_to_in,subs_growth_pc_in,subs_churn_pc_in\"]\n  \"0_ea_start\" [cul_scope_id=0,name=ea_start,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=ea_start_in,label=\"0_ea_start inputs: ea_start_in\"]\n  \"0_ea_start_in\" [cul_scope_id=0,name=ea_start_in,cul_source_scope_id=0,reason=\"input definition\",inputs=ea_start_in,label=\"0_ea_start_in inputs: ea_start_in\"]\n  \"0_ea_end\" [cul_scope_id=0,name=ea_end,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=ea_end_in,label=\"0_ea_end inputs: ea_end_in\"]\n  \"0_ea_end_in\" [cul_scope_id=0,name=ea_end_in,cul_source_scope_id=0,reason=\"input definition\",inputs=ea_end_in,label=\"0_ea_end_in inputs: ea_end_in\"]\n  \"0_subs_ea\" [cul_scope_id=0,name=subs_ea,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"subs_0_in,actuals_table_in,subs_growth_pc_in,subs_churn_pc_in,ea_end_in,ea_start_in\",label=\"0_subs_ea inputs: subs_0_in,actuals_table_in,subs_growth_pc_in,subs_churn_pc_in,ea_end_in,ea_start_in\"]\n  \"0_subs_new_experience\" [cul_scope_id=0,name=subs_new_experience,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,actuals_table_in,subs_0_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"0_subs_new_experience inputs: year_in,actuals_table_in,subs_0_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"0_subs_churned_experience\" [cul_scope_id=0,name=subs_churned_experience,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,actuals_table_in,subs_0_in,subs_growth_pc_in,subs_churn_pc_in\",label=\"0_subs_churned_experience inputs: year_in,actuals_table_in,subs_0_in,subs_growth_pc_in,subs_churn_pc_in\"]\n  \"1_actuals_table\" [cul_scope_id=1,name=actuals_table,cul_source_scope_id=0,reason=\"implicit import\",inputs=actuals_table_in,label=\"1_actuals_table inputs: actuals_table_in\"]\n  \"1_subs_0\" [cul_scope_id=1,name=subs_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=subs_0_in,label=\"1_subs_0 inputs: subs_0_in\"]\n  \"1_subs_new_actual\" [cul_scope_id=1,name=subs_new_actual,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"actuals_table_in,year_in\",label=\"1_subs_new_actual inputs: actuals_table_in,year_in\"]\n  \"1_subs_churned_actual\" [cul_scope_id=1,name=subs_churned_actual,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"actuals_table_in,year_in\",label=\"1_subs_churned_actual inputs: actuals_table_in,year_in\"]\n  \"1_subs_new_actual_to\" [cul_scope_id=1,name=subs_new_actual_to,cul_source_scope_id=0,reason=\"implicit import\",inputs=subs_new_actual_to_in,label=\"1_subs_new_actual_to inputs: subs_new_actual_to_in\"]\n  \"1_subs_churned_actual_to\" [cul_scope_id=1,name=subs_churned_actual_to,cul_source_scope_id=0,reason=\"implicit import\",inputs=subs_churned_actual_to_in,label=\"1_subs_churned_actual_to inputs: subs_churned_actual_to_in\"]\n  \"1_subs_new\" [cul_scope_id=1,name=subs_new,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"1_subs_new inputs: year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"1_subs_churned\" [cul_scope_id=1,name=subs_churned,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,subs_churned_actual_to_in,actuals_table_in,subs_0_in,subs_new_actual_to_in,subs_growth_pc_in,subs_churn_pc_in\",label=\"1_subs_churned inputs: year_in,subs_churned_actual_to_in,actuals_table_in,subs_0_in,subs_new_actual_to_in,subs_growth_pc_in,subs_churn_pc_in\"]\n  \"1_ea_start\" [cul_scope_id=1,name=ea_start,cul_source_scope_id=0,reason=\"implicit import\",inputs=ea_start_in,label=\"1_ea_start inputs: ea_start_in\"]\n  \"1_ea_end\" [cul_scope_id=1,name=ea_end,cul_source_scope_id=0,reason=\"implicit import\",inputs=ea_end_in,label=\"1_ea_end inputs: ea_end_in\"]\n  \"1_subs_ea\" [cul_scope_id=1,name=subs_ea,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"subs_0_in,actuals_table_in,subs_growth_pc_in,subs_churn_pc_in,ea_end_in,ea_start_in\",label=\"1_subs_ea inputs: subs_0_in,actuals_table_in,subs_growth_pc_in,subs_churn_pc_in,ea_end_in,ea_start_in\"]\n  \"1_subs_new_experience\" [cul_scope_id=1,name=subs_new_experience,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,actuals_table_in,subs_0_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"1_subs_new_experience inputs: year_in,actuals_table_in,subs_0_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"1_subs_churned_experience\" [cul_scope_id=1,name=subs_churned_experience,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,actuals_table_in,subs_0_in,subs_growth_pc_in,subs_churn_pc_in\",label=\"1_subs_churned_experience inputs: year_in,actuals_table_in,subs_0_in,subs_growth_pc_in,subs_churn_pc_in\"]\n  \"1_subs_growth_pc\" [cul_scope_id=1,name=subs_growth_pc,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=subs_growth_pc_in,label=\"1_subs_growth_pc inputs: subs_growth_pc_in\"]\n  \"1_subs_growth_pc_in\" [cul_scope_id=1,name=subs_growth_pc_in,cul_source_scope_id=1,reason=\"input definition\",inputs=subs_growth_pc_in,label=\"1_subs_growth_pc_in inputs: subs_growth_pc_in\"]\n  \"1_subs_churn_pc\" [cul_scope_id=1,name=subs_churn_pc,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=subs_churn_pc_in,label=\"1_subs_churn_pc inputs: subs_churn_pc_in\"]\n  \"1_subs_churn_pc_in\" [cul_scope_id=1,name=subs_churn_pc_in,cul_source_scope_id=1,reason=\"input definition\",inputs=subs_churn_pc_in,label=\"1_subs_churn_pc_in inputs: subs_churn_pc_in\"]\n  \"1_subs_0_\" [cul_scope_id=1,name=subs_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=subs_0_in,label=\"1_subs_0_ inputs: subs_0_in\"]\n  \"1_subs_0_in\" [cul_scope_id=1,name=subs_0_in,cul_source_scope_id=1,reason=\"input definition\",inputs=subs_0_in,label=\"1_subs_0_in inputs: subs_0_in\"]\n  \"1_year\" [cul_scope_id=1,name=year,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=year_in,label=\"1_year inputs: year_in\"]\n  \"1_year_in\" [cul_scope_id=1,name=year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=year_in,label=\"1_year_in inputs: year_in\"]\n  \"1_CAC\" [cul_scope_id=1,name=CAC,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=CAC_in,label=\"1_CAC inputs: CAC_in\"]\n  \"1_CAC_in\" [cul_scope_id=1,name=CAC_in,cul_source_scope_id=1,reason=\"input definition\",inputs=CAC_in,label=\"1_CAC_in inputs: CAC_in\"]\n  \"1_subs_new_\" [cul_scope_id=1,name=subs_new_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\",label=\"1_subs_new_ inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in\"]\n  \"1_subs_churned_\" [cul_scope_id=1,name=subs_churned_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"1_subs_churned_ inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"1_subs\" [cul_scope_id=1,name=subs,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"1_subs inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"1_expenses\" [cul_scope_id=1,name=expenses,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in,CAC_in\",label=\"1_expenses inputs: year_in,subs_new_actual_to_in,actuals_table_in,subs_0_in,subs_churned_actual_to_in,subs_churn_pc_in,subs_growth_pc_in,CAC_in\"]\n  \"1_revenue\" [cul_scope_id=1,name=revenue,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\",label=\"1_revenue inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in\"]\n  \"1_profit\" [cul_scope_id=1,name=profit,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in,CAC_in\",label=\"1_profit inputs: year_in,subs_0_in,subs_new_actual_to_in,actuals_table_in,subs_growth_pc_in,subs_churned_actual_to_in,subs_churn_pc_in,CAC_in\"]\n  \"1_subs\" -> \"0_subs\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_subs_new_\" -> \"0_subs_new_expected\" [value=\"[object Object]\",label=\"explicit import (renamed)\"]\n  \"1_subs_churned_\" -> \"0_subs_churned_expected\" [value=\"[object Object]\",label=\"explicit import (renamed)\"]\n  \"1_year\" -> \"0_year\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_revenue\" -> \"0_revenue\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_expenses\" -> \"0_expenses\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_profit\" -> \"0_profit\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CAC\" -> \"0_CAC\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_actuals_table_in\" -> \"0_actuals_table\" [value=\"[object Object]\",label=\"input +actuals_table_in\"]\n  \"0_subs_0_in\" -> \"0_subs_0\" [value=\"[object Object]\",label=\"input +subs_0_in\"]\n  \"0_actuals_table\" -> \"0_subs_new_actual\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year\" -> \"0_subs_new_actual\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_actuals_table\" -> \"0_subs_churned_actual\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year\" -> \"0_subs_churned_actual\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_new_actual_to_in\" -> \"0_subs_new_actual_to\" [value=\"[object Object]\",label=\"input +subs_new_actual_to_in\"]\n  \"0_subs_churned_actual_to_in\" -> \"0_subs_churned_actual_to\" [value=\"[object Object]\",label=\"input +subs_churned_actual_to_in\"]\n  \"0_year\" -> \"0_subs_new\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_new_actual_to\" -> \"0_subs_new\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_new_actual\" -> \"0_subs_new\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_new_expected\" -> \"0_subs_new\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year\" -> \"0_subs_churned\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_churned_actual_to\" -> \"0_subs_churned\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_churned_actual\" -> \"0_subs_churned\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_subs_churned_expected\" -> \"0_subs_churned\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_ea_start_in\" -> \"0_ea_start\" [value=\"[object Object]\",label=\"input +ea_start_in\"]\n  \"0_ea_end_in\" -> \"0_ea_end\" [value=\"[object Object]\",label=\"input +ea_end_in\"]\n  \"0_subs\" -> \"0_subs_ea\" [value=\"[object Object]\",label=\"call -year_in,subs_new_actual_to_in,subs_churned_actual_to_in\"]\n  \"0_ea_end\" -> \"0_subs_ea\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_ea_start\" -> \"0_subs_ea\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year\" -> \"0_subs_new_experience\" [value=\"[object Object]\",label=\"call -subs_churned_actual_to_in\"]\n  \"0_subs_new\" -> \"0_subs_new_experience\" [value=\"[object Object]\",label=\"call -subs_new_actual_to_in,subs_churned_actual_to_in\"]\n  \"0_year\" -> \"0_subs_churned_experience\" [value=\"[object Object]\",label=\"call -subs_new_actual_to_in\"]\n  \"0_subs_churned\" -> \"0_subs_churned_experience\" [value=\"[object Object]\",label=\"call -subs_churned_actual_to_in,subs_new_actual_to_in\"]\n  \"0_actuals_table\" -> \"1_actuals_table\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_0\" -> \"1_subs_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_new_actual\" -> \"1_subs_new_actual\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_churned_actual\" -> \"1_subs_churned_actual\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_new_actual_to\" -> \"1_subs_new_actual_to\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_churned_actual_to\" -> \"1_subs_churned_actual_to\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_new\" -> \"1_subs_new\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_churned\" -> \"1_subs_churned\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_ea_start\" -> \"1_ea_start\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_ea_end\" -> \"1_ea_end\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_ea\" -> \"1_subs_ea\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_new_experience\" -> \"1_subs_new_experience\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_subs_churned_experience\" -> \"1_subs_churned_experience\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_subs_growth_pc_in\" -> \"1_subs_growth_pc\" [value=\"[object Object]\",label=\"input +subs_growth_pc_in\"]\n  \"1_subs_churn_pc_in\" -> \"1_subs_churn_pc\" [value=\"[object Object]\",label=\"input +subs_churn_pc_in\"]\n  \"1_subs_0_in\" -> \"1_subs_0_\" [value=\"[object Object]\",label=\"input +subs_0_in\"]\n  \"1_year_in\" -> \"1_year\" [value=\"[object Object]\",label=\"input +year_in\"]\n  \"1_CAC_in\" -> \"1_CAC\" [value=\"[object Object]\",label=\"input +CAC_in\"]\n  \"1_year\" -> \"1_subs_new_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs\" -> \"1_subs_new_\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_subs_growth_pc\" -> \"1_subs_new_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs\" -> \"1_subs_churned_\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_year\" -> \"1_subs_churned_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs_new\" -> \"1_subs_churned_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs_churn_pc\" -> \"1_subs_churned_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_year\" -> \"1_subs\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs_0\" -> \"1_subs\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs\" -> \"1_subs\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_subs_new\" -> \"1_subs\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs_churned\" -> \"1_subs\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs_new\" -> \"1_expenses\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CAC\" -> \"1_expenses\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_subs\" -> \"1_revenue\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_revenue\" -> \"1_profit\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_expenses\" -> \"1_profit\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

@@ -12,6 +12,7 @@
     "build:suncalc-seek-sunsets": "cul-js compile --memo ./models/heavens/suncalc-seek-sunsets.cul.js",
     "build:suncalc": "cul-js compile ./models/heavens/suncalc.cul.js",
     "build:payroll": "cul-js compile ./models/payroll-playground/payroll.cul.js",
+    "build:saas-ea": "cul-js compile ./models/saas-ea/rec.cul.js",
     "use:fern": "node ./models/fern/use-fern.js",
     "write:fern": "node ./models/fern/use-fern.js > ./models/fern/fern.out.txt",
     "build:fern": "cul-js compile --memo ./models/fern/fern.cul.js",
