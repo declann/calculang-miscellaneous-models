@@ -1,10 +1,230 @@
 {
   "cul_functions": {
+    "0_mrr_cf$": {
+      "cul_scope_id": 0,
+      "name": "mrr_cf$",
+      "imported": "mrr_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in"
+      ]
+    },
+    "0_vc_cf$": {
+      "cul_scope_id": 0,
+      "name": "vc_cf$",
+      "imported": "vc_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "vc_1_in",
+        "vc_2_in"
+      ]
+    },
+    "0_rent_cf$": {
+      "cul_scope_id": 0,
+      "name": "rent_cf$",
+      "imported": "rent_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "rent_in"
+      ]
+    },
+    "0_employees$": {
+      "cul_scope_id": 0,
+      "name": "employees$",
+      "imported": "employees_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "0_payroll_cf$": {
+      "cul_scope_id": 0,
+      "name": "payroll_cf$",
+      "imported": "payroll_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "salary_per_employee_in",
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "0_total_cf$": {
+      "cul_scope_id": 0,
+      "name": "total_cf$",
+      "imported": "total_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "0_npv$": {
+      "cul_scope_id": 0,
+      "name": "npv$",
+      "imported": "npv_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in",
+        "last_month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in",
+        "npv_i_in"
+      ]
+    },
+    "0_mrr$": {
+      "cul_scope_id": 0,
+      "name": "mrr$",
+      "imported": "mrr_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "mrr_in"
+      ]
+    },
+    "0_month$": {
+      "cul_scope_id": 0,
+      "name": "month$",
+      "imported": "month_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "month_in"
+      ]
+    },
+    "0_mrr_growth$": {
+      "cul_scope_id": 0,
+      "name": "mrr_growth$",
+      "imported": "mrr_growth_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "mrr_growth_in"
+      ]
+    },
+    "0_vc_1$": {
+      "cul_scope_id": 0,
+      "name": "vc_1$",
+      "imported": "vc_1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "vc_1_in"
+      ]
+    },
+    "0_vc_2$": {
+      "cul_scope_id": 0,
+      "name": "vc_2$",
+      "imported": "vc_2_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "vc_2_in"
+      ]
+    },
+    "0_rent$": {
+      "cul_scope_id": 0,
+      "name": "rent$",
+      "imported": "rent_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "rent_in"
+      ]
+    },
+    "0_employees_0$": {
+      "cul_scope_id": 0,
+      "name": "employees_0$",
+      "imported": "employees_0_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "employees_0_in"
+      ]
+    },
+    "0_new_employees_per_month$": {
+      "cul_scope_id": 0,
+      "name": "new_employees_per_month$",
+      "imported": "new_employees_per_month_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "new_employees_per_month_in"
+      ]
+    },
+    "0_salary_per_employee$": {
+      "cul_scope_id": 0,
+      "name": "salary_per_employee$",
+      "imported": "salary_per_employee_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "salary_per_employee_in"
+      ]
+    },
+    "0_last_month$": {
+      "cul_scope_id": 0,
+      "name": "last_month$",
+      "imported": "last_month_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "last_month_in"
+      ]
+    },
+    "0_npv_i$": {
+      "cul_scope_id": 0,
+      "name": "npv_i$",
+      "imported": "npv_i_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "npv_i_in"
+      ]
+    },
     "0_mrr_cf": {
       "cul_scope_id": 0,
       "name": "mrr_cf",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 22,
+          "index": 1070
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 1210
+        }
+      },
       "inputs": [
         "month_in",
         "mrr_in",
@@ -16,6 +236,18 @@
       "name": "vc_cf",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 21,
+          "index": 1445
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1583
+        }
+      },
       "inputs": [
         "month_in",
         "vc_1_in",
@@ -27,6 +259,18 @@
       "name": "rent_cf",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 23,
+          "index": 1829
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1971
+        }
+      },
       "inputs": [
         "month_in",
         "rent_in"
@@ -37,6 +281,18 @@
       "name": "employees",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 25,
+          "index": 2231
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 2377
+        }
+      },
       "inputs": [
         "month_in",
         "employees_0_in",
@@ -48,6 +304,18 @@
       "name": "payroll_cf",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 26,
+          "index": 2645
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2793
+        }
+      },
       "inputs": [
         "salary_per_employee_in",
         "month_in",
@@ -60,6 +328,18 @@
       "name": "total_cf",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 24,
+          "index": 3050
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 3194
+        }
+      },
       "inputs": [
         "month_in",
         "mrr_in",
@@ -77,6 +357,18 @@
       "name": "npv",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 19,
+          "index": 3419
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 3553
+        }
+      },
       "inputs": [
         "month_in",
         "last_month_in",
@@ -96,15 +388,18 @@
       "name": "mrr",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "mrr_in"
-      ]
-    },
-    "0_mrr_in": {
-      "cul_scope_id": 0,
-      "name": "mrr_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 19,
+          "index": 3773
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 3907
+        }
+      },
       "inputs": [
         "mrr_in"
       ]
@@ -114,15 +409,18 @@
       "name": "month",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "month_in"
-      ]
-    },
-    "0_month_in": {
-      "cul_scope_id": 0,
-      "name": "month_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 21,
+          "index": 4139
+        },
+        "end": {
+          "line": 113,
+          "column": 1,
+          "index": 4277
+        }
+      },
       "inputs": [
         "month_in"
       ]
@@ -132,15 +430,18 @@
       "name": "mrr_growth",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "mrr_growth_in"
-      ]
-    },
-    "0_mrr_growth_in": {
-      "cul_scope_id": 0,
-      "name": "mrr_growth_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 121,
+          "column": 26,
+          "index": 4541
+        },
+        "end": {
+          "line": 125,
+          "column": 1,
+          "index": 4689
+        }
+      },
       "inputs": [
         "mrr_growth_in"
       ]
@@ -150,15 +451,18 @@
       "name": "vc_1",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "vc_1_in"
-      ]
-    },
-    "0_vc_1_in": {
-      "cul_scope_id": 0,
-      "name": "vc_1_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 20,
+          "index": 4922
+        },
+        "end": {
+          "line": 137,
+          "column": 1,
+          "index": 5058
+        }
+      },
       "inputs": [
         "vc_1_in"
       ]
@@ -168,15 +472,18 @@
       "name": "vc_2",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "vc_2_in"
-      ]
-    },
-    "0_vc_2_in": {
-      "cul_scope_id": 0,
-      "name": "vc_2_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 145,
+          "column": 20,
+          "index": 5285
+        },
+        "end": {
+          "line": 149,
+          "column": 1,
+          "index": 5421
+        }
+      },
       "inputs": [
         "vc_2_in"
       ]
@@ -186,15 +493,18 @@
       "name": "rent",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "rent_in"
-      ]
-    },
-    "0_rent_in": {
-      "cul_scope_id": 0,
-      "name": "rent_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 157,
+          "column": 20,
+          "index": 5648
+        },
+        "end": {
+          "line": 161,
+          "column": 1,
+          "index": 5784
+        }
+      },
       "inputs": [
         "rent_in"
       ]
@@ -204,15 +514,18 @@
       "name": "employees_0",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "employees_0_in"
-      ]
-    },
-    "0_employees_0_in": {
-      "cul_scope_id": 0,
-      "name": "employees_0_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 169,
+          "column": 27,
+          "index": 6053
+        },
+        "end": {
+          "line": 173,
+          "column": 1,
+          "index": 6203
+        }
+      },
       "inputs": [
         "employees_0_in"
       ]
@@ -222,15 +535,18 @@
       "name": "new_employees_per_month",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "new_employees_per_month_in"
-      ]
-    },
-    "0_new_employees_per_month_in": {
-      "cul_scope_id": 0,
-      "name": "new_employees_per_month_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 181,
+          "column": 39,
+          "index": 6551
+        },
+        "end": {
+          "line": 185,
+          "column": 1,
+          "index": 6725
+        }
+      },
       "inputs": [
         "new_employees_per_month_in"
       ]
@@ -240,15 +556,18 @@
       "name": "salary_per_employee",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "salary_per_employee_in"
-      ]
-    },
-    "0_salary_per_employee_in": {
-      "cul_scope_id": 0,
-      "name": "salary_per_employee_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 193,
+          "column": 35,
+          "index": 7061
+        },
+        "end": {
+          "line": 197,
+          "column": 1,
+          "index": 7227
+        }
+      },
       "inputs": [
         "salary_per_employee_in"
       ]
@@ -258,15 +577,18 @@
       "name": "last_month",
       "cul_source_scope_id": 0,
       "reason": "definition",
-      "inputs": [
-        "last_month_in"
-      ]
-    },
-    "0_last_month_in": {
-      "cul_scope_id": 0,
-      "name": "last_month_in",
-      "cul_source_scope_id": 0,
-      "reason": "input definition",
+      "loc": {
+        "start": {
+          "line": 205,
+          "column": 26,
+          "index": 7505
+        },
+        "end": {
+          "line": 209,
+          "column": 1,
+          "index": 7653
+        }
+      },
       "inputs": [
         "last_month_in"
       ]
@@ -276,14 +598,712 @@
       "name": "npv_i",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 217,
+          "column": 21,
+          "index": 7892
+        },
+        "end": {
+          "line": 221,
+          "column": 1,
+          "index": 8030
+        }
+      },
       "inputs": [
         "npv_i_in"
       ]
     },
-    "0_npv_i_in": {
-      "cul_scope_id": 0,
-      "name": "npv_i_in",
+    "1_mrr_cf": {
+      "cul_scope_id": 1,
+      "name": "mrr_cf",
       "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in"
+      ]
+    },
+    "1_vc_cf": {
+      "cul_scope_id": 1,
+      "name": "vc_cf",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "vc_1_in",
+        "vc_2_in"
+      ]
+    },
+    "1_rent_cf": {
+      "cul_scope_id": 1,
+      "name": "rent_cf",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "rent_in"
+      ]
+    },
+    "1_employees": {
+      "cul_scope_id": 1,
+      "name": "employees",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_payroll_cf": {
+      "cul_scope_id": 1,
+      "name": "payroll_cf",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "salary_per_employee_in",
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_total_cf": {
+      "cul_scope_id": 1,
+      "name": "total_cf",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_npv": {
+      "cul_scope_id": 1,
+      "name": "npv",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in",
+        "last_month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in",
+        "npv_i_in"
+      ]
+    },
+    "1_mrr": {
+      "cul_scope_id": 1,
+      "name": "mrr",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "mrr_in"
+      ]
+    },
+    "1_month": {
+      "cul_scope_id": 1,
+      "name": "month",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "month_in"
+      ]
+    },
+    "1_mrr_growth": {
+      "cul_scope_id": 1,
+      "name": "mrr_growth",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "mrr_growth_in"
+      ]
+    },
+    "1_vc_1": {
+      "cul_scope_id": 1,
+      "name": "vc_1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "vc_1_in"
+      ]
+    },
+    "1_vc_2": {
+      "cul_scope_id": 1,
+      "name": "vc_2",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "vc_2_in"
+      ]
+    },
+    "1_rent": {
+      "cul_scope_id": 1,
+      "name": "rent",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "rent_in"
+      ]
+    },
+    "1_employees_0": {
+      "cul_scope_id": 1,
+      "name": "employees_0",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "employees_0_in"
+      ]
+    },
+    "1_new_employees_per_month": {
+      "cul_scope_id": 1,
+      "name": "new_employees_per_month",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_salary_per_employee": {
+      "cul_scope_id": 1,
+      "name": "salary_per_employee",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "salary_per_employee_in"
+      ]
+    },
+    "1_last_month": {
+      "cul_scope_id": 1,
+      "name": "last_month",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "last_month_in"
+      ]
+    },
+    "1_npv_i": {
+      "cul_scope_id": 1,
+      "name": "npv_i",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "npv_i_in"
+      ]
+    },
+    "1_mrr_cf_": {
+      "cul_scope_id": 1,
+      "name": "mrr_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 22,
+          "index": 22
+        },
+        "end": {
+          "line": 4,
+          "column": 1,
+          "index": 121
+        }
+      },
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in"
+      ]
+    },
+    "1_vc_cf_": {
+      "cul_scope_id": 1,
+      "name": "vc_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 21,
+          "index": 146
+        },
+        "end": {
+          "line": 10,
+          "column": 1,
+          "index": 247
+        }
+      },
+      "inputs": [
+        "month_in",
+        "vc_1_in",
+        "vc_2_in"
+      ]
+    },
+    "1_rent_cf_": {
+      "cul_scope_id": 1,
+      "name": "rent_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 23,
+          "index": 275
+        },
+        "end": {
+          "line": 15,
+          "column": 1,
+          "index": 373
+        }
+      },
+      "inputs": [
+        "month_in",
+        "rent_in"
+      ]
+    },
+    "1_employees_": {
+      "cul_scope_id": 1,
+      "name": "employees_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 25,
+          "index": 402
+        },
+        "end": {
+          "line": 21,
+          "column": 1,
+          "index": 568
+        }
+      },
+      "inputs": [
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_payroll_cf_": {
+      "cul_scope_id": 1,
+      "name": "payroll_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 26,
+          "index": 599
+        },
+        "end": {
+          "line": 23,
+          "column": 68,
+          "index": 641
+        }
+      },
+      "inputs": [
+        "salary_per_employee_in",
+        "month_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_total_cf_": {
+      "cul_scope_id": 1,
+      "name": "total_cf_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 24,
+          "index": 670
+        },
+        "end": {
+          "line": 25,
+          "column": 75,
+          "index": 721
+        }
+      },
+      "inputs": [
+        "month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_npv_": {
+      "cul_scope_id": 1,
+      "name": "npv_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 19,
+          "index": 745
+        },
+        "end": {
+          "line": 33,
+          "column": 1,
+          "index": 912
+        }
+      },
+      "inputs": [
+        "month_in",
+        "last_month_in",
+        "mrr_in",
+        "mrr_growth_in",
+        "rent_in",
+        "vc_1_in",
+        "vc_2_in",
+        "salary_per_employee_in",
+        "employees_0_in",
+        "new_employees_per_month_in",
+        "npv_i_in"
+      ]
+    },
+    "1_mrr_": {
+      "cul_scope_id": 1,
+      "name": "mrr_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 19,
+          "index": 947
+        },
+        "end": {
+          "line": 36,
+          "column": 31,
+          "index": 959
+        }
+      },
+      "inputs": [
+        "mrr_in"
+      ]
+    },
+    "1_mrr_in": {
+      "cul_scope_id": 1,
+      "name": "mrr_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "mrr_in"
+      ]
+    },
+    "1_month_": {
+      "cul_scope_id": 1,
+      "name": "month_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 21,
+          "index": 983
+        },
+        "end": {
+          "line": 37,
+          "column": 35,
+          "index": 997
+        }
+      },
+      "inputs": [
+        "month_in"
+      ]
+    },
+    "1_month_in": {
+      "cul_scope_id": 1,
+      "name": "month_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "month_in"
+      ]
+    },
+    "1_mrr_growth_": {
+      "cul_scope_id": 1,
+      "name": "mrr_growth_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 26,
+          "index": 1026
+        },
+        "end": {
+          "line": 38,
+          "column": 45,
+          "index": 1045
+        }
+      },
+      "inputs": [
+        "mrr_growth_in"
+      ]
+    },
+    "1_mrr_growth_in": {
+      "cul_scope_id": 1,
+      "name": "mrr_growth_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "mrr_growth_in"
+      ]
+    },
+    "1_vc_1_": {
+      "cul_scope_id": 1,
+      "name": "vc_1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 39,
+          "column": 20,
+          "index": 1068
+        },
+        "end": {
+          "line": 39,
+          "column": 33,
+          "index": 1081
+        }
+      },
+      "inputs": [
+        "vc_1_in"
+      ]
+    },
+    "1_vc_1_in": {
+      "cul_scope_id": 1,
+      "name": "vc_1_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "vc_1_in"
+      ]
+    },
+    "1_vc_2_": {
+      "cul_scope_id": 1,
+      "name": "vc_2_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 20,
+          "index": 1104
+        },
+        "end": {
+          "line": 40,
+          "column": 33,
+          "index": 1117
+        }
+      },
+      "inputs": [
+        "vc_2_in"
+      ]
+    },
+    "1_vc_2_in": {
+      "cul_scope_id": 1,
+      "name": "vc_2_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "vc_2_in"
+      ]
+    },
+    "1_rent_": {
+      "cul_scope_id": 1,
+      "name": "rent_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 20,
+          "index": 1140
+        },
+        "end": {
+          "line": 41,
+          "column": 33,
+          "index": 1153
+        }
+      },
+      "inputs": [
+        "rent_in"
+      ]
+    },
+    "1_rent_in": {
+      "cul_scope_id": 1,
+      "name": "rent_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "rent_in"
+      ]
+    },
+    "1_employees_0_": {
+      "cul_scope_id": 1,
+      "name": "employees_0_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 42,
+          "column": 27,
+          "index": 1183
+        },
+        "end": {
+          "line": 42,
+          "column": 47,
+          "index": 1203
+        }
+      },
+      "inputs": [
+        "employees_0_in"
+      ]
+    },
+    "1_employees_0_in": {
+      "cul_scope_id": 1,
+      "name": "employees_0_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "employees_0_in"
+      ]
+    },
+    "1_new_employees_per_month_": {
+      "cul_scope_id": 1,
+      "name": "new_employees_per_month_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 39,
+          "index": 1245
+        },
+        "end": {
+          "line": 43,
+          "column": 71,
+          "index": 1277
+        }
+      },
+      "inputs": [
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_new_employees_per_month_in": {
+      "cul_scope_id": 1,
+      "name": "new_employees_per_month_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "new_employees_per_month_in"
+      ]
+    },
+    "1_salary_per_employee_": {
+      "cul_scope_id": 1,
+      "name": "salary_per_employee_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 35,
+          "index": 1315
+        },
+        "end": {
+          "line": 44,
+          "column": 63,
+          "index": 1343
+        }
+      },
+      "inputs": [
+        "salary_per_employee_in"
+      ]
+    },
+    "1_salary_per_employee_in": {
+      "cul_scope_id": 1,
+      "name": "salary_per_employee_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "salary_per_employee_in"
+      ]
+    },
+    "1_last_month_": {
+      "cul_scope_id": 1,
+      "name": "last_month_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 26,
+          "index": 1372
+        },
+        "end": {
+          "line": 45,
+          "column": 45,
+          "index": 1391
+        }
+      },
+      "inputs": [
+        "last_month_in"
+      ]
+    },
+    "1_last_month_in": {
+      "cul_scope_id": 1,
+      "name": "last_month_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "last_month_in"
+      ]
+    },
+    "1_npv_i_": {
+      "cul_scope_id": 1,
+      "name": "npv_i_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 21,
+          "index": 1415
+        },
+        "end": {
+          "line": 46,
+          "column": 35,
+          "index": 1429
+        }
+      },
+      "inputs": [
+        "npv_i_in"
+      ]
+    },
+    "1_npv_i_in": {
+      "cul_scope_id": 1,
+      "name": "npv_i_in",
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "npv_i_in"
@@ -292,32 +1312,98 @@
   },
   "cul_links": [
     {
-      "to": "0_mrr_cf",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
+      "to": "0_mrr_cf$",
+      "from": "1_mrr_cf_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_vc_cf$",
+      "from": "1_vc_cf_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_rent_cf$",
+      "from": "1_rent_cf_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_employees$",
+      "from": "1_employees_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_payroll_cf$",
+      "from": "1_payroll_cf_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_total_cf$",
+      "from": "1_total_cf_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_npv$",
+      "from": "1_npv_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_mrr$",
+      "from": "1_mrr_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_month$",
+      "from": "1_month_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_mrr_growth$",
+      "from": "1_mrr_growth_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_vc_1$",
+      "from": "1_vc_1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_vc_2$",
+      "from": "1_vc_2_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_rent$",
+      "from": "1_rent_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_employees_0$",
+      "from": "1_employees_0_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_new_employees_per_month$",
+      "from": "1_new_employees_per_month_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_salary_per_employee$",
+      "from": "1_salary_per_employee_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_last_month$",
+      "from": "1_last_month_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_npv_i$",
+      "from": "1_npv_i_",
+      "reason": "explicit import"
     },
     {
       "to": "0_mrr_cf",
-      "from": "0_mrr",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_mrr_cf",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_mrr_cf",
-      "from": "0_mrr_growth",
+      "from": "0_mrr_cf$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -325,31 +1411,7 @@
     },
     {
       "to": "0_vc_cf",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_vc_cf",
-      "from": "0_vc_1",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_vc_cf",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_vc_cf",
-      "from": "0_vc_2",
+      "from": "0_vc_cf$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -357,15 +1419,7 @@
     },
     {
       "to": "0_rent_cf",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_rent_cf",
-      "from": "0_rent",
+      "from": "0_rent_cf$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -373,48 +1427,7 @@
     },
     {
       "to": "0_employees",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_employees",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_employees",
-      "from": "0_employees_0",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_employees",
-      "from": "0_employees",
-      "reason": "call",
-      "negs": [
-        "month_in",
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_employees",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_employees",
-      "from": "0_new_employees_per_month",
+      "from": "0_employees$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -422,15 +1435,7 @@
     },
     {
       "to": "0_payroll_cf",
-      "from": "0_salary_per_employee",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_payroll_cf",
-      "from": "0_employees",
+      "from": "0_payroll_cf$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -438,31 +1443,7 @@
     },
     {
       "to": "0_total_cf",
-      "from": "0_mrr_cf",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_total_cf",
-      "from": "0_rent_cf",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_total_cf",
-      "from": "0_vc_cf",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_total_cf",
-      "from": "0_payroll_cf",
+      "from": "0_total_cf$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -470,57 +1451,7 @@
     },
     {
       "to": "0_npv",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_last_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_npv",
-      "reason": "call",
-      "negs": [
-        "month_in",
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_total_cf",
-      "reason": "call",
-      "negs": [
-        "month_in",
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_month",
-      "reason": "call",
-      "negs": [
-        "npv_i"
-      ]
-    },
-    {
-      "to": "0_npv",
-      "from": "0_npv_i",
+      "from": "0_npv$",
       "reason": "call",
       "negs": [
         "npv_i"
@@ -528,65 +1459,563 @@
     },
     {
       "to": "0_mrr",
-      "from": "0_mrr_in",
-      "reason": "input"
+      "from": "0_mrr$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_month",
-      "from": "0_month_in",
-      "reason": "input"
+      "from": "0_month$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_mrr_growth",
-      "from": "0_mrr_growth_in",
-      "reason": "input"
+      "from": "0_mrr_growth$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_vc_1",
-      "from": "0_vc_1_in",
-      "reason": "input"
+      "from": "0_vc_1$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_vc_2",
-      "from": "0_vc_2_in",
-      "reason": "input"
+      "from": "0_vc_2$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_rent",
-      "from": "0_rent_in",
-      "reason": "input"
+      "from": "0_rent$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_employees_0",
-      "from": "0_employees_0_in",
-      "reason": "input"
+      "from": "0_employees_0$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_new_employees_per_month",
-      "from": "0_new_employees_per_month_in",
-      "reason": "input"
+      "from": "0_new_employees_per_month$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_salary_per_employee",
-      "from": "0_salary_per_employee_in",
-      "reason": "input"
+      "from": "0_salary_per_employee$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_last_month",
-      "from": "0_last_month_in",
-      "reason": "input"
+      "from": "0_last_month$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
     },
     {
       "to": "0_npv_i",
-      "from": "0_npv_i_in",
+      "from": "0_npv_i$",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_mrr_cf",
+      "from": "0_mrr_cf",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_vc_cf",
+      "from": "0_vc_cf",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_rent_cf",
+      "from": "0_rent_cf",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_employees",
+      "from": "0_employees",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_payroll_cf",
+      "from": "0_payroll_cf",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_total_cf",
+      "from": "0_total_cf",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_npv",
+      "from": "0_npv",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_mrr",
+      "from": "0_mrr",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_month",
+      "from": "0_month",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_mrr_growth",
+      "from": "0_mrr_growth",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_vc_1",
+      "from": "0_vc_1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_vc_2",
+      "from": "0_vc_2",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_rent",
+      "from": "0_rent",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_employees_0",
+      "from": "0_employees_0",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_new_employees_per_month",
+      "from": "0_new_employees_per_month",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_salary_per_employee",
+      "from": "0_salary_per_employee",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_last_month",
+      "from": "0_last_month",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_npv_i",
+      "from": "0_npv_i",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_mrr_cf_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_mrr_cf_",
+      "from": "1_mrr",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_mrr_cf_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_mrr_cf_",
+      "from": "1_mrr_growth",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_vc_cf_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_vc_cf_",
+      "from": "1_vc_1",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_vc_cf_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_vc_cf_",
+      "from": "1_vc_2",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_rent_cf_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_rent_cf_",
+      "from": "1_rent",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_employees_0",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_employees",
+      "reason": "call",
+      "negs": [
+        "month_in",
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_employees_",
+      "from": "1_new_employees_per_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_payroll_cf_",
+      "from": "1_salary_per_employee",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_payroll_cf_",
+      "from": "1_employees",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_total_cf_",
+      "from": "1_mrr_cf",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_total_cf_",
+      "from": "1_rent_cf",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_total_cf_",
+      "from": "1_vc_cf",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_total_cf_",
+      "from": "1_payroll_cf",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_last_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_npv",
+      "reason": "call",
+      "negs": [
+        "month_in",
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_total_cf",
+      "reason": "call",
+      "negs": [
+        "month_in",
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_month",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_npv_",
+      "from": "1_npv_i",
+      "reason": "call",
+      "negs": [
+        "npv_i"
+      ]
+    },
+    {
+      "to": "1_mrr_",
+      "from": "1_mrr_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_month_",
+      "from": "1_month_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_mrr_growth_",
+      "from": "1_mrr_growth_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_vc_1_",
+      "from": "1_vc_1_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_vc_2_",
+      "from": "1_vc_2_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_rent_",
+      "from": "1_rent_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_employees_0_",
+      "from": "1_employees_0_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_new_employees_per_month_",
+      "from": "1_new_employees_per_month_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_salary_per_employee_",
+      "from": "1_salary_per_employee_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_last_month_",
+      "from": "1_last_month_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_npv_i_",
+      "from": "1_npv_i_in",
       "reason": "input"
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./simple-cfs.cul.js"
+    "0": "./simple-cfs.cul.js",
+    "1": "./simple-cfs.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
-  "import_sources_to_resource": {},
+  "import_sources_to_resource": {
+    "0_./simple-cfs.cul.js?+memoed": "./simple-cfs.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
   "cul_input_map": {
+    "0_mrr_cf$": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in"
+    ],
+    "0_vc_cf$": [
+      "month_in",
+      "vc_1_in",
+      "vc_2_in"
+    ],
+    "0_rent_cf$": [
+      "month_in",
+      "rent_in"
+    ],
+    "0_employees$": [
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "0_payroll_cf$": [
+      "salary_per_employee_in",
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "0_total_cf$": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "0_npv$": [
+      "month_in",
+      "last_month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in",
+      "npv_i_in"
+    ],
+    "0_mrr$": [
+      "mrr_in"
+    ],
+    "0_month$": [
+      "month_in"
+    ],
+    "0_mrr_growth$": [
+      "mrr_growth_in"
+    ],
+    "0_vc_1$": [
+      "vc_1_in"
+    ],
+    "0_vc_2$": [
+      "vc_2_in"
+    ],
+    "0_rent$": [
+      "rent_in"
+    ],
+    "0_employees_0$": [
+      "employees_0_in"
+    ],
+    "0_new_employees_per_month$": [
+      "new_employees_per_month_in"
+    ],
+    "0_salary_per_employee$": [
+      "salary_per_employee_in"
+    ],
+    "0_last_month$": [
+      "last_month_in"
+    ],
+    "0_npv_i$": [
+      "npv_i_in"
+    ],
     "0_mrr_cf": [
       "month_in",
       "mrr_in",
@@ -639,69 +2068,233 @@
     "0_mrr": [
       "mrr_in"
     ],
-    "0_mrr_in": [
-      "mrr_in"
-    ],
     "0_month": [
-      "month_in"
-    ],
-    "0_month_in": [
       "month_in"
     ],
     "0_mrr_growth": [
       "mrr_growth_in"
     ],
-    "0_mrr_growth_in": [
-      "mrr_growth_in"
-    ],
     "0_vc_1": [
-      "vc_1_in"
-    ],
-    "0_vc_1_in": [
       "vc_1_in"
     ],
     "0_vc_2": [
       "vc_2_in"
     ],
-    "0_vc_2_in": [
-      "vc_2_in"
-    ],
     "0_rent": [
-      "rent_in"
-    ],
-    "0_rent_in": [
       "rent_in"
     ],
     "0_employees_0": [
       "employees_0_in"
     ],
-    "0_employees_0_in": [
-      "employees_0_in"
-    ],
     "0_new_employees_per_month": [
-      "new_employees_per_month_in"
-    ],
-    "0_new_employees_per_month_in": [
       "new_employees_per_month_in"
     ],
     "0_salary_per_employee": [
       "salary_per_employee_in"
     ],
-    "0_salary_per_employee_in": [
-      "salary_per_employee_in"
-    ],
     "0_last_month": [
-      "last_month_in"
-    ],
-    "0_last_month_in": [
       "last_month_in"
     ],
     "0_npv_i": [
       "npv_i_in"
     ],
-    "0_npv_i_in": [
+    "1_mrr_cf": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in"
+    ],
+    "1_vc_cf": [
+      "month_in",
+      "vc_1_in",
+      "vc_2_in"
+    ],
+    "1_rent_cf": [
+      "month_in",
+      "rent_in"
+    ],
+    "1_employees": [
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_payroll_cf": [
+      "salary_per_employee_in",
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_total_cf": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_npv": [
+      "month_in",
+      "last_month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in",
+      "npv_i_in"
+    ],
+    "1_mrr": [
+      "mrr_in"
+    ],
+    "1_month": [
+      "month_in"
+    ],
+    "1_mrr_growth": [
+      "mrr_growth_in"
+    ],
+    "1_vc_1": [
+      "vc_1_in"
+    ],
+    "1_vc_2": [
+      "vc_2_in"
+    ],
+    "1_rent": [
+      "rent_in"
+    ],
+    "1_employees_0": [
+      "employees_0_in"
+    ],
+    "1_new_employees_per_month": [
+      "new_employees_per_month_in"
+    ],
+    "1_salary_per_employee": [
+      "salary_per_employee_in"
+    ],
+    "1_last_month": [
+      "last_month_in"
+    ],
+    "1_npv_i": [
+      "npv_i_in"
+    ],
+    "1_mrr_cf_": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in"
+    ],
+    "1_vc_cf_": [
+      "month_in",
+      "vc_1_in",
+      "vc_2_in"
+    ],
+    "1_rent_cf_": [
+      "month_in",
+      "rent_in"
+    ],
+    "1_employees_": [
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_payroll_cf_": [
+      "salary_per_employee_in",
+      "month_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_total_cf_": [
+      "month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in"
+    ],
+    "1_npv_": [
+      "month_in",
+      "last_month_in",
+      "mrr_in",
+      "mrr_growth_in",
+      "rent_in",
+      "vc_1_in",
+      "vc_2_in",
+      "salary_per_employee_in",
+      "employees_0_in",
+      "new_employees_per_month_in",
+      "npv_i_in"
+    ],
+    "1_mrr_": [
+      "mrr_in"
+    ],
+    "1_mrr_in": [
+      "mrr_in"
+    ],
+    "1_month_": [
+      "month_in"
+    ],
+    "1_month_in": [
+      "month_in"
+    ],
+    "1_mrr_growth_": [
+      "mrr_growth_in"
+    ],
+    "1_mrr_growth_in": [
+      "mrr_growth_in"
+    ],
+    "1_vc_1_": [
+      "vc_1_in"
+    ],
+    "1_vc_1_in": [
+      "vc_1_in"
+    ],
+    "1_vc_2_": [
+      "vc_2_in"
+    ],
+    "1_vc_2_in": [
+      "vc_2_in"
+    ],
+    "1_rent_": [
+      "rent_in"
+    ],
+    "1_rent_in": [
+      "rent_in"
+    ],
+    "1_employees_0_": [
+      "employees_0_in"
+    ],
+    "1_employees_0_in": [
+      "employees_0_in"
+    ],
+    "1_new_employees_per_month_": [
+      "new_employees_per_month_in"
+    ],
+    "1_new_employees_per_month_in": [
+      "new_employees_per_month_in"
+    ],
+    "1_salary_per_employee_": [
+      "salary_per_employee_in"
+    ],
+    "1_salary_per_employee_in": [
+      "salary_per_employee_in"
+    ],
+    "1_last_month_": [
+      "last_month_in"
+    ],
+    "1_last_month_in": [
+      "last_month_in"
+    ],
+    "1_npv_i_": [
+      "npv_i_in"
+    ],
+    "1_npv_i_in": [
       "npv_i_in"
     ]
   },
-  "dot": "digraph {\n  \"0_mrr_cf\" [cul_scope_id=0,name=mrr_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"0_mrr_cf inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"0_vc_cf\" [cul_scope_id=0,name=vc_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,vc_1_in,vc_2_in\",label=\"0_vc_cf inputs: month_in,vc_1_in,vc_2_in\"]\n  \"0_rent_cf\" [cul_scope_id=0,name=rent_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,rent_in\",label=\"0_rent_cf inputs: month_in,rent_in\"]\n  \"0_employees\" [cul_scope_id=0,name=employees,cul_source_scope_id=0,reason=definition,inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"0_employees inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_payroll_cf\" [cul_scope_id=0,name=payroll_cf,cul_source_scope_id=0,reason=definition,inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"0_payroll_cf inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_total_cf\" [cul_scope_id=0,name=total_cf,cul_source_scope_id=0,reason=definition,inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"0_total_cf inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_npv\" [cul_scope_id=0,name=npv,cul_source_scope_id=0,reason=definition,inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"0_npv inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"0_mrr\" [cul_scope_id=0,name=mrr,cul_source_scope_id=0,reason=definition,inputs=mrr_in,label=\"0_mrr inputs: mrr_in\"]\n  \"0_mrr_in\" [cul_scope_id=0,name=mrr_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_in,label=\"0_mrr_in inputs: mrr_in\"]\n  \"0_month\" [cul_scope_id=0,name=month,cul_source_scope_id=0,reason=definition,inputs=month_in,label=\"0_month inputs: month_in\"]\n  \"0_month_in\" [cul_scope_id=0,name=month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=month_in,label=\"0_month_in inputs: month_in\"]\n  \"0_mrr_growth\" [cul_scope_id=0,name=mrr_growth,cul_source_scope_id=0,reason=definition,inputs=mrr_growth_in,label=\"0_mrr_growth inputs: mrr_growth_in\"]\n  \"0_mrr_growth_in\" [cul_scope_id=0,name=mrr_growth_in,cul_source_scope_id=0,reason=\"input definition\",inputs=mrr_growth_in,label=\"0_mrr_growth_in inputs: mrr_growth_in\"]\n  \"0_vc_1\" [cul_scope_id=0,name=vc_1,cul_source_scope_id=0,reason=definition,inputs=vc_1_in,label=\"0_vc_1 inputs: vc_1_in\"]\n  \"0_vc_1_in\" [cul_scope_id=0,name=vc_1_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_1_in,label=\"0_vc_1_in inputs: vc_1_in\"]\n  \"0_vc_2\" [cul_scope_id=0,name=vc_2,cul_source_scope_id=0,reason=definition,inputs=vc_2_in,label=\"0_vc_2 inputs: vc_2_in\"]\n  \"0_vc_2_in\" [cul_scope_id=0,name=vc_2_in,cul_source_scope_id=0,reason=\"input definition\",inputs=vc_2_in,label=\"0_vc_2_in inputs: vc_2_in\"]\n  \"0_rent\" [cul_scope_id=0,name=rent,cul_source_scope_id=0,reason=definition,inputs=rent_in,label=\"0_rent inputs: rent_in\"]\n  \"0_rent_in\" [cul_scope_id=0,name=rent_in,cul_source_scope_id=0,reason=\"input definition\",inputs=rent_in,label=\"0_rent_in inputs: rent_in\"]\n  \"0_employees_0\" [cul_scope_id=0,name=employees_0,cul_source_scope_id=0,reason=definition,inputs=employees_0_in,label=\"0_employees_0 inputs: employees_0_in\"]\n  \"0_employees_0_in\" [cul_scope_id=0,name=employees_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=employees_0_in,label=\"0_employees_0_in inputs: employees_0_in\"]\n  \"0_new_employees_per_month\" [cul_scope_id=0,name=new_employees_per_month,cul_source_scope_id=0,reason=definition,inputs=new_employees_per_month_in,label=\"0_new_employees_per_month inputs: new_employees_per_month_in\"]\n  \"0_new_employees_per_month_in\" [cul_scope_id=0,name=new_employees_per_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=new_employees_per_month_in,label=\"0_new_employees_per_month_in inputs: new_employees_per_month_in\"]\n  \"0_salary_per_employee\" [cul_scope_id=0,name=salary_per_employee,cul_source_scope_id=0,reason=definition,inputs=salary_per_employee_in,label=\"0_salary_per_employee inputs: salary_per_employee_in\"]\n  \"0_salary_per_employee_in\" [cul_scope_id=0,name=salary_per_employee_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_per_employee_in,label=\"0_salary_per_employee_in inputs: salary_per_employee_in\"]\n  \"0_last_month\" [cul_scope_id=0,name=last_month,cul_source_scope_id=0,reason=definition,inputs=last_month_in,label=\"0_last_month inputs: last_month_in\"]\n  \"0_last_month_in\" [cul_scope_id=0,name=last_month_in,cul_source_scope_id=0,reason=\"input definition\",inputs=last_month_in,label=\"0_last_month_in inputs: last_month_in\"]\n  \"0_npv_i\" [cul_scope_id=0,name=npv_i,cul_source_scope_id=0,reason=definition,inputs=npv_i_in,label=\"0_npv_i inputs: npv_i_in\"]\n  \"0_npv_i_in\" [cul_scope_id=0,name=npv_i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=npv_i_in,label=\"0_npv_i_in inputs: npv_i_in\"]\n  \"0_month\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_growth\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_1\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_2\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees_0\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_new_employees_per_month\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_salary_per_employee\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_payroll_cf\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_last_month\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_npv\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_total_cf\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"0_npv_i\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_in\" -> \"0_mrr\" [value=\"[object Object]\",label=\"input +mrr_in\"]\n  \"0_month_in\" -> \"0_month\" [value=\"[object Object]\",label=\"input +month_in\"]\n  \"0_mrr_growth_in\" -> \"0_mrr_growth\" [value=\"[object Object]\",label=\"input +mrr_growth_in\"]\n  \"0_vc_1_in\" -> \"0_vc_1\" [value=\"[object Object]\",label=\"input +vc_1_in\"]\n  \"0_vc_2_in\" -> \"0_vc_2\" [value=\"[object Object]\",label=\"input +vc_2_in\"]\n  \"0_rent_in\" -> \"0_rent\" [value=\"[object Object]\",label=\"input +rent_in\"]\n  \"0_employees_0_in\" -> \"0_employees_0\" [value=\"[object Object]\",label=\"input +employees_0_in\"]\n  \"0_new_employees_per_month_in\" -> \"0_new_employees_per_month\" [value=\"[object Object]\",label=\"input +new_employees_per_month_in\"]\n  \"0_salary_per_employee_in\" -> \"0_salary_per_employee\" [value=\"[object Object]\",label=\"input +salary_per_employee_in\"]\n  \"0_last_month_in\" -> \"0_last_month\" [value=\"[object Object]\",label=\"input +last_month_in\"]\n  \"0_npv_i_in\" -> \"0_npv_i\" [value=\"[object Object]\",label=\"input +npv_i_in\"]\n}\n"
+  "dot": "digraph {\n  \"0_mrr_cf$\" [cul_scope_id=0,name=\"mrr_cf$\",imported=mrr_cf_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"0_mrr_cf$ inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"0_vc_cf$\" [cul_scope_id=0,name=\"vc_cf$\",imported=vc_cf_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,vc_1_in,vc_2_in\",label=\"0_vc_cf$ inputs: month_in,vc_1_in,vc_2_in\"]\n  \"0_rent_cf$\" [cul_scope_id=0,name=\"rent_cf$\",imported=rent_cf_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,rent_in\",label=\"0_rent_cf$ inputs: month_in,rent_in\"]\n  \"0_employees$\" [cul_scope_id=0,name=\"employees$\",imported=employees_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"0_employees$ inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_payroll_cf$\" [cul_scope_id=0,name=\"payroll_cf$\",imported=payroll_cf_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"0_payroll_cf$ inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_total_cf$\" [cul_scope_id=0,name=\"total_cf$\",imported=total_cf_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"0_total_cf$ inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_npv$\" [cul_scope_id=0,name=\"npv$\",imported=npv_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"0_npv$ inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"0_mrr$\" [cul_scope_id=0,name=\"mrr$\",imported=mrr_,cul_source_scope_id=1,reason=\"explicit import\",inputs=mrr_in,label=\"0_mrr$ inputs: mrr_in\"]\n  \"0_month$\" [cul_scope_id=0,name=\"month$\",imported=month_,cul_source_scope_id=1,reason=\"explicit import\",inputs=month_in,label=\"0_month$ inputs: month_in\"]\n  \"0_mrr_growth$\" [cul_scope_id=0,name=\"mrr_growth$\",imported=mrr_growth_,cul_source_scope_id=1,reason=\"explicit import\",inputs=mrr_growth_in,label=\"0_mrr_growth$ inputs: mrr_growth_in\"]\n  \"0_vc_1$\" [cul_scope_id=0,name=\"vc_1$\",imported=vc_1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=vc_1_in,label=\"0_vc_1$ inputs: vc_1_in\"]\n  \"0_vc_2$\" [cul_scope_id=0,name=\"vc_2$\",imported=vc_2_,cul_source_scope_id=1,reason=\"explicit import\",inputs=vc_2_in,label=\"0_vc_2$ inputs: vc_2_in\"]\n  \"0_rent$\" [cul_scope_id=0,name=\"rent$\",imported=rent_,cul_source_scope_id=1,reason=\"explicit import\",inputs=rent_in,label=\"0_rent$ inputs: rent_in\"]\n  \"0_employees_0$\" [cul_scope_id=0,name=\"employees_0$\",imported=employees_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=employees_0_in,label=\"0_employees_0$ inputs: employees_0_in\"]\n  \"0_new_employees_per_month$\" [cul_scope_id=0,name=\"new_employees_per_month$\",imported=new_employees_per_month_,cul_source_scope_id=1,reason=\"explicit import\",inputs=new_employees_per_month_in,label=\"0_new_employees_per_month$ inputs: new_employees_per_month_in\"]\n  \"0_salary_per_employee$\" [cul_scope_id=0,name=\"salary_per_employee$\",imported=salary_per_employee_,cul_source_scope_id=1,reason=\"explicit import\",inputs=salary_per_employee_in,label=\"0_salary_per_employee$ inputs: salary_per_employee_in\"]\n  \"0_last_month$\" [cul_scope_id=0,name=\"last_month$\",imported=last_month_,cul_source_scope_id=1,reason=\"explicit import\",inputs=last_month_in,label=\"0_last_month$ inputs: last_month_in\"]\n  \"0_npv_i$\" [cul_scope_id=0,name=\"npv_i$\",imported=npv_i_,cul_source_scope_id=1,reason=\"explicit import\",inputs=npv_i_in,label=\"0_npv_i$ inputs: npv_i_in\"]\n  \"0_mrr_cf\" [cul_scope_id=0,name=mrr_cf,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"0_mrr_cf inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"0_vc_cf\" [cul_scope_id=0,name=vc_cf,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,vc_1_in,vc_2_in\",label=\"0_vc_cf inputs: month_in,vc_1_in,vc_2_in\"]\n  \"0_rent_cf\" [cul_scope_id=0,name=rent_cf,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,rent_in\",label=\"0_rent_cf inputs: month_in,rent_in\"]\n  \"0_employees\" [cul_scope_id=0,name=employees,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"0_employees inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_payroll_cf\" [cul_scope_id=0,name=payroll_cf,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"0_payroll_cf inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_total_cf\" [cul_scope_id=0,name=total_cf,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"0_total_cf inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"0_npv\" [cul_scope_id=0,name=npv,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"0_npv inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"0_mrr\" [cul_scope_id=0,name=mrr,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=mrr_in,label=\"0_mrr inputs: mrr_in\"]\n  \"0_month\" [cul_scope_id=0,name=month,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=month_in,label=\"0_month inputs: month_in\"]\n  \"0_mrr_growth\" [cul_scope_id=0,name=mrr_growth,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=mrr_growth_in,label=\"0_mrr_growth inputs: mrr_growth_in\"]\n  \"0_vc_1\" [cul_scope_id=0,name=vc_1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=vc_1_in,label=\"0_vc_1 inputs: vc_1_in\"]\n  \"0_vc_2\" [cul_scope_id=0,name=vc_2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=vc_2_in,label=\"0_vc_2 inputs: vc_2_in\"]\n  \"0_rent\" [cul_scope_id=0,name=rent,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=rent_in,label=\"0_rent inputs: rent_in\"]\n  \"0_employees_0\" [cul_scope_id=0,name=employees_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=employees_0_in,label=\"0_employees_0 inputs: employees_0_in\"]\n  \"0_new_employees_per_month\" [cul_scope_id=0,name=new_employees_per_month,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=new_employees_per_month_in,label=\"0_new_employees_per_month inputs: new_employees_per_month_in\"]\n  \"0_salary_per_employee\" [cul_scope_id=0,name=salary_per_employee,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=salary_per_employee_in,label=\"0_salary_per_employee inputs: salary_per_employee_in\"]\n  \"0_last_month\" [cul_scope_id=0,name=last_month,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=last_month_in,label=\"0_last_month inputs: last_month_in\"]\n  \"0_npv_i\" [cul_scope_id=0,name=npv_i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=npv_i_in,label=\"0_npv_i inputs: npv_i_in\"]\n  \"1_mrr_cf\" [cul_scope_id=1,name=mrr_cf,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"1_mrr_cf inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"1_vc_cf\" [cul_scope_id=1,name=vc_cf,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,vc_1_in,vc_2_in\",label=\"1_vc_cf inputs: month_in,vc_1_in,vc_2_in\"]\n  \"1_rent_cf\" [cul_scope_id=1,name=rent_cf,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,rent_in\",label=\"1_rent_cf inputs: month_in,rent_in\"]\n  \"1_employees\" [cul_scope_id=1,name=employees,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"1_employees inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_payroll_cf\" [cul_scope_id=1,name=payroll_cf,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"1_payroll_cf inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_total_cf\" [cul_scope_id=1,name=total_cf,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"1_total_cf inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_npv\" [cul_scope_id=1,name=npv,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"1_npv inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"1_mrr\" [cul_scope_id=1,name=mrr,cul_source_scope_id=0,reason=\"implicit import\",inputs=mrr_in,label=\"1_mrr inputs: mrr_in\"]\n  \"1_month\" [cul_scope_id=1,name=month,cul_source_scope_id=0,reason=\"implicit import\",inputs=month_in,label=\"1_month inputs: month_in\"]\n  \"1_mrr_growth\" [cul_scope_id=1,name=mrr_growth,cul_source_scope_id=0,reason=\"implicit import\",inputs=mrr_growth_in,label=\"1_mrr_growth inputs: mrr_growth_in\"]\n  \"1_vc_1\" [cul_scope_id=1,name=vc_1,cul_source_scope_id=0,reason=\"implicit import\",inputs=vc_1_in,label=\"1_vc_1 inputs: vc_1_in\"]\n  \"1_vc_2\" [cul_scope_id=1,name=vc_2,cul_source_scope_id=0,reason=\"implicit import\",inputs=vc_2_in,label=\"1_vc_2 inputs: vc_2_in\"]\n  \"1_rent\" [cul_scope_id=1,name=rent,cul_source_scope_id=0,reason=\"implicit import\",inputs=rent_in,label=\"1_rent inputs: rent_in\"]\n  \"1_employees_0\" [cul_scope_id=1,name=employees_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=employees_0_in,label=\"1_employees_0 inputs: employees_0_in\"]\n  \"1_new_employees_per_month\" [cul_scope_id=1,name=new_employees_per_month,cul_source_scope_id=0,reason=\"implicit import\",inputs=new_employees_per_month_in,label=\"1_new_employees_per_month inputs: new_employees_per_month_in\"]\n  \"1_salary_per_employee\" [cul_scope_id=1,name=salary_per_employee,cul_source_scope_id=0,reason=\"implicit import\",inputs=salary_per_employee_in,label=\"1_salary_per_employee inputs: salary_per_employee_in\"]\n  \"1_last_month\" [cul_scope_id=1,name=last_month,cul_source_scope_id=0,reason=\"implicit import\",inputs=last_month_in,label=\"1_last_month inputs: last_month_in\"]\n  \"1_npv_i\" [cul_scope_id=1,name=npv_i,cul_source_scope_id=0,reason=\"implicit import\",inputs=npv_i_in,label=\"1_npv_i inputs: npv_i_in\"]\n  \"1_mrr_cf_\" [cul_scope_id=1,name=mrr_cf_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,mrr_in,mrr_growth_in\",label=\"1_mrr_cf_ inputs: month_in,mrr_in,mrr_growth_in\"]\n  \"1_vc_cf_\" [cul_scope_id=1,name=vc_cf_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,vc_1_in,vc_2_in\",label=\"1_vc_cf_ inputs: month_in,vc_1_in,vc_2_in\"]\n  \"1_rent_cf_\" [cul_scope_id=1,name=rent_cf_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,rent_in\",label=\"1_rent_cf_ inputs: month_in,rent_in\"]\n  \"1_employees_\" [cul_scope_id=1,name=employees_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,employees_0_in,new_employees_per_month_in\",label=\"1_employees_ inputs: month_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_payroll_cf_\" [cul_scope_id=1,name=payroll_cf_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\",label=\"1_payroll_cf_ inputs: salary_per_employee_in,month_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_total_cf_\" [cul_scope_id=1,name=total_cf_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\",label=\"1_total_cf_ inputs: month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in\"]\n  \"1_npv_\" [cul_scope_id=1,name=npv_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\",label=\"1_npv_ inputs: month_in,last_month_in,mrr_in,mrr_growth_in,rent_in,vc_1_in,vc_2_in,salary_per_employee_in,employees_0_in,new_employees_per_month_in,npv_i_in\"]\n  \"1_mrr_\" [cul_scope_id=1,name=mrr_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=mrr_in,label=\"1_mrr_ inputs: mrr_in\"]\n  \"1_mrr_in\" [cul_scope_id=1,name=mrr_in,cul_source_scope_id=1,reason=\"input definition\",inputs=mrr_in,label=\"1_mrr_in inputs: mrr_in\"]\n  \"1_month_\" [cul_scope_id=1,name=month_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=month_in,label=\"1_month_ inputs: month_in\"]\n  \"1_month_in\" [cul_scope_id=1,name=month_in,cul_source_scope_id=1,reason=\"input definition\",inputs=month_in,label=\"1_month_in inputs: month_in\"]\n  \"1_mrr_growth_\" [cul_scope_id=1,name=mrr_growth_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=mrr_growth_in,label=\"1_mrr_growth_ inputs: mrr_growth_in\"]\n  \"1_mrr_growth_in\" [cul_scope_id=1,name=mrr_growth_in,cul_source_scope_id=1,reason=\"input definition\",inputs=mrr_growth_in,label=\"1_mrr_growth_in inputs: mrr_growth_in\"]\n  \"1_vc_1_\" [cul_scope_id=1,name=vc_1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=vc_1_in,label=\"1_vc_1_ inputs: vc_1_in\"]\n  \"1_vc_1_in\" [cul_scope_id=1,name=vc_1_in,cul_source_scope_id=1,reason=\"input definition\",inputs=vc_1_in,label=\"1_vc_1_in inputs: vc_1_in\"]\n  \"1_vc_2_\" [cul_scope_id=1,name=vc_2_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=vc_2_in,label=\"1_vc_2_ inputs: vc_2_in\"]\n  \"1_vc_2_in\" [cul_scope_id=1,name=vc_2_in,cul_source_scope_id=1,reason=\"input definition\",inputs=vc_2_in,label=\"1_vc_2_in inputs: vc_2_in\"]\n  \"1_rent_\" [cul_scope_id=1,name=rent_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=rent_in,label=\"1_rent_ inputs: rent_in\"]\n  \"1_rent_in\" [cul_scope_id=1,name=rent_in,cul_source_scope_id=1,reason=\"input definition\",inputs=rent_in,label=\"1_rent_in inputs: rent_in\"]\n  \"1_employees_0_\" [cul_scope_id=1,name=employees_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=employees_0_in,label=\"1_employees_0_ inputs: employees_0_in\"]\n  \"1_employees_0_in\" [cul_scope_id=1,name=employees_0_in,cul_source_scope_id=1,reason=\"input definition\",inputs=employees_0_in,label=\"1_employees_0_in inputs: employees_0_in\"]\n  \"1_new_employees_per_month_\" [cul_scope_id=1,name=new_employees_per_month_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=new_employees_per_month_in,label=\"1_new_employees_per_month_ inputs: new_employees_per_month_in\"]\n  \"1_new_employees_per_month_in\" [cul_scope_id=1,name=new_employees_per_month_in,cul_source_scope_id=1,reason=\"input definition\",inputs=new_employees_per_month_in,label=\"1_new_employees_per_month_in inputs: new_employees_per_month_in\"]\n  \"1_salary_per_employee_\" [cul_scope_id=1,name=salary_per_employee_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=salary_per_employee_in,label=\"1_salary_per_employee_ inputs: salary_per_employee_in\"]\n  \"1_salary_per_employee_in\" [cul_scope_id=1,name=salary_per_employee_in,cul_source_scope_id=1,reason=\"input definition\",inputs=salary_per_employee_in,label=\"1_salary_per_employee_in inputs: salary_per_employee_in\"]\n  \"1_last_month_\" [cul_scope_id=1,name=last_month_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=last_month_in,label=\"1_last_month_ inputs: last_month_in\"]\n  \"1_last_month_in\" [cul_scope_id=1,name=last_month_in,cul_source_scope_id=1,reason=\"input definition\",inputs=last_month_in,label=\"1_last_month_in inputs: last_month_in\"]\n  \"1_npv_i_\" [cul_scope_id=1,name=npv_i_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=npv_i_in,label=\"1_npv_i_ inputs: npv_i_in\"]\n  \"1_npv_i_in\" [cul_scope_id=1,name=npv_i_in,cul_source_scope_id=1,reason=\"input definition\",inputs=npv_i_in,label=\"1_npv_i_in inputs: npv_i_in\"]\n  \"1_mrr_cf_\" -> \"0_mrr_cf$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_vc_cf_\" -> \"0_vc_cf$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_rent_cf_\" -> \"0_rent_cf$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_employees_\" -> \"0_employees$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_payroll_cf_\" -> \"0_payroll_cf$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_total_cf_\" -> \"0_total_cf$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_npv_\" -> \"0_npv$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_mrr_\" -> \"0_mrr$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_month_\" -> \"0_month$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_mrr_growth_\" -> \"0_mrr_growth$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_vc_1_\" -> \"0_vc_1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_vc_2_\" -> \"0_vc_2$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_rent_\" -> \"0_rent$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_employees_0_\" -> \"0_employees_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_new_employees_per_month_\" -> \"0_new_employees_per_month$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_salary_per_employee_\" -> \"0_salary_per_employee$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_last_month_\" -> \"0_last_month$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_npv_i_\" -> \"0_npv_i$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_mrr_cf$\" -> \"0_mrr_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_cf$\" -> \"0_vc_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent_cf$\" -> \"0_rent_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees$\" -> \"0_employees\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_payroll_cf$\" -> \"0_payroll_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_total_cf$\" -> \"0_total_cf\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_npv$\" -> \"0_npv\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr$\" -> \"0_mrr\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_month$\" -> \"0_month\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_growth$\" -> \"0_mrr_growth\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_1$\" -> \"0_vc_1\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_vc_2$\" -> \"0_vc_2\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_rent$\" -> \"0_rent\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_employees_0$\" -> \"0_employees_0\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_new_employees_per_month$\" -> \"0_new_employees_per_month\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_salary_per_employee$\" -> \"0_salary_per_employee\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_last_month$\" -> \"0_last_month\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_npv_i$\" -> \"0_npv_i\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"0_mrr_cf\" -> \"1_mrr_cf\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_vc_cf\" -> \"1_vc_cf\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_rent_cf\" -> \"1_rent_cf\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_employees\" -> \"1_employees\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_payroll_cf\" -> \"1_payroll_cf\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_total_cf\" -> \"1_total_cf\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_npv\" -> \"1_npv\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_mrr\" -> \"1_mrr\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_month\" -> \"1_month\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_mrr_growth\" -> \"1_mrr_growth\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_vc_1\" -> \"1_vc_1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_vc_2\" -> \"1_vc_2\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_rent\" -> \"1_rent\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_employees_0\" -> \"1_employees_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_new_employees_per_month\" -> \"1_new_employees_per_month\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary_per_employee\" -> \"1_salary_per_employee\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_last_month\" -> \"1_last_month\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_npv_i\" -> \"1_npv_i\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_month\" -> \"1_mrr_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_mrr\" -> \"1_mrr_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_mrr_growth\" -> \"1_mrr_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_month\" -> \"1_vc_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_vc_1\" -> \"1_vc_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_vc_2\" -> \"1_vc_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_month\" -> \"1_rent_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_rent\" -> \"1_rent_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_month\" -> \"1_employees_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_employees_0\" -> \"1_employees_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_employees\" -> \"1_employees_\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"1_new_employees_per_month\" -> \"1_employees_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_salary_per_employee\" -> \"1_payroll_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_employees\" -> \"1_payroll_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_mrr_cf\" -> \"1_total_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_rent_cf\" -> \"1_total_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_vc_cf\" -> \"1_total_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_payroll_cf\" -> \"1_total_cf_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_month\" -> \"1_npv_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_last_month\" -> \"1_npv_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_npv\" -> \"1_npv_\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"1_total_cf\" -> \"1_npv_\" [value=\"[object Object]\",label=\"call -month_in,npv_i\"]\n  \"1_npv_i\" -> \"1_npv_\" [value=\"[object Object]\",label=\"call -npv_i\"]\n  \"1_mrr_in\" -> \"1_mrr_\" [value=\"[object Object]\",label=\"input +mrr_in\"]\n  \"1_month_in\" -> \"1_month_\" [value=\"[object Object]\",label=\"input +month_in\"]\n  \"1_mrr_growth_in\" -> \"1_mrr_growth_\" [value=\"[object Object]\",label=\"input +mrr_growth_in\"]\n  \"1_vc_1_in\" -> \"1_vc_1_\" [value=\"[object Object]\",label=\"input +vc_1_in\"]\n  \"1_vc_2_in\" -> \"1_vc_2_\" [value=\"[object Object]\",label=\"input +vc_2_in\"]\n  \"1_rent_in\" -> \"1_rent_\" [value=\"[object Object]\",label=\"input +rent_in\"]\n  \"1_employees_0_in\" -> \"1_employees_0_\" [value=\"[object Object]\",label=\"input +employees_0_in\"]\n  \"1_new_employees_per_month_in\" -> \"1_new_employees_per_month_\" [value=\"[object Object]\",label=\"input +new_employees_per_month_in\"]\n  \"1_salary_per_employee_in\" -> \"1_salary_per_employee_\" [value=\"[object Object]\",label=\"input +salary_per_employee_in\"]\n  \"1_last_month_in\" -> \"1_last_month_\" [value=\"[object Object]\",label=\"input +last_month_in\"]\n  \"1_npv_i_in\" -> \"1_npv_i_\" [value=\"[object Object]\",label=\"input +npv_i_in\"]\n}\n"
 }
