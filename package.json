@@ -14,6 +14,7 @@
     "build:payroll": "cul-js compile ./models/payroll-playground/payroll.cul.js",
     "build:saas-ea": "cul-js compile ./models/saas-ea/rec.cul.js",
     "build:cashflows": "cul-js compile --memo ./models/cashflows/simple-cfs.cul.js",
+    "build:cashflows-nomemo": "cul-js compile ./models/cashflows/simple-cfs-nomemo.cul.js",
     "use:fern": "node ./models/fern/use-fern.js",
     "write:fern": "node ./models/fern/use-fern.js > ./models/fern/fern.out.txt",
     "build:fern": "cul-js compile --memo ./models/fern/fern.cul.js",
