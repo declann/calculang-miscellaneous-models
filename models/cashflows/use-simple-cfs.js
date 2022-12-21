@@ -30,3 +30,5 @@ console.log(
     cfs.total_cf({ mrr_in, month_in, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in })
   ))
 )
+
+console.log(cfs.npv({ mrr_in, month_in:-1, mrr_growth_in, rent_in, vc_1_in, vc_2_in, salary_per_employee_in, employees_0_in, new_employees_per_month_in, npv_i_in:0.1, last_month_in:11 }))
