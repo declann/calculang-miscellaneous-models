@@ -9,6 +9,9 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:triple": "cul-js compile --memo ./models/exponential-growth/triple.cul.js",
+    "use:triple": "node ./models/exponential-growth/use-triple.js",
+
     "build:suncalc-seek-sunsets": "cul-js compile --memo ./models/heavens/suncalc-seek-sunsets.cul.js",
     "build:suncalc": "cul-js compile ./models/heavens/suncalc.cul.js",
     "build:payroll": "cul-js compile ./models/payroll-playground/payroll.cul.js",

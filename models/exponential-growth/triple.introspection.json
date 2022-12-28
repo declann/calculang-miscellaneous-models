@@ -1,0 +1,351 @@
+{
+  "cul_functions": {
+    "0_v0$": {
+      "cul_scope_id": 0,
+      "name": "v0$",
+      "imported": "v0_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "v0_in"
+      ]
+    },
+    "0_t$": {
+      "cul_scope_id": 0,
+      "name": "t$",
+      "imported": "t_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "0_v$": {
+      "cul_scope_id": 0,
+      "name": "v$",
+      "imported": "v_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in",
+        "v0_in"
+      ]
+    },
+    "0_v0": {
+      "cul_scope_id": 0,
+      "name": "v0",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 18,
+          "index": 638
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 770
+        }
+      },
+      "inputs": [
+        "v0_in"
+      ]
+    },
+    "0_t": {
+      "cul_scope_id": 0,
+      "name": "t",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 17,
+          "index": 977
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1107
+        }
+      },
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "0_v": {
+      "cul_scope_id": 0,
+      "name": "v",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 17,
+          "index": 1313
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1443
+        }
+      },
+      "inputs": [
+        "t_in",
+        "v0_in"
+      ]
+    },
+    "1_v0": {
+      "cul_scope_id": 1,
+      "name": "v0",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "v0_in"
+      ]
+    },
+    "1_t": {
+      "cul_scope_id": 1,
+      "name": "t",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_v": {
+      "cul_scope_id": 1,
+      "name": "v",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in",
+        "v0_in"
+      ]
+    },
+    "1_v0_": {
+      "cul_scope_id": 1,
+      "name": "v0_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 18,
+          "index": 20
+        },
+        "end": {
+          "line": 2,
+          "column": 31,
+          "index": 33
+        }
+      },
+      "inputs": [
+        "v0_in"
+      ]
+    },
+    "1_v0_in": {
+      "cul_scope_id": 1,
+      "name": "v0_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "v0_in"
+      ]
+    },
+    "1_t_": {
+      "cul_scope_id": 1,
+      "name": "t_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 17,
+          "index": 71
+        },
+        "end": {
+          "line": 3,
+          "column": 29,
+          "index": 83
+        }
+      },
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_t_in": {
+      "cul_scope_id": 1,
+      "name": "t_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_v_": {
+      "cul_scope_id": 1,
+      "name": "v_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 17,
+          "index": 105
+        },
+        "end": {
+          "line": 8,
+          "column": 1,
+          "index": 186
+        }
+      },
+      "inputs": [
+        "t_in",
+        "v0_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_v0$",
+      "from": "1_v0_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_t$",
+      "from": "1_t_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_v$",
+      "from": "1_v_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_v0",
+      "from": "0_v0$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_t",
+      "from": "0_t$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_v",
+      "from": "0_v$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_v0",
+      "from": "0_v0",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_t",
+      "from": "0_t",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_v",
+      "from": "0_v",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_v0_",
+      "from": "1_v0_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_t_",
+      "from": "1_t_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_v_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_v_",
+      "from": "1_v0",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_v_",
+      "from": "1_v",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_v_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./triple.cul.js",
+    "1": "./triple.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./triple.cul.js?+memoed": "./triple.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_v0$": [
+      "v0_in"
+    ],
+    "0_t$": [
+      "t_in"
+    ],
+    "0_v$": [
+      "t_in",
+      "v0_in"
+    ],
+    "0_v0": [
+      "v0_in"
+    ],
+    "0_t": [
+      "t_in"
+    ],
+    "0_v": [
+      "t_in",
+      "v0_in"
+    ],
+    "1_v0": [
+      "v0_in"
+    ],
+    "1_t": [
+      "t_in"
+    ],
+    "1_v": [
+      "t_in",
+      "v0_in"
+    ],
+    "1_v0_": [
+      "v0_in"
+    ],
+    "1_v0_in": [
+      "v0_in"
+    ],
+    "1_t_": [
+      "t_in"
+    ],
+    "1_t_in": [
+      "t_in"
+    ],
+    "1_v_": [
+      "t_in",
+      "v0_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_v0$\" [cul_scope_id=0,name=\"v0$\",imported=v0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=v0_in,label=\"0_v0$ inputs: v0_in\"]\n  \"0_t$\" [cul_scope_id=0,name=\"t$\",imported=t_,cul_source_scope_id=1,reason=\"explicit import\",inputs=t_in,label=\"0_t$ inputs: t_in\"]\n  \"0_v$\" [cul_scope_id=0,name=\"v$\",imported=v_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"t_in,v0_in\",label=\"0_v$ inputs: t_in,v0_in\"]\n  \"0_v0\" [cul_scope_id=0,name=v0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=v0_in,label=\"0_v0 inputs: v0_in\"]\n  \"0_t\" [cul_scope_id=0,name=t,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=t_in,label=\"0_t inputs: t_in\"]\n  \"0_v\" [cul_scope_id=0,name=v,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"t_in,v0_in\",label=\"0_v inputs: t_in,v0_in\"]\n  \"1_v0\" [cul_scope_id=1,name=v0,cul_source_scope_id=0,reason=\"implicit import\",inputs=v0_in,label=\"1_v0 inputs: v0_in\"]\n  \"1_t\" [cul_scope_id=1,name=t,cul_source_scope_id=0,reason=\"implicit import\",inputs=t_in,label=\"1_t inputs: t_in\"]\n  \"1_v\" [cul_scope_id=1,name=v,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"t_in,v0_in\",label=\"1_v inputs: t_in,v0_in\"]\n  \"1_v0_\" [cul_scope_id=1,name=v0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=v0_in,label=\"1_v0_ inputs: v0_in\"]\n  \"1_v0_in\" [cul_scope_id=1,name=v0_in,cul_source_scope_id=1,reason=\"input definition\",inputs=v0_in,label=\"1_v0_in inputs: v0_in\"]\n  \"1_t_\" [cul_scope_id=1,name=t_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=t_in,label=\"1_t_ inputs: t_in\"]\n  \"1_t_in\" [cul_scope_id=1,name=t_in,cul_source_scope_id=1,reason=\"input definition\",inputs=t_in,label=\"1_t_in inputs: t_in\"]\n  \"1_v_\" [cul_scope_id=1,name=v_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"t_in,v0_in\",label=\"1_v_ inputs: t_in,v0_in\"]\n  \"1_v0_\" -> \"0_v0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_t_\" -> \"0_t$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_v_\" -> \"0_v$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_v0$\" -> \"0_v0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_t$\" -> \"0_t\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_v$\" -> \"0_v\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_v0\" -> \"1_v0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_t\" -> \"1_t\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_v\" -> \"1_v\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_v0_in\" -> \"1_v0_\" [value=\"[object Object]\",label=\"input +v0_in\"]\n  \"1_t_in\" -> \"1_t_\" [value=\"[object Object]\",label=\"input +t_in\"]\n  \"1_t\" -> \"1_v_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_v0\" -> \"1_v_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_v\" -> \"1_v_\" [value=\"[object Object]\",label=\"call -t_in\"]\n}\n"
+}
