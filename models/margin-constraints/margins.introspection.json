@@ -1,0 +1,1212 @@
+{
+  "cul_functions": {
+    "0_num_bars$": {
+      "cul_scope_id": 0,
+      "name": "num_bars$",
+      "imported": "num_bars_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "num_bars_in"
+      ]
+    },
+    "0_container_height$": {
+      "cul_scope_id": 0,
+      "name": "container_height$",
+      "imported": "container_height_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_top_margin$": {
+      "cul_scope_id": 0,
+      "name": "top_margin$",
+      "imported": "top_margin_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "top_margin$_in",
+        "container_height$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_bottom_margin$": {
+      "cul_scope_id": 0,
+      "name": "bottom_margin$",
+      "imported": "bottom_margin_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "bottom_margin$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_gap$": {
+      "cul_scope_id": 0,
+      "name": "gap$",
+      "imported": "gap_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "gap$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_bar_height$": {
+      "cul_scope_id": 0,
+      "name": "bar_height$",
+      "imported": "bar_height_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "bar_height$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in"
+      ]
+    },
+    "0_num_bars": {
+      "cul_scope_id": 0,
+      "name": "num_bars",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 24,
+          "index": 811
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 955
+        }
+      },
+      "inputs": [
+        "num_bars_in"
+      ]
+    },
+    "0_container_height": {
+      "cul_scope_id": 0,
+      "name": "container_height",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 32,
+          "index": 1258
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1418
+        }
+      },
+      "inputs": [
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_top_margin": {
+      "cul_scope_id": 0,
+      "name": "top_margin",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 26,
+          "index": 1693
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1841
+        }
+      },
+      "inputs": [
+        "top_margin$_in",
+        "container_height$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_bottom_margin": {
+      "cul_scope_id": 0,
+      "name": "bottom_margin",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 29,
+          "index": 2128
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 2282
+        }
+      },
+      "inputs": [
+        "bottom_margin$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_gap": {
+      "cul_scope_id": 0,
+      "name": "gap",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 19,
+          "index": 2512
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2646
+        }
+      },
+      "inputs": [
+        "gap$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "bar_height$_in"
+      ]
+    },
+    "0_bar_height": {
+      "cul_scope_id": 0,
+      "name": "bar_height",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 26,
+          "index": 2908
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 3056
+        }
+      },
+      "inputs": [
+        "bar_height$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in"
+      ]
+    },
+    "1_num_bars": {
+      "cul_scope_id": 1,
+      "name": "num_bars",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "num_bars_in"
+      ]
+    },
+    "1_container_height": {
+      "cul_scope_id": 1,
+      "name": "container_height",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_top_margin": {
+      "cul_scope_id": 1,
+      "name": "top_margin",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "top_margin$_in",
+        "container_height$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_bottom_margin": {
+      "cul_scope_id": 1,
+      "name": "bottom_margin",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "bottom_margin$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_gap": {
+      "cul_scope_id": 1,
+      "name": "gap",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "gap$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_bar_height": {
+      "cul_scope_id": 1,
+      "name": "bar_height",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "bar_height$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in"
+      ]
+    },
+    "1_top_margin$": {
+      "cul_scope_id": 1,
+      "name": "top_margin$",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 27,
+          "index": 130
+        },
+        "end": {
+          "line": 4,
+          "column": 47,
+          "index": 150
+        }
+      },
+      "inputs": [
+        "top_margin$_in"
+      ]
+    },
+    "1_top_margin$_in": {
+      "cul_scope_id": 1,
+      "name": "top_margin$_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "top_margin$_in"
+      ]
+    },
+    "1_bottom_margin$": {
+      "cul_scope_id": 1,
+      "name": "bottom_margin$",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 5,
+          "column": 30,
+          "index": 183
+        },
+        "end": {
+          "line": 5,
+          "column": 53,
+          "index": 206
+        }
+      },
+      "inputs": [
+        "bottom_margin$_in"
+      ]
+    },
+    "1_bottom_margin$_in": {
+      "cul_scope_id": 1,
+      "name": "bottom_margin$_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "bottom_margin$_in"
+      ]
+    },
+    "1_num_bars_": {
+      "cul_scope_id": 1,
+      "name": "num_bars_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 24,
+          "index": 233
+        },
+        "end": {
+          "line": 6,
+          "column": 41,
+          "index": 250
+        }
+      },
+      "inputs": [
+        "num_bars_in"
+      ]
+    },
+    "1_num_bars_in": {
+      "cul_scope_id": 1,
+      "name": "num_bars_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "num_bars_in"
+      ]
+    },
+    "1_gap$": {
+      "cul_scope_id": 1,
+      "name": "gap$",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 20,
+          "index": 326
+        },
+        "end": {
+          "line": 7,
+          "column": 33,
+          "index": 339
+        }
+      },
+      "inputs": [
+        "gap$_in"
+      ]
+    },
+    "1_gap$_in": {
+      "cul_scope_id": 1,
+      "name": "gap$_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "gap$_in"
+      ]
+    },
+    "1_bar_height$": {
+      "cul_scope_id": 1,
+      "name": "bar_height$",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 27,
+          "index": 369
+        },
+        "end": {
+          "line": 8,
+          "column": 47,
+          "index": 389
+        }
+      },
+      "inputs": [
+        "bar_height$_in"
+      ]
+    },
+    "1_bar_height$_in": {
+      "cul_scope_id": 1,
+      "name": "bar_height$_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "bar_height$_in"
+      ]
+    },
+    "1_container_height$": {
+      "cul_scope_id": 1,
+      "name": "container_height$",
+      "cul_source_scope_id": 1,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 33,
+          "index": 425
+        },
+        "end": {
+          "line": 9,
+          "column": 59,
+          "index": 451
+        }
+      },
+      "inputs": [
+        "container_height$_in"
+      ]
+    },
+    "1_container_height$_in": {
+      "cul_scope_id": 1,
+      "name": "container_height$_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "container_height$_in"
+      ]
+    },
+    "1_container_height_": {
+      "cul_scope_id": 1,
+      "name": "container_height_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 32,
+          "index": 663
+        },
+        "end": {
+          "line": 20,
+          "column": 31,
+          "index": 888
+        }
+      },
+      "inputs": [
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_top_margin_": {
+      "cul_scope_id": 1,
+      "name": "top_margin_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 24,
+          "column": 26,
+          "index": 1009
+        },
+        "end": {
+          "line": 28,
+          "column": 78,
+          "index": 1173
+        }
+      },
+      "inputs": [
+        "top_margin$_in",
+        "container_height$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_bottom_margin_": {
+      "cul_scope_id": 1,
+      "name": "bottom_margin_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 29,
+          "index": 1207
+        },
+        "end": {
+          "line": 34,
+          "column": 75,
+          "index": 1374
+        }
+      },
+      "inputs": [
+        "bottom_margin$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "num_bars_in",
+        "gap$_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_gap_": {
+      "cul_scope_id": 1,
+      "name": "gap_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 19,
+          "index": 1398
+        },
+        "end": {
+          "line": 43,
+          "column": 22,
+          "index": 1582
+        }
+      },
+      "inputs": [
+        "gap$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "bar_height$_in"
+      ]
+    },
+    "1_bar_height_": {
+      "cul_scope_id": 1,
+      "name": "bar_height_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 26,
+          "index": 1613
+        },
+        "end": {
+          "line": 52,
+          "column": 16,
+          "index": 1804
+        }
+      },
+      "inputs": [
+        "bar_height$_in",
+        "container_height$_in",
+        "top_margin$_in",
+        "bottom_margin$_in",
+        "num_bars_in",
+        "gap$_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_num_bars$",
+      "from": "1_num_bars_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_container_height$",
+      "from": "1_container_height_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_top_margin$",
+      "from": "1_top_margin_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_bottom_margin$",
+      "from": "1_bottom_margin_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_gap$",
+      "from": "1_gap_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_bar_height$",
+      "from": "1_bar_height_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_num_bars",
+      "from": "0_num_bars$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_container_height",
+      "from": "0_container_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_top_margin",
+      "from": "0_top_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_bottom_margin",
+      "from": "0_bottom_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_gap",
+      "from": "0_gap$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_bar_height",
+      "from": "0_bar_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_num_bars",
+      "from": "0_num_bars",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_container_height",
+      "from": "0_container_height",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_top_margin",
+      "from": "0_top_margin",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_bottom_margin",
+      "from": "0_bottom_margin",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_gap",
+      "from": "0_gap",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_bar_height",
+      "from": "0_bar_height",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_top_margin$",
+      "from": "1_top_margin$_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_bottom_margin$",
+      "from": "1_bottom_margin$_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_num_bars_",
+      "from": "1_num_bars_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_gap$",
+      "from": "1_gap$_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_bar_height$",
+      "from": "1_bar_height$_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_container_height$",
+      "from": "1_container_height$_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_container_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_container_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_top_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_bottom_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_gap",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_container_height_",
+      "from": "1_bar_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_top_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_top_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_container_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_bottom_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_gap",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_top_margin_",
+      "from": "1_bar_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_bottom_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_bottom_margin$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_container_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_top_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_gap",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bottom_margin_",
+      "from": "1_bar_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_gap$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_gap$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_container_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_top_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_bottom_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_bar_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_gap_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_bar_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_bar_height$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_container_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_top_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_bottom_margin",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_gap",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_bar_height_",
+      "from": "1_num_bars",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./margins.cul.js",
+    "1": "./margins.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./margins.cul.js?+memoed": "./margins.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_num_bars$": [
+      "num_bars_in"
+    ],
+    "0_container_height$": [
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_top_margin$": [
+      "top_margin$_in",
+      "container_height$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_bottom_margin$": [
+      "bottom_margin$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_gap$": [
+      "gap$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "bar_height$_in"
+    ],
+    "0_bar_height$": [
+      "bar_height$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in"
+    ],
+    "0_num_bars": [
+      "num_bars_in"
+    ],
+    "0_container_height": [
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_top_margin": [
+      "top_margin$_in",
+      "container_height$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_bottom_margin": [
+      "bottom_margin$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "0_gap": [
+      "gap$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "bar_height$_in"
+    ],
+    "0_bar_height": [
+      "bar_height$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in"
+    ],
+    "1_num_bars": [
+      "num_bars_in"
+    ],
+    "1_container_height": [
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_top_margin": [
+      "top_margin$_in",
+      "container_height$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_bottom_margin": [
+      "bottom_margin$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_gap": [
+      "gap$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "bar_height$_in"
+    ],
+    "1_bar_height": [
+      "bar_height$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in"
+    ],
+    "1_top_margin$": [
+      "top_margin$_in"
+    ],
+    "1_top_margin$_in": [
+      "top_margin$_in"
+    ],
+    "1_bottom_margin$": [
+      "bottom_margin$_in"
+    ],
+    "1_bottom_margin$_in": [
+      "bottom_margin$_in"
+    ],
+    "1_num_bars_": [
+      "num_bars_in"
+    ],
+    "1_num_bars_in": [
+      "num_bars_in"
+    ],
+    "1_gap$": [
+      "gap$_in"
+    ],
+    "1_gap$_in": [
+      "gap$_in"
+    ],
+    "1_bar_height$": [
+      "bar_height$_in"
+    ],
+    "1_bar_height$_in": [
+      "bar_height$_in"
+    ],
+    "1_container_height$": [
+      "container_height$_in"
+    ],
+    "1_container_height$_in": [
+      "container_height$_in"
+    ],
+    "1_container_height_": [
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_top_margin_": [
+      "top_margin$_in",
+      "container_height$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_bottom_margin_": [
+      "bottom_margin$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "num_bars_in",
+      "gap$_in",
+      "bar_height$_in"
+    ],
+    "1_gap_": [
+      "gap$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "bar_height$_in"
+    ],
+    "1_bar_height_": [
+      "bar_height$_in",
+      "container_height$_in",
+      "top_margin$_in",
+      "bottom_margin$_in",
+      "num_bars_in",
+      "gap$_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_num_bars$\" [cul_scope_id=0,name=\"num_bars$\",imported=num_bars_,cul_source_scope_id=1,reason=\"explicit import\",inputs=num_bars_in,label=\"0_num_bars$ inputs: num_bars_in\"]\n  \"0_container_height$\" [cul_scope_id=0,name=\"container_height$\",imported=container_height_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_container_height$ inputs: container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_top_margin$\" [cul_scope_id=0,name=\"top_margin$\",imported=top_margin_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_top_margin$ inputs: top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_bottom_margin$\" [cul_scope_id=0,name=\"bottom_margin$\",imported=bottom_margin_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_bottom_margin$ inputs: bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_gap$\" [cul_scope_id=0,name=\"gap$\",imported=gap_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\",label=\"0_gap$ inputs: gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\"]\n  \"0_bar_height$\" [cul_scope_id=0,name=\"bar_height$\",imported=bar_height_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\",label=\"0_bar_height$ inputs: bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\"]\n  \"0_num_bars\" [cul_scope_id=0,name=num_bars,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=num_bars_in,label=\"0_num_bars inputs: num_bars_in\"]\n  \"0_container_height\" [cul_scope_id=0,name=container_height,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_container_height inputs: container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_top_margin\" [cul_scope_id=0,name=top_margin,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_top_margin inputs: top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_bottom_margin\" [cul_scope_id=0,name=bottom_margin,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"0_bottom_margin inputs: bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"0_gap\" [cul_scope_id=0,name=gap,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\",label=\"0_gap inputs: gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\"]\n  \"0_bar_height\" [cul_scope_id=0,name=bar_height,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\",label=\"0_bar_height inputs: bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\"]\n  \"1_num_bars\" [cul_scope_id=1,name=num_bars,cul_source_scope_id=0,reason=\"implicit import\",inputs=num_bars_in,label=\"1_num_bars inputs: num_bars_in\"]\n  \"1_container_height\" [cul_scope_id=1,name=container_height,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_container_height inputs: container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_top_margin\" [cul_scope_id=1,name=top_margin,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_top_margin inputs: top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_bottom_margin\" [cul_scope_id=1,name=bottom_margin,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_bottom_margin inputs: bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_gap\" [cul_scope_id=1,name=gap,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\",label=\"1_gap inputs: gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\"]\n  \"1_bar_height\" [cul_scope_id=1,name=bar_height,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\",label=\"1_bar_height inputs: bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\"]\n  \"1_top_margin$\" [cul_scope_id=1,name=\"top_margin$\",cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"top_margin$_in\",label=\"1_top_margin$ inputs: top_margin$_in\"]\n  \"1_top_margin$_in\" [cul_scope_id=1,name=\"top_margin$_in\",cul_source_scope_id=1,reason=\"input definition\",inputs=\"top_margin$_in\",label=\"1_top_margin$_in inputs: top_margin$_in\"]\n  \"1_bottom_margin$\" [cul_scope_id=1,name=\"bottom_margin$\",cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"bottom_margin$_in\",label=\"1_bottom_margin$ inputs: bottom_margin$_in\"]\n  \"1_bottom_margin$_in\" [cul_scope_id=1,name=\"bottom_margin$_in\",cul_source_scope_id=1,reason=\"input definition\",inputs=\"bottom_margin$_in\",label=\"1_bottom_margin$_in inputs: bottom_margin$_in\"]\n  \"1_num_bars_\" [cul_scope_id=1,name=num_bars_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=num_bars_in,label=\"1_num_bars_ inputs: num_bars_in\"]\n  \"1_num_bars_in\" [cul_scope_id=1,name=num_bars_in,cul_source_scope_id=1,reason=\"input definition\",inputs=num_bars_in,label=\"1_num_bars_in inputs: num_bars_in\"]\n  \"1_gap$\" [cul_scope_id=1,name=\"gap$\",cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gap$_in\",label=\"1_gap$ inputs: gap$_in\"]\n  \"1_gap$_in\" [cul_scope_id=1,name=\"gap$_in\",cul_source_scope_id=1,reason=\"input definition\",inputs=\"gap$_in\",label=\"1_gap$_in inputs: gap$_in\"]\n  \"1_bar_height$\" [cul_scope_id=1,name=\"bar_height$\",cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"bar_height$_in\",label=\"1_bar_height$ inputs: bar_height$_in\"]\n  \"1_bar_height$_in\" [cul_scope_id=1,name=\"bar_height$_in\",cul_source_scope_id=1,reason=\"input definition\",inputs=\"bar_height$_in\",label=\"1_bar_height$_in inputs: bar_height$_in\"]\n  \"1_container_height$\" [cul_scope_id=1,name=\"container_height$\",cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"container_height$_in\",label=\"1_container_height$ inputs: container_height$_in\"]\n  \"1_container_height$_in\" [cul_scope_id=1,name=\"container_height$_in\",cul_source_scope_id=1,reason=\"input definition\",inputs=\"container_height$_in\",label=\"1_container_height$_in inputs: container_height$_in\"]\n  \"1_container_height_\" [cul_scope_id=1,name=container_height_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_container_height_ inputs: container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_top_margin_\" [cul_scope_id=1,name=top_margin_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_top_margin_ inputs: top_margin$_in,container_height$_in,bottom_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_bottom_margin_\" [cul_scope_id=1,name=bottom_margin_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\",label=\"1_bottom_margin_ inputs: bottom_margin$_in,container_height$_in,top_margin$_in,num_bars_in,gap$_in,bar_height$_in\"]\n  \"1_gap_\" [cul_scope_id=1,name=gap_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\",label=\"1_gap_ inputs: gap$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,bar_height$_in\"]\n  \"1_bar_height_\" [cul_scope_id=1,name=bar_height_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\",label=\"1_bar_height_ inputs: bar_height$_in,container_height$_in,top_margin$_in,bottom_margin$_in,num_bars_in,gap$_in\"]\n  \"1_num_bars_\" -> \"0_num_bars$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_container_height_\" -> \"0_container_height$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_top_margin_\" -> \"0_top_margin$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_bottom_margin_\" -> \"0_bottom_margin$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_gap_\" -> \"0_gap$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_bar_height_\" -> \"0_bar_height$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_num_bars$\" -> \"0_num_bars\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_container_height$\" -> \"0_container_height\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_top_margin$\" -> \"0_top_margin\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_bottom_margin$\" -> \"0_bottom_margin\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_gap$\" -> \"0_gap\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_bar_height$\" -> \"0_bar_height\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_num_bars\" -> \"1_num_bars\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_container_height\" -> \"1_container_height\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_top_margin\" -> \"1_top_margin\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_bottom_margin\" -> \"1_bottom_margin\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_gap\" -> \"1_gap\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_bar_height\" -> \"1_bar_height\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_top_margin$_in\" -> \"1_top_margin$\" [value=\"[object Object]\",label=\"input +top_margin$_in\"]\n  \"1_bottom_margin$_in\" -> \"1_bottom_margin$\" [value=\"[object Object]\",label=\"input +bottom_margin$_in\"]\n  \"1_num_bars_in\" -> \"1_num_bars_\" [value=\"[object Object]\",label=\"input +num_bars_in\"]\n  \"1_gap$_in\" -> \"1_gap$\" [value=\"[object Object]\",label=\"input +gap$_in\"]\n  \"1_bar_height$_in\" -> \"1_bar_height$\" [value=\"[object Object]\",label=\"input +bar_height$_in\"]\n  \"1_container_height$_in\" -> \"1_container_height$\" [value=\"[object Object]\",label=\"input +container_height$_in\"]\n  \"1_container_height$\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_top_margin\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bottom_margin\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_num_bars\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gap\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bar_height\" -> \"1_container_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_top_margin$\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_container_height\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bottom_margin\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_num_bars\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gap\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bar_height\" -> \"1_top_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bottom_margin$\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_container_height\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_top_margin\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_num_bars\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gap\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bar_height\" -> \"1_bottom_margin_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gap$\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_container_height\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_top_margin\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bottom_margin\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_num_bars\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bar_height\" -> \"1_gap_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bar_height$\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_container_height\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_top_margin\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_bottom_margin\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gap\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_num_bars\" -> \"1_bar_height_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}
