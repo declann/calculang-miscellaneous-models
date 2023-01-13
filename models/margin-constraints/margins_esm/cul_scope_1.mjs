@@ -1,4 +1,4 @@
-import { bar_height } from "./cul_scope_0.mjs";import { gap } from "./cul_scope_0.mjs";import { bottom_margin } from "./cul_scope_0.mjs";import { top_margin } from "./cul_scope_0.mjs";import { container_height } from "./cul_scope_0.mjs";import { num_bars } from "./cul_scope_0.mjs"; // using constraint equation used by Bret Victor in:
+import { error } from "./cul_scope_0.mjs";import { bar_height } from "./cul_scope_0.mjs";import { gap } from "./cul_scope_0.mjs";import { bottom_margin } from "./cul_scope_0.mjs";import { top_margin } from "./cul_scope_0.mjs";import { container_height } from "./cul_scope_0.mjs";import { num_bars } from "./cul_scope_0.mjs"; // using constraint equation used by Bret Victor in:
 // http://worrydream.com/ScrubbingCalculator/
 
 export const top_margin$ = ({ top_margin$_in }) => top_margin$_in;
@@ -50,3 +50,11 @@ top_margin({ top_margin$_in, container_height$_in, bottom_margin$_in, num_bars_i
 bottom_margin({ bottom_margin$_in, container_height$_in, top_margin$_in, num_bars_in, gap$_in, bar_height$_in }) -
 gap({ gap$_in, container_height$_in, top_margin$_in, bottom_margin$_in, num_bars_in, bar_height$_in }) * (num_bars({ num_bars_in }) - 1)) /
 num_bars({ num_bars_in });
+
+// error function
+export const error_ = ({ container_height$_in, top_margin$_in, bottom_margin$_in, num_bars_in, gap$_in, bar_height$_in }) =>
+container_height({ container_height$_in, top_margin$_in, bottom_margin$_in, num_bars_in, gap$_in, bar_height$_in }) - (
+top_margin({ top_margin$_in, container_height$_in, bottom_margin$_in, num_bars_in, gap$_in, bar_height$_in }) +
+bottom_margin({ bottom_margin$_in, container_height$_in, top_margin$_in, num_bars_in, gap$_in, bar_height$_in }) +
+(num_bars({ num_bars_in }) - 1) * gap({ gap$_in, container_height$_in, top_margin$_in, bottom_margin$_in, num_bars_in, bar_height$_in }) +
+num_bars({ num_bars_in }) * bar_height({ bar_height$_in, container_height$_in, top_margin$_in, bottom_margin$_in, num_bars_in, gap$_in }));

@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { num_bars_ as num_bars$, container_height_ as container_height$, top_margin_ as top_margin$, bottom_margin_ as bottom_margin$, gap_ as gap$, bar_height_ as bar_height$ } from './margins.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { num_bars_ as num_bars$, container_height_ as container_height$, top_margin_ as top_margin$, bottom_margin_ as bottom_margin$, gap_ as gap$, bar_height_ as bar_height$, error_ as error$ } from './margins.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
@@ -76,6 +76,18 @@ export const bar_height = (a) => {
   bar_height$(); // never run, but here to "trick" calculang graph logic
 };
 ////////// end bar_height memo-loader code //////////
+
+
+
+////////// start error memo-loader code //////////
+//const error$m = memoize(999999, isEqual)(error$);
+export const error$m = memoize(error$, JSON.stringify);
+export const error = (a) => {
+  return error$m(a);
+  // eslint-disable-next-line no-undef
+  error$(); // never run, but here to "trick" calculang graph logic
+};
+////////// end error memo-loader code //////////
 
 
     

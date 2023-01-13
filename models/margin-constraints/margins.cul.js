@@ -50,3 +50,11 @@ export const bar_height = () =>
         bottom_margin() -
         gap() * (num_bars() - 1)) /
       num_bars();
+
+// error function
+export const error = () =>
+  container_height() -
+  (top_margin() +
+    bottom_margin() +
+    (num_bars() - 1) * gap() +
+    num_bars() * bar_height());
