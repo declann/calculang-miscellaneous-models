@@ -153,3 +153,15 @@ var profit = function profit(_ref11) {
   });
 };
 exports.profit = profit;
+
+function main() {
+  console.log(profit({
+    year_in: 3,
+    subs_0_in: 100,
+    subs_growth_pc_in: 10,
+    subs_churn_pc_in: 10,
+    CAC_in: 5
+  }));
+}
+
+main()
