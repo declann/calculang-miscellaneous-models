@@ -1,5 +1,7 @@
 "use strict";
 
+var exports = {}; // DN I set this to {} to mitigate an error on evalWrapper
+
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
