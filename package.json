@@ -12,11 +12,12 @@
     "build:margins": "cul-js compile --memo ./models/margin-constraints/margins.cul.js",
     "build:triple": "cul-js compile --memo ./models/exponential-growth/triple.cul.js",
     "use:triple": "node ./models/exponential-growth/use-triple.js",
-
     "build:suncalc-seek-sunsets": "cul-js compile --memo ./models/heavens/suncalc-seek-sunsets.cul.js",
     "build:suncalc": "cul-js compile ./models/heavens/suncalc.cul.js",
     "build:payroll": "cul-js compile ./models/payroll-playground/payroll.cul.js",
+    "babel:saas-expected": "TODO models/saas-ea/expected_esm/cul_scope_0.mjs",
     "build:saas-ea": "cul-js compile ./models/saas-ea/rec.cul.js",
+    "build:saas-expected": "cul-js compile ./models/saas-ea/expected.cul.js",
     "build:cashflows": "cul-js compile --memo ./models/cashflows/simple-cfs.cul.js",
     "build:cashflows-nomemo": "cul-js compile ./models/cashflows/simple-cfs-nomemo.cul.js",
     "use:fern": "node ./models/fern/use-fern.js",
@@ -55,6 +56,8 @@
     "underscore": "^1.13.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.20.7",
+    "@babel/core": "^7.20.12",
     "@calculang/calculang-js": "file:../calculang/packages/calculang-js",
     "eslint": "^8.23.1",
     "lru-memoize": "^1.1.0",
