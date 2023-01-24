@@ -1,14 +1,4 @@
-(function webpackUniversalModuleDefinition(root, factory) {
-	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory();
-	else if(typeof define === 'function' && define.amd)
-		define([], factory);
-	else {
-		var a = factory();
-		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
-	}
-})(self, function() {
-return /******/ (() => { // webpackBootstrap
+define(() => { return /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 /*!****************************************!*\
   !*** ./cul_scope_0-babeled-fondued.js ***!
@@ -1786,5 +1776,5 @@ if (typeof __tracer === 'undefined') {
 /******/ 	return __webpack_exports__;
 /******/ })()
 ;
-});
+});;
 //# sourceMappingURL=cul_scope_0-babeled-fondued.bundle.js.map

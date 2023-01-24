@@ -8,7 +8,7 @@ module.exports = {
     //path: path.resolve(__dirname, 'dist'),
     filename: './cul_scope_0-babeled-fondued.bundle.js',
     library: {
-      type: 'umd'
+      type: 'amd'
     }
   },
 };
