@@ -154,6 +154,7 @@ var profit = function profit(_ref11) {
 };
 exports.profit = profit;
 
+
 function main() {
   console.log(profit({
     year_in: 3,
