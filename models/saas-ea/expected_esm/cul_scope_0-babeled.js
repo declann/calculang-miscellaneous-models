@@ -153,3 +153,5 @@ var profit = function profit(_ref11) {
   });
 };
 exports.profit = profit;
+
+var exports = {};

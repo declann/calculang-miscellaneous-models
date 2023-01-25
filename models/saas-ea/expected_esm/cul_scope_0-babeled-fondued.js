@@ -1,5 +1,3 @@
-// DN via https://declann.github.io/fondue/playground.html
-
 /*
 The following code was inserted automatically by fondue to collect information
 about the execution of all the JavaScript on this page or in this program.
@@ -69,1702 +67,1704 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
 if (typeof __tracer === 'undefined') {
-__tracer = new (function () {
-	var sourceMap = (function () {function define(e,t,n){if(typeof e!="string")throw new TypeError("Expected string, got: "+e);arguments.length==2&&(n=t);if(e in define.modules)throw new Error("Module already defined: "+e);define.modules[e]=n}function Domain(){this.modules={},this._currentModule=null}define.modules={},function(){function e(e){var t=e.split("/"),n=1;while(n<t.length)t[n]===".."?t.splice(n-1,1):t[n]==="."?t.splice(n,1):n++;return t.join("/")}function t(e,t){return e=e.trim(),t=t.trim(),/^\//.test(t)?t:e.replace(/\/*$/,"/")+t}function n(e){var t=e.split("/");return t.pop(),t.join("/")}Domain.prototype.require=function(e,t){if(Array.isArray(e)){var n=e.map(function(e){return this.lookup(e)},this);return t&&t.apply(null,n),undefined}return this.lookup(e)},Domain.prototype.lookup=function(r){/^\./.test(r)&&(r=e(t(n(this._currentModule),r)));if(r in this.modules){var i=this.modules[r];return i}if(r in define.modules){var i=define.modules[r];if(typeof i=="function"){var s={},o=this._currentModule;this._currentModule=r,i(this.require.bind(this),s,{id:r,uri:""}),this._currentModule=o,i=s}return this.modules[r]=i,i}throw new Error("Module not defined: "+r)}}(),define.Domain=Domain,define.globalDomain=new Domain;var require=define.globalDomain.require.bind(define.globalDomain);define("source-map/source-map-generator",["require","exports","module","source-map/base64-vlq","source-map/util","source-map/array-set"],function(e,t,n){function o(e){this._file=i.getArg(e,"file"),this._sourceRoot=i.getArg(e,"sourceRoot",null),this._sources=new s,this._names=new s,this._mappings=[],this._sourcesContents=null}function u(e,t){var n=(e&&e.line)-(t&&t.line);return n?n:(e&&e.column)-(t&&t.column)}function a(e,t){return e=e||"",t=t||"",(e>t)-(e<t)}function f(e,t){return u(e.generated,t.generated)||u(e.original,t.original)||a(e.source,t.source)||a(e.name,t.name)}var r=e("./base64-vlq"),i=e("./util"),s=e("./array-set").ArraySet;o.prototype._version=3,o.fromSourceMap=function(t){var n=t.sourceRoot,r=new o({file:t.file,sourceRoot:n});return t.eachMapping(function(e){var t={generated:{line:e.generatedLine,column:e.generatedColumn}};e.source&&(t.source=e.source,n&&(t.source=i.relative(n,t.source)),t.original={line:e.originalLine,column:e.originalColumn},e.name&&(t.name=e.name)),r.addMapping(t)}),t.sources.forEach(function(e){var n=t.sourceContentFor(e);n&&r.setSourceContent(e,n)}),r},o.prototype.addMapping=function(t){var n=i.getArg(t,"generated"),r=i.getArg(t,"original",null),s=i.getArg(t,"source",null),o=i.getArg(t,"name",null);this._validateMapping(n,r,s,o),s&&!this._sources.has(s)&&this._sources.add(s),o&&!this._names.has(o)&&this._names.add(o),this._mappings.push({generated:n,original:r,source:s,name:o})},o.prototype.setSourceContent=function(t,n){var r=t;this._sourceRoot&&(r=i.relative(this._sourceRoot,r)),n!==null?(this._sourcesContents||(this._sourcesContents={}),this._sourcesContents[i.toSetString(r)]=n):(delete this._sourcesContents[i.toSetString(r)],Object.keys(this._sourcesContents).length===0&&(this._sourcesContents=null))},o.prototype.applySourceMap=function(t,n){n||(n=t.file);var r=this._sourceRoot;r&&(n=i.relative(r,n));var o=new s,u=new s;this._mappings.forEach(function(e){if(e.source===n&&e.original){var s=t.originalPositionFor({line:e.original.line,column:e.original.column});s.source!==null&&(r?e.source=i.relative(r,s.source):e.source=s.source,e.original.line=s.line,e.original.column=s.column,s.name!==null&&e.name!==null&&(e.name=s.name))}var a=e.source;a&&!o.has(a)&&o.add(a);var f=e.name;f&&!u.has(f)&&u.add(f)},this),this._sources=o,this._names=u,t.sources.forEach(function(e){var n=t.sourceContentFor(e);n&&(r&&(e=i.relative(r,e)),this.setSourceContent(e,n))},this)},o.prototype._validateMapping=function(t,n,r,i){if(t&&"line"in t&&"column"in t&&t.line>0&&t.column>=0&&!n&&!r&&!i)return;if(t&&"line"in t&&"column"in t&&n&&"line"in n&&"column"in n&&t.line>0&&t.column>=0&&n.line>0&&n.column>=0&&r)return;throw new Error("Invalid mapping.")},o.prototype._serializeMappings=function(){var t=0,n=1,i=0,s=0,o=0,u=0,a="",l;this._mappings.sort(f);for(var c=0,h=this._mappings.length;c<h;c++){l=this._mappings[c];if(l.generated.line!==n){t=0;while(l.generated.line!==n)a+=";",n++}else if(c>0){if(!f(l,this._mappings[c-1]))continue;a+=","}a+=r.encode(l.generated.column-t),t=l.generated.column,l.source&&l.original&&(a+=r.encode(this._sources.indexOf(l.source)-u),u=this._sources.indexOf(l.source),a+=r.encode(l.original.line-1-s),s=l.original.line-1,a+=r.encode(l.original.column-i),i=l.original.column,l.name&&(a+=r.encode(this._names.indexOf(l.name)-o),o=this._names.indexOf(l.name)))}return a},o.prototype.toJSON=function(){var t={version:this._version,file:this._file,sources:this._sources.toArray(),names:this._names.toArray(),mappings:this._serializeMappings()};return this._sourceRoot&&(t.sourceRoot=this._sourceRoot),this._sourcesContents&&(t.sourcesContent=t.sources.map(function(e){return t.sourceRoot&&(e=i.relative(t.sourceRoot,e)),Object.prototype.hasOwnProperty.call(this._sourcesContents,i.toSetString(e))?this._sourcesContents[i.toSetString(e)]:null},this)),t},o.prototype.toString=function(){return JSON.stringify(this)},t.SourceMapGenerator=o}),define("source-map/base64-vlq",["require","exports","module","source-map/base64"],function(e,t,n){function a(e){return e<0?(-e<<1)+1:(e<<1)+0}function f(e){var t=(e&1)===1,n=e>>1;return t?-n:n}var r=e("./base64"),i=5,s=1<<i,o=s-1,u=s;t.encode=function(t){var n="",s,f=a(t);do s=f&o,f>>>=i,f>0&&(s|=u),n+=r.encode(s);while(f>0);return n},t.decode=function(t){var n=0,s=t.length,a=0,l=0,c,h;do{if(n>=s)throw new Error("Expected more digits in base 64 VLQ value.");h=r.decode(t.charAt(n++)),c=!!(h&u),h&=o,a+=h<<l,l+=i}while(c);return{value:f(a),rest:t.slice(n)}}}),define("source-map/base64",["require","exports","module"],function(e,t,n){var r={},i={};"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split("").forEach(function(e,t){r[e]=t,i[t]=e}),t.encode=function(t){if(t in i)return i[t];throw new TypeError("Must be between 0 and 63: "+t)},t.decode=function(t){if(t in r)return r[t];throw new TypeError("Not a valid base 64 digit: "+t)}}),define("source-map/util",["require","exports","module"],function(e,t,n){function r(e,t,n){if(t in e)return e[t];if(arguments.length===3)return n;throw new Error('"'+t+'" is a required argument.')}function s(e){var t=e.match(i);return t?{scheme:t[1],auth:t[3],host:t[4],port:t[6],path:t[7]}:null}function o(e){var t=e.scheme+"://";return e.auth&&(t+=e.auth+"@"),e.host&&(t+=e.host),e.port&&(t+=":"+e.port),e.path&&(t+=e.path),t}function u(e,t){var n;return t.match(i)?t:t.charAt(0)==="/"&&(n=s(e))?(n.path=t,o(n)):e.replace(/\/$/,"")+"/"+t}function a(e){return"$"+e}function f(e){return e.substr(1)}function l(e,t){e=e.replace(/\/$/,"");var n=s(e);return t.charAt(0)=="/"&&n&&n.path=="/"?t.slice(1):t.indexOf(e+"/")===0?t.substr(e.length+1):t}t.getArg=r;var i=/([\w+\-.]+):\/\/((\w+:\w+)@)?([\w.]+)?(:(\d+))?(\S+)?/;t.urlParse=s,t.urlGenerate=o,t.join=u,t.toSetString=a,t.fromSetString=f,t.relative=l}),define("source-map/array-set",["require","exports","module","source-map/util"],function(e,t,n){function i(){this._array=[],this._set={}}var r=e("./util");i.fromArray=function(t){var n=new i;for(var r=0,s=t.length;r<s;r++)n.add(t[r]);return n},i.prototype.add=function(t){if(this.has(t))return;var n=this._array.length;this._array.push(t),this._set[r.toSetString(t)]=n},i.prototype.has=function(t){return Object.prototype.hasOwnProperty.call(this._set,r.toSetString(t))},i.prototype.indexOf=function(t){if(this.has(t))return this._set[r.toSetString(t)];throw new Error('"'+t+'" is not in the set.')},i.prototype.at=function(t){if(t>=0&&t<this._array.length)return this._array[t];throw new Error("No element indexed by "+t)},i.prototype.toArray=function(){return this._array.slice()},t.ArraySet=i}),define("source-map/source-map-consumer",["require","exports","module","source-map/util","source-map/binary-search","source-map/array-set","source-map/base64-vlq"],function(e,t,n){function u(e){var t=e;typeof e=="string"&&(t=JSON.parse(e.replace(/^\)\]\}'/,"")));var n=r.getArg(t,"version"),i=r.getArg(t,"sources"),o=r.getArg(t,"names"),u=r.getArg(t,"sourceRoot",null),a=r.getArg(t,"sourcesContent",null),f=r.getArg(t,"mappings"),l=r.getArg(t,"file",null);if(n!==this._version)throw new Error("Unsupported version: "+n);this._names=s.fromArray(o),this._sources=s.fromArray(i),this.sourceRoot=u,this.sourcesContent=a,this.file=l,this._generatedMappings=[],this._originalMappings=[],this._parseMappings(f,u)}var r=e("./util"),i=e("./binary-search"),s=e("./array-set").ArraySet,o=e("./base64-vlq");u.prototype._version=3,Object.defineProperty(u.prototype,"sources",{get:function(){return this._sources.toArray().map(function(e){return this.sourceRoot?r.join(this.sourceRoot,e):e},this)}}),u.prototype._parseMappings=function(t,n){var r=1,i=0,s=0,u=0,a=0,f=0,l=/^[,;]/,c=t,h,p;while(c.length>0)if(c.charAt(0)===";")r++,c=c.slice(1),i=0;else if(c.charAt(0)===",")c=c.slice(1);else{h={},h.generatedLine=r,p=o.decode(c),h.generatedColumn=i+p.value,i=h.generatedColumn,c=p.rest;if(c.length>0&&!l.test(c.charAt(0))){p=o.decode(c),h.source=this._sources.at(a+p.value),a+=p.value,c=p.rest;if(c.length===0||l.test(c.charAt(0)))throw new Error("Found a source, but no line and column");p=o.decode(c),h.originalLine=s+p.value,s=h.originalLine,h.originalLine+=1,c=p.rest;if(c.length===0||l.test(c.charAt(0)))throw new Error("Found a source and line, but no column");p=o.decode(c),h.originalColumn=u+p.value,u=h.originalColumn,c=p.rest,c.length>0&&!l.test(c.charAt(0))&&(p=o.decode(c),h.name=this._names.at(f+p.value),f+=p.value,c=p.rest)}this._generatedMappings.push(h),typeof h.originalLine=="number"&&this._originalMappings.push(h)}this._originalMappings.sort(this._compareOriginalPositions)},u.prototype._compareOriginalPositions=function(t,n){if(t.source>n.source)return 1;if(t.source<n.source)return-1;var r=t.originalLine-n.originalLine;return r===0?t.originalColumn-n.originalColumn:r},u.prototype._compareGeneratedPositions=function(t,n){var r=t.generatedLine-n.generatedLine;return r===0?t.generatedColumn-n.generatedColumn:r},u.prototype._findMapping=function(t,n,r,s,o){if(t[r]<=0)throw new TypeError("Line must be greater than or equal to 1, got "+t[r]);if(t[s]<0)throw new TypeError("Column must be greater than or equal to 0, got "+t[s]);return i.search(t,n,o)},u.prototype.originalPositionFor=function(t){var n={generatedLine:r.getArg(t,"line"),generatedColumn:r.getArg(t,"column")},i=this._findMapping(n,this._generatedMappings,"generatedLine","generatedColumn",this._compareGeneratedPositions);if(i){var s=r.getArg(i,"source",null);return s&&this.sourceRoot&&(s=r.join(this.sourceRoot,s)),{source:s,line:r.getArg(i,"originalLine",null),column:r.getArg(i,"originalColumn",null),name:r.getArg(i,"name",null)}}return{source:null,line:null,column:null,name:null}},u.prototype.sourceContentFor=function(t){if(!this.sourcesContent)return null;this.sourceRoot&&(t=r.relative(this.sourceRoot,t));if(this._sources.has(t))return this.sourcesContent[this._sources.indexOf(t)];var n;if(this.sourceRoot&&(n=r.urlParse(this.sourceRoot))){var i=t.replace(/^file:\/\//,"");if(n.scheme=="file"&&this._sources.has(i))return this.sourcesContent[this._sources.indexOf(i)];if((!n.path||n.path=="/")&&this._sources.has("/"+t))return this.sourcesContent[this._sources.indexOf("/"+t)]}throw new Error('"'+t+'" is not in the SourceMap.')},u.prototype.generatedPositionFor=function(t){var n={source:r.getArg(t,"source"),originalLine:r.getArg(t,"line"),originalColumn:r.getArg(t,"column")};this.sourceRoot&&(n.source=r.relative(this.sourceRoot,n.source));var i=this._findMapping(n,this._originalMappings,"originalLine","originalColumn",this._compareOriginalPositions);return i?{line:r.getArg(i,"generatedLine",null),column:r.getArg(i,"generatedColumn",null)}:{line:null,column:null}},u.GENERATED_ORDER=1,u.ORIGINAL_ORDER=2,u.prototype.eachMapping=function(t,n,i){var s=n||null,o=i||u.GENERATED_ORDER,a;switch(o){case u.GENERATED_ORDER:a=this._generatedMappings;break;case u.ORIGINAL_ORDER:a=this._originalMappings;break;default:throw new Error("Unknown order of iteration.")}var f=this.sourceRoot;a.map(function(e){var t=e.source;return t&&f&&(t=r.join(f,t)),{source:t,generatedLine:e.generatedLine,generatedColumn:e.generatedColumn,originalLine:e.originalLine,originalColumn:e.originalColumn,name:e.name}}).forEach(t,s)},t.SourceMapConsumer=u}),define("source-map/binary-search",["require","exports","module"],function(e,t,n){function r(e,t,n,i,s){var o=Math.floor((t-e)/2)+e,u=s(n,i[o]);return u===0?i[o]:u>0?t-o>1?r(o,t,n,i,s):i[o]:o-e>1?r(e,o,n,i,s):e<0?null:i[e]}t.search=function(t,n,i){return n.length>0?r(-1,n.length,t,n,i):null}}),define("source-map/source-node",["require","exports","module","source-map/source-map-generator","source-map/util"],function(e,t,n){function s(e,t,n,r,i){this.children=[],this.sourceContents={},this.line=e===undefined?null:e,this.column=t===undefined?null:t,this.source=n===undefined?null:n,this.name=i===undefined?null:i,r!=null&&this.add(r)}var r=e("./source-map-generator").SourceMapGenerator,i=e("./util");s.fromStringWithSourceMap=function(t,n){function f(e,t){e===null||e.source===undefined?r.add(t):r.add(new s(e.originalLine,e.originalColumn,e.source,t,e.name))}var r=new s,i=t.split("\n"),o=1,u=0,a=null;return n.eachMapping(function(e){if(a===null){while(o<e.generatedLine)r.add(i.shift()+"\n"),o++;if(u<e.generatedColumn){var t=i[0];r.add(t.substr(0,e.generatedColumn)),i[0]=t.substr(e.generatedColumn),u=e.generatedColumn}}else if(o<e.generatedLine){var n="";do n+=i.shift()+"\n",o++,u=0;while(o<e.generatedLine);if(u<e.generatedColumn){var t=i[0];n+=t.substr(0,e.generatedColumn),i[0]=t.substr(e.generatedColumn),u=e.generatedColumn}f(a,n)}else{var t=i[0],n=t.substr(0,e.generatedColumn-u);i[0]=t.substr(e.generatedColumn-u),u=e.generatedColumn,f(a,n)}a=e},this),f(a,i.join("\n")),n.sources.forEach(function(e){var t=n.sourceContentFor(e);t&&r.setSourceContent(e,t)}),r},s.prototype.add=function(t){if(Array.isArray(t))t.forEach(function(e){this.add(e)},this);else{if(!(t instanceof s||typeof t=="string"))throw new TypeError("Expected a SourceNode, string, or an array of SourceNodes and strings. Got "+t);t&&this.children.push(t)}return this},s.prototype.prepend=function(t){if(Array.isArray(t))for(var n=t.length-1;n>=0;n--)this.prepend(t[n]);else{if(!(t instanceof s||typeof t=="string"))throw new TypeError("Expected a SourceNode, string, or an array of SourceNodes and strings. Got "+t);this.children.unshift(t)}return this},s.prototype.walk=function(t){this.children.forEach(function(e){e instanceof s?e.walk(t):e!==""&&t(e,{source:this.source,line:this.line,column:this.column,name:this.name})},this)},s.prototype.join=function(t){var n,r,i=this.children.length;if(i>0){n=[];for(r=0;r<i-1;r++)n.push(this.children[r]),n.push(t);n.push(this.children[r]),this.children=n}return this},s.prototype.replaceRight=function(t,n){var r=this.children[this.children.length-1];return r instanceof s?r.replaceRight(t,n):typeof r=="string"?this.children[this.children.length-1]=r.replace(t,n):this.children.push("".replace(t,n)),this},s.prototype.setSourceContent=function(t,n){this.sourceContents[i.toSetString(t)]=n},s.prototype.walkSourceContents=function(t){this.children.forEach(function(e){e instanceof s&&e.walkSourceContents(t)},this),Object.keys(this.sourceContents).forEach(function(e){t(i.fromSetString(e),this.sourceContents[e])},this)},s.prototype.toString=function(){var t="";return this.walk(function(e){t+=e}),t},s.prototype.toStringWithSourceMap=function(t){var n={code:"",line:1,column:0},i=new r(t),s=!1;return this.walk(function(e,t){n.code+=e,t.source!==null&&t.line!==null&&t.column!==null?(i.addMapping({source:t.source,original:{line:t.line,column:t.column},generated:{line:n.line,column:n.column},name:t.name}),s=!0):s&&(i.addMapping({generated:{line:n.line,column:n.column}}),s=!1),e.split("").forEach(function(e){e==="\n"?(n.line++,n.column=0):n.column++})}),this.walkSourceContents(function(e,t){i.setSourceContent(e,t)}),{code:n.code,map:i}},t.SourceNode=s});return {SourceMapConsumer:require("source-map/source-map-consumer").SourceMapConsumer,SourceMapGenerator:require("source-map/source-map-generator").SourceMapGenerator,SourceNode:require("source-map/source-node").SourceNode}})();
-
-	var TRACER_ID = String(Math.random());
-
-	var globalThis = undefined;
-
-	var sourceByPath = {};
-	var nodes = []; // objects describing functions, branches, call sites, etc
-	var nodeById = {}; // id(string) -> node
-	var invocationStack = [];
-	var invocationById = {}; // id(string) -> invocation
-	var invocationsByNodeId = {}; // id(string) -> array of invocations
-	var exceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
-	var uncaughtExceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
-	var nodeHitCounts = {}; // { query-handle: { nodeId: hit-count } }
-	var exceptionCounts = {}; // { query-handle: { nodeId: exception-count } }
-	var logEntries = {}; // { query-handle: [invocation id] }
-	var anonFuncParentInvocation, lastException, lastExceptionThrownFromInvocation; // yucky globals track state between trace* calls
-	var nextInvocationId = 0;
-	var _hitQueries = [];
-	var _exceptionQueries = [];
-	var _logQueries = [];
-	var _fileCallGraph = [];
-	var _sourceMaps = {};
-
-	var _connected = false;
-
-	// epochs
-	var _lastEpochID = 0;
-	var _lastEmitterID = 0;
-	var _epochsById = []; // int -> epoch (only epochs that end up as part of the call graph are saved)
-	var _epochsByName = {}; // string -> [epoch] (only epochs that end up as part of the call graph are saved)
-	var _topLevelEpochsByName = {}; // string -> [epoch]
-	var _epochStack = [];
-	var _epochInvocationDepth = []; // stack of how deep into the invocation stack of each epoch we are
-	var _topLevelInvocationsByEventName = {};
-
-	// bail
-	var _bailedTick = false;
-	var _invocationsThisTick = 0;
-	var _invocationStackSize = 0;
-	var _explainedBails = false;
-
-	function _consoleLog() {
-		if (typeof console !== 'undefined') {
-			console.log.apply(console, arguments);
-		}
-	}
-
-	function _resetTrace() {
-		_consoleLog("[fondue] resetting trace data...");
-
-		invocationStack = [];
-		invocationById = {}; // id(string) -> invocation
-		invocationsByNodeId = {}; // id(string) -> array of invocations
-		exceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
-		uncaughtExceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
-		nodeHitCounts = {}; // { query-handle: { nodeId: hit-count } }
-		exceptionCounts = {}; // { query-handle: { nodeId: exception-count } }
-		logEntries = {}; // { query-handle: [invocation id] }
-		anonFuncParentInvocation = undefined, lastException = undefined, lastExceptionThrownFromInvocation = undefined; // yucky globals track state between trace* calls
-		_hitQueries = [];
-		_exceptionQueries = [];
-		_logQueries = [];
-		_fileCallGraph = [];
-
+	__tracer = new (function () {
+		var sourceMap = (function () {function define(e,t,n){if(typeof e!="string")throw new TypeError("Expected string, got: "+e);arguments.length==2&&(n=t);if(e in define.modules)throw new Error("Module already defined: "+e);define.modules[e]=n}function Domain(){this.modules={},this._currentModule=null}define.modules={},function(){function e(e){var t=e.split("/"),n=1;while(n<t.length)t[n]===".."?t.splice(n-1,1):t[n]==="."?t.splice(n,1):n++;return t.join("/")}function t(e,t){return e=e.trim(),t=t.trim(),/^\//.test(t)?t:e.replace(/\/*$/,"/")+t}function n(e){var t=e.split("/");return t.pop(),t.join("/")}Domain.prototype.require=function(e,t){if(Array.isArray(e)){var n=e.map(function(e){return this.lookup(e)},this);return t&&t.apply(null,n),undefined}return this.lookup(e)},Domain.prototype.lookup=function(r){/^\./.test(r)&&(r=e(t(n(this._currentModule),r)));if(r in this.modules){var i=this.modules[r];return i}if(r in define.modules){var i=define.modules[r];if(typeof i=="function"){var s={},o=this._currentModule;this._currentModule=r,i(this.require.bind(this),s,{id:r,uri:""}),this._currentModule=o,i=s}return this.modules[r]=i,i}throw new Error("Module not defined: "+r)}}(),define.Domain=Domain,define.globalDomain=new Domain;var require=define.globalDomain.require.bind(define.globalDomain);define("source-map/source-map-generator",["require","exports","module","source-map/base64-vlq","source-map/util","source-map/array-set"],function(e,t,n){function o(e){this._file=i.getArg(e,"file"),this._sourceRoot=i.getArg(e,"sourceRoot",null),this._sources=new s,this._names=new s,this._mappings=[],this._sourcesContents=null}function u(e,t){var n=(e&&e.line)-(t&&t.line);return n?n:(e&&e.column)-(t&&t.column)}function a(e,t){return e=e||"",t=t||"",(e>t)-(e<t)}function f(e,t){return u(e.generated,t.generated)||u(e.original,t.original)||a(e.source,t.source)||a(e.name,t.name)}var r=e("./base64-vlq"),i=e("./util"),s=e("./array-set").ArraySet;o.prototype._version=3,o.fromSourceMap=function(t){var n=t.sourceRoot,r=new o({file:t.file,sourceRoot:n});return t.eachMapping(function(e){var t={generated:{line:e.generatedLine,column:e.generatedColumn}};e.source&&(t.source=e.source,n&&(t.source=i.relative(n,t.source)),t.original={line:e.originalLine,column:e.originalColumn},e.name&&(t.name=e.name)),r.addMapping(t)}),t.sources.forEach(function(e){var n=t.sourceContentFor(e);n&&r.setSourceContent(e,n)}),r},o.prototype.addMapping=function(t){var n=i.getArg(t,"generated"),r=i.getArg(t,"original",null),s=i.getArg(t,"source",null),o=i.getArg(t,"name",null);this._validateMapping(n,r,s,o),s&&!this._sources.has(s)&&this._sources.add(s),o&&!this._names.has(o)&&this._names.add(o),this._mappings.push({generated:n,original:r,source:s,name:o})},o.prototype.setSourceContent=function(t,n){var r=t;this._sourceRoot&&(r=i.relative(this._sourceRoot,r)),n!==null?(this._sourcesContents||(this._sourcesContents={}),this._sourcesContents[i.toSetString(r)]=n):(delete this._sourcesContents[i.toSetString(r)],Object.keys(this._sourcesContents).length===0&&(this._sourcesContents=null))},o.prototype.applySourceMap=function(t,n){n||(n=t.file);var r=this._sourceRoot;r&&(n=i.relative(r,n));var o=new s,u=new s;this._mappings.forEach(function(e){if(e.source===n&&e.original){var s=t.originalPositionFor({line:e.original.line,column:e.original.column});s.source!==null&&(r?e.source=i.relative(r,s.source):e.source=s.source,e.original.line=s.line,e.original.column=s.column,s.name!==null&&e.name!==null&&(e.name=s.name))}var a=e.source;a&&!o.has(a)&&o.add(a);var f=e.name;f&&!u.has(f)&&u.add(f)},this),this._sources=o,this._names=u,t.sources.forEach(function(e){var n=t.sourceContentFor(e);n&&(r&&(e=i.relative(r,e)),this.setSourceContent(e,n))},this)},o.prototype._validateMapping=function(t,n,r,i){if(t&&"line"in t&&"column"in t&&t.line>0&&t.column>=0&&!n&&!r&&!i)return;if(t&&"line"in t&&"column"in t&&n&&"line"in n&&"column"in n&&t.line>0&&t.column>=0&&n.line>0&&n.column>=0&&r)return;throw new Error("Invalid mapping.")},o.prototype._serializeMappings=function(){var t=0,n=1,i=0,s=0,o=0,u=0,a="",l;this._mappings.sort(f);for(var c=0,h=this._mappings.length;c<h;c++){l=this._mappings[c];if(l.generated.line!==n){t=0;while(l.generated.line!==n)a+=";",n++}else if(c>0){if(!f(l,this._mappings[c-1]))continue;a+=","}a+=r.encode(l.generated.column-t),t=l.generated.column,l.source&&l.original&&(a+=r.encode(this._sources.indexOf(l.source)-u),u=this._sources.indexOf(l.source),a+=r.encode(l.original.line-1-s),s=l.original.line-1,a+=r.encode(l.original.column-i),i=l.original.column,l.name&&(a+=r.encode(this._names.indexOf(l.name)-o),o=this._names.indexOf(l.name)))}return a},o.prototype.toJSON=function(){var t={version:this._version,file:this._file,sources:this._sources.toArray(),names:this._names.toArray(),mappings:this._serializeMappings()};return this._sourceRoot&&(t.sourceRoot=this._sourceRoot),this._sourcesContents&&(t.sourcesContent=t.sources.map(function(e){return t.sourceRoot&&(e=i.relative(t.sourceRoot,e)),Object.prototype.hasOwnProperty.call(this._sourcesContents,i.toSetString(e))?this._sourcesContents[i.toSetString(e)]:null},this)),t},o.prototype.toString=function(){return JSON.stringify(this)},t.SourceMapGenerator=o}),define("source-map/base64-vlq",["require","exports","module","source-map/base64"],function(e,t,n){function a(e){return e<0?(-e<<1)+1:(e<<1)+0}function f(e){var t=(e&1)===1,n=e>>1;return t?-n:n}var r=e("./base64"),i=5,s=1<<i,o=s-1,u=s;t.encode=function(t){var n="",s,f=a(t);do s=f&o,f>>>=i,f>0&&(s|=u),n+=r.encode(s);while(f>0);return n},t.decode=function(t){var n=0,s=t.length,a=0,l=0,c,h;do{if(n>=s)throw new Error("Expected more digits in base 64 VLQ value.");h=r.decode(t.charAt(n++)),c=!!(h&u),h&=o,a+=h<<l,l+=i}while(c);return{value:f(a),rest:t.slice(n)}}}),define("source-map/base64",["require","exports","module"],function(e,t,n){var r={},i={};"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/".split("").forEach(function(e,t){r[e]=t,i[t]=e}),t.encode=function(t){if(t in i)return i[t];throw new TypeError("Must be between 0 and 63: "+t)},t.decode=function(t){if(t in r)return r[t];throw new TypeError("Not a valid base 64 digit: "+t)}}),define("source-map/util",["require","exports","module"],function(e,t,n){function r(e,t,n){if(t in e)return e[t];if(arguments.length===3)return n;throw new Error('"'+t+'" is a required argument.')}function s(e){var t=e.match(i);return t?{scheme:t[1],auth:t[3],host:t[4],port:t[6],path:t[7]}:null}function o(e){var t=e.scheme+"://";return e.auth&&(t+=e.auth+"@"),e.host&&(t+=e.host),e.port&&(t+=":"+e.port),e.path&&(t+=e.path),t}function u(e,t){var n;return t.match(i)?t:t.charAt(0)==="/"&&(n=s(e))?(n.path=t,o(n)):e.replace(/\/$/,"")+"/"+t}function a(e){return"$"+e}function f(e){return e.substr(1)}function l(e,t){e=e.replace(/\/$/,"");var n=s(e);return t.charAt(0)=="/"&&n&&n.path=="/"?t.slice(1):t.indexOf(e+"/")===0?t.substr(e.length+1):t}t.getArg=r;var i=/([\w+\-.]+):\/\/((\w+:\w+)@)?([\w.]+)?(:(\d+))?(\S+)?/;t.urlParse=s,t.urlGenerate=o,t.join=u,t.toSetString=a,t.fromSetString=f,t.relative=l}),define("source-map/array-set",["require","exports","module","source-map/util"],function(e,t,n){function i(){this._array=[],this._set={}}var r=e("./util");i.fromArray=function(t){var n=new i;for(var r=0,s=t.length;r<s;r++)n.add(t[r]);return n},i.prototype.add=function(t){if(this.has(t))return;var n=this._array.length;this._array.push(t),this._set[r.toSetString(t)]=n},i.prototype.has=function(t){return Object.prototype.hasOwnProperty.call(this._set,r.toSetString(t))},i.prototype.indexOf=function(t){if(this.has(t))return this._set[r.toSetString(t)];throw new Error('"'+t+'" is not in the set.')},i.prototype.at=function(t){if(t>=0&&t<this._array.length)return this._array[t];throw new Error("No element indexed by "+t)},i.prototype.toArray=function(){return this._array.slice()},t.ArraySet=i}),define("source-map/source-map-consumer",["require","exports","module","source-map/util","source-map/binary-search","source-map/array-set","source-map/base64-vlq"],function(e,t,n){function u(e){var t=e;typeof e=="string"&&(t=JSON.parse(e.replace(/^\)\]\}'/,"")));var n=r.getArg(t,"version"),i=r.getArg(t,"sources"),o=r.getArg(t,"names"),u=r.getArg(t,"sourceRoot",null),a=r.getArg(t,"sourcesContent",null),f=r.getArg(t,"mappings"),l=r.getArg(t,"file",null);if(n!==this._version)throw new Error("Unsupported version: "+n);this._names=s.fromArray(o),this._sources=s.fromArray(i),this.sourceRoot=u,this.sourcesContent=a,this.file=l,this._generatedMappings=[],this._originalMappings=[],this._parseMappings(f,u)}var r=e("./util"),i=e("./binary-search"),s=e("./array-set").ArraySet,o=e("./base64-vlq");u.prototype._version=3,Object.defineProperty(u.prototype,"sources",{get:function(){return this._sources.toArray().map(function(e){return this.sourceRoot?r.join(this.sourceRoot,e):e},this)}}),u.prototype._parseMappings=function(t,n){var r=1,i=0,s=0,u=0,a=0,f=0,l=/^[,;]/,c=t,h,p;while(c.length>0)if(c.charAt(0)===";")r++,c=c.slice(1),i=0;else if(c.charAt(0)===",")c=c.slice(1);else{h={},h.generatedLine=r,p=o.decode(c),h.generatedColumn=i+p.value,i=h.generatedColumn,c=p.rest;if(c.length>0&&!l.test(c.charAt(0))){p=o.decode(c),h.source=this._sources.at(a+p.value),a+=p.value,c=p.rest;if(c.length===0||l.test(c.charAt(0)))throw new Error("Found a source, but no line and column");p=o.decode(c),h.originalLine=s+p.value,s=h.originalLine,h.originalLine+=1,c=p.rest;if(c.length===0||l.test(c.charAt(0)))throw new Error("Found a source and line, but no column");p=o.decode(c),h.originalColumn=u+p.value,u=h.originalColumn,c=p.rest,c.length>0&&!l.test(c.charAt(0))&&(p=o.decode(c),h.name=this._names.at(f+p.value),f+=p.value,c=p.rest)}this._generatedMappings.push(h),typeof h.originalLine=="number"&&this._originalMappings.push(h)}this._originalMappings.sort(this._compareOriginalPositions)},u.prototype._compareOriginalPositions=function(t,n){if(t.source>n.source)return 1;if(t.source<n.source)return-1;var r=t.originalLine-n.originalLine;return r===0?t.originalColumn-n.originalColumn:r},u.prototype._compareGeneratedPositions=function(t,n){var r=t.generatedLine-n.generatedLine;return r===0?t.generatedColumn-n.generatedColumn:r},u.prototype._findMapping=function(t,n,r,s,o){if(t[r]<=0)throw new TypeError("Line must be greater than or equal to 1, got "+t[r]);if(t[s]<0)throw new TypeError("Column must be greater than or equal to 0, got "+t[s]);return i.search(t,n,o)},u.prototype.originalPositionFor=function(t){var n={generatedLine:r.getArg(t,"line"),generatedColumn:r.getArg(t,"column")},i=this._findMapping(n,this._generatedMappings,"generatedLine","generatedColumn",this._compareGeneratedPositions);if(i){var s=r.getArg(i,"source",null);return s&&this.sourceRoot&&(s=r.join(this.sourceRoot,s)),{source:s,line:r.getArg(i,"originalLine",null),column:r.getArg(i,"originalColumn",null),name:r.getArg(i,"name",null)}}return{source:null,line:null,column:null,name:null}},u.prototype.sourceContentFor=function(t){if(!this.sourcesContent)return null;this.sourceRoot&&(t=r.relative(this.sourceRoot,t));if(this._sources.has(t))return this.sourcesContent[this._sources.indexOf(t)];var n;if(this.sourceRoot&&(n=r.urlParse(this.sourceRoot))){var i=t.replace(/^file:\/\//,"");if(n.scheme=="file"&&this._sources.has(i))return this.sourcesContent[this._sources.indexOf(i)];if((!n.path||n.path=="/")&&this._sources.has("/"+t))return this.sourcesContent[this._sources.indexOf("/"+t)]}throw new Error('"'+t+'" is not in the SourceMap.')},u.prototype.generatedPositionFor=function(t){var n={source:r.getArg(t,"source"),originalLine:r.getArg(t,"line"),originalColumn:r.getArg(t,"column")};this.sourceRoot&&(n.source=r.relative(this.sourceRoot,n.source));var i=this._findMapping(n,this._originalMappings,"originalLine","originalColumn",this._compareOriginalPositions);return i?{line:r.getArg(i,"generatedLine",null),column:r.getArg(i,"generatedColumn",null)}:{line:null,column:null}},u.GENERATED_ORDER=1,u.ORIGINAL_ORDER=2,u.prototype.eachMapping=function(t,n,i){var s=n||null,o=i||u.GENERATED_ORDER,a;switch(o){case u.GENERATED_ORDER:a=this._generatedMappings;break;case u.ORIGINAL_ORDER:a=this._originalMappings;break;default:throw new Error("Unknown order of iteration.")}var f=this.sourceRoot;a.map(function(e){var t=e.source;return t&&f&&(t=r.join(f,t)),{source:t,generatedLine:e.generatedLine,generatedColumn:e.generatedColumn,originalLine:e.originalLine,originalColumn:e.originalColumn,name:e.name}}).forEach(t,s)},t.SourceMapConsumer=u}),define("source-map/binary-search",["require","exports","module"],function(e,t,n){function r(e,t,n,i,s){var o=Math.floor((t-e)/2)+e,u=s(n,i[o]);return u===0?i[o]:u>0?t-o>1?r(o,t,n,i,s):i[o]:o-e>1?r(e,o,n,i,s):e<0?null:i[e]}t.search=function(t,n,i){return n.length>0?r(-1,n.length,t,n,i):null}}),define("source-map/source-node",["require","exports","module","source-map/source-map-generator","source-map/util"],function(e,t,n){function s(e,t,n,r,i){this.children=[],this.sourceContents={},this.line=e===undefined?null:e,this.column=t===undefined?null:t,this.source=n===undefined?null:n,this.name=i===undefined?null:i,r!=null&&this.add(r)}var r=e("./source-map-generator").SourceMapGenerator,i=e("./util");s.fromStringWithSourceMap=function(t,n){function f(e,t){e===null||e.source===undefined?r.add(t):r.add(new s(e.originalLine,e.originalColumn,e.source,t,e.name))}var r=new s,i=t.split("\n"),o=1,u=0,a=null;return n.eachMapping(function(e){if(a===null){while(o<e.generatedLine)r.add(i.shift()+"\n"),o++;if(u<e.generatedColumn){var t=i[0];r.add(t.substr(0,e.generatedColumn)),i[0]=t.substr(e.generatedColumn),u=e.generatedColumn}}else if(o<e.generatedLine){var n="";do n+=i.shift()+"\n",o++,u=0;while(o<e.generatedLine);if(u<e.generatedColumn){var t=i[0];n+=t.substr(0,e.generatedColumn),i[0]=t.substr(e.generatedColumn),u=e.generatedColumn}f(a,n)}else{var t=i[0],n=t.substr(0,e.generatedColumn-u);i[0]=t.substr(e.generatedColumn-u),u=e.generatedColumn,f(a,n)}a=e},this),f(a,i.join("\n")),n.sources.forEach(function(e){var t=n.sourceContentFor(e);t&&r.setSourceContent(e,t)}),r},s.prototype.add=function(t){if(Array.isArray(t))t.forEach(function(e){this.add(e)},this);else{if(!(t instanceof s||typeof t=="string"))throw new TypeError("Expected a SourceNode, string, or an array of SourceNodes and strings. Got "+t);t&&this.children.push(t)}return this},s.prototype.prepend=function(t){if(Array.isArray(t))for(var n=t.length-1;n>=0;n--)this.prepend(t[n]);else{if(!(t instanceof s||typeof t=="string"))throw new TypeError("Expected a SourceNode, string, or an array of SourceNodes and strings. Got "+t);this.children.unshift(t)}return this},s.prototype.walk=function(t){this.children.forEach(function(e){e instanceof s?e.walk(t):e!==""&&t(e,{source:this.source,line:this.line,column:this.column,name:this.name})},this)},s.prototype.join=function(t){var n,r,i=this.children.length;if(i>0){n=[];for(r=0;r<i-1;r++)n.push(this.children[r]),n.push(t);n.push(this.children[r]),this.children=n}return this},s.prototype.replaceRight=function(t,n){var r=this.children[this.children.length-1];return r instanceof s?r.replaceRight(t,n):typeof r=="string"?this.children[this.children.length-1]=r.replace(t,n):this.children.push("".replace(t,n)),this},s.prototype.setSourceContent=function(t,n){this.sourceContents[i.toSetString(t)]=n},s.prototype.walkSourceContents=function(t){this.children.forEach(function(e){e instanceof s&&e.walkSourceContents(t)},this),Object.keys(this.sourceContents).forEach(function(e){t(i.fromSetString(e),this.sourceContents[e])},this)},s.prototype.toString=function(){var t="";return this.walk(function(e){t+=e}),t},s.prototype.toStringWithSourceMap=function(t){var n={code:"",line:1,column:0},i=new r(t),s=!1;return this.walk(function(e,t){n.code+=e,t.source!==null&&t.line!==null&&t.column!==null?(i.addMapping({source:t.source,original:{line:t.line,column:t.column},generated:{line:n.line,column:n.column},name:t.name}),s=!0):s&&(i.addMapping({generated:{line:n.line,column:n.column}}),s=!1),e.split("").forEach(function(e){e==="\n"?(n.line++,n.column=0):n.column++})}),this.walkSourceContents(function(e,t){i.setSourceContent(e,t)}),{code:n.code,map:i}},t.SourceNode=s});return {SourceMapConsumer:require("source-map/source-map-consumer").SourceMapConsumer,SourceMapGenerator:require("source-map/source-map-generator").SourceMapGenerator,SourceNode:require("source-map/source-node").SourceNode}})();
+	
+		var TRACER_ID = String(Math.random());
+	
+		var globalThis = undefined;
+	
+		var sourceByPath = {};
+		var nodes = []; // objects describing functions, branches, call sites, etc
+		var nodeById = {}; // id(string) -> node
+		var invocationStack = [];
+		var invocationById = {}; // id(string) -> invocation
+		var invocationsByNodeId = {}; // id(string) -> array of invocations
+		var exceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
+		var uncaughtExceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
+		var nodeHitCounts = {}; // { query-handle: { nodeId: hit-count } }
+		var exceptionCounts = {}; // { query-handle: { nodeId: exception-count } }
+		var logEntries = {}; // { query-handle: [invocation id] }
+		var anonFuncParentInvocation, lastException, lastExceptionThrownFromInvocation; // yucky globals track state between trace* calls
+		var nextInvocationId = 0;
+		var _hitQueries = [];
+		var _exceptionQueries = [];
+		var _logQueries = [];
+		var _fileCallGraph = [];
+		var _sourceMaps = {};
+	
+		var _connected = false;
+	
 		// epochs
-		_epochsById = []; // int -> epoch (only epochs that end up as part of the call graph are saved)
-		_epochsByName = {}; // string -> [epoch] (only epochs that end up as part of the call graph are saved)
-		_topLevelEpochsByName = {}; // string -> [epoch]
-		_epochStack = [];
-		_epochInvocationDepth = []; // stack of how deep into the invocation stack of each epoch we are
-		_topLevelInvocationsByEventName = {};
-
+		var _lastEpochID = 0;
+		var _lastEmitterID = 0;
+		var _epochsById = []; // int -> epoch (only epochs that end up as part of the call graph are saved)
+		var _epochsByName = {}; // string -> [epoch] (only epochs that end up as part of the call graph are saved)
+		var _topLevelEpochsByName = {}; // string -> [epoch]
+		var _epochStack = [];
+		var _epochInvocationDepth = []; // stack of how deep into the invocation stack of each epoch we are
+		var _topLevelInvocationsByEventName = {};
+	
 		// bail
-		_bailedTick = false;
-		_invocationsThisTick = 0;
-		_invocationStackSize = 0;
-		_explainedBails = false;
-
-		nodeTracker.reset();
-		epochTracker.reset();
-		fileCallGraphTracker.reset();
-	}
-
-	/*
-	Fetching data from fondue happens by requesting a handle for the data you
-	want, then calling another function to get the latest data from that handle.
-	Typically, the first call to that function returns all the historical data
-	and subsequent calls return the changes since the last call.
-
-	The bookkeeping was the same in all the cases. Now this 'base class' handles
-	it. Just make a new instance and override backfill() and updateSingle().
-	*/
-	function Tracker(handlePrefix) {
-		this.lastHandleID = 0;
-		this.handlePrefix = handlePrefix;
-		this.queries = {}; // handle -> query
-		this.data = {}; // handle -> data
-	}
-	Tracker.prototype = {
-		track: function (query) {
-			var handleID = ++this.lastHandleID;
-			var handle = this.handlePrefix + '-' + handleID;
-			this.queries[handle] = query;
-			this.data[handle] = this.backfill(query);
-			return handle;
-		},
-		untrack: function (handle) {
-			this._checkHandle(handle);
-
-			delete this.queries[handle];
-			delete this.data[handle];
-		},
-		/** return the data to be returned from the first call to delta() */
-		backfill: function (query) {
-			// override this
-			return {};
-		},
-		update: function () {
-			for (var handle in this.data) {
-				var data = this.data[handle];
-				var args = [data].concat(Array.prototype.slice.apply(arguments));
-				this.data[handle] = this.updateSingle.apply(this, args);
+		var _bailedTick = false;
+		var _invocationsThisTick = 0;
+		var _invocationStackSize = 0;
+		var _explainedBails = false;
+	
+		function _consoleLog() {
+			if (typeof console !== 'undefined') {
+				console.log.apply(console, arguments);
 			}
-		},
-		/**
-		data: the previous data for this query
-		arguments passed to update() will be passed after the data argument.
+		}
+	
+		function _resetTrace() {
+			_consoleLog("[fondue] resetting trace data...");
+	
+			invocationStack = [];
+			invocationById = {}; // id(string) -> invocation
+			invocationsByNodeId = {}; // id(string) -> array of invocations
+			exceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
+			uncaughtExceptionsByNodeId = {}; // nodeId -> array of { exception: ..., invocationId: ... }
+			nodeHitCounts = {}; // { query-handle: { nodeId: hit-count } }
+			exceptionCounts = {}; // { query-handle: { nodeId: exception-count } }
+			logEntries = {}; // { query-handle: [invocation id] }
+			anonFuncParentInvocation = undefined, lastException = undefined, lastExceptionThrownFromInvocation = undefined; // yucky globals track state between trace* calls
+			_hitQueries = [];
+			_exceptionQueries = [];
+			_logQueries = [];
+			_fileCallGraph = [];
+	
+			// epochs
+			_epochsById = []; // int -> epoch (only epochs that end up as part of the call graph are saved)
+			_epochsByName = {}; // string -> [epoch] (only epochs that end up as part of the call graph are saved)
+			_topLevelEpochsByName = {}; // string -> [epoch]
+			_epochStack = [];
+			_epochInvocationDepth = []; // stack of how deep into the invocation stack of each epoch we are
+			_topLevelInvocationsByEventName = {};
+	
+			// bail
+			_bailedTick = false;
+			_invocationsThisTick = 0;
+			_invocationStackSize = 0;
+			_explainedBails = false;
+	
+			nodeTracker.reset();
+			epochTracker.reset();
+			fileCallGraphTracker.reset();
+		}
+	
+		/*
+		Fetching data from fondue happens by requesting a handle for the data you
+		want, then calling another function to get the latest data from that handle.
+		Typically, the first call to that function returns all the historical data
+		and subsequent calls return the changes since the last call.
+	
+		The bookkeeping was the same in all the cases. Now this 'base class' handles
+		it. Just make a new instance and override backfill() and updateSingle().
 		*/
-		updateSingle: function (data, extraData1, extraData2) {
-			// override this
-			data['foo'] = 'bar';
-			return data;
-		},
-		delta: function (handle) {
-			this._checkHandle(handle);
-
-			var result = this.data[handle];
-			this.data[handle] = this.emptyData(handle);
-			return result;
-		},
-		/** after a call to delta(), the data for a handle is reset to this */
-		emptyData: function (handle) {
-			return {};
-		},
-		reset: function () {
+		function Tracker(handlePrefix) {
+			this.lastHandleID = 0;
+			this.handlePrefix = handlePrefix;
 			this.queries = {}; // handle -> query
 			this.data = {}; // handle -> data
-		},
-		_checkHandle: function (handle) {
-			if (!(handle in this.queries)) {
-				throw new Error("unrecognized query");
-			}
-		},
-	}
-
-	var nodeTracker = new Tracker('node');
-	nodeTracker.emptyData = function () {
-		return [];
-	};
-	nodeTracker.backfill = function () {
-		return nodes.slice();
-	};
-	nodeTracker.updateSingle = function (data, newNodes) {
-		data.push.apply(data, newNodes);
-		return data;
-	};
-
-	var epochTracker = new Tracker('epoch');
-	epochTracker.backfill = function () {
-		var data = {};
-		for (var epochName in _topLevelEpochsByName) {
-			data[epochName] = { hits: _topLevelEpochsByName[epochName].length };
 		}
-		return data;
-	};
-	epochTracker.updateSingle = function (data, epoch) {
-		if (!(epoch.eventName in data)) {
-			data[epoch.eventName] = { hits: 0 };
-		}
-		data[epoch.eventName].hits++;
-		return data;
-	};
-
-	var fileCallGraphTracker = new Tracker('file-call-graph');
-	fileCallGraphTracker.emptyData = function () {
-		return [];
-	};
-	fileCallGraphTracker.backfill = function () {
-		return _fileCallGraph.slice();
-	};
-	fileCallGraphTracker.updateSingle = function (data, item) {
-		data.push(item);
-		return data;
-	};
-
-	function _addSpecialNodes() {
-		var node = {
-			path: "[built-in]",
-			start: { line: 0, column: 0 },
-			end: { line: 0, column: 0 },
-			id: "log",
-			type: "function",
-			childrenIds: [],
-			parentId: undefined,
-			name: "[log]",
-			params: []
-		};
-		nodes.push(node);
-		nodeById[node.id] = node;
-	}
-	_addSpecialNodes();
-
-
-	// helpers
-
-	// adds keys from options to defaultOptions, overwriting on conflicts & returning defaultOptions
-	function mergeInto(options, defaultOptions) {
-		for (var key in options) {
-			defaultOptions[key] = options[key];
-		}
-		return defaultOptions;
-	}
-
-	/**
-	 * calls callback with (collect, item, index) where collect is a function
-	 * whose argument should be one of the strings to be de-duped.
-	 * returns an array where each string appears only once.
-	 */
-	function dedup(collection, callback) {
-		var o = {};
-		var collect = function (str) {
-			o[str] = true;
-		};
-		for (var i in collection) {
-			callback(collect, collection[i], i);
-		}
-		var arr = [];
-		for (var str in o) {
-			arr.push(str);
-		}
-		return arr;
-	};
-
-	function count(collection, callback) {
-		var o = {};
-		var collect = function (str) {
-			if (str in o) {
-				o[str]++;
-			} else {
-				o[str] = 1;
-			}
-		};
-		for (var i in collection) {
-			callback(collect, collection[i], i);
-		}
-		return o;
-	};
-
-	function flattenmap(collection, callback) {
-		var arr = [];
-		var collect = function (o) {
-			arr.push(o);
-		};
-		for (var i in collection) {
-			callback(collect, collection[i], i, collection);
-		}
-		return arr;
-	};
-
-	/**
-	 * behaves like de-dup, but collect takes a second, 'value' argument.
-	 * returns an object whose keys are the first arguments to collect,
-	 * and values are arrays of all the values passed with that key
-	 */
-	function cluster(collection, callback) {
-		var o = {};
-		var collect = function (key, value) {
-			if (key in o) {
-				o[key].push(value);
-			} else {
-				o[key] = [value];
-			}
-		};
-		for (var i in collection) {
-			callback(collect, collection[i], i);
-		}
-		return o;
-	};
-
-	/**
-	 * returns a version of an object that's safe to JSON,
-	 * and is very conservative
-	 *
-	 *   undefined -> { type: 'undefined', value: undefined }
-	 *   null -> { type: 'undefined', value: null }
-	 *   true -> { type: 'boolean', value: true }
-	 *   4 -> { type: 'number', value: 4 }
-	 *   "foo" -> { type: 'string', value: "foo" }
-	 *   (function () { }) -> { type: 'object' }
-	 *   { a: "b" } -> { type: 'object' }
-	 */
-	function marshalForTransmission(val, maxDepth) {
-		if (maxDepth === undefined) {
-			maxDepth = 1;
-		}
-
-		var o = { type: typeof(val) };
-		if (["undefined", "boolean", "number", "string"].indexOf(o.type) !== -1 || val === null) {
-			if (typeof(val) === "undefined" && val !== undefined) {
-				// special case: document.all claims to be undefined http://stackoverflow.com/questions/10350142/why-is-document-all-falsy
-				o.type = "object";
-				o.preview = "" + val;
-			} else if (val === null) {
-				o.type = "null";
-				o.preview = "null";
-			} else {
-				o.value = val;
-			}
-		} else if (o.type === "object") {
-			var newDepth = maxDepth - 1;
-
-			if (val instanceof Array) {
-				var len = val.length;
-				if (val.__theseusTruncated && val.__theseusTruncated.length) {
-					len += val.__theseusTruncated.length;
+		Tracker.prototype = {
+			track: function (query) {
+				var handleID = ++this.lastHandleID;
+				var handle = this.handlePrefix + '-' + handleID;
+				this.queries[handle] = query;
+				this.data[handle] = this.backfill(query);
+				return handle;
+			},
+			untrack: function (handle) {
+				this._checkHandle(handle);
+	
+				delete this.queries[handle];
+				delete this.data[handle];
+			},
+			/** return the data to be returned from the first call to delta() */
+			backfill: function (query) {
+				// override this
+				return {};
+			},
+			update: function () {
+				for (var handle in this.data) {
+					var data = this.data[handle];
+					var args = [data].concat(Array.prototype.slice.apply(arguments));
+					this.data[handle] = this.updateSingle.apply(this, args);
 				}
-				o.preview = "[Array:" + len + "]";
-				newDepth = maxDepth - 0.5; // count for half
-			} else if (typeof(Buffer) === "function" && (val instanceof Buffer)) {
-				var len = val.length;
-				if (val.__theseusTruncated && val.__theseusTruncated.length) {
-					len += val.__theseusTruncated.length;
+			},
+			/**
+			data: the previous data for this query
+			arguments passed to update() will be passed after the data argument.
+			*/
+			updateSingle: function (data, extraData1, extraData2) {
+				// override this
+				data['foo'] = 'bar';
+				return data;
+			},
+			delta: function (handle) {
+				this._checkHandle(handle);
+	
+				var result = this.data[handle];
+				this.data[handle] = this.emptyData(handle);
+				return result;
+			},
+			/** after a call to delta(), the data for a handle is reset to this */
+			emptyData: function (handle) {
+				return {};
+			},
+			reset: function () {
+				this.queries = {}; // handle -> query
+				this.data = {}; // handle -> data
+			},
+			_checkHandle: function (handle) {
+				if (!(handle in this.queries)) {
+					throw new Error("unrecognized query");
 				}
-				o.preview = "[Buffer:" + len + "]";
-			} else {
-				try { o.preview = String(val) } catch (e) { o.preview = "[Object]" }
-			}
-
-			if (maxDepth > 0) {
-				o.ownProperties = {};
-				for (var key in val) {
-					if (val.hasOwnProperty(key) && !/^__theseus/.test(key)) {
-						o.ownProperties[key] = marshalForTransmission(val[key], newDepth);
-					}
-				}
-			}
-
-			if ("__theseusTruncated" in val) {
-				o.truncated = {};
-				if ("length" in val.__theseusTruncated) {
-					o.truncated.length = {
-						amount: val.__theseusTruncated.length,
-					};
-				}
-				if ("keys" in val.__theseusTruncated) {
-					o.truncated.keys = {
-						amount: val.__theseusTruncated.keys,
-					};
-				}
-			}
+			},
 		}
-		return o;
-	}
-
-	function scrapeObject(object, depth) {
-		var MAX_BUFFER_LENGTH = 32;
-		var MAX_TOTAL_SIZE = 512;
-
+	
+		var nodeTracker = new Tracker('node');
+		nodeTracker.emptyData = function () {
+			return [];
+		};
+		nodeTracker.backfill = function () {
+			return nodes.slice();
+		};
+		nodeTracker.updateSingle = function (data, newNodes) {
+			data.push.apply(data, newNodes);
+			return data;
+		};
+	
+		var epochTracker = new Tracker('epoch');
+		epochTracker.backfill = function () {
+			var data = {};
+			for (var epochName in _topLevelEpochsByName) {
+				data[epochName] = { hits: _topLevelEpochsByName[epochName].length };
+			}
+			return data;
+		};
+		epochTracker.updateSingle = function (data, epoch) {
+			if (!(epoch.eventName in data)) {
+				data[epoch.eventName] = { hits: 0 };
+			}
+			data[epoch.eventName].hits++;
+			return data;
+		};
+	
+		var fileCallGraphTracker = new Tracker('file-call-graph');
+		fileCallGraphTracker.emptyData = function () {
+			return [];
+		};
+		fileCallGraphTracker.backfill = function () {
+			return _fileCallGraph.slice();
+		};
+		fileCallGraphTracker.updateSingle = function (data, item) {
+			data.push(item);
+			return data;
+		};
+	
+		function _addSpecialNodes() {
+			var node = {
+				path: "[built-in]",
+				start: { line: 0, column: 0 },
+				end: { line: 0, column: 0 },
+				id: "log",
+				type: "function",
+				childrenIds: [],
+				parentId: undefined,
+				name: "[log]",
+				params: []
+			};
+			nodes.push(node);
+			nodeById[node.id] = node;
+		}
+		_addSpecialNodes();
+	
+	
+		// helpers
+	
+		// adds keys from options to defaultOptions, overwriting on conflicts & returning defaultOptions
+		function mergeInto(options, defaultOptions) {
+			for (var key in options) {
+				defaultOptions[key] = options[key];
+			}
+			return defaultOptions;
+		}
+	
 		/**
-		It's everyone's favorite game: bin packing!
-
-		There's a big bin: total memory
-		There's a smaller bin: the memory used by this scraped object
-		There's smaller bins: the memory used by each child of this scraped object
-
-		Our job is to copy as much useful information we can without overflowing
-		the big bin (total memory). For now, we pretend that bin is bottomless.
-
-		So our job is really to copy as much useful information as we can into
-		the MAX_TOTAL_SIZE "bytes" allocated to this scraped object. We do this
-		by performing a deep copy, and any time we encounter an object that's
-		sufficiently large to put us over the limit, we store a reference to it
-		instead of copying it.
-
-		In this function, the "size" of a copy is approximated by summing the
-		lengths of all strings, the lengths of all keys, and the count of
-		objects of any other type, ignoring the overhead of array/object storage.
-		**/
-
-		// returns array: [approx size of copy, copy]
-		var scrape = function (o, depth) {
-			if (typeof(o) === "string") return [o.length, o]; // don't worry about retaining strings > MAX_TOTAL_SIZE, for now
-
-			if (depth <= 0) return [1, o]; // XXX: even if there's a ton there, count it as 1
-			if (o === null || typeof(o) !== "object") return [1, o];
-
-			// return only the first MAX_BUFFER_LENGTH bytes of a Buffer
-			if (typeof(Buffer) === "function" && (o instanceof Buffer)) {
-				var len = Math.min(o.length, MAX_BUFFER_LENGTH);
-				var o2 = new Buffer(len);
-				if (o.length > MAX_BUFFER_LENGTH) {
-					o2.__theseusTruncated = { length: o.length - MAX_BUFFER_LENGTH };
-				}
-				try { o.copy(o2, 0, 0, len); } catch (e) { }
-				return [len, o2];
+		 * calls callback with (collect, item, index) where collect is a function
+		 * whose argument should be one of the strings to be de-duped.
+		 * returns an array where each string appears only once.
+		 */
+		function dedup(collection, callback) {
+			var o = {};
+			var collect = function (str) {
+				o[str] = true;
+			};
+			for (var i in collection) {
+				callback(collect, collection[i], i);
 			}
-
-			try {
-				var size = 0;
-				var o2 = (o instanceof Array) ? [] : {};
-				for (var key in o) {
-					if ((o.__lookupGetter__ instanceof Function) && o.__lookupGetter__(key))
-						continue;
-					if (!(o.hasOwnProperty instanceof Function) || !o.hasOwnProperty(key))
-						continue;
-					var scraped = scrape(o[key], depth - 1);
-					var childSize = key.length + scraped[0];
-					if (size + childSize <= MAX_TOTAL_SIZE) {
-						size += childSize;
-						o2[key] = scraped[1];
-					} else {
-						// XXX: if it's an array and this is a numeric key, count it as truncating the length instead
-						if (!("__theseusTruncated" in o2)) {
-							o2.__theseusTruncated = { keys: 0 };
+			var arr = [];
+			for (var str in o) {
+				arr.push(str);
+			}
+			return arr;
+		};
+	
+		function count(collection, callback) {
+			var o = {};
+			var collect = function (str) {
+				if (str in o) {
+					o[str]++;
+				} else {
+					o[str] = 1;
+				}
+			};
+			for (var i in collection) {
+				callback(collect, collection[i], i);
+			}
+			return o;
+		};
+	
+		function flattenmap(collection, callback) {
+			var arr = [];
+			var collect = function (o) {
+				arr.push(o);
+			};
+			for (var i in collection) {
+				callback(collect, collection[i], i, collection);
+			}
+			return arr;
+		};
+	
+		/**
+		 * behaves like de-dup, but collect takes a second, 'value' argument.
+		 * returns an object whose keys are the first arguments to collect,
+		 * and values are arrays of all the values passed with that key
+		 */
+		function cluster(collection, callback) {
+			var o = {};
+			var collect = function (key, value) {
+				if (key in o) {
+					o[key].push(value);
+				} else {
+					o[key] = [value];
+				}
+			};
+			for (var i in collection) {
+				callback(collect, collection[i], i);
+			}
+			return o;
+		};
+	
+		/**
+		 * returns a version of an object that's safe to JSON,
+		 * and is very conservative
+		 *
+		 *   undefined -> { type: 'undefined', value: undefined }
+		 *   null -> { type: 'undefined', value: null }
+		 *   true -> { type: 'boolean', value: true }
+		 *   4 -> { type: 'number', value: 4 }
+		 *   "foo" -> { type: 'string', value: "foo" }
+		 *   (function () { }) -> { type: 'object' }
+		 *   { a: "b" } -> { type: 'object' }
+		 */
+		function marshalForTransmission(val, maxDepth) {
+			if (maxDepth === undefined) {
+				maxDepth = 1;
+			}
+	
+			var o = { type: typeof(val) };
+			if (["undefined", "boolean", "number", "string"].indexOf(o.type) !== -1 || val === null) {
+				if (typeof(val) === "undefined" && val !== undefined) {
+					// special case: document.all claims to be undefined http://stackoverflow.com/questions/10350142/why-is-document-all-falsy
+					o.type = "object";
+					o.preview = "" + val;
+				} else if (val === null) {
+					o.type = "null";
+					o.preview = "null";
+				} else {
+					o.value = val;
+				}
+			} else if (o.type === "object") {
+				var newDepth = maxDepth - 1;
+	
+				if (val instanceof Array) {
+					var len = val.length;
+					if (val.__theseusTruncated && val.__theseusTruncated.length) {
+						len += val.__theseusTruncated.length;
+					}
+					o.preview = "[Array:" + len + "]";
+					newDepth = maxDepth - 0.5; // count for half
+				} else if (typeof(Buffer) === "function" && (val instanceof Buffer)) {
+					var len = val.length;
+					if (val.__theseusTruncated && val.__theseusTruncated.length) {
+						len += val.__theseusTruncated.length;
+					}
+					o.preview = "[Buffer:" + len + "]";
+				} else {
+					try { o.preview = String(val) } catch (e) { o.preview = "[Object]" }
+				}
+	
+				if (maxDepth > 0) {
+					o.ownProperties = {};
+					for (var key in val) {
+						if (val.hasOwnProperty(key) && !/^__theseus/.test(key)) {
+							o.ownProperties[key] = marshalForTransmission(val[key], newDepth);
 						}
-						o2.__theseusTruncated.keys++;
-						o2[key] = o[key];
 					}
 				}
-				return [size, o2];
-			} catch (e) {
-				_consoleLog("[fondue] couldn't scrape", o, e);
-				return [1, o];
+	
+				if ("__theseusTruncated" in val) {
+					o.truncated = {};
+					if ("length" in val.__theseusTruncated) {
+						o.truncated.length = {
+							amount: val.__theseusTruncated.length,
+						};
+					}
+					if ("keys" in val.__theseusTruncated) {
+						o.truncated.keys = {
+							amount: val.__theseusTruncated.keys,
+						};
+					}
+				}
+			}
+			return o;
+		}
+	
+		function scrapeObject(object, depth) {
+			var MAX_BUFFER_LENGTH = 32;
+			var MAX_TOTAL_SIZE = 512;
+	
+			/**
+			It's everyone's favorite game: bin packing!
+	
+			There's a big bin: total memory
+			There's a smaller bin: the memory used by this scraped object
+			There's smaller bins: the memory used by each child of this scraped object
+	
+			Our job is to copy as much useful information we can without overflowing
+			the big bin (total memory). For now, we pretend that bin is bottomless.
+	
+			So our job is really to copy as much useful information as we can into
+			the MAX_TOTAL_SIZE "bytes" allocated to this scraped object. We do this
+			by performing a deep copy, and any time we encounter an object that's
+			sufficiently large to put us over the limit, we store a reference to it
+			instead of copying it.
+	
+			In this function, the "size" of a copy is approximated by summing the
+			lengths of all strings, the lengths of all keys, and the count of
+			objects of any other type, ignoring the overhead of array/object storage.
+			**/
+	
+			// returns array: [approx size of copy, copy]
+			var scrape = function (o, depth) {
+				if (typeof(o) === "string") return [o.length, o]; // don't worry about retaining strings > MAX_TOTAL_SIZE, for now
+	
+				if (depth <= 0) return [1, o]; // XXX: even if there's a ton there, count it as 1
+				if (o === null || typeof(o) !== "object") return [1, o];
+	
+				// return only the first MAX_BUFFER_LENGTH bytes of a Buffer
+				if (typeof(Buffer) === "function" && (o instanceof Buffer)) {
+					var len = Math.min(o.length, MAX_BUFFER_LENGTH);
+					var o2 = new Buffer(len);
+					if (o.length > MAX_BUFFER_LENGTH) {
+						o2.__theseusTruncated = { length: o.length - MAX_BUFFER_LENGTH };
+					}
+					try { o.copy(o2, 0, 0, len); } catch (e) { }
+					return [len, o2];
+				}
+	
+				try {
+					var size = 0;
+					var o2 = (o instanceof Array) ? [] : {};
+					for (var key in o) {
+						if ((o.__lookupGetter__ instanceof Function) && o.__lookupGetter__(key))
+							continue;
+						if (!(o.hasOwnProperty instanceof Function) || !o.hasOwnProperty(key))
+							continue;
+						var scraped = scrape(o[key], depth - 1);
+						var childSize = key.length + scraped[0];
+						if (size + childSize <= MAX_TOTAL_SIZE) {
+							size += childSize;
+							o2[key] = scraped[1];
+						} else {
+							// XXX: if it's an array and this is a numeric key, count it as truncating the length instead
+							if (!("__theseusTruncated" in o2)) {
+								o2.__theseusTruncated = { keys: 0 };
+							}
+							o2.__theseusTruncated.keys++;
+							o2[key] = o[key];
+						}
+					}
+					return [size, o2];
+				} catch (e) {
+					_consoleLog("[fondue] couldn't scrape", o, e);
+					return [1, o];
+				}
+			};
+	
+			return scrape(object, 1)[1];
+		}
+	
+		function Invocation(info, type) {
+			this.tick = nextInvocationId++;
+			this.id = TRACER_ID + "-" + this.tick;
+			this.timestamp = new Date().getTime();
+			this.type = type;
+			this.f = nodeById[info.nodeId];
+			this.childLinks = [];
+			this.parentLinks = [];
+			this.returnValue = undefined;
+			this.exception = undefined;
+			this.topLevelInvocationId = undefined;
+			this.epochID = undefined;
+			this.epochDepth = undefined;
+			this.args = {};
+			this.arguments = info.arguments ? info.arguments.map(function (a) { return scrapeObject(a) }) : undefined;
+			this.this = (info.this && info.this !== globalThis) ? scrapeObject(info.this) : undefined;
+	
+			invocationById[this.id] = this;
+		}
+		Invocation.prototype.equalToInfo = function (info) {
+			return this.f.id === info.nodeId;
+		};
+		Invocation.prototype.linkToChild = function (child, linkType) {
+			this.childLinks.push(new InvocationLink(child.id, linkType));
+			child.parentLinks.push(new InvocationLink(this.id, linkType));
+			if (['call', 'branch-enter'].indexOf(linkType) !== -1) {
+				child.topLevelInvocationId = this.topLevelInvocationId;
 			}
 		};
-
-		return scrape(object, 1)[1];
-	}
-
-	function Invocation(info, type) {
-		this.tick = nextInvocationId++;
-		this.id = TRACER_ID + "-" + this.tick;
-		this.timestamp = new Date().getTime();
-		this.type = type;
-		this.f = nodeById[info.nodeId];
-		this.childLinks = [];
-		this.parentLinks = [];
-		this.returnValue = undefined;
-		this.exception = undefined;
-		this.topLevelInvocationId = undefined;
-		this.epochID = undefined;
-		this.epochDepth = undefined;
-		this.args = {};
-		this.arguments = info.arguments ? info.arguments.map(function (a) { return scrapeObject(a) }) : undefined;
-		this.this = (info.this && info.this !== globalThis) ? scrapeObject(info.this) : undefined;
-
-		invocationById[this.id] = this;
-	}
-	Invocation.prototype.equalToInfo = function (info) {
-		return this.f.id === info.nodeId;
-	};
-	Invocation.prototype.linkToChild = function (child, linkType) {
-		this.childLinks.push(new InvocationLink(child.id, linkType));
-		child.parentLinks.push(new InvocationLink(this.id, linkType));
-		if (['call', 'branch-enter'].indexOf(linkType) !== -1) {
-			child.topLevelInvocationId = this.topLevelInvocationId;
-		}
-	};
-	Invocation.prototype.getChildren = function (linkFilter) {
-		var links = this.childLinks;
-		if (linkFilter) {
-			links = links.filter(linkFilter);
-		}
-		return links.map(function (link) { return invocationById[link.id]; });
-	};
-	Invocation.prototype.getParents = function () {
-		return this.parentLinks.map(function (link) { return invocationById[link.id]; });
-	};
-	Invocation.prototype.getParentLinks = function () {
-		return this.parentLinks;
-	};
-	/**
-	calls iter(invocation) for all children in sub-graph; if iter returns true,
-	treats that invocation as a leaf and continues
-	**/
-	Invocation.prototype.walk = function (iter) {
-		this.getChildren().forEach(function (child) {
-			if (iter(child) !== true) {
-				child.walk(iter);
+		Invocation.prototype.getChildren = function (linkFilter) {
+			var links = this.childLinks;
+			if (linkFilter) {
+				links = links.filter(linkFilter);
 			}
-		});
-	};
-
-	function InvocationLink(destId, type) {
-		this.id = destId;
-		this.type = type;
-	}
-
-	function Epoch(id, emitterID, eventName) {
-		this.id = id;
-		this.emitterID = emitterID;
-		this.eventName = eventName;
-	}
-
-	function nextEpoch(emitterID, eventName) {
-		var epochID = ++_lastEpochID;
-		var epoch = new Epoch(epochID, emitterID, eventName);
-		return epoch;
-	}
-
-	function hit(invocation) {
-		var id = invocation.f.id;
-		for (var handle in nodeHitCounts) {
-			var hits = nodeHitCounts[handle];
-			hits[id] = (hits[id] || 0) + 1;
+			return links.map(function (link) { return invocationById[link.id]; });
+		};
+		Invocation.prototype.getParents = function () {
+			return this.parentLinks.map(function (link) { return invocationById[link.id]; });
+		};
+		Invocation.prototype.getParentLinks = function () {
+			return this.parentLinks;
+		};
+		/**
+		calls iter(invocation) for all children in sub-graph; if iter returns true,
+		treats that invocation as a leaf and continues
+		**/
+		Invocation.prototype.walk = function (iter) {
+			this.getChildren().forEach(function (child) {
+				if (iter(child) !== true) {
+					child.walk(iter);
+				}
+			});
+		};
+	
+		function InvocationLink(destId, type) {
+			this.id = destId;
+			this.type = type;
 		}
-
-		// if this is console.log, we'll want the call site in a moment
-		var callSite;
-		if (invocation.f.id === "log") {
-			callSite = invocation.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
+	
+		function Epoch(id, emitterID, eventName) {
+			this.id = id;
+			this.emitterID = emitterID;
+			this.eventName = eventName;
 		}
-
-		// add this invocation to all the relevant log queries
-		for (var handle in _logQueries) {
-			var query = _logQueries[handle];
-			if (query.logs && invocation.f.id === "log") {
-				if (callSite) {
-					addLogEntry(handle, callSite.id);
-				} else {
-					_consoleLog("no call site! I needed one!", invocation.getParents());
+	
+		function nextEpoch(emitterID, eventName) {
+			var epochID = ++_lastEpochID;
+			var epoch = new Epoch(epochID, emitterID, eventName);
+			return epoch;
+		}
+	
+		function hit(invocation) {
+			var id = invocation.f.id;
+			for (var handle in nodeHitCounts) {
+				var hits = nodeHitCounts[handle];
+				hits[id] = (hits[id] || 0) + 1;
+			}
+	
+			// if this is console.log, we'll want the call site in a moment
+			var callSite;
+			if (invocation.f.id === "log") {
+				callSite = invocation.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
+			}
+	
+			// add this invocation to all the relevant log queries
+			for (var handle in _logQueries) {
+				var query = _logQueries[handle];
+				if (query.logs && invocation.f.id === "log") {
+					if (callSite) {
+						addLogEntry(handle, callSite.id);
+					} else {
+						_consoleLog("no call site! I needed one!", invocation.getParents());
+					}
+				}
+				if (query.ids && query.ids.indexOf(id) !== -1) {
+					addLogEntry(handle, invocation.id);
 				}
 			}
-			if (query.ids && query.ids.indexOf(id) !== -1) {
-				addLogEntry(handle, invocation.id);
-			}
 		}
-	}
-
-	function calculateHitCounts() {
-		var hits = {};
-		nodes.forEach(function (n) {
-			if (n.id in invocationsByNodeId) {
-				hits[n.id] = invocationsByNodeId[n.id].length;
-			}
-		});
-		return hits;
-	}
-
-	function calculateExceptionCounts() {
-		var counts = {};
-		nodes.forEach(function (n) {
-			if (n.id in exceptionsByNodeId) {
-				counts[n.id] = exceptionsByNodeId[n.id].length;
-			}
-		});
-		return counts;
-	}
-
-	/** return ordered list of invocation ids for the given log query */
-	function backlog(query) {
-		var seenIds = {};
-		var ids = [];
-
-		function addIfUnseen(id) {
-			if (!(id in seenIds)) {
-				ids.push(id);
-				seenIds[id] = true;
-			}
+	
+		function calculateHitCounts() {
+			var hits = {};
+			nodes.forEach(function (n) {
+				if (n.id in invocationsByNodeId) {
+					hits[n.id] = invocationsByNodeId[n.id].length;
+				}
+			});
+			return hits;
 		}
-
-		var getId = function (invocation) { return invocation.id };
-
-		if (query.ids) {
-			query.ids.forEach(function (nodeId) {
-				var invocations = (invocationsByNodeId[nodeId] || []);
-				invocations.map(getId).forEach(addIfUnseen);
-
-				// add logs that are called directly from this function
-				invocations.forEach(function (invocation) {
-					invocation.walk(function (child) {
-						var isFunction = child.type === "function";
-						if (isFunction && child.f.id === "log") {
-							var callSite = child.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
-							if (callSite) {
-								addIfUnseen(callSite.id);
+	
+		function calculateExceptionCounts() {
+			var counts = {};
+			nodes.forEach(function (n) {
+				if (n.id in exceptionsByNodeId) {
+					counts[n.id] = exceptionsByNodeId[n.id].length;
+				}
+			});
+			return counts;
+		}
+	
+		/** return ordered list of invocation ids for the given log query */
+		function backlog(query) {
+			var seenIds = {};
+			var ids = [];
+	
+			function addIfUnseen(id) {
+				if (!(id in seenIds)) {
+					ids.push(id);
+					seenIds[id] = true;
+				}
+			}
+	
+			var getId = function (invocation) { return invocation.id };
+	
+			if (query.ids) {
+				query.ids.forEach(function (nodeId) {
+					var invocations = (invocationsByNodeId[nodeId] || []);
+					invocations.map(getId).forEach(addIfUnseen);
+	
+					// add logs that are called directly from this function
+					invocations.forEach(function (invocation) {
+						invocation.walk(function (child) {
+							var isFunction = child.type === "function";
+							if (isFunction && child.f.id === "log") {
+								var callSite = child.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
+								if (callSite) {
+									addIfUnseen(callSite.id);
+								}
 							}
-						}
-						return isFunction;
-					})
+							return isFunction;
+						})
+					});
 				});
-			});
-		}
-
-		if (query.eventNames) {
-			query.eventNames.forEach(function (name) {
-				(_topLevelInvocationsByEventName[name] || []).map(getId).forEach(addIfUnseen);
-			});
-		}
-
-		if (query.exceptions) {
-			for (var nodeId in uncaughtExceptionsByNodeId) {
-				uncaughtExceptionsByNodeId[nodeId].map(function (o) { return o.invocationId }).forEach(addIfUnseen);
 			}
-		}
-
-		if (query.logs) {
-			(invocationsByNodeId["log"] || []).forEach(function (invocation) {
-				var callSite = invocation.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
-				if (callSite) {
-					addIfUnseen(callSite.id);
-				}
-			});
-		}
-
-		ids = ids.sort(function (a, b) { return invocationById[a].tick - invocationById[b].tick });
-		return { entries: ids, seenIds: seenIds };
-	}
-
-	function addLogEntry(handle, invocationId) {
-		if (!(invocationId in logEntries[handle].seenIds)) {
-			logEntries[handle].entries.push(invocationId);
-			logEntries[handle].seenIds[invocationId] = true;
-		}
-	}
-
-
-	// instrumentation
-
-	function bailThisTick(fromNode) {
-		_bailedTick = true;
-		invocationStack = [];
-		_epochStack = [];
-		_epochInvocationDepth = [];
-		anonFuncParentInvocation = undefined;
-		lastException = undefined;
-		lastExceptionThrownFromInvocation = undefined;
-
-		if (fromNode) {
-			_consoleLog("[fondue] bailing from " + (fromNode.name ? (fromNode.name + " at ") : "") + fromNode.path + " line " + fromNode.start.line + ", character " + fromNode.start.column);
-		} else {
-			_consoleLog("[fondue] bailing! trace collection will resume next tick");
-		}
-		if (!_explainedBails) {
-			_consoleLog("[fondue] (fondue is set to automatically bail after 4000096 invocations within a single tick. If you are using node-theseus, you can use the --theseus-max-invocations-per-tick=XXX option to raise the limit, but it will require more memory)");
-			_explainedBails = true;
-		}
-	}
-
-	function endBail() {
-		_bailedTick = false;
-		_invocationsThisTick = 0;
-
-		_consoleLog('[fondue] resuming trace collection after bailed tick');
-	}
-
-	function pushNewInvocation(info, type) {
-		if (_bailedTick) {
-			_invocationStackSize++;
-			return;
-		}
-
-		var invocation = new Invocation(info, type);
-		pushInvocation(invocation);
-		return invocation;
-	}
-
-	function pushInvocation(invocation) {
-		_invocationStackSize++;
-
-		if (_bailedTick) return;
-
-		_invocationsThisTick++;
-		if (_invocationsThisTick === 4000096) {
-			bailThisTick(invocation.f);
-			return;
-		}
-
-		// associate with epoch, if there is one
-		if (_epochStack.length > 0) {
-			var epoch = _epochStack[_epochStack.length - 1];
-			var depth = _epochInvocationDepth[_epochInvocationDepth.length - 1];
-			invocation.epochID = epoch.id;
-			invocation.epochDepth = depth;
-
-			_epochInvocationDepth[_epochInvocationDepth.length - 1]++;
-
-			// hang on to the epoch now that it's part of the call graph
-			_epochsById[epoch.id] = epoch;
-
-			if (!(epoch.eventName in _epochsByName)) {
-				_epochsByName[epoch.eventName] = [];
+	
+			if (query.eventNames) {
+				query.eventNames.forEach(function (name) {
+					(_topLevelInvocationsByEventName[name] || []).map(getId).forEach(addIfUnseen);
+				});
 			}
-			_epochsByName[epoch.eventName].push(epoch);
-
-			if (depth === 0) {
-				epochTracker.update(epoch);
-
-				if (!(epoch.eventName in _topLevelEpochsByName)) {
-					_topLevelEpochsByName[epoch.eventName] = [];
-					_topLevelInvocationsByEventName[epoch.eventName] = [];
+	
+			if (query.exceptions) {
+				for (var nodeId in uncaughtExceptionsByNodeId) {
+					uncaughtExceptionsByNodeId[nodeId].map(function (o) { return o.invocationId }).forEach(addIfUnseen);
 				}
-				_topLevelEpochsByName[epoch.eventName].push(epoch);
-				_topLevelInvocationsByEventName[epoch.eventName].push(invocation);
-
-				for (var handle in _logQueries) {
-					var query = _logQueries[handle];
-					if (query.eventNames && query.eventNames.indexOf(epoch.eventName) !== -1) {
-						addLogEntry(handle, invocation.id);
+			}
+	
+			if (query.logs) {
+				(invocationsByNodeId["log"] || []).forEach(function (invocation) {
+					var callSite = invocation.getParents().filter(function (inv) { return inv.type === "callsite" })[0];
+					if (callSite) {
+						addIfUnseen(callSite.id);
 					}
-				}
+				});
+			}
+	
+			ids = ids.sort(function (a, b) { return invocationById[a].tick - invocationById[b].tick });
+			return { entries: ids, seenIds: seenIds };
+		}
+	
+		function addLogEntry(handle, invocationId) {
+			if (!(invocationId in logEntries[handle].seenIds)) {
+				logEntries[handle].entries.push(invocationId);
+				logEntries[handle].seenIds[invocationId] = true;
 			}
 		}
-
-		// add to invocationsByNodeId
-		if (!invocationsByNodeId[invocation.f.id]) {
-			invocationsByNodeId[invocation.f.id] = [];
-		}
-		invocationsByNodeId[invocation.f.id].push(invocation); // DN this where to add to crossfilter, if we added everything? [old idea?]
-
-		// associate with caller, if there is one; otherwise, save as a top-level invocation
-		var top = invocationStack[invocationStack.length - 1];
-		if (top) {
-			top.linkToChild(invocation, 'call');
-		} else {
-			invocation.topLevelInvocationId = invocation.id;
-		}
-
-		// associate with the invocation where this anonymous function was created
-		if (anonFuncParentInvocation) {
-			anonFuncParentInvocation.linkToChild(invocation, 'async');
+	
+	
+		// instrumentation
+	
+		function bailThisTick(fromNode) {
+			_bailedTick = true;
+			invocationStack = [];
+			_epochStack = [];
+			_epochInvocationDepth = [];
 			anonFuncParentInvocation = undefined;
-		}
-
-		// update hit counts
-		hit(invocation);
-
-		invocationStack.push(invocation);
-	}
-
-	function popInvocation(info) {
-		_invocationStackSize--;
-		if (_bailedTick && _invocationStackSize === 0) {
-			endBail();
-			return;
-		}
-
-		if (_bailedTick) return;
-
-		var top = invocationStack.pop();
-
-		// if the tick was bailed or something, there might not be an invocation
-		if (top) {
-			top.endTimestamp = new Date().getTime();
-			top.duration = top.endTimestamp - top.timestamp;
-
-			// if there was an exception before, but this function didn't throw
-			// it as well, then it must have been caught.
-			// only functions track exceptions.
-			if (top.type === 'function' && lastException !== undefined && top.exception !== lastException) {
-				// traceExceptionThrown sets lastException, but this is where we clear it
-				if (top.exception === undefined) {
-					lastException = undefined;
-					lastExceptionThrownFromInvocation = undefined;
-				}
-			}
-		}
-
-		if (invocationStack.length === 0) {
-			// check for uncaught exceptions
-			if (lastException !== undefined && lastExceptionThrownFromInvocation !== undefined) {
-				var id = lastExceptionThrownFromInvocation.f.id;
-
-				if (!uncaughtExceptionsByNodeId[id]) {
-					uncaughtExceptionsByNodeId[id] = [];
-				}
-				uncaughtExceptionsByNodeId[id].push({ exception: lastException, invocationId: lastExceptionThrownFromInvocation.id });
-
-				for (var handle in _logQueries) {
-					if (_logQueries[handle].exceptions) {
-						// BUG: we're adding this at the end of the tick, which
-						//      means it's technically out-of-order relative to
-						//      the other log entries in this tick.
-						addLogEntry(handle, lastExceptionThrownFromInvocation.id);
-					}
-				}
-			}
-
-			_invocationsThisTick = 0;
 			lastException = undefined;
 			lastExceptionThrownFromInvocation = undefined;
-
-			// make the file call graph for this tick
-
-			// if the tick was bailed or something, there might not be an invocation
-			if (top) {
-				function makeSubgraph(invocation, node) {
-					if (!node) {
-						node = { path: invocation.f.path, nodeId: invocation.f.id, eventNames: [], children: [] };
-					} else if (node.path !== invocation.f.path) {
-						var parent = node;
-						node = { path: invocation.f.path, nodeId: invocation.f.id, eventNames: [], children: [] };
-						parent.children.push(node);
+	
+			if (fromNode) {
+				_consoleLog("[fondue] bailing from " + (fromNode.name ? (fromNode.name + " at ") : "") + fromNode.path + " line " + fromNode.start.line + ", character " + fromNode.start.column);
+			} else {
+				_consoleLog("[fondue] bailing! trace collection will resume next tick");
+			}
+			if (!_explainedBails) {
+				_consoleLog("[fondue] (fondue is set to automatically bail after 4000096 invocations within a single tick. If you are using node-theseus, you can use the --theseus-max-invocations-per-tick=XXX option to raise the limit, but it will require more memory)");
+				_explainedBails = true;
+			}
+		}
+	
+		function endBail() {
+			_bailedTick = false;
+			_invocationsThisTick = 0;
+	
+			_consoleLog('[fondue] resuming trace collection after bailed tick');
+		}
+	
+		function pushNewInvocation(info, type) {
+			if (_bailedTick) {
+				_invocationStackSize++;
+				return;
+			}
+	
+			var invocation = new Invocation(info, type);
+			pushInvocation(invocation);
+			return invocation;
+		}
+	
+		function pushInvocation(invocation) {
+			_invocationStackSize++;
+	
+			if (_bailedTick) return;
+	
+			_invocationsThisTick++;
+			if (_invocationsThisTick === 4000096) {
+				bailThisTick(invocation.f);
+				return;
+			}
+	
+			// associate with epoch, if there is one
+			if (_epochStack.length > 0) {
+				var epoch = _epochStack[_epochStack.length - 1];
+				var depth = _epochInvocationDepth[_epochInvocationDepth.length - 1];
+				invocation.epochID = epoch.id;
+				invocation.epochDepth = depth;
+	
+				_epochInvocationDepth[_epochInvocationDepth.length - 1]++;
+	
+				// hang on to the epoch now that it's part of the call graph
+				_epochsById[epoch.id] = epoch;
+	
+				if (!(epoch.eventName in _epochsByName)) {
+					_epochsByName[epoch.eventName] = [];
+				}
+				_epochsByName[epoch.eventName].push(epoch);
+	
+				if (depth === 0) {
+					epochTracker.update(epoch);
+	
+					if (!(epoch.eventName in _topLevelEpochsByName)) {
+						_topLevelEpochsByName[epoch.eventName] = [];
+						_topLevelInvocationsByEventName[epoch.eventName] = [];
 					}
-					if (invocation.epochID) {
-						var epoch = _epochsById[invocation.epochID];
-						if (epoch.eventName !== undefined && node.eventNames.indexOf(epoch.eventName) === -1) {
-							node.eventNames.push(epoch.eventName);
+					_topLevelEpochsByName[epoch.eventName].push(epoch);
+					_topLevelInvocationsByEventName[epoch.eventName].push(invocation);
+	
+					for (var handle in _logQueries) {
+						var query = _logQueries[handle];
+						if (query.eventNames && query.eventNames.indexOf(epoch.eventName) !== -1) {
+							addLogEntry(handle, invocation.id);
 						}
 					}
-					invocation.getChildren(function (link) { return link.type === "call" }).forEach(function (child) {
-						makeSubgraph(child, node);
-					});
-					return node;
 				}
-
-				var item = makeSubgraph(top);
-				_fileCallGraph.push(item);
-				fileCallGraphTracker.update(item);
+			}
+	
+			// add to invocationsByNodeId
+			if (!invocationsByNodeId[invocation.f.id]) {
+				invocationsByNodeId[invocation.f.id] = [];
+			}
+			invocationsByNodeId[invocation.f.id].push(invocation); // DN this where to add to crossfilter, if we added everything? [old idea?]
+	
+			// associate with caller, if there is one; otherwise, save as a top-level invocation
+			var top = invocationStack[invocationStack.length - 1];
+			if (top) {
+				top.linkToChild(invocation, 'call');
+			} else {
+				invocation.topLevelInvocationId = invocation.id;
+			}
+	
+			// associate with the invocation where this anonymous function was created
+			if (anonFuncParentInvocation) {
+				anonFuncParentInvocation.linkToChild(invocation, 'async');
+				anonFuncParentInvocation = undefined;
+			}
+	
+			// update hit counts
+			hit(invocation);
+	
+			invocationStack.push(invocation);
+		}
+	
+		function popInvocation(info) {
+			_invocationStackSize--;
+			if (_bailedTick && _invocationStackSize === 0) {
+				endBail();
+				return;
+			}
+	
+			if (_bailedTick) return;
+	
+			var top = invocationStack.pop();
+	
+			// if the tick was bailed or something, there might not be an invocation
+			if (top) {
+				top.endTimestamp = new Date().getTime();
+				top.duration = top.endTimestamp - top.timestamp;
+	
+				// if there was an exception before, but this function didn't throw
+				// it as well, then it must have been caught.
+				// only functions track exceptions.
+				if (top.type === 'function' && lastException !== undefined && top.exception !== lastException) {
+					// traceExceptionThrown sets lastException, but this is where we clear it
+					if (top.exception === undefined) {
+						lastException = undefined;
+						lastExceptionThrownFromInvocation = undefined;
+					}
+				}
+			}
+	
+			if (invocationStack.length === 0) {
+				// check for uncaught exceptions
+				if (lastException !== undefined && lastExceptionThrownFromInvocation !== undefined) {
+					var id = lastExceptionThrownFromInvocation.f.id;
+	
+					if (!uncaughtExceptionsByNodeId[id]) {
+						uncaughtExceptionsByNodeId[id] = [];
+					}
+					uncaughtExceptionsByNodeId[id].push({ exception: lastException, invocationId: lastExceptionThrownFromInvocation.id });
+	
+					for (var handle in _logQueries) {
+						if (_logQueries[handle].exceptions) {
+							// BUG: we're adding this at the end of the tick, which
+							//      means it's technically out-of-order relative to
+							//      the other log entries in this tick.
+							addLogEntry(handle, lastExceptionThrownFromInvocation.id);
+						}
+					}
+				}
+	
+				_invocationsThisTick = 0;
+				lastException = undefined;
+				lastExceptionThrownFromInvocation = undefined;
+	
+				// make the file call graph for this tick
+	
+				// if the tick was bailed or something, there might not be an invocation
+				if (top) {
+					function makeSubgraph(invocation, node) {
+						if (!node) {
+							node = { path: invocation.f.path, nodeId: invocation.f.id, eventNames: [], children: [] };
+						} else if (node.path !== invocation.f.path) {
+							var parent = node;
+							node = { path: invocation.f.path, nodeId: invocation.f.id, eventNames: [], children: [] };
+							parent.children.push(node);
+						}
+						if (invocation.epochID) {
+							var epoch = _epochsById[invocation.epochID];
+							if (epoch.eventName !== undefined && node.eventNames.indexOf(epoch.eventName) === -1) {
+								node.eventNames.push(epoch.eventName);
+							}
+						}
+						invocation.getChildren(function (link) { return link.type === "call" }).forEach(function (child) {
+							makeSubgraph(child, node);
+						});
+						return node;
+					}
+	
+					var item = makeSubgraph(top);
+					_fileCallGraph.push(item);
+					fileCallGraphTracker.update(item);
+				}
+			}
+	
+			if (_epochStack.length > 0) {
+				_epochInvocationDepth[_epochInvocationDepth.length - 1]--;
 			}
 		}
-
-		if (_epochStack.length > 0) {
-			_epochInvocationDepth[_epochInvocationDepth.length - 1]--;
+	
+		/**
+		 * called from the top of every script processed by the rewriter
+		 */
+		this.add = function (path, source, options) {
+			sourceByPath[path] = source;
+			nodes.push.apply(nodes, options.nodes);
+			options.nodes.forEach(function (n) { nodeById[n.id] = n; });
+	
+			nodeTracker.update(options.nodes);
+	
+			_sendNodes(options.nodes);
+		};
+	
+		this.addSourceMap = function (path, mapJSON) {
+			_sourceMaps[path] = _sourceMaps[path + ".fondue"] = new sourceMap.SourceMapConsumer(mapJSON);
+		};
+	
+		this.traceFileEntry = function (info) {
+			pushNewInvocation(info, 'toplevel');
+		};
+	
+		this.traceFileExit = function (info) {
+			popInvocation(info);
+		};
+	
+		this.setGlobal = function (gthis) {
+			globalThis = gthis;
 		}
-	}
-
-	/**
-	 * called from the top of every script processed by the rewriter
-	 */
-	this.add = function (path, source, options) {
-		sourceByPath[path] = source;
-		nodes.push.apply(nodes, options.nodes);
-		options.nodes.forEach(function (n) { nodeById[n.id] = n; });
-
-		nodeTracker.update(options.nodes);
-
-		_sendNodes(options.nodes);
-	};
-
-	this.addSourceMap = function (path, mapJSON) {
-		_sourceMaps[path] = _sourceMaps[path + ".fondue"] = new sourceMap.SourceMapConsumer(mapJSON);
-	};
-
-	this.traceFileEntry = function (info) {
-		pushNewInvocation(info, 'toplevel');
-	};
-
-	this.traceFileExit = function (info) {
-		popInvocation(info);
-	};
-
-	this.setGlobal = function (gthis) {
-		globalThis = gthis;
-	}
-
-	/**
-	 * the rewriter wraps every anonymous function in a call to traceFunCreate.
-	 * a new function is returned that's associated with the parent invocation.
-	 */
-	this.traceFunCreate = function (f, src) {
-		var creatorInvocation = invocationStack[invocationStack.length - 1];
-		var creatorInvocationId = creatorInvocation ? creatorInvocation.id : undefined;
-		var newF;
-
-		// Some code changes its behavior depending on the arity of the callback.
-		// Therefore, we construct a replacement function that has the same arity.
-		// The most direct route seems to be to use eval() (as opposed to
-		// new Function()), so that creatorInvocation can be accessed from the
-		// closure.
-
-		var arglist = '';
-		for (var i = 0; i < f.length; i++) {
-			arglist += (i > 0 ? ', ' : '') + 'v' + i;
-		}
-
-		var sharedBody = 'return f.apply(this, arguments);';
-
-		if (creatorInvocation) {
-			// traceEnter checks anonFuncParentInvocation and creates
-			// an edge in the graph from the creator to the new invocation.
-			// Look up by ID instead of using creatorInvocation directly in case
-			// the trace has been cleared and the original invocation no longer
-			// exists.
-			var asyncBody = 'anonFuncParentInvocation = invocationById[creatorInvocationId];';
-			var newSrc = '(function (' + arglist + ') { ' + asyncBody + sharedBody + '})';
-			newF = eval(newSrc);
-		} else {
-			var newSrc = '(function (' + arglist + ') { ' + sharedBody + '})';
-			newF = eval(newSrc);
-		}
-		newF.toString = function () { return src };
-		return newF;
-	};
-
-	/** helper for traceFunCall below */
-	var _traceLogCall = function (info) {
-		var queryMatchesInvocation = function (handle, invocation) {
-			var query = _logQueries[handle];
-			var epoch = _epochsById[invocation.epochID];
-			if (query.logs && invocation.f.id === "log") {
-				return true;
-			} else if (query.exceptions && invocation.exception) {
-				return true;
-			} else if (query.ids && query.ids.indexOf(invocation.f.id) !== -1) {
-				return true;
-			} else if (query.eventNames && epoch && query.eventNames.indexOf(epoch.eventName) !== -1) {
-				return true;
+	
+		/**
+		 * the rewriter wraps every anonymous function in a call to traceFunCreate.
+		 * a new function is returned that's associated with the parent invocation.
+		 */
+		this.traceFunCreate = function (f, src) {
+			var creatorInvocation = invocationStack[invocationStack.length - 1];
+			var creatorInvocationId = creatorInvocation ? creatorInvocation.id : undefined;
+			var newF;
+	
+			// Some code changes its behavior depending on the arity of the callback.
+			// Therefore, we construct a replacement function that has the same arity.
+			// The most direct route seems to be to use eval() (as opposed to
+			// new Function()), so that creatorInvocation can be accessed from the
+			// closure.
+	
+			var arglist = '';
+			for (var i = 0; i < f.length; i++) {
+				arglist += (i > 0 ? ', ' : '') + 'v' + i;
 			}
-			return false;
+	
+			var sharedBody = 'return f.apply(this, arguments);';
+	
+			if (creatorInvocation) {
+				// traceEnter checks anonFuncParentInvocation and creates
+				// an edge in the graph from the creator to the new invocation.
+				// Look up by ID instead of using creatorInvocation directly in case
+				// the trace has been cleared and the original invocation no longer
+				// exists.
+				var asyncBody = 'anonFuncParentInvocation = invocationById[creatorInvocationId];';
+				var newSrc = '(function (' + arglist + ') { ' + asyncBody + sharedBody + '})';
+				newF = eval(newSrc);
+			} else {
+				var newSrc = '(function (' + arglist + ') { ' + sharedBody + '})';
+				newF = eval(newSrc);
+			}
+			newF.toString = function () { return src };
+			return newF;
 		};
-		var matchingQueryHandles = function (invocation) {
-			return Object.keys(_logQueries).filter(function (handle) {
-				return queryMatchesInvocation(handle, invocation);
-			});
-		};
-
-		return function () {
-			_consoleLog.apply(console, arguments);
-
-			var callerInvocation = invocationStack[invocationStack.length - 1];
-
-			info.arguments = Array.prototype.slice.apply(arguments); // XXX: mutating info may not be okay, but we want the arguments
-
-			var callSiteInvocation = pushNewInvocation(info, 'callsite');
-			pushNewInvocation({ nodeId: "log", arguments: info.arguments }, 'function');
-			popInvocation();
-			popInvocation();
-
-			// if called directly from an invocation that's in the query, add
-			// this log statement invocation as well
-			// (callSiteInvocation might be falsy if this tick was bailed)
-			if (callerInvocation && callSiteInvocation) {
-				matchingQueryHandles(callerInvocation).forEach(function (handle) {
-					addLogEntry(handle, callSiteInvocation.id);
+	
+		/** helper for traceFunCall below */
+		var _traceLogCall = function (info) {
+			var queryMatchesInvocation = function (handle, invocation) {
+				var query = _logQueries[handle];
+				var epoch = _epochsById[invocation.epochID];
+				if (query.logs && invocation.f.id === "log") {
+					return true;
+				} else if (query.exceptions && invocation.exception) {
+					return true;
+				} else if (query.ids && query.ids.indexOf(invocation.f.id) !== -1) {
+					return true;
+				} else if (query.eventNames && epoch && query.eventNames.indexOf(epoch.eventName) !== -1) {
+					return true;
+				}
+				return false;
+			};
+			var matchingQueryHandles = function (invocation) {
+				return Object.keys(_logQueries).filter(function (handle) {
+					return queryMatchesInvocation(handle, invocation);
 				});
-			}
-		}
-	};
-
-	/**
-	 * the rewriter wraps the callee portion of every function call with a call
-	 * to traceFunCall like this:
-	 *
-	 *   a.b('foo') -> (traceFunCall({ this: a, property: 'b', nodeId: '...', vars: {}))('foo')
-	 *   b('foo') -> (traceFunCall({ func: b, nodeId: '...', vars: {}))('foo')
-	 */
-	this.traceFunCall = function (info) {
-		var customThis = false, fthis, func;
-
-		if ('func' in info) {
-			func = info.func;
-		} else {
-			customThis = true;
-			fthis = info.this;
-			func = fthis[info.property];
-		}
-
-		// if it doesn't look like a function, it's faster not to wrap it with
-		// all of the cruft below
-		if (!func) {
-			return func;
-		}
-
-		if (typeof console !== 'undefined') {
-			var logFunctions = [console.log, console.info, console.warn, console.error, console.trace];
-			if (logFunctions.indexOf(func) !== -1) {
-				return _traceLogCall(info);
-			}
-		}
-
-		return function () {
-			info.arguments = Array.prototype.slice.apply(arguments); // XXX: mutating info may not be okay, but we want the arguments
-			var invocation = pushNewInvocation(info, 'callsite');
-
-			try {
-				// this used to be func.apply(t, arguments), but not all functions
-				// have apply. so we apply Function.apply instead.
-				var t = customThis ? fthis : this;
-				return Function.apply.apply(func, [t].concat(arguments));
-			} finally {
+			};
+	
+			return function () {
+				_consoleLog.apply(console, arguments);
+	
+				var callerInvocation = invocationStack[invocationStack.length - 1];
+	
+				info.arguments = Array.prototype.slice.apply(arguments); // XXX: mutating info may not be okay, but we want the arguments
+	
+				var callSiteInvocation = pushNewInvocation(info, 'callsite');
+				pushNewInvocation({ nodeId: "log", arguments: info.arguments }, 'function');
 				popInvocation();
-			}
-		}
-	};
-
-	/**
-	 * the rewriter calls traceEnter from just before the try clause it wraps
-	 * function bodies in. info is an object like:
-	 *
-	 *   {
-	 *     start: { line: ..., column: ... },
-	 *     end: { line: ..., column: ... },
-	 *     vars: { a: a, b: b, ... }
-	 *   }
-	 */
-	this.traceEnter = function (info) {
-		pushNewInvocation(info, 'function');
-	};
-
-	/**
-	 * the rewriter calls traceExit from the finally clause it wraps function
-	 * bodies in. info is an object like:
-	 *
-	 *   {
-	 *     start: { line: ..., column: ... },
-	 *     end: { line: ..., column: ... }
-	 *   }
-	 *
-	 * in the future, traceExit will be passed an object with all the
-	 * local variables of the instrumented function.
-	 */
-	this.traceExit = function (info) {
-		popInvocation(info);
-	};
-
-	this.traceReturnValue = function (value) {
-		if (_bailedTick) return value;
-
-		var top = invocationStack[invocationStack.length - 1];
-		if (!top) {
-			throw new Error('value returned with nothing on the stack');
-		}
-		top.returnValue = scrapeObject(value);
-		return value;
-	}
-
-	/**
-	 * the rewriter calls traceExceptionThrown from the catch clause it wraps
-	 * function bodies in. info is an object like:
-	 *
-	 *   {
-	 *     start: { line: ..., column: ... },
-	 *     end: { line: ..., column: ... }
-	 *   }
-	 */
-	this.traceExceptionThrown = function (info, exception) {
-		if (_bailedTick) return;
-
-		lastException = exception;
-
-		var parsedStack;
-		if (exception.stack) {
-			var mapFrame = function (frame) {
-				if (frame.path in _sourceMaps) {
-					var pos = _sourceMaps[frame.path].originalPositionFor({ line: frame.line, column: frame.column });
-					frame.path = pos.source;
-					frame.line = pos.line;
-					frame.column = pos.column;
-				}
-				return frame;
-			};
-
-			var shouldIgnoreFrame = function (frame) {
-				return /node-theseus\.js/.test(frame.path) || /^Module\.(load|_compile)$/.test(frame.at);
-			};
-
-			parsedStack = [];
-			var match, match2,
-				wholeMatchRegexp = /\n    at ([^(]+) \((.*):(\d+):(\d+)\)/g; // TODO: match lines without column numbers
-				partialMatchRegexp = /at ([^(]+) \((.*):(\d+):(\d+)\)/g;
-			while (match = wholeMatchRegexp.exec(exception.stack)) {
-				var frame = mapFrame({
-					at: match[1],
-					path: match[2],
-					line: parseInt(match[3]),
-					column: parseInt(match[4]),
-				});
-				if (/^eval at /.test(match[2]) && (match2 = partialMatchRegexp.exec(match[2]))) {
-					frame.evalFrame = mapFrame({
-						at: match2[1],
-						path: match2[2],
-						line: parseInt(match2[3]),
-						column: parseInt(match2[4]),
+				popInvocation();
+	
+				// if called directly from an invocation that's in the query, add
+				// this log statement invocation as well
+				// (callSiteInvocation might be falsy if this tick was bailed)
+				if (callerInvocation && callSiteInvocation) {
+					matchingQueryHandles(callerInvocation).forEach(function (handle) {
+						addLogEntry(handle, callSiteInvocation.id);
 					});
 				}
-				if (!shouldIgnoreFrame(frame) && (!frame.evalFrame || !shouldIgnoreFrame(frame.evalFrame))) {
-					parsedStack.push(frame);
+			}
+		};
+	
+		/**
+		 * the rewriter wraps the callee portion of every function call with a call
+		 * to traceFunCall like this:
+		 *
+		 *   a.b('foo') -> (traceFunCall({ this: a, property: 'b', nodeId: '...', vars: {}))('foo')
+		 *   b('foo') -> (traceFunCall({ func: b, nodeId: '...', vars: {}))('foo')
+		 */
+		this.traceFunCall = function (info) {
+			var customThis = false, fthis, func;
+	
+			if ('func' in info) {
+				func = info.func;
+			} else {
+				customThis = true;
+				fthis = info.this;
+				func = fthis[info.property];
+			}
+	
+			// if it doesn't look like a function, it's faster not to wrap it with
+			// all of the cruft below
+			if (!func) {
+				return func;
+			}
+	
+			if (typeof console !== 'undefined') {
+				var logFunctions = [console.log, console.info, console.warn, console.error, console.trace];
+				if (logFunctions.indexOf(func) !== -1) {
+					return _traceLogCall(info);
 				}
 			}
-		}
-
-		var top = invocationStack[invocationStack.length - 1];
-		if (!top || !top.equalToInfo(info)) {
-			throw new Error('exception thrown from a non-matching enter');
-		}
-		top.exception = exception;
-		top.rawStack = exception.stack;
-		if (parsedStack) top.exceptionStack = parsedStack;
-
-		if (lastExceptionThrownFromInvocation === undefined) {
-			lastExceptionThrownFromInvocation = top;
-		}
-
-		var id = top.f.id;
-		if (!exceptionsByNodeId[id]) {
-			exceptionsByNodeId[id] = [];
-		}
-		exceptionsByNodeId[id].push({ exception: exception, invocationId: top.id });
-
-		for (var handle in exceptionCounts) {
-			var hits = exceptionCounts[handle];
-			hits[id] = (hits[id] || 0) + 1;
-		}
-	};
-
-	/** cease collecting trace information until the next tick **/
-	this.bailThisTick = bailThisTick;
-
-	this.pushEpoch = function (epoch) {
-		_epochStack.push(epoch);
-		_epochInvocationDepth.push(0);
-	};
-
-	this.popEpoch = function () {
-		_epochStack.pop();
-		_epochInvocationDepth.pop();
-	}
-
-	if (true) {
-		if (typeof require !== 'undefined') {
-			// override EventEmitter.emit() to automatically begin epochs when events are thrown
-			var EventEmitter = require('events').EventEmitter;
-			var oldEmit = EventEmitter.prototype.emit;
-			EventEmitter.prototype.emit = function (ev) {
-				// give this emitter an identifier if it doesn't already have one
-				if (!this._emitterID) {
-					this._emitterID = ++_lastEmitterID;
+	
+			return function () {
+				info.arguments = Array.prototype.slice.apply(arguments); // XXX: mutating info may not be okay, but we want the arguments
+				var invocation = pushNewInvocation(info, 'callsite');
+	
+				try {
+					// this used to be func.apply(t, arguments), but not all functions
+					// have apply. so we apply Function.apply instead.
+					var t = customThis ? fthis : this;
+					return Function.apply.apply(func, [t].concat(arguments));
+				} finally {
+					popInvocation();
 				}
-
-				// start an epoch & emit the event
-				var epoch = nextEpoch(this._emitterID, ev);
+			}
+		};
+	
+		/**
+		 * the rewriter calls traceEnter from just before the try clause it wraps
+		 * function bodies in. info is an object like:
+		 *
+		 *   {
+		 *     start: { line: ..., column: ... },
+		 *     end: { line: ..., column: ... },
+		 *     vars: { a: a, b: b, ... }
+		 *   }
+		 */
+		this.traceEnter = function (info) {
+			pushNewInvocation(info, 'function');
+		};
+	
+		/**
+		 * the rewriter calls traceExit from the finally clause it wraps function
+		 * bodies in. info is an object like:
+		 *
+		 *   {
+		 *     start: { line: ..., column: ... },
+		 *     end: { line: ..., column: ... }
+		 *   }
+		 *
+		 * in the future, traceExit will be passed an object with all the
+		 * local variables of the instrumented function.
+		 */
+		this.traceExit = function (info) {
+			popInvocation(info);
+		};
+	
+		this.traceReturnValue = function (value) {
+			if (_bailedTick) return value;
+	
+			var top = invocationStack[invocationStack.length - 1];
+			if (!top) {
+				throw new Error('value returned with nothing on the stack');
+			}
+			top.returnValue = scrapeObject(value);
+			return value;
+		}
+	
+		/**
+		 * the rewriter calls traceExceptionThrown from the catch clause it wraps
+		 * function bodies in. info is an object like:
+		 *
+		 *   {
+		 *     start: { line: ..., column: ... },
+		 *     end: { line: ..., column: ... }
+		 *   }
+		 */
+		this.traceExceptionThrown = function (info, exception) {
+			if (_bailedTick) return;
+	
+			lastException = exception;
+	
+			var parsedStack;
+			if (exception.stack) {
+				var mapFrame = function (frame) {
+					if (frame.path in _sourceMaps) {
+						var pos = _sourceMaps[frame.path].originalPositionFor({ line: frame.line, column: frame.column });
+						frame.path = pos.source;
+						frame.line = pos.line;
+						frame.column = pos.column;
+					}
+					return frame;
+				};
+	
+				var shouldIgnoreFrame = function (frame) {
+					return /node-theseus\.js/.test(frame.path) || /^Module\.(load|_compile)$/.test(frame.at);
+				};
+	
+				parsedStack = [];
+				var match, match2,
+					wholeMatchRegexp = /\n    at ([^(]+) \((.*):(\d+):(\d+)\)/g; // TODO: match lines without column numbers
+					partialMatchRegexp = /at ([^(]+) \((.*):(\d+):(\d+)\)/g;
+				while (match = wholeMatchRegexp.exec(exception.stack)) {
+					var frame = mapFrame({
+						at: match[1],
+						path: match[2],
+						line: parseInt(match[3]),
+						column: parseInt(match[4]),
+					});
+					if (/^eval at /.test(match[2]) && (match2 = partialMatchRegexp.exec(match[2]))) {
+						frame.evalFrame = mapFrame({
+							at: match2[1],
+							path: match2[2],
+							line: parseInt(match2[3]),
+							column: parseInt(match2[4]),
+						});
+					}
+					if (!shouldIgnoreFrame(frame) && (!frame.evalFrame || !shouldIgnoreFrame(frame.evalFrame))) {
+						parsedStack.push(frame);
+					}
+				}
+			}
+	
+			var top = invocationStack[invocationStack.length - 1];
+			if (!top || !top.equalToInfo(info)) {
+				throw new Error('exception thrown from a non-matching enter');
+			}
+			top.exception = exception;
+			top.rawStack = exception.stack;
+			if (parsedStack) top.exceptionStack = parsedStack;
+	
+			if (lastExceptionThrownFromInvocation === undefined) {
+				lastExceptionThrownFromInvocation = top;
+			}
+	
+			var id = top.f.id;
+			if (!exceptionsByNodeId[id]) {
+				exceptionsByNodeId[id] = [];
+			}
+			exceptionsByNodeId[id].push({ exception: exception, invocationId: top.id });
+	
+			for (var handle in exceptionCounts) {
+				var hits = exceptionCounts[handle];
+				hits[id] = (hits[id] || 0) + 1;
+			}
+		};
+	
+		/** cease collecting trace information until the next tick **/
+		this.bailThisTick = bailThisTick;
+	
+		this.pushEpoch = function (epoch) {
+			_epochStack.push(epoch);
+			_epochInvocationDepth.push(0);
+		};
+	
+		this.popEpoch = function () {
+			_epochStack.pop();
+			_epochInvocationDepth.pop();
+		}
+	
+		if (true) {
+			if (typeof require !== 'undefined') {
+				// override EventEmitter.emit() to automatically begin epochs when events are thrown
+				var EventEmitter = require('events').EventEmitter;
+				var oldEmit = EventEmitter.prototype.emit;
+				EventEmitter.prototype.emit = function (ev) {
+					// give this emitter an identifier if it doesn't already have one
+					if (!this._emitterID) {
+						this._emitterID = ++_lastEmitterID;
+					}
+	
+					// start an epoch & emit the event
+					var epoch = nextEpoch(this._emitterID, ev);
+					__tracer.pushEpoch(epoch);
+					try {
+						return oldEmit.apply(this, arguments);
+					} finally {
+						__tracer.popEpoch();
+					}
+				};
+			}
+		}
+	
+		this.augmentjQuery = function ($) {
+			var trigger = $.event.trigger, triggerHandler = $.event.triggerHandler;
+			var core_hasOwn = {}.hasOwnProperty;
+			$.event.trigger = function (event) {
+				var type = core_hasOwn.call(event, "type") ? event.type : event;
+				var epoch = nextEpoch(-1 /* emitterID */, type);
+	
 				__tracer.pushEpoch(epoch);
 				try {
-					return oldEmit.apply(this, arguments);
+					return trigger.apply($.event, arguments);
 				} finally {
 					__tracer.popEpoch();
 				}
 			};
-		}
-	}
-
-	this.augmentjQuery = function ($) {
-		var trigger = $.event.trigger, triggerHandler = $.event.triggerHandler;
-		var core_hasOwn = {}.hasOwnProperty;
-		$.event.trigger = function (event) {
-			var type = core_hasOwn.call(event, "type") ? event.type : event;
-			var epoch = nextEpoch(-1 /* emitterID */, type);
-
-			__tracer.pushEpoch(epoch);
-			try {
-				return trigger.apply($.event, arguments);
-			} finally {
-				__tracer.popEpoch();
-			}
-		};
-		$.event.triggerHandler = function (event) {
-			var type = core_hasOwn.call(event, "type") ? event.type : event;
-			var epoch = nextEpoch(-1 /* emitterID */, type);
-
-			__tracer.pushEpoch(epoch);
-			try {
-				return triggerHandler.apply($.event, arguments);
-			} finally {
-				__tracer.popEpoch();
-			}
-		};
-	};
-
-
-	// remote prebuggin' (from Brackets)
-
-	var _sendNodes = function (nodes) {
-		if (_connected) {
-			_sendBracketsMessage('scripts-added', JSON.stringify({ nodes: nodes }));
-		}
-	};
-
-	function _sendBracketsMessage(name, value) {
-		var key = "data-__tracer-" + name;
-		document.body.setAttribute(key, value);
-		window.setTimeout(function () { document.body.removeAttribute(key); });
-	}
-
-	this.version = function () {
-		return "0.7.0";
-	};
-
-	// deprecated
-	this.connect = function () {
-		if (typeof console !== 'undefined') _consoleLog("Opening the Developer Console will break the connection with Brackets!");
-		_connected = true;
-		_sendNodes(nodes);
-		return this;
-	};
-
-	this.resetTrace = _resetTrace;
-
-	// accessors
-
-	// this is mostly here for unit tests, and not necessary or encouraged
-	// use trackNodes instead
-	this.nodes = function () {
-		return nodes;
-	};
-
-	this.trackNodes = function () {
-		return nodeTracker.track();
-	};
-
-	this.untrackNodes = function (handle) {
-		return nodeTracker.untrack(handle);
-	};
-
-	this.newNodes = function (handle) {
-		return nodeTracker.delta(handle);
-	};
-
-	this.trackHits = function () {
-		var handle = _hitQueries.push(true) - 1;
-		nodeHitCounts[handle] = calculateHitCounts();
-		return handle;
-	};
-
-	this.trackExceptions = function () {
-		var handle = _exceptionQueries.push(true) - 1;
-		exceptionCounts[handle] = calculateExceptionCounts();
-		return handle;
-	};
-
-	this.trackLogs = function (query) {
-		var handle = _logQueries.push(query) - 1;
-		logEntries[handle] = backlog(query);
-		return handle;
-	};
-
-	this.trackEpochs = function () {
-		return epochTracker.track();
-	};
-
-	this.untrackEpochs = function (handle) {
-		return epochTracker.untrack(handle);
-	};
-
-	this.trackFileCallGraph = function () {
-		return fileCallGraphTracker.track();
-	};
-
-	this.untrackFileCallGraph = function (handle) {
-		return fileCallGraphTracker.untrack(handle);
-	};
-
-	this.fileCallGraphDelta = function (handle) {
-		return fileCallGraphTracker.delta(handle);
-	};
-
-	this.hitCountDeltas = function (handle) {
-		if (!(handle in _hitQueries)) {
-			throw new Error("unrecognized query");
-		}
-		var result = nodeHitCounts[handle];
-		nodeHitCounts[handle] = {};
-		return result;
-	};
-
-	this.newExceptions = function (handle) {
-		if (!(handle in _exceptionQueries)) {
-			throw new Error("unrecognized query");
-		}
-		var result = exceptionCounts[handle];
-		exceptionCounts[handle] = {};
-		return { counts: result };
-	};
-
-	this.epochDelta = function (handle) {
-		return epochTracker.delta(handle);
-	};
-
-	// okay, the second argument is kind of a hack
-	function makeLogEntry(invocation, parents) {
-		parents = (parents || []);
-		var entry = {
-			timestamp: invocation.timestamp,
-			tick: invocation.tick,
-			invocationId: invocation.id,
-			topLevelInvocationId: invocation.topLevelInvocationId,
-			nodeId: invocation.f.id,
-		};
-		if (invocation.epochID !== undefined) {
-			var epoch = _epochsById[invocation.epochID];
-			entry.epoch = {
-				id: epoch.id,
-				emitterID: epoch.emitterID,
-				eventName: epoch.eventName,
-			};
-			entry.epochDepth = invocation.epochDepth;
-		}
-		if (invocation.returnValue !== undefined) {
-			entry.returnValue = marshalForTransmission(invocation.returnValue);
-		}
-		if (invocation.exception !== undefined) {
-			entry.exception = marshalForTransmission(invocation.exception);
-		}
-		entry.formula = nodeById[entry.nodeId].name
-		if (invocation.f.params || invocation.arguments) {
-			entry.arguments = [];
-			entry.args = {};
-			var params = invocation.f.params || [];
-			for (var i = 0; i < params.length; i++) {
-				var param = params[i];
-				entry.arguments.push({
-					name: param.name,
-					value: marshalForTransmission(invocation.arguments[i]),
-				});
-				entry.args[param.name] = marshalForTransmission(invocation.arguments[i]).value;
-			}
-			for (var i = params.length; i < invocation.arguments.length; i++) {
-				entry.arguments.push({
-					value: marshalForTransmission(invocation.arguments[i]),
-				});
-			}
-		}
-		if (invocation.this !== undefined) {
-			entry.this = marshalForTransmission(invocation.this);
-		}
-		if (parents.length > 0) {
-			entry.parents = parents; // DN parentLinks and childLinks (created by linkToChild) worth putting in entry too? (global, not limited to query) only direct parents?
-		}
-		return entry;
-	}
-
-	this.logCount = function (handle) {
-		if (!(handle in _logQueries)) {
-			throw new Error("unrecognized query");
-		}
-
-		return logEntries[handle].entries.length;
-	};
-
-	this.logDelta = function (handle, maxResults) {
-		if (!(handle in _logQueries)) {
-			throw new Error("unrecognized query");
-		}
-
-		maxResults = maxResults || 10;
-
-		var ids = logEntries[handle].entries.splice(0, maxResults);
-		var results = ids.map(function (invocationId, i) {
-			var invocation = invocationById[invocationId];
-			return makeLogEntry(invocation, findParentsInQuery(invocation, _logQueries[handle]));
-		});
-
-		return results;
-	};
-
-	this.backtrace = function (options) {
-		options = mergeInto(options, {
-			range: [0, 10],
-		});
-
-		var invocation = invocationById[options.invocationId];
-		if (!invocation) {
-			throw new Error("invocation not found");
-		}
-
-		var stack = [];
-		if (options.range[0] <= 0) {
-			stack.push(invocation);
-		}
-
-		function search(invocation, depth) {
-			// stop if we're too deep
-			if (depth+1 >= options.range[1]) {
-				return;
-			}
-
-			var callers = findCallers(invocation);
-			var directCallers = callers.filter(function (c) { return c.type === "call" })
-			var caller = directCallers[0];
-
-			if (caller) {
-				var parent = invocationById[caller.invocationId];
-				if (options.range[0] <= depth+1) {
-					stack.push(parent);
+			$.event.triggerHandler = function (event) {
+				var type = core_hasOwn.call(event, "type") ? event.type : event;
+				var epoch = nextEpoch(-1 /* emitterID */, type);
+	
+				__tracer.pushEpoch(epoch);
+				try {
+					return triggerHandler.apply($.event, arguments);
+				} finally {
+					__tracer.popEpoch();
 				}
-				search(parent, depth + 1);
+			};
+		};
+	
+	
+		// remote prebuggin' (from Brackets)
+	
+		var _sendNodes = function (nodes) {
+			if (_connected) {
+				_sendBracketsMessage('scripts-added', JSON.stringify({ nodes: nodes }));
 			}
+		};
+	
+		function _sendBracketsMessage(name, value) {
+			var key = "data-__tracer-" + name;
+			document.body.setAttribute(key, value);
+			window.setTimeout(function () { document.body.removeAttribute(key); });
 		}
-		search(invocation, 0);
-		var results = stack.map(function (invocation) {
-			return makeLogEntry(invocation);
-		});
-		return results;
-	};
-
-	function findParentsInQuery(invocation, query) {
-		if (!query.ids || query.ids.length === 0) {
-			return [];
+	
+		this.version = function () {
+			return "0.7.0";
+		};
+	
+		// deprecated
+		this.connect = function () {
+			if (typeof console !== 'undefined') _consoleLog("Opening the Developer Console will break the connection with Brackets!");
+			_connected = true;
+			_sendNodes(nodes);
+			return this;
+		};
+	
+		this.resetTrace = _resetTrace;
+	
+		// accessors
+	
+		// this is mostly here for unit tests, and not necessary or encouraged
+		// use trackNodes instead
+		this.nodes = function () {
+			return nodes;
+		};
+	
+		this.trackNodes = function () {
+			return nodeTracker.track();
+		};
+	
+		this.untrackNodes = function (handle) {
+			return nodeTracker.untrack(handle);
+		};
+	
+		this.newNodes = function (handle) {
+			return nodeTracker.delta(handle);
+		};
+	
+		this.trackHits = function () {
+			var handle = _hitQueries.push(true) - 1;
+			nodeHitCounts[handle] = calculateHitCounts();
+			return handle;
+		};
+	
+		this.trackExceptions = function () {
+			var handle = _exceptionQueries.push(true) - 1;
+			exceptionCounts[handle] = calculateExceptionCounts();
+			return handle;
+		};
+	
+		this.trackLogs = function (query) {
+			var handle = _logQueries.push(query) - 1;
+			logEntries[handle] = backlog(query);
+			return handle;
+		};
+	
+		this.trackEpochs = function () {
+			return epochTracker.track();
+		};
+	
+		this.untrackEpochs = function (handle) {
+			return epochTracker.untrack(handle);
+		};
+	
+		this.trackFileCallGraph = function () {
+			return fileCallGraphTracker.track();
+		};
+	
+		this.untrackFileCallGraph = function (handle) {
+			return fileCallGraphTracker.untrack(handle);
+		};
+	
+		this.fileCallGraphDelta = function (handle) {
+			return fileCallGraphTracker.delta(handle);
+		};
+	
+		this.hitCountDeltas = function (handle) {
+			if (!(handle in _hitQueries)) {
+				throw new Error("unrecognized query");
+			}
+			var result = nodeHitCounts[handle];
+			nodeHitCounts[handle] = {};
+			return result;
+		};
+	
+		this.newExceptions = function (handle) {
+			if (!(handle in _exceptionQueries)) {
+				throw new Error("unrecognized query");
+			}
+			var result = exceptionCounts[handle];
+			exceptionCounts[handle] = {};
+			return { counts: result };
+		};
+	
+		this.epochDelta = function (handle) {
+			return epochTracker.delta(handle);
+		};
+	
+		// okay, the second argument is kind of a hack
+		function makeLogEntry(invocation, parents) {
+			parents = (parents || []);
+			var entry = {
+				timestamp: invocation.timestamp,
+				tick: invocation.tick,
+				invocationId: invocation.id,
+				topLevelInvocationId: invocation.topLevelInvocationId,
+				nodeId: invocation.f.id,
+			};
+			if (invocation.epochID !== undefined) {
+				var epoch = _epochsById[invocation.epochID];
+				entry.epoch = {
+					id: epoch.id,
+					emitterID: epoch.emitterID,
+					eventName: epoch.eventName,
+				};
+				entry.epochDepth = invocation.epochDepth;
+			}
+			if (invocation.returnValue !== undefined) {
+				entry.returnValue = marshalForTransmission(invocation.returnValue);
+			}
+			if (invocation.exception !== undefined) {
+				entry.exception = marshalForTransmission(invocation.exception);
+			}
+			entry.formula = nodeById[entry.nodeId].name
+			if (invocation.f.params || invocation.arguments) {
+				entry.arguments = [];
+				entry.args = {};
+				var params = invocation.f.params || [];
+				for (var i = 0; i < params.length; i++) {
+					var param = params[i];
+					entry.arguments.push({
+						name: param.name,
+						value: marshalForTransmission(invocation.arguments[i]),
+					});
+					entry.args[param.name] = marshalForTransmission(invocation.arguments[i]).value;
+				}
+				for (var i = params.length; i < invocation.arguments.length; i++) {
+					entry.arguments.push({
+						value: marshalForTransmission(invocation.arguments[i]),
+					});
+				}
+			}
+			if (invocation.this !== undefined) {
+				entry.this = marshalForTransmission(invocation.this);
+			}
+			if (parents.length > 0) {
+				entry.parents = parents; // DN parentLinks and childLinks (created by linkToChild) worth putting in entry too? (global, not limited to query) only direct parents?
+			}
+			return entry;
 		}
-
-		var matches = {}; // invocation id -> link
-		var seen = {}; // invocation id -> true
-		var types = ['async', 'call', 'branch-enter']; // in priority order
-		function promoteType(type, newType) {
-			if (types.indexOf(type) === -1 || types.indexOf(newType) === -1) {
-				throw new Exception("invocation link type not known")
+	
+		this.logCount = function (handle) {
+			if (!(handle in _logQueries)) {
+				throw new Error("unrecognized query");
 			}
-			if (types.indexOf(newType) < types.indexOf(type)) {
-				return newType;
+	
+			return logEntries[handle].entries.length;
+		};
+	
+		this.logDelta = function (handle, maxResults) {
+			if (!(handle in _logQueries)) {
+				throw new Error("unrecognized query");
 			}
-			return type;
-		}
-		function search(link, type) {
-			if (link.id in seen) {
-				return;
+	
+			maxResults = maxResults || 10;
+	
+			var ids = logEntries[handle].entries.splice(0, maxResults);
+			var results = ids.map(function (invocationId, i) {
+				var invocation = invocationById[invocationId];
+				return makeLogEntry(invocation, findParentsInQuery(invocation, _logQueries[handle]));
+			});
+	
+			return results;
+		};
+	
+		this.backtrace = function (options) {
+			options = mergeInto(options, {
+				range: [0, 10],
+			});
+	
+			var invocation = invocationById[options.invocationId];
+			if (!invocation) {
+				throw new Error("invocation not found");
 			}
-			seen[link.id] = true;
-
-			var targetInvocation = invocationById[link.id];
-			if (query.ids.indexOf(targetInvocation.f.id) !== -1) { // if the called function is in the query
-				if (link.id in matches) { // if we've already found this one
-					if (link.type === 'call' && matches[link.id].type === 'async') { // if we found an async one before but this one is synchronous
-						// overwrite the previous match
+	
+			var stack = [];
+			if (options.range[0] <= 0) {
+				stack.push(invocation);
+			}
+	
+			function search(invocation, depth) {
+				// stop if we're too deep
+				if (depth+1 >= options.range[1]) {
+					return;
+				}
+	
+				var callers = findCallers(invocation);
+				var directCallers = callers.filter(function (c) { return c.type === "call" })
+				var caller = directCallers[0];
+	
+				if (caller) {
+					var parent = invocationById[caller.invocationId];
+					if (options.range[0] <= depth+1) {
+						stack.push(parent);
+					}
+					search(parent, depth + 1);
+				}
+			}
+			search(invocation, 0);
+			var results = stack.map(function (invocation) {
+				return makeLogEntry(invocation);
+			});
+			return results;
+		};
+	
+		function findParentsInQuery(invocation, query) {
+			if (!query.ids || query.ids.length === 0) {
+				return [];
+			}
+	
+			var matches = {}; // invocation id -> link
+			var seen = {}; // invocation id -> true
+			var types = ['async', 'call', 'branch-enter']; // in priority order
+			function promoteType(type, newType) {
+				if (types.indexOf(type) === -1 || types.indexOf(newType) === -1) {
+					throw new Exception("invocation link type not known")
+				}
+				if (types.indexOf(newType) < types.indexOf(type)) {
+					return newType;
+				}
+				return type;
+			}
+			function search(link, type) {
+				if (link.id in seen) {
+					return;
+				}
+				seen[link.id] = true;
+	
+				var targetInvocation = invocationById[link.id];
+				if (query.ids.indexOf(targetInvocation.f.id) !== -1) { // if the called function is in the query
+					if (link.id in matches) { // if we've already found this one
+						if (link.type === 'call' && matches[link.id].type === 'async') { // if we found an async one before but this one is synchronous
+							// overwrite the previous match
+							matches[link.id] = {
+								invocationId: link.id,
+								type: type,
+								inbetween: []
+							};
+						}
+					} else { // if we haven't found this link before, store it
 						matches[link.id] = {
 							invocationId: link.id,
 							type: type,
 							inbetween: []
 						};
 					}
-				} else { // if we haven't found this link before, store it
-					matches[link.id] = {
-						invocationId: link.id,
-						type: type,
-						inbetween: []
-					};
+				} else {
+					targetInvocation.getParentLinks().forEach(function (link) { search(link, promoteType(type, link.type)); });
 				}
-			} else {
-				targetInvocation.getParentLinks().forEach(function (link) { search(link, promoteType(type, link.type)); });
 			}
+			invocation.getParentLinks().forEach(function (link) { search(link, link.type); });
+	
+			// convert matches to an array
+			var matchesArr = [];
+			for (var id in matches) {
+				matchesArr.push(matches[id]);
+			}
+			return matchesArr;
 		}
-		invocation.getParentLinks().forEach(function (link) { search(link, link.type); });
-
-		// convert matches to an array
-		var matchesArr = [];
-		for (var id in matches) {
-			matchesArr.push(matches[id]);
-		}
-		return matchesArr;
-	}
-
-	function findCallers(invocation) {
-		var matches = {}; // invocation id -> link
-		var seen = {}; // invocation id -> true
-		var types = ['async', 'call', 'branch-enter']; // in priority order
-		function promoteType(type, newType) {
-			if (types.indexOf(type) === -1 || types.indexOf(newType) === -1) {
-				throw new Exception("invocation link type not known")
+	
+		function findCallers(invocation) {
+			var matches = {}; // invocation id -> link
+			var seen = {}; // invocation id -> true
+			var types = ['async', 'call', 'branch-enter']; // in priority order
+			function promoteType(type, newType) {
+				if (types.indexOf(type) === -1 || types.indexOf(newType) === -1) {
+					throw new Exception("invocation link type not known")
+				}
+				if (types.indexOf(newType) < types.indexOf(type)) {
+					return newType;
+				}
+				return type;
 			}
-			if (types.indexOf(newType) < types.indexOf(type)) {
-				return newType;
-			}
-			return type;
-		}
-		function search(link, type) {
-			if (link.id in seen) {
-				return;
-			}
-			seen[link.id] = true;
-
-			if (invocationById[link.id].f.type === "function") {
-				if (link.id in matches) {
-					if (link.type === 'call' && matches[link.id].type === 'async') {
+			function search(link, type) {
+				if (link.id in seen) {
+					return;
+				}
+				seen[link.id] = true;
+	
+				if (invocationById[link.id].f.type === "function") {
+					if (link.id in matches) {
+						if (link.type === 'call' && matches[link.id].type === 'async') {
+							matches[link.id] = {
+								invocationId: link.id,
+								type: type,
+							};
+						}
+					} else {
 						matches[link.id] = {
 							invocationId: link.id,
 							type: type,
 						};
 					}
-				} else {
-					matches[link.id] = {
-						invocationId: link.id,
-						type: type,
-					};
+					return; // search no more down this path
 				}
-				return; // search no more down this path
+				invocationById[link.id].getParentLinks().forEach(function (link) { search(link, promoteType(type, link.type)); });
 			}
-			invocationById[link.id].getParentLinks().forEach(function (link) { search(link, promoteType(type, link.type)); });
-		}
-		invocation.getParentLinks().forEach(function (link) { search(link, link.type); });
-
-		// convert matches to an array
-		var matchesArr = [];
-		for (var id in matches) {
-			matchesArr.push(matches[id]);
-		}
-		return matchesArr;
-	}
-
-	this.Array = Array;
-});
-}
-(function () { __tracer.setGlobal(this); })();
-/*
-The following code has been modified by fondue to collect information about its
-execution.
-
-https://github.com/adobe-research/fondue
-*/
-
-if (typeof __tracer === 'undefined') {
-	__tracer = {};
-	var methods = ["add", "addSourceMap", "traceFileEntry", "traceFileExit", "setGlobal", "traceFunCreate", "traceEnter", "traceExit", "traceReturnValue", "traceExceptionThrown", "bailThisTick", "pushEpoch", "popEpoch", "augmentjQuery", "version", "connect", "nodes", "trackNodes", "untrackNodes", "newNodes", "trackHits", "trackExceptions", "trackLogs", "trackEpochs", "untrackEpochs", "trackFileCallGraph", "untrackFileCallGraph", "fileCallGraphDelta", "hitCountDeltas", "newExceptions", "epochDelta", "logCount", "logDelta", "backtrace"];
-	for (var i = 0; i < methods.length; i++) {
-		__tracer[methods[i]] = function () { return arguments[0] };
-	}
-
-	__tracer.traceFunCall = function (info) {
-		var customThis = false, fthis, func;
-
-		if ('func' in info) {
-			func = info.func;
-		} else {
-			customThis = true;
-			fthis = info.this;
-			func = fthis[info.property];
-		}
-
-		return function () {
-			return func.apply(customThis ? fthis : this, arguments);
-		};
-	};
-
-	__tracer.Array = Array;
-}
-__tracer.add("script1", "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.year = exports.subs_new = exports.subs_growth_pc = exports.subs_churned = exports.subs_churn_pc = exports.subs_0 = exports.subs = exports.revenue = exports.profit = exports.expenses = exports.CAC = void 0;\nvar subs_growth_pc = function subs_growth_pc(_ref) {\n  var subs_growth_pc_in = _ref.subs_growth_pc_in;\n  return subs_growth_pc_in;\n};\nexports.subs_growth_pc = subs_growth_pc;\nvar subs_churn_pc = function subs_churn_pc(_ref2) {\n  var subs_churn_pc_in = _ref2.subs_churn_pc_in;\n  return subs_churn_pc_in;\n};\nexports.subs_churn_pc = subs_churn_pc;\nvar subs_0 = function subs_0(_ref3) {\n  var subs_0_in = _ref3.subs_0_in;\n  return subs_0_in;\n}; // subs at start of year 0\nexports.subs_0 = subs_0;\nvar year = function year(_ref4) {\n  var year_in = _ref4.year_in;\n  return year_in;\n};\nexports.year = year;\nvar CAC = function CAC(_ref5) {\n  var CAC_in = _ref5.CAC_in;\n  return CAC_in;\n};\nexports.CAC = CAC;\nvar subs_new = function subs_new(_ref6) {\n  var year_in = _ref6.year_in,\n    subs_0_in = _ref6.subs_0_in,\n    subs_churn_pc_in = _ref6.subs_churn_pc_in,\n    subs_growth_pc_in = _ref6.subs_growth_pc_in;\n  return (\n    // its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important\n    year({\n      year_in: year_in\n    }) < 0 ? 0 : subs({\n      subs_0_in: subs_0_in,\n      subs_growth_pc_in: subs_growth_pc_in,\n      subs_churn_pc_in: subs_churn_pc_in,\n      year_in: year({\n        year_in: year_in\n      }) - 1\n    }) * (subs_growth_pc({\n      subs_growth_pc_in: subs_growth_pc_in\n    }) / 100)\n  );\n};\nexports.subs_new = subs_new;\nvar subs_churned = function subs_churned(_ref7) {\n  var year_in = _ref7.year_in,\n    subs_0_in = _ref7.subs_0_in,\n    subs_growth_pc_in = _ref7.subs_growth_pc_in,\n    subs_churn_pc_in = _ref7.subs_churn_pc_in;\n  return (subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  })) * subs_churn_pc({\n    subs_churn_pc_in: subs_churn_pc_in\n  }) / 100;\n}; // churn assumption also applies to new subs\n\n// subs at end = prev subs at end + new subs@yr - churned subs@yr\nexports.subs_churned = subs_churned;\nvar subs = function subs(_ref8) {\n  var year_in = _ref8.year_in,\n    subs_0_in = _ref8.subs_0_in,\n    subs_growth_pc_in = _ref8.subs_growth_pc_in,\n    subs_churn_pc_in = _ref8.subs_churn_pc_in;\n  if (year({\n    year_in: year_in\n  }) < 0) return subs_0({\n    subs_0_in: subs_0_in\n  });else return subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) - subs_churned({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  });\n}; // => can project subs given subs_0, growth and churn rates\nexports.subs = subs;\nvar expenses = function expenses(_ref9) {\n  var year_in = _ref9.year_in,\n    subs_0_in = _ref9.subs_0_in,\n    subs_churn_pc_in = _ref9.subs_churn_pc_in,\n    subs_growth_pc_in = _ref9.subs_growth_pc_in,\n    CAC_in = _ref9.CAC_in;\n  return subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) * CAC({\n    CAC_in: CAC_in\n  });\n}; // error?\nexports.expenses = expenses;\nvar revenue = function revenue(_ref10) {\n  var year_in = _ref10.year_in,\n    subs_0_in = _ref10.subs_0_in,\n    subs_growth_pc_in = _ref10.subs_growth_pc_in,\n    subs_churn_pc_in = _ref10.subs_churn_pc_in;\n  return subs({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) * 100;\n};\nexports.revenue = revenue;\nvar profit = function profit(_ref11) {\n  var year_in = _ref11.year_in,\n    subs_0_in = _ref11.subs_0_in,\n    subs_growth_pc_in = _ref11.subs_growth_pc_in,\n    subs_churn_pc_in = _ref11.subs_churn_pc_in,\n    CAC_in = _ref11.CAC_in;\n  return revenue({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) - expenses({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    CAC_in: CAC_in\n  });\n};\nexports.profit = profit;\n", { nodes: [{"path":"script1","start":{"line":3,"column":0},"end":{"line":5,"column":2},"id":"script1-callsite-3-0-5-2","type":"callsite","name":"Object.defineProperty","nameStart":{"line":3,"column":7},"nameEnd":{"line":3,"column":21}},{"path":"script1","start":{"line":7,"column":21},"end":{"line":10,"column":1},"id":"script1-function-7-21-10-1","type":"function","name":"subs_growth_pc","params":[{"name":"_ref","start":{"line":7,"column":45},"end":{"line":7,"column":49}}]},{"path":"script1","start":{"line":12,"column":20},"end":{"line":15,"column":1},"id":"script1-function-12-20-15-1","type":"function","name":"subs_churn_pc","params":[{"name":"_ref2","start":{"line":12,"column":43},"end":{"line":12,"column":48}}]},{"path":"script1","start":{"line":17,"column":13},"end":{"line":20,"column":1},"id":"script1-function-17-13-20-1","type":"function","name":"subs_0","params":[{"name":"_ref3","start":{"line":17,"column":29},"end":{"line":17,"column":34}}]},{"path":"script1","start":{"line":22,"column":11},"end":{"line":25,"column":1},"id":"script1-function-22-11-25-1","type":"function","name":"year","params":[{"name":"_ref4","start":{"line":22,"column":25},"end":{"line":22,"column":30}}]},{"path":"script1","start":{"line":27,"column":10},"end":{"line":30,"column":1},"id":"script1-function-27-10-30-1","type":"function","name":"CAC","params":[{"name":"_ref5","start":{"line":27,"column":23},"end":{"line":27,"column":28}}]},{"path":"script1","start":{"line":39,"column":4},"end":{"line":41,"column":6},"id":"script1-callsite-39-4-41-6","type":"callsite","name":"year","nameStart":{"line":39,"column":4},"nameEnd":{"line":39,"column":8}},{"path":"script1","start":{"line":45,"column":15},"end":{"line":47,"column":8},"id":"script1-callsite-45-15-47-8","type":"callsite","name":"year","nameStart":{"line":45,"column":15},"nameEnd":{"line":45,"column":19}},{"path":"script1","start":{"line":41,"column":17},"end":{"line":48,"column":6},"id":"script1-callsite-41-17-48-6","type":"callsite","name":"subs","nameStart":{"line":41,"column":17},"nameEnd":{"line":41,"column":21}},{"path":"script1","start":{"line":48,"column":10},"end":{"line":50,"column":6},"id":"script1-callsite-48-10-50-6","type":"callsite","name":"subs_growth_pc","nameStart":{"line":48,"column":10},"nameEnd":{"line":48,"column":24}},{"path":"script1","start":{"line":32,"column":15},"end":{"line":52,"column":1},"id":"script1-function-32-15-52-1","type":"function","name":"subs_new","params":[{"name":"_ref6","start":{"line":32,"column":33},"end":{"line":32,"column":38}}]},{"path":"script1","start":{"line":63,"column":13},"end":{"line":65,"column":6},"id":"script1-callsite-63-13-65-6","type":"callsite","name":"year","nameStart":{"line":63,"column":13},"nameEnd":{"line":63,"column":17}},{"path":"script1","start":{"line":59,"column":10},"end":{"line":66,"column":4},"id":"script1-callsite-59-10-66-4","type":"callsite","name":"subs","nameStart":{"line":59,"column":10},"nameEnd":{"line":59,"column":14}},{"path":"script1","start":{"line":66,"column":7},"end":{"line":71,"column":4},"id":"script1-callsite-66-7-71-4","type":"callsite","name":"subs_new","nameStart":{"line":66,"column":7},"nameEnd":{"line":66,"column":15}},{"path":"script1","start":{"line":71,"column":8},"end":{"line":73,"column":4},"id":"script1-callsite-71-8-73-4","type":"callsite","name":"subs_churn_pc","nameStart":{"line":71,"column":8},"nameEnd":{"line":71,"column":21}},{"path":"script1","start":{"line":54,"column":19},"end":{"line":74,"column":1},"id":"script1-function-54-19-74-1","type":"function","name":"subs_churned","params":[{"name":"_ref7","start":{"line":54,"column":41},"end":{"line":54,"column":46}}]},{"path":"script1","start":{"line":83,"column":6},"end":{"line":85,"column":4},"id":"script1-callsite-83-6-85-4","type":"callsite","name":"year","nameStart":{"line":83,"column":6},"nameEnd":{"line":83,"column":10}},{"path":"script1","start":{"line":85,"column":17},"end":{"line":87,"column":4},"id":"script1-callsite-85-17-87-4","type":"callsite","name":"subs_0","nameStart":{"line":85,"column":17},"nameEnd":{"line":85,"column":23}},{"path":"script1","start":{"line":91,"column":13},"end":{"line":93,"column":6},"id":"script1-callsite-91-13-93-6","type":"callsite","name":"year","nameStart":{"line":91,"column":13},"nameEnd":{"line":91,"column":17}},{"path":"script1","start":{"line":87,"column":17},"end":{"line":94,"column":4},"id":"script1-callsite-87-17-94-4","type":"callsite","name":"subs","nameStart":{"line":87,"column":17},"nameEnd":{"line":87,"column":21}},{"path":"script1","start":{"line":94,"column":7},"end":{"line":99,"column":4},"id":"script1-callsite-94-7-99-4","type":"callsite","name":"subs_new","nameStart":{"line":94,"column":7},"nameEnd":{"line":94,"column":15}},{"path":"script1","start":{"line":99,"column":7},"end":{"line":104,"column":4},"id":"script1-callsite-99-7-104-4","type":"callsite","name":"subs_churned","nameStart":{"line":99,"column":7},"nameEnd":{"line":99,"column":19}},{"path":"script1","start":{"line":78,"column":11},"end":{"line":105,"column":1},"id":"script1-function-78-11-105-1","type":"function","name":"subs","params":[{"name":"_ref8","start":{"line":78,"column":25},"end":{"line":78,"column":30}}]},{"path":"script1","start":{"line":113,"column":9},"end":{"line":118,"column":4},"id":"script1-callsite-113-9-118-4","type":"callsite","name":"subs_new","nameStart":{"line":113,"column":9},"nameEnd":{"line":113,"column":17}},{"path":"script1","start":{"line":118,"column":7},"end":{"line":120,"column":4},"id":"script1-callsite-118-7-120-4","type":"callsite","name":"CAC","nameStart":{"line":118,"column":7},"nameEnd":{"line":118,"column":10}},{"path":"script1","start":{"line":107,"column":15},"end":{"line":121,"column":1},"id":"script1-function-107-15-121-1","type":"function","name":"expenses","params":[{"name":"_ref9","start":{"line":107,"column":33},"end":{"line":107,"column":38}}]},{"path":"script1","start":{"line":128,"column":9},"end":{"line":133,"column":4},"id":"script1-callsite-128-9-133-4","type":"callsite","name":"subs","nameStart":{"line":128,"column":9},"nameEnd":{"line":128,"column":13}},{"path":"script1","start":{"line":123,"column":14},"end":{"line":134,"column":1},"id":"script1-function-123-14-134-1","type":"function","name":"revenue","params":[{"name":"_ref10","start":{"line":123,"column":31},"end":{"line":123,"column":37}}]},{"path":"script1","start":{"line":142,"column":9},"end":{"line":147,"column":4},"id":"script1-callsite-142-9-147-4","type":"callsite","name":"revenue","nameStart":{"line":142,"column":9},"nameEnd":{"line":142,"column":16}},{"path":"script1","start":{"line":147,"column":7},"end":{"line":153,"column":4},"id":"script1-callsite-147-7-153-4","type":"callsite","name":"expenses","nameStart":{"line":147,"column":7},"nameEnd":{"line":147,"column":15}},{"path":"script1","start":{"line":136,"column":13},"end":{"line":154,"column":1},"id":"script1-function-136-13-154-1","type":"function","name":"profit","params":[{"name":"_ref11","start":{"line":136,"column":29},"end":{"line":136,"column":35}}]},{"path":"script1","start":{"line":1,"column":0},"end":{"line":156,"column":0},"id":"script1-toplevel-1-0-156-0","type":"toplevel","name":"(script1 toplevel)"}] });
-
-{ try {{__tracer.traceFileEntry({nodeId: "script1-toplevel-1-0-156-0"});"use strict";
-
- __tracer.traceFunCall({ this: Object, property: "defineProperty", nodeId: "script1-callsite-3-0-5-2" })(exports, "__esModule", {
-  value: true
-});
-exports.year = exports.subs_new = exports.subs_growth_pc = exports.subs_churned = exports.subs_churn_pc = exports.subs_0 = exports.subs = exports.revenue = exports.profit = exports.expenses = exports.CAC = void 0;
-var subs_growth_pc = __tracer.traceFunCreate(function subs_growth_pc(_ref) { try {{__tracer.traceEnter({nodeId: "script1-function-7-21-10-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var subs_growth_pc_in = _ref.subs_growth_pc_in;
-  return __tracer.traceReturnValue(subs_growth_pc_in);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-7-21-10-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-7-21-10-1"});} }, "function subs_growth_pc(_ref) {\n  var subs_growth_pc_in = _ref.subs_growth_pc_in;\n  return subs_growth_pc_in;\n}");
-exports.subs_growth_pc = subs_growth_pc;
-var subs_churn_pc = __tracer.traceFunCreate(function subs_churn_pc(_ref2) { try {{__tracer.traceEnter({nodeId: "script1-function-12-20-15-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var subs_churn_pc_in = _ref2.subs_churn_pc_in;
-  return __tracer.traceReturnValue(subs_churn_pc_in);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-12-20-15-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-12-20-15-1"});} }, "function subs_churn_pc(_ref2) {\n  var subs_churn_pc_in = _ref2.subs_churn_pc_in;\n  return subs_churn_pc_in;\n}");
-exports.subs_churn_pc = subs_churn_pc;
-var subs_0 = __tracer.traceFunCreate(function subs_0(_ref3) { try {{__tracer.traceEnter({nodeId: "script1-function-17-13-20-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var subs_0_in = _ref3.subs_0_in;
-  return __tracer.traceReturnValue(subs_0_in);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-17-13-20-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-17-13-20-1"});} }, "function subs_0(_ref3) {\n  var subs_0_in = _ref3.subs_0_in;\n  return subs_0_in;\n}"); // subs at start of year 0
-exports.subs_0 = subs_0;
-var year = __tracer.traceFunCreate(function year(_ref4) { try {{__tracer.traceEnter({nodeId: "script1-function-22-11-25-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref4.year_in;
-  return __tracer.traceReturnValue(year_in);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-22-11-25-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-22-11-25-1"});} }, "function year(_ref4) {\n  var year_in = _ref4.year_in;\n  return year_in;\n}");
-exports.year = year;
-var CAC = __tracer.traceFunCreate(function CAC(_ref5) { try {{__tracer.traceEnter({nodeId: "script1-function-27-10-30-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var CAC_in = _ref5.CAC_in;
-  return __tracer.traceReturnValue(CAC_in);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-27-10-30-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-27-10-30-1"});} }, "function CAC(_ref5) {\n  var CAC_in = _ref5.CAC_in;\n  return CAC_in;\n}");
-exports.CAC = CAC;
-var subs_new = __tracer.traceFunCreate(function subs_new(_ref6) { try {{__tracer.traceEnter({nodeId: "script1-function-32-15-52-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref6.year_in,
-    subs_0_in = _ref6.subs_0_in,
-    subs_churn_pc_in = _ref6.subs_churn_pc_in,
-    subs_growth_pc_in = _ref6.subs_growth_pc_in;
-  return (
-    // its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important
-    __tracer.traceReturnValue(__tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-39-4-41-6"})({
-      year_in: year_in
-    }) < 0 ? 0 : __tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-41-17-48-6"})({
-      subs_0_in: subs_0_in,
-      subs_growth_pc_in: subs_growth_pc_in,
-      subs_churn_pc_in: subs_churn_pc_in,
-      year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-45-15-47-8"})({
-        year_in: year_in
-      }) - 1
-    }) * (__tracer.traceFunCall({ func: (subs_growth_pc), nodeId: "script1-callsite-48-10-50-6"})({
-      subs_growth_pc_in: subs_growth_pc_in
-    }) / 100))
-  );
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-32-15-52-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-32-15-52-1"});} }, "function subs_new(_ref6) {\n  var year_in = _ref6.year_in,\n    subs_0_in = _ref6.subs_0_in,\n    subs_churn_pc_in = _ref6.subs_churn_pc_in,\n    subs_growth_pc_in = _ref6.subs_growth_pc_in;\n  return (\n    // its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important\n    year({\n      year_in: year_in\n    }) < 0 ? 0 : subs({\n      subs_0_in: subs_0_in,\n      subs_growth_pc_in: subs_growth_pc_in,\n      subs_churn_pc_in: subs_churn_pc_in,\n      year_in: year({\n        year_in: year_in\n      }) - 1\n    }) * (subs_growth_pc({\n      subs_growth_pc_in: subs_growth_pc_in\n    }) / 100)\n  );\n}");
-exports.subs_new = subs_new;
-var subs_churned = __tracer.traceFunCreate(function subs_churned(_ref7) { try {{__tracer.traceEnter({nodeId: "script1-function-54-19-74-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref7.year_in,
-    subs_0_in = _ref7.subs_0_in,
-    subs_growth_pc_in = _ref7.subs_growth_pc_in,
-    subs_churn_pc_in = _ref7.subs_churn_pc_in;
-  return __tracer.traceReturnValue((__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-59-10-66-4"})({
-    subs_0_in: subs_0_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-63-13-65-6"})({
-      year_in: year_in
-    }) - 1
-  }) + __tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-66-7-71-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    subs_growth_pc_in: subs_growth_pc_in
-  })) * __tracer.traceFunCall({ func: (subs_churn_pc), nodeId: "script1-callsite-71-8-73-4"})({
-    subs_churn_pc_in: subs_churn_pc_in
-  }) / 100);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-54-19-74-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-54-19-74-1"});} }, "function subs_churned(_ref7) {\n  var year_in = _ref7.year_in,\n    subs_0_in = _ref7.subs_0_in,\n    subs_growth_pc_in = _ref7.subs_growth_pc_in,\n    subs_churn_pc_in = _ref7.subs_churn_pc_in;\n  return (subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  })) * subs_churn_pc({\n    subs_churn_pc_in: subs_churn_pc_in\n  }) / 100;\n}"); // churn assumption also applies to new subs
-
-// subs at end = prev subs at end + new subs@yr - churned subs@yr
-exports.subs_churned = subs_churned;
-var subs = __tracer.traceFunCreate(function subs(_ref8) { try {{__tracer.traceEnter({nodeId: "script1-function-78-11-105-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref8.year_in,
-    subs_0_in = _ref8.subs_0_in,
-    subs_growth_pc_in = _ref8.subs_growth_pc_in,
-    subs_churn_pc_in = _ref8.subs_churn_pc_in;
-  if (__tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-83-6-85-4"})({
-    year_in: year_in
-  }) < 0) return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs_0), nodeId: "script1-callsite-85-17-87-4"})({
-    subs_0_in: subs_0_in
-  }));else return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-87-17-94-4"})({
-    subs_0_in: subs_0_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-91-13-93-6"})({
-      year_in: year_in
-    }) - 1
-  }) + __tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-94-7-99-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    subs_growth_pc_in: subs_growth_pc_in
-  }) - __tracer.traceFunCall({ func: (subs_churned), nodeId: "script1-callsite-99-7-104-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    subs_churn_pc_in: subs_churn_pc_in
-  }));
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-78-11-105-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-78-11-105-1"});} }, "function subs(_ref8) {\n  var year_in = _ref8.year_in,\n    subs_0_in = _ref8.subs_0_in,\n    subs_growth_pc_in = _ref8.subs_growth_pc_in,\n    subs_churn_pc_in = _ref8.subs_churn_pc_in;\n  if (year({\n    year_in: year_in\n  }) < 0) return subs_0({\n    subs_0_in: subs_0_in\n  });else return subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) - subs_churned({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  });\n}"); // => can project subs given subs_0, growth and churn rates
-exports.subs = subs;
-var expenses = __tracer.traceFunCreate(function expenses(_ref9) { try {{__tracer.traceEnter({nodeId: "script1-function-107-15-121-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref9.year_in,
-    subs_0_in = _ref9.subs_0_in,
-    subs_churn_pc_in = _ref9.subs_churn_pc_in,
-    subs_growth_pc_in = _ref9.subs_growth_pc_in,
-    CAC_in = _ref9.CAC_in;
-  return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-113-9-118-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    subs_growth_pc_in: subs_growth_pc_in
-  }) * __tracer.traceFunCall({ func: (CAC), nodeId: "script1-callsite-118-7-120-4"})({
-    CAC_in: CAC_in
-  }));
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-107-15-121-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-107-15-121-1"});} }, "function expenses(_ref9) {\n  var year_in = _ref9.year_in,\n    subs_0_in = _ref9.subs_0_in,\n    subs_churn_pc_in = _ref9.subs_churn_pc_in,\n    subs_growth_pc_in = _ref9.subs_growth_pc_in,\n    CAC_in = _ref9.CAC_in;\n  return subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) * CAC({\n    CAC_in: CAC_in\n  });\n}"); // error?
-exports.expenses = expenses;
-var revenue = __tracer.traceFunCreate(function revenue(_ref10) { try {{__tracer.traceEnter({nodeId: "script1-function-123-14-134-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref10.year_in,
-    subs_0_in = _ref10.subs_0_in,
-    subs_growth_pc_in = _ref10.subs_growth_pc_in,
-    subs_churn_pc_in = _ref10.subs_churn_pc_in;
-  return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-128-9-133-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    subs_churn_pc_in: subs_churn_pc_in
-  }) * 100);
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-123-14-134-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-123-14-134-1"});} }, "function revenue(_ref10) {\n  var year_in = _ref10.year_in,\n    subs_0_in = _ref10.subs_0_in,\n    subs_growth_pc_in = _ref10.subs_growth_pc_in,\n    subs_churn_pc_in = _ref10.subs_churn_pc_in;\n  return subs({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) * 100;\n}");
-exports.revenue = revenue;
-var profit = __tracer.traceFunCreate(function profit(_ref11) { try {{__tracer.traceEnter({nodeId: "script1-function-136-13-154-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
-  var year_in = _ref11.year_in,
-    subs_0_in = _ref11.subs_0_in,
-    subs_growth_pc_in = _ref11.subs_growth_pc_in,
-    subs_churn_pc_in = _ref11.subs_churn_pc_in,
-    CAC_in = _ref11.CAC_in;
-  return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (revenue), nodeId: "script1-callsite-142-9-147-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    subs_churn_pc_in: subs_churn_pc_in
-  }) - __tracer.traceFunCall({ func: (expenses), nodeId: "script1-callsite-147-7-153-4"})({
-    year_in: year_in,
-    subs_0_in: subs_0_in,
-    subs_churn_pc_in: subs_churn_pc_in,
-    subs_growth_pc_in: subs_growth_pc_in,
-    CAC_in: CAC_in
-  }));
-}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-136-13-154-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-136-13-154-1"});} }, "function profit(_ref11) {\n  var year_in = _ref11.year_in,\n    subs_0_in = _ref11.subs_0_in,\n    subs_growth_pc_in = _ref11.subs_growth_pc_in,\n    subs_churn_pc_in = _ref11.subs_churn_pc_in,\n    CAC_in = _ref11.CAC_in;\n  return revenue({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) - expenses({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    CAC_in: CAC_in\n  });\n}");
-exports.profit = profit;
-}} finally {__tracer.traceFileExit({"nodeId":"script1-toplevel-1-0-156-0"});} }
-
-module.exports = exports; // DN
-module.exports.__tracer = __tracer;
+			invocation.getParentLinks().forEach(function (link) { search(link, link.type); });
 	
-
+			// convert matches to an array
+			var matchesArr = [];
+			for (var id in matches) {
+				matchesArr.push(matches[id]);
+			}
+			return matchesArr;
+		}
+	
+		this.Array = Array;
+	});
+	}
+	(function () { __tracer.setGlobal(this); })();
+	/*
+	The following code has been modified by fondue to collect information about its
+	execution.
+	
+	https://github.com/adobe-research/fondue
+	*/
+	
+	if (typeof __tracer === 'undefined') {
+		__tracer = {};
+		var methods = ["add", "addSourceMap", "traceFileEntry", "traceFileExit", "setGlobal", "traceFunCreate", "traceEnter", "traceExit", "traceReturnValue", "traceExceptionThrown", "bailThisTick", "pushEpoch", "popEpoch", "augmentjQuery", "version", "connect", "nodes", "trackNodes", "untrackNodes", "newNodes", "trackHits", "trackExceptions", "trackLogs", "trackEpochs", "untrackEpochs", "trackFileCallGraph", "untrackFileCallGraph", "fileCallGraphDelta", "hitCountDeltas", "newExceptions", "epochDelta", "logCount", "logDelta", "backtrace"];
+		for (var i = 0; i < methods.length; i++) {
+			__tracer[methods[i]] = function () { return arguments[0] };
+		}
+	
+		__tracer.traceFunCall = function (info) {
+			var customThis = false, fthis, func;
+	
+			if ('func' in info) {
+				func = info.func;
+			} else {
+				customThis = true;
+				fthis = info.this;
+				func = fthis[info.property];
+			}
+	
+			return function () {
+				return func.apply(customThis ? fthis : this, arguments);
+			};
+		};
+	
+		__tracer.Array = Array;
+	}
+	__tracer.add("script1", "\"use strict\";\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.year = exports.subs_new = exports.subs_growth_pc = exports.subs_churned = exports.subs_churn_pc = exports.subs_0 = exports.subs = exports.revenue = exports.profit = exports.expenses = exports.CAC = void 0;\nvar subs_growth_pc = function subs_growth_pc(_ref) {\n  var subs_growth_pc_in = _ref.subs_growth_pc_in;\n  return subs_growth_pc_in;\n};\nexports.subs_growth_pc = subs_growth_pc;\nvar subs_churn_pc = function subs_churn_pc(_ref2) {\n  var subs_churn_pc_in = _ref2.subs_churn_pc_in;\n  return subs_churn_pc_in;\n};\nexports.subs_churn_pc = subs_churn_pc;\nvar subs_0 = function subs_0(_ref3) {\n  var subs_0_in = _ref3.subs_0_in;\n  return subs_0_in;\n}; // subs at start of year 0\nexports.subs_0 = subs_0;\nvar year = function year(_ref4) {\n  var year_in = _ref4.year_in;\n  return year_in;\n};\nexports.year = year;\nvar CAC = function CAC(_ref5) {\n  var CAC_in = _ref5.CAC_in;\n  return CAC_in;\n};\nexports.CAC = CAC;\nvar subs_new = function subs_new(_ref6) {\n  var year_in = _ref6.year_in,\n    subs_0_in = _ref6.subs_0_in,\n    subs_churn_pc_in = _ref6.subs_churn_pc_in,\n    subs_growth_pc_in = _ref6.subs_growth_pc_in;\n  return (\n    // its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important\n    year({\n      year_in: year_in\n    }) < 0 ? 0 : subs({\n      subs_0_in: subs_0_in,\n      subs_growth_pc_in: subs_growth_pc_in,\n      subs_churn_pc_in: subs_churn_pc_in,\n      year_in: year({\n        year_in: year_in\n      }) - 1\n    }) * (subs_growth_pc({\n      subs_growth_pc_in: subs_growth_pc_in\n    }) / 100)\n  );\n};\nexports.subs_new = subs_new;\nvar subs_churned = function subs_churned(_ref7) {\n  var year_in = _ref7.year_in,\n    subs_0_in = _ref7.subs_0_in,\n    subs_growth_pc_in = _ref7.subs_growth_pc_in,\n    subs_churn_pc_in = _ref7.subs_churn_pc_in;\n  return (subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  })) * subs_churn_pc({\n    subs_churn_pc_in: subs_churn_pc_in\n  }) / 100;\n}; // churn assumption also applies to new subs\n\n// subs at end = prev subs at end + new subs@yr - churned subs@yr\nexports.subs_churned = subs_churned;\nvar subs = function subs(_ref8) {\n  var year_in = _ref8.year_in,\n    subs_0_in = _ref8.subs_0_in,\n    subs_growth_pc_in = _ref8.subs_growth_pc_in,\n    subs_churn_pc_in = _ref8.subs_churn_pc_in;\n  if (year({\n    year_in: year_in\n  }) < 0) return subs_0({\n    subs_0_in: subs_0_in\n  });else return subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) - subs_churned({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  });\n}; // => can project subs given subs_0, growth and churn rates\nexports.subs = subs;\nvar expenses = function expenses(_ref9) {\n  var year_in = _ref9.year_in,\n    subs_0_in = _ref9.subs_0_in,\n    subs_churn_pc_in = _ref9.subs_churn_pc_in,\n    subs_growth_pc_in = _ref9.subs_growth_pc_in,\n    CAC_in = _ref9.CAC_in;\n  return subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) * CAC({\n    CAC_in: CAC_in\n  });\n}; // error?\nexports.expenses = expenses;\nvar revenue = function revenue(_ref10) {\n  var year_in = _ref10.year_in,\n    subs_0_in = _ref10.subs_0_in,\n    subs_growth_pc_in = _ref10.subs_growth_pc_in,\n    subs_churn_pc_in = _ref10.subs_churn_pc_in;\n  return subs({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) * 100;\n};\nexports.revenue = revenue;\nvar profit = function profit(_ref11) {\n  var year_in = _ref11.year_in,\n    subs_0_in = _ref11.subs_0_in,\n    subs_growth_pc_in = _ref11.subs_growth_pc_in,\n    subs_churn_pc_in = _ref11.subs_churn_pc_in,\n    CAC_in = _ref11.CAC_in;\n  return revenue({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) - expenses({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    CAC_in: CAC_in\n  });\n};\nexports.profit = profit;\n\nvar exports = {};", { nodes: [{"path":"script1","start":{"line":3,"column":0},"end":{"line":5,"column":2},"id":"script1-callsite-3-0-5-2","type":"callsite","name":"Object.defineProperty","nameStart":{"line":3,"column":7},"nameEnd":{"line":3,"column":21}},{"path":"script1","start":{"line":7,"column":21},"end":{"line":10,"column":1},"id":"script1-function-7-21-10-1","type":"function","name":"subs_growth_pc","params":[{"name":"_ref","start":{"line":7,"column":45},"end":{"line":7,"column":49}}]},{"path":"script1","start":{"line":12,"column":20},"end":{"line":15,"column":1},"id":"script1-function-12-20-15-1","type":"function","name":"subs_churn_pc","params":[{"name":"_ref2","start":{"line":12,"column":43},"end":{"line":12,"column":48}}]},{"path":"script1","start":{"line":17,"column":13},"end":{"line":20,"column":1},"id":"script1-function-17-13-20-1","type":"function","name":"subs_0","params":[{"name":"_ref3","start":{"line":17,"column":29},"end":{"line":17,"column":34}}]},{"path":"script1","start":{"line":22,"column":11},"end":{"line":25,"column":1},"id":"script1-function-22-11-25-1","type":"function","name":"year","params":[{"name":"_ref4","start":{"line":22,"column":25},"end":{"line":22,"column":30}}]},{"path":"script1","start":{"line":27,"column":10},"end":{"line":30,"column":1},"id":"script1-function-27-10-30-1","type":"function","name":"CAC","params":[{"name":"_ref5","start":{"line":27,"column":23},"end":{"line":27,"column":28}}]},{"path":"script1","start":{"line":39,"column":4},"end":{"line":41,"column":6},"id":"script1-callsite-39-4-41-6","type":"callsite","name":"year","nameStart":{"line":39,"column":4},"nameEnd":{"line":39,"column":8}},{"path":"script1","start":{"line":45,"column":15},"end":{"line":47,"column":8},"id":"script1-callsite-45-15-47-8","type":"callsite","name":"year","nameStart":{"line":45,"column":15},"nameEnd":{"line":45,"column":19}},{"path":"script1","start":{"line":41,"column":17},"end":{"line":48,"column":6},"id":"script1-callsite-41-17-48-6","type":"callsite","name":"subs","nameStart":{"line":41,"column":17},"nameEnd":{"line":41,"column":21}},{"path":"script1","start":{"line":48,"column":10},"end":{"line":50,"column":6},"id":"script1-callsite-48-10-50-6","type":"callsite","name":"subs_growth_pc","nameStart":{"line":48,"column":10},"nameEnd":{"line":48,"column":24}},{"path":"script1","start":{"line":32,"column":15},"end":{"line":52,"column":1},"id":"script1-function-32-15-52-1","type":"function","name":"subs_new","params":[{"name":"_ref6","start":{"line":32,"column":33},"end":{"line":32,"column":38}}]},{"path":"script1","start":{"line":63,"column":13},"end":{"line":65,"column":6},"id":"script1-callsite-63-13-65-6","type":"callsite","name":"year","nameStart":{"line":63,"column":13},"nameEnd":{"line":63,"column":17}},{"path":"script1","start":{"line":59,"column":10},"end":{"line":66,"column":4},"id":"script1-callsite-59-10-66-4","type":"callsite","name":"subs","nameStart":{"line":59,"column":10},"nameEnd":{"line":59,"column":14}},{"path":"script1","start":{"line":66,"column":7},"end":{"line":71,"column":4},"id":"script1-callsite-66-7-71-4","type":"callsite","name":"subs_new","nameStart":{"line":66,"column":7},"nameEnd":{"line":66,"column":15}},{"path":"script1","start":{"line":71,"column":8},"end":{"line":73,"column":4},"id":"script1-callsite-71-8-73-4","type":"callsite","name":"subs_churn_pc","nameStart":{"line":71,"column":8},"nameEnd":{"line":71,"column":21}},{"path":"script1","start":{"line":54,"column":19},"end":{"line":74,"column":1},"id":"script1-function-54-19-74-1","type":"function","name":"subs_churned","params":[{"name":"_ref7","start":{"line":54,"column":41},"end":{"line":54,"column":46}}]},{"path":"script1","start":{"line":83,"column":6},"end":{"line":85,"column":4},"id":"script1-callsite-83-6-85-4","type":"callsite","name":"year","nameStart":{"line":83,"column":6},"nameEnd":{"line":83,"column":10}},{"path":"script1","start":{"line":85,"column":17},"end":{"line":87,"column":4},"id":"script1-callsite-85-17-87-4","type":"callsite","name":"subs_0","nameStart":{"line":85,"column":17},"nameEnd":{"line":85,"column":23}},{"path":"script1","start":{"line":91,"column":13},"end":{"line":93,"column":6},"id":"script1-callsite-91-13-93-6","type":"callsite","name":"year","nameStart":{"line":91,"column":13},"nameEnd":{"line":91,"column":17}},{"path":"script1","start":{"line":87,"column":17},"end":{"line":94,"column":4},"id":"script1-callsite-87-17-94-4","type":"callsite","name":"subs","nameStart":{"line":87,"column":17},"nameEnd":{"line":87,"column":21}},{"path":"script1","start":{"line":94,"column":7},"end":{"line":99,"column":4},"id":"script1-callsite-94-7-99-4","type":"callsite","name":"subs_new","nameStart":{"line":94,"column":7},"nameEnd":{"line":94,"column":15}},{"path":"script1","start":{"line":99,"column":7},"end":{"line":104,"column":4},"id":"script1-callsite-99-7-104-4","type":"callsite","name":"subs_churned","nameStart":{"line":99,"column":7},"nameEnd":{"line":99,"column":19}},{"path":"script1","start":{"line":78,"column":11},"end":{"line":105,"column":1},"id":"script1-function-78-11-105-1","type":"function","name":"subs","params":[{"name":"_ref8","start":{"line":78,"column":25},"end":{"line":78,"column":30}}]},{"path":"script1","start":{"line":113,"column":9},"end":{"line":118,"column":4},"id":"script1-callsite-113-9-118-4","type":"callsite","name":"subs_new","nameStart":{"line":113,"column":9},"nameEnd":{"line":113,"column":17}},{"path":"script1","start":{"line":118,"column":7},"end":{"line":120,"column":4},"id":"script1-callsite-118-7-120-4","type":"callsite","name":"CAC","nameStart":{"line":118,"column":7},"nameEnd":{"line":118,"column":10}},{"path":"script1","start":{"line":107,"column":15},"end":{"line":121,"column":1},"id":"script1-function-107-15-121-1","type":"function","name":"expenses","params":[{"name":"_ref9","start":{"line":107,"column":33},"end":{"line":107,"column":38}}]},{"path":"script1","start":{"line":128,"column":9},"end":{"line":133,"column":4},"id":"script1-callsite-128-9-133-4","type":"callsite","name":"subs","nameStart":{"line":128,"column":9},"nameEnd":{"line":128,"column":13}},{"path":"script1","start":{"line":123,"column":14},"end":{"line":134,"column":1},"id":"script1-function-123-14-134-1","type":"function","name":"revenue","params":[{"name":"_ref10","start":{"line":123,"column":31},"end":{"line":123,"column":37}}]},{"path":"script1","start":{"line":142,"column":9},"end":{"line":147,"column":4},"id":"script1-callsite-142-9-147-4","type":"callsite","name":"revenue","nameStart":{"line":142,"column":9},"nameEnd":{"line":142,"column":16}},{"path":"script1","start":{"line":147,"column":7},"end":{"line":153,"column":4},"id":"script1-callsite-147-7-153-4","type":"callsite","name":"expenses","nameStart":{"line":147,"column":7},"nameEnd":{"line":147,"column":15}},{"path":"script1","start":{"line":136,"column":13},"end":{"line":154,"column":1},"id":"script1-function-136-13-154-1","type":"function","name":"profit","params":[{"name":"_ref11","start":{"line":136,"column":29},"end":{"line":136,"column":35}}]},{"path":"script1","start":{"line":1,"column":0},"end":{"line":157,"column":17},"id":"script1-toplevel-1-0-157-17","type":"toplevel","name":"(script1 toplevel)"}] });
+	
+	{ try {{__tracer.traceFileEntry({nodeId: "script1-toplevel-1-0-157-17"});"use strict";
+	
+	 __tracer.traceFunCall({ this: Object, property: "defineProperty", nodeId: "script1-callsite-3-0-5-2" })(exports, "__esModule", {
+		value: true
+	});
+	exports.year = exports.subs_new = exports.subs_growth_pc = exports.subs_churned = exports.subs_churn_pc = exports.subs_0 = exports.subs = exports.revenue = exports.profit = exports.expenses = exports.CAC = void 0;
+	var subs_growth_pc = __tracer.traceFunCreate(function subs_growth_pc(_ref) { try {{__tracer.traceEnter({nodeId: "script1-function-7-21-10-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var subs_growth_pc_in = _ref.subs_growth_pc_in;
+		return __tracer.traceReturnValue(subs_growth_pc_in);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-7-21-10-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-7-21-10-1"});} }, "function subs_growth_pc(_ref) {\n  var subs_growth_pc_in = _ref.subs_growth_pc_in;\n  return subs_growth_pc_in;\n}");
+	exports.subs_growth_pc = subs_growth_pc;
+	var subs_churn_pc = __tracer.traceFunCreate(function subs_churn_pc(_ref2) { try {{__tracer.traceEnter({nodeId: "script1-function-12-20-15-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var subs_churn_pc_in = _ref2.subs_churn_pc_in;
+		return __tracer.traceReturnValue(subs_churn_pc_in);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-12-20-15-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-12-20-15-1"});} }, "function subs_churn_pc(_ref2) {\n  var subs_churn_pc_in = _ref2.subs_churn_pc_in;\n  return subs_churn_pc_in;\n}");
+	exports.subs_churn_pc = subs_churn_pc;
+	var subs_0 = __tracer.traceFunCreate(function subs_0(_ref3) { try {{__tracer.traceEnter({nodeId: "script1-function-17-13-20-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var subs_0_in = _ref3.subs_0_in;
+		return __tracer.traceReturnValue(subs_0_in);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-17-13-20-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-17-13-20-1"});} }, "function subs_0(_ref3) {\n  var subs_0_in = _ref3.subs_0_in;\n  return subs_0_in;\n}"); // subs at start of year 0
+	exports.subs_0 = subs_0;
+	var year = __tracer.traceFunCreate(function year(_ref4) { try {{__tracer.traceEnter({nodeId: "script1-function-22-11-25-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref4.year_in;
+		return __tracer.traceReturnValue(year_in);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-22-11-25-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-22-11-25-1"});} }, "function year(_ref4) {\n  var year_in = _ref4.year_in;\n  return year_in;\n}");
+	exports.year = year;
+	var CAC = __tracer.traceFunCreate(function CAC(_ref5) { try {{__tracer.traceEnter({nodeId: "script1-function-27-10-30-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var CAC_in = _ref5.CAC_in;
+		return __tracer.traceReturnValue(CAC_in);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-27-10-30-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-27-10-30-1"});} }, "function CAC(_ref5) {\n  var CAC_in = _ref5.CAC_in;\n  return CAC_in;\n}");
+	exports.CAC = CAC;
+	var subs_new = __tracer.traceFunCreate(function subs_new(_ref6) { try {{__tracer.traceEnter({nodeId: "script1-function-32-15-52-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref6.year_in,
+			subs_0_in = _ref6.subs_0_in,
+			subs_churn_pc_in = _ref6.subs_churn_pc_in,
+			subs_growth_pc_in = _ref6.subs_growth_pc_in;
+		return (
+			// its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important
+			__tracer.traceReturnValue(__tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-39-4-41-6"})({
+				year_in: year_in
+			}) < 0 ? 0 : __tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-41-17-48-6"})({
+				subs_0_in: subs_0_in,
+				subs_growth_pc_in: subs_growth_pc_in,
+				subs_churn_pc_in: subs_churn_pc_in,
+				year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-45-15-47-8"})({
+					year_in: year_in
+				}) - 1
+			}) * (__tracer.traceFunCall({ func: (subs_growth_pc), nodeId: "script1-callsite-48-10-50-6"})({
+				subs_growth_pc_in: subs_growth_pc_in
+			}) / 100))
+		);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-32-15-52-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-32-15-52-1"});} }, "function subs_new(_ref6) {\n  var year_in = _ref6.year_in,\n    subs_0_in = _ref6.subs_0_in,\n    subs_churn_pc_in = _ref6.subs_churn_pc_in,\n    subs_growth_pc_in = _ref6.subs_growth_pc_in;\n  return (\n    // its hard to find the year boundary needed here when I add expenses to model, when it worked without. Table and good error reporting is very important\n    year({\n      year_in: year_in\n    }) < 0 ? 0 : subs({\n      subs_0_in: subs_0_in,\n      subs_growth_pc_in: subs_growth_pc_in,\n      subs_churn_pc_in: subs_churn_pc_in,\n      year_in: year({\n        year_in: year_in\n      }) - 1\n    }) * (subs_growth_pc({\n      subs_growth_pc_in: subs_growth_pc_in\n    }) / 100)\n  );\n}");
+	exports.subs_new = subs_new;
+	var subs_churned = __tracer.traceFunCreate(function subs_churned(_ref7) { try {{__tracer.traceEnter({nodeId: "script1-function-54-19-74-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref7.year_in,
+			subs_0_in = _ref7.subs_0_in,
+			subs_growth_pc_in = _ref7.subs_growth_pc_in,
+			subs_churn_pc_in = _ref7.subs_churn_pc_in;
+		return __tracer.traceReturnValue((__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-59-10-66-4"})({
+			subs_0_in: subs_0_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-63-13-65-6"})({
+				year_in: year_in
+			}) - 1
+		}) + __tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-66-7-71-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			subs_growth_pc_in: subs_growth_pc_in
+		})) * __tracer.traceFunCall({ func: (subs_churn_pc), nodeId: "script1-callsite-71-8-73-4"})({
+			subs_churn_pc_in: subs_churn_pc_in
+		}) / 100);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-54-19-74-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-54-19-74-1"});} }, "function subs_churned(_ref7) {\n  var year_in = _ref7.year_in,\n    subs_0_in = _ref7.subs_0_in,\n    subs_growth_pc_in = _ref7.subs_growth_pc_in,\n    subs_churn_pc_in = _ref7.subs_churn_pc_in;\n  return (subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  })) * subs_churn_pc({\n    subs_churn_pc_in: subs_churn_pc_in\n  }) / 100;\n}"); // churn assumption also applies to new subs
+	
+	// subs at end = prev subs at end + new subs@yr - churned subs@yr
+	exports.subs_churned = subs_churned;
+	var subs = __tracer.traceFunCreate(function subs(_ref8) { try {{__tracer.traceEnter({nodeId: "script1-function-78-11-105-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref8.year_in,
+			subs_0_in = _ref8.subs_0_in,
+			subs_growth_pc_in = _ref8.subs_growth_pc_in,
+			subs_churn_pc_in = _ref8.subs_churn_pc_in;
+		if (__tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-83-6-85-4"})({
+			year_in: year_in
+		}) < 0) return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs_0), nodeId: "script1-callsite-85-17-87-4"})({
+			subs_0_in: subs_0_in
+		}));else return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-87-17-94-4"})({
+			subs_0_in: subs_0_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			year_in: __tracer.traceFunCall({ func: (year), nodeId: "script1-callsite-91-13-93-6"})({
+				year_in: year_in
+			}) - 1
+		}) + __tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-94-7-99-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			subs_growth_pc_in: subs_growth_pc_in
+		}) - __tracer.traceFunCall({ func: (subs_churned), nodeId: "script1-callsite-99-7-104-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			subs_churn_pc_in: subs_churn_pc_in
+		}));
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-78-11-105-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-78-11-105-1"});} }, "function subs(_ref8) {\n  var year_in = _ref8.year_in,\n    subs_0_in = _ref8.subs_0_in,\n    subs_growth_pc_in = _ref8.subs_growth_pc_in,\n    subs_churn_pc_in = _ref8.subs_churn_pc_in;\n  if (year({\n    year_in: year_in\n  }) < 0) return subs_0({\n    subs_0_in: subs_0_in\n  });else return subs({\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    year_in: year({\n      year_in: year_in\n    }) - 1\n  }) + subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) - subs_churned({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  });\n}"); // => can project subs given subs_0, growth and churn rates
+	exports.subs = subs;
+	var expenses = __tracer.traceFunCreate(function expenses(_ref9) { try {{__tracer.traceEnter({nodeId: "script1-function-107-15-121-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref9.year_in,
+			subs_0_in = _ref9.subs_0_in,
+			subs_churn_pc_in = _ref9.subs_churn_pc_in,
+			subs_growth_pc_in = _ref9.subs_growth_pc_in,
+			CAC_in = _ref9.CAC_in;
+		return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs_new), nodeId: "script1-callsite-113-9-118-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			subs_growth_pc_in: subs_growth_pc_in
+		}) * __tracer.traceFunCall({ func: (CAC), nodeId: "script1-callsite-118-7-120-4"})({
+			CAC_in: CAC_in
+		}));
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-107-15-121-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-107-15-121-1"});} }, "function expenses(_ref9) {\n  var year_in = _ref9.year_in,\n    subs_0_in = _ref9.subs_0_in,\n    subs_churn_pc_in = _ref9.subs_churn_pc_in,\n    subs_growth_pc_in = _ref9.subs_growth_pc_in,\n    CAC_in = _ref9.CAC_in;\n  return subs_new({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in\n  }) * CAC({\n    CAC_in: CAC_in\n  });\n}"); // error?
+	exports.expenses = expenses;
+	var revenue = __tracer.traceFunCreate(function revenue(_ref10) { try {{__tracer.traceEnter({nodeId: "script1-function-123-14-134-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref10.year_in,
+			subs_0_in = _ref10.subs_0_in,
+			subs_growth_pc_in = _ref10.subs_growth_pc_in,
+			subs_churn_pc_in = _ref10.subs_churn_pc_in;
+		return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (subs), nodeId: "script1-callsite-128-9-133-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			subs_churn_pc_in: subs_churn_pc_in
+		}) * 100);
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-123-14-134-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-123-14-134-1"});} }, "function revenue(_ref10) {\n  var year_in = _ref10.year_in,\n    subs_0_in = _ref10.subs_0_in,\n    subs_growth_pc_in = _ref10.subs_growth_pc_in,\n    subs_churn_pc_in = _ref10.subs_churn_pc_in;\n  return subs({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) * 100;\n}");
+	exports.revenue = revenue;
+	var profit = __tracer.traceFunCreate(function profit(_ref11) { try {{__tracer.traceEnter({nodeId: "script1-function-136-13-154-1",arguments: __tracer.Array.prototype.slice.apply(arguments),this: this});{
+		var year_in = _ref11.year_in,
+			subs_0_in = _ref11.subs_0_in,
+			subs_growth_pc_in = _ref11.subs_growth_pc_in,
+			subs_churn_pc_in = _ref11.subs_churn_pc_in,
+			CAC_in = _ref11.CAC_in;
+		return __tracer.traceReturnValue(__tracer.traceFunCall({ func: (revenue), nodeId: "script1-callsite-142-9-147-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			subs_churn_pc_in: subs_churn_pc_in
+		}) - __tracer.traceFunCall({ func: (expenses), nodeId: "script1-callsite-147-7-153-4"})({
+			year_in: year_in,
+			subs_0_in: subs_0_in,
+			subs_churn_pc_in: subs_churn_pc_in,
+			subs_growth_pc_in: subs_growth_pc_in,
+			CAC_in: CAC_in
+		}));
+	}}} catch (__e) {__tracer.traceExceptionThrown({"nodeId":"script1-function-136-13-154-1"}, __e);throw __e;} finally {__tracer.traceExit({"nodeId":"script1-function-136-13-154-1"});} }, "function profit(_ref11) {\n  var year_in = _ref11.year_in,\n    subs_0_in = _ref11.subs_0_in,\n    subs_growth_pc_in = _ref11.subs_growth_pc_in,\n    subs_churn_pc_in = _ref11.subs_churn_pc_in,\n    CAC_in = _ref11.CAC_in;\n  return revenue({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    subs_churn_pc_in: subs_churn_pc_in\n  }) - expenses({\n    year_in: year_in,\n    subs_0_in: subs_0_in,\n    subs_churn_pc_in: subs_churn_pc_in,\n    subs_growth_pc_in: subs_growth_pc_in,\n    CAC_in: CAC_in\n  });\n}");
+	exports.profit = profit;
+	
+	var exports = {};}} finally {__tracer.traceFileExit({"nodeId":"script1-toplevel-1-0-157-17"});} }
+	
+	module.exports = exports; // DN
+	module.exports.__tracer = __tracer;
+		
+	
+	
