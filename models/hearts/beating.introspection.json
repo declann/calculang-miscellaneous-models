@@ -1,0 +1,84 @@
+{
+  "cul_functions": {
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 17,
+          "index": 17
+        },
+        "end": {
+          "line": 1,
+          "column": 27,
+          "index": 27
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_x_in": {
+      "cul_scope_id": 0,
+      "name": "x_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_trend": {
+      "cul_scope_id": 0,
+      "name": "trend",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 21,
+          "index": 83
+        },
+        "end": {
+          "line": 4,
+          "column": 42,
+          "index": 104
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_x",
+      "from": "0_x_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_trend",
+      "from": "0_x",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./beating.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {
+    "0_x": [
+      "x_in"
+    ],
+    "0_x_in": [
+      "x_in"
+    ],
+    "0_trend": [
+      "x_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_x inputs: x_in\"]\n  \"0_x_in\" [cul_scope_id=0,name=x_in,cul_source_scope_id=0,reason=\"input definition\",inputs=x_in,label=\"0_x_in inputs: x_in\"]\n  \"0_trend\" [cul_scope_id=0,name=trend,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_trend inputs: x_in\"]\n  \"0_x_in\" -> \"0_x\" [value=\"[object Object]\",label=\"input +x_in\"]\n  \"0_x\" -> \"0_trend\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}
