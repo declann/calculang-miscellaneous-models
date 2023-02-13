@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 600,
+  "height": 600,
+  "data": {"url": "./beating-data.json"},
+  "encoding": {
+    "x": {"field": "x_in",  "type": "quantitative"}
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "tooltip": true},
+      "encoding": {
+        "y": {"field": "trend", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {"type": "line", "tooltip": true},
+      "encoding": {
+        "y": {"field": "y", "type": "quantitative"},
+        "color": {"value": "red"}
+      }
+    }
+  ]
+}

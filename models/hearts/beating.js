@@ -103,7 +103,7 @@ return /******/ (function(modules) { // webpackBootstrap
 // see https://stackoverflow.com/questions/14575697/math-pow-with-negative-numbers-and-non-integer-powers
 const pow = (base, exponent) => {
   if (base > 0) return Math.pow(base, exponent);
-  else return -Math.pow(-base, exponent);
+  else return Math.pow(-base, exponent);
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (pow);
@@ -122,6 +122,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arcy", function() { return arcy; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return y; });
 /* harmony import */ var _pow_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
+// some references:
+// https://www.google.com/search?q=beating+heart+in+desmos
+// https://www.youtube.com/watch?v=4rPUg2jmcOw
+
+// my own desmos build to figure:
+// https://www.desmos.com/calculator/hf4pefzsbl
+
 const x = ({ x_in }) => x_in;
 const waviness = ({ waviness_in }) => waviness_in;
 const tallness = ({ tallness_in }) => tallness_in;
@@ -132,7 +139,7 @@ const trend = ({ x_in }) => Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* defa
 
 const wavey = ({ waviness_in, x_in }) => Math.sin(waviness({ waviness_in }) * Math.PI * x({ x_in }));
 
-const arcy = ({ x_in }) => Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(3.3 - x({ x_in }) * x({ x_in }), 0.5);
+const arcy = ({ x_in }) => Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(3.3 /* todo param this */ - x({ x_in }) * x({ x_in }), 0.5);
 
 // trend + arcy * wavey
 const y = ({ x_in, waviness_in, tallness_in }) => trend({ x_in }) + arcy({ x_in }) * wavey({ waviness_in, x_in }) * tallness({ tallness_in });

@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build:heart-beating": "cul-js compile ./models/hearts/beating.cul.js",
+    "data:heart-beating": "node ./models/hearts/beating-data.mjs > ./models/hearts/beating-data.json",
     "build:margins": "cul-js compile --memo ./models/margin-constraints/margins.cul.js",
     "build:triple": "cul-js compile --memo ./models/exponential-growth/triple.cul.js",
     "use:triple": "node ./models/exponential-growth/use-triple.js",

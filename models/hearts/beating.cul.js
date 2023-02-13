@@ -15,7 +15,7 @@ export const trend = () => pow(x(), 2 / 3);
 
 export const wavey = () => Math.sin(waviness() * Math.PI * x());
 
-export const arcy = () => pow(3.3 - x() * x(), 0.5);
+export const arcy = () => pow(3.3 /* todo param this */ - x() * x(), 0.5);
 
 // trend + arcy * wavey
 export const y = () => trend() + arcy() * wavey() * tallness();
