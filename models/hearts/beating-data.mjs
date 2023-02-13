@@ -1,8 +1,16 @@
-import { trend } from './beating_esm/cul_scope_0.mjs'
+import { trend, wavey, arcy, y } from './beating_esm/cul_scope_0.mjs'
 
 import { range } from 'underscore';
 
-console.table(range(-3, 3, 0.1).map(x_in => ({ x_in, trend: trend({ x_in }) })));
+let ins = {waviness_in: 2, tallness_in: 1}
+
+console.table(range(-3, 3, 0.1).map(x_in => ({
+  ...ins, x_in,
+  trend: trend({ ...ins, x_in }),
+  wavey: wavey({ ...ins, x_in }),
+  arcy: arcy({ ...ins, x_in }),
+  y: y({ ...ins, x_in })
+})));
 
 // from spec.model and spec.input_domains generate data
 
