@@ -10,11 +10,20 @@
     {
       "mark": {"type": "point", "tooltip": true},
       "encoding": {
-        "y": {"field": "trend", "type": "quantitative"}
+        "y": {"field": "trend", "type": "quantitative"},
+        "opacity": {"value": 0.1}
       }
     },
     {
-      "mark": {"type": "line", "tooltip": true},
+      "mark": {"type": "point", "tooltip": true},
+      "encoding": {
+        "y": {"field": "arcy", "type": "quantitative"},
+        "opacity": {"value": 0.1},
+        "color": {"value": "green"}
+      }
+    },
+    {
+      "mark": {"type": "line", "tooltip": true, "point": true},
       "encoding": {
         "y": {"field": "y", "type": "quantitative"},
         "color": {"value": "red"}

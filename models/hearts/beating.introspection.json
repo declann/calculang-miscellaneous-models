@@ -90,6 +90,36 @@
         "tallness_in"
       ]
     },
+    "0_arc_size": {
+      "cul_scope_id": 0,
+      "name": "arc_size",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 24,
+          "index": 359
+        },
+        "end": {
+          "line": 11,
+          "column": 41,
+          "index": 376
+        }
+      },
+      "inputs": [
+        "arc_size_in"
+      ]
+    },
+    "0_arc_size_in": {
+      "cul_scope_id": 0,
+      "name": "arc_size_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "arc_size_in"
+      ]
+    },
     "0_trend": {
       "cul_scope_id": 0,
       "name": "trend",
@@ -97,14 +127,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 14,
+          "line": 15,
           "column": 21,
-          "index": 390
+          "index": 434
         },
         "end": {
-          "line": 14,
+          "line": 15,
           "column": 42,
-          "index": 411
+          "index": 455
         }
       },
       "inputs": [
@@ -118,14 +148,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 16,
+          "line": 17,
           "column": 21,
-          "index": 437
+          "index": 481
         },
         "end": {
-          "line": 16,
+          "line": 17,
           "column": 63,
-          "index": 479
+          "index": 523
         }
       },
       "inputs": [
@@ -140,18 +170,19 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 18,
+          "line": 19,
           "column": 20,
-          "index": 504
+          "index": 548
         },
         "end": {
-          "line": 18,
-          "column": 73,
-          "index": 557
+          "line": 22,
+          "column": 1,
+          "index": 663
         }
       },
       "inputs": [
-        "x_in"
+        "x_in",
+        "arc_size_in"
       ]
     },
     "0_y": {
@@ -161,18 +192,19 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 21,
+          "line": 25,
           "column": 17,
-          "index": 604
+          "index": 710
         },
         "end": {
-          "line": 21,
+          "line": 25,
           "column": 62,
-          "index": 649
+          "index": 755
         }
       },
       "inputs": [
         "x_in",
+        "arc_size_in",
         "waviness_in",
         "tallness_in"
       ]
@@ -195,6 +227,11 @@
       "reason": "input"
     },
     {
+      "to": "0_arc_size",
+      "from": "0_arc_size_in",
+      "reason": "input"
+    },
+    {
       "to": "0_trend",
       "from": "0_x",
       "reason": "call",
@@ -209,6 +246,24 @@
     {
       "to": "0_wavey",
       "from": "0_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_arcy",
+      "from": "0_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_arcy",
+      "from": "0_arc_size",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_arcy",
+      "from": "0_arc_size",
       "reason": "call",
       "negs": []
     },
@@ -272,6 +327,12 @@
     "0_tallness_in": [
       "tallness_in"
     ],
+    "0_arc_size": [
+      "arc_size_in"
+    ],
+    "0_arc_size_in": [
+      "arc_size_in"
+    ],
     "0_trend": [
       "x_in"
     ],
@@ -280,13 +341,15 @@
       "x_in"
     ],
     "0_arcy": [
-      "x_in"
+      "x_in",
+      "arc_size_in"
     ],
     "0_y": [
       "x_in",
+      "arc_size_in",
       "waviness_in",
       "tallness_in"
     ]
   },
-  "dot": "digraph {\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_x inputs: x_in\"]\n  \"0_x_in\" [cul_scope_id=0,name=x_in,cul_source_scope_id=0,reason=\"input definition\",inputs=x_in,label=\"0_x_in inputs: x_in\"]\n  \"0_waviness\" [cul_scope_id=0,name=waviness,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=waviness_in,label=\"0_waviness inputs: waviness_in\"]\n  \"0_waviness_in\" [cul_scope_id=0,name=waviness_in,cul_source_scope_id=0,reason=\"input definition\",inputs=waviness_in,label=\"0_waviness_in inputs: waviness_in\"]\n  \"0_tallness\" [cul_scope_id=0,name=tallness,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=tallness_in,label=\"0_tallness inputs: tallness_in\"]\n  \"0_tallness_in\" [cul_scope_id=0,name=tallness_in,cul_source_scope_id=0,reason=\"input definition\",inputs=tallness_in,label=\"0_tallness_in inputs: tallness_in\"]\n  \"0_trend\" [cul_scope_id=0,name=trend,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_trend inputs: x_in\"]\n  \"0_wavey\" [cul_scope_id=0,name=wavey,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"waviness_in,x_in\",label=\"0_wavey inputs: waviness_in,x_in\"]\n  \"0_arcy\" [cul_scope_id=0,name=arcy,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_arcy inputs: x_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"x_in,waviness_in,tallness_in\",label=\"0_y inputs: x_in,waviness_in,tallness_in\"]\n  \"0_x_in\" -> \"0_x\" [value=\"[object Object]\",label=\"input +x_in\"]\n  \"0_waviness_in\" -> \"0_waviness\" [value=\"[object Object]\",label=\"input +waviness_in\"]\n  \"0_tallness_in\" -> \"0_tallness\" [value=\"[object Object]\",label=\"input +tallness_in\"]\n  \"0_x\" -> \"0_trend\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_waviness\" -> \"0_wavey\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_wavey\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_arcy\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_trend\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_arcy\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_wavey\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_tallness\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_x inputs: x_in\"]\n  \"0_x_in\" [cul_scope_id=0,name=x_in,cul_source_scope_id=0,reason=\"input definition\",inputs=x_in,label=\"0_x_in inputs: x_in\"]\n  \"0_waviness\" [cul_scope_id=0,name=waviness,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=waviness_in,label=\"0_waviness inputs: waviness_in\"]\n  \"0_waviness_in\" [cul_scope_id=0,name=waviness_in,cul_source_scope_id=0,reason=\"input definition\",inputs=waviness_in,label=\"0_waviness_in inputs: waviness_in\"]\n  \"0_tallness\" [cul_scope_id=0,name=tallness,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=tallness_in,label=\"0_tallness inputs: tallness_in\"]\n  \"0_tallness_in\" [cul_scope_id=0,name=tallness_in,cul_source_scope_id=0,reason=\"input definition\",inputs=tallness_in,label=\"0_tallness_in inputs: tallness_in\"]\n  \"0_arc_size\" [cul_scope_id=0,name=arc_size,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=arc_size_in,label=\"0_arc_size inputs: arc_size_in\"]\n  \"0_arc_size_in\" [cul_scope_id=0,name=arc_size_in,cul_source_scope_id=0,reason=\"input definition\",inputs=arc_size_in,label=\"0_arc_size_in inputs: arc_size_in\"]\n  \"0_trend\" [cul_scope_id=0,name=trend,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_trend inputs: x_in\"]\n  \"0_wavey\" [cul_scope_id=0,name=wavey,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"waviness_in,x_in\",label=\"0_wavey inputs: waviness_in,x_in\"]\n  \"0_arcy\" [cul_scope_id=0,name=arcy,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"x_in,arc_size_in\",label=\"0_arcy inputs: x_in,arc_size_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"x_in,arc_size_in,waviness_in,tallness_in\",label=\"0_y inputs: x_in,arc_size_in,waviness_in,tallness_in\"]\n  \"0_x_in\" -> \"0_x\" [value=\"[object Object]\",label=\"input +x_in\"]\n  \"0_waviness_in\" -> \"0_waviness\" [value=\"[object Object]\",label=\"input +waviness_in\"]\n  \"0_tallness_in\" -> \"0_tallness\" [value=\"[object Object]\",label=\"input +tallness_in\"]\n  \"0_arc_size_in\" -> \"0_arc_size\" [value=\"[object Object]\",label=\"input +arc_size_in\"]\n  \"0_x\" -> \"0_trend\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_waviness\" -> \"0_wavey\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_wavey\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_arcy\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_arc_size\" -> \"0_arcy\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_trend\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_arcy\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_wavey\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_tallness\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

@@ -117,6 +117,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return x; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "waviness", function() { return waviness; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "tallness", function() { return tallness; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arc_size", function() { return arc_size; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "trend", function() { return trend; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "wavey", function() { return wavey; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "arcy", function() { return arcy; });
@@ -132,6 +133,7 @@ __webpack_require__.r(__webpack_exports__);
 const x = ({ x_in }) => x_in;
 const waviness = ({ waviness_in }) => waviness_in;
 const tallness = ({ tallness_in }) => tallness_in;
+const arc_size = ({ arc_size_in }) => arc_size_in;
 
 
 
@@ -139,10 +141,13 @@ const trend = ({ x_in }) => Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* defa
 
 const wavey = ({ waviness_in, x_in }) => Math.sin(waviness({ waviness_in }) * Math.PI * x({ x_in }));
 
-const arcy = ({ x_in }) => Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(3.3 /* todo param this */ - x({ x_in }) * x({ x_in }), 0.5);
+const arcy = ({ x_in, arc_size_in }) => {
+  if (Math.abs(x({ x_in })) > Math.sqrt(arc_size({ arc_size_in }))) return 0;else
+  return Object(_pow_mjs__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(arc_size({ arc_size_in }) - x({ x_in }) * x({ x_in }), 0.5);
+};
 
 // trend + arcy * wavey
-const y = ({ x_in, waviness_in, tallness_in }) => trend({ x_in }) + arcy({ x_in }) * wavey({ waviness_in, x_in }) * tallness({ tallness_in });
+const y = ({ x_in, arc_size_in, waviness_in, tallness_in }) => trend({ x_in }) + arcy({ x_in, arc_size_in }) * wavey({ waviness_in, x_in }) * tallness({ tallness_in });
 
 /***/ })
 /******/ ]);
