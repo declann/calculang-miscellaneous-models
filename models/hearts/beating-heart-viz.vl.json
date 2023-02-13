@@ -23,7 +23,7 @@
       }
     },
     {
-      "mark": {"type": "line", "tooltip": true, "point": true},
+      "mark": {"type": "line", "tooltip": true, "point": true, "interpolate": "monotone", "strokeWidth": 4},
       "encoding": {
         "y": {"field": "y", "type": "quantitative"},
         "color": {"value": "red"}
