@@ -11,14 +11,14 @@
       "mark": {"type": "point", "tooltip": true},
       "encoding": {
         "y": {"field": "trend", "type": "quantitative"},
-        "opacity": {"value": 0.1}
+        "opacity": {"value": 0.03}
       }
     },
     {
       "mark": {"type": "point", "tooltip": true},
       "encoding": {
         "y": {"field": "arcy", "type": "quantitative"},
-        "opacity": {"value": 0.1},
+        "opacity": {"value": 0.02},
         "color": {"value": "green"}
       }
     },
