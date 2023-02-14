@@ -9,7 +9,7 @@ export const x = () => x_in;
 export const waviness = () => waviness_in;
 export const tallness = () => tallness_in;
 export const arc_size = () => arc_size_in;
-export const pinchiness = () => (pinchiness_in)
+export const pinchiness = () => pinchiness_in;
 
 import pow from './pow.mjs';
 
