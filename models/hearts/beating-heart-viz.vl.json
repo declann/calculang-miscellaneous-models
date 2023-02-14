@@ -9,25 +9,34 @@
   },
   "layer": [
     {
-      "mark": {"type": "point", "tooltip": true},
+      "mark": {"type": "line", "tooltip": true, "strokeWidth": 5},
       "encoding": {
         "y": {"field": "trend", "type": "quantitative"},
-        "opacity": {"value": 0.03}
+        "opacity": {"value": 0.08},
+        "color": {"value": "black"}
       }
     },
     {
-      "mark": {"type": "point", "tooltip": true},
+      "mark": {"type": "line", "tooltip": true},
       "encoding": {
-        "y": {"field": "arcy", "type": "quantitative"},
-        "opacity": {"value": 0.03},
-        "color": {"value": "green"}
+        "y": {"field": "wavey", "type": "quantitative"},
+        "opacity": {"value": 0.07},
+        "color": {"value": "blue"}
       }
     },
     {
-      "mark": {"type": "line", "tooltip": true, "point": true, "interpolate": "monotone", "strokeWidth": 0.5},
+      "mark": {"type": "line", "tooltip": true, "point": true, "interpolate": "monotone", "strokeWidth": 0.9},
       "encoding": {
         "y": {"field": "y", "type": "quantitative"},
         "color": {"value": "red"}
+      }
+    },
+    {
+      "mark": {"type": "line", "tooltip": true, "strokeWidth": 6},
+      "encoding": {
+        "y": {"field": "arcy", "type": "quantitative"},
+        "opacity": {"value": 0.08},
+        "color": {"value": "green"}
       }
     }
   ]
