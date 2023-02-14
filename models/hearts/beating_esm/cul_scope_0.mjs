@@ -9,10 +9,11 @@ export const x = ({ x_in }) => x_in;
 export const waviness = ({ waviness_in }) => waviness_in;
 export const tallness = ({ tallness_in }) => tallness_in;
 export const arc_size = ({ arc_size_in }) => arc_size_in;
+export const pinchiness = ({ pinchiness_in }) => pinchiness_in;
 
 import pow from './pow.mjs';
 
-export const trend = ({ x_in }) => pow(x({ x_in }), 2 / 3);
+export const trend = ({ x_in, pinchiness_in }) => pow(x({ x_in }), pinchiness({ pinchiness_in }));
 
 export const wavey = ({ waviness_in, x_in }) => Math.sin(waviness({ waviness_in }) * Math.PI * x({ x_in }));
 
@@ -22,4 +23,4 @@ export const arcy = ({ x_in, arc_size_in }) => {
 };
 
 // trend + arcy * wavey
-export const y = ({ x_in, arc_size_in, waviness_in, tallness_in }) => trend({ x_in }) + arcy({ x_in, arc_size_in }) * wavey({ waviness_in, x_in }) * tallness({ tallness_in });
+export const y = ({ x_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) => trend({ x_in, pinchiness_in }) + arcy({ x_in, arc_size_in }) * wavey({ waviness_in, x_in }) * tallness({ tallness_in });

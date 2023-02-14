@@ -2,9 +2,9 @@ import { trend, wavey, arcy, y } from './beating_esm/cul_scope_0.mjs';
 
 import { range } from 'underscore';
 
-let ins = { waviness_in: 6, tallness_in: 0.95, arc_size_in: 25 };
+let ins = { waviness_in: 6, tallness_in: 0.95, arc_size_in: 25, pinchiness_in: 0.8 };
 
-let data = range(-7, 7, 0.025).map((x_in) => ({
+let data = range(-Math.sqrt(ins.arc_size_in)-0.2, Math.sqrt(ins.arc_size_in)+0.2, 0.025).map((x_in) => ({
   ...ins,
   x_in,
   trend: trend({ ...ins, x_in }),

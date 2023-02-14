@@ -1,10 +1,11 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 600,
+  "width": 700,
   "height": 600,
   "data": {"url": "./beating-data.json"},
   "encoding": {
-    "x": {"field": "x_in",  "type": "quantitative"}
+    "x": {"field": "x_in",  "type": "quantitative", "axis": {"tickCount": 5}},
+    "y": {"axis": {"tickCount":5}}
   },
   "layer": [
     {
@@ -18,12 +19,12 @@
       "mark": {"type": "point", "tooltip": true},
       "encoding": {
         "y": {"field": "arcy", "type": "quantitative"},
-        "opacity": {"value": 0.02},
+        "opacity": {"value": 0.03},
         "color": {"value": "green"}
       }
     },
     {
-      "mark": {"type": "line", "tooltip": true, "point": true, "interpolate": "monotone", "strokeWidth": 4},
+      "mark": {"type": "line", "tooltip": true, "point": true, "interpolate": "monotone", "strokeWidth": 0.5},
       "encoding": {
         "y": {"field": "y", "type": "quantitative"},
         "color": {"value": "red"}
