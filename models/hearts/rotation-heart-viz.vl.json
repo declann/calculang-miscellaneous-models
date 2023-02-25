@@ -1,0 +1,19 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 600,
+  "data": {"url": "./rotation-data.json"},
+  "encoding": {
+    "x": {"field": "x1",  "type": "quantitative", "axis": {"tickCount": 0}, "scale": {"domain": [-8,5]}},
+    "y": {"axis": {"tickCount":0}}
+  },
+  "layer": [
+    {
+      "mark": {"type": "point", "tooltip": true},
+      "encoding": {
+        "y": {"field": "y", "type": "quantitative"},
+        "color": {"value": "red"}
+      }
+    }
+  ]
+}

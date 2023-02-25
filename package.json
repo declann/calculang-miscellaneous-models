@@ -9,6 +9,8 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:heart-rotation": "cul-js compile ./models/hearts/rotation.cul.js",
+    "data:heart-rotation": "node ./models/hearts/rotation-data.mjs > ./models/hearts/rotation-data.json",
     "build:heart-beating": "cul-js compile ./models/hearts/beating.cul.js",
     "data:heart-beating": "node ./models/hearts/beating-data.mjs > ./models/hearts/beating-data.json",
     "build:margins": "cul-js compile --memo ./models/margin-constraints/margins.cul.js",
