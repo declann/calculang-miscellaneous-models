@@ -4,8 +4,8 @@
   "height": 600,
   "data": {"url": "./rotation-data.json"},
   "encoding": {
-    "x": {"field": "x1",  "type": "quantitative", "axis": {"tickCount": 0}, "scale": {"domain": [-8,5]}},
-    "y": {"axis": {"tickCount":0}}
+    "x": {"field": "x1",  "type": "quantitative", "axis": {"tickCount": 3}, "scale": {"domain": [-8,5]}},
+    "y": {"axis": {"tickCount":3}}
   },
   "layer": [
     {
