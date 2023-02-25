@@ -2,7 +2,7 @@ import { trend, wavey, arcy, y, x1 } from './rotation_esm/cul_scope_0.mjs';
 
 import { range } from 'underscore';
 
-let ins = { waviness_in: 6, tallness_in: 0.95, arc_size_in: 25, pinchiness_in: 0.8, angle_in:0.5 };
+let ins = { waviness_in: 6, tallness_in: 0.95, arc_size_in: 25, pinchiness_in: 0.8, angle_in:15*Math.PI/180 };
 
 let data = range(-Math.sqrt(ins.arc_size_in)-0.2, Math.sqrt(ins.arc_size_in)+0.2, 0.025).map((x_in) => ({
   ...ins,
