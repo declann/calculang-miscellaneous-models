@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:pi-odd-numbers-series": "cul-js compile ./models/pi/odd-numbers-series.cul.js",
     "build:heart-rotation": "cul-js compile ./models/hearts/rotation.cul.js",
     "data:heart-rotation": "node ./models/hearts/rotation-data.mjs > ./models/hearts/rotation-data.json",
     "build:heart-beating": "cul-js compile ./models/hearts/beating.cul.js",
