@@ -41,7 +41,7 @@
     "use:tax-revenues": "node ./models/tax-revenues/use-tax-revenues-esm.mjs"
   },
   "homepage": "https://github.com/declann/calculang-miscellaneous-models/tree/main",
-  "author": "Declan Naughton working for DCN Consulting",
+  "author": "Declan Naughton",
   "keywords": [
     "calculang",
     "calculations",
