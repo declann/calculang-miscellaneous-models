@@ -159,8 +159,26 @@ __webpack_require__.r(__webpack_exports__);
 const angle = ({ angle_in }) => angle_in;
 
 // I want the x used in pow to be the x_in and not this
-const x1 = ({ x_in, angle_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) => Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* x */ "d"])({ x_in }) * Math.cos(angle({ angle_in })) - Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* y_ */ "e"])({ x_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) * Math.sin(angle({ angle_in }));
+const x1 = ({ x_in, angle_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) => Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* x */ "d"])({ x_in }) * Math.cos(angle({ angle_in })) - Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* y_ */ "e"])({ x_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) * Math.sin(angle({ angle_in })); // y0 ref here means only working for final y function
 const y = ({ x_in, pinchiness_in, arc_size_in, waviness_in, tallness_in, angle_in }) => Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* y_ */ "e"])({ x_in, pinchiness_in, arc_size_in, waviness_in, tallness_in }) * Math.cos(angle({ angle_in })) + Object(_beating_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* x */ "d"])({ x_in }) * Math.sin(angle({ angle_in }));
+
+
+// todo approach for transformation of all functions:
+// play with this even though its probably has fundamental tradeoffs:
+
+/*
+export const heart = () => trend() + arcy() * wavey() * tallness();
+
+export const f = () => (f_in);
+
+export const y = () => {
+  switch (f()) {
+    case 'heart': return heart();
+    case 'trend': return trend();
+    //...
+  }
+}
+*/
 
 /***/ }),
 /* 2 */
