@@ -106,23 +106,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term", function() { return term; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_10_terms", function() { return series_sum_of_first_10_terms; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_9_terms", function() { return series_sum_of_first_9_terms; });
+// some pi day release prep... leibniz series for pi
+// watch: https://youtu.be/HrRMnzANHHs by Matt Parker (@standupmaths)
+
 // 1/1 - 1/3 + 1/5 - 1/7 + ... = pi/4
 
-// starting at 1
+// starting at 1 i.e. term 1 = 1/1, 2=-1/3, ...
 const term_number = ({ term_number_in }) => term_number_in;
 
 const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1); // +, -, +, -, ...
 
-const denominator = ({ term_number_in }) => {
-  /*if (term() == 1) return 1;
-  else return 2 * term() + 1;*/ // 2+1, 4+1, 6+1, ... odd number series
-
-  // odd number series, term_number starts at 1
-  return (term_number({ term_number_in }) - 1) * 2 + 1;
-};
+const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1; // odd number series
 
 const term = ({ term_number_in }) => sign({ term_number_in }) * (1 / denominator({ term_number_in }));
 
+// abstract this ...
 const series_sum_of_first_10_terms = ({}) =>
 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce(
 (acc, term_number_in) => acc + term({ term_number_in }),
