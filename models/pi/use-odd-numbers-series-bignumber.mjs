@@ -8,6 +8,8 @@ import { range } from 'underscore';
 console.log(series_sum_of_first_10_terms({}).toFixed()); // vs. 0.7604599_9_4732350:5055278
 
 console.log(series_sum_of_first_10_terms({})); 
+
+console.log(+series_sum_of_first_10_terms({}).toFixed()); // limited decimal places
 //quit();
 /*
 
