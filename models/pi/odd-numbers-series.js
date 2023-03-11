@@ -132,6 +132,10 @@ const series_sum_of_first_9_terms = ({}) =>
 (acc, term_number_in) => acc + term({ term_number_in }),
 0);
 
+
+
+// 0.76045990473235055278398931649706
+
 /***/ })
 /******/ ]);
 });
