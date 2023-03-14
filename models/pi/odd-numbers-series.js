@@ -4481,7 +4481,7 @@ __webpack_require__.r(__webpack_exports__);
 const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1);
 
 // denominator from sequence of odd numbers
-const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1;
+const denominator = ({ term_number_in }) => term_number({ term_number_in }) * 2 + 1;
 
 // input: number of current term
 const term_number = ({ term_number_in }) => term_number_in;

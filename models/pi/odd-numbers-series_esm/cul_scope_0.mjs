@@ -11,7 +11,7 @@ import { range } from 'underscore';
 export const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1);
 
 // denominator from sequence of odd numbers
-export const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1;
+export const denominator = ({ term_number_in }) => term_number({ term_number_in }) * 2 + 1;
 
 // input: number of current term
 export const term_number = ({ term_number_in }) => term_number_in;
