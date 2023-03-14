@@ -91,7 +91,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 161);
+/******/ 	return __webpack_require__(__webpack_require__.s = 160);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -1891,7 +1891,7 @@ function isNaN(obj) {
 /* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
 /* harmony import */ var _constant_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(56);
-/* harmony import */ var _isBufferLike_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(158);
+/* harmony import */ var _isBufferLike_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(157);
 
 
 
@@ -2309,7 +2309,7 @@ function toArray(obj) {
 /* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
 /* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
-/* harmony import */ var _keyInObj_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(160);
+/* harmony import */ var _keyInObj_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(159);
 /* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(16);
 
 
@@ -3362,7 +3362,7 @@ function times(n, iteratee, context) {
 
 "use strict";
 /* harmony import */ var _createEscaper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(82);
-/* harmony import */ var _unescapeMap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(159);
+/* harmony import */ var _unescapeMap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(158);
 
 
 
@@ -4388,10 +4388,120 @@ Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(['concat', 'joi
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var _createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77);
+/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
+
+
+
+// Internal helper to determine whether we should spend extensive checks against
+// `ArrayBuffer` et al.
+/* harmony default export */ __webpack_exports__["a"] = (Object(_createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_getByteLength_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
+
+
+/***/ }),
+/* 158 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _invert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58);
+/* harmony import */ var _escapeMap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83);
+
+
+
+// Internal list of HTML entities for unescaping.
+/* harmony default export */ __webpack_exports__["a"] = (Object(_invert_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_escapeMap_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
+
+
+/***/ }),
+/* 159 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keyInObj; });
+// Internal `_.pick` helper function to determine whether `key` is an enumerable
+// property name of `obj`.
+function keyInObj(value, key, obj) {
+  return key in obj;
+}
+
+
+/***/ }),
+/* 160 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term_number", function() { return term_number; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "terms", function() { return terms; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sign", function() { return sign; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "denominator", function() { return denominator; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term", function() { return term; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sum_of_terms", function() { return sum_of_terms; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sum_of_terms_times_4", function() { return sum_of_terms_times_4; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_10_terms", function() { return series_sum_of_first_10_terms; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_9_terms", function() { return series_sum_of_first_9_terms; });
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(161);
+// leibniz formula for pi: https://en.wikipedia.org/wiki/Leibniz_formula_for_%CF%80
+// watch: https://youtu.be/HrRMnzANHHs by Matt Parker (@standupmaths)
+
+
+
+// 1/1 - 1/3 + 1/5 - 1/7 + ... = pi/4
+// starting at 1 i.e. term 1 = 1/1, 2=-1/3, ...
+
+const term_number = ({ term_number_in }) => term_number_in;
+const terms = ({ terms_in }) => terms_in;
+
+const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1); // +, -, +, -, ...
+
+const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1; // odd number series
+
+const term = ({ term_number_in }) => sign({ term_number_in }) * (1 / denominator({ term_number_in }));
+/*
+export const sum_of_terms = () => range(1, terms()).reduce(
+  (acc, term_number_in) => acc + term({ term_number_in }),
+  0);
+*/
+
+const sum_of_terms = ({ terms_in }) => {
+  let res = 0,term_number_in = 1;
+
+  while (term_number_in < terms({ terms_in })) {
+    res += term({ term_number_in });
+    term_number_in++;
+  }
+
+  return res;
+};
+
+const sum_of_terms_times_4 = ({ terms_in }) => sum_of_terms({ terms_in }) * 4;
+
+
+// abstract this ...
+const series_sum_of_first_10_terms = ({}) =>
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce(
+(acc, term_number_in) => acc + term({ term_number_in }),
+0);
+
+
+const series_sum_of_first_9_terms = ({}) =>
+[1, 2, 3, 4, 5, 6, 7, 8, 9].reduce(
+(acc, term_number_in) => acc + term({ term_number_in }),
+0);
+
+
+
+
+// 0.76045990473235055278398931649706
+
+/***/ }),
+/* 161 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony import */ var _index_default_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(95);
 /* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _index_js__WEBPACK_IMPORTED_MODULE_1__["range"]; });
-
+/* unused harmony reexport * */
 // ESM Exports
 // ===========
 // This module is the package entry point for ES module users. In other words,
@@ -4411,105 +4521,6 @@ Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(['concat', 'joi
 
 
 
-
-/***/ }),
-/* 158 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(77);
-/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
-
-
-
-// Internal helper to determine whether we should spend extensive checks against
-// `ArrayBuffer` et al.
-/* harmony default export */ __webpack_exports__["a"] = (Object(_createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_getByteLength_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
-
-
-/***/ }),
-/* 159 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _invert_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(58);
-/* harmony import */ var _escapeMap_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(83);
-
-
-
-// Internal list of HTML entities for unescaping.
-/* harmony default export */ __webpack_exports__["a"] = (Object(_invert_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_escapeMap_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
-
-
-/***/ }),
-/* 160 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keyInObj; });
-// Internal `_.pick` helper function to determine whether `key` is an enumerable
-// property name of `obj`.
-function keyInObj(value, key, obj) {
-  return key in obj;
-}
-
-
-/***/ }),
-/* 161 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term_number", function() { return term_number; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sign", function() { return sign; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "denominator", function() { return denominator; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term", function() { return term; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_10_terms", function() { return series_sum_of_first_10_terms; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "series_sum_of_first_9_terms", function() { return series_sum_of_first_9_terms; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "terms", function() { return terms; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sum_of_terms", function() { return sum_of_terms; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "sum_of_terms_times_4", function() { return sum_of_terms_times_4; });
-/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(157);
-// some pi day release prep... leibniz series for pi
-// watch: https://youtu.be/HrRMnzANHHs by Matt Parker (@standupmaths)
-
-// 1/1 - 1/3 + 1/5 - 1/7 + ... = pi/4
-
-// starting at 1 i.e. term 1 = 1/1, 2=-1/3, ...
-
-
-
-const term_number = ({ term_number_in }) => term_number_in;
-
-const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1); // +, -, +, -, ...
-
-const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1; // odd number series
-
-const term = ({ term_number_in }) => sign({ term_number_in }) * (1 / denominator({ term_number_in }));
-
-// abstract this ...
-const series_sum_of_first_10_terms = ({}) =>
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].reduce(
-(acc, term_number_in) => acc + term({ term_number_in }),
-0);
-
-
-const series_sum_of_first_9_terms = ({}) =>
-[1, 2, 3, 4, 5, 6, 7, 8, 9].reduce(
-(acc, term_number_in) => acc + term({ term_number_in }),
-0);
-
-
-const terms = ({ terms_in }) => terms_in;
-
-const sum_of_terms = ({ terms_in }) => Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* range */ "a"])(1, terms({ terms_in })).reduce(
-(acc, term_number_in) => acc + term({ term_number_in }),
-0);
-
-const sum_of_terms_times_4 = ({ terms_in }) => sum_of_terms({ terms_in }) * 4;
-
-
-// 0.76045990473235055278398931649706
 
 /***/ }),
 /* 162 */

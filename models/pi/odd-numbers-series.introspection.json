@@ -7,14 +7,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 10,
+          "line": 9,
           "column": 27,
-          "index": 275
+          "index": 305
         },
         "end": {
-          "line": 10,
+          "line": 9,
           "column": 47,
-          "index": 295
+          "index": 325
         }
       },
       "inputs": [
@@ -30,107 +30,6 @@
         "term_number_in"
       ]
     },
-    "0_sign": {
-      "cul_scope_id": 0,
-      "name": "sign",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 12,
-          "column": 20,
-          "index": 318
-        },
-        "end": {
-          "line": 12,
-          "column": 57,
-          "index": 355
-        }
-      },
-      "inputs": [
-        "term_number_in"
-      ]
-    },
-    "0_denominator": {
-      "cul_scope_id": 0,
-      "name": "denominator",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 14,
-          "column": 27,
-          "index": 404
-        },
-        "end": {
-          "line": 14,
-          "column": 60,
-          "index": 437
-        }
-      },
-      "inputs": [
-        "term_number_in"
-      ]
-    },
-    "0_term": {
-      "cul_scope_id": 0,
-      "name": "term",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 16,
-          "column": 20,
-          "index": 481
-        },
-        "end": {
-          "line": 16,
-          "column": 54,
-          "index": 515
-        }
-      },
-      "inputs": [
-        "term_number_in"
-      ]
-    },
-    "0_series_sum_of_first_10_terms": {
-      "cul_scope_id": 0,
-      "name": "series_sum_of_first_10_terms",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 19,
-          "column": 44,
-          "index": 583
-        },
-        "end": {
-          "line": 23,
-          "column": 3,
-          "index": 701
-        }
-      },
-      "inputs": []
-    },
-    "0_series_sum_of_first_9_terms": {
-      "cul_scope_id": 0,
-      "name": "series_sum_of_first_9_terms",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
-      "loc": {
-        "start": {
-          "line": 25,
-          "column": 43,
-          "index": 747
-        },
-        "end": {
-          "line": 29,
-          "column": 3,
-          "index": 861
-        }
-      },
-      "inputs": []
-    },
     "0_terms": {
       "cul_scope_id": 0,
       "name": "terms",
@@ -138,14 +37,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 31,
+          "line": 10,
           "column": 21,
-          "index": 885
+          "index": 348
         },
         "end": {
-          "line": 31,
+          "line": 10,
           "column": 35,
-          "index": 899
+          "index": 362
         }
       },
       "inputs": [
@@ -161,6 +60,69 @@
         "terms_in"
       ]
     },
+    "0_sign": {
+      "cul_scope_id": 0,
+      "name": "sign",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 20,
+          "index": 385
+        },
+        "end": {
+          "line": 12,
+          "column": 57,
+          "index": 422
+        }
+      },
+      "inputs": [
+        "term_number_in"
+      ]
+    },
+    "0_denominator": {
+      "cul_scope_id": 0,
+      "name": "denominator",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 27,
+          "index": 471
+        },
+        "end": {
+          "line": 14,
+          "column": 60,
+          "index": 504
+        }
+      },
+      "inputs": [
+        "term_number_in"
+      ]
+    },
+    "0_term": {
+      "cul_scope_id": 0,
+      "name": "term",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 20,
+          "index": 548
+        },
+        "end": {
+          "line": 16,
+          "column": 54,
+          "index": 582
+        }
+      },
+      "inputs": [
+        "term_number_in"
+      ]
+    },
     "0_sum_of_terms": {
       "cul_scope_id": 0,
       "name": "sum_of_terms",
@@ -168,14 +130,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 33,
+          "line": 23,
           "column": 28,
-          "index": 930
+          "index": 744
         },
         "end": {
-          "line": 35,
-          "column": 4,
-          "index": 1025
+          "line": 32,
+          "column": 3,
+          "index": 903
         }
       },
       "inputs": [
@@ -189,25 +151,68 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 37,
+          "line": 34,
           "column": 36,
-          "index": 1064
+          "index": 941
         },
         "end": {
-          "line": 37,
+          "line": 34,
           "column": 60,
-          "index": 1088
+          "index": 965
         }
       },
       "inputs": [
         "terms_in"
       ]
+    },
+    "0_series_sum_of_first_10_terms": {
+      "cul_scope_id": 0,
+      "name": "series_sum_of_first_10_terms",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 38,
+          "column": 44,
+          "index": 1033
+        },
+        "end": {
+          "line": 42,
+          "column": 3,
+          "index": 1151
+        }
+      },
+      "inputs": []
+    },
+    "0_series_sum_of_first_9_terms": {
+      "cul_scope_id": 0,
+      "name": "series_sum_of_first_9_terms",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 43,
+          "index": 1197
+        },
+        "end": {
+          "line": 48,
+          "column": 3,
+          "index": 1311
+        }
+      },
+      "inputs": []
     }
   },
   "cul_links": [
     {
       "to": "0_term_number",
       "from": "0_term_number_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_terms",
+      "from": "0_terms_in",
       "reason": "input"
     },
     {
@@ -235,6 +240,29 @@
       "negs": []
     },
     {
+      "to": "0_sum_of_terms",
+      "from": "0_terms",
+      "reason": "call",
+      "negs": [
+        "term_number_in"
+      ]
+    },
+    {
+      "to": "0_sum_of_terms",
+      "from": "0_term",
+      "reason": "call",
+      "negs": [
+        "term_number_in",
+        "term_number_in"
+      ]
+    },
+    {
+      "to": "0_sum_of_terms_times_4",
+      "from": "0_sum_of_terms",
+      "reason": "call",
+      "negs": []
+    },
+    {
       "to": "0_series_sum_of_first_10_terms",
       "from": "0_term",
       "reason": "call",
@@ -251,32 +279,6 @@
         "term_number_in",
         "term_number_in"
       ]
-    },
-    {
-      "to": "0_terms",
-      "from": "0_terms_in",
-      "reason": "input"
-    },
-    {
-      "to": "0_sum_of_terms",
-      "from": "0_terms",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "0_sum_of_terms",
-      "from": "0_term",
-      "reason": "call",
-      "negs": [
-        "term_number_in",
-        "term_number_in"
-      ]
-    },
-    {
-      "to": "0_sum_of_terms_times_4",
-      "from": "0_sum_of_terms",
-      "reason": "call",
-      "negs": []
     }
   ],
   "cul_scope_ids_to_resource": {
@@ -290,6 +292,12 @@
     "0_term_number_in": [
       "term_number_in"
     ],
+    "0_terms": [
+      "terms_in"
+    ],
+    "0_terms_in": [
+      "terms_in"
+    ],
     "0_sign": [
       "term_number_in"
     ],
@@ -299,20 +307,14 @@
     "0_term": [
       "term_number_in"
     ],
-    "0_series_sum_of_first_10_terms": [],
-    "0_series_sum_of_first_9_terms": [],
-    "0_terms": [
-      "terms_in"
-    ],
-    "0_terms_in": [
-      "terms_in"
-    ],
     "0_sum_of_terms": [
       "terms_in"
     ],
     "0_sum_of_terms_times_4": [
       "terms_in"
-    ]
+    ],
+    "0_series_sum_of_first_10_terms": [],
+    "0_series_sum_of_first_9_terms": []
   },
-  "dot": "digraph {\n  \"0_term_number\" [cul_scope_id=0,name=term_number,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_term_number inputs: term_number_in\"]\n  \"0_term_number_in\" [cul_scope_id=0,name=term_number_in,cul_source_scope_id=0,reason=\"input definition\",inputs=term_number_in,label=\"0_term_number_in inputs: term_number_in\"]\n  \"0_sign\" [cul_scope_id=0,name=sign,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_sign inputs: term_number_in\"]\n  \"0_denominator\" [cul_scope_id=0,name=denominator,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_denominator inputs: term_number_in\"]\n  \"0_term\" [cul_scope_id=0,name=term,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_term inputs: term_number_in\"]\n  \"0_series_sum_of_first_10_terms\" [cul_scope_id=0,name=series_sum_of_first_10_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_series_sum_of_first_10_terms inputs: \"]\n  \"0_series_sum_of_first_9_terms\" [cul_scope_id=0,name=series_sum_of_first_9_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_series_sum_of_first_9_terms inputs: \"]\n  \"0_terms\" [cul_scope_id=0,name=terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_terms inputs: terms_in\"]\n  \"0_terms_in\" [cul_scope_id=0,name=terms_in,cul_source_scope_id=0,reason=\"input definition\",inputs=terms_in,label=\"0_terms_in inputs: terms_in\"]\n  \"0_sum_of_terms\" [cul_scope_id=0,name=sum_of_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_sum_of_terms inputs: terms_in\"]\n  \"0_sum_of_terms_times_4\" [cul_scope_id=0,name=sum_of_terms_times_4,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_sum_of_terms_times_4 inputs: terms_in\"]\n  \"0_term_number_in\" -> \"0_term_number\" [value=\"[object Object]\",label=\"input +term_number_in\"]\n  \"0_term_number\" -> \"0_sign\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_term_number\" -> \"0_denominator\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sign\" -> \"0_term\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_denominator\" -> \"0_term\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_term\" -> \"0_series_sum_of_first_10_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n  \"0_term\" -> \"0_series_sum_of_first_9_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n  \"0_terms_in\" -> \"0_terms\" [value=\"[object Object]\",label=\"input +terms_in\"]\n  \"0_terms\" -> \"0_sum_of_terms\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_term\" -> \"0_sum_of_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n  \"0_sum_of_terms\" -> \"0_sum_of_terms_times_4\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_term_number\" [cul_scope_id=0,name=term_number,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_term_number inputs: term_number_in\"]\n  \"0_term_number_in\" [cul_scope_id=0,name=term_number_in,cul_source_scope_id=0,reason=\"input definition\",inputs=term_number_in,label=\"0_term_number_in inputs: term_number_in\"]\n  \"0_terms\" [cul_scope_id=0,name=terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_terms inputs: terms_in\"]\n  \"0_terms_in\" [cul_scope_id=0,name=terms_in,cul_source_scope_id=0,reason=\"input definition\",inputs=terms_in,label=\"0_terms_in inputs: terms_in\"]\n  \"0_sign\" [cul_scope_id=0,name=sign,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_sign inputs: term_number_in\"]\n  \"0_denominator\" [cul_scope_id=0,name=denominator,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_denominator inputs: term_number_in\"]\n  \"0_term\" [cul_scope_id=0,name=term,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_number_in,label=\"0_term inputs: term_number_in\"]\n  \"0_sum_of_terms\" [cul_scope_id=0,name=sum_of_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_sum_of_terms inputs: terms_in\"]\n  \"0_sum_of_terms_times_4\" [cul_scope_id=0,name=sum_of_terms_times_4,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=terms_in,label=\"0_sum_of_terms_times_4 inputs: terms_in\"]\n  \"0_series_sum_of_first_10_terms\" [cul_scope_id=0,name=series_sum_of_first_10_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_series_sum_of_first_10_terms inputs: \"]\n  \"0_series_sum_of_first_9_terms\" [cul_scope_id=0,name=series_sum_of_first_9_terms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_series_sum_of_first_9_terms inputs: \"]\n  \"0_term_number_in\" -> \"0_term_number\" [value=\"[object Object]\",label=\"input +term_number_in\"]\n  \"0_terms_in\" -> \"0_terms\" [value=\"[object Object]\",label=\"input +terms_in\"]\n  \"0_term_number\" -> \"0_sign\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_term_number\" -> \"0_denominator\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sign\" -> \"0_term\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_denominator\" -> \"0_term\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_terms\" -> \"0_sum_of_terms\" [value=\"[object Object]\",label=\"call -term_number_in\"]\n  \"0_term\" -> \"0_sum_of_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n  \"0_sum_of_terms\" -> \"0_sum_of_terms_times_4\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_term\" -> \"0_series_sum_of_first_10_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n  \"0_term\" -> \"0_series_sum_of_first_9_terms\" [value=\"[object Object]\",label=\"call -term_number_in,term_number_in\"]\n}\n"
 }
