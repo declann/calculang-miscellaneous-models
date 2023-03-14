@@ -4481,7 +4481,7 @@ __webpack_require__.r(__webpack_exports__);
 const sign = ({ term_number_in }) => Math.pow(-1, term_number({ term_number_in }) - 1);
 
 // denominator from sequence of odd numbers
-const denominator = ({ term_number_in }) => term_number({ term_number_in }) * 2 + 1;
+const denominator = ({ term_number_in }) => (term_number({ term_number_in }) - 1) * 2 + 1;
 
 // input: number of current term
 const term_number = ({ term_number_in }) => term_number_in;
@@ -4490,7 +4490,7 @@ const term_number = ({ term_number_in }) => term_number_in;
 const term = ({ term_number_in }) => sign({ term_number_in }) * (1 / denominator({ term_number_in }));
 
 // sum of terms (1 to terms input):
-const sum_of_terms = ({ terms_in }) => Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* range */ "a"])(1, terms({ terms_in })).reduce(
+const sum_of_terms = ({ terms_in }) => Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* range */ "a"])(1, terms({ terms_in }) + 1).reduce(
 (acc, term_number_in) => acc + term({ term_number_in }),
 0);
 

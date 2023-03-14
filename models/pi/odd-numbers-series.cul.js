@@ -11,7 +11,7 @@ import { range } from 'underscore'
 export const sign = () => Math.pow(-1, term_number() - 1);
 
 // denominator from sequence of odd numbers
-export const denominator = () => term_number() * 2 + 1;
+export const denominator = () => (term_number() - 1) * 2 + 1;
 
 // input: number of current term
 export const term_number = () => term_number_in; 
@@ -20,7 +20,7 @@ export const term_number = () => term_number_in;
 export const term = () => sign() * (1 / denominator());
 
 // sum of terms (1 to terms input):
-export const sum_of_terms = () => range(1, terms()).reduce(
+export const sum_of_terms = () => range(1, terms() + 1).reduce(
   (acc, term_number_in) => acc + term({ term_number_in }),
   0);
 
