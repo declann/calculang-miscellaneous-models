@@ -2,9 +2,13 @@ import {
   series_sum_of_first_10_terms,
   series_sum_of_first_9_terms,
   term,
+  sum_of_terms, sum_of_terms_times_4
 } from './odd-numbers-series_esm/cul_scope_0.mjs';
 
 import { range } from 'underscore';
+
+console.log(sum_of_terms({terms_in:10}))
+console.log(sum_of_terms_times_4({terms_in:10}))
 
 console.log(series_sum_of_first_10_terms({})); // vs. 0.7604599_9_4732350:5055278
 console.log(4 * series_sum_of_first_10_terms({})); // ...is not 3.0418399789...

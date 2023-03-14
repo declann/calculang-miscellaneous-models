@@ -4,6 +4,9 @@
 // 1/1 - 1/3 + 1/5 - 1/7 + ... = pi/4
 
 // starting at 1 i.e. term 1 = 1/1, 2=-1/3, ...
+import { range } from 'underscore'
+
+
 export const term_number = () => term_number_in;
 
 export const sign = () => Math.pow(-1, term_number() - 1); // +, -, +, -, ...
@@ -24,6 +27,14 @@ export const series_sum_of_first_9_terms = () =>
     (acc, term_number_in) => acc + term({ term_number_in }),
     0
   );
+
+export const terms = () => terms_in;
+
+export const sum_of_terms = () => range(1, terms()).reduce(
+  (acc, term_number_in) => acc + term({ term_number_in }),
+  0);
+
+export const sum_of_terms_times_4 = () => sum_of_terms() * 4
 
 
 // 0.76045990473235055278398931649706
