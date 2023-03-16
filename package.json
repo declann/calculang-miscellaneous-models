@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:monte-carlo-pi": "cul-js compile --memo ./models/pi/monte-carlo-pi.cul.js",
     "build:nilakantha-series-bignumber": "cul-js compile ./models/pi/nilakantha-series-bignumber.cul.js",
     "build:nilakantha-series": "cul-js compile ./models/pi/nilakantha-series.cul.js",
     "build:pi-odd-numbers-series": "cul-js compile ./models/pi/odd-numbers-series.cul.js",
@@ -60,6 +61,7 @@
   "dependencies": {
     "bignumber.js": "^9.1.1",
     "date-fns": "^2.25.0",
+    "esm-seedrandom": "^3.0.5",
     "lru-memoize": "^1.1.0",
     "raw-loader": "^4.0.2",
     "underscore": "^1.13.1"

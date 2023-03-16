@@ -1,0 +1,843 @@
+{
+  "cul_functions": {
+    "0_p$": {
+      "cul_scope_id": 0,
+      "name": "p$",
+      "imported": "p_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_x$": {
+      "cul_scope_id": 0,
+      "name": "x$",
+      "imported": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y$": {
+      "cul_scope_id": 0,
+      "name": "y$",
+      "imported": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_f$": {
+      "cul_scope_id": 0,
+      "name": "f$",
+      "imported": "f_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_inside$": {
+      "cul_scope_id": 0,
+      "name": "inside$",
+      "imported": "inside_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_inside_count$": {
+      "cul_scope_id": 0,
+      "name": "inside_count$",
+      "imported": "inside_count_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_ratio$": {
+      "cul_scope_id": 0,
+      "name": "ratio$",
+      "imported": "ratio_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_pi_approximation$": {
+      "cul_scope_id": 0,
+      "name": "pi_approximation$",
+      "imported": "pi_approximation_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_p": {
+      "cul_scope_id": 0,
+      "name": "p",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17,
+          "index": 758
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 888
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 17,
+          "index": 1094
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1224
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 17,
+          "index": 1430
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1560
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_f": {
+      "cul_scope_id": 0,
+      "name": "f",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 17,
+          "index": 1766
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 1896
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_inside": {
+      "cul_scope_id": 0,
+      "name": "inside",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 22,
+          "index": 2132
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2272
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_inside_count": {
+      "cul_scope_id": 0,
+      "name": "inside_count",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 28,
+          "index": 2549
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 2701
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_ratio": {
+      "cul_scope_id": 0,
+      "name": "ratio",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 21,
+          "index": 2942
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 3080
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_pi_approximation": {
+      "cul_scope_id": 0,
+      "name": "pi_approximation",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 32,
+          "index": 3380
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 3540
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p": {
+      "cul_scope_id": 1,
+      "name": "p",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x": {
+      "cul_scope_id": 1,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y": {
+      "cul_scope_id": 1,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_f": {
+      "cul_scope_id": 1,
+      "name": "f",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_inside": {
+      "cul_scope_id": 1,
+      "name": "inside",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_inside_count": {
+      "cul_scope_id": 1,
+      "name": "inside_count",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_ratio": {
+      "cul_scope_id": 1,
+      "name": "ratio",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_pi_approximation": {
+      "cul_scope_id": 1,
+      "name": "pi_approximation",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p_": {
+      "cul_scope_id": 1,
+      "name": "p_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 17,
+          "index": 17
+        },
+        "end": {
+          "line": 1,
+          "column": 27,
+          "index": 27
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p_in": {
+      "cul_scope_id": 1,
+      "name": "p_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x_": {
+      "cul_scope_id": 1,
+      "name": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 7,
+          "column": 17,
+          "index": 180
+        },
+        "end": {
+          "line": 7,
+          "column": 41,
+          "index": 204
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y_": {
+      "cul_scope_id": 1,
+      "name": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 17,
+          "index": 224
+        },
+        "end": {
+          "line": 9,
+          "column": 41,
+          "index": 248
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_f_": {
+      "cul_scope_id": 1,
+      "name": "f_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 17,
+          "index": 268
+        },
+        "end": {
+          "line": 11,
+          "column": 46,
+          "index": 297
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_inside_": {
+      "cul_scope_id": 1,
+      "name": "inside_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 22,
+          "index": 322
+        },
+        "end": {
+          "line": 13,
+          "column": 37,
+          "index": 337
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_inside_count_": {
+      "cul_scope_id": 1,
+      "name": "inside_count_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 28,
+          "index": 394
+        },
+        "end": {
+          "line": 18,
+          "column": 1,
+          "index": 490
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_ratio_": {
+      "cul_scope_id": 1,
+      "name": "ratio_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 21,
+          "index": 513
+        },
+        "end": {
+          "line": 20,
+          "column": 49,
+          "index": 541
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_pi_approximation_": {
+      "cul_scope_id": 1,
+      "name": "pi_approximation_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 32,
+          "index": 575
+        },
+        "end": {
+          "line": 22,
+          "column": 51,
+          "index": 594
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_p$",
+      "from": "1_p_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x$",
+      "from": "1_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y$",
+      "from": "1_y_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_f$",
+      "from": "1_f_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_inside$",
+      "from": "1_inside_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_inside_count$",
+      "from": "1_inside_count_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_ratio$",
+      "from": "1_ratio_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_pi_approximation$",
+      "from": "1_pi_approximation_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_p",
+      "from": "0_p$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_y$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_f",
+      "from": "0_f$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_inside",
+      "from": "0_inside$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_inside_count",
+      "from": "0_inside_count$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_ratio",
+      "from": "0_ratio$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_pi_approximation",
+      "from": "0_pi_approximation$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_p",
+      "from": "0_p",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x",
+      "from": "0_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y",
+      "from": "0_y",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_f",
+      "from": "0_f",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_inside",
+      "from": "0_inside",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_inside_count",
+      "from": "0_inside_count",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_ratio",
+      "from": "0_ratio",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_pi_approximation",
+      "from": "0_pi_approximation",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_p_",
+      "from": "1_p_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_x_",
+      "from": "1_random",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_random",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_f_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_f_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_f_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_f_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_inside_",
+      "from": "1_f",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_inside_count_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_inside_count_",
+      "from": "1_inside_count",
+      "reason": "call",
+      "negs": [
+        "p_in"
+      ]
+    },
+    {
+      "to": "1_inside_count_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_inside_count_",
+      "from": "1_inside",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_ratio_",
+      "from": "1_inside_count",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_ratio_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_pi_approximation_",
+      "from": "1_ratio",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./monte-carlo-pi.cul.js",
+    "1": "./monte-carlo-pi.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./monte-carlo-pi.cul.js?+memoed": "./monte-carlo-pi.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_p$": [
+      "p_in"
+    ],
+    "0_x$": [
+      "p_in"
+    ],
+    "0_y$": [
+      "p_in"
+    ],
+    "0_f$": [
+      "p_in"
+    ],
+    "0_inside$": [
+      "p_in"
+    ],
+    "0_inside_count$": [
+      "p_in"
+    ],
+    "0_ratio$": [
+      "p_in"
+    ],
+    "0_pi_approximation$": [
+      "p_in"
+    ],
+    "0_p": [
+      "p_in"
+    ],
+    "0_x": [
+      "p_in"
+    ],
+    "0_y": [
+      "p_in"
+    ],
+    "0_f": [
+      "p_in"
+    ],
+    "0_inside": [
+      "p_in"
+    ],
+    "0_inside_count": [
+      "p_in"
+    ],
+    "0_ratio": [
+      "p_in"
+    ],
+    "0_pi_approximation": [
+      "p_in"
+    ],
+    "1_p": [
+      "p_in"
+    ],
+    "1_x": [
+      "p_in"
+    ],
+    "1_y": [
+      "p_in"
+    ],
+    "1_f": [
+      "p_in"
+    ],
+    "1_inside": [
+      "p_in"
+    ],
+    "1_inside_count": [
+      "p_in"
+    ],
+    "1_ratio": [
+      "p_in"
+    ],
+    "1_pi_approximation": [
+      "p_in"
+    ],
+    "1_p_": [
+      "p_in"
+    ],
+    "1_p_in": [
+      "p_in"
+    ],
+    "1_x_": [
+      "p_in"
+    ],
+    "1_y_": [
+      "p_in"
+    ],
+    "1_f_": [
+      "p_in"
+    ],
+    "1_inside_": [
+      "p_in"
+    ],
+    "1_inside_count_": [
+      "p_in"
+    ],
+    "1_ratio_": [
+      "p_in"
+    ],
+    "1_pi_approximation_": [
+      "p_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_p$\" [cul_scope_id=0,name=\"p$\",imported=p_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_p$ inputs: p_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_x$ inputs: p_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_y$ inputs: p_in\"]\n  \"0_f$\" [cul_scope_id=0,name=\"f$\",imported=f_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_f$ inputs: p_in\"]\n  \"0_inside$\" [cul_scope_id=0,name=\"inside$\",imported=inside_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_inside$ inputs: p_in\"]\n  \"0_inside_count$\" [cul_scope_id=0,name=\"inside_count$\",imported=inside_count_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_inside_count$ inputs: p_in\"]\n  \"0_ratio$\" [cul_scope_id=0,name=\"ratio$\",imported=ratio_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_ratio$ inputs: p_in\"]\n  \"0_pi_approximation$\" [cul_scope_id=0,name=\"pi_approximation$\",imported=pi_approximation_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_pi_approximation$ inputs: p_in\"]\n  \"0_p\" [cul_scope_id=0,name=p,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_p inputs: p_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_x inputs: p_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_y inputs: p_in\"]\n  \"0_f\" [cul_scope_id=0,name=f,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_f inputs: p_in\"]\n  \"0_inside\" [cul_scope_id=0,name=inside,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_inside inputs: p_in\"]\n  \"0_inside_count\" [cul_scope_id=0,name=inside_count,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_inside_count inputs: p_in\"]\n  \"0_ratio\" [cul_scope_id=0,name=ratio,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_ratio inputs: p_in\"]\n  \"0_pi_approximation\" [cul_scope_id=0,name=pi_approximation,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_pi_approximation inputs: p_in\"]\n  \"1_p\" [cul_scope_id=1,name=p,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_p inputs: p_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_x inputs: p_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_y inputs: p_in\"]\n  \"1_f\" [cul_scope_id=1,name=f,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_f inputs: p_in\"]\n  \"1_inside\" [cul_scope_id=1,name=inside,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_inside inputs: p_in\"]\n  \"1_inside_count\" [cul_scope_id=1,name=inside_count,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_inside_count inputs: p_in\"]\n  \"1_ratio\" [cul_scope_id=1,name=ratio,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_ratio inputs: p_in\"]\n  \"1_pi_approximation\" [cul_scope_id=1,name=pi_approximation,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_pi_approximation inputs: p_in\"]\n  \"1_p_\" [cul_scope_id=1,name=p_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_p_ inputs: p_in\"]\n  \"1_p_in\" [cul_scope_id=1,name=p_in,cul_source_scope_id=1,reason=\"input definition\",inputs=p_in,label=\"1_p_in inputs: p_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_x_ inputs: p_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_y_ inputs: p_in\"]\n  \"1_f_\" [cul_scope_id=1,name=f_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_f_ inputs: p_in\"]\n  \"1_inside_\" [cul_scope_id=1,name=inside_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_inside_ inputs: p_in\"]\n  \"1_inside_count_\" [cul_scope_id=1,name=inside_count_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_inside_count_ inputs: p_in\"]\n  \"1_ratio_\" [cul_scope_id=1,name=ratio_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_ratio_ inputs: p_in\"]\n  \"1_pi_approximation_\" [cul_scope_id=1,name=pi_approximation_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_pi_approximation_ inputs: p_in\"]\n  \"1_p_\" -> \"0_p$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_f_\" -> \"0_f$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_inside_\" -> \"0_inside$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_inside_count_\" -> \"0_inside_count$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_ratio_\" -> \"0_ratio$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_pi_approximation_\" -> \"0_pi_approximation$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_p$\" -> \"0_p\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_f$\" -> \"0_f\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_inside$\" -> \"0_inside\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_inside_count$\" -> \"0_inside_count\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_ratio$\" -> \"0_ratio\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pi_approximation$\" -> \"0_pi_approximation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_p\" -> \"1_p\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_f\" -> \"1_f\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_inside\" -> \"1_inside\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_inside_count\" -> \"1_inside_count\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_ratio\" -> \"1_ratio\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_pi_approximation\" -> \"1_pi_approximation\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_p_in\" -> \"1_p_\" [value=\"[object Object]\",label=\"input +p_in\"]\n  \"1_p\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_p\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_f_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_f_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_f\" -> \"1_inside_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_p\" -> \"1_inside_count_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_inside_count\" -> \"1_inside_count_\" [value=\"[object Object]\",label=\"call -p_in\"]\n  \"1_inside\" -> \"1_inside_count_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_inside_count\" -> \"1_ratio_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_p\" -> \"1_ratio_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_ratio\" -> \"1_pi_approximation_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}
