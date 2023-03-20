@@ -207,27 +207,27 @@ const subs_ea = ({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc
   value: Object(_expected_cul_js_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* subs */ "e"])({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_start({ ea_start_in }),
-    subs_churned_actual_to_in: ea_start({ ea_start_in }) }) },
+    subs_churned_actual_to_in: ea_start({ ea_start_in }) })
 
-
+},
 {
   type: '-> Actual Sales', // this impact will include expd churn on sales impact, alt. split could use 0 decrements and create a balancing 'confounding' amount
   function: 'subs',
   value: Object(_expected_cul_js_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* subs */ "e"])({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_end({ ea_end_in }),
-    subs_churned_actual_to_in: ea_start({ ea_start_in }) }) },
+    subs_churned_actual_to_in: ea_start({ ea_start_in }) })
 
-
+},
 {
   type: '-> Actual Churn (=Actual)',
   function: 'subs',
   value: Object(_expected_cul_js_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* subs */ "e"])({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_end({ ea_end_in }),
-    subs_churned_actual_to_in: ea_end({ ea_end_in }) }) }];
+    subs_churned_actual_to_in: ea_end({ ea_end_in }) })
 
-
+}];
 
 // todo use an impacts abstraction or move subtraction to VL
 

@@ -48,27 +48,27 @@ export const subs_ea = ({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_c
   value: subs({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_start({ ea_start_in }),
-    subs_churned_actual_to_in: ea_start({ ea_start_in }) }) },
+    subs_churned_actual_to_in: ea_start({ ea_start_in }) })
 
-
+},
 {
   type: '-> Actual Sales', // this impact will include expd churn on sales impact, alt. split could use 0 decrements and create a balancing 'confounding' amount
   function: 'subs',
   value: subs({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_end({ ea_end_in }),
-    subs_churned_actual_to_in: ea_start({ ea_start_in }) }) },
+    subs_churned_actual_to_in: ea_start({ ea_start_in }) })
 
-
+},
 {
   type: '-> Actual Churn (=Actual)',
   function: 'subs',
   value: subs({ subs_0_in, actuals_table_in, subs_growth_pc_in, subs_churn_pc_in,
     year_in: ea_end({ ea_end_in }),
     subs_new_actual_to_in: ea_end({ ea_end_in }),
-    subs_churned_actual_to_in: ea_end({ ea_end_in }) }) }];
+    subs_churned_actual_to_in: ea_end({ ea_end_in }) })
 
-
+}];
 
 // todo use an impacts abstraction or move subtraction to VL
 
