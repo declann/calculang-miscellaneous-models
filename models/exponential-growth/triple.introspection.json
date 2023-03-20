@@ -132,12 +132,12 @@
         "start": {
           "line": 2,
           "column": 18,
-          "index": 20
+          "index": 19
         },
         "end": {
           "line": 2,
           "column": 31,
-          "index": 33
+          "index": 32
         }
       },
       "inputs": [
@@ -162,12 +162,12 @@
         "start": {
           "line": 3,
           "column": 17,
-          "index": 71
+          "index": 69
         },
         "end": {
           "line": 3,
           "column": 29,
-          "index": 83
+          "index": 81
         }
       },
       "inputs": [
@@ -192,12 +192,12 @@
         "start": {
           "line": 5,
           "column": 17,
-          "index": 105
+          "index": 101
         },
         "end": {
           "line": 8,
           "column": 1,
-          "index": 186
+          "index": 179
         }
       },
       "inputs": [

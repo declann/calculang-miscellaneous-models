@@ -53,8 +53,8 @@ sunset_projection_times_for_sunset_date({ lat_in, lng_in, l_in, duration_factor_
   date_in,
   sunset_date_in: sunset_date({ sunset_date_in }),
   altitude: altitude_obj({ lat_in, date_in, lng_in, obj_in: 'sun' }),
-  azimuth: azimuth_obj({ date_in, lng_in, lat_in, obj_in: 'sun' }) }));
-
+  azimuth: azimuth_obj({ date_in, lng_in, lat_in, obj_in: 'sun' })
+}));
 
 export const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
 sunset_projection_for_sunset_date({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
@@ -90,12 +90,12 @@ export const rad_ = ({}) => Math.PI / 180;
 
 // bad form?
 var PI = Math.PI,
-sin = Math.sin,
-cos = Math.cos,
-tan = Math.tan,
-asin = Math.asin,
-atan = Math.atan2,
-acos = Math.acos;
+  sin = Math.sin,
+  cos = Math.cos,
+  tan = Math.tan,
+  asin = Math.asin,
+  atan = Math.atan2,
+  acos = Math.acos;
 
 export const e_ = ({}) => rad({}) * 23.4397; // obliquity of the Earth
 

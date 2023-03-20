@@ -154,12 +154,12 @@ const rad = ({}) => Math.PI / 180;
 
 // bad form?
 var PI = Math.PI,
-sin = Math.sin,
-cos = Math.cos,
-tan = Math.tan,
-asin = Math.asin,
-atan = Math.atan2,
-acos = Math.acos;
+  sin = Math.sin,
+  cos = Math.cos,
+  tan = Math.tan,
+  asin = Math.asin,
+  atan = Math.atan2,
+  acos = Math.acos;
 
 const e = ({}) => rad({}) * 23.4397; // obliquity of the Earth
 

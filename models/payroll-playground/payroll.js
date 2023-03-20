@@ -156,8 +156,8 @@ const usc_table = ({}) => [
 {
   band_id: 3,
   band_co: 70044,
-  rate: 0.045 },
-
+  rate: 0.045
+},
 { band_id: 4, band_co: 999999999, rate: 0.08 }];
 
 

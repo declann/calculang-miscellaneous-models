@@ -684,8 +684,8 @@ Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_project
   date_in,
   sunset_date_in: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_date"])({ sunset_date_in }),
   altitude: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["altitude_obj"])({ lat_in, date_in, lng_in, obj_in: 'sun' }),
-  azimuth: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["azimuth_obj"])({ date_in, lng_in, lat_in, obj_in: 'sun' }) }));
-
+  azimuth: Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["azimuth_obj"])({ date_in, lng_in, lat_in, obj_in: 'sun' })
+}));
 
 const sunset_time_for_sunset_date_ = ({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }) =>
 Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["sunset_projection_for_sunset_date"])({ lat_in, lng_in, l_in, duration_factor_in, b_in, sunset_date_in }).find((d) => d.altitude < 0).date_in;
@@ -721,12 +721,12 @@ const rad_ = ({}) => Math.PI / 180;
 
 // bad form?
 var PI = Math.PI,
-sin = Math.sin,
-cos = Math.cos,
-tan = Math.tan,
-asin = Math.asin,
-atan = Math.atan2,
-acos = Math.acos;
+  sin = Math.sin,
+  cos = Math.cos,
+  tan = Math.tan,
+  asin = Math.asin,
+  atan = Math.atan2,
+  acos = Math.acos;
 
 const e_ = ({}) => Object(_suncalc_seek_sunsets_cul_js__WEBPACK_IMPORTED_MODULE_0__["rad"])({}) * 23.4397; // obliquity of the Earth
 
