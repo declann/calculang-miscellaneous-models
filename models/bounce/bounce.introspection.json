@@ -1,0 +1,771 @@
+{
+  "cul_functions": {
+    "0_t$": {
+      "cul_scope_id": 0,
+      "name": "t$",
+      "imported": "t_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "0_dx$": {
+      "cul_scope_id": 0,
+      "name": "dx$",
+      "imported": "dx_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "dx_in"
+      ]
+    },
+    "0_dampener$": {
+      "cul_scope_id": 0,
+      "name": "dampener$",
+      "imported": "dampener_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "dampener_in"
+      ]
+    },
+    "0_x$": {
+      "cul_scope_id": 0,
+      "name": "x$",
+      "imported": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in",
+        "dx_in"
+      ]
+    },
+    "0_y$": {
+      "cul_scope_id": 0,
+      "name": "y$",
+      "imported": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "0_dy$": {
+      "cul_scope_id": 0,
+      "name": "dy$",
+      "imported": "dy_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "0_t": {
+      "cul_scope_id": 0,
+      "name": "t",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17,
+          "index": 678
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 808
+        }
+      },
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "0_dx": {
+      "cul_scope_id": 0,
+      "name": "dx",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 18,
+          "index": 1020
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1152
+        }
+      },
+      "inputs": [
+        "dx_in"
+      ]
+    },
+    "0_dampener": {
+      "cul_scope_id": 0,
+      "name": "dampener",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 24,
+          "index": 1401
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1545
+        }
+      },
+      "inputs": [
+        "dampener_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 17,
+          "index": 1758
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 1888
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dx_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 17,
+          "index": 2094
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2224
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "0_dy": {
+      "cul_scope_id": 0,
+      "name": "dy",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 18,
+          "index": 2436
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 2568
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "1_t": {
+      "cul_scope_id": 1,
+      "name": "t",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_dx": {
+      "cul_scope_id": 1,
+      "name": "dx",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "dx_in"
+      ]
+    },
+    "1_dampener": {
+      "cul_scope_id": 1,
+      "name": "dampener",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "dampener_in"
+      ]
+    },
+    "1_x": {
+      "cul_scope_id": 1,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in",
+        "dx_in"
+      ]
+    },
+    "1_y": {
+      "cul_scope_id": 1,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "1_dy": {
+      "cul_scope_id": 1,
+      "name": "dy",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "1_t_": {
+      "cul_scope_id": 1,
+      "name": "t_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 9,
+          "column": 17,
+          "index": 433
+        },
+        "end": {
+          "line": 9,
+          "column": 27,
+          "index": 443
+        }
+      },
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_t_in": {
+      "cul_scope_id": 1,
+      "name": "t_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "t_in"
+      ]
+    },
+    "1_dx_": {
+      "cul_scope_id": 1,
+      "name": "dx_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 18,
+          "index": 463
+        },
+        "end": {
+          "line": 10,
+          "column": 29,
+          "index": 474
+        }
+      },
+      "inputs": [
+        "dx_in"
+      ]
+    },
+    "1_dx_in": {
+      "cul_scope_id": 1,
+      "name": "dx_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "dx_in"
+      ]
+    },
+    "1_dampener_": {
+      "cul_scope_id": 1,
+      "name": "dampener_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 24,
+          "index": 500
+        },
+        "end": {
+          "line": 11,
+          "column": 41,
+          "index": 517
+        }
+      },
+      "inputs": [
+        "dampener_in"
+      ]
+    },
+    "1_dampener_in": {
+      "cul_scope_id": 1,
+      "name": "dampener_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "dampener_in"
+      ]
+    },
+    "1_x_": {
+      "cul_scope_id": 1,
+      "name": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 17,
+          "index": 619
+        },
+        "end": {
+          "line": 19,
+          "column": 1,
+          "index": 697
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dx_in"
+      ]
+    },
+    "1_y_": {
+      "cul_scope_id": 1,
+      "name": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 17,
+          "index": 790
+        },
+        "end": {
+          "line": 26,
+          "column": 1,
+          "index": 943
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    },
+    "1_dy_": {
+      "cul_scope_id": 1,
+      "name": "dy_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 29,
+          "column": 18,
+          "index": 1038
+        },
+        "end": {
+          "line": 34,
+          "column": 1,
+          "index": 1280
+        }
+      },
+      "inputs": [
+        "t_in",
+        "dampener_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_t$",
+      "from": "1_t_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_dx$",
+      "from": "1_dx_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_dampener$",
+      "from": "1_dampener_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x$",
+      "from": "1_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y$",
+      "from": "1_y_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_dy$",
+      "from": "1_dy_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_t",
+      "from": "0_t$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_dx",
+      "from": "0_dx$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_dampener",
+      "from": "0_dampener$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_y$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_dy",
+      "from": "0_dy$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_t",
+      "from": "0_t",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_dx",
+      "from": "0_dx",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_dampener",
+      "from": "0_dampener",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x",
+      "from": "0_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y",
+      "from": "0_y",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_dy",
+      "from": "0_dy",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_t_",
+      "from": "1_t_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_dx_",
+      "from": "1_dx_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_dampener_",
+      "from": "1_dampener_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_x_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_x_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x_",
+      "from": "1_dx",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_y_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_dy",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_y_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_dy",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_dy",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_dampener",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_dy",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_dy",
+      "reason": "call",
+      "negs": [
+        "t_in"
+      ]
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_t",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_dy_",
+      "from": "1_dampener",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./bounce.cul.js",
+    "1": "./bounce.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./bounce.cul.js?+memoed": "./bounce.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_t$": [
+      "t_in"
+    ],
+    "0_dx$": [
+      "dx_in"
+    ],
+    "0_dampener$": [
+      "dampener_in"
+    ],
+    "0_x$": [
+      "t_in",
+      "dx_in"
+    ],
+    "0_y$": [
+      "t_in",
+      "dampener_in"
+    ],
+    "0_dy$": [
+      "t_in",
+      "dampener_in"
+    ],
+    "0_t": [
+      "t_in"
+    ],
+    "0_dx": [
+      "dx_in"
+    ],
+    "0_dampener": [
+      "dampener_in"
+    ],
+    "0_x": [
+      "t_in",
+      "dx_in"
+    ],
+    "0_y": [
+      "t_in",
+      "dampener_in"
+    ],
+    "0_dy": [
+      "t_in",
+      "dampener_in"
+    ],
+    "1_t": [
+      "t_in"
+    ],
+    "1_dx": [
+      "dx_in"
+    ],
+    "1_dampener": [
+      "dampener_in"
+    ],
+    "1_x": [
+      "t_in",
+      "dx_in"
+    ],
+    "1_y": [
+      "t_in",
+      "dampener_in"
+    ],
+    "1_dy": [
+      "t_in",
+      "dampener_in"
+    ],
+    "1_t_": [
+      "t_in"
+    ],
+    "1_t_in": [
+      "t_in"
+    ],
+    "1_dx_": [
+      "dx_in"
+    ],
+    "1_dx_in": [
+      "dx_in"
+    ],
+    "1_dampener_": [
+      "dampener_in"
+    ],
+    "1_dampener_in": [
+      "dampener_in"
+    ],
+    "1_x_": [
+      "t_in",
+      "dx_in"
+    ],
+    "1_y_": [
+      "t_in",
+      "dampener_in"
+    ],
+    "1_dy_": [
+      "t_in",
+      "dampener_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_t$\" [cul_scope_id=0,name=\"t$\",imported=t_,cul_source_scope_id=1,reason=\"explicit import\",inputs=t_in,label=\"0_t$ inputs: t_in\"]\n  \"0_dx$\" [cul_scope_id=0,name=\"dx$\",imported=dx_,cul_source_scope_id=1,reason=\"explicit import\",inputs=dx_in,label=\"0_dx$ inputs: dx_in\"]\n  \"0_dampener$\" [cul_scope_id=0,name=\"dampener$\",imported=dampener_,cul_source_scope_id=1,reason=\"explicit import\",inputs=dampener_in,label=\"0_dampener$ inputs: dampener_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"t_in,dx_in\",label=\"0_x$ inputs: t_in,dx_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"t_in,dampener_in\",label=\"0_y$ inputs: t_in,dampener_in\"]\n  \"0_dy$\" [cul_scope_id=0,name=\"dy$\",imported=dy_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"t_in,dampener_in\",label=\"0_dy$ inputs: t_in,dampener_in\"]\n  \"0_t\" [cul_scope_id=0,name=t,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=t_in,label=\"0_t inputs: t_in\"]\n  \"0_dx\" [cul_scope_id=0,name=dx,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=dx_in,label=\"0_dx inputs: dx_in\"]\n  \"0_dampener\" [cul_scope_id=0,name=dampener,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=dampener_in,label=\"0_dampener inputs: dampener_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"t_in,dx_in\",label=\"0_x inputs: t_in,dx_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"t_in,dampener_in\",label=\"0_y inputs: t_in,dampener_in\"]\n  \"0_dy\" [cul_scope_id=0,name=dy,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"t_in,dampener_in\",label=\"0_dy inputs: t_in,dampener_in\"]\n  \"1_t\" [cul_scope_id=1,name=t,cul_source_scope_id=0,reason=\"implicit import\",inputs=t_in,label=\"1_t inputs: t_in\"]\n  \"1_dx\" [cul_scope_id=1,name=dx,cul_source_scope_id=0,reason=\"implicit import\",inputs=dx_in,label=\"1_dx inputs: dx_in\"]\n  \"1_dampener\" [cul_scope_id=1,name=dampener,cul_source_scope_id=0,reason=\"implicit import\",inputs=dampener_in,label=\"1_dampener inputs: dampener_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"t_in,dx_in\",label=\"1_x inputs: t_in,dx_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"t_in,dampener_in\",label=\"1_y inputs: t_in,dampener_in\"]\n  \"1_dy\" [cul_scope_id=1,name=dy,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"t_in,dampener_in\",label=\"1_dy inputs: t_in,dampener_in\"]\n  \"1_t_\" [cul_scope_id=1,name=t_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=t_in,label=\"1_t_ inputs: t_in\"]\n  \"1_t_in\" [cul_scope_id=1,name=t_in,cul_source_scope_id=1,reason=\"input definition\",inputs=t_in,label=\"1_t_in inputs: t_in\"]\n  \"1_dx_\" [cul_scope_id=1,name=dx_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=dx_in,label=\"1_dx_ inputs: dx_in\"]\n  \"1_dx_in\" [cul_scope_id=1,name=dx_in,cul_source_scope_id=1,reason=\"input definition\",inputs=dx_in,label=\"1_dx_in inputs: dx_in\"]\n  \"1_dampener_\" [cul_scope_id=1,name=dampener_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=dampener_in,label=\"1_dampener_ inputs: dampener_in\"]\n  \"1_dampener_in\" [cul_scope_id=1,name=dampener_in,cul_source_scope_id=1,reason=\"input definition\",inputs=dampener_in,label=\"1_dampener_in inputs: dampener_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"t_in,dx_in\",label=\"1_x_ inputs: t_in,dx_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"t_in,dampener_in\",label=\"1_y_ inputs: t_in,dampener_in\"]\n  \"1_dy_\" [cul_scope_id=1,name=dy_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"t_in,dampener_in\",label=\"1_dy_ inputs: t_in,dampener_in\"]\n  \"1_t_\" -> \"0_t$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_dx_\" -> \"0_dx$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_dampener_\" -> \"0_dampener$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_dy_\" -> \"0_dy$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_t$\" -> \"0_t\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_dx$\" -> \"0_dx\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_dampener$\" -> \"0_dampener\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_dy$\" -> \"0_dy\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_t\" -> \"1_t\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_dx\" -> \"1_dx\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_dampener\" -> \"1_dampener\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_dy\" -> \"1_dy\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_t_in\" -> \"1_t_\" [value=\"[object Object]\",label=\"input +t_in\"]\n  \"1_dx_in\" -> \"1_dx_\" [value=\"[object Object]\",label=\"input +dx_in\"]\n  \"1_dampener_in\" -> \"1_dampener_\" [value=\"[object Object]\",label=\"input +dampener_in\"]\n  \"1_t\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -t_in\"]\n  \"1_dx\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_t\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -t_in\"]\n  \"1_dy\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_t\" -> \"1_dy_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_dy_\" [value=\"[object Object]\",label=\"call -t_in\"]\n  \"1_dy\" -> \"1_dy_\" [value=\"[object Object]\",label=\"call -t_in\"]\n  \"1_dampener\" -> \"1_dy_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

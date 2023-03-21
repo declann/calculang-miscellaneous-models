@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:bounce": "cul-js compile --memo ./models/bounce/bounce.cul.js",
     "build:pensions-calculator": "cul-js compile --memo ./models/pensions/pensions-calculator.cul.js",
     "build:monte-carlo-pi": "cul-js compile --memo ./models/pi/monte-carlo-pi.cul.js",
     "build:nilakantha-series-bignumber": "cul-js compile ./models/pi/nilakantha-series-bignumber.cul.js",
