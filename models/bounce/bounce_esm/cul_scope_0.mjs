@@ -3,7 +3,7 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { t_ as t$, dx_ as dx$, dampener_ as dampener$, x_ as x$, y_ as y$, dy_ as dy$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+import { t_ as t$, dx_ as dx$, dampener_ as dampener$, x_ as x$, y_ as y$, dy_ as dy$, compressed_ as compressed$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
 
 
 
@@ -76,3 +76,15 @@ export const dy = (a) => {
   dy$({ t_in, dampener_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end dy memo-loader code //////////
+
+
+
+////////// start compressed memo-loader code //////////
+//const compressed$m = memoize(999999, isEqual)(compressed$);
+export const compressed$m = memoize(compressed$, JSON.stringify);
+export const compressed = (a) => {
+  return compressed$m(a);
+  // eslint-disable-next-line no-undef
+  compressed$({ t_in, dampener_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end compressed memo-loader code //////////

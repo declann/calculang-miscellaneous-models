@@ -21,14 +21,16 @@ export const x = () => {
 // calculang determines y function dependent on inputs t_in, dampener_in
 export const y = () => {
   if (t() == 0) return 50;
-  else if (y({ t_in: t() - 1 }) + dy() > 185) return 190; // "floor rule"
-  else return y({ t_in: t() - 1 }) + dy();
+  else if (y({ t_in: t() - 1 }) + dy({ t_in: t() - 1 }) > 185) return 190; // "floor rule"
+  else return y({ t_in: t() - 1 }) + dy({ t_in: t() - 1 }); // chk timing
 };
 
 // calculang determines dy function dependent on inputs t_in, dampener_in
 export const dy = () => {
-  if (t() == 0) return 0;
-  else if (y({ t_in: t() - 1 }) + dy({ t_in: t() - 1 }) * dampener() + 3 > 185)
-    return -dy({ t_in: t() - 1 }); // bounce at the floor by negating dy
+  if (t() == 0) return 0 * dampener() + 3;
+  else if (y({ t_in: t() }) > 185) return -dy({ t_in: t() - 1 }); // bounce at the floor by negating dy
   else return dy({ t_in: t() - 1 }) * dampener() + 3;
-};
+}; // if expressions vs statements would really help make this more concise
+
+// ball gets compressed on the ground before bouncing upwards
+export const compressed = () => (y() == 190 ? true : false);
