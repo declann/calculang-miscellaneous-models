@@ -14,7 +14,7 @@ export const dampener_ = ({ dampener_in }) => dampener_in;
 
 // calculang determines x function dependent on inputs t_in, dx_in
 export const x_ = ({ t_in, dx_in }) => {
-  if (t({ t_in }) == 0) return 0;else
+  if (t({ t_in }) == 0) return 100 + dx({ dx_in });else
   return x({ dx_in, t_in: t({ t_in }) - 1 }) + dx({ dx_in });
 };
 

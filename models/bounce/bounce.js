@@ -545,7 +545,7 @@ const dampener_ = ({ dampener_in }) => dampener_in;
 
 // calculang determines x function dependent on inputs t_in, dx_in
 const x_ = ({ t_in, dx_in }) => {
-  if (Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) == 0) return 0;else
+  if (Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) == 0) return 100 + Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["dx"])({ dx_in });else
   return Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ dx_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }) + Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["dx"])({ dx_in });
 };
 
