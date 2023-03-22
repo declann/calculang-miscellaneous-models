@@ -9,6 +9,9 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:bounce-nomemo": "cul-js compile ./models/bounce/bounce-nomemo.cul.js",
+    "babel:bounce-nomemo": "babel --retain-lines --source-maps --presets=@babel/preset-env ./models/bounce/bounce-nomemo_esm/cul_scope_0.mjs --out-file ./models/bounce/bounce-nomemo_esm/cul_scope_0-babeled.js",
+    "webpack:bounce-nomemo": "cd ./models/bounce/bounce-nomemo_esm && webpack",
     "build:bounce": "cul-js compile --memo ./models/bounce/bounce.cul.js",
     "build:pensions-calculator": "cul-js compile --memo ./models/pensions/pensions-calculator.cul.js",
     "build:monte-carlo-pi": "cul-js compile --memo ./models/pi/monte-carlo-pi.cul.js",

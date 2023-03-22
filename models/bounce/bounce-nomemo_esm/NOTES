@@ -1,0 +1,5 @@
+
+1. cul compile nomemo
+2. babel script in package.json
+3. fondue the -babeled.js  => -babeled-fondued.js; this is the webpack entrypoint for umd module webpack script in package.json
+4. webpack script in package.json
