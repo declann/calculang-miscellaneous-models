@@ -1,0 +1,493 @@
+[
+  {
+    path: 'script1',
+    start: { line: 17, column: 6 },
+    end: { line: 17, column: 23 },
+    id: 'script1-callsite-17-6-17-23',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 17, column: 6 },
+    nameEnd: { line: 17, column: 7 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 7, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 6, name: 't' },
+    nameEnd_before_cul: { source: 'bounce-nomemo.cul.js', line: 16, column: 7, name: null },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 16, column: 6, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 17, column: 43 },
+    end: { line: 17, column: 63 },
+    id: 'script1-callsite-17-43-17-63',
+    type: 'callsite',
+    name: 'dx',
+    nameStart: { line: 17, column: 43 },
+    nameEnd: { line: 17, column: 45 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 39, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 37, name: 'dx' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 16,
+      column: 31,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 16,
+      column: 29,
+      name: 'dx'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 33 },
+    end: { line: 18, column: 50 },
+    id: 'script1-callsite-18-33-18-50',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 18, column: 33 },
+    nameEnd: { line: 18, column: 34 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 27, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 26, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 17,
+      column: 25,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 17, column: 24, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 9 },
+    end: { line: 18, column: 57 },
+    id: 'script1-callsite-18-9-18-57',
+    type: 'callsite',
+    name: 'x',
+    nameStart: { line: 18, column: 9 },
+    nameEnd: { line: 18, column: 10 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 10, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 9, name: 'x' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 17,
+      column: 15,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 17, column: 14, name: 'x' }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 60 },
+    end: { line: 18, column: 80 },
+    id: 'script1-callsite-18-60-18-80',
+    type: 'callsite',
+    name: 'dx',
+    nameStart: { line: 18, column: 60 },
+    nameEnd: { line: 18, column: 62 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 49, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 47, name: 'dx' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 17,
+      column: 39,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 17,
+      column: 37,
+      name: 'dx'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 23, column: 6 },
+    end: { line: 23, column: 23 },
+    id: 'script1-callsite-23-6-23-23',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 23, column: 6 },
+    nameEnd: { line: 23, column: 7 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 22, column: 7, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 22, column: 6, name: 't' },
+    nameEnd_before_cul: { source: 'bounce-nomemo.cul.js', line: 22, column: 7, name: null },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 22, column: 6, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 24, column: 42 },
+    end: { line: 24, column: 59 },
+    id: 'script1-callsite-24-42-24-59',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 24, column: 42 },
+    nameEnd: { line: 24, column: 43 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 30, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 29, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 23,
+      column: 22,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 23, column: 21, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 24, column: 6 },
+    end: { line: 24, column: 66 },
+    id: 'script1-callsite-24-6-24-66',
+    type: 'callsite',
+    name: 'y',
+    nameStart: { line: 24, column: 6 },
+    nameEnd: { line: 24, column: 7 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 7, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 6, name: 'y' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 23,
+      column: 12,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 23, column: 11, name: 'y' }
+  },
+  {
+    path: 'script1',
+    start: { line: 24, column: 106 },
+    end: { line: 24, column: 123 },
+    id: 'script1-callsite-24-106-24-123',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 24, column: 106 },
+    nameEnd: { line: 24, column: 107 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 75, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 74, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 23,
+      column: 46,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 23, column: 45, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 24, column: 69 },
+    end: { line: 24, column: 130 },
+    id: 'script1-callsite-24-69-24-130',
+    type: 'callsite',
+    name: 'dy',
+    nameStart: { line: 24, column: 69 },
+    nameEnd: { line: 24, column: 71 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 52, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 23, column: 50, name: 'dy' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 23,
+      column: 36,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 23,
+      column: 34,
+      name: 'dy'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 25, column: 50 },
+    end: { line: 25, column: 67 },
+    id: 'script1-callsite-25-50-25-67',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 25, column: 50 },
+    nameEnd: { line: 25, column: 51 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 38, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 37, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 24,
+      column: 25,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 24, column: 24, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 25, column: 14 },
+    end: { line: 25, column: 74 },
+    id: 'script1-callsite-25-14-25-74',
+    type: 'callsite',
+    name: 'y',
+    nameStart: { line: 25, column: 14 },
+    nameEnd: { line: 25, column: 15 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 15, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 14, name: 'y' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 24,
+      column: 15,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 24, column: 14, name: 'y' }
+  },
+  {
+    path: 'script1',
+    start: { line: 25, column: 114 },
+    end: { line: 25, column: 131 },
+    id: 'script1-callsite-25-114-25-131',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 25, column: 114 },
+    nameEnd: { line: 25, column: 115 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 83, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 82, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 24,
+      column: 49,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 24, column: 48, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 25, column: 77 },
+    end: { line: 25, column: 138 },
+    id: 'script1-callsite-25-77-25-138',
+    type: 'callsite',
+    name: 'dy',
+    nameStart: { line: 25, column: 77 },
+    nameEnd: { line: 25, column: 79 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 60, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 24, column: 58, name: 'dy' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 24,
+      column: 39,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 24,
+      column: 37,
+      name: 'dy'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 30, column: 6 },
+    end: { line: 30, column: 23 },
+    id: 'script1-callsite-30-6-30-23',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 30, column: 6 },
+    nameEnd: { line: 30, column: 7 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 29, column: 7, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 29, column: 6, name: 't' },
+    nameEnd_before_cul: { source: 'bounce-nomemo.cul.js', line: 29, column: 7, name: null },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 29, column: 6, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 30, column: 41 },
+    end: { line: 30, column: 79 },
+    id: 'script1-callsite-30-41-30-79',
+    type: 'callsite',
+    name: 'dampener',
+    nameStart: { line: 30, column: 41 },
+    nameEnd: { line: 30, column: 49 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 29, column: 43, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 29,
+      column: 35,
+      name: 'dampener'
+    },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 29,
+      column: 35,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 29,
+      column: 27,
+      name: 'dampener'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 31, column: 42 },
+    end: { line: 31, column: 59 },
+    id: 'script1-callsite-31-42-31-59',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 31, column: 42 },
+    nameEnd: { line: 31, column: 43 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 30, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 29, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 30,
+      column: 22,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 30, column: 21, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 31, column: 6 },
+    end: { line: 31, column: 62 },
+    id: 'script1-callsite-31-6-31-62',
+    type: 'callsite',
+    name: 'y',
+    nameStart: { line: 31, column: 6 },
+    nameEnd: { line: 31, column: 7 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 7, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 6, name: 'y' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 30,
+      column: 12,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 30, column: 11, name: 'y' }
+  },
+  {
+    path: 'script1',
+    start: { line: 31, column: 115 },
+    end: { line: 31, column: 132 },
+    id: 'script1-callsite-31-115-31-132',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 31, column: 115 },
+    nameEnd: { line: 31, column: 116 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 84, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 83, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 30,
+      column: 55,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 30, column: 54, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 31, column: 78 },
+    end: { line: 31, column: 139 },
+    id: 'script1-callsite-31-78-31-139',
+    type: 'callsite',
+    name: 'dy',
+    nameStart: { line: 31, column: 78 },
+    nameEnd: { line: 31, column: 80 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 61, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 30, column: 59, name: 'dy' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 30,
+      column: 45,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 30,
+      column: 43,
+      name: 'dy'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 32, column: 51 },
+    end: { line: 32, column: 68 },
+    id: 'script1-callsite-32-51-32-68',
+    type: 'callsite',
+    name: 't',
+    nameStart: { line: 32, column: 51 },
+    nameEnd: { line: 32, column: 52 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 31, column: 39, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 31, column: 38, name: 't' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 31,
+      column: 26,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 31, column: 25, name: 't' }
+  },
+  {
+    path: 'script1',
+    start: { line: 32, column: 14 },
+    end: { line: 32, column: 75 },
+    id: 'script1-callsite-32-14-32-75',
+    type: 'callsite',
+    name: 'dy',
+    nameStart: { line: 32, column: 14 },
+    nameEnd: { line: 32, column: 16 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 31, column: 16, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 31, column: 14, name: 'dy' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 31,
+      column: 16,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 31,
+      column: 14,
+      name: 'dy'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 32, column: 78 },
+    end: { line: 32, column: 116 },
+    id: 'script1-callsite-32-78-32-116',
+    type: 'callsite',
+    name: 'dampener',
+    nameStart: { line: 32, column: 78 },
+    nameEnd: { line: 32, column: 86 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 31, column: 67, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 31,
+      column: 59,
+      name: 'dampener'
+    },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 31,
+      column: 46,
+      name: null
+    },
+    nameStart_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 31,
+      column: 38,
+      name: 'dampener'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 36, column: 122 },
+    end: { line: 36, column: 165 },
+    id: 'script1-callsite-36-122-36-165',
+    type: 'callsite',
+    name: 'y',
+    nameStart: { line: 36, column: 122 },
+    nameEnd: { line: 36, column: 123 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 35, column: 54, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 35, column: 53, name: 'y' },
+    nameEnd_before_cul: {
+      source: 'bounce-nomemo.cul.js',
+      line: 35,
+      column: 34,
+      name: null
+    },
+    nameStart_before_cul: { source: 'bounce-nomemo.cul.js', line: 35, column: 33, name: 'y' }
+  }
+]
