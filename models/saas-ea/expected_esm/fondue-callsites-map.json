@@ -1,0 +1,348 @@
+[
+  {
+    path: 'script1',
+    start: { line: 10, column: 4 },
+    end: { line: 10, column: 30 },
+    id: 'script1-callsite-10-4-10-30',
+    type: 'callsite',
+    name: 'year',
+    nameStart: { line: 10, column: 4 },
+    nameEnd: { line: 10, column: 8 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 4, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 0, name: 'year' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 9, column: 6, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 9, column: 2, name: 'year' }
+  },
+  {
+    path: 'script1',
+    start: { line: 10, column: 153 },
+    end: { line: 10, column: 179 },
+    id: 'script1-callsite-10-153-10-179',
+    type: 'callsite',
+    name: 'year',
+    nameStart: { line: 10, column: 153 },
+    nameEnd: { line: 10, column: 157 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 96, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 92, name: 'year' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 9, column: 39, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 9, column: 35, name: 'year' }
+  },
+  {
+    path: 'script1',
+    start: { line: 10, column: 41 },
+    end: { line: 10, column: 186 },
+    id: 'script1-callsite-10-41-10-186',
+    type: 'callsite',
+    name: 'subs',
+    nameStart: { line: 10, column: 41 },
+    nameEnd: { line: 10, column: 45 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 32, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 28, name: 'subs' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 9, column: 23, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 9, column: 19, name: 'subs' }
+  },
+  {
+    path: 'script1',
+    start: { line: 10, column: 190 },
+    end: { line: 10, column: 246 },
+    id: 'script1-callsite-10-190-10-246',
+    type: 'callsite',
+    name: 'subs_growth_pc',
+    nameStart: { line: 10, column: 190 },
+    nameEnd: { line: 10, column: 204 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 9, column: 134, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 9,
+      column: 120,
+      name: 'subs_growth_pc'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 9, column: 66, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 9,
+      column: 52,
+      name: 'subs_growth_pc'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 13, column: 117 },
+    end: { line: 13, column: 143 },
+    id: 'script1-callsite-13-117-13-143',
+    type: 'callsite',
+    name: 'year',
+    nameStart: { line: 13, column: 117 },
+    nameEnd: { line: 13, column: 121 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 69, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 65, name: 'year' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 12, column: 24, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 12, column: 20, name: 'year' }
+  },
+  {
+    path: 'script1',
+    start: { line: 13, column: 5 },
+    end: { line: 13, column: 150 },
+    id: 'script1-callsite-13-5-13-150',
+    type: 'callsite',
+    name: 'subs',
+    nameStart: { line: 13, column: 5 },
+    nameEnd: { line: 13, column: 9 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 5, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 1, name: 'subs' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 12, column: 8, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 12, column: 4, name: 'subs' }
+  },
+  {
+    path: 'script1',
+    start: { line: 13, column: 153 },
+    end: { line: 13, column: 279 },
+    id: 'script1-callsite-13-153-13-279',
+    type: 'callsite',
+    name: 'subs_new',
+    nameStart: { line: 13, column: 153 },
+    nameEnd: { line: 13, column: 161 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 100, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 12,
+      column: 92,
+      name: 'subs_new'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 12, column: 44, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 12,
+      column: 36,
+      name: 'subs_new'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 13, column: 283 },
+    end: { line: 13, column: 336 },
+    id: 'script1-callsite-13-283-13-336',
+    type: 'callsite',
+    name: 'subs_churn_pc',
+    nameStart: { line: 13, column: 283 },
+    nameEnd: { line: 13, column: 296 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 12, column: 178, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 12,
+      column: 165,
+      name: 'subs_churn_pc'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 12, column: 63, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 12,
+      column: 50,
+      name: 'subs_churn_pc'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 17, column: 6 },
+    end: { line: 17, column: 32 },
+    id: 'script1-callsite-17-6-17-32',
+    type: 'callsite',
+    name: 'year',
+    nameStart: { line: 17, column: 6 },
+    nameEnd: { line: 17, column: 10 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 10, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 6, name: 'year' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 16, column: 10, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 16, column: 6, name: 'year' }
+  },
+  {
+    path: 'script1',
+    start: { line: 17, column: 45 },
+    end: { line: 17, column: 77 },
+    id: 'script1-callsite-17-45-17-77',
+    type: 'callsite',
+    name: 'subs_0',
+    nameStart: { line: 17, column: 45 },
+    nameEnd: { line: 17, column: 51 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 42, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 16, column: 36, name: 'subs_0' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 16, column: 31, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 16, column: 25, name: 'subs_0' }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 121 },
+    end: { line: 18, column: 147 },
+    id: 'script1-callsite-18-121-18-147',
+    type: 'callsite',
+    name: 'year',
+    nameStart: { line: 18, column: 121 },
+    nameEnd: { line: 18, column: 125 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 77, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 73, name: 'year' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 17, column: 34, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 17, column: 30, name: 'year' }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 9 },
+    end: { line: 18, column: 154 },
+    id: 'script1-callsite-18-9-18-154',
+    type: 'callsite',
+    name: 'subs',
+    nameStart: { line: 18, column: 9 },
+    nameEnd: { line: 18, column: 13 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 13, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 9, name: 'subs' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 17, column: 18, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 17, column: 14, name: 'subs' }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 157 },
+    end: { line: 18, column: 283 },
+    id: 'script1-callsite-18-157-18-283',
+    type: 'callsite',
+    name: 'subs_new',
+    nameStart: { line: 18, column: 157 },
+    nameEnd: { line: 18, column: 165 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 108, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 17,
+      column: 100,
+      name: 'subs_new'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 17, column: 54, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 17,
+      column: 46,
+      name: 'subs_new'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 18, column: 286 },
+    end: { line: 18, column: 416 },
+    id: 'script1-callsite-18-286-18-416',
+    type: 'callsite',
+    name: 'subs_churned',
+    nameStart: { line: 18, column: 286 },
+    nameEnd: { line: 18, column: 298 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 17, column: 184, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 17,
+      column: 172,
+      name: 'subs_churned'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 17, column: 71, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 17,
+      column: 59,
+      name: 'subs_churned'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 21, column: 212 },
+    end: { line: 21, column: 338 },
+    id: 'script1-callsite-21-212-21-338',
+    type: 'callsite',
+    name: 'subs_new',
+    nameStart: { line: 21, column: 212 },
+    nameEnd: { line: 21, column: 220 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 20, column: 105, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 20,
+      column: 97,
+      name: 'subs_new'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 20, column: 38, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 20,
+      column: 30,
+      name: 'subs_new'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 21, column: 341 },
+    end: { line: 21, column: 364 },
+    id: 'script1-callsite-21-341-21-364',
+    type: 'callsite',
+    name: 'CAC',
+    nameStart: { line: 21, column: 341 },
+    nameEnd: { line: 21, column: 344 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 20, column: 172, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 20, column: 169, name: 'CAC' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 20, column: 46, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 20, column: 43, name: 'CAC' }
+  },
+  {
+    path: 'script1',
+    start: { line: 22, column: 221 },
+    end: { line: 22, column: 343 },
+    id: 'script1-callsite-22-221-22-343',
+    type: 'callsite',
+    name: 'subs',
+    nameStart: { line: 22, column: 221 },
+    nameEnd: { line: 22, column: 225 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 21, column: 92, name: null },
+    nameStart_before_babel: { source: 'cul_scope_0.mjs', line: 21, column: 88, name: 'subs' },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 21, column: 33, name: null },
+    nameStart_before_cul: { source: 'expected.cul.js', line: 21, column: 29, name: 'subs' }
+  },
+  {
+    path: 'script1',
+    start: { line: 23, column: 214 },
+    end: { line: 23, column: 339 },
+    id: 'script1-callsite-23-214-23-339',
+    type: 'callsite',
+    name: 'revenue',
+    nameStart: { line: 23, column: 214 },
+    nameEnd: { line: 23, column: 221 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 22, column: 102, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 22,
+      column: 95,
+      name: 'revenue'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 22, column: 35, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 22,
+      column: 28,
+      name: 'revenue'
+    }
+  },
+  {
+    path: 'script1',
+    start: { line: 23, column: 342 },
+    end: { line: 23, column: 484 },
+    id: 'script1-callsite-23-342-23-484',
+    type: 'callsite',
+    name: 'expenses',
+    nameStart: { line: 23, column: 342 },
+    nameEnd: { line: 23, column: 350 },
+    nameEnd_before_babel: { source: 'cul_scope_0.mjs', line: 22, column: 174, name: null },
+    nameStart_before_babel: {
+      source: 'cul_scope_0.mjs',
+      line: 22,
+      column: 166,
+      name: 'expenses'
+    },
+    nameEnd_before_cul: { source: 'expected.cul.js', line: 22, column: 48, name: null },
+    nameStart_before_cul: {
+      source: 'expected.cul.js',
+      line: 22,
+      column: 40,
+      name: 'expenses'
+    }
+  }
+]

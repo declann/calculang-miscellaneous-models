@@ -25,8 +25,8 @@ const nodes_before_babel = __tracer.nodes().filter(d => d.type == 'callsite' && 
 ////////////////////////////
 
 let map_cul_raw = await fs.readFile('./cul_scope_0.mjs.map');
-let map_cul = JSON.parse(map_babel_raw);
-const consumer_cul = await new sourceMap.SourceMapConsumer(map_babel);
+let map_cul = JSON.parse(map_cul_raw);
+const consumer_cul = await new sourceMap.SourceMapConsumer(map_cul);
 
 const nodes_before_cul = nodes_before_babel.map(d => ({
   ...d,
