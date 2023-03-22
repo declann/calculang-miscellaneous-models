@@ -2,16 +2,17 @@
 //const fs = require('fs');
 import * as fs from 'node:fs/promises';
 import * as sourceMap from 'source-map';
+import * as path from 'path';
 
 //const sourceMap = require('source-map');
 
 //let nodes = require('./cul_scope_0-babeled-fondued.js').__tracer.nodes();
 
 //import {__tracer} from './cul_scope_0-babeled-fondued.js'
-const i = await import('./cul_scope_0-babeled-fondued.js')//.__tracer;
+const i = await import(path.join(process.cwd(), 'cul_scope_0-babeled-fondued.js'))//.__tracer;
 const __tracer = i.default.__tracer;
 
-let map_babel_raw = await fs.readFile('./cul_scope_0-babeled.js.map');
+let map_babel_raw = await fs.readFile(path.join(process.cwd(), 'cul_scope_0-babeled.js.map'));
 let map_babel = JSON.parse(map_babel_raw);
 const consumer_babel = await new sourceMap.SourceMapConsumer(map_babel);
 
