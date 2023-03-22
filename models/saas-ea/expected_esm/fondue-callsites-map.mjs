@@ -7,7 +7,9 @@ import * as sourceMap from 'source-map';
 
 //let nodes = require('./cul_scope_0-babeled-fondued.js').__tracer.nodes();
 
-import {__tracer} from './cul_scope_0-babeled-fondued.js'
+//import {__tracer} from './cul_scope_0-babeled-fondued.js'
+const i = await import('./cul_scope_0-babeled-fondued.js')//.__tracer;
+const __tracer = i.default.__tracer;
 
 let map_babel_raw = await fs.readFile('./cul_scope_0-babeled.js.map');
 let map_babel = JSON.parse(map_babel_raw);
