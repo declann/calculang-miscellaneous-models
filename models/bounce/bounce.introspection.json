@@ -299,14 +299,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 9,
+          "line": 8,
           "column": 17,
-          "index": 433
+          "index": 329
         },
         "end": {
-          "line": 9,
+          "line": 8,
           "column": 27,
-          "index": 443
+          "index": 339
         }
       },
       "inputs": [
@@ -329,14 +329,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 10,
+          "line": 9,
           "column": 18,
-          "index": 463
+          "index": 359
         },
         "end": {
-          "line": 10,
+          "line": 9,
           "column": 29,
-          "index": 474
+          "index": 370
         }
       },
       "inputs": [
@@ -359,14 +359,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 11,
+          "line": 10,
           "column": 24,
-          "index": 500
+          "index": 396
         },
         "end": {
-          "line": 11,
+          "line": 10,
           "column": 41,
-          "index": 517
+          "index": 413
         }
       },
       "inputs": [
@@ -389,14 +389,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 16,
+          "line": 15,
           "column": 17,
-          "index": 619
+          "index": 515
         },
         "end": {
-          "line": 19,
+          "line": 18,
           "column": 1,
-          "index": 706
+          "index": 602
         }
       },
       "inputs": [
@@ -411,14 +411,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 22,
+          "line": 21,
           "column": 17,
-          "index": 799
+          "index": 695
         },
         "end": {
-          "line": 26,
+          "line": 25,
           "column": 1,
-          "index": 1000
+          "index": 882
         }
       },
       "inputs": [
@@ -433,14 +433,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 29,
+          "line": 28,
           "column": 18,
-          "index": 1095
+          "index": 977
         },
         "end": {
-          "line": 33,
+          "line": 32,
           "column": 1,
-          "index": 1305
+          "index": 1187
         }
       },
       "inputs": [
@@ -455,14 +455,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 36,
+          "line": 35,
           "column": 26,
-          "index": 1469
+          "index": 1351
         },
         "end": {
-          "line": 36,
+          "line": 35,
           "column": 59,
-          "index": 1502
+          "index": 1384
         }
       },
       "inputs": [

@@ -529,10 +529,9 @@ function has(obj, key) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return dy_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return compressed_; });
 /* harmony import */ var _bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4);
- // at time 0 (when t_in=0) values for x and dy are 0, while value for y is 50 (values hardcoded below).
-// the floor is at y=190 so the ball will start falling until it reaches 190, and then bounce.
+ // the floor is at y=190 so the ball will start falling until it reaches 190, and then bounce.
 // dy calculates the change to y in each time step (except where the "floor rule" bites).
-// dy is 3 at t_in=1 and is influenced by a dampener input
+// dy is 3 at t_in=0 and is influenced by a dampener input
 
 /////////// model ///////////
 
@@ -553,7 +552,7 @@ const x_ = ({ t_in, dx_in }) => {
 const y_ = ({ t_in, dampener_in }) => {
   if (Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) == 0) return 50;else
   if (Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }) + Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["dy"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }) > 185) return 190; // "floor rule"
-  else return Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }) + Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["dy"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }); // chk timing
+  else return Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["y"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 }) + Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["dy"])({ dampener_in, t_in: Object(_bounce_cul_js__WEBPACK_IMPORTED_MODULE_0__["t"])({ t_in }) - 1 });
 };
 
 // calculang determines dy function dependent on inputs t_in, dampener_in
