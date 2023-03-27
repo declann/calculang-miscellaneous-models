@@ -1,0 +1,78 @@
+{
+    "json": {
+        "type": "NeuralNetwork",
+        "sizes": [
+            2,
+            3,
+            1
+        ],
+        "layers": [
+            {
+                "weights": [],
+                "biases": []
+            },
+            {
+                "weights": [
+                    [
+                        -5.988633632659912,
+                        -5.968584060668945
+                    ],
+                    [
+                        -3.1702933311462402,
+                        -3.4785501956939697
+                    ],
+                    [
+                        -1.856601357460022,
+                        -1.284184217453003
+                    ]
+                ],
+                "biases": [
+                    2.241621255874634,
+                    4.789311408996582,
+                    1.7653114795684814
+                ]
+            },
+            {
+                "weights": [
+                    [
+                        -8.397997856140137,
+                        6.283421039581299,
+                        2.6879982948303223
+                    ]
+                ],
+                "biases": [
+                    -3.7264750003814697
+                ]
+            }
+        ],
+        "inputLookup": null,
+        "inputLookupLength": 0,
+        "outputLookup": null,
+        "outputLookupLength": 0,
+        "options": {
+            "inputSize": 0,
+            "outputSize": 0,
+            "binaryThresh": 0.5,
+            "hiddenLayers": [
+                3
+            ],
+            "activation": "sigmoid"
+        },
+        "trainOpts": {
+            "activation": "sigmoid",
+            "iterations": 20000,
+            "errorThresh": 0.005,
+            "log": false,
+            "logPeriod": 10,
+            "leakyReluAlpha": 0.01,
+            "learningRate": 0.3,
+            "momentum": 0.1,
+            "callbackPeriod": 10,
+            "timeout": "Infinity",
+            "beta1": 0.9,
+            "beta2": 0.999,
+            "epsilon": 1e-8
+        }
+    },
+    "function": "function anonymous(input\n) {\nreturn [1/(1+1/Math.exp((-3.7264750003814697-8.397997856140137*1/(1+1/Math.exp((2.241621255874634-5.988633632659912*(input[0]||0)-5.968584060668945*(input[1]||0))))+6.283421039581299*1/(1+1/Math.exp((4.789311408996582-3.1702933311462402*(input[0]||0)-3.4785501956939697*(input[1]||0))))+2.6879982948303223*1/(1+1/Math.exp((1.7653114795684814-1.856601357460022*(input[0]||0)-1.284184217453003*(input[1]||0)))))))];\n}"
+}
