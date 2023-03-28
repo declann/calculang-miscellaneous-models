@@ -9,6 +9,8 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:from-brain-mnist": "cul-js compile ./models/neural-net/from-brain-mnist.cul.js",
+    "use:from-brain-mnist": "node models/neural-net/use-from-brain-mnist.js",
     "build:from-brain-xor": "cul-js compile ./models/neural-net/from-brain-xor.cul.js",
     "use:from-brain-xor": "node models/neural-net/use-from-brain-xor.js",
     "fondue_callsites:bounce-nomemo": "cd ./models/bounce/bounce-nomemo_esm && node ../../saas-ea/expected_esm/fondue-callsites-map.mjs > fondue-callsites-map.json",
