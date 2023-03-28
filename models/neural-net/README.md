@@ -14,3 +14,9 @@ Wrapping TensorFlow.js or other AI libraries is a smarter idea, but what value c
 # mnist example TO document
 
 w. ref to JohnDoesStuff
+
+# convnet examples
+
+TODO e.g. https://cs.stanford.edu/people/karpathy/convnetjs/demo/mnist.html
+
+see "save network snapshot as JSON" button - but I'll need to understand training of this also.
