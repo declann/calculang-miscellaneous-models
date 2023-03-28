@@ -4494,38 +4494,45 @@ const layer_size = ({ layer_in }) => _from_brain_xor_json__WEBPACK_IMPORTED_MODU
 const w = ({ layer_in, id_in, prev_id_in }) => {
   // layer, id, prev id
   if (layer({ layer_in }) == 0) {
-    console.error("layer_in should be > 0");
+    return 1;
+    /*console.error("layer_in should be > 0");
     console.trace();
-    return;
+    debugger;
+    return;*/
   }
   return _from_brain_xor_json__WEBPACK_IMPORTED_MODULE_0__.json.layers[layer({ layer_in })].weights[id({ id_in })][prev_id({ prev_id_in })];
 };
 
 const b = ({ layer_in, id_in }) => {
   if (layer({ layer_in }) == 0) {
-    console.error("layer_in should be > 0");
+    return 0;
+    /*console.error("layer_in should be > 0");
     console.trace();
-    return;
+    debugger;
+    return;*/
   }
-  return _from_brain_xor_json__WEBPACK_IMPORTED_MODULE_0__.json.layers[layer({ layer_in }).biases[id({ id_in })]];
+  return _from_brain_xor_json__WEBPACK_IMPORTED_MODULE_0__.json.layers[layer({ layer_in })].biases[id({ id_in })];
 };
 
-const weighted_sum = ({ layer_in, input_in, id_in, x_in }) => {
-  return Math.reduce(
-  underscore__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].range(0, layer_size({ layer_in: layer({ layer_in }) - 1 })).reduce(
-  (prev_id_in) =>
-  n({ input_in, id_in, x_in, layer_in: layer({ layer_in }) - 1 }) * w({ id_in, prev_id_in, layer_in: layer({ layer_in }) - 1 })));
-
+const weighted_sum = ({ layer_in, input_in, id_in }) => {
+  return underscore__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"].range(0, layer_size({ layer_in: layer({ layer_in }) - 1 })).reduce(
+  (acc, prev_id_in) =>
+  acc + n({ input_in, layer_in: layer({ layer_in }) - 1, id_in: prev_id({ prev_id_in }) /* !! */ }) * w({ layer_in, id_in, prev_id_in }),
+  0);
 
 };
 
 const x = ({ x_in }) => x_in;
 
-const activation = ({ x_in }) => 1 / (1 + Math.pow(Math.E, -1 * x({ x_in })));
+const activation = ({ x_in }) => {
+  //console.log(x(), JSON.stringify(arguments));
+  return 1 / (1 + Math.pow(Math.E, -1 * x({ x_in })));
+};
 
-const n = ({ layer_in, input_in, id_in, x_in }) => {
-  if (layer({ layer_in }) == 0) return input({ input_in })[id({ id_in })];else
-  return activation({ x_in: weighted_sum({ layer_in, input_in, id_in, x_in }) + b({ layer_in, id_in }) });
+const n = ({ layer_in, input_in, id_in }) => {
+  if (layer({ layer_in }) == 0) return input({ input_in })[id({ id_in })];
+  //else return activation({ x_in: weighted_sum() + b() }); // calculang not picking up summarisation of x
+  else return 1 / (1 + Math.pow(Math.E, -1 * (weighted_sum({ layer_in, input_in, id_in }) + b({ layer_in, id_in }))));
 };
 
 /***/ }),

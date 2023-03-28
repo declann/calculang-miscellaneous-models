@@ -10,6 +10,7 @@
   },
   "scripts": {
     "build:from-brain-xor": "cul-js compile ./models/neural-net/from-brain-xor.cul.js",
+    "use:from-brain-xor": "node models/neural-net/use-from-brain-xor.js",
     "fondue_callsites:bounce-nomemo": "cd ./models/bounce/bounce-nomemo_esm && node ../../saas-ea/expected_esm/fondue-callsites-map.mjs > fondue-callsites-map.json",
     "build:bounce-nomemo": "cul-js compile ./models/bounce/bounce-nomemo.cul.js",
     "babel:bounce-nomemo": "babel --retain-lines --source-maps --presets=@babel/preset-env ./models/bounce/bounce-nomemo_esm/cul_scope_0.mjs --out-file ./models/bounce/bounce-nomemo_esm/cul_scope_0-babeled.js",
