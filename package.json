@@ -9,7 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
-    "build:simple-climate": "cul-js compile --memo ./models/simple-climate/simple-climate.cul.js",
+    "build:climate-simple": "cul-js compile --memo ./models/climate-simple/climate-simple.cul.js",
     "build:from-brain-mnist": "cul-js compile ./models/neural-net/from-brain-mnist.cul.js",
     "use:from-brain-mnist": "node models/neural-net/use-from-brain-mnist.js",
     "build:from-brain-xor": "cul-js compile ./models/neural-net/from-brain-xor.cul.js",

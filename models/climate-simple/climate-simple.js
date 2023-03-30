@@ -228,7 +228,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "temperature_delta$m", function() { return temperature_delta$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "temperature_delta", function() { return temperature_delta; });
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
-/* harmony import */ var _simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var _climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
 
 
 //import memoize from 'lru-memoize';
@@ -240,11 +240,11 @@ __webpack_require__.r(__webpack_exports__);
 
 ////////// start emissions_rate memo-loader code //////////
 //const emissions_rate$m = memoize(999999, isEqual)(emissions_rate$);
-const emissions_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* emissions_rate_ */ "h"], JSON.stringify);
+const emissions_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* emissions_rate_ */ "h"], JSON.stringify);
 const emissions_rate = (a) => {
   return emissions_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* emissions_rate_ */ "h"])({ emissions_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* emissions_rate_ */ "h"])({ emissions_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end emissions_rate memo-loader code //////////
 
@@ -252,11 +252,11 @@ const emissions_rate = (a) => {
 
 ////////// start year_0 memo-loader code //////////
 //const year_0$m = memoize(999999, isEqual)(year_0$);
-const year_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_0_ */ "n"], JSON.stringify);
+const year_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_0_ */ "n"], JSON.stringify);
 const year_0 = (a) => {
   return year_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_0_ */ "n"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_0_ */ "n"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end year_0 memo-loader code //////////
 
@@ -264,11 +264,11 @@ const year_0 = (a) => {
 
 ////////// start temperature_0 memo-loader code //////////
 //const temperature_0$m = memoize(999999, isEqual)(temperature_0$);
-const temperature_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_0_ */ "k"], JSON.stringify);
+const temperature_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_0_ */ "k"], JSON.stringify);
 const temperature_0 = (a) => {
   return temperature_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_0_ */ "k"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_0_ */ "k"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end temperature_0 memo-loader code //////////
 
@@ -276,11 +276,11 @@ const temperature_0 = (a) => {
 
 ////////// start CO2_concentration_0 memo-loader code //////////
 //const CO2_concentration_0$m = memoize(999999, isEqual)(CO2_concentration_0$);
-const CO2_concentration_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_0_ */ "b"], JSON.stringify);
+const CO2_concentration_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_0_ */ "b"], JSON.stringify);
 const CO2_concentration_0 = (a) => {
   return CO2_concentration_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_0_ */ "b"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_0_ */ "b"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end CO2_concentration_0 memo-loader code //////////
 
@@ -288,11 +288,11 @@ const CO2_concentration_0 = (a) => {
 
 ////////// start climate_change_sensitivity memo-loader code //////////
 //const climate_change_sensitivity$m = memoize(999999, isEqual)(climate_change_sensitivity$);
-const climate_change_sensitivity$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* climate_change_sensitivity_ */ "e"], JSON.stringify);
+const climate_change_sensitivity$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* climate_change_sensitivity_ */ "e"], JSON.stringify);
 const climate_change_sensitivity = (a) => {
   return climate_change_sensitivity$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* climate_change_sensitivity_ */ "e"])({ climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* climate_change_sensitivity_ */ "e"])({ climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end climate_change_sensitivity memo-loader code //////////
 
@@ -300,11 +300,11 @@ const climate_change_sensitivity = (a) => {
 
 ////////// start year memo-loader code //////////
 //const year$m = memoize(999999, isEqual)(year$);
-const year$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_ */ "m"], JSON.stringify);
+const year$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_ */ "m"], JSON.stringify);
 const year = (a) => {
   return year$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_ */ "m"])({ year_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* year_ */ "m"])({ year_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end year memo-loader code //////////
 
@@ -312,11 +312,11 @@ const year = (a) => {
 
 ////////// start absorption memo-loader code //////////
 //const absorption$m = memoize(999999, isEqual)(absorption$);
-const absorption$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* absorption_ */ "d"], JSON.stringify);
+const absorption$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* absorption_ */ "d"], JSON.stringify);
 const absorption = (a) => {
   return absorption$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* absorption_ */ "d"])({ emissions_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* absorption_ */ "d"])({ emissions_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end absorption memo-loader code //////////
 
@@ -324,11 +324,11 @@ const absorption = (a) => {
 
 ////////// start drawdown memo-loader code //////////
 //const drawdown$m = memoize(999999, isEqual)(drawdown$);
-const drawdown$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* drawdown_ */ "g"], JSON.stringify);
+const drawdown$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* drawdown_ */ "g"], JSON.stringify);
 const drawdown = (a) => {
   return drawdown$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* drawdown_ */ "g"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* drawdown_ */ "g"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end drawdown memo-loader code //////////
 
@@ -336,11 +336,11 @@ const drawdown = (a) => {
 
 ////////// start CO2_concentration memo-loader code //////////
 //const CO2_concentration$m = memoize(999999, isEqual)(CO2_concentration$);
-const CO2_concentration$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_ */ "a"], JSON.stringify);
+const CO2_concentration$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_ */ "a"], JSON.stringify);
 const CO2_concentration = (a) => {
   return CO2_concentration$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_ */ "a"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_ */ "a"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end CO2_concentration memo-loader code //////////
 
@@ -348,11 +348,11 @@ const CO2_concentration = (a) => {
 
 ////////// start net_carbon memo-loader code //////////
 //const net_carbon$m = memoize(999999, isEqual)(net_carbon$);
-const net_carbon$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* net_carbon_ */ "i"], JSON.stringify);
+const net_carbon$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* net_carbon_ */ "i"], JSON.stringify);
 const net_carbon = (a) => {
   return net_carbon$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* net_carbon_ */ "i"])({ emissions_rate_in, year_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* net_carbon_ */ "i"])({ emissions_rate_in, year_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end net_carbon memo-loader code //////////
 
@@ -360,11 +360,11 @@ const net_carbon = (a) => {
 
 ////////// start CO2_concentration_delta memo-loader code //////////
 //const CO2_concentration_delta$m = memoize(999999, isEqual)(CO2_concentration_delta$);
-const CO2_concentration_delta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_delta_ */ "c"], JSON.stringify);
+const CO2_concentration_delta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_delta_ */ "c"], JSON.stringify);
 const CO2_concentration_delta = (a) => {
   return CO2_concentration_delta$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_delta_ */ "c"])({ emissions_rate_in, year_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* CO2_concentration_delta_ */ "c"])({ emissions_rate_in, year_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end CO2_concentration_delta memo-loader code //////////
 
@@ -372,11 +372,11 @@ const CO2_concentration_delta = (a) => {
 
 ////////// start temperature memo-loader code //////////
 //const temperature$m = memoize(999999, isEqual)(temperature$);
-const temperature$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_ */ "j"], JSON.stringify);
+const temperature$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_ */ "j"], JSON.stringify);
 const temperature = (a) => {
   return temperature$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_ */ "j"])({ year_in, emissions_rate_in, climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_ */ "j"])({ year_in, emissions_rate_in, climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end temperature memo-loader code //////////
 
@@ -384,11 +384,11 @@ const temperature = (a) => {
 
 ////////// start concentration_factor memo-loader code //////////
 //const concentration_factor$m = memoize(999999, isEqual)(concentration_factor$);
-const concentration_factor$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* concentration_factor_ */ "f"], JSON.stringify);
+const concentration_factor$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* concentration_factor_ */ "f"], JSON.stringify);
 const concentration_factor = (a) => {
   return concentration_factor$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* concentration_factor_ */ "f"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* concentration_factor_ */ "f"])({ year_in, emissions_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end concentration_factor memo-loader code //////////
 
@@ -396,11 +396,11 @@ const concentration_factor = (a) => {
 
 ////////// start temperature_delta memo-loader code //////////
 //const temperature_delta$m = memoize(999999, isEqual)(temperature_delta$);
-const temperature_delta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_delta_ */ "l"], JSON.stringify);
+const temperature_delta$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_delta_ */ "l"], JSON.stringify);
 const temperature_delta = (a) => {
   return temperature_delta$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_climate_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_delta_ */ "l"])({ year_in, emissions_rate_in, climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
+  Object(_climate_simple_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* temperature_delta_ */ "l"])({ year_in, emissions_rate_in, climate_change_sensitivity_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end temperature_delta memo-loader code //////////
 
@@ -475,7 +475,7 @@ function tagTester(name) {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return temperature_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return concentration_factor_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return temperature_delta_; });
-/* harmony import */ var _simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 
 // minimise wip: just plan this on paper for now
 
@@ -492,30 +492,30 @@ const climate_change_sensitivity_ = ({ climate_change_sensitivity_in }) => clima
 
 const year_ = ({ year_in }) => year_in;
 
-const absorption_ = ({ emissions_rate_in }) => Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["emissions_rate"])({ emissions_rate_in }) * 0.55;
+const absorption_ = ({ emissions_rate_in }) => Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["emissions_rate"])({ emissions_rate_in }) * 0.55;
 
-const drawdown_ = ({ year_in, emissions_rate_in }) => 0.005 * Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in });
+const drawdown_ = ({ year_in, emissions_rate_in }) => 0.005 * Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in });
 
 const CO2_concentration_ = ({ year_in, emissions_rate_in }) => {
-  if (Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["year"])({ year_in }) == Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["year_0"])({})) return Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({});else
+  if (Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["year"])({ year_in }) == Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["year_0"])({})) return Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({});else
 
   return (
-    Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ emissions_rate_in, year_in: Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["year"])({ year_in }) - 1 }) + Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_delta"])({ emissions_rate_in, year_in }));
+    Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ emissions_rate_in, year_in: Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["year"])({ year_in }) - 1 }) + Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_delta"])({ emissions_rate_in, year_in }));
 
 };
 
-const net_carbon_ = ({ emissions_rate_in, year_in }) => Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["emissions_rate"])({ emissions_rate_in }) - Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["absorption"])({ emissions_rate_in }) - Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["drawdown"])({ year_in, emissions_rate_in }); // can be negative because of drawdown
+const net_carbon_ = ({ emissions_rate_in, year_in }) => Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["emissions_rate"])({ emissions_rate_in }) - Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["absorption"])({ emissions_rate_in }) - Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["drawdown"])({ year_in, emissions_rate_in }); // can be negative because of drawdown
 
-const CO2_concentration_delta_ = ({ emissions_rate_in, year_in }) => Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["net_carbon"])({ emissions_rate_in, year_in }) * 0.000001; // TODO put a real value here?
+const CO2_concentration_delta_ = ({ emissions_rate_in, year_in }) => Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["net_carbon"])({ emissions_rate_in, year_in }) * 0.000001; // TODO put a real value here?
 
 const temperature_ = ({ year_in, emissions_rate_in, climate_change_sensitivity_in }) =>
-Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["temperature_0"])({}) + (Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["concentration_factor"])({ year_in, emissions_rate_in }) - 1) * Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["climate_change_sensitivity"])({ climate_change_sensitivity_in });
+Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["temperature_0"])({}) + (Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["concentration_factor"])({ year_in, emissions_rate_in }) - 1) * Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["climate_change_sensitivity"])({ climate_change_sensitivity_in });
 
 const concentration_factor_ = ({ year_in, emissions_rate_in }) =>
-Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in }) / Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({});
+Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in }) / Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({});
 
 const temperature_delta_ = ({ year_in, emissions_rate_in, climate_change_sensitivity_in }) =>
-Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in }) / Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({}) * Object(_simple_climate_cul_js__WEBPACK_IMPORTED_MODULE_0__["climate_change_sensitivity"])({ climate_change_sensitivity_in });
+Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration"])({ year_in, emissions_rate_in }) / Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["CO2_concentration_0"])({}) * Object(_climate_simple_cul_js__WEBPACK_IMPORTED_MODULE_0__["climate_change_sensitivity"])({ climate_change_sensitivity_in });
 
 /***/ }),
 /* 6 */
@@ -4755,4 +4755,4 @@ module.exports = g;
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=simple-climate.js.map
+//# sourceMappingURL=climate-simple.js.map

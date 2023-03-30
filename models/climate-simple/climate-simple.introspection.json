@@ -1258,11 +1258,11 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./simple-climate.cul.js",
-    "1": "./simple-climate.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+    "0": "./climate-simple.cul.js",
+    "1": "./climate-simple.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
   "import_sources_to_resource": {
-    "0_./simple-climate.cul.js?+memoed": "./simple-climate.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+    "0_./climate-simple.cul.js?+memoed": "./climate-simple.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
   "cul_input_map": {
     "0_emissions_rate$": [

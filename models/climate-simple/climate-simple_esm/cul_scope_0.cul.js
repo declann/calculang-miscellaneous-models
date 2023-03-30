@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { emissions_rate_ as emissions_rate$, year_0_ as year_0$, temperature_0_ as temperature_0$, CO2_concentration_0_ as CO2_concentration_0$, climate_change_sensitivity_ as climate_change_sensitivity$, year_ as year$, absorption_ as absorption$, drawdown_ as drawdown$, CO2_concentration_ as CO2_concentration$, net_carbon_ as net_carbon$, CO2_concentration_delta_ as CO2_concentration_delta$, temperature_ as temperature$, concentration_factor_ as concentration_factor$, temperature_delta_ as temperature_delta$ } from './simple-climate.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { emissions_rate_ as emissions_rate$, year_0_ as year_0$, temperature_0_ as temperature_0$, CO2_concentration_0_ as CO2_concentration_0$, climate_change_sensitivity_ as climate_change_sensitivity$, year_ as year$, absorption_ as absorption$, drawdown_ as drawdown$, CO2_concentration_ as CO2_concentration$, net_carbon_ as net_carbon$, CO2_concentration_delta_ as CO2_concentration_delta$, temperature_ as temperature$, concentration_factor_ as concentration_factor$, temperature_delta_ as temperature_delta$ } from './climate-simple.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
