@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:fibinacci": "cul-js compile --memo ./models/fibinacci/fibinacci.cul.js",
     "build:climate-simple": "cul-js compile --memo ./models/climate-simple/climate-simple.cul.js",
     "build:from-brain-mnist": "cul-js compile ./models/neural-net/from-brain-mnist.cul.js",
     "use:from-brain-mnist": "node models/neural-net/use-from-brain-mnist.js",

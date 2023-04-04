@@ -1,0 +1,251 @@
+{
+  "cul_functions": {
+    "0_n$": {
+      "cul_scope_id": 0,
+      "name": "n$",
+      "imported": "n_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "0_fib$": {
+      "cul_scope_id": 0,
+      "name": "fib$",
+      "imported": "fib_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "0_n": {
+      "cul_scope_id": 0,
+      "name": "n",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17,
+          "index": 627
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 757
+        }
+      },
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "0_fib": {
+      "cul_scope_id": 0,
+      "name": "fib",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 19,
+          "index": 975
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1109
+        }
+      },
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "1_n": {
+      "cul_scope_id": 1,
+      "name": "n",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "1_fib": {
+      "cul_scope_id": 1,
+      "name": "fib",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "1_n_": {
+      "cul_scope_id": 1,
+      "name": "n_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 17,
+          "index": 17
+        },
+        "end": {
+          "line": 1,
+          "column": 27,
+          "index": 27
+        }
+      },
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "1_n_in": {
+      "cul_scope_id": 1,
+      "name": "n_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "n_in"
+      ]
+    },
+    "1_fib_": {
+      "cul_scope_id": 1,
+      "name": "fib_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 19,
+          "index": 49
+        },
+        "end": {
+          "line": 6,
+          "column": 1,
+          "index": 159
+        }
+      },
+      "inputs": [
+        "n_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_n$",
+      "from": "1_n_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_fib$",
+      "from": "1_fib_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_n",
+      "from": "0_n$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_fib",
+      "from": "0_fib$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_n",
+      "from": "0_n",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_fib",
+      "from": "0_fib",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_n_",
+      "from": "1_n_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_n",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_n",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_fib",
+      "reason": "call",
+      "negs": [
+        "n_in"
+      ]
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_n",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_fib",
+      "reason": "call",
+      "negs": [
+        "n_in"
+      ]
+    },
+    {
+      "to": "1_fib_",
+      "from": "1_n",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./fibinacci.cul.js",
+    "1": "./fibinacci.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./fibinacci.cul.js?+memoed": "./fibinacci.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_n$": [
+      "n_in"
+    ],
+    "0_fib$": [
+      "n_in"
+    ],
+    "0_n": [
+      "n_in"
+    ],
+    "0_fib": [
+      "n_in"
+    ],
+    "1_n": [
+      "n_in"
+    ],
+    "1_fib": [
+      "n_in"
+    ],
+    "1_n_": [
+      "n_in"
+    ],
+    "1_n_in": [
+      "n_in"
+    ],
+    "1_fib_": [
+      "n_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_n$\" [cul_scope_id=0,name=\"n$\",imported=n_,cul_source_scope_id=1,reason=\"explicit import\",inputs=n_in,label=\"0_n$ inputs: n_in\"]\n  \"0_fib$\" [cul_scope_id=0,name=\"fib$\",imported=fib_,cul_source_scope_id=1,reason=\"explicit import\",inputs=n_in,label=\"0_fib$ inputs: n_in\"]\n  \"0_n\" [cul_scope_id=0,name=n,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=n_in,label=\"0_n inputs: n_in\"]\n  \"0_fib\" [cul_scope_id=0,name=fib,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=n_in,label=\"0_fib inputs: n_in\"]\n  \"1_n\" [cul_scope_id=1,name=n,cul_source_scope_id=0,reason=\"implicit import\",inputs=n_in,label=\"1_n inputs: n_in\"]\n  \"1_fib\" [cul_scope_id=1,name=fib,cul_source_scope_id=0,reason=\"implicit import\",inputs=n_in,label=\"1_fib inputs: n_in\"]\n  \"1_n_\" [cul_scope_id=1,name=n_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=n_in,label=\"1_n_ inputs: n_in\"]\n  \"1_n_in\" [cul_scope_id=1,name=n_in,cul_source_scope_id=1,reason=\"input definition\",inputs=n_in,label=\"1_n_in inputs: n_in\"]\n  \"1_fib_\" [cul_scope_id=1,name=fib_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=n_in,label=\"1_fib_ inputs: n_in\"]\n  \"1_n_\" -> \"0_n$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_fib_\" -> \"0_fib$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_n$\" -> \"0_n\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fib$\" -> \"0_fib\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_n\" -> \"1_n\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_fib\" -> \"1_fib\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_n_in\" -> \"1_n_\" [value=\"[object Object]\",label=\"input +n_in\"]\n  \"1_n\" -> \"1_fib_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_fib\" -> \"1_fib_\" [value=\"[object Object]\",label=\"call -n_in\"]\n}\n"
+}
