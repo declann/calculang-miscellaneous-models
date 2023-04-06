@@ -42,3 +42,5 @@ export const salary_inflation_rate_ = ({ age_in }) => [0.02, 0.01, 0.01][age({ a
 export const empee_contribution_rate_ = ({ age_in }) => [0.1, 0.1, 0.08][age({ age_in }) - age_0({})];
 export const unit_growth_rate_ = ({ age_in }) => [0.06, 0.04, 0.04][age({ age_in }) - age_0({})];
 export const fund_value_0_ = ({}) => 0;
+
+// NOTE: actual.cul.js is not a complete model now (no import of calculator.cul.js)

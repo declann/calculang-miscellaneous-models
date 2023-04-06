@@ -36,6 +36,7 @@ export {
   age_0,
   retirement_age,
   annual_salary_0,
+  fund_value_0
 };
 
 export const age_opening = () => age_opening_in;

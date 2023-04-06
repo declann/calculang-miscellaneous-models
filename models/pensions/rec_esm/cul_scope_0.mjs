@@ -12,7 +12,7 @@ age,
 age_0_ as age_0,
 retirement_age_ as retirement_age,
 annual_salary_0_ as annual_salary_0,
-salary_inflation_rate_ as salary_inflation_rate_projected,
+salary_inflation_rate_ as salary_inflation_rate_projected, // how come I didn't put _ here and it worked?
 empee_contribution_rate_ as empee_contribution_rate_projected,
 unit_growth_rate_ as unit_growth_rate_projected,
 fund_value_0_ as fund_value_0 } from
@@ -35,7 +35,8 @@ projected_fund_value,
 age,
 age_0,
 retirement_age,
-annual_salary_0 };
+annual_salary_0,
+fund_value_0 };
 
 
 export const age_opening = ({ age_opening_in }) => age_opening_in;
