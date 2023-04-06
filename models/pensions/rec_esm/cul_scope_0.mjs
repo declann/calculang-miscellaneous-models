@@ -65,13 +65,13 @@ export const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age
   return salary_inflation_rate_actual({ age_in });
 };
 
-export const empee_contribution_rateactual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+export const empee_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
   if (rec_step({ rec_step_in }) >= 2) return age_opening({ age_opening_in });else
   return age_closing({ age_closing_in });
 };
 
-export const empee_contribution_rate = ({ age_in }) => {
-  if (age({ age_in }) > empee_contribution_rate_actual_co())
+export const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
+  if (age({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return empee_contribution_rate_projected({});else
   return empee_contribution_rate_actual({ age_in });
 };

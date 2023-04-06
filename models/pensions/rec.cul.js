@@ -65,7 +65,7 @@ export const salary_inflation_rate = () => {
   else return salary_inflation_rate_actual();
 };
 
-export const empee_contribution_rateactual_co = () => {
+export const empee_contribution_rate_actual_co = () => {
   if (rec_step() >= 2) return age_opening();
   else return age_closing();
 };

@@ -1,4 +1,4 @@
-import { unit_growth_rate } from "./cul_scope_0.mjs";import { unit_growth_rate_actual_co } from "./cul_scope_0.mjs";import { empee_contribution_rate } from "./cul_scope_0.mjs";import { empee_contribution_rateactual_co } from "./cul_scope_0.mjs";import { salary_inflation_rate } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual_co } from "./cul_scope_0.mjs";import { rec_step } from "./cul_scope_0.mjs";import { age_closing } from "./cul_scope_0.mjs";import { age_opening } from "./cul_scope_0.mjs";import { unit_growth_rate_actual } from "./cul_scope_0.mjs";import { empee_contribution_rate_actual } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual } from "./cul_scope_0.mjs";export const age = ({ age_in }) => age_in;
+import { unit_growth_rate } from "./cul_scope_0.mjs";import { unit_growth_rate_actual_co } from "./cul_scope_0.mjs";import { empee_contribution_rate } from "./cul_scope_0.mjs";import { empee_contribution_rate_actual_co } from "./cul_scope_0.mjs";import { salary_inflation_rate } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual_co } from "./cul_scope_0.mjs";import { rec_step } from "./cul_scope_0.mjs";import { age_closing } from "./cul_scope_0.mjs";import { age_opening } from "./cul_scope_0.mjs";import { unit_growth_rate_actual } from "./cul_scope_0.mjs";import { empee_contribution_rate_actual } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual } from "./cul_scope_0.mjs";export const age = ({ age_in }) => age_in;
 export const age_0 = ({}) => 20;
 export const retirement_age = ({}) => 65;
 export const annual_salary_0 = ({}) => 30000;
@@ -31,7 +31,7 @@ export const unit_price = ({ age_in, rec_step_in, age_opening_in, age_closing_in
 
 export const annual_premium = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (age({ age_in }) <= age_0({}) - 1 || age({ age_in }) == retirement_age({})) return 0;else
-  return annual_salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ age_in });
+  return annual_salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ age_in, rec_step_in, age_opening_in, age_closing_in });
 };
 
 // at end of year

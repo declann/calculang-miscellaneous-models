@@ -148,7 +148,7 @@ const unit_price = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => 
 
 const annual_premium = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (age({ age_in }) <= age_0({}) - 1 || age({ age_in }) == retirement_age({})) return 0;else
-  return annual_salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * Object(_rec_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ age_in });
+  return annual_salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * Object(_rec_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_closing_in });
 };
 
 // at end of year
@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rec_step", function() { return rec_step; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate_actual_co", function() { return salary_inflation_rate_actual_co; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate", function() { return salary_inflation_rate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rateactual_co", function() { return empee_contribution_rateactual_co; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rate_actual_co", function() { return empee_contribution_rate_actual_co; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rate", function() { return empee_contribution_rate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_growth_rate_actual_co", function() { return unit_growth_rate_actual_co; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_growth_rate", function() { return unit_growth_rate; });
@@ -247,13 +247,13 @@ const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closin
   return salary_inflation_rate_actual({ age_in });
 };
 
-const empee_contribution_rateactual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+const empee_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
   if (rec_step({ rec_step_in }) >= 2) return age_opening({ age_opening_in });else
   return age_closing({ age_closing_in });
 };
 
-const empee_contribution_rate = ({ age_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) > empee_contribution_rate_actual_co())
+const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* empee_contribution_rate_ */ "f"])({});else
   return empee_contribution_rate_actual({ age_in });
 };
