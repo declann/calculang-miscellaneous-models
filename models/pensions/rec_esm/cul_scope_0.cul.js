@@ -25,7 +25,7 @@ import {
 } from "./actual.cul";*/
 
 
-export const salary_inflation_rate_actual = () => [0.02, 0.01, 0.01][age() - age_0()];
+export const salary_inflation_rate_actual = () => [0.019, 0.01, 0.01][age() - age_0()];
 export const empee_contribution_rate_actual = () => [0.1, 0.1, 0.08][age() - age_0()];
 export const unit_growth_rate_actual = () => [0.06, 0.04, 0.04][age() - age_0()];
 
