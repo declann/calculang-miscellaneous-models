@@ -18,11 +18,16 @@ import {
   fund_value_0,
 } from "./projected.cul";
 
-import {
+/*import {
   salary_inflation_rate as salary_inflation_rate_actual,
   empee_contribution_rate as empee_contribution_rate_actual,
   unit_growth_rate as unit_growth_rate_actual,
-} from "./actual.cul";
+} from "./actual.cul";*/
+
+
+export const salary_inflation_rate_actual = () => [0.02, 0.01, 0.01][age() - age_0()];
+export const empee_contribution_rate_actual = () => [0.1, 0.1, 0.08][age() - age_0()];
+export const unit_growth_rate_actual = () => [0.06, 0.04, 0.04][age() - age_0()];
 
 export {
   fund_value,
@@ -37,9 +42,9 @@ export {
   retirement_age,
   annual_salary_0,
   fund_value_0,
-  salary_inflation_rate_actual,
-  empee_contribution_rate_actual,
-  unit_growth_rate_actual,
+  //salary_inflation_rate_actual,
+  //empee_contribution_rate_actual,
+  //unit_growth_rate_actual,
   salary_inflation_rate_projected,
   empee_contribution_rate_projected,
   unit_growth_rate_projected

@@ -9,20 +9,25 @@ annual_premium,
 annual_salary,
 projected_fund_value,
 age,
-age_0_ as age_0,
-retirement_age_ as retirement_age,
-annual_salary_0_ as annual_salary_0,
+age_0,
+retirement_age,
+annual_salary_0,
 salary_inflation_rate_ as salary_inflation_rate_projected, // how come I didn't put _ here and it worked?
 empee_contribution_rate_ as empee_contribution_rate_projected,
 unit_growth_rate_ as unit_growth_rate_projected,
-fund_value_0_ as fund_value_0 } from
+fund_value_0 } from
 "./cul_scope_1.mjs";
 
-import {
-salary_inflation_rate_ as salary_inflation_rate_actual,
-empee_contribution_rate_ as empee_contribution_rate_actual,
-unit_growth_rate_ as unit_growth_rate_actual } from
-"./cul_scope_2.mjs";
+/*import {
+  salary_inflation_rate as salary_inflation_rate_actual,
+  empee_contribution_rate as empee_contribution_rate_actual,
+  unit_growth_rate as unit_growth_rate_actual,
+} from "./actual.cul";*/
+
+
+export const salary_inflation_rate_actual = ({ age_in }) => [0.02, 0.01, 0.01][age({ age_in }) - age_0({})];
+export const empee_contribution_rate_actual = ({ age_in }) => [0.1, 0.1, 0.08][age({ age_in }) - age_0({})];
+export const unit_growth_rate_actual = ({ age_in }) => [0.06, 0.04, 0.04][age({ age_in }) - age_0({})];
 
 export {
 fund_value,
@@ -37,9 +42,9 @@ age_0,
 retirement_age,
 annual_salary_0,
 fund_value_0,
-salary_inflation_rate_actual,
-empee_contribution_rate_actual,
-unit_growth_rate_actual,
+//salary_inflation_rate_actual,
+//empee_contribution_rate_actual,
+//unit_growth_rate_actual,
 salary_inflation_rate_projected,
 empee_contribution_rate_projected,
 unit_growth_rate_projected };
