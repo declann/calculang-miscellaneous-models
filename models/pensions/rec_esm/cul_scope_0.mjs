@@ -59,12 +59,33 @@ export const salary_inflation_rate_actual_co = ({ rec_step_in, age_opening_in, a
   return age_closing({ age_closing_in });
 };
 
-// logic on age op/closing, age, rec step
 export const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (age({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return salary_inflation_rate_projected({});else
   return salary_inflation_rate_actual({ age_in });
 };
 
-export const empee_contribution_rate = ({}) => empee_contribution_rate_projected({});
-export const unit_growth_rate = ({}) => unit_growth_rate_projected({});
+export const empee_contribution_rateactual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 2) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
+};
+
+export const empee_contribution_rate = ({ age_in }) => {
+  if (age({ age_in }) > empee_contribution_rate_actual_co())
+  return empee_contribution_rate_projected({});else
+  return empee_contribution_rate_actual({ age_in });
+};
+
+export const unit_growth_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 3) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
+};
+
+export const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
+  if (age({ age_in }) > unit_growth_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
+  return unit_growth_rate_projected({});else
+  return unit_growth_rate_actual({ age_in });
+};
+
+//export const empee_contribution_rate = () => empee_contribution_rate_projected();
+//export const unit_growth_rate = () => unit_growth_rate_projected();

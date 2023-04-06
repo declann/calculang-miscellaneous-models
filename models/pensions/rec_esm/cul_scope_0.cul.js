@@ -59,12 +59,33 @@ export const salary_inflation_rate_actual_co = () => {
   else return age_closing();
 };
 
-// logic on age op/closing, age, rec step
 export const salary_inflation_rate = () => {
   if (age() > salary_inflation_rate_actual_co())
     return salary_inflation_rate_projected();
   else return salary_inflation_rate_actual();
 };
 
-export const empee_contribution_rate = () => empee_contribution_rate_projected();
-export const unit_growth_rate = () => unit_growth_rate_projected();
+export const empee_contribution_rateactual_co = () => {
+  if (rec_step() >= 2) return age_opening();
+  else return age_closing();
+};
+
+export const empee_contribution_rate = () => {
+  if (age() > empee_contribution_rate_actual_co())
+    return empee_contribution_rate_projected();
+  else return empee_contribution_rate_actual();
+};
+
+export const unit_growth_rate_actual_co = () => {
+  if (rec_step() >= 3) return age_opening();
+  else return age_closing();
+};
+
+export const unit_growth_rate = () => {
+  if (age() > unit_growth_rate_actual_co())
+    return unit_growth_rate_projected();
+  else return unit_growth_rate_actual();
+};
+
+//export const empee_contribution_rate = () => empee_contribution_rate_projected();
+//export const unit_growth_rate = () => unit_growth_rate_projected();
