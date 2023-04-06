@@ -36,7 +36,13 @@ age,
 age_0,
 retirement_age,
 annual_salary_0,
-fund_value_0 };
+fund_value_0,
+salary_inflation_rate_actual,
+empee_contribution_rate_actual,
+unit_growth_rate_actual,
+salary_inflation_rate_projected,
+empee_contribution_rate_projected,
+unit_growth_rate_projected };
 
 
 export const age_opening = ({ age_opening_in }) => age_opening_in;

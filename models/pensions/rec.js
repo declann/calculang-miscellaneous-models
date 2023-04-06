@@ -107,8 +107,8 @@ return /******/ (function(modules) { // webpackBootstrap
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return unit_growth_rate_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return fund_value_0; });
 /* harmony import */ var _rec_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
-/* harmony import */ var _pensions_calculator_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _pensions_calculator_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "i", function() { return _pensions_calculator_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__["d"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "q", function() { return _pensions_calculator_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__["g"]; });
@@ -175,7 +175,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "fund_value_0", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["fund_value_0_"]; });
 
-/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["o"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rate_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["h"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_growth_rate_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["r"]; });
+
+/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate_actual", function() { return _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["b"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rate_actual", function() { return _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["a"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_growth_rate_actual", function() { return _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__["c"]; });
+
 // a reconciliation pattern (automate-able)
 
 
@@ -198,7 +210,7 @@ const salary_inflation_rate_actual_co = ({ rec_step_in, age_opening_in, age_clos
 const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_inflation_rate_ */ "o"])({});else
-  return Object(_actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_inflation_rate_ */ "a"])({ age_in });
+  return Object(_actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_inflation_rate_ */ "b"])({ age_in });
 };
 
 const empee_contribution_rate = ({}) => Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* empee_contribution_rate_ */ "h"])({});
@@ -206,6 +218,67 @@ const unit_growth_rate = ({}) => Object(_projected_cul_cul_scope_id_1_cul_parent
 
 /***/ }),
 /* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* unused harmony export age_0_ */
+/* unused harmony export retirement_age_ */
+/* unused harmony export annual_salary_0_ */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return salary_inflation_rate_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return empee_contribution_rate_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return unit_growth_rate_; });
+/* unused harmony export fund_value_0_ */
+/* harmony import */ var _rec_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+ //import {
+/*fund_value,
+unit_balance,
+unit_allocation,
+unit_price,
+annual_premium,
+annual_salary,
+projected_fund_value,
+age,*/
+/*age_0,
+retirement_age,
+annual_salary_0,
+salary_inflation_rate,
+empee_contribution_rate,
+unit_growth_rate,
+fund_value_0,*/
+//} from "./pensions-calculator.cul";
+//export {
+/*fund_value,
+unit_balance,
+unit_allocation,
+unit_price,
+annual_premium,
+annual_salary,
+projected_fund_value,
+age,*/
+/*age_0,
+retirement_age,
+annual_salary_0,
+salary_inflation_rate,
+empee_contribution_rate,
+unit_growth_rate,
+fund_value_0,*/
+//};
+
+// just reconciling on 3 inputs now: salary_inflation_rate, empee_contribution_rate, unit_growth_rate
+
+const age_0_ = ({}) => 20;
+const retirement_age_ = ({}) => 65;
+const annual_salary_0_ = ({}) => 30000;
+const salary_inflation_rate_ = ({ age_in }) => [0.02, 0.01, 0.01][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
+const empee_contribution_rate_ = ({ age_in }) => [0.1, 0.1, 0.08][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
+const unit_growth_rate_ = ({ age_in }) => [0.06, 0.04, 0.04][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
+const fund_value_0_ = ({}) => 0;
+
+// NOTE: actual.cul.js is not a complete model now (no import of calculator.cul.js)
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -226,7 +299,7 @@ const unit_growth_rate = ({}) => Object(_projected_cul_cul_scope_id_1_cul_parent
 /* unused harmony export fund_value_0_ */
 /* harmony import */ var _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var _rec_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
+/* harmony import */ var _actual_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
  // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
@@ -279,67 +352,6 @@ const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contr
 const unit_growth_rate_ = ({ unit_growth_rate_in }) => unit_growth_rate_in;
 
 const fund_value_0_ = ({ fund_value_0_in }) => fund_value_0_in;
-
-/***/ }),
-/* 3 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export age_0_ */
-/* unused harmony export retirement_age_ */
-/* unused harmony export annual_salary_0_ */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return salary_inflation_rate_; });
-/* unused harmony export empee_contribution_rate_ */
-/* unused harmony export unit_growth_rate_ */
-/* unused harmony export fund_value_0_ */
-/* harmony import */ var _rec_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
- //import {
-/*fund_value,
-unit_balance,
-unit_allocation,
-unit_price,
-annual_premium,
-annual_salary,
-projected_fund_value,
-age,*/
-/*age_0,
-retirement_age,
-annual_salary_0,
-salary_inflation_rate,
-empee_contribution_rate,
-unit_growth_rate,
-fund_value_0,*/
-//} from "./pensions-calculator.cul";
-//export {
-/*fund_value,
-unit_balance,
-unit_allocation,
-unit_price,
-annual_premium,
-annual_salary,
-projected_fund_value,
-age,*/
-/*age_0,
-retirement_age,
-annual_salary_0,
-salary_inflation_rate,
-empee_contribution_rate,
-unit_growth_rate,
-fund_value_0,*/
-//};
-
-// just reconciling on 3 inputs now: salary_inflation_rate, empee_contribution_rate, unit_growth_rate
-
-const age_0_ = ({}) => 20;
-const retirement_age_ = ({}) => 65;
-const annual_salary_0_ = ({}) => 30000;
-const salary_inflation_rate_ = ({ age_in }) => [0.02, 0.01, 0.01][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
-const empee_contribution_rate_ = ({ age_in }) => [0.1, 0.1, 0.08][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
-const unit_growth_rate_ = ({ age_in }) => [0.06, 0.04, 0.04][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age */ "a"])({ age_in }) - Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* age_0 */ "b"])({})];
-const fund_value_0_ = ({}) => 0;
-
-// NOTE: actual.cul.js is not a complete model now (no import of calculator.cul.js)
 
 /***/ })
 /******/ ]);
