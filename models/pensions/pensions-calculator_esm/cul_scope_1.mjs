@@ -5,13 +5,13 @@ import { fund_value_0 } from "./cul_scope_0.mjs";import { unit_growth_rate } fro
 export const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => unit_balance({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) * unit_price({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
 
 export const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
-  if (age({ age_in }) <= age_0({ age_0_in }) - 1) return fund_value_0({ fund_value_0_in }) / unit_price({ age_in, age_0_in, unit_growth_rate_in }); // was caught by stack error because of no lower bound! static analysis!
-  else return unit_balance({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
+  if (age({ age_in }) <= age_0({ age_0_in }) - 1) return fund_value_0({ fund_value_0_in }) / unit_price({ age_in, age_0_in, unit_growth_rate_in });else
+  return unit_balance({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
   // timing = premium received at start of year and allocated immediately
 };
 
-export const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => annual_premium({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) / unit_price({ age_in, age_0_in, unit_growth_rate_in }); // TODO model a contribution charge
-export const unit_price_ = ({ age_in, age_0_in, unit_growth_rate_in }) => {// no b/o spread. Should this part be in terms of age ?
+export const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => annual_premium({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) / unit_price({ age_in, age_0_in, unit_growth_rate_in });
+export const unit_price_ = ({ age_in, age_0_in, unit_growth_rate_in }) => {
   if (age({ age_in }) <= age_0({ age_0_in })) return 1;else
   return unit_price({ age_0_in, unit_growth_rate_in, age_in: age({ age_in }) - 1 }) * (1 + unit_growth_rate({ unit_growth_rate_in }));
 };
@@ -21,18 +21,16 @@ export const annual_premium_ = ({ age_in, age_0_in, retirement_age_in, annual_sa
   return annual_salary({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ empee_contribution_rate_in });
 };
 
-
-export const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {// at end of year
+export const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
+  // at end of year
   if (age({ age_in }) <= age_0({ age_0_in }) - 1) return annual_salary_0({ annual_salary_0_in });else
-  if (age({ age_in }) >= retirement_age({ retirement_age_in }))
-  return 0;else
+  if (age({ age_in }) >= retirement_age({ retirement_age_in })) return 0;else
 
   return annual_salary({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * (1 + salary_inflation_rate({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
 };
 
-
-
-export const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => // at retirement:
+export const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+// at retirement:
 fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: retirement_age({ retirement_age_in }) });
 
 // explicit inputs ::
