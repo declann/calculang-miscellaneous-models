@@ -21,8 +21,8 @@ export const annual_premium = () => {
   else return annual_salary({ age_in: age() - 1 }) * empee_contribution_rate();
 }
 
-// at end of year
-export const annual_salary = () => {
+
+export const annual_salary = () => { // at end of year
   if (age() <= age_0() - 1) return annual_salary_0();
   else if (age() >= retirement_age())
     return 0;
@@ -31,8 +31,8 @@ export const annual_salary = () => {
 };
 
 
-// at retirement:
-export const projected_fund_value = () =>
+
+export const projected_fund_value = () => // at retirement:
   fund_value({ age_in: retirement_age() });
 
 // explicit inputs ::

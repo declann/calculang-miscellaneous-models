@@ -514,8 +514,8 @@ const annual_premium_ = ({ age_in, age_0_in, retirement_age_in, annual_salary_0_
   return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_salary"])({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
 };
 
-// at end of year
-const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
+
+const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {// at end of year
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_salary_0"])({ annual_salary_0_in });else
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) >= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }))
   return 0;else
@@ -524,8 +524,8 @@ const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_i
 };
 
 
-// at retirement:
-const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+
+const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => // at retirement:
 Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }) });
 
 // explicit inputs ::

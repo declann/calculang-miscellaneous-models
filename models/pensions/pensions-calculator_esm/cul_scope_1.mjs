@@ -21,8 +21,8 @@ export const annual_premium_ = ({ age_in, age_0_in, retirement_age_in, annual_sa
   return annual_salary({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ empee_contribution_rate_in });
 };
 
-// at end of year
-export const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
+
+export const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {// at end of year
   if (age({ age_in }) <= age_0({ age_0_in }) - 1) return annual_salary_0({ annual_salary_0_in });else
   if (age({ age_in }) >= retirement_age({ retirement_age_in }))
   return 0;else
@@ -31,8 +31,8 @@ export const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retiremen
 };
 
 
-// at retirement:
-export const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+
+export const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => // at retirement:
 fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: retirement_age({ retirement_age_in }) });
 
 // explicit inputs ::
