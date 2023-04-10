@@ -117,3 +117,5 @@ export const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_
   return fund_value_0_projected({});else
   return fund_value_0_actual({});
 };;
+
+export const rec_order = ['age_0', 'retirement_age', 'salary_0', 'salary_inflation_rate', 'empee_contribution_rate', 'unit_growth_rate', 'fund_value_0'];

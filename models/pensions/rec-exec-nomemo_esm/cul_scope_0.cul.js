@@ -118,4 +118,6 @@ export const fund_value_0 = () => {
   else return fund_value_0_actual();
 };;
 
+export const rec_order = ['age_0','retirement_age','salary_0','salary_inflation_rate','empee_contribution_rate','unit_growth_rate','fund_value_0'];
+
 

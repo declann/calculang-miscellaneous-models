@@ -52,4 +52,6 @@ ${inputs.filter(d => d != 'age_in').map(d => d.slice(0, -3)).map(d => `export co
   else return ${d}_actual();
 };`).join('\n\n')};
 
+export const rec_order = ['${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).join("','")}'];
+
 `)
