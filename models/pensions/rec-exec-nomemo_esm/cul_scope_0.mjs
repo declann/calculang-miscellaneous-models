@@ -4,7 +4,7 @@ import {
 fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, salary, projected_fund_value, age,
 age_0_ as age_0_projected,
 retirement_age_ as retirement_age_projected,
-salary_0 as salary_0_projected,
+salary_0_ as salary_0_projected,
 salary_inflation_rate_ as salary_inflation_rate_projected,
 empee_contribution_rate_ as empee_contribution_rate_projected,
 unit_growth_rate_ as unit_growth_rate_projected,
@@ -90,7 +90,7 @@ export const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_closin
 
 export const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (age({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return salary_0_projected({ age_in, rec_step_in, age_opening_in, age_closing_in });else
+  return salary_0_projected({});else
   return salary_0_actual({ age_in, rec_step_in, age_opening_in, age_closing_in });
 };
 

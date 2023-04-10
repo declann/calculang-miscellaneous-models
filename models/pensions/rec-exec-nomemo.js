@@ -145,7 +145,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "retirement_age_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["h"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary_0_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["salary_0"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary_0_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["j"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate_projected", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["k"]; });
 
@@ -229,7 +229,7 @@ const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_closing_in })
 
 const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in });else
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_0_ */ "j"])({});else
   return salary_0_actual({ age_in, rec_step_in, age_opening_in, age_closing_in });
 };
 
@@ -265,7 +265,7 @@ const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) =
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return age; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return age_0_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return retirement_age_; });
-/* unused harmony export annual_salary_0 */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return salary_0_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return salary_inflation_rate_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return empee_contribution_rate_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return unit_growth_rate_; });
@@ -281,7 +281,7 @@ const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) =
 const age = ({ age_in }) => age_in;
 const age_0_ = ({}) => 20;
 const retirement_age_ = ({}) => 65;
-const annual_salary_0 = ({}) => 30000;
+const salary_0_ = ({}) => 30000;
 const salary_inflation_rate_ = ({}) => 0.02;
 const empee_contribution_rate_ = ({}) => 0.1;
 const unit_growth_rate_ = ({}) => 0.05;

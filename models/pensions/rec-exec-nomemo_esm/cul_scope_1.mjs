@@ -1,7 +1,7 @@
 import { fund_value_0 } from "./cul_scope_0.mjs";import { unit_growth_rate } from "./cul_scope_0.mjs";import { empee_contribution_rate } from "./cul_scope_0.mjs";import { salary_inflation_rate } from "./cul_scope_0.mjs";import { salary_0 } from "./cul_scope_0.mjs";import { retirement_age } from "./cul_scope_0.mjs";import { age_0 } from "./cul_scope_0.mjs";import { fund_value_0_actual_co } from "./cul_scope_0.mjs";import { unit_growth_rate_actual_co } from "./cul_scope_0.mjs";import { empee_contribution_rate_actual_co } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual_co } from "./cul_scope_0.mjs";import { salary_0_actual_co } from "./cul_scope_0.mjs";import { retirement_age_actual_co } from "./cul_scope_0.mjs";import { age_0_actual_co } from "./cul_scope_0.mjs";import { rec_step } from "./cul_scope_0.mjs";import { age_closing } from "./cul_scope_0.mjs";import { age_opening } from "./cul_scope_0.mjs";import { salary_0_actual } from "./cul_scope_0.mjs";import { retirement_age_actual } from "./cul_scope_0.mjs";import { fund_value_0_actual } from "./cul_scope_0.mjs";import { age_0_actual } from "./cul_scope_0.mjs";import { unit_growth_rate_actual } from "./cul_scope_0.mjs";import { empee_contribution_rate_actual } from "./cul_scope_0.mjs";import { salary_inflation_rate_actual } from "./cul_scope_0.mjs";export const age = ({ age_in }) => age_in;
 export const age_0_ = ({}) => 20;
 export const retirement_age_ = ({}) => 65;
-export const annual_salary_0 = ({}) => 30000;
+export const salary_0_ = ({}) => 30000;
 export const salary_inflation_rate_ = ({}) => 0.02;
 export const empee_contribution_rate_ = ({}) => 0.1;
 export const unit_growth_rate_ = ({}) => 0.05;
