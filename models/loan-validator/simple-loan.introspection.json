@@ -1,10 +1,889 @@
 {
   "cul_functions": {
+    "0_v$": {
+      "cul_scope_id": 0,
+      "name": "v$",
+      "imported": "v_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_v_pow_term_left$": {
+      "cul_scope_id": 0,
+      "name": "v_pow_term_left$",
+      "imported": "v_pow_term_left_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_repayment_amount$": {
+      "cul_scope_id": 0,
+      "name": "repayment_amount$",
+      "imported": "repayment_amount_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "0_interest$": {
+      "cul_scope_id": 0,
+      "name": "interest$",
+      "imported": "interest_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_capital_repayment$": {
+      "cul_scope_id": 0,
+      "name": "capital_repayment$",
+      "imported": "capital_repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_interest_repayment$": {
+      "cul_scope_id": 0,
+      "name": "interest_repayment$",
+      "imported": "interest_repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_repayment_due$": {
+      "cul_scope_id": 0,
+      "name": "repayment_due$",
+      "imported": "repayment_due_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "term_in"
+      ]
+    },
+    "0_repayment$": {
+      "cul_scope_id": 0,
+      "name": "repayment$",
+      "imported": "repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_balance$": {
+      "cul_scope_id": 0,
+      "name": "balance$",
+      "imported": "balance_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "0_interest_rate$": {
+      "cul_scope_id": 0,
+      "name": "interest_rate$",
+      "imported": "interest_rate_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_principal$": {
+      "cul_scope_id": 0,
+      "name": "principal$",
+      "imported": "principal_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "principal_in"
+      ]
+    },
+    "0_i$": {
+      "cul_scope_id": 0,
+      "name": "i$",
+      "imported": "i_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_term$": {
+      "cul_scope_id": 0,
+      "name": "term$",
+      "imported": "term_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "term_in"
+      ]
+    },
+    "0_year$": {
+      "cul_scope_id": 0,
+      "name": "year$",
+      "imported": "year_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "0_missed_repayment_year$": {
+      "cul_scope_id": 0,
+      "name": "missed_repayment_year$",
+      "imported": "missed_repayment_year_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "missed_repayment_year_in"
+      ]
+    },
+    "0_skip_interest$": {
+      "cul_scope_id": 0,
+      "name": "skip_interest$",
+      "imported": "skip_interest_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "skip_interest_in"
+      ]
+    },
+    "0_d_i_year$": {
+      "cul_scope_id": 0,
+      "name": "d_i_year$",
+      "imported": "d_i_year_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "d_i_year_in"
+      ]
+    },
+    "0_d_i$": {
+      "cul_scope_id": 0,
+      "name": "d_i$",
+      "imported": "d_i_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "d_i_in"
+      ]
+    },
     "0_v": {
       "cul_scope_id": 0,
       "name": "v",
       "cul_source_scope_id": 0,
       "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17,
+          "index": 1109
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 1239
+        }
+      },
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_v_pow_term_left": {
+      "cul_scope_id": 0,
+      "name": "v_pow_term_left",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 31,
+          "index": 1529
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1687
+        }
+      },
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_repayment_amount": {
+      "cul_scope_id": 0,
+      "name": "repayment_amount",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 32,
+          "index": 1997
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 2157
+        }
+      },
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "0_interest": {
+      "cul_scope_id": 0,
+      "name": "interest",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 24,
+          "index": 2420
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 2564
+        }
+      },
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_capital_repayment": {
+      "cul_scope_id": 0,
+      "name": "capital_repayment",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 33,
+          "index": 2873
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 3035
+        }
+      },
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_interest_repayment": {
+      "cul_scope_id": 0,
+      "name": "interest_repayment",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 34,
+          "index": 3359
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 3523
+        }
+      },
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_repayment_due": {
+      "cul_scope_id": 0,
+      "name": "repayment_due",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 29,
+          "index": 3818
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 3972
+        }
+      },
+      "inputs": [
+        "year_in",
+        "term_in"
+      ]
+    },
+    "0_repayment": {
+      "cul_scope_id": 0,
+      "name": "repayment",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 25,
+          "index": 4238
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 4384
+        }
+      },
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "0_balance": {
+      "cul_scope_id": 0,
+      "name": "balance",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 23,
+          "index": 4634
+        },
+        "end": {
+          "line": 113,
+          "column": 1,
+          "index": 4776
+        }
+      },
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "0_interest_rate": {
+      "cul_scope_id": 0,
+      "name": "interest_rate",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 121,
+          "column": 29,
+          "index": 5060
+        },
+        "end": {
+          "line": 125,
+          "column": 1,
+          "index": 5214
+        }
+      },
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "0_principal": {
+      "cul_scope_id": 0,
+      "name": "principal",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 133,
+          "column": 25,
+          "index": 5480
+        },
+        "end": {
+          "line": 137,
+          "column": 1,
+          "index": 5626
+        }
+      },
+      "inputs": [
+        "principal_in"
+      ]
+    },
+    "0_i": {
+      "cul_scope_id": 0,
+      "name": "i",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 145,
+          "column": 17,
+          "index": 5840
+        },
+        "end": {
+          "line": 149,
+          "column": 1,
+          "index": 5970
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_term": {
+      "cul_scope_id": 0,
+      "name": "term",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 157,
+          "column": 20,
+          "index": 6194
+        },
+        "end": {
+          "line": 161,
+          "column": 1,
+          "index": 6330
+        }
+      },
+      "inputs": [
+        "term_in"
+      ]
+    },
+    "0_year": {
+      "cul_scope_id": 0,
+      "name": "year",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 169,
+          "column": 20,
+          "index": 6557
+        },
+        "end": {
+          "line": 173,
+          "column": 1,
+          "index": 6693
+        }
+      },
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "0_missed_repayment_year": {
+      "cul_scope_id": 0,
+      "name": "missed_repayment_year",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 181,
+          "column": 37,
+          "index": 7022
+        },
+        "end": {
+          "line": 185,
+          "column": 1,
+          "index": 7192
+        }
+      },
+      "inputs": [
+        "missed_repayment_year_in"
+      ]
+    },
+    "0_skip_interest": {
+      "cul_scope_id": 0,
+      "name": "skip_interest",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 193,
+          "column": 29,
+          "index": 7490
+        },
+        "end": {
+          "line": 197,
+          "column": 1,
+          "index": 7644
+        }
+      },
+      "inputs": [
+        "skip_interest_in"
+      ]
+    },
+    "0_d_i_year": {
+      "cul_scope_id": 0,
+      "name": "d_i_year",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 205,
+          "column": 24,
+          "index": 7904
+        },
+        "end": {
+          "line": 209,
+          "column": 1,
+          "index": 8048
+        }
+      },
+      "inputs": [
+        "d_i_year_in"
+      ]
+    },
+    "0_d_i": {
+      "cul_scope_id": 0,
+      "name": "d_i",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 217,
+          "column": 19,
+          "index": 8273
+        },
+        "end": {
+          "line": 221,
+          "column": 1,
+          "index": 8407
+        }
+      },
+      "inputs": [
+        "d_i_in"
+      ]
+    },
+    "1_v": {
+      "cul_scope_id": 1,
+      "name": "v",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "1_v_pow_term_left": {
+      "cul_scope_id": 1,
+      "name": "v_pow_term_left",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "1_repayment_amount": {
+      "cul_scope_id": 1,
+      "name": "repayment_amount",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "1_interest": {
+      "cul_scope_id": 1,
+      "name": "interest",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "1_capital_repayment": {
+      "cul_scope_id": 1,
+      "name": "capital_repayment",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "1_interest_repayment": {
+      "cul_scope_id": 1,
+      "name": "interest_repayment",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "1_repayment_due": {
+      "cul_scope_id": 1,
+      "name": "repayment_due",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "term_in"
+      ]
+    },
+    "1_repayment": {
+      "cul_scope_id": 1,
+      "name": "repayment",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "term_in"
+      ]
+    },
+    "1_balance": {
+      "cul_scope_id": 1,
+      "name": "balance",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "principal_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in",
+        "missed_repayment_year_in",
+        "skip_interest_in",
+        "term_in"
+      ]
+    },
+    "1_interest_rate": {
+      "cul_scope_id": 1,
+      "name": "interest_rate",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in",
+        "d_i_year_in",
+        "i_in",
+        "d_i_in"
+      ]
+    },
+    "1_principal": {
+      "cul_scope_id": 1,
+      "name": "principal",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "principal_in"
+      ]
+    },
+    "1_i": {
+      "cul_scope_id": 1,
+      "name": "i",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "1_term": {
+      "cul_scope_id": 1,
+      "name": "term",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "term_in"
+      ]
+    },
+    "1_year": {
+      "cul_scope_id": 1,
+      "name": "year",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "year_in"
+      ]
+    },
+    "1_missed_repayment_year": {
+      "cul_scope_id": 1,
+      "name": "missed_repayment_year",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "missed_repayment_year_in"
+      ]
+    },
+    "1_skip_interest": {
+      "cul_scope_id": 1,
+      "name": "skip_interest",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "skip_interest_in"
+      ]
+    },
+    "1_d_i_year": {
+      "cul_scope_id": 1,
+      "name": "d_i_year",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "d_i_year_in"
+      ]
+    },
+    "1_d_i": {
+      "cul_scope_id": 1,
+      "name": "d_i",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "d_i_in"
+      ]
+    },
+    "1_v_": {
+      "cul_scope_id": 1,
+      "name": "v_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 1,
@@ -24,11 +903,11 @@
         "d_i_in"
       ]
     },
-    "0_v_pow_term_left": {
-      "cul_scope_id": 0,
-      "name": "v_pow_term_left",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_v_pow_term_left_": {
+      "cul_scope_id": 1,
+      "name": "v_pow_term_left_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 3,
@@ -49,11 +928,11 @@
         "term_in"
       ]
     },
-    "0_repayment_amount": {
-      "cul_scope_id": 0,
-      "name": "repayment_amount",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_repayment_amount_": {
+      "cul_scope_id": 1,
+      "name": "repayment_amount_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 6,
@@ -77,11 +956,11 @@
         "term_in"
       ]
     },
-    "0_interest": {
-      "cul_scope_id": 0,
-      "name": "interest",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_interest_": {
+      "cul_scope_id": 1,
+      "name": "interest_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 19,
@@ -105,11 +984,11 @@
         "d_i_in"
       ]
     },
-    "0_capital_repayment": {
-      "cul_scope_id": 0,
-      "name": "capital_repayment",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_capital_repayment_": {
+      "cul_scope_id": 1,
+      "name": "capital_repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 23,
@@ -133,11 +1012,11 @@
         "term_in"
       ]
     },
-    "0_interest_repayment": {
-      "cul_scope_id": 0,
-      "name": "interest_repayment",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_interest_repayment_": {
+      "cul_scope_id": 1,
+      "name": "interest_repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 26,
@@ -161,11 +1040,11 @@
         "term_in"
       ]
     },
-    "0_repayment_due": {
-      "cul_scope_id": 0,
-      "name": "repayment_due",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_repayment_due_": {
+      "cul_scope_id": 1,
+      "name": "repayment_due_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 29,
@@ -183,11 +1062,11 @@
         "term_in"
       ]
     },
-    "0_repayment": {
-      "cul_scope_id": 0,
-      "name": "repayment",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_repayment_": {
+      "cul_scope_id": 1,
+      "name": "repayment_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 31,
@@ -211,11 +1090,11 @@
         "term_in"
       ]
     },
-    "0_balance": {
-      "cul_scope_id": 0,
-      "name": "balance",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_balance_": {
+      "cul_scope_id": 1,
+      "name": "balance_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 39,
@@ -239,11 +1118,11 @@
         "term_in"
       ]
     },
-    "0_interest_rate": {
-      "cul_scope_id": 0,
-      "name": "interest_rate",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_interest_rate_": {
+      "cul_scope_id": 1,
+      "name": "interest_rate_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 46,
@@ -263,11 +1142,11 @@
         "d_i_in"
       ]
     },
-    "0_principal": {
-      "cul_scope_id": 0,
-      "name": "principal",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_principal_": {
+      "cul_scope_id": 1,
+      "name": "principal_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 49,
@@ -284,20 +1163,20 @@
         "principal_in"
       ]
     },
-    "0_principal_in": {
-      "cul_scope_id": 0,
+    "1_principal_in": {
+      "cul_scope_id": 1,
       "name": "principal_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "principal_in"
       ]
     },
-    "0_i": {
-      "cul_scope_id": 0,
-      "name": "i",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_i_": {
+      "cul_scope_id": 1,
+      "name": "i_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 50,
@@ -314,20 +1193,20 @@
         "i_in"
       ]
     },
-    "0_i_in": {
-      "cul_scope_id": 0,
+    "1_i_in": {
+      "cul_scope_id": 1,
       "name": "i_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "i_in"
       ]
     },
-    "0_term": {
-      "cul_scope_id": 0,
-      "name": "term",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_term_": {
+      "cul_scope_id": 1,
+      "name": "term_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 51,
@@ -344,20 +1223,20 @@
         "term_in"
       ]
     },
-    "0_term_in": {
-      "cul_scope_id": 0,
+    "1_term_in": {
+      "cul_scope_id": 1,
       "name": "term_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "term_in"
       ]
     },
-    "0_year": {
-      "cul_scope_id": 0,
-      "name": "year",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_year_": {
+      "cul_scope_id": 1,
+      "name": "year_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 52,
@@ -374,20 +1253,20 @@
         "year_in"
       ]
     },
-    "0_year_in": {
-      "cul_scope_id": 0,
+    "1_year_in": {
+      "cul_scope_id": 1,
       "name": "year_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "year_in"
       ]
     },
-    "0_missed_repayment_year": {
-      "cul_scope_id": 0,
-      "name": "missed_repayment_year",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_missed_repayment_year_": {
+      "cul_scope_id": 1,
+      "name": "missed_repayment_year_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 55,
@@ -404,20 +1283,20 @@
         "missed_repayment_year_in"
       ]
     },
-    "0_missed_repayment_year_in": {
-      "cul_scope_id": 0,
+    "1_missed_repayment_year_in": {
+      "cul_scope_id": 1,
       "name": "missed_repayment_year_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "missed_repayment_year_in"
       ]
     },
-    "0_skip_interest": {
-      "cul_scope_id": 0,
-      "name": "skip_interest",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_skip_interest_": {
+      "cul_scope_id": 1,
+      "name": "skip_interest_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 56,
@@ -434,20 +1313,20 @@
         "skip_interest_in"
       ]
     },
-    "0_skip_interest_in": {
-      "cul_scope_id": 0,
+    "1_skip_interest_in": {
+      "cul_scope_id": 1,
       "name": "skip_interest_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "skip_interest_in"
       ]
     },
-    "0_d_i_year": {
-      "cul_scope_id": 0,
-      "name": "d_i_year",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_d_i_year_": {
+      "cul_scope_id": 1,
+      "name": "d_i_year_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 59,
@@ -464,20 +1343,20 @@
         "d_i_year_in"
       ]
     },
-    "0_d_i_year_in": {
-      "cul_scope_id": 0,
+    "1_d_i_year_in": {
+      "cul_scope_id": 1,
       "name": "d_i_year_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "d_i_year_in"
       ]
     },
-    "0_d_i": {
-      "cul_scope_id": 0,
-      "name": "d_i",
-      "cul_source_scope_id": 0,
-      "reason": "definition",
+    "1_d_i_": {
+      "cul_scope_id": 1,
+      "name": "d_i_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
       "loc": {
         "start": {
           "line": 60,
@@ -494,10 +1373,10 @@
         "d_i_in"
       ]
     },
-    "0_d_i_in": {
-      "cul_scope_id": 0,
+    "1_d_i_in": {
+      "cul_scope_id": 1,
       "name": "d_i_in",
-      "cul_source_scope_id": 0,
+      "cul_source_scope_id": 1,
       "reason": "input definition",
       "inputs": [
         "d_i_in"
@@ -506,8 +1385,98 @@
   },
   "cul_links": [
     {
+      "to": "0_v$",
+      "from": "1_v_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_v_pow_term_left$",
+      "from": "1_v_pow_term_left_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_repayment_amount$",
+      "from": "1_repayment_amount_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_interest$",
+      "from": "1_interest_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_capital_repayment$",
+      "from": "1_capital_repayment_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_interest_repayment$",
+      "from": "1_interest_repayment_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_repayment_due$",
+      "from": "1_repayment_due_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_repayment$",
+      "from": "1_repayment_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_balance$",
+      "from": "1_balance_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_interest_rate$",
+      "from": "1_interest_rate_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_principal$",
+      "from": "1_principal_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_i$",
+      "from": "1_i_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_term$",
+      "from": "1_term_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_year$",
+      "from": "1_year_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_missed_repayment_year$",
+      "from": "1_missed_repayment_year_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_skip_interest$",
+      "from": "1_skip_interest_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_d_i_year$",
+      "from": "1_d_i_year_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_d_i$",
+      "from": "1_d_i_",
+      "reason": "explicit import"
+    },
+    {
       "to": "0_v",
-      "from": "0_interest_rate",
+      "from": "0_v$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -515,23 +1484,7 @@
     },
     {
       "to": "0_v_pow_term_left",
-      "from": "0_v",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_v_pow_term_left",
-      "from": "0_term",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_v_pow_term_left",
-      "from": "0_year",
+      "from": "0_v_pow_term_left$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -539,90 +1492,7 @@
     },
     {
       "to": "0_repayment_amount",
-      "from": "0_balance",
-      "reason": "call",
-      "negs": [
-        "year_in",
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_interest_rate",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_balance",
-      "reason": "call",
-      "negs": [
-        "year_in",
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_term",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_balance",
-      "reason": "call",
-      "negs": [
-        "year_in",
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_interest_rate",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_amount",
-      "from": "0_v_pow_term_left",
+      "from": "0_repayment_amount$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -630,24 +1500,7 @@
     },
     {
       "to": "0_interest",
-      "from": "0_balance",
-      "reason": "call",
-      "negs": [
-        "year_in",
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest",
-      "from": "0_interest_rate",
+      "from": "0_interest$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -655,15 +1508,7 @@
     },
     {
       "to": "0_capital_repayment",
-      "from": "0_repayment",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_capital_repayment",
-      "from": "0_interest_repayment",
+      "from": "0_capital_repayment$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -671,15 +1516,7 @@
     },
     {
       "to": "0_interest_repayment",
-      "from": "0_repayment",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest_repayment",
-      "from": "0_interest",
+      "from": "0_interest_repayment$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -687,23 +1524,7 @@
     },
     {
       "to": "0_repayment_due",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_due",
-      "from": "0_term",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment_due",
-      "from": "0_year",
+      "from": "0_repayment_due$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -711,47 +1532,7 @@
     },
     {
       "to": "0_repayment",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment",
-      "from": "0_missed_repayment_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment",
-      "from": "0_skip_interest",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment",
-      "from": "0_interest",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment",
-      "from": "0_repayment_due",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_repayment",
-      "from": "0_repayment_amount",
+      "from": "0_repayment$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -759,56 +1540,7 @@
     },
     {
       "to": "0_balance",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_principal",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_balance",
-      "reason": "call",
-      "negs": [
-        "year_in",
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_interest",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_balance",
-      "from": "0_repayment",
+      "from": "0_balance$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -816,39 +1548,7 @@
     },
     {
       "to": "0_interest_rate",
-      "from": "0_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest_rate",
-      "from": "0_d_i_year",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest_rate",
-      "from": "0_i",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest_rate",
-      "from": "0_d_i",
-      "reason": "call",
-      "negs": [
-        "d_i"
-      ]
-    },
-    {
-      "to": "0_interest_rate",
-      "from": "0_i",
+      "from": "0_interest_rate$",
       "reason": "call",
       "negs": [
         "d_i"
@@ -856,50 +1556,663 @@
     },
     {
       "to": "0_principal",
-      "from": "0_principal_in",
-      "reason": "input"
+      "from": "0_principal$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_i",
-      "from": "0_i_in",
-      "reason": "input"
+      "from": "0_i$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_term",
-      "from": "0_term_in",
-      "reason": "input"
+      "from": "0_term$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_year",
-      "from": "0_year_in",
-      "reason": "input"
+      "from": "0_year$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_missed_repayment_year",
-      "from": "0_missed_repayment_year_in",
-      "reason": "input"
+      "from": "0_missed_repayment_year$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_skip_interest",
-      "from": "0_skip_interest_in",
-      "reason": "input"
+      "from": "0_skip_interest$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_d_i_year",
-      "from": "0_d_i_year_in",
-      "reason": "input"
+      "from": "0_d_i_year$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
     },
     {
       "to": "0_d_i",
-      "from": "0_d_i_in",
+      "from": "0_d_i$",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_v",
+      "from": "0_v",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_v_pow_term_left",
+      "from": "0_v_pow_term_left",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_repayment_amount",
+      "from": "0_repayment_amount",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_interest",
+      "from": "0_interest",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_capital_repayment",
+      "from": "0_capital_repayment",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_interest_repayment",
+      "from": "0_interest_repayment",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_repayment_due",
+      "from": "0_repayment_due",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_repayment",
+      "from": "0_repayment",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_balance",
+      "from": "0_balance",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_interest_rate",
+      "from": "0_interest_rate",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_principal",
+      "from": "0_principal",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_i",
+      "from": "0_i",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_term",
+      "from": "0_term",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_year",
+      "from": "0_year",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_missed_repayment_year",
+      "from": "0_missed_repayment_year",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_skip_interest",
+      "from": "0_skip_interest",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_d_i_year",
+      "from": "0_d_i_year",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_d_i",
+      "from": "0_d_i",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_v_",
+      "from": "1_interest_rate",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_v_pow_term_left_",
+      "from": "1_v",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_v_pow_term_left_",
+      "from": "1_term",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_v_pow_term_left_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_balance",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_interest_rate",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_balance",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_term",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_balance",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_interest_rate",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_amount_",
+      "from": "1_v_pow_term_left",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_",
+      "from": "1_balance",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_",
+      "from": "1_interest_rate",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_capital_repayment_",
+      "from": "1_repayment",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_capital_repayment_",
+      "from": "1_interest_repayment",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_repayment_",
+      "from": "1_repayment",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_repayment_",
+      "from": "1_interest",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_due_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_due_",
+      "from": "1_term",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_due_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_missed_repayment_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_skip_interest",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_interest",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_repayment_due",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_repayment_",
+      "from": "1_repayment_amount",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_principal",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_balance",
+      "reason": "call",
+      "negs": [
+        "year_in",
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_interest",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_balance_",
+      "from": "1_repayment",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_rate_",
+      "from": "1_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_rate_",
+      "from": "1_d_i_year",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_rate_",
+      "from": "1_i",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_rate_",
+      "from": "1_d_i",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_interest_rate_",
+      "from": "1_i",
+      "reason": "call",
+      "negs": [
+        "d_i"
+      ]
+    },
+    {
+      "to": "1_principal_",
+      "from": "1_principal_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_i_",
+      "from": "1_i_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_term_",
+      "from": "1_term_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_year_",
+      "from": "1_year_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_missed_repayment_year_",
+      "from": "1_missed_repayment_year_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_skip_interest_",
+      "from": "1_skip_interest_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_d_i_year_",
+      "from": "1_d_i_year_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_d_i_",
+      "from": "1_d_i_in",
       "reason": "input"
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./simple-loan.cul.js"
+    "0": "./simple-loan.cul.js",
+    "1": "./simple-loan.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
   },
-  "import_sources_to_resource": {},
+  "import_sources_to_resource": {
+    "0_./simple-loan.cul.js?+memoed": "./simple-loan.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
   "cul_input_map": {
+    "0_v$": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "0_v_pow_term_left$": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "0_repayment_amount$": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "0_interest$": [
+      "year_in",
+      "principal_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "0_capital_repayment$": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "0_interest_repayment$": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "0_repayment_due$": [
+      "year_in",
+      "term_in"
+    ],
+    "0_repayment$": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "0_balance$": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "0_interest_rate$": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "0_principal$": [
+      "principal_in"
+    ],
+    "0_i$": [
+      "i_in"
+    ],
+    "0_term$": [
+      "term_in"
+    ],
+    "0_year$": [
+      "year_in"
+    ],
+    "0_missed_repayment_year$": [
+      "missed_repayment_year_in"
+    ],
+    "0_skip_interest$": [
+      "skip_interest_in"
+    ],
+    "0_d_i_year$": [
+      "d_i_year_in"
+    ],
+    "0_d_i$": [
+      "d_i_in"
+    ],
     "0_v": [
       "year_in",
       "d_i_year_in",
@@ -986,51 +2299,265 @@
     "0_principal": [
       "principal_in"
     ],
-    "0_principal_in": [
-      "principal_in"
-    ],
     "0_i": [
-      "i_in"
-    ],
-    "0_i_in": [
       "i_in"
     ],
     "0_term": [
       "term_in"
     ],
-    "0_term_in": [
-      "term_in"
-    ],
     "0_year": [
-      "year_in"
-    ],
-    "0_year_in": [
       "year_in"
     ],
     "0_missed_repayment_year": [
       "missed_repayment_year_in"
     ],
-    "0_missed_repayment_year_in": [
-      "missed_repayment_year_in"
-    ],
     "0_skip_interest": [
-      "skip_interest_in"
-    ],
-    "0_skip_interest_in": [
       "skip_interest_in"
     ],
     "0_d_i_year": [
       "d_i_year_in"
     ],
-    "0_d_i_year_in": [
-      "d_i_year_in"
-    ],
     "0_d_i": [
       "d_i_in"
     ],
-    "0_d_i_in": [
+    "1_v": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_v_pow_term_left": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_repayment_amount": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "1_interest": [
+      "year_in",
+      "principal_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_capital_repayment": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_interest_repayment": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_repayment_due": [
+      "year_in",
+      "term_in"
+    ],
+    "1_repayment": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_balance": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "1_interest_rate": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_principal": [
+      "principal_in"
+    ],
+    "1_i": [
+      "i_in"
+    ],
+    "1_term": [
+      "term_in"
+    ],
+    "1_year": [
+      "year_in"
+    ],
+    "1_missed_repayment_year": [
+      "missed_repayment_year_in"
+    ],
+    "1_skip_interest": [
+      "skip_interest_in"
+    ],
+    "1_d_i_year": [
+      "d_i_year_in"
+    ],
+    "1_d_i": [
+      "d_i_in"
+    ],
+    "1_v_": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_v_pow_term_left_": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_repayment_amount_": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "1_interest_": [
+      "year_in",
+      "principal_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_capital_repayment_": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_interest_repayment_": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_repayment_due_": [
+      "year_in",
+      "term_in"
+    ],
+    "1_repayment_": [
+      "year_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "term_in"
+    ],
+    "1_balance_": [
+      "year_in",
+      "principal_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in",
+      "missed_repayment_year_in",
+      "skip_interest_in",
+      "term_in"
+    ],
+    "1_interest_rate_": [
+      "year_in",
+      "d_i_year_in",
+      "i_in",
+      "d_i_in"
+    ],
+    "1_principal_": [
+      "principal_in"
+    ],
+    "1_principal_in": [
+      "principal_in"
+    ],
+    "1_i_": [
+      "i_in"
+    ],
+    "1_i_in": [
+      "i_in"
+    ],
+    "1_term_": [
+      "term_in"
+    ],
+    "1_term_in": [
+      "term_in"
+    ],
+    "1_year_": [
+      "year_in"
+    ],
+    "1_year_in": [
+      "year_in"
+    ],
+    "1_missed_repayment_year_": [
+      "missed_repayment_year_in"
+    ],
+    "1_missed_repayment_year_in": [
+      "missed_repayment_year_in"
+    ],
+    "1_skip_interest_": [
+      "skip_interest_in"
+    ],
+    "1_skip_interest_in": [
+      "skip_interest_in"
+    ],
+    "1_d_i_year_": [
+      "d_i_year_in"
+    ],
+    "1_d_i_year_in": [
+      "d_i_year_in"
+    ],
+    "1_d_i_": [
+      "d_i_in"
+    ],
+    "1_d_i_in": [
       "d_i_in"
     ]
   },
-  "dot": "digraph {\n  \"0_v\" [cul_scope_id=0,name=v,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_v inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_v_pow_term_left\" [cul_scope_id=0,name=v_pow_term_left,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_v_pow_term_left inputs: year_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_amount\" [cul_scope_id=0,name=repayment_amount,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_repayment_amount inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest\" [cul_scope_id=0,name=interest,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest inputs: year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_capital_repayment\" [cul_scope_id=0,name=capital_repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_capital_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_interest_repayment\" [cul_scope_id=0,name=interest_repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_interest_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_due\" [cul_scope_id=0,name=repayment_due,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,term_in\",label=\"0_repayment_due inputs: year_in,term_in\"]\n  \"0_repayment\" [cul_scope_id=0,name=repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_balance\" [cul_scope_id=0,name=balance,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_balance inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest_rate\" [cul_scope_id=0,name=interest_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest_rate inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_principal\" [cul_scope_id=0,name=principal,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=principal_in,label=\"0_principal inputs: principal_in\"]\n  \"0_principal_in\" [cul_scope_id=0,name=principal_in,cul_source_scope_id=0,reason=\"input definition\",inputs=principal_in,label=\"0_principal_in inputs: principal_in\"]\n  \"0_i\" [cul_scope_id=0,name=i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_i inputs: i_in\"]\n  \"0_i_in\" [cul_scope_id=0,name=i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=i_in,label=\"0_i_in inputs: i_in\"]\n  \"0_term\" [cul_scope_id=0,name=term,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_in,label=\"0_term inputs: term_in\"]\n  \"0_term_in\" [cul_scope_id=0,name=term_in,cul_source_scope_id=0,reason=\"input definition\",inputs=term_in,label=\"0_term_in inputs: term_in\"]\n  \"0_year\" [cul_scope_id=0,name=year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=year_in,label=\"0_year inputs: year_in\"]\n  \"0_year_in\" [cul_scope_id=0,name=year_in,cul_source_scope_id=0,reason=\"input definition\",inputs=year_in,label=\"0_year_in inputs: year_in\"]\n  \"0_missed_repayment_year\" [cul_scope_id=0,name=missed_repayment_year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=missed_repayment_year_in,label=\"0_missed_repayment_year inputs: missed_repayment_year_in\"]\n  \"0_missed_repayment_year_in\" [cul_scope_id=0,name=missed_repayment_year_in,cul_source_scope_id=0,reason=\"input definition\",inputs=missed_repayment_year_in,label=\"0_missed_repayment_year_in inputs: missed_repayment_year_in\"]\n  \"0_skip_interest\" [cul_scope_id=0,name=skip_interest,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=skip_interest_in,label=\"0_skip_interest inputs: skip_interest_in\"]\n  \"0_skip_interest_in\" [cul_scope_id=0,name=skip_interest_in,cul_source_scope_id=0,reason=\"input definition\",inputs=skip_interest_in,label=\"0_skip_interest_in inputs: skip_interest_in\"]\n  \"0_d_i_year\" [cul_scope_id=0,name=d_i_year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=d_i_year_in,label=\"0_d_i_year inputs: d_i_year_in\"]\n  \"0_d_i_year_in\" [cul_scope_id=0,name=d_i_year_in,cul_source_scope_id=0,reason=\"input definition\",inputs=d_i_year_in,label=\"0_d_i_year_in inputs: d_i_year_in\"]\n  \"0_d_i\" [cul_scope_id=0,name=d_i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=d_i_in,label=\"0_d_i inputs: d_i_in\"]\n  \"0_d_i_in\" [cul_scope_id=0,name=d_i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=d_i_in,label=\"0_d_i_in inputs: d_i_in\"]\n  \"0_interest_rate\" -> \"0_v\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_v\" -> \"0_v_pow_term_left\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_term\" -> \"0_v_pow_term_left\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year\" -> \"0_v_pow_term_left\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_balance\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"0_year\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest_rate\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_term\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_v_pow_term_left\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_balance\" -> \"0_interest\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"0_year\" -> \"0_interest\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest_rate\" -> \"0_interest\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment\" -> \"0_capital_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest_repayment\" -> \"0_capital_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment\" -> \"0_interest_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest\" -> \"0_interest_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year\" -> \"0_repayment_due\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_term\" -> \"0_repayment_due\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_missed_repayment_year\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_skip_interest\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment_due\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment_amount\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_principal\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_balance\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"0_interest\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year\" -> \"0_interest_rate\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_d_i_year\" -> \"0_interest_rate\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_i\" -> \"0_interest_rate\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_d_i\" -> \"0_interest_rate\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_principal_in\" -> \"0_principal\" [value=\"[object Object]\",label=\"input +principal_in\"]\n  \"0_i_in\" -> \"0_i\" [value=\"[object Object]\",label=\"input +i_in\"]\n  \"0_term_in\" -> \"0_term\" [value=\"[object Object]\",label=\"input +term_in\"]\n  \"0_year_in\" -> \"0_year\" [value=\"[object Object]\",label=\"input +year_in\"]\n  \"0_missed_repayment_year_in\" -> \"0_missed_repayment_year\" [value=\"[object Object]\",label=\"input +missed_repayment_year_in\"]\n  \"0_skip_interest_in\" -> \"0_skip_interest\" [value=\"[object Object]\",label=\"input +skip_interest_in\"]\n  \"0_d_i_year_in\" -> \"0_d_i_year\" [value=\"[object Object]\",label=\"input +d_i_year_in\"]\n  \"0_d_i_in\" -> \"0_d_i\" [value=\"[object Object]\",label=\"input +d_i_in\"]\n}\n"
+  "dot": "digraph {\n  \"0_v$\" [cul_scope_id=0,name=\"v$\",imported=v_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_v$ inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_v_pow_term_left$\" [cul_scope_id=0,name=\"v_pow_term_left$\",imported=v_pow_term_left_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_v_pow_term_left$ inputs: year_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_amount$\" [cul_scope_id=0,name=\"repayment_amount$\",imported=repayment_amount_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_repayment_amount$ inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest$\" [cul_scope_id=0,name=\"interest$\",imported=interest_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest$ inputs: year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_capital_repayment$\" [cul_scope_id=0,name=\"capital_repayment$\",imported=capital_repayment_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_capital_repayment$ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_interest_repayment$\" [cul_scope_id=0,name=\"interest_repayment$\",imported=interest_repayment_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_interest_repayment$ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_due$\" [cul_scope_id=0,name=\"repayment_due$\",imported=repayment_due_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,term_in\",label=\"0_repayment_due$ inputs: year_in,term_in\"]\n  \"0_repayment$\" [cul_scope_id=0,name=\"repayment$\",imported=repayment_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_repayment$ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_balance$\" [cul_scope_id=0,name=\"balance$\",imported=balance_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_balance$ inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest_rate$\" [cul_scope_id=0,name=\"interest_rate$\",imported=interest_rate_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest_rate$ inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_principal$\" [cul_scope_id=0,name=\"principal$\",imported=principal_,cul_source_scope_id=1,reason=\"explicit import\",inputs=principal_in,label=\"0_principal$ inputs: principal_in\"]\n  \"0_i$\" [cul_scope_id=0,name=\"i$\",imported=i_,cul_source_scope_id=1,reason=\"explicit import\",inputs=i_in,label=\"0_i$ inputs: i_in\"]\n  \"0_term$\" [cul_scope_id=0,name=\"term$\",imported=term_,cul_source_scope_id=1,reason=\"explicit import\",inputs=term_in,label=\"0_term$ inputs: term_in\"]\n  \"0_year$\" [cul_scope_id=0,name=\"year$\",imported=year_,cul_source_scope_id=1,reason=\"explicit import\",inputs=year_in,label=\"0_year$ inputs: year_in\"]\n  \"0_missed_repayment_year$\" [cul_scope_id=0,name=\"missed_repayment_year$\",imported=missed_repayment_year_,cul_source_scope_id=1,reason=\"explicit import\",inputs=missed_repayment_year_in,label=\"0_missed_repayment_year$ inputs: missed_repayment_year_in\"]\n  \"0_skip_interest$\" [cul_scope_id=0,name=\"skip_interest$\",imported=skip_interest_,cul_source_scope_id=1,reason=\"explicit import\",inputs=skip_interest_in,label=\"0_skip_interest$ inputs: skip_interest_in\"]\n  \"0_d_i_year$\" [cul_scope_id=0,name=\"d_i_year$\",imported=d_i_year_,cul_source_scope_id=1,reason=\"explicit import\",inputs=d_i_year_in,label=\"0_d_i_year$ inputs: d_i_year_in\"]\n  \"0_d_i$\" [cul_scope_id=0,name=\"d_i$\",imported=d_i_,cul_source_scope_id=1,reason=\"explicit import\",inputs=d_i_in,label=\"0_d_i$ inputs: d_i_in\"]\n  \"0_v\" [cul_scope_id=0,name=v,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_v inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_v_pow_term_left\" [cul_scope_id=0,name=v_pow_term_left,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_v_pow_term_left inputs: year_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_amount\" [cul_scope_id=0,name=repayment_amount,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_repayment_amount inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest\" [cul_scope_id=0,name=interest,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest inputs: year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_capital_repayment\" [cul_scope_id=0,name=capital_repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_capital_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_interest_repayment\" [cul_scope_id=0,name=interest_repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_interest_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_repayment_due\" [cul_scope_id=0,name=repayment_due,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,term_in\",label=\"0_repayment_due inputs: year_in,term_in\"]\n  \"0_repayment\" [cul_scope_id=0,name=repayment,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"0_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"0_balance\" [cul_scope_id=0,name=balance,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"0_balance inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"0_interest_rate\" [cul_scope_id=0,name=interest_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"0_interest_rate inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"0_principal\" [cul_scope_id=0,name=principal,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=principal_in,label=\"0_principal inputs: principal_in\"]\n  \"0_i\" [cul_scope_id=0,name=i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_i inputs: i_in\"]\n  \"0_term\" [cul_scope_id=0,name=term,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=term_in,label=\"0_term inputs: term_in\"]\n  \"0_year\" [cul_scope_id=0,name=year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=year_in,label=\"0_year inputs: year_in\"]\n  \"0_missed_repayment_year\" [cul_scope_id=0,name=missed_repayment_year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=missed_repayment_year_in,label=\"0_missed_repayment_year inputs: missed_repayment_year_in\"]\n  \"0_skip_interest\" [cul_scope_id=0,name=skip_interest,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=skip_interest_in,label=\"0_skip_interest inputs: skip_interest_in\"]\n  \"0_d_i_year\" [cul_scope_id=0,name=d_i_year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=d_i_year_in,label=\"0_d_i_year inputs: d_i_year_in\"]\n  \"0_d_i\" [cul_scope_id=0,name=d_i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=d_i_in,label=\"0_d_i inputs: d_i_in\"]\n  \"1_v\" [cul_scope_id=1,name=v,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"1_v inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_v_pow_term_left\" [cul_scope_id=1,name=v_pow_term_left,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_v_pow_term_left inputs: year_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_repayment_amount\" [cul_scope_id=1,name=repayment_amount,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"1_repayment_amount inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"1_interest\" [cul_scope_id=1,name=interest,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\",label=\"1_interest inputs: year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_capital_repayment\" [cul_scope_id=1,name=capital_repayment,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_capital_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_interest_repayment\" [cul_scope_id=1,name=interest_repayment,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_interest_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_repayment_due\" [cul_scope_id=1,name=repayment_due,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,term_in\",label=\"1_repayment_due inputs: year_in,term_in\"]\n  \"1_repayment\" [cul_scope_id=1,name=repayment,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_repayment inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_balance\" [cul_scope_id=1,name=balance,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"1_balance inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"1_interest_rate\" [cul_scope_id=1,name=interest_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"1_interest_rate inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_principal\" [cul_scope_id=1,name=principal,cul_source_scope_id=0,reason=\"implicit import\",inputs=principal_in,label=\"1_principal inputs: principal_in\"]\n  \"1_i\" [cul_scope_id=1,name=i,cul_source_scope_id=0,reason=\"implicit import\",inputs=i_in,label=\"1_i inputs: i_in\"]\n  \"1_term\" [cul_scope_id=1,name=term,cul_source_scope_id=0,reason=\"implicit import\",inputs=term_in,label=\"1_term inputs: term_in\"]\n  \"1_year\" [cul_scope_id=1,name=year,cul_source_scope_id=0,reason=\"implicit import\",inputs=year_in,label=\"1_year inputs: year_in\"]\n  \"1_missed_repayment_year\" [cul_scope_id=1,name=missed_repayment_year,cul_source_scope_id=0,reason=\"implicit import\",inputs=missed_repayment_year_in,label=\"1_missed_repayment_year inputs: missed_repayment_year_in\"]\n  \"1_skip_interest\" [cul_scope_id=1,name=skip_interest,cul_source_scope_id=0,reason=\"implicit import\",inputs=skip_interest_in,label=\"1_skip_interest inputs: skip_interest_in\"]\n  \"1_d_i_year\" [cul_scope_id=1,name=d_i_year,cul_source_scope_id=0,reason=\"implicit import\",inputs=d_i_year_in,label=\"1_d_i_year inputs: d_i_year_in\"]\n  \"1_d_i\" [cul_scope_id=1,name=d_i,cul_source_scope_id=0,reason=\"implicit import\",inputs=d_i_in,label=\"1_d_i inputs: d_i_in\"]\n  \"1_v_\" [cul_scope_id=1,name=v_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"1_v_ inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_v_pow_term_left_\" [cul_scope_id=1,name=v_pow_term_left_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_v_pow_term_left_ inputs: year_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_repayment_amount_\" [cul_scope_id=1,name=repayment_amount_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"1_repayment_amount_ inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"1_interest_\" [cul_scope_id=1,name=interest_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\",label=\"1_interest_ inputs: year_in,principal_in,missed_repayment_year_in,skip_interest_in,term_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_capital_repayment_\" [cul_scope_id=1,name=capital_repayment_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_capital_repayment_ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_interest_repayment_\" [cul_scope_id=1,name=interest_repayment_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_interest_repayment_ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_repayment_due_\" [cul_scope_id=1,name=repayment_due_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,term_in\",label=\"1_repayment_due_ inputs: year_in,term_in\"]\n  \"1_repayment_\" [cul_scope_id=1,name=repayment_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\",label=\"1_repayment_ inputs: year_in,missed_repayment_year_in,skip_interest_in,principal_in,d_i_year_in,i_in,d_i_in,term_in\"]\n  \"1_balance_\" [cul_scope_id=1,name=balance_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\",label=\"1_balance_ inputs: year_in,principal_in,d_i_year_in,i_in,d_i_in,missed_repayment_year_in,skip_interest_in,term_in\"]\n  \"1_interest_rate_\" [cul_scope_id=1,name=interest_rate_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,d_i_year_in,i_in,d_i_in\",label=\"1_interest_rate_ inputs: year_in,d_i_year_in,i_in,d_i_in\"]\n  \"1_principal_\" [cul_scope_id=1,name=principal_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=principal_in,label=\"1_principal_ inputs: principal_in\"]\n  \"1_principal_in\" [cul_scope_id=1,name=principal_in,cul_source_scope_id=1,reason=\"input definition\",inputs=principal_in,label=\"1_principal_in inputs: principal_in\"]\n  \"1_i_\" [cul_scope_id=1,name=i_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=i_in,label=\"1_i_ inputs: i_in\"]\n  \"1_i_in\" [cul_scope_id=1,name=i_in,cul_source_scope_id=1,reason=\"input definition\",inputs=i_in,label=\"1_i_in inputs: i_in\"]\n  \"1_term_\" [cul_scope_id=1,name=term_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=term_in,label=\"1_term_ inputs: term_in\"]\n  \"1_term_in\" [cul_scope_id=1,name=term_in,cul_source_scope_id=1,reason=\"input definition\",inputs=term_in,label=\"1_term_in inputs: term_in\"]\n  \"1_year_\" [cul_scope_id=1,name=year_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=year_in,label=\"1_year_ inputs: year_in\"]\n  \"1_year_in\" [cul_scope_id=1,name=year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=year_in,label=\"1_year_in inputs: year_in\"]\n  \"1_missed_repayment_year_\" [cul_scope_id=1,name=missed_repayment_year_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=missed_repayment_year_in,label=\"1_missed_repayment_year_ inputs: missed_repayment_year_in\"]\n  \"1_missed_repayment_year_in\" [cul_scope_id=1,name=missed_repayment_year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=missed_repayment_year_in,label=\"1_missed_repayment_year_in inputs: missed_repayment_year_in\"]\n  \"1_skip_interest_\" [cul_scope_id=1,name=skip_interest_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=skip_interest_in,label=\"1_skip_interest_ inputs: skip_interest_in\"]\n  \"1_skip_interest_in\" [cul_scope_id=1,name=skip_interest_in,cul_source_scope_id=1,reason=\"input definition\",inputs=skip_interest_in,label=\"1_skip_interest_in inputs: skip_interest_in\"]\n  \"1_d_i_year_\" [cul_scope_id=1,name=d_i_year_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=d_i_year_in,label=\"1_d_i_year_ inputs: d_i_year_in\"]\n  \"1_d_i_year_in\" [cul_scope_id=1,name=d_i_year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=d_i_year_in,label=\"1_d_i_year_in inputs: d_i_year_in\"]\n  \"1_d_i_\" [cul_scope_id=1,name=d_i_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=d_i_in,label=\"1_d_i_ inputs: d_i_in\"]\n  \"1_d_i_in\" [cul_scope_id=1,name=d_i_in,cul_source_scope_id=1,reason=\"input definition\",inputs=d_i_in,label=\"1_d_i_in inputs: d_i_in\"]\n  \"1_v_\" -> \"0_v$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_v_pow_term_left_\" -> \"0_v_pow_term_left$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_repayment_amount_\" -> \"0_repayment_amount$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_interest_\" -> \"0_interest$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_capital_repayment_\" -> \"0_capital_repayment$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_interest_repayment_\" -> \"0_interest_repayment$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_repayment_due_\" -> \"0_repayment_due$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_repayment_\" -> \"0_repayment$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_balance_\" -> \"0_balance$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_interest_rate_\" -> \"0_interest_rate$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_principal_\" -> \"0_principal$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_i_\" -> \"0_i$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_term_\" -> \"0_term$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_year_\" -> \"0_year$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_missed_repayment_year_\" -> \"0_missed_repayment_year$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_skip_interest_\" -> \"0_skip_interest$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_d_i_year_\" -> \"0_d_i_year$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_d_i_\" -> \"0_d_i$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_v$\" -> \"0_v\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_v_pow_term_left$\" -> \"0_v_pow_term_left\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment_amount$\" -> \"0_repayment_amount\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest$\" -> \"0_interest\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_capital_repayment$\" -> \"0_capital_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest_repayment$\" -> \"0_interest_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment_due$\" -> \"0_repayment_due\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_repayment$\" -> \"0_repayment\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_balance$\" -> \"0_balance\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_interest_rate$\" -> \"0_interest_rate\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_principal$\" -> \"0_principal\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_i$\" -> \"0_i\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_term$\" -> \"0_term\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_year$\" -> \"0_year\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_missed_repayment_year$\" -> \"0_missed_repayment_year\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_skip_interest$\" -> \"0_skip_interest\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_d_i_year$\" -> \"0_d_i_year\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_d_i$\" -> \"0_d_i\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"0_v\" -> \"1_v\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_v_pow_term_left\" -> \"1_v_pow_term_left\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_repayment_amount\" -> \"1_repayment_amount\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_interest\" -> \"1_interest\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_capital_repayment\" -> \"1_capital_repayment\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_interest_repayment\" -> \"1_interest_repayment\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_repayment_due\" -> \"1_repayment_due\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_repayment\" -> \"1_repayment\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_balance\" -> \"1_balance\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_interest_rate\" -> \"1_interest_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_principal\" -> \"1_principal\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_i\" -> \"1_i\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_term\" -> \"1_term\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_year\" -> \"1_year\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_missed_repayment_year\" -> \"1_missed_repayment_year\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_skip_interest\" -> \"1_skip_interest\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_d_i_year\" -> \"1_d_i_year\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_d_i\" -> \"1_d_i\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_interest_rate\" -> \"1_v_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_v\" -> \"1_v_pow_term_left_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_term\" -> \"1_v_pow_term_left_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_year\" -> \"1_v_pow_term_left_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_balance\" -> \"1_repayment_amount_\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"1_year\" -> \"1_repayment_amount_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_interest_rate\" -> \"1_repayment_amount_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_term\" -> \"1_repayment_amount_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_v_pow_term_left\" -> \"1_repayment_amount_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_balance\" -> \"1_interest_\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"1_year\" -> \"1_interest_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_interest_rate\" -> \"1_interest_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_repayment\" -> \"1_capital_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_interest_repayment\" -> \"1_capital_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_repayment\" -> \"1_interest_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_interest\" -> \"1_interest_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_year\" -> \"1_repayment_due_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_term\" -> \"1_repayment_due_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_year\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_missed_repayment_year\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_skip_interest\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_interest\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_repayment_due\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_repayment_amount\" -> \"1_repayment_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_year\" -> \"1_balance_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_principal\" -> \"1_balance_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_balance\" -> \"1_balance_\" [value=\"[object Object]\",label=\"call -year_in,d_i\"]\n  \"1_interest\" -> \"1_balance_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_repayment\" -> \"1_balance_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_year\" -> \"1_interest_rate_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_d_i_year\" -> \"1_interest_rate_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_i\" -> \"1_interest_rate_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_d_i\" -> \"1_interest_rate_\" [value=\"[object Object]\",label=\"call -d_i\"]\n  \"1_principal_in\" -> \"1_principal_\" [value=\"[object Object]\",label=\"input +principal_in\"]\n  \"1_i_in\" -> \"1_i_\" [value=\"[object Object]\",label=\"input +i_in\"]\n  \"1_term_in\" -> \"1_term_\" [value=\"[object Object]\",label=\"input +term_in\"]\n  \"1_year_in\" -> \"1_year_\" [value=\"[object Object]\",label=\"input +year_in\"]\n  \"1_missed_repayment_year_in\" -> \"1_missed_repayment_year_\" [value=\"[object Object]\",label=\"input +missed_repayment_year_in\"]\n  \"1_skip_interest_in\" -> \"1_skip_interest_\" [value=\"[object Object]\",label=\"input +skip_interest_in\"]\n  \"1_d_i_year_in\" -> \"1_d_i_year_\" [value=\"[object Object]\",label=\"input +d_i_year_in\"]\n  \"1_d_i_in\" -> \"1_d_i_\" [value=\"[object Object]\",label=\"input +d_i_in\"]\n}\n"
 }

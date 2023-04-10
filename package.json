@@ -9,7 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
-    "build:simple-loan": "cul-js compile ./models/loan-validator/simple-loan.cul.js",
+    "build:simple-loan": "cul-js compile --memo ./models/loan-validator/simple-loan.cul.js",
     "build:pension-rec-nomemo": "cp ./models/pensions/rec.cul.js ./models/pensions/rec-nomemo.cul.js && cul-js compile ./models/pensions/rec-nomemo.cul.js",
     "build:pension-rec-exec": "node ./models/pensions/rec-exec-generator.js > ./models/pensions/rec-exec.cul.js && cul-js compile ./models/pensions/rec-exec.cul.js && cp ./models/pensions/rec-exec.cul.js ./models/pensions/rec-exec-nomemo.cul.js && cul-js compile ./models/pensions/rec-exec-nomemo.cul.js",
     "build:pension-rec": "cul-js compile ./models/pensions/rec.cul.js",
