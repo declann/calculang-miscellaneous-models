@@ -21,6 +21,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/models/pensions/rec-exec-generator.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "use-rec-exec",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/models/pensions/use-rec-exec.mjs"
         }
     ]
 }

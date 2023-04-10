@@ -14,13 +14,13 @@ fund_value_0_ as fund_value_0_projected // how come I didn't put _ here and it w
 
 // actual data todo add flexibility
 
-export const salary_inflation_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.019, 0.01, 0.01][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
-export const empee_contribution_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.1, 0.1, 0.08][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
-export const unit_growth_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.06, 0.04, 0.04][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const salary_inflation_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [0.019, 0.01, 0.01][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const empee_contribution_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [0.1, 0.1, 0.08][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const unit_growth_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [0.06, 0.04, 0.04][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 export const age_0_actual = ({}) => 20; //[20,20,20][age() - age_0()]; // silly?
-export const fund_value_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0, 0, 0][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
-export const retirement_age_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [65, 65, 65][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
-export const salary_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [30000, 30000, 30000][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const fund_value_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [0, 0, 0][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const retirement_age_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [65, 65, 65][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
+export const salary_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) < 0 ? 0 : [30000, 30000, 30000][age({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 
 export {
 fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, salary, projected_fund_value, age,
