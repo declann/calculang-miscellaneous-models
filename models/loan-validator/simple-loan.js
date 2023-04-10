@@ -96,9 +96,88 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return v; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v_pow_term_left", function() { return v_pow_term_left; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "repayment_amount", function() { return repayment_amount; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interest", function() { return interest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "capital_repayment", function() { return capital_repayment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interest_repayment", function() { return interest_repayment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "repayment_due", function() { return repayment_due; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "repayment", function() { return repayment; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "balance", function() { return balance; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "interest_rate", function() { return interest_rate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "principal", function() { return principal; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return i; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "term", function() { return term; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "year", function() { return year; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "missed_repayment_year", function() { return missed_repayment_year; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skip_interest", function() { return skip_interest; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d_i_year", function() { return d_i_year; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d_i", function() { return d_i; });
+const v = ({ year_in, d_i_year_in, i_in, d_i_in }) => 1 / (1 + interest_rate({ year_in, d_i_year_in, i_in, d_i_in }));
 
+const v_pow_term_left = ({ year_in, d_i_year_in, i_in, d_i_in, term_in }) => Math.pow(v({ year_in, d_i_year_in, i_in, d_i_in }), term({ term_in }) - year({ year_in }));
+
+// this models automatic refinancing because there is no restriction to last financing, an updated calc is applied every year
+const repayment_amount = ({ year_in, principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in }) => {
+  if (Math.abs(balance({ principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in, year_in: year({ year_in }) - 1 })) < 0.01) return 0;
+  //if (term() == year()) edge case?
+  if (interest_rate({ year_in, d_i_year_in, i_in, d_i_in }) == 0)
+  return balance({ principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in, year_in: year({ year_in }) - 1 }) / (term({ term_in }) - year({ year_in }));else
+
+  return (
+    balance({ principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in, year_in: year({ year_in }) - 1 }) * interest_rate({ year_in, d_i_year_in, i_in, d_i_in }) / (
+    1 - v_pow_term_left({ year_in, d_i_year_in, i_in, d_i_in, term_in })));
+
+};
+
+// interest charged to balance:
+const interest = ({ year_in, principal_in, missed_repayment_year_in, skip_interest_in, term_in, d_i_year_in, i_in, d_i_in }) =>
+balance({ principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in, year_in: year({ year_in }) - 1 }) * interest_rate({ year_in, d_i_year_in, i_in, d_i_in });
+
+// restrict cap repayment to repayment made.. (no, implied?)
+const capital_repayment = ({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }) => {
+  return Math.max(0, repayment({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }) - interest_repayment({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }));
+};
+const interest_repayment = ({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }) => Math.min(repayment({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }), interest({ year_in, principal_in, missed_repayment_year_in, skip_interest_in, term_in, d_i_year_in, i_in, d_i_in }));
+
+// year 0 the principal is received, first repayment is due year=1
+const repayment_due = ({ year_in, term_in }) => year({ year_in }) <= term({ term_in }) && year({ year_in }) != 0;
+
+const repayment = ({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in }) => {
+  // I'm modelling a "missed repayment" as being either 0 (skip_interest is set) or =interest (an interest-only payment: capital part is 'missed')
+  if (year({ year_in }) == missed_repayment_year({ missed_repayment_year_in })) {
+    if (skip_interest({ skip_interest_in })) return 0;else
+    return interest({ year_in, principal_in, missed_repayment_year_in, skip_interest_in, term_in, d_i_year_in, i_in, d_i_in });
+  } else return repayment_due({ year_in, term_in }) * repayment_amount({ year_in, principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in });
+};
+
+const balance = ({ year_in, principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in }) => {
+  if (year({ year_in }) < 0) return 0;
+  if (year({ year_in }) == 0) return principal({ principal_in });else
+  return balance({ principal_in, d_i_year_in, i_in, d_i_in, missed_repayment_year_in, skip_interest_in, term_in, year_in: year({ year_in }) - 1 }) + interest({ year_in, principal_in, missed_repayment_year_in, skip_interest_in, term_in, d_i_year_in, i_in, d_i_in }) - repayment({ year_in, missed_repayment_year_in, skip_interest_in, principal_in, d_i_year_in, i_in, d_i_in, term_in });
+};
+
+// changing interest rates are a modelling option, blend here and use above:
+const interest_rate = ({ year_in, d_i_year_in, i_in, d_i_in }) => year({ year_in }) >= d_i_year({ d_i_year_in }) ? i({ i_in }) + d_i({ d_i_in }) : i({ i_in });
+
+// inputs:
+const principal = ({ principal_in }) => principal_in;
+const i = ({ i_in }) => i_in; // interest rate
+const term = ({ term_in }) => term_in;
+const year = ({ year_in }) => year_in;
+
+// inputs for missed repayment option:
+const missed_repayment_year = ({ missed_repayment_year_in }) => missed_repayment_year_in;
+const skip_interest = ({ skip_interest_in }) => skip_interest_in;
+
+// inputs for delta/changing interest rates:
+const d_i_year = ({ d_i_year_in }) => d_i_year_in; // year the delta interest rate happens
+const d_i = ({ d_i_in }) => d_i_in; // delta interest rate
 
 /***/ })
 /******/ ]);
