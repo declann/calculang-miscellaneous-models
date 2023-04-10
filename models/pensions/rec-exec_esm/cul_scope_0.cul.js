@@ -14,13 +14,13 @@ fund_value_0 as fund_value_0_projected // how come I didn't put _ here and it wo
 
 // actual data todo add flexibility
 
-export const salary_inflation_rate_actual = () => age() - age_0() < 0 ? 0 : [0.019, 0.01, 0.01][age() - age_0()];
-export const empee_contribution_rate_actual = () => age() - age_0() < 0 ? 0 : [0.1, 0.1, 0.08][age() - age_0()];
-export const unit_growth_rate_actual = () => age() - age_0() < 0 ? 0 : [0.06, 0.04, 0.04][age() - age_0()];
+export const salary_inflation_rate_actual = () => 0.019//age() - age_0() < 0 ? 0 : [0.019, 0.01, 0.01][age() - age_0()];
+export const empee_contribution_rate_actual = () => 0.08//age() - age_0() < 0 ? 0 : [0.1, 0.1, 0.08][age() - age_0()];
+export const unit_growth_rate_actual = () => 0.08//age() - age_0() < 0 ? 0 : [0.06, 0.04, 0.04][age() - age_0()];
 export const age_0_actual = () => 20;//[20,20,20][age() - age_0()]; // silly?
-export const fund_value_0_actual = () => age() - age_0() < 0 ? 0 : [0,0,0][age() - age_0()];
-export const retirement_age_actual = () => age() - age_0() < 0 ? 0 : [65,65,65][age() - age_0()];
-export const salary_0_actual = () => age() - age_0() < 0 ? 0 : [30000,30000,30000][age() - age_0()];
+export const fund_value_0_actual = () => 0//age() - age_0() < 0 ? 0 : [0,0,0][age() - age_0()];
+export const retirement_age_actual = () =>65// age() - age_0() < 0 ? 0 : [65,65,65][age() - age_0()];
+export const salary_0_actual = () => 30000//age() - age_0() < 0 ? 0 : [30000,30000,30000][age() - age_0()];
 
 export {
   fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,salary,projected_fund_value,age,
