@@ -164,7 +164,7 @@ __webpack_require__.r(__webpack_exports__);
 const salary_inflation_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.019, 0.01, 0.01][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 const empee_contribution_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.1, 0.1, 0.08][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 const unit_growth_rate_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0.06, 0.04, 0.04][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
-const age_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [20, 20, 20][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })]; // silly?
+const age_0_actual = ({}) => 20; //[20,20,20][age() - age_0()]; // silly?
 const fund_value_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [0, 0, 0][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 const retirement_age_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [65, 65, 65][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
 const salary_0_actual = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => [30000, 30000, 30000][Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - age_0({ age_in, rec_step_in, age_opening_in, age_closing_in })];
@@ -218,7 +218,7 @@ const fund_value_0_actual_co = ({ rec_step_in, age_opening_in, age_closing_in })
 const age_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) > age_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age_0_ */ "b"])({});else
-  return age_0_actual({ age_in, rec_step_in, age_opening_in, age_closing_in });
+  return age_0_actual({});
 };
 
 const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
