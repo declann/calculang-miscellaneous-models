@@ -218,7 +218,7 @@ const fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize *
 const fund_value = (a) => {
   return fund_value$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "e"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "e"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end fund_value memo-loader code //////////
 
@@ -230,7 +230,7 @@ const unit_balance$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize
 const unit_balance = (a) => {
   return unit_balance$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_balance_ */ "m"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_balance_ */ "m"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_balance memo-loader code //////////
 
@@ -242,7 +242,7 @@ const unit_allocation$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memo
 const unit_allocation = (a) => {
   return unit_allocation$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_allocation_ */ "l"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_allocation_ */ "l"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_allocation memo-loader code //////////
 
@@ -266,7 +266,7 @@ const empee_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* m
 const empee_contribution = (a) => {
   return empee_contribution$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_ */ "c"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_ */ "c"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end empee_contribution memo-loader code //////////
 
@@ -278,7 +278,7 @@ const salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a
 const salary = (a) => {
   return salary$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_ */ "i"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_ */ "i"])({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end salary memo-loader code //////////
 
@@ -290,7 +290,7 @@ const projected_fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/*
 const projected_fund_value = (a) => {
   return projected_fund_value$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "g"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "g"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end projected_fund_value memo-loader code //////////
 
@@ -338,7 +338,7 @@ const salary_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ 
 const salary_0 = (a) => {
   return salary_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_0_ */ "j"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_0_ */ "j"])({ salary_0_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end salary_0 memo-loader code //////////
 
@@ -497,36 +497,36 @@ function tagTester(name) {
 
 // todo add timing comments
 
-const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) * Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
+const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) * Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
 
-const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value_0"])({ fund_value_0_in }) / Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in });else
-  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) + Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_allocation"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
+  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) + Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_allocation"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
   // timing = premium received at start of year and allocated immediately
 };
 
-const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // todo emper contribution, AVCs?
+const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) / Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // todo emper contribution, AVCs?
 
 const unit_price_ = ({ age_in, age_0_in, unit_growth_rate_in }) => {
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in })) return 1;else
   return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_0_in, unit_growth_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_growth_rate"])({ unit_growth_rate_in }));
 };
 
-const empee_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+const empee_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1 || Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) == Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })) return 0;else
-  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
+  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
 };
 
-const salary_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }) => {
+const salary_ = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
   // at end of year
-  if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({});else
+  if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({ salary_0_in });else
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) >= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })) return 0;else
-  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
+  return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
 };
 
-const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 // at retirement:
-Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }) });
+Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }) });
 
 // explicit inputs ::
 
@@ -535,7 +535,7 @@ const age_ = ({ age_in }) => age_in; // input
 const age_0_ = ({ age_0_in }) => age_0_in;
 
 const retirement_age_ = ({ retirement_age_in }) => retirement_age_in;
-const salary_0_ = ({}) => annual_salary_0_in;
+const salary_0_ = ({ salary_0_in }) => salary_0_in;
 const salary_inflation_rate_ = ({ salary_inflation_rate_in }) => salary_inflation_rate_in;
 const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contribution_rate_in;
 //export const emper_contribution_rate = () => (emper_contribution_rate_in) not modelling employer contributions yet

@@ -42,7 +42,7 @@ export const age = () => age_in; // input
 export const age_0 = () => age_0_in;
 
 export const retirement_age = () => retirement_age_in;
-export const salary_0 = () => annual_salary_0_in;
+export const salary_0 = () => salary_0_in;
 export const salary_inflation_rate = () => salary_inflation_rate_in;
 export const empee_contribution_rate = () => empee_contribution_rate_in;
 //export const emper_contribution_rate = () => (emper_contribution_rate_in) not modelling employer contributions yet

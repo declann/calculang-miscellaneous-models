@@ -13,7 +13,7 @@ export const fund_value$m = memoize(fund_value$, JSON.stringify);
 export const fund_value = (a) => {
   return fund_value$m(a);
   // eslint-disable-next-line no-undef
-  fund_value$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  fund_value$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end fund_value memo-loader code //////////
 
@@ -25,7 +25,7 @@ export const unit_balance$m = memoize(unit_balance$, JSON.stringify);
 export const unit_balance = (a) => {
   return unit_balance$m(a);
   // eslint-disable-next-line no-undef
-  unit_balance$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  unit_balance$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_balance memo-loader code //////////
 
@@ -37,7 +37,7 @@ export const unit_allocation$m = memoize(unit_allocation$, JSON.stringify);
 export const unit_allocation = (a) => {
   return unit_allocation$m(a);
   // eslint-disable-next-line no-undef
-  unit_allocation$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
+  unit_allocation$({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_allocation memo-loader code //////////
 
@@ -61,7 +61,7 @@ export const empee_contribution$m = memoize(empee_contribution$, JSON.stringify)
 export const empee_contribution = (a) => {
   return empee_contribution$m(a);
   // eslint-disable-next-line no-undef
-  empee_contribution$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  empee_contribution$({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end empee_contribution memo-loader code //////////
 
@@ -73,7 +73,7 @@ export const salary$m = memoize(salary$, JSON.stringify);
 export const salary = (a) => {
   return salary$m(a);
   // eslint-disable-next-line no-undef
-  salary$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
+  salary$({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end salary memo-loader code //////////
 
@@ -85,7 +85,7 @@ export const projected_fund_value$m = memoize(projected_fund_value$, JSON.string
 export const projected_fund_value = (a) => {
   return projected_fund_value$m(a);
   // eslint-disable-next-line no-undef
-  projected_fund_value$({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  projected_fund_value$({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end projected_fund_value memo-loader code //////////
 
@@ -133,7 +133,7 @@ export const salary_0$m = memoize(salary_0$, JSON.stringify);
 export const salary_0 = (a) => {
   return salary_0$m(a);
   // eslint-disable-next-line no-undef
-  salary_0$({}); // never run, but here to "trick" calculang graph logic
+  salary_0$({ salary_0_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end salary_0 memo-loader code //////////
 
