@@ -23,10 +23,10 @@ import {
 export const salary_inflation_rate_actual = () => [0.019, 0.01, 0.01][age() - age_0()];
 export const empee_contribution_rate_actual = () => [0.1, 0.1, 0.08][age() - age_0()];
 export const unit_growth_rate_actual = () => [0.06, 0.04, 0.04][age() - age_0()];
-export const age_0_actual = () => [age_0(),age_0(),age_0(),][age() - age_0()]; // silly?
-export const fund_value_0_actual = () => [fund_value_0(),fund_value_0(),fund_value_0()][age() - age_0()];
-export const retirement_age_actual = () => [retirement_age(),retirement_age(),retirement_age(),][age() - age_0()];
-export const salary_0_actual = () => [salary_0(),salary_0(),salary_0(),][age() - age_0()];
+export const age_0_actual = () => [20,20,20][age() - age_0()]; // silly?
+export const fund_value_0_actual = () => [0,0,0][age() - age_0()];
+export const retirement_age_actual = () => [65,65,65][age() - age_0()];
+export const salary_0_actual = () => [30000,30000,30000][age() - age_0()];
 
 export {
   ${formulae_not_inputs.join(',')},
