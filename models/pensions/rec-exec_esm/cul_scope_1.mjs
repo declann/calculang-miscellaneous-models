@@ -35,9 +35,10 @@ export const empee_contribution = ({ age_in, rec_step_in, age_opening_in, age_cl
 
 export const salary = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) => {
   // at end of year
+  if (age_in == 999 || age_in == 50) console.trace();
   if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_closing_in }) - 1) return salary_0({ age_in, rec_step_in, age_opening_in, age_closing_in });else
-  if (age({ age_in }) >= retirement_age({ age_in, rec_step_in, age_opening_in, age_closing_in })) return 0;else
-  return salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * (1 + salary_inflation_rate({ age_in, rec_step_in, age_opening_in, age_closing_in })); // < age_0 = undefined, any way/use to capture this statically?
+  if (age({ age_in }) > retirement_age({ age_in, rec_step_in, age_opening_in, age_closing_in })) return salary({ rec_step_in, age_opening_in, age_closing_in, age_in: age({ age_in }) - 1 }) * (1 + salary_inflation_rate({ age_in, rec_step_in, age_opening_in, age_closing_in }));else
+  return 0; // < age_0 = undefined, any way/use to capture this statically?
 };
 
 export const projected_fund_value = ({ age_in, rec_step_in, age_opening_in, age_closing_in }) =>
