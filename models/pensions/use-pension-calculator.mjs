@@ -1,4 +1,4 @@
-import { annual_premium, annual_salary, fund_value, unit_allocation, unit_balance, unit_price } from './pensions-calculator_esm/cul_scope_0.mjs';
+import { annual_premium, annual_salary, fund_value, unit_allocation, unit_balance, unit_price } from './pension-calculator_esm/cul_scope_0.mjs';
 
 import { range } from 'underscore';
 

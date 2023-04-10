@@ -654,7 +654,7 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./pensions-calculator-nomemo.cul.js"
+    "0": "./pension-calculator-nomemo.cul.js"
   },
   "import_sources_to_resource": {},
   "cul_input_map": {
