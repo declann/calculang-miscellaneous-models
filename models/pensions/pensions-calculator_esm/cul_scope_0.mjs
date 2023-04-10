@@ -3,7 +3,7 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, annual_premium_ as annual_premium$, annual_salary_ as annual_salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, annual_salary_0_ as annual_salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
 
 
 
@@ -13,7 +13,7 @@ export const fund_value$m = memoize(fund_value$, JSON.stringify);
 export const fund_value = (a) => {
   return fund_value$m(a);
   // eslint-disable-next-line no-undef
-  fund_value$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  fund_value$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end fund_value memo-loader code //////////
 
@@ -25,7 +25,7 @@ export const unit_balance$m = memoize(unit_balance$, JSON.stringify);
 export const unit_balance = (a) => {
   return unit_balance$m(a);
   // eslint-disable-next-line no-undef
-  unit_balance$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  unit_balance$({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_balance memo-loader code //////////
 
@@ -37,7 +37,7 @@ export const unit_allocation$m = memoize(unit_allocation$, JSON.stringify);
 export const unit_allocation = (a) => {
   return unit_allocation$m(a);
   // eslint-disable-next-line no-undef
-  unit_allocation$({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
+  unit_allocation$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_allocation memo-loader code //////////
 
@@ -55,27 +55,27 @@ export const unit_price = (a) => {
 
 
 
-////////// start annual_premium memo-loader code //////////
-//const annual_premium$m = memoize(999999, isEqual)(annual_premium$);
-export const annual_premium$m = memoize(annual_premium$, JSON.stringify);
-export const annual_premium = (a) => {
-  return annual_premium$m(a);
+////////// start empee_contribution memo-loader code //////////
+//const empee_contribution$m = memoize(999999, isEqual)(empee_contribution$);
+export const empee_contribution$m = memoize(empee_contribution$, JSON.stringify);
+export const empee_contribution = (a) => {
+  return empee_contribution$m(a);
   // eslint-disable-next-line no-undef
-  annual_premium$({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  empee_contribution$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_premium memo-loader code //////////
+////////// end empee_contribution memo-loader code //////////
 
 
 
-////////// start annual_salary memo-loader code //////////
-//const annual_salary$m = memoize(999999, isEqual)(annual_salary$);
-export const annual_salary$m = memoize(annual_salary$, JSON.stringify);
-export const annual_salary = (a) => {
-  return annual_salary$m(a);
+////////// start salary memo-loader code //////////
+//const salary$m = memoize(999999, isEqual)(salary$);
+export const salary$m = memoize(salary$, JSON.stringify);
+export const salary = (a) => {
+  return salary$m(a);
   // eslint-disable-next-line no-undef
-  annual_salary$({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
+  salary$({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary memo-loader code //////////
+////////// end salary memo-loader code //////////
 
 
 
@@ -85,7 +85,7 @@ export const projected_fund_value$m = memoize(projected_fund_value$, JSON.string
 export const projected_fund_value = (a) => {
   return projected_fund_value$m(a);
   // eslint-disable-next-line no-undef
-  projected_fund_value$({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  projected_fund_value$({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end projected_fund_value memo-loader code //////////
 
@@ -127,15 +127,15 @@ export const retirement_age = (a) => {
 
 
 
-////////// start annual_salary_0 memo-loader code //////////
-//const annual_salary_0$m = memoize(999999, isEqual)(annual_salary_0$);
-export const annual_salary_0$m = memoize(annual_salary_0$, JSON.stringify);
-export const annual_salary_0 = (a) => {
-  return annual_salary_0$m(a);
+////////// start salary_0 memo-loader code //////////
+//const salary_0$m = memoize(999999, isEqual)(salary_0$);
+export const salary_0$m = memoize(salary_0$, JSON.stringify);
+export const salary_0 = (a) => {
+  return salary_0$m(a);
   // eslint-disable-next-line no-undef
-  annual_salary_0$({ annual_salary_0_in }); // never run, but here to "trick" calculang graph logic
+  salary_0$({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary_0 memo-loader code //////////
+////////// end salary_0 memo-loader code //////////
 
 
 

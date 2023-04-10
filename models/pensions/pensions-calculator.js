@@ -179,10 +179,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_allocation", function() { return unit_allocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_price$m", function() { return unit_price$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return unit_price; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_premium$m", function() { return annual_premium$m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_premium", function() { return annual_premium; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_salary$m", function() { return annual_salary$m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_salary", function() { return annual_salary; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution$m", function() { return empee_contribution$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return empee_contribution; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary$m", function() { return salary$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value$m", function() { return projected_fund_value$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return projected_fund_value; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age$m", function() { return age$m; });
@@ -191,8 +191,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_0", function() { return age_0; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retirement_age$m", function() { return retirement_age$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retirement_age", function() { return retirement_age; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_salary_0$m", function() { return annual_salary_0$m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "annual_salary_0", function() { return annual_salary_0; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_0$m", function() { return salary_0$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_0", function() { return salary_0; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate$m", function() { return salary_inflation_rate$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_inflation_rate", function() { return salary_inflation_rate; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_rate$m", function() { return empee_contribution_rate$m; });
@@ -214,11 +214,11 @@ __webpack_require__.r(__webpack_exports__);
 
 ////////// start fund_value memo-loader code //////////
 //const fund_value$m = memoize(999999, isEqual)(fund_value$);
-const fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "g"], JSON.stringify);
+const fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "e"], JSON.stringify);
 const fund_value = (a) => {
   return fund_value$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "g"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_ */ "e"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end fund_value memo-loader code //////////
 
@@ -230,7 +230,7 @@ const unit_balance$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize
 const unit_balance = (a) => {
   return unit_balance$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_balance_ */ "m"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_balance_ */ "m"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_balance memo-loader code //////////
 
@@ -242,7 +242,7 @@ const unit_allocation$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memo
 const unit_allocation = (a) => {
   return unit_allocation$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_allocation_ */ "l"])({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* unit_allocation_ */ "l"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end unit_allocation memo-loader code //////////
 
@@ -260,37 +260,37 @@ const unit_price = (a) => {
 
 
 
-////////// start annual_premium memo-loader code //////////
-//const annual_premium$m = memoize(999999, isEqual)(annual_premium$);
-const annual_premium$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_premium_ */ "c"], JSON.stringify);
-const annual_premium = (a) => {
-  return annual_premium$m(a);
+////////// start empee_contribution memo-loader code //////////
+//const empee_contribution$m = memoize(999999, isEqual)(empee_contribution$);
+const empee_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_ */ "c"], JSON.stringify);
+const empee_contribution = (a) => {
+  return empee_contribution$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_premium_ */ "c"])({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_ */ "c"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_premium memo-loader code //////////
+////////// end empee_contribution memo-loader code //////////
 
 
 
-////////// start annual_salary memo-loader code //////////
-//const annual_salary$m = memoize(999999, isEqual)(annual_salary$);
-const annual_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_salary_ */ "d"], JSON.stringify);
-const annual_salary = (a) => {
-  return annual_salary$m(a);
+////////// start salary memo-loader code //////////
+//const salary$m = memoize(999999, isEqual)(salary$);
+const salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_ */ "i"], JSON.stringify);
+const salary = (a) => {
+  return salary$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_salary_ */ "d"])({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_ */ "i"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary memo-loader code //////////
+////////// end salary memo-loader code //////////
 
 
 
 ////////// start projected_fund_value memo-loader code //////////
 //const projected_fund_value$m = memoize(999999, isEqual)(projected_fund_value$);
-const projected_fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "i"], JSON.stringify);
+const projected_fund_value$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "g"], JSON.stringify);
 const projected_fund_value = (a) => {
   return projected_fund_value$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "i"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* projected_fund_value_ */ "g"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end projected_fund_value memo-loader code //////////
 
@@ -322,25 +322,25 @@ const age_0 = (a) => {
 
 ////////// start retirement_age memo-loader code //////////
 //const retirement_age$m = memoize(999999, isEqual)(retirement_age$);
-const retirement_age$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* retirement_age_ */ "j"], JSON.stringify);
+const retirement_age$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* retirement_age_ */ "h"], JSON.stringify);
 const retirement_age = (a) => {
   return retirement_age$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* retirement_age_ */ "j"])({ retirement_age_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* retirement_age_ */ "h"])({ retirement_age_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end retirement_age memo-loader code //////////
 
 
 
-////////// start annual_salary_0 memo-loader code //////////
-//const annual_salary_0$m = memoize(999999, isEqual)(annual_salary_0$);
-const annual_salary_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_salary_0_ */ "e"], JSON.stringify);
-const annual_salary_0 = (a) => {
-  return annual_salary_0$m(a);
+////////// start salary_0 memo-loader code //////////
+//const salary_0$m = memoize(999999, isEqual)(salary_0$);
+const salary_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_0_ */ "j"], JSON.stringify);
+const salary_0 = (a) => {
+  return salary_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* annual_salary_0_ */ "e"])({ annual_salary_0_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* salary_0_ */ "j"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary_0 memo-loader code //////////
+////////// end salary_0 memo-loader code //////////
 
 
 
@@ -358,11 +358,11 @@ const salary_inflation_rate = (a) => {
 
 ////////// start empee_contribution_rate memo-loader code //////////
 //const empee_contribution_rate$m = memoize(999999, isEqual)(empee_contribution_rate$);
-const empee_contribution_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_rate_ */ "f"], JSON.stringify);
+const empee_contribution_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_rate_ */ "d"], JSON.stringify);
 const empee_contribution_rate = (a) => {
   return empee_contribution_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_rate_ */ "f"])({ empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* empee_contribution_rate_ */ "d"])({ empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end empee_contribution_rate memo-loader code //////////
 
@@ -382,11 +382,11 @@ const unit_growth_rate = (a) => {
 
 ////////// start fund_value_0 memo-loader code //////////
 //const fund_value_0$m = memoize(999999, isEqual)(fund_value_0$);
-const fund_value_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_0_ */ "h"], JSON.stringify);
+const fund_value_0$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_0_ */ "f"], JSON.stringify);
 const fund_value_0 = (a) => {
   return fund_value_0$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_0_ */ "h"])({ fund_value_0_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pensions_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* fund_value_0_ */ "f"])({ fund_value_0_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end fund_value_0 memo-loader code //////////
 
@@ -475,56 +475,58 @@ function tagTester(name) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return fund_value_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return fund_value_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return unit_balance_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return unit_allocation_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return unit_price_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return annual_premium_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return annual_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return projected_fund_value_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return empee_contribution_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return salary_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return projected_fund_value_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return age_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return age_0_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return retirement_age_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return annual_salary_0_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return retirement_age_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return salary_0_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return salary_inflation_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return empee_contribution_rate_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return empee_contribution_rate_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return unit_growth_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return fund_value_0_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return fund_value_0_; });
 /* harmony import */ var _pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
  // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
 
-const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) * Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
+// todo add timing comments
 
-const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) * Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
+
+const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value_0"])({ fund_value_0_in }) / Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in });else
-  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) + Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_allocation"])({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
+  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_balance"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) + Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_allocation"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in });
   // timing = premium received at start of year and allocated immediately
 };
 
-const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_premium"])({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) / Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in });
+const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, unit_growth_rate_in }) => Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution"])({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_in, age_0_in, unit_growth_rate_in }); // todo emper contribution, AVCs?
+
 const unit_price_ = ({ age_in, age_0_in, unit_growth_rate_in }) => {
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in })) return 1;else
   return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_price"])({ age_0_in, unit_growth_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_growth_rate"])({ unit_growth_rate_in }));
 };
 
-const annual_premium_ = ({ age_in, age_0_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+const empee_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1 || Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) == Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })) return 0;else
-  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_salary"])({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
+  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
 };
 
-const annual_salary_ = ({ age_in, age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
+const salary_ = ({ age_in, age_0_in, retirement_age_in, salary_inflation_rate_in }) => {
   // at end of year
-  if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_salary_0"])({ annual_salary_0_in });else
+  if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({});else
   if (Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) >= Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })) return 0;else
-
-  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["annual_salary"])({ age_0_in, annual_salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
+  return Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * (1 + Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
 };
 
-const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 // at retirement:
-Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, annual_salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }) });
+Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value"])({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pensions_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in }) });
 
 // explicit inputs ::
 
@@ -533,7 +535,7 @@ const age_ = ({ age_in }) => age_in; // input
 const age_0_ = ({ age_0_in }) => age_0_in;
 
 const retirement_age_ = ({ retirement_age_in }) => retirement_age_in;
-const annual_salary_0_ = ({ annual_salary_0_in }) => annual_salary_0_in;
+const salary_0_ = ({}) => annual_salary_0_in;
 const salary_inflation_rate_ = ({ salary_inflation_rate_in }) => salary_inflation_rate_in;
 const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contribution_rate_in;
 //export const emper_contribution_rate = () => (emper_contribution_rate_in) not modelling employer contributions yet

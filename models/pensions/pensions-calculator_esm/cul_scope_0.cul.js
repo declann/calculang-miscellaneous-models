@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, annual_premium_ as annual_premium$, annual_salary_ as annual_salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, annual_salary_0_ as annual_salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pensions-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pensions-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
@@ -55,27 +55,27 @@ export const unit_price = (a) => {
 
 
 
-////////// start annual_premium memo-loader code //////////
-//const annual_premium$m = memoize(999999, isEqual)(annual_premium$);
-export const annual_premium$m = memoize(annual_premium$, JSON.stringify);
-export const annual_premium = (a) => {
-  return annual_premium$m(a);
+////////// start empee_contribution memo-loader code //////////
+//const empee_contribution$m = memoize(999999, isEqual)(empee_contribution$);
+export const empee_contribution$m = memoize(empee_contribution$, JSON.stringify);
+export const empee_contribution = (a) => {
+  return empee_contribution$m(a);
   // eslint-disable-next-line no-undef
-  annual_premium$(); // never run, but here to "trick" calculang graph logic
+  empee_contribution$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_premium memo-loader code //////////
+////////// end empee_contribution memo-loader code //////////
 
 
 
-////////// start annual_salary memo-loader code //////////
-//const annual_salary$m = memoize(999999, isEqual)(annual_salary$);
-export const annual_salary$m = memoize(annual_salary$, JSON.stringify);
-export const annual_salary = (a) => {
-  return annual_salary$m(a);
+////////// start salary memo-loader code //////////
+//const salary$m = memoize(999999, isEqual)(salary$);
+export const salary$m = memoize(salary$, JSON.stringify);
+export const salary = (a) => {
+  return salary$m(a);
   // eslint-disable-next-line no-undef
-  annual_salary$(); // never run, but here to "trick" calculang graph logic
+  salary$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary memo-loader code //////////
+////////// end salary memo-loader code //////////
 
 
 
@@ -127,15 +127,15 @@ export const retirement_age = (a) => {
 
 
 
-////////// start annual_salary_0 memo-loader code //////////
-//const annual_salary_0$m = memoize(999999, isEqual)(annual_salary_0$);
-export const annual_salary_0$m = memoize(annual_salary_0$, JSON.stringify);
-export const annual_salary_0 = (a) => {
-  return annual_salary_0$m(a);
+////////// start salary_0 memo-loader code //////////
+//const salary_0$m = memoize(999999, isEqual)(salary_0$);
+export const salary_0$m = memoize(salary_0$, JSON.stringify);
+export const salary_0 = (a) => {
+  return salary_0$m(a);
   // eslint-disable-next-line no-undef
-  annual_salary_0$(); // never run, but here to "trick" calculang graph logic
+  salary_0$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end annual_salary_0 memo-loader code //////////
+////////// end salary_0 memo-loader code //////////
 
 
 

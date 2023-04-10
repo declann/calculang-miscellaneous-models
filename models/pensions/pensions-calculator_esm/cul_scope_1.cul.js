@@ -2,6 +2,8 @@
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
 
+// todo add timing comments
+
 export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
 
 export const unit_balance = () => {
@@ -10,23 +12,23 @@ export const unit_balance = () => {
   // timing = premium received at start of year and allocated immediately
 };
 
-export const unit_allocation = () => annual_premium() / unit_price();
+export const unit_allocation = () => empee_contribution() / unit_price(); // todo emper contribution, AVCs?
+
 export const unit_price = () => {
   if (age() <= age_0()) return 1;
   else return unit_price({ age_in: age() - 1 }) * (1 + unit_growth_rate());
 };
 
-export const annual_premium = () => {
+export const empee_contribution = () => {
   if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
-  else return annual_salary({ age_in: age() - 1 }) * empee_contribution_rate();
+  else return salary({ age_in: age() - 1 }) * empee_contribution_rate();
 };
 
-export const annual_salary = () => {
+export const salary = () => {
   // at end of year
-  if (age() <= age_0() - 1) return annual_salary_0();
+  if (age() <= age_0() - 1) return salary_0();
   else if (age() >= retirement_age()) return 0;
-  else
-    return annual_salary({ age_in: age() - 1 }) * (1 + salary_inflation_rate()); // < age_0 = undefined, any way/use to capture this statically?
+  else return salary({ age_in: age() - 1 }) * (1 + salary_inflation_rate()); // < age_0 = undefined, any way/use to capture this statically?
 };
 
 export const projected_fund_value = () =>
@@ -40,7 +42,7 @@ export const age = () => age_in; // input
 export const age_0 = () => age_0_in;
 
 export const retirement_age = () => retirement_age_in;
-export const annual_salary_0 = () => annual_salary_0_in;
+export const salary_0 = () => annual_salary_0_in;
 export const salary_inflation_rate = () => salary_inflation_rate_in;
 export const empee_contribution_rate = () => empee_contribution_rate_in;
 //export const emper_contribution_rate = () => (emper_contribution_rate_in) not modelling employer contributions yet
