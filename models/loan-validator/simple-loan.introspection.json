@@ -1,0 +1,10 @@
+{
+  "cul_functions": {},
+  "cul_links": [],
+  "cul_scope_ids_to_resource": {
+    "0": "./simple-loan.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {},
+  "dot": "digraph {\n}\n"
+}
