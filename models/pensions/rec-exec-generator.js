@@ -2,96 +2,54 @@
 
 const introspection = require('./pension-calculator-nomemo.introspection.json');
 
-let formulae = Object.values(introspection.cul_functions).filter(d => d.cul_scope_id == 0 && d.name.indexOf('$') == -1).map(d => d.name).join(',');
+//let inputs = ['salary_inflation_rate_in', 'empee_contribution_rate_in', 'unit_growth_rate_in'
+let inputs = Object.values(introspection.cul_functions).filter(d => d.reason == 'input definition').map(d => d.name).filter(d => d != 'age_in'); // _ins
+let formulae_not_inputs = Object.values(introspection.cul_functions).filter(d => inputs.indexOf(d.name +'_in') == -1 && inputs.indexOf(d.name) == -1).map(d => d.name).filter(d => d!='age_in')//.join(',');
 
-console.log(` 
+//console.log(formulae_not_inputs);
+
+debugger;
+
+console.log(`
 import {
-  fund_value,
-  unit_balance,
-  unit_allocation,
-  unit_price,
-  annual_premium,
-  annual_salary,
-  projected_fund_value,
-  age,
-  age_0,
-  retirement_age,
-  annual_salary_0,
-  salary_inflation_rate as salary_inflation_rate_projected, // how come I didn't put _ here and it worked?
-  empee_contribution_rate as empee_contribution_rate_projected,
-  unit_growth_rate as unit_growth_rate_projected,
-  fund_value_0,
+  //age, // important
+  ${formulae_not_inputs.join(',')},
+  ${inputs.map(d => d.slice(0, -3) + ' as ' + d.slice(0, -3) + '_projected').join(',\n')} // how come I didn't put _ here and it worked?
 } from "./projected.cul";
 
-/*import {
-  salary_inflation_rate as salary_inflation_rate_actual,
-  empee_contribution_rate as empee_contribution_rate_actual,
-  unit_growth_rate as unit_growth_rate_actual,
-} from "./actual.cul";*/
 
+// actual data todo add flexibility
 
 export const salary_inflation_rate_actual = () => [0.019, 0.01, 0.01][age() - age_0()];
 export const empee_contribution_rate_actual = () => [0.1, 0.1, 0.08][age() - age_0()];
 export const unit_growth_rate_actual = () => [0.06, 0.04, 0.04][age() - age_0()];
+export const age_0_actual = () => [age_0(),age_0(),age_0(),][age() - age_0()]; // silly?
+export const fund_value_0_actual = () => [fund_value_0(),fund_value_0(),fund_value_0()][age() - age_0()];
+export const retirement_age_actual = () => [retirement_age(),retirement_age(),retirement_age(),][age() - age_0()];
+export const salary_0_actual = () => [salary_0(),salary_0(),salary_0(),][age() - age_0()];
 
 export {
-  fund_value,
-  unit_balance,
-  unit_allocation,
-  unit_price,
-  annual_premium,
-  annual_salary,
-  projected_fund_value,
-  age,
-  age_0,
-  retirement_age,
-  annual_salary_0,
-  fund_value_0,
-  //salary_inflation_rate_actual,
-  //empee_contribution_rate_actual,
-  //unit_growth_rate_actual,
-  salary_inflation_rate_projected,
-  empee_contribution_rate_projected,
-  unit_growth_rate_projected
+  ${formulae_not_inputs.join(',')},
+  ${inputs.map(d => d.slice(0, -3) + '_projected').join(',\n')}
 };
 
+// TODO
 export const age_opening = () => age_opening_in;
 export const age_closing = () => age_closing_in;
-export const rec_step = () => rec_step_in; // 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
+export const rec_step = () => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
 
-export const salary_inflation_rate_actual_co = () => {
-  if (rec_step() >= 1) return age_opening();
+
+// neater if I merge these 2 blocks together:
+
+${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).map((d,i) => `export const ${d}_actual_co = () => {
+  if (rec_step() >= ${i+1}) return age_opening();
   else return age_closing();
-};
+};`).join('\n\n')};
 
-export const salary_inflation_rate = () => {
-  if (age() > salary_inflation_rate_actual_co())
-    return salary_inflation_rate_projected();
-  else return salary_inflation_rate_actual();
-};
+${inputs.filter(d => d != 'age_in').map(d => d.slice(0, -3)).map(d => `export const ${d} = () => {
+  if(age() > ${d}_actual_co())
+    return ${d}_projected()
+  else return ${d}_actual();
+};`).join('\n\n')};
 
-export const empee_contribution_rate_actual_co = () => {
-  if (rec_step() >= 2) return age_opening();
-  else return age_closing();
-};
-
-export const empee_contribution_rate = () => {
-  if (age() > empee_contribution_rate_actual_co())
-    return empee_contribution_rate_projected();
-  else return empee_contribution_rate_actual();
-};
-
-export const unit_growth_rate_actual_co = () => {
-  if (rec_step() >= 3) return age_opening();
-  else return age_closing();
-};
-
-export const unit_growth_rate = () => {
-  if (age() > unit_growth_rate_actual_co())
-    return unit_growth_rate_projected();
-  else return unit_growth_rate_actual();
-};
-
-//export const empee_contribution_rate = () => empee_contribution_rate_projected();
-//export const unit_growth_rate = () => unit_growth_rate_projected();
 `)

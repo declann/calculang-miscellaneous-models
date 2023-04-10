@@ -12,6 +12,15 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/models/neural-net/use-from-brain-xor.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "rec-exec-generator",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/models/pensions/rec-exec-generator.js"
         }
     ]
 }
