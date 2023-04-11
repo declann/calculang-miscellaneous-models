@@ -966,7 +966,7 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./simple-incometax.cul.js"
+    "0": "./simple-incometax-nomemo.cul.js"
   },
   "import_sources_to_resource": {},
   "cul_input_map": {

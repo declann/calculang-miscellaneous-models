@@ -244,4 +244,4 @@ net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pensi
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=simple-incometax.js.map
+//# sourceMappingURL=simple-incometax-nomemo.js.map
