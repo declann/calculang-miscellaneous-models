@@ -45,7 +45,7 @@
     "build:saas-ea": "cul-js compile ./models/saas-ea/rec.cul.js",
     "build:saas-expected": "cul-js compile ./models/saas-ea/expected.cul.js",
     "build:cashflows": "cul-js compile --memo ./models/cashflows/simple-cfs.cul.js",
-    "build:cashflows-nomemo": "cul-js compile ./models/cashflows/simple-cfs-nomemo.cul.js",
+    "build:cashflows-nomemo": "cp ./models/cashflows/simple-cfs.cul.js ./models/cashflows/simple-cfs-nomemo.cul.js && cul-js compile ./models/cashflows/simple-cfs-nomemo.cul.js",
     "use:fern": "node ./models/fern/use-fern.js",
     "write:fern": "node ./models/fern/use-fern.js > ./models/fern/fern.out.txt",
     "build:fern": "cul-js compile --memo ./models/fern/fern.cul.js",
