@@ -1,0 +1,508 @@
+{
+  "cul_functions": {
+    "0_barnsley_transforms": {
+      "cul_scope_id": 0,
+      "name": "barnsley_transforms",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 35,
+          "index": 236
+        },
+        "end": {
+          "line": 12,
+          "column": 1,
+          "index": 485
+        }
+      },
+      "inputs": []
+    },
+    "0_winning_transform_values": {
+      "cul_scope_id": 0,
+      "name": "winning_transform_values",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 14,
+          "column": 40,
+          "index": 528
+        },
+        "end": {
+          "line": 14,
+          "column": 77,
+          "index": 565
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_i": {
+      "cul_scope_id": 0,
+      "name": "i",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 17,
+          "index": 585
+        },
+        "end": {
+          "line": 16,
+          "column": 27,
+          "index": 595
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_i_in": {
+      "cul_scope_id": 0,
+      "name": "i_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_winner": {
+      "cul_scope_id": 0,
+      "name": "winner",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 22,
+          "index": 689
+        },
+        "end": {
+          "line": 40,
+          "column": 1,
+          "index": 1515
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_0": {
+      "cul_scope_id": 0,
+      "name": "barnsley_0",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 43,
+          "column": 26,
+          "index": 1568
+        },
+        "end": {
+          "line": 43,
+          "column": 61,
+          "index": 1603
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_1": {
+      "cul_scope_id": 0,
+      "name": "barnsley_1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 44,
+          "column": 26,
+          "index": 1631
+        },
+        "end": {
+          "line": 44,
+          "column": 61,
+          "index": 1666
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_2": {
+      "cul_scope_id": 0,
+      "name": "barnsley_2",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 26,
+          "index": 1694
+        },
+        "end": {
+          "line": 45,
+          "column": 61,
+          "index": 1729
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_3": {
+      "cul_scope_id": 0,
+      "name": "barnsley_3",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 46,
+          "column": 26,
+          "index": 1757
+        },
+        "end": {
+          "line": 46,
+          "column": 61,
+          "index": 1792
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_4": {
+      "cul_scope_id": 0,
+      "name": "barnsley_4",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 47,
+          "column": 26,
+          "index": 1820
+        },
+        "end": {
+          "line": 47,
+          "column": 61,
+          "index": 1855
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_barnsley_5": {
+      "cul_scope_id": 0,
+      "name": "barnsley_5",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 26,
+          "index": 1883
+        },
+        "end": {
+          "line": 48,
+          "column": 61,
+          "index": 1918
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 53,
+          "column": 17,
+          "index": 2020
+        },
+        "end": {
+          "line": 61,
+          "column": 1,
+          "index": 2189
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 63,
+          "column": 17,
+          "index": 2209
+        },
+        "end": {
+          "line": 71,
+          "column": 1,
+          "index": 2378
+        }
+      },
+      "inputs": [
+        "i_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_winning_transform_values",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_winning_transform_values",
+      "from": "0_winner",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_i",
+      "from": "0_i_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_winner",
+      "from": "0_undefined",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_winner",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_winner",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_undefined",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_undefined",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_undefined",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_undefined",
+      "from": "0_barnsley_transforms",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_0",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_1",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_2",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_3",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_4",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_barnsley_5",
+      "from": "0_winning_transform_values",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_barnsley_0",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_x",
+      "reason": "call",
+      "negs": [
+        "i_in"
+      ]
+    },
+    {
+      "to": "0_x",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_barnsley_1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_y",
+      "reason": "call",
+      "negs": [
+        "i_in"
+      ]
+    },
+    {
+      "to": "0_x",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_barnsley_4",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_barnsley_2",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_x",
+      "reason": "call",
+      "negs": [
+        "i_in"
+      ]
+    },
+    {
+      "to": "0_y",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_barnsley_3",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_y",
+      "reason": "call",
+      "negs": [
+        "i_in"
+      ]
+    },
+    {
+      "to": "0_y",
+      "from": "0_i",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_barnsley_5",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./fern-nomemo.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {
+    "0_barnsley_transforms": [],
+    "0_winning_transform_values": [
+      "i_in"
+    ],
+    "0_i": [
+      "i_in"
+    ],
+    "0_i_in": [
+      "i_in"
+    ],
+    "0_winner": [
+      "i_in"
+    ],
+    "0_barnsley_0": [
+      "i_in"
+    ],
+    "0_barnsley_1": [
+      "i_in"
+    ],
+    "0_barnsley_2": [
+      "i_in"
+    ],
+    "0_barnsley_3": [
+      "i_in"
+    ],
+    "0_barnsley_4": [
+      "i_in"
+    ],
+    "0_barnsley_5": [
+      "i_in"
+    ],
+    "0_x": [
+      "i_in"
+    ],
+    "0_y": [
+      "i_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_barnsley_transforms\" [cul_scope_id=0,name=barnsley_transforms,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_barnsley_transforms inputs: \"]\n  \"0_winning_transform_values\" [cul_scope_id=0,name=winning_transform_values,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_winning_transform_values inputs: i_in\"]\n  \"0_i\" [cul_scope_id=0,name=i,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_i inputs: i_in\"]\n  \"0_i_in\" [cul_scope_id=0,name=i_in,cul_source_scope_id=0,reason=\"input definition\",inputs=i_in,label=\"0_i_in inputs: i_in\"]\n  \"0_winner\" [cul_scope_id=0,name=winner,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_winner inputs: i_in\"]\n  \"0_barnsley_0\" [cul_scope_id=0,name=barnsley_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_0 inputs: i_in\"]\n  \"0_barnsley_1\" [cul_scope_id=0,name=barnsley_1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_1 inputs: i_in\"]\n  \"0_barnsley_2\" [cul_scope_id=0,name=barnsley_2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_2 inputs: i_in\"]\n  \"0_barnsley_3\" [cul_scope_id=0,name=barnsley_3,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_3 inputs: i_in\"]\n  \"0_barnsley_4\" [cul_scope_id=0,name=barnsley_4,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_4 inputs: i_in\"]\n  \"0_barnsley_5\" [cul_scope_id=0,name=barnsley_5,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_barnsley_5 inputs: i_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_x inputs: i_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=i_in,label=\"0_y inputs: i_in\"]\n  \"0_undefined\"\n  \"0_barnsley_transforms\" -> \"0_winning_transform_values\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winner\" -> \"0_winning_transform_values\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_i_in\" -> \"0_i\" [value=\"[object Object]\",label=\"input +i_in\"]\n  \"0_i\" -> \"0_winner\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_barnsley_transforms\" -> \"0_winner\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_barnsley_transforms\" -> \"0_undefined\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_2\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_3\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_4\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_winning_transform_values\" -> \"0_barnsley_5\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_i\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_barnsley_0\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_x\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"0_barnsley_1\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y\" -> \"0_x\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"0_barnsley_4\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_i\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_barnsley_2\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_y\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"0_barnsley_3\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y\" -> \"0_y\" [value=\"[object Object]\",label=\"call -i_in\"]\n  \"0_barnsley_5\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}

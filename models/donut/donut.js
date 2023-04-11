@@ -605,7 +605,7 @@ const R2_ = ({ R2_in }) => R2_in;
 // rotations time params
 //export const A = () => A_in;
 //export const B = () => B_in;
-const A_ = ({ frame_in }) => 1 + 0.07 * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["frame"])({ frame_in });
+const A_ = ({ frame_in }) => 1 + 0.07 * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["frame"])({ frame_in }); // todo make rotation params out of 0.07, 0.03
 const B_ = ({ frame_in }) => 1 + 0.03 * Object(_donut_cul_js__WEBPACK_IMPORTED_MODULE_0__["frame"])({ frame_in });
 const frame_ = ({ frame_in }) => frame_in;
 

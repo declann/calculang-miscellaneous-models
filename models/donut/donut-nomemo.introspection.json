@@ -1,0 +1,1226 @@
+{
+  "cul_functions": {
+    "0_R1": {
+      "cul_scope_id": 0,
+      "name": "R1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 18,
+          "index": 520
+        },
+        "end": {
+          "line": 10,
+          "column": 29,
+          "index": 531
+        }
+      },
+      "inputs": [
+        "R1_in"
+      ]
+    },
+    "0_R1_in": {
+      "cul_scope_id": 0,
+      "name": "R1_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "R1_in"
+      ]
+    },
+    "0_R2": {
+      "cul_scope_id": 0,
+      "name": "R2",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 11,
+          "column": 18,
+          "index": 551
+        },
+        "end": {
+          "line": 11,
+          "column": 29,
+          "index": 562
+        }
+      },
+      "inputs": [
+        "R2_in"
+      ]
+    },
+    "0_R2_in": {
+      "cul_scope_id": 0,
+      "name": "R2_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "R2_in"
+      ]
+    },
+    "0_A": {
+      "cul_scope_id": 0,
+      "name": "A",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 15,
+          "column": 17,
+          "index": 668
+        },
+        "end": {
+          "line": 15,
+          "column": 41,
+          "index": 692
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_B": {
+      "cul_scope_id": 0,
+      "name": "B",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 17,
+          "index": 758
+        },
+        "end": {
+          "line": 16,
+          "column": 41,
+          "index": 782
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_frame": {
+      "cul_scope_id": 0,
+      "name": "frame",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 17,
+          "column": 21,
+          "index": 805
+        },
+        "end": {
+          "line": 17,
+          "column": 35,
+          "index": 819
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_frame_in": {
+      "cul_scope_id": 0,
+      "name": "frame_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_K2": {
+      "cul_scope_id": 0,
+      "name": "K2",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 19,
+          "column": 18,
+          "index": 840
+        },
+        "end": {
+          "line": 19,
+          "column": 29,
+          "index": 851
+        }
+      },
+      "inputs": [
+        "K2_in"
+      ]
+    },
+    "0_K2_in": {
+      "cul_scope_id": 0,
+      "name": "K2_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "K2_in"
+      ]
+    },
+    "0_K1": {
+      "cul_scope_id": 0,
+      "name": "K1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 18,
+          "index": 871
+        },
+        "end": {
+          "line": 20,
+          "column": 29,
+          "index": 882
+        }
+      },
+      "inputs": [
+        "K1_in"
+      ]
+    },
+    "0_K1_in": {
+      "cul_scope_id": 0,
+      "name": "K1_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "K1_in"
+      ]
+    },
+    "0_screen_width": {
+      "cul_scope_id": 0,
+      "name": "screen_width",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 21,
+          "column": 28,
+          "index": 965
+        },
+        "end": {
+          "line": 21,
+          "column": 49,
+          "index": 986
+        }
+      },
+      "inputs": [
+        "screen_width_in"
+      ]
+    },
+    "0_screen_width_in": {
+      "cul_scope_id": 0,
+      "name": "screen_width_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "screen_width_in"
+      ]
+    },
+    "0_screen_height": {
+      "cul_scope_id": 0,
+      "name": "screen_height",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 29,
+          "index": 1017
+        },
+        "end": {
+          "line": 22,
+          "column": 51,
+          "index": 1039
+        }
+      },
+      "inputs": [
+        "screen_height_in"
+      ]
+    },
+    "0_screen_height_in": {
+      "cul_scope_id": 0,
+      "name": "screen_height_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "screen_height_in"
+      ]
+    },
+    "0_theta": {
+      "cul_scope_id": 0,
+      "name": "theta",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 21,
+          "index": 1122
+        },
+        "end": {
+          "line": 25,
+          "column": 35,
+          "index": 1136
+        }
+      },
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_theta_in": {
+      "cul_scope_id": 0,
+      "name": "theta_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_phi": {
+      "cul_scope_id": 0,
+      "name": "phi",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 27,
+          "column": 19,
+          "index": 1210
+        },
+        "end": {
+          "line": 27,
+          "column": 31,
+          "index": 1222
+        }
+      },
+      "inputs": [
+        "phi_in"
+      ]
+    },
+    "0_phi_in": {
+      "cul_scope_id": 0,
+      "name": "phi_in",
+      "cul_source_scope_id": 0,
+      "reason": "input definition",
+      "inputs": [
+        "phi_in"
+      ]
+    },
+    "0_cosA": {
+      "cul_scope_id": 0,
+      "name": "cosA",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 30,
+          "column": 20,
+          "index": 1283
+        },
+        "end": {
+          "line": 30,
+          "column": 39,
+          "index": 1302
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_sinA": {
+      "cul_scope_id": 0,
+      "name": "sinA",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 31,
+          "column": 20,
+          "index": 1324
+        },
+        "end": {
+          "line": 31,
+          "column": 39,
+          "index": 1343
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_cosB": {
+      "cul_scope_id": 0,
+      "name": "cosB",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 32,
+          "column": 20,
+          "index": 1365
+        },
+        "end": {
+          "line": 32,
+          "column": 39,
+          "index": 1384
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_sinB": {
+      "cul_scope_id": 0,
+      "name": "sinB",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 33,
+          "column": 20,
+          "index": 1406
+        },
+        "end": {
+          "line": 33,
+          "column": 39,
+          "index": 1425
+        }
+      },
+      "inputs": [
+        "frame_in"
+      ]
+    },
+    "0_cosTheta": {
+      "cul_scope_id": 0,
+      "name": "cosTheta",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 34,
+          "column": 24,
+          "index": 1451
+        },
+        "end": {
+          "line": 34,
+          "column": 47,
+          "index": 1474
+        }
+      },
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_sinTheta": {
+      "cul_scope_id": 0,
+      "name": "sinTheta",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 35,
+          "column": 24,
+          "index": 1500
+        },
+        "end": {
+          "line": 35,
+          "column": 47,
+          "index": 1523
+        }
+      },
+      "inputs": [
+        "theta_in"
+      ]
+    },
+    "0_cosPhi": {
+      "cul_scope_id": 0,
+      "name": "cosPhi",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 36,
+          "column": 22,
+          "index": 1547
+        },
+        "end": {
+          "line": 36,
+          "column": 43,
+          "index": 1568
+        }
+      },
+      "inputs": [
+        "phi_in"
+      ]
+    },
+    "0_sinPhi": {
+      "cul_scope_id": 0,
+      "name": "sinPhi",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 22,
+          "index": 1592
+        },
+        "end": {
+          "line": 37,
+          "column": 43,
+          "index": 1613
+        }
+      },
+      "inputs": [
+        "phi_in"
+      ]
+    },
+    "0_circlex": {
+      "cul_scope_id": 0,
+      "name": "circlex",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 40,
+          "column": 23,
+          "index": 1688
+        },
+        "end": {
+          "line": 40,
+          "column": 53,
+          "index": 1718
+        }
+      },
+      "inputs": [
+        "R2_in",
+        "R1_in",
+        "theta_in"
+      ]
+    },
+    "0_circley": {
+      "cul_scope_id": 0,
+      "name": "circley",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 41,
+          "column": 23,
+          "index": 1743
+        },
+        "end": {
+          "line": 41,
+          "column": 46,
+          "index": 1766
+        }
+      },
+      "inputs": [
+        "R1_in",
+        "theta_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 45,
+          "column": 17,
+          "index": 1890
+        },
+        "end": {
+          "line": 46,
+          "column": 62,
+          "index": 1958
+        }
+      },
+      "inputs": [
+        "R2_in",
+        "R1_in",
+        "theta_in",
+        "frame_in",
+        "phi_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 48,
+          "column": 17,
+          "index": 1978
+        },
+        "end": {
+          "line": 50,
+          "column": 29,
+          "index": 2078
+        }
+      },
+      "inputs": [
+        "R2_in",
+        "R1_in",
+        "theta_in",
+        "frame_in",
+        "phi_in"
+      ]
+    },
+    "0_z": {
+      "cul_scope_id": 0,
+      "name": "z",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 52,
+          "column": 17,
+          "index": 2098
+        },
+        "end": {
+          "line": 53,
+          "column": 59,
+          "index": 2163
+        }
+      },
+      "inputs": [
+        "K2_in",
+        "frame_in",
+        "R2_in",
+        "R1_in",
+        "theta_in",
+        "phi_in"
+      ]
+    },
+    "0_xp": {
+      "cul_scope_id": 0,
+      "name": "xp",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 56,
+          "column": 18,
+          "index": 2216
+        },
+        "end": {
+          "line": 56,
+          "column": 63,
+          "index": 2261
+        }
+      },
+      "inputs": [
+        "screen_width_in",
+        "K1_in",
+        "R2_in",
+        "R1_in",
+        "theta_in",
+        "frame_in",
+        "phi_in",
+        "K2_in"
+      ]
+    },
+    "0_yp": {
+      "cul_scope_id": 0,
+      "name": "yp",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 57,
+          "column": 18,
+          "index": 2281
+        },
+        "end": {
+          "line": 57,
+          "column": 64,
+          "index": 2327
+        }
+      },
+      "inputs": [
+        "screen_height_in",
+        "K1_in",
+        "R2_in",
+        "R1_in",
+        "theta_in",
+        "frame_in",
+        "phi_in",
+        "K2_in"
+      ]
+    },
+    "0_L": {
+      "cul_scope_id": 0,
+      "name": "L",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 60,
+          "column": 17,
+          "index": 2361
+        },
+        "end": {
+          "line": 64,
+          "column": 65,
+          "index": 2526
+        }
+      },
+      "inputs": [
+        "phi_in",
+        "theta_in",
+        "frame_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_R1",
+      "from": "0_R1_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_R2",
+      "from": "0_R2_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_A",
+      "from": "0_frame",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_B",
+      "from": "0_frame",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_frame",
+      "from": "0_frame_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_K2",
+      "from": "0_K2_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_K1",
+      "from": "0_K1_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_screen_width",
+      "from": "0_screen_width_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_screen_height",
+      "from": "0_screen_height_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_theta",
+      "from": "0_theta_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_phi",
+      "from": "0_phi_in",
+      "reason": "input"
+    },
+    {
+      "to": "0_cosA",
+      "from": "0_A",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sinA",
+      "from": "0_A",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_cosB",
+      "from": "0_B",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sinB",
+      "from": "0_B",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_cosTheta",
+      "from": "0_theta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sinTheta",
+      "from": "0_theta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_cosPhi",
+      "from": "0_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_sinPhi",
+      "from": "0_phi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_circlex",
+      "from": "0_R2",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_circlex",
+      "from": "0_R1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_circlex",
+      "from": "0_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_circley",
+      "from": "0_R1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_circley",
+      "from": "0_sinTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_circlex",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_cosB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_cosPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_sinB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_sinPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_circlex",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_sinB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_cosPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_cosB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_sinPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_circley",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_cosB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_K2",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_circlex",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_sinPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_circley",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_z",
+      "from": "0_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_xp",
+      "from": "0_screen_width",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_xp",
+      "from": "0_K1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_xp",
+      "from": "0_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_xp",
+      "from": "0_z",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_yp",
+      "from": "0_screen_height",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_yp",
+      "from": "0_K1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_yp",
+      "from": "0_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_yp",
+      "from": "0_z",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinPhi",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_cosTheta",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_L",
+      "from": "0_sinPhi",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./donut-nomemo.cul.js"
+  },
+  "import_sources_to_resource": {},
+  "cul_input_map": {
+    "0_R1": [
+      "R1_in"
+    ],
+    "0_R1_in": [
+      "R1_in"
+    ],
+    "0_R2": [
+      "R2_in"
+    ],
+    "0_R2_in": [
+      "R2_in"
+    ],
+    "0_A": [
+      "frame_in"
+    ],
+    "0_B": [
+      "frame_in"
+    ],
+    "0_frame": [
+      "frame_in"
+    ],
+    "0_frame_in": [
+      "frame_in"
+    ],
+    "0_K2": [
+      "K2_in"
+    ],
+    "0_K2_in": [
+      "K2_in"
+    ],
+    "0_K1": [
+      "K1_in"
+    ],
+    "0_K1_in": [
+      "K1_in"
+    ],
+    "0_screen_width": [
+      "screen_width_in"
+    ],
+    "0_screen_width_in": [
+      "screen_width_in"
+    ],
+    "0_screen_height": [
+      "screen_height_in"
+    ],
+    "0_screen_height_in": [
+      "screen_height_in"
+    ],
+    "0_theta": [
+      "theta_in"
+    ],
+    "0_theta_in": [
+      "theta_in"
+    ],
+    "0_phi": [
+      "phi_in"
+    ],
+    "0_phi_in": [
+      "phi_in"
+    ],
+    "0_cosA": [
+      "frame_in"
+    ],
+    "0_sinA": [
+      "frame_in"
+    ],
+    "0_cosB": [
+      "frame_in"
+    ],
+    "0_sinB": [
+      "frame_in"
+    ],
+    "0_cosTheta": [
+      "theta_in"
+    ],
+    "0_sinTheta": [
+      "theta_in"
+    ],
+    "0_cosPhi": [
+      "phi_in"
+    ],
+    "0_sinPhi": [
+      "phi_in"
+    ],
+    "0_circlex": [
+      "R2_in",
+      "R1_in",
+      "theta_in"
+    ],
+    "0_circley": [
+      "R1_in",
+      "theta_in"
+    ],
+    "0_x": [
+      "R2_in",
+      "R1_in",
+      "theta_in",
+      "frame_in",
+      "phi_in"
+    ],
+    "0_y": [
+      "R2_in",
+      "R1_in",
+      "theta_in",
+      "frame_in",
+      "phi_in"
+    ],
+    "0_z": [
+      "K2_in",
+      "frame_in",
+      "R2_in",
+      "R1_in",
+      "theta_in",
+      "phi_in"
+    ],
+    "0_xp": [
+      "screen_width_in",
+      "K1_in",
+      "R2_in",
+      "R1_in",
+      "theta_in",
+      "frame_in",
+      "phi_in",
+      "K2_in"
+    ],
+    "0_yp": [
+      "screen_height_in",
+      "K1_in",
+      "R2_in",
+      "R1_in",
+      "theta_in",
+      "frame_in",
+      "phi_in",
+      "K2_in"
+    ],
+    "0_L": [
+      "phi_in",
+      "theta_in",
+      "frame_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_R1\" [cul_scope_id=0,name=R1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R1_in,label=\"0_R1 inputs: R1_in\"]\n  \"0_R1_in\" [cul_scope_id=0,name=R1_in,cul_source_scope_id=0,reason=\"input definition\",inputs=R1_in,label=\"0_R1_in inputs: R1_in\"]\n  \"0_R2\" [cul_scope_id=0,name=R2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=R2_in,label=\"0_R2 inputs: R2_in\"]\n  \"0_R2_in\" [cul_scope_id=0,name=R2_in,cul_source_scope_id=0,reason=\"input definition\",inputs=R2_in,label=\"0_R2_in inputs: R2_in\"]\n  \"0_A\" [cul_scope_id=0,name=A,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_A inputs: frame_in\"]\n  \"0_B\" [cul_scope_id=0,name=B,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_B inputs: frame_in\"]\n  \"0_frame\" [cul_scope_id=0,name=frame,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_frame inputs: frame_in\"]\n  \"0_frame_in\" [cul_scope_id=0,name=frame_in,cul_source_scope_id=0,reason=\"input definition\",inputs=frame_in,label=\"0_frame_in inputs: frame_in\"]\n  \"0_K2\" [cul_scope_id=0,name=K2,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=K2_in,label=\"0_K2 inputs: K2_in\"]\n  \"0_K2_in\" [cul_scope_id=0,name=K2_in,cul_source_scope_id=0,reason=\"input definition\",inputs=K2_in,label=\"0_K2_in inputs: K2_in\"]\n  \"0_K1\" [cul_scope_id=0,name=K1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=K1_in,label=\"0_K1 inputs: K1_in\"]\n  \"0_K1_in\" [cul_scope_id=0,name=K1_in,cul_source_scope_id=0,reason=\"input definition\",inputs=K1_in,label=\"0_K1_in inputs: K1_in\"]\n  \"0_screen_width\" [cul_scope_id=0,name=screen_width,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_width_in,label=\"0_screen_width inputs: screen_width_in\"]\n  \"0_screen_width_in\" [cul_scope_id=0,name=screen_width_in,cul_source_scope_id=0,reason=\"input definition\",inputs=screen_width_in,label=\"0_screen_width_in inputs: screen_width_in\"]\n  \"0_screen_height\" [cul_scope_id=0,name=screen_height,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=screen_height_in,label=\"0_screen_height inputs: screen_height_in\"]\n  \"0_screen_height_in\" [cul_scope_id=0,name=screen_height_in,cul_source_scope_id=0,reason=\"input definition\",inputs=screen_height_in,label=\"0_screen_height_in inputs: screen_height_in\"]\n  \"0_theta\" [cul_scope_id=0,name=theta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_theta inputs: theta_in\"]\n  \"0_theta_in\" [cul_scope_id=0,name=theta_in,cul_source_scope_id=0,reason=\"input definition\",inputs=theta_in,label=\"0_theta_in inputs: theta_in\"]\n  \"0_phi\" [cul_scope_id=0,name=phi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_phi inputs: phi_in\"]\n  \"0_phi_in\" [cul_scope_id=0,name=phi_in,cul_source_scope_id=0,reason=\"input definition\",inputs=phi_in,label=\"0_phi_in inputs: phi_in\"]\n  \"0_cosA\" [cul_scope_id=0,name=cosA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosA inputs: frame_in\"]\n  \"0_sinA\" [cul_scope_id=0,name=sinA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinA inputs: frame_in\"]\n  \"0_cosB\" [cul_scope_id=0,name=cosB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_cosB inputs: frame_in\"]\n  \"0_sinB\" [cul_scope_id=0,name=sinB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=frame_in,label=\"0_sinB inputs: frame_in\"]\n  \"0_cosTheta\" [cul_scope_id=0,name=cosTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_cosTheta inputs: theta_in\"]\n  \"0_sinTheta\" [cul_scope_id=0,name=sinTheta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=theta_in,label=\"0_sinTheta inputs: theta_in\"]\n  \"0_cosPhi\" [cul_scope_id=0,name=cosPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_cosPhi inputs: phi_in\"]\n  \"0_sinPhi\" [cul_scope_id=0,name=sinPhi,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=phi_in,label=\"0_sinPhi inputs: phi_in\"]\n  \"0_circlex\" [cul_scope_id=0,name=circlex,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in\",label=\"0_circlex inputs: R2_in,R1_in,theta_in\"]\n  \"0_circley\" [cul_scope_id=0,name=circley,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R1_in,theta_in\",label=\"0_circley inputs: R1_in,theta_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_x inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"R2_in,R1_in,theta_in,frame_in,phi_in\",label=\"0_y inputs: R2_in,R1_in,theta_in,frame_in,phi_in\"]\n  \"0_z\" [cul_scope_id=0,name=z,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\",label=\"0_z inputs: K2_in,frame_in,R2_in,R1_in,theta_in,phi_in\"]\n  \"0_xp\" [cul_scope_id=0,name=xp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_width_in,K1_in,R2_in,R1_in,theta_in,frame_in,phi_in,K2_in\",label=\"0_xp inputs: screen_width_in,K1_in,R2_in,R1_in,theta_in,frame_in,phi_in,K2_in\"]\n  \"0_yp\" [cul_scope_id=0,name=yp,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"screen_height_in,K1_in,R2_in,R1_in,theta_in,frame_in,phi_in,K2_in\",label=\"0_yp inputs: screen_height_in,K1_in,R2_in,R1_in,theta_in,frame_in,phi_in,K2_in\"]\n  \"0_L\" [cul_scope_id=0,name=L,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"phi_in,theta_in,frame_in\",label=\"0_L inputs: phi_in,theta_in,frame_in\"]\n  \"0_R1_in\" -> \"0_R1\" [value=\"[object Object]\",label=\"input +R1_in\"]\n  \"0_R2_in\" -> \"0_R2\" [value=\"[object Object]\",label=\"input +R2_in\"]\n  \"0_frame\" -> \"0_A\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_frame\" -> \"0_B\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_frame_in\" -> \"0_frame\" [value=\"[object Object]\",label=\"input +frame_in\"]\n  \"0_K2_in\" -> \"0_K2\" [value=\"[object Object]\",label=\"input +K2_in\"]\n  \"0_K1_in\" -> \"0_K1\" [value=\"[object Object]\",label=\"input +K1_in\"]\n  \"0_screen_width_in\" -> \"0_screen_width\" [value=\"[object Object]\",label=\"input +screen_width_in\"]\n  \"0_screen_height_in\" -> \"0_screen_height\" [value=\"[object Object]\",label=\"input +screen_height_in\"]\n  \"0_theta_in\" -> \"0_theta\" [value=\"[object Object]\",label=\"input +theta_in\"]\n  \"0_phi_in\" -> \"0_phi\" [value=\"[object Object]\",label=\"input +phi_in\"]\n  \"0_A\" -> \"0_cosA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_A\" -> \"0_sinA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_B\" -> \"0_cosB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_B\" -> \"0_sinB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_theta\" -> \"0_cosTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_theta\" -> \"0_sinTheta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_phi\" -> \"0_cosPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_phi\" -> \"0_sinPhi\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R2\" -> \"0_circlex\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R1\" -> \"0_circlex\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosTheta\" -> \"0_circlex\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_R1\" -> \"0_circley\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinTheta\" -> \"0_circley\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circlex\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosB\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosPhi\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinB\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circlex\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinB\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosPhi\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosB\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circley\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosA\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K2\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosA\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circlex\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_circley\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA\" -> \"0_z\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_width\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K1\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z\" -> \"0_xp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_screen_height\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_K1\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_z\" -> \"0_yp\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosPhi\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosTheta\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinB\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosA\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinPhi\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinA\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_sinTheta\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_cosB\" -> \"0_L\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}
