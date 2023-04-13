@@ -167,13 +167,13 @@ __webpack_require__.r(__webpack_exports__);
 const actuals = ({ actuals_in }) => actuals_in;
 
 // TODO generalise
-const salary_inflation_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].salary_inflation_rate;
-const empee_contribution_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].empee_contribution_rate;
-const unit_growth_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].unit_growth_rate;
-const age_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].age_0;
-const fund_value_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].fund_value_0;
-const retirement_age_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].retirement_age;
-const salary_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 20].salary_0;
+const salary_inflation_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].salary_inflation_rate;
+const empee_contribution_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].empee_contribution_rate;
+const unit_growth_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].unit_growth_rate;
+const age_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].age_0;
+const fund_value_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].fund_value_0;
+const retirement_age_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].retirement_age;
+const salary_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "a"])({ age_in }) - 30].salary_0;
 
 
 

@@ -17,13 +17,13 @@ fund_value_0 as fund_value_0_projected // how come I didn't put _ here and it wo
 export const actuals = () => actuals_in;
 
 // TODO generalise
-export const salary_inflation_rate_actual = () => actuals()[age()-20].salary_inflation_rate;
-export const empee_contribution_rate_actual = () => actuals()[age()-20].empee_contribution_rate;
-export const unit_growth_rate_actual = () => actuals()[age()-20].unit_growth_rate;
-export const age_0_actual = () => actuals()[age()-20].age_0;
-export const fund_value_0_actual = () => actuals()[age()-20].fund_value_0;
-export const retirement_age_actual = () => actuals()[age()-20].retirement_age;
-export const salary_0_actual = () => actuals()[age()-20].salary_0;
+export const salary_inflation_rate_actual = () => actuals()[age()-30].salary_inflation_rate;
+export const empee_contribution_rate_actual = () => actuals()[age()-30].empee_contribution_rate;
+export const unit_growth_rate_actual = () => actuals()[age()-30].unit_growth_rate;
+export const age_0_actual = () => actuals()[age()-30].age_0;
+export const fund_value_0_actual = () => actuals()[age()-30].fund_value_0;
+export const retirement_age_actual = () => actuals()[age()-30].retirement_age;
+export const salary_0_actual = () => actuals()[age()-30].salary_0;
 
 export {
   fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,salary,projected_fund_value,age,
