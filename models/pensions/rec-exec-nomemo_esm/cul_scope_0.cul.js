@@ -14,13 +14,16 @@ fund_value_0 as fund_value_0_projected // how come I didn't put _ here and it wo
 
 // actual data todo add flexibility
 
-export const salary_inflation_rate_actual = () => 0.019//age() - age_0() < 0 ? 0 : [0.019, 0.01, 0.01][age() - age_0()];
-export const empee_contribution_rate_actual = () => 0.08//age() - age_0() < 0 ? 0 : [0.1, 0.1, 0.08][age() - age_0()];
-export const unit_growth_rate_actual = () => 0.08//age() - age_0() < 0 ? 0 : [0.06, 0.04, 0.04][age() - age_0()];
-export const age_0_actual = () => 20;//[20,20,20][age() - age_0()]; // silly?
-export const fund_value_0_actual = () => 0//age() - age_0() < 0 ? 0 : [0,0,0][age() - age_0()];
-export const retirement_age_actual = () =>65// age() - age_0() < 0 ? 0 : [65,65,65][age() - age_0()];
-export const salary_0_actual = () => 30000//age() - age_0() < 0 ? 0 : [30000,30000,30000][age() - age_0()];
+export const actuals = () => actuals_in;
+
+// TODO generalise
+export const salary_inflation_rate_actual = () => actuals()[age()-20].salary_inflation_rate;
+export const empee_contribution_rate_actual = () => actuals()[age()-20].empee_contribution_rate;
+export const unit_growth_rate_actual = () => actuals()[age()-20].unit_growth_rate;
+export const age_0_actual = () => actuals()[age()-20].age_0;
+export const fund_value_0_actual = () => actuals()[age()-20].fund_value_0;
+export const retirement_age_actual = () => actuals()[age()-20].retirement_age;
+export const salary_0_actual = () => actuals()[age()-20].salary_0;
 
 export {
   fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,salary,projected_fund_value,age,
@@ -33,8 +36,8 @@ unit_growth_rate_projected,
 fund_value_0_projected
 };
 
-// TODO
-export const age_opening = () => age_opening_in + age_opening_closing_offset();
+// TODO generalise
+export const age_opening = () => age_opening_in + age_opening_closing_offset(); // todo offset in terms of closing-opening?
 export const age_closing = () => age_closing_in + age_opening_closing_offset();
 export const age_opening_closing_offset = () => age_opening_closing_offset_in;
 export const rec_step = () => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
