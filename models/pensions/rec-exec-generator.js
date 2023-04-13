@@ -26,7 +26,7 @@ export const actuals = () => actuals_in;
 export const salary_inflation_rate_actual = () => actuals()[age()-30+1].salary_inflation_rate;
 export const empee_contribution_rate_actual = () => actuals()[age()-30+1].empee_contribution_rate;
 export const unit_growth_rate_actual = () => actuals()[age()-30+1].unit_growth_rate;
-export const age_0_actual = () => actuals()[age()-30+1].age_0;
+export const age_0_actual = () => 30// actuals()[age()-30+1].age_0;
 export const fund_value_0_actual = () => actuals()[age()-30+1].fund_value_0;
 export const retirement_age_actual = () => actuals()[age()-30+1].retirement_age;
 export const salary_0_actual = () => actuals()[age()-30+1].salary_0;

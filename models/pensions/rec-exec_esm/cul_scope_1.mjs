@@ -16,7 +16,7 @@ export const fund_value_0_ = ({}) => 0;
 export const fund_value = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => unit_balance({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) * unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }); // not allowing for multiple funds now
 
 export const unit_balance = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1) return fund_value_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) / unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) - 1) return fund_value_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) / unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
   return unit_balance({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
   // timing = premium received at start of year and allocated immediately
 };
@@ -24,18 +24,18 @@ export const unit_balance = ({ age_in, rec_step_in, age_opening_in, age_opening_
 export const unit_allocation = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => empee_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) / unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }); // todo emper contribution, AVCs?
 
 export const unit_price = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 1;else
+  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in })) return 1;else
   return unit_price({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + unit_growth_rate({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }));
 };
 
 export const empee_contribution = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1 || age({ age_in }) == retirement_age({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
+  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) - 1 || age({ age_in }) == retirement_age({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
   return salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
 };
 
 export const salary = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   // at end of year
-  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1) return salary_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  if (age({ age_in }) <= age_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) - 1) return salary_0({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
   if (age({ age_in }) >= retirement_age({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
   return salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + salary_inflation_rate({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })); // < age_0 = undefined, any way/use to capture this statically?
 };
