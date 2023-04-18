@@ -4,8 +4,8 @@
 
 // todo add timing comments
 
-import { net_salary } from "./cul_scope_1.mjs";
-export { net_salary };
+import { income_tax } from "./cul_scope_1.mjs";
+export { income_tax };
 
 export const fund_value = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) => unit_balance({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) * unit_price({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
 
@@ -39,12 +39,12 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
 export const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
-net_salary({
+income_tax({
   gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
-net_salary({
+income_tax({
   gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
