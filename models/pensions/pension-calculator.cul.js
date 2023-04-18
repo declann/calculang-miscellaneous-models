@@ -50,6 +50,15 @@ export const empee_contribution_tax_relief = () =>
     pension_contribution_in: empee_contribution(),
   });
 
+export const accumulated_empee_contribution_tax_relief = () => {
+  if (age() == age_0() - 1) return 0;
+  else
+    return (
+      accumulated_empee_contribution_tax_relief({ age_in: age() - 1 }) +
+      empee_contribution_tax_relief()
+    );
+};
+
 export const emper_contribution = () => {
   if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
   else return salary({ age_in: age() - 1 }) * emper_contribution_rate();
