@@ -1,82 +1,113 @@
-import { fund_value_0 } from "./cul_scope_0.mjs";import { unit_growth_rate } from "./cul_scope_0.mjs";import { emper_contribution_rate } from "./cul_scope_0.mjs";import { empee_contribution_rate } from "./cul_scope_0.mjs";import { salary_inflation_rate } from "./cul_scope_0.mjs";import { salary_0 } from "./cul_scope_0.mjs";import { retirement_age } from "./cul_scope_0.mjs";import { age_0 } from "./cul_scope_0.mjs";import { age } from "./cul_scope_0.mjs";import { projected_fund_value } from "./cul_scope_0.mjs";import { salary } from "./cul_scope_0.mjs";import { emper_contribution } from "./cul_scope_0.mjs";import { empee_contribution_tax_relief } from "./cul_scope_0.mjs";import { accumulated_empee_contributions } from "./cul_scope_0.mjs";import { empee_contribution } from "./cul_scope_0.mjs";import { unit_price } from "./cul_scope_0.mjs";import { unit_allocation } from "./cul_scope_0.mjs";import { unit_balance } from "./cul_scope_0.mjs";import { fund_value } from "./cul_scope_0.mjs";import { net_salary } from "./cul_scope_0.mjs"; // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
+import { fund_value_0 } from "./cul_scope_0.mjs";import { unit_growth_rate } from "./cul_scope_0.mjs";import { emper_contribution_rate } from "./cul_scope_0.mjs";import { empee_contribution_rate } from "./cul_scope_0.mjs";import { salary_inflation_rate } from "./cul_scope_0.mjs";import { salary_0 } from "./cul_scope_0.mjs";import { retirement_age } from "./cul_scope_0.mjs";import { age_0 } from "./cul_scope_0.mjs";import { age } from "./cul_scope_0.mjs";import { projected_fund_value } from "./cul_scope_0.mjs";import { salary } from "./cul_scope_0.mjs";import { emper_contribution } from "./cul_scope_0.mjs";import { empee_contribution_tax_relief } from "./cul_scope_0.mjs";import { accumulated_empee_contributions } from "./cul_scope_0.mjs";import { empee_contribution } from "./cul_scope_0.mjs";import { unit_price } from "./cul_scope_0.mjs";import { unit_allocation } from "./cul_scope_0.mjs";import { unit_balance } from "./cul_scope_0.mjs";import { fund_value } from "./cul_scope_0.mjs"; // heavily simplified incometax calculation for Irish incometax
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
-// this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
+// inputs:
+export const gross_salary = ({ gross_salary_in }) => gross_salary_in;
+export const tax_credits = ({ tax_credits_in }) => tax_credits_in;
+export const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
 
-// todo add timing comments
+// functions:
+export const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });
 
-import { net_salary as net_salary_$ } from "./cul_scope_2.mjs";
+export const income_tax = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => paye({ gross_salary_in, pension_contribution_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
 
-export const fund_value_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) => unit_balance({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) * unit_price({ age_in, age_0_in, unit_growth_rate_in }); // not allowing for multiple funds now
+export const effective_rate = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) / gross_salary({ gross_salary_in });
 
-export const unit_balance_ = ({ age_in, age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) => {
-  if (age({ age_in }) <= age_0({ age_0_in }) - 1) return fund_value_0({ fund_value_0_in }) / unit_price({ age_in, age_0_in, unit_growth_rate_in });else
-  return unit_balance({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, unit_growth_rate_in });
-  // timing = premium received at start of year and allocated immediately
+export const prsi_taxable_salary = ({ gross_salary_in }) => gross_salary({ gross_salary_in });
+
+export const prsi = ({ gross_salary_in }) =>
+prsi_taxable_salary({ gross_salary_in }) * prsi_rate({}) * (gross_salary({ gross_salary_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+
+export const prsi_rate = ({}) => 0.04;
+
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
+export const usc_table = ({}) => [
+{ band_id: 1, band_co: 12012, rate: 0.005 },
+{ band_id: 2, band_co: 21295, rate: 0.02 },
+{
+  band_id: 3,
+  band_co: 70144,
+  rate: 0.045
+},
+{ band_id: 4, band_co: 0, rate: 0.08 }];
+
+
+export const usc_band_id = ({ usc_band_id_in }) => usc_band_id_in;
+
+export const usc_band_end = ({ usc_band_id_in }) => {
+  if (usc_band_id({ usc_band_id_in }) == usc_table({}).length) return 999999999;
+  return usc_table({})[usc_band_id({ usc_band_id_in }) - 1].band_co;
 };
 
-export const unit_allocation_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, unit_growth_rate_in }) =>
-(empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) + emper_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in })) / unit_price({ age_in, age_0_in, unit_growth_rate_in }); // todo, AVCs?
-
-export const unit_price_ = ({ age_in, age_0_in, unit_growth_rate_in }) => {
-  if (age({ age_in }) <= age_0({ age_0_in })) return 1;else
-  return unit_price({ age_0_in, unit_growth_rate_in, age_in: age({ age_in }) - 1 }) * (1 + unit_growth_rate({ unit_growth_rate_in }));
+export const usc_band_start = ({ usc_band_id_in }) => {
+  if (usc_band_id({ usc_band_id_in }) == 1) return 0;
+  return usc_table({})[usc_band_id({ usc_band_id_in }) - 2].band_co;
 };
 
-export const empee_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
-  if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else
-  return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ empee_contribution_rate_in });
+export const usc_rate = ({ usc_band_id_in }) => usc_table({})[usc_band_id({ usc_band_id_in }) - 1].rate;
+
+export const usc_taxable_salary = ({ gross_salary_in }) => gross_salary({ gross_salary_in }); // pay usc on pension contribution
+
+export const usc_by_band_id = ({ usc_band_id_in, gross_salary_in }) =>
+usc_rate({ usc_band_id_in }) *
+Math.min(
+usc_band_end({ usc_band_id_in }) - usc_band_start({ usc_band_id_in }),
+Math.max(usc_taxable_salary({ gross_salary_in }) - usc_band_start({ usc_band_id_in }), 0));
+
+
+export const usc = ({ gross_salary_in }) =>
+usc_table({}).reduce(
+(a, v) => a + usc_by_band_id({ gross_salary_in, usc_band_id_in: v.band_id }),
+0) * (
+gross_salary({ gross_salary_in }) > 13000 ? 1 : 0);
+
+// PAYE, "
+export const paye_table = ({}) => [
+{ band_id: 1, band_co: 36800, rate: 0.2 },
+{ band_id: 2, band_co: 100000, rate: 0.4 },
+{
+  band_id: 3,
+  band_co: 0,
+  rate: 0.4
+}];
+
+
+export const paye_band_id = ({ paye_band_id_in }) => paye_band_id_in;
+
+export const paye_band_end = ({ paye_band_id_in }) => {
+  if (paye_band_id({ paye_band_id_in }) == paye_table({}).length) return 999999999;
+  return paye_table({})[paye_band_id({ paye_band_id_in }) - 1].band_co;
 };
 
-export const accumulated_empee_contributions_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
-  if (age({ age_in }) == age_0({ age_0_in }) - 1) return 0;else
-
-  return (
-    accumulated_empee_contributions({ age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) +
-    empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }));
-
-};
-//_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
-
-export const empee_contribution_tax_relief_ = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
-net_salary({
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
-  tax_credits_in: 3000,
-  pension_contribution_in: 0 }) -
-
-net_salary({
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
-  tax_credits_in: 3000,
-  pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
-
-
-export const emper_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in }) => {
-  if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else
-  return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * emper_contribution_rate({ emper_contribution_rate_in });
+export const paye_band_start = ({ paye_band_id_in }) => {
+  if (paye_band_id({ paye_band_id_in }) == 1) return 0;
+  return paye_table({})[paye_band_id({ paye_band_id_in }) - 2].band_co;
 };
 
-export const salary_ = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }) => {
-  // at end of year
-  if (age({ age_in }) <= age_0({ age_0_in }) - 1) return salary_0({ salary_0_in });else
-  if (age({ age_in }) >= retirement_age({ retirement_age_in })) return 0;else
-  return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * (1 + salary_inflation_rate({ salary_inflation_rate_in })); // < age_0 = undefined, any way/use to capture this statically?
-};
+export const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
-export const projected_fund_value_ = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in }) =>
-// at retirement:
-fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, age_in: retirement_age({ retirement_age_in }) });
+export const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in }) =>
+Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }));
 
-// explicit inputs ::
+export const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
+paye_rate({ paye_band_id_in }) *
+Math.min(
+paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
+Math.max(paye_taxable_salary({ gross_salary_in, pension_contribution_in }) - paye_band_start({ paye_band_id_in }), 0));
 
-// using age and age_0 (starting age) as inputs, rather than year/time and age_0.
-export const age_ = ({ age_in }) => age_in; // input
-export const age_0_ = ({ age_0_in }) => age_0_in;
 
-export const retirement_age_ = ({ retirement_age_in }) => retirement_age_in;
-export const salary_0_ = ({ salary_0_in }) => salary_0_in;
-export const salary_inflation_rate_ = ({ salary_inflation_rate_in }) => salary_inflation_rate_in;
-export const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contribution_rate_in;
-export const emper_contribution_rate_ = ({ emper_contribution_rate_in }) => emper_contribution_rate_in;
+export const paye_over_bands = ({ gross_salary_in, pension_contribution_in }) =>
+Math.max(
+0,
+paye_table({}).reduce(
+(a, v) => a + paye_by_band_id({ gross_salary_in, pension_contribution_in, paye_band_id_in: v.band_id }),
+0)
+//- tax_credit() // input not working here => placed outside. Issue #95
+);
 
-export const unit_growth_rate_ = ({ unit_growth_rate_in }) => unit_growth_rate_in;
+export const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
 
-export const fund_value_0_ = ({ fund_value_0_in }) => fund_value_0_in;
+export const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
+net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });

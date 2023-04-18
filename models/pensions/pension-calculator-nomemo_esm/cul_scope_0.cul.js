@@ -5,6 +5,7 @@
 // todo add timing comments
 
 import { net_salary } from "./simple-incometax.cul";
+export { net_salary };
 
 export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
 

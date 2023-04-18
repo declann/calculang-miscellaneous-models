@@ -1,82 +1,113 @@
-// disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
+// heavily simplified incometax calculation for Irish incometax
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
-// this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
+// inputs:
+export const gross_salary = () => gross_salary_in;
+export const tax_credits = () => tax_credits_in;
+export const pension_contribution = () => pension_contribution_in;
 
-// todo add timing comments
+// functions:
+export const net_salary = () => gross_salary() - pension_contribution() - income_tax();
 
-import { net_salary } from "./simple-incometax.cul";
+export const income_tax = () => paye() + prsi() + usc();
 
-export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
+export const effective_rate = () => 1 - net_salary() / gross_salary();
 
-export const unit_balance = () => {
-  if (age() <= age_0() - 1) return fund_value_0() / unit_price();
-  else return unit_balance({ age_in: age() - 1 }) + unit_allocation();
-  // timing = premium received at start of year and allocated immediately
+export const prsi_taxable_salary = () => gross_salary();
+
+export const prsi = () =>
+  prsi_taxable_salary() * prsi_rate() * (gross_salary() > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+
+export const prsi_rate = () => 0.04;
+
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
+export const usc_table = () => [
+  { band_id: 1, band_co: 12012, rate: 0.005 },
+  { band_id: 2, band_co: 21295, rate: 0.02 },
+  {
+    band_id: 3,
+    band_co: 70144,
+    rate: 0.045,
+  },
+  { band_id: 4, band_co: 0, rate: 0.08 },
+];
+
+export const usc_band_id = () => usc_band_id_in;
+
+export const usc_band_end = () => {
+  if (usc_band_id() == usc_table().length) return 999999999;
+  return usc_table()[usc_band_id() - 1].band_co;
 };
 
-export const unit_allocation = () =>
-  (empee_contribution() + emper_contribution()) / unit_price(); // todo, AVCs?
-
-export const unit_price = () => {
-  if (age() <= age_0()) return 1;
-  else return unit_price({ age_in: age() - 1 }) * (1 + unit_growth_rate());
+export const usc_band_start = () => {
+  if (usc_band_id() == 1) return 0;
+  return usc_table()[usc_band_id() - 2].band_co;
 };
 
-export const empee_contribution = () => {
-  if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
-  else return salary({ age_in: age() - 1 }) * empee_contribution_rate();
+export const usc_rate = () => usc_table()[usc_band_id() - 1].rate;
+
+export const usc_taxable_salary = () => gross_salary(); // pay usc on pension contribution
+
+export const usc_by_band_id = () =>
+  usc_rate() *
+  Math.min(
+    usc_band_end() - usc_band_start(),
+    Math.max(usc_taxable_salary() - usc_band_start(), 0)
+  );
+
+export const usc = () =>
+  usc_table().reduce(
+    (a, v) => a + usc_by_band_id({ usc_band_id_in: v.band_id }),
+    0
+  ) * (gross_salary() > 13000 ? 1 : 0);
+
+// PAYE, "
+export const paye_table = () => [
+  { band_id: 1, band_co: 36800, rate: 0.2 },
+  { band_id: 2, band_co: 100000, rate: 0.4 },
+  {
+    band_id: 3,
+    band_co: 0,
+    rate: 0.4,
+  },
+];
+
+export const paye_band_id = () => paye_band_id_in;
+
+export const paye_band_end = () => {
+  if (paye_band_id() == paye_table().length) return 999999999;
+  return paye_table()[paye_band_id() - 1].band_co;
 };
 
-export const accumulated_empee_contributions = () => {
-  if (age() == age_0() - 1) return 0;
-  else
-    return (
-      accumulated_empee_contributions({ age_in: age() - 1 }) +
-      empee_contribution()
-    );
-};
-//_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
-
-export const empee_contribution_tax_relief = () =>
-  net_salary({
-    gross_salary_in: salary(),
-    tax_credits_in: 3000,
-    pension_contribution_in: 0,
-  }) -
-  net_salary({
-    gross_salary_in: salary(),
-    tax_credits_in: 3000,
-    pension_contribution_in: empee_contribution(),
-  });
-
-export const emper_contribution = () => {
-  if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
-  else return salary({ age_in: age() - 1 }) * emper_contribution_rate();
+export const paye_band_start = () => {
+  if (paye_band_id() == 1) return 0;
+  return paye_table()[paye_band_id() - 2].band_co;
 };
 
-export const salary = () => {
-  // at end of year
-  if (age() <= age_0() - 1) return salary_0();
-  else if (age() >= retirement_age()) return 0;
-  else return salary({ age_in: age() - 1 }) * (1 + salary_inflation_rate()); // < age_0 = undefined, any way/use to capture this statically?
-};
+export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 
-export const projected_fund_value = () =>
-  // at retirement:
-  fund_value({ age_in: retirement_age() });
+export const paye_taxable_salary = () =>
+  Math.max(0, gross_salary() - pension_contribution());
 
-// explicit inputs ::
+export const paye_by_band_id = () =>
+  paye_rate() *
+  Math.min(
+    paye_band_end() - paye_band_start(),
+    Math.max(paye_taxable_salary() - paye_band_start(), 0)
+  );
 
-// using age and age_0 (starting age) as inputs, rather than year/time and age_0.
-export const age = () => age_in; // input
-export const age_0 = () => age_0_in;
+export const paye_over_bands = () =>
+  Math.max(
+    0,
+    paye_table().reduce(
+      (a, v) => a + paye_by_band_id({ paye_band_id_in: v.band_id }),
+      0
+    ) //- tax_credit() // input not working here => placed outside. Issue #95
+  );
 
-export const retirement_age = () => retirement_age_in;
-export const salary_0 = () => salary_0_in;
-export const salary_inflation_rate = () => salary_inflation_rate_in;
-export const empee_contribution_rate = () => empee_contribution_rate_in;
-export const emper_contribution_rate = () => emper_contribution_rate_in;
+export const paye = () => Math.max(paye_over_bands() - tax_credits(), 0);
 
-export const unit_growth_rate = () => unit_growth_rate_in;
-
-export const fund_value_0 = () => fund_value_0_in;
+export const net_salary_plus_pension_contribution = () =>
+  net_salary() + pension_contribution();
