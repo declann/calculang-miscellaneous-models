@@ -97,7 +97,6 @@ export const percentage_limit = () => (age() < 30 ? 0.15 : 0.2);
 export const pension_contribution_tax_relief = () =>
   paye({
     gross_salary_in: Math.min(115000, gross_salary()),
-    pension_contribution_in: 0,
   }) -
   paye({
     // issue #102

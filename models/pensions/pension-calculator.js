@@ -359,8 +359,7 @@ const percentage_limit = ({ age_in }) => Object(_pension_calculator_cul_js__WEBP
 
 const pension_contribution_tax_relief = ({ gross_salary_in, tax_credits_in, pension_contribution_in, age_in }) =>
 paye({ tax_credits_in,
-  gross_salary_in: Math.min(115000, gross_salary({ gross_salary_in })),
-  pension_contribution_in: 0 }) -
+  gross_salary_in: Math.min(115000, gross_salary({ gross_salary_in })) }) -
 
 paye({ tax_credits_in,
   // issue #102
