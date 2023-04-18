@@ -99,7 +99,8 @@ Math.max(
 gross_salary({ gross_salary_in }) -
 Math.min(
 115000,
-Math.min(pension_contribution({ pension_contribution_in }), percentage_limit({ age_in }) * gross_salary({ gross_salary_in }))));
+pension_contribution({ pension_contribution_in }),
+percentage_limit({ age_in }) * gross_salary({ gross_salary_in })));
 
 
 
