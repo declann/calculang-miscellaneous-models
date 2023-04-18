@@ -98,9 +98,8 @@ export const paye_taxable_salary = () =>
     0,
     gross_salary() -
       Math.min(
-        115000,
         pension_contribution(),
-        percentage_limit() * gross_salary()
+        percentage_limit() * Math.min(115000, gross_salary())
       )
   );
 
