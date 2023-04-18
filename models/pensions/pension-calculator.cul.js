@@ -25,6 +25,16 @@ export const empee_contribution = () => {
   else return salary({ age_in: age() - 1 }) * empee_contribution_rate();
 };
 
+export const accumulated_empee_contributions = () => {
+  if (age() == age_0() - 1) return 0;
+  else
+    return (
+      accumulated_empee_contributions({ age_in: age() - 1 }) +
+      empee_contribution()
+    );
+};
+//_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
+
 export const emper_contribution = () => {
   if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
   else return salary({ age_in: age() - 1 }) * emper_contribution_rate();

@@ -105,6 +105,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_allocation", function() { return unit_allocation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return unit_price; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return empee_contribution; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "acc_empee_contributions", function() { return acc_empee_contributions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return emper_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return projected_fund_value; });
@@ -143,6 +144,9 @@ const empee_contribution = ({ age_in, age_0_in, retirement_age_in, salary_0_in, 
   if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else
   return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ empee_contribution_rate_in });
 };
+
+const acc_empee_contributions = ({ age_0_in, retirement_age_in }) =>
+_.range(age_0({ age_0_in }), retirement_age({ retirement_age_in })).reduce((acc, val) => acc + val);
 
 const emper_contribution = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in }) => {
   if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else

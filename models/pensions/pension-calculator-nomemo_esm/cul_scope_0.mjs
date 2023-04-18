@@ -25,6 +25,9 @@ export const empee_contribution = ({ age_in, age_0_in, retirement_age_in, salary
   return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * empee_contribution_rate({ empee_contribution_rate_in });
 };
 
+export const acc_empee_contributions = ({ age_0_in, retirement_age_in }) =>
+_.range(age_0({ age_0_in }), retirement_age({ retirement_age_in })).reduce((acc, val) => acc + val);
+
 export const emper_contribution = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in }) => {
   if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else
   return salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }) * emper_contribution_rate({ emper_contribution_rate_in });
