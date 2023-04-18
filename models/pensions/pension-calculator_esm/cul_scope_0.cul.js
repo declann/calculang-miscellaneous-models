@@ -4,11 +4,8 @@
 
 // todo add timing comments
 
-import {
-  income_tax,
-  pension_contribution_tax_relief,
-} from "./simple-incometax.cul";
-export { income_tax, pension_contribution_tax_relief };
+import { income_tax } from "./simple-incometax.cul";
+export { income_tax };
 
 export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
 
@@ -42,13 +39,7 @@ export const accumulated_empee_contributions = () => {
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
 export const empee_contribution_tax_relief = () =>
-  // or pension_contribution_tax_relief
-  pension_contribution_tax_relief({
-    gross_salary_in: salary({ age_in: age() - 1 }),
-    tax_credits_in: 3000,
-    pension_contribution_in: empee_contribution(),
-  });
-/*income_tax({
+  income_tax({
     gross_salary_in: salary({ age_in: age() - 1 }),
     tax_credits_in: 3000,
     pension_contribution_in: 0,
@@ -57,7 +48,7 @@ export const empee_contribution_tax_relief = () =>
     gross_salary_in: salary({ age_in: age() - 1 }),
     tax_credits_in: 3000,
     pension_contribution_in: empee_contribution(),
-  });*/
+  });
 
 // affected by bug: depends on gross_salary_in, for some reason
 // issue #102

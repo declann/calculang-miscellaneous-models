@@ -11,8 +11,7 @@ export const pension_contribution = () => pension_contribution_in;
 export const net_salary = () =>
   gross_salary() - pension_contribution() - income_tax();
 
-export const income_tax = () =>
-  paye() + prsi() + usc() - pension_contribution_tax_relief();
+export const income_tax = () => paye() + prsi() + usc();
 
 export const effective_rate = () => 1 - net_salary() / gross_salary();
 
@@ -94,21 +93,19 @@ export const age = () => age_in;
 
 export const percentage_limit = () => (age() < 30 ? 0.15 : 0.2);
 
-export const pension_contribution_tax_relief = () =>
-  paye({
-    gross_salary_in: Math.min(115000, gross_salary()),
-  }) -
-  paye({
-    // issue #102
-    gross_salary_in:
-      Math.min(115000, gross_salary()) -
+// pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
+// then use full gross_salary for paye_taxable_salary and create a deduction in summary
+// approach below is different, but I think result is the same, todo prove
+
+export const paye_taxable_salary = () =>
+  Math.max(
+    0,
+    gross_salary() -
       Math.min(
         pension_contribution(),
         percentage_limit() * Math.min(115000, gross_salary())
-      ),
-  });
-
-export const paye_taxable_salary = () => gross_salary();
+      )
+  );
 
 export const paye_by_band_id = () =>
   paye_rate() *

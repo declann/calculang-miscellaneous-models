@@ -122,8 +122,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "income_tax", function() { return _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pension_contribution_tax_relief", function() { return _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
-
 // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
@@ -165,22 +163,16 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
 const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
-// or pension_contribution_tax_relief
-Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* pension_contribution_tax_relief */ "b"])({ age_in,
+Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ age_in,
+  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
+  tax_credits_in: 3000,
+  pension_contribution_in: 0 }) -
+
+Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ age_in,
   gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 
-/*income_tax({
-    gross_salary_in: salary({ age_in: age() - 1 }),
-    tax_credits_in: 3000,
-    pension_contribution_in: 0,
-  }) -
-  income_tax({
-    gross_salary_in: salary({ age_in: age() - 1 }),
-    tax_credits_in: 3000,
-    pension_contribution_in: empee_contribution(),
-  });*/
 
 // affected by bug: depends on gross_salary_in, for some reason
 // issue #102
@@ -254,7 +246,6 @@ const fund_value_0 = ({ fund_value_0_in }) => fund_value_0_in;
 /* unused harmony export paye_rate */
 /* unused harmony export age_ */
 /* unused harmony export percentage_limit */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return pension_contribution_tax_relief; });
 /* unused harmony export paye_taxable_salary */
 /* unused harmony export paye_by_band_id */
 /* unused harmony export paye_over_bands */
@@ -271,13 +262,12 @@ const tax_credits = ({ tax_credits_in }) => tax_credits_in;
 const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-const net_salary = ({ gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, age_in }) =>
-gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ paye_band_id_in, gross_salary_in, tax_credits_in, pension_contribution_in, age_in });
+const net_salary = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) =>
+gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in });
 
-const income_tax = ({ paye_band_id_in, gross_salary_in, tax_credits_in, pension_contribution_in, age_in }) =>
-paye({ gross_salary_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in }) - pension_contribution_tax_relief({ gross_salary_in, tax_credits_in, pension_contribution_in, age_in });
+const income_tax = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => paye({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
 
-const effective_rate = ({ gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, age_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, age_in }) / gross_salary({ gross_salary_in });
+const effective_rate = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) / gross_salary({ gross_salary_in });
 
 const prsi_taxable_salary = ({ gross_salary_in }) => gross_salary({ gross_salary_in });
 
@@ -357,42 +347,40 @@ const age_ = ({ age_in }) => age_in;
 
 const percentage_limit = ({ age_in }) => Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 30 ? 0.15 : 0.2;
 
-const pension_contribution_tax_relief = ({ gross_salary_in, tax_credits_in, pension_contribution_in, age_in }) =>
-paye({ tax_credits_in,
-  gross_salary_in: Math.min(115000, gross_salary({ gross_salary_in })) }) -
+// pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
+// then use full gross_salary for paye_taxable_salary and create a deduction in summary
+// approach below is different, but I think result is the same, todo prove
 
-paye({ tax_credits_in,
-  // issue #102
-  gross_salary_in:
-  Math.min(115000, gross_salary({ gross_salary_in })) -
-  Math.min(
-  pension_contribution({ pension_contribution_in }),
-  percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in }))) });
+const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
+Math.max(
+0,
+gross_salary({ gross_salary_in }) -
+Math.min(
+pension_contribution({ pension_contribution_in }),
+percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in }))));
 
 
 
-const paye_taxable_salary = ({ gross_salary_in }) => gross_salary({ gross_salary_in });
-
-const paye_by_band_id = ({ paye_band_id_in, gross_salary_in }) =>
+const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in, age_in }) =>
 paye_rate({ paye_band_id_in }) *
 Math.min(
 paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
-Math.max(paye_taxable_salary({ gross_salary_in }) - paye_band_start({ paye_band_id_in }), 0));
+Math.max(paye_taxable_salary({ gross_salary_in, pension_contribution_in, age_in }) - paye_band_start({ paye_band_id_in }), 0));
 
 
-const paye_over_bands = ({ gross_salary_in }) =>
+const paye_over_bands = ({ gross_salary_in, pension_contribution_in, age_in }) =>
 Math.max(
 0,
 paye_table({}).reduce(
-(a, v) => a + paye_by_band_id({ gross_salary_in, paye_band_id_in: v.band_id }),
+(a, v) => a + paye_by_band_id({ gross_salary_in, pension_contribution_in, age_in, paye_band_id_in: v.band_id }),
 0)
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-const paye = ({ gross_salary_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in }) - tax_credits({ tax_credits_in }), 0);
+const paye = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in, age_in }) - tax_credits({ tax_credits_in }), 0);
 
-const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, age_in }) =>
-net_salary({ gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, age_in }) + pension_contribution({ pension_contribution_in });
+const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) =>
+net_salary({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
 
 /***/ })
 /******/ ]);
