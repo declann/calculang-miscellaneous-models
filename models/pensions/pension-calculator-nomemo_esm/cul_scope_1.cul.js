@@ -93,6 +93,10 @@ export const age = () => age_in;
 
 export const percentage_limit = () => (age() < 30 ? 0.15 : 0.2);
 
+// pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
+// then use full gross_salary for paye_taxable_salary and create a deduction in summary
+// approach below is different, but I think result is the same, todo prove
+
 export const paye_taxable_salary = () =>
   Math.max(
     0,

@@ -40,12 +40,12 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
 
 export const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 income_tax({ age_in,
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
 income_tax({ age_in,
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 

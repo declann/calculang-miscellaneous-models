@@ -40,12 +40,12 @@ export const accumulated_empee_contributions = () => {
 
 export const empee_contribution_tax_relief = () =>
   income_tax({
-    gross_salary_in: salary(),
+    gross_salary_in: salary({ age_in: age() - 1 }),
     tax_credits_in: 3000,
     pension_contribution_in: 0,
   }) -
   income_tax({
-    gross_salary_in: salary(),
+    gross_salary_in: salary({ age_in: age() - 1 }),
     tax_credits_in: 3000,
     pension_contribution_in: empee_contribution(),
   });

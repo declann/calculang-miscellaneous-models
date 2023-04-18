@@ -164,12 +164,12 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
 
 const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ age_in,
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
 Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ age_in,
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 
@@ -346,6 +346,10 @@ const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_ba
 const age_ = ({ age_in }) => age_in;
 
 const percentage_limit = ({ age_in }) => Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 30 ? 0.15 : 0.2;
+
+// pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
+// then use full gross_salary for paye_taxable_salary and create a deduction in summary
+// approach below is different, but I think result is the same, todo prove
 
 const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
 Math.max(
