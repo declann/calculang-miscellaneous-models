@@ -89,7 +89,7 @@ export const paye_band_start = () => {
 export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 
 export const paye_taxable_salary = () =>
-  Math.max(0, gross_salary() - pension_contribution());
+  Math.max(0, gross_salary() - pension_contribution()); // TODO caps, but age-related
 
 export const paye_by_band_id = () =>
   paye_rate() *

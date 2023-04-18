@@ -164,12 +164,12 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
 
 const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: Math.min(salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }), 115000), // "The maximum amount of earnings taken into account for calculating tax relief is 115k per year"
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
 Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({
-  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
+  gross_salary_in: Math.min(salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }), 115000),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 
@@ -341,7 +341,7 @@ const paye_band_start = ({ paye_band_id_in }) => {
 const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
 const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in }) =>
-Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }));
+Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in })); // TODO caps, but age-related
 
 const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
 paye_rate({ paye_band_id_in }) *
