@@ -162,17 +162,23 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
 };
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
-const empee_contribution_tax_relief = ({ paye_band_id_in, age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => // or pension_contribution_tax_relief
-Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ paye_band_id_in, age_in,
+const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+// or pension_contribution_tax_relief
+pension_contribution_tax_relief({
   gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
-  pension_contribution_in: 0 }) -
-
-Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ paye_band_id_in, age_in,
-  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
-  tax_credits_in: 3000,
-  pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
-
+  pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in })
+});
+/*income_tax({
+    gross_salary_in: salary({ age_in: age() - 1 }),
+    tax_credits_in: 3000,
+    pension_contribution_in: 0,
+  }) -
+  income_tax({
+    gross_salary_in: salary({ age_in: age() - 1 }),
+    tax_credits_in: 3000,
+    pension_contribution_in: empee_contribution(),
+  });*/
 
 // affected by bug: depends on gross_salary_in, for some reason
 // issue #102
@@ -352,7 +358,7 @@ const percentage_limit = ({ age_in }) => Object(_pension_calculator_cul_js__WEBP
 const pension_contribution_tax_relief = ({ gross_salary_in, tax_credits_in, pension_contribution_in, age_in }) =>
 paye({ gross_salary_in, tax_credits_in }) -
 paye({ tax_credits_in,
-  gross_salary_in:
+  gross_salary_in: // issue #102
   Math.min(115000, gross_salary({ gross_salary_in })) -
   Math.min(
   pension_contribution({ pension_contribution_in }),

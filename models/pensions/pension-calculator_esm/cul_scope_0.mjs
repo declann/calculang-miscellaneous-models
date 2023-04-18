@@ -38,17 +38,23 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
 };
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
-export const empee_contribution_tax_relief = ({ paye_band_id_in, age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => // or pension_contribution_tax_relief
-income_tax({ paye_band_id_in, age_in,
+export const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+// or pension_contribution_tax_relief
+pension_contribution_tax_relief({
   gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
-  pension_contribution_in: 0 }) -
-
-income_tax({ paye_band_id_in, age_in,
-  gross_salary_in: salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: age({ age_in }) - 1 }),
-  tax_credits_in: 3000,
-  pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
-
+  pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in })
+});
+/*income_tax({
+    gross_salary_in: salary({ age_in: age() - 1 }),
+    tax_credits_in: 3000,
+    pension_contribution_in: 0,
+  }) -
+  income_tax({
+    gross_salary_in: salary({ age_in: age() - 1 }),
+    tax_credits_in: 3000,
+    pension_contribution_in: empee_contribution(),
+  });*/
 
 // affected by bug: depends on gross_salary_in, for some reason
 // issue #102
