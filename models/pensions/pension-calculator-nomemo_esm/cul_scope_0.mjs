@@ -39,13 +39,13 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
 export const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
-income_tax({
-  gross_salary_in: Math.min(salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }), 115000), // "The maximum amount of earnings taken into account for calculating tax relief is 115k per year"
+income_tax({ age_in,
+  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
-income_tax({
-  gross_salary_in: Math.min(salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }), 115000),
+income_tax({ age_in,
+  gross_salary_in: salary({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in }),
   tax_credits_in: 3000,
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 

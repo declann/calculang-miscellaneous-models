@@ -40,12 +40,12 @@ export const accumulated_empee_contributions = () => {
 
 export const empee_contribution_tax_relief = () =>
   income_tax({
-    gross_salary_in: Math.min(salary(), 115000), // "The maximum amount of earnings taken into account for calculating tax relief is 115k per year"
+    gross_salary_in: salary(),
     tax_credits_in: 3000,
     pension_contribution_in: 0,
   }) -
   income_tax({
-    gross_salary_in: Math.min(salary(), 115000),
+    gross_salary_in: salary(),
     tax_credits_in: 3000,
     pension_contribution_in: empee_contribution(),
   });

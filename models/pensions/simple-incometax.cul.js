@@ -8,7 +8,8 @@ export const tax_credits = () => tax_credits_in;
 export const pension_contribution = () => pension_contribution_in;
 
 // functions:
-export const net_salary = () => gross_salary() - pension_contribution() - income_tax();
+export const net_salary = () =>
+  gross_salary() - pension_contribution() - income_tax();
 
 export const income_tax = () => paye() + prsi() + usc();
 
@@ -88,8 +89,19 @@ export const paye_band_start = () => {
 
 export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 
+export const age = () => age_in;
+
+export const percentage_limit = () => (age() < 30 ? 0.15 : 0.2);
+
 export const paye_taxable_salary = () =>
-  Math.max(0, gross_salary() - pension_contribution()); // TODO caps, but age-related
+  Math.max(
+    0,
+    gross_salary() -
+      Math.min(
+        115000,
+        Math.min(pension_contribution(), percentage_limit() * gross_salary())
+      )
+  );
 
 export const paye_by_band_id = () =>
   paye_rate() *

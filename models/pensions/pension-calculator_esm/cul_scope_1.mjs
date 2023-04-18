@@ -8,11 +8,12 @@ export const tax_credits = ({ tax_credits_in }) => tax_credits_in;
 export const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-export const net_salary = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ gross_salary_in, pension_contribution_in, tax_credits_in });
+export const net_salary = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) =>
+gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in });
 
-export const income_tax = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => paye({ gross_salary_in, pension_contribution_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
+export const income_tax = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => paye({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) + prsi({ gross_salary_in }) + usc({ gross_salary_in });
 
-export const effective_rate = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) / gross_salary({ gross_salary_in });
+export const effective_rate = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => 1 - net_salary({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) / gross_salary({ gross_salary_in });
 
 export const prsi_taxable_salary = ({ gross_salary_in }) => gross_salary({ gross_salary_in });
 
@@ -88,26 +89,37 @@ export const paye_band_start = ({ paye_band_id_in }) => {
 
 export const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
-export const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in }) =>
-Math.max(0, gross_salary({ gross_salary_in }) - pension_contribution({ pension_contribution_in })); // TODO caps, but age-related
+export const age_ = ({ age_in }) => age_in;
 
-export const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in }) =>
+export const percentage_limit = ({ age_in }) => age({ age_in }) < 30 ? 0.15 : 0.2;
+
+export const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
+Math.max(
+0,
+gross_salary({ gross_salary_in }) -
+Math.min(
+115000,
+Math.min(pension_contribution({ pension_contribution_in }), percentage_limit({ age_in }) * gross_salary({ gross_salary_in }))));
+
+
+
+export const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in, age_in }) =>
 paye_rate({ paye_band_id_in }) *
 Math.min(
 paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
-Math.max(paye_taxable_salary({ gross_salary_in, pension_contribution_in }) - paye_band_start({ paye_band_id_in }), 0));
+Math.max(paye_taxable_salary({ gross_salary_in, pension_contribution_in, age_in }) - paye_band_start({ paye_band_id_in }), 0));
 
 
-export const paye_over_bands = ({ gross_salary_in, pension_contribution_in }) =>
+export const paye_over_bands = ({ gross_salary_in, pension_contribution_in, age_in }) =>
 Math.max(
 0,
 paye_table({}).reduce(
-(a, v) => a + paye_by_band_id({ gross_salary_in, pension_contribution_in, paye_band_id_in: v.band_id }),
+(a, v) => a + paye_by_band_id({ gross_salary_in, pension_contribution_in, age_in, paye_band_id_in: v.band_id }),
 0)
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-export const paye = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
+export const paye = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) => Math.max(paye_over_bands({ gross_salary_in, pension_contribution_in, age_in }) - tax_credits({ tax_credits_in }), 0);
 
-export const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, tax_credits_in }) =>
-net_salary({ gross_salary_in, pension_contribution_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
+export const net_salary_plus_pension_contribution = ({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) =>
+net_salary({ gross_salary_in, pension_contribution_in, age_in, tax_credits_in }) + pension_contribution({ pension_contribution_in });
