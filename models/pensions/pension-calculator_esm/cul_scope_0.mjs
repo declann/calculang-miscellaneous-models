@@ -51,6 +51,7 @@ income_tax({
 
 
 // affected by bug: depends on gross_salary_in, for some reason
+// issue #102
 /*export const accumulated_empee_contribution_tax_relief = () => {
   if (age() == age_0() - 1) return 0;
   else

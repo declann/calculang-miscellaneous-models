@@ -175,6 +175,7 @@ Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPOR
 
 
 // affected by bug: depends on gross_salary_in, for some reason
+// issue #102
 /*export const accumulated_empee_contribution_tax_relief = () => {
   if (age() == age_0() - 1) return 0;
   else
