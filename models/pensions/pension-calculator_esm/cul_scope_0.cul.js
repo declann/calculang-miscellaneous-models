@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pension-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, emper_contribution_ as emper_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, emper_contribution_rate_ as emper_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pension-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
@@ -64,6 +64,18 @@ export const empee_contribution = (a) => {
   empee_contribution$(); // never run, but here to "trick" calculang graph logic
 };
 ////////// end empee_contribution memo-loader code //////////
+
+
+
+////////// start emper_contribution memo-loader code //////////
+//const emper_contribution$m = memoize(999999, isEqual)(emper_contribution$);
+export const emper_contribution$m = memoize(emper_contribution$, JSON.stringify);
+export const emper_contribution = (a) => {
+  return emper_contribution$m(a);
+  // eslint-disable-next-line no-undef
+  emper_contribution$(); // never run, but here to "trick" calculang graph logic
+};
+////////// end emper_contribution memo-loader code //////////
 
 
 
@@ -160,6 +172,18 @@ export const empee_contribution_rate = (a) => {
   empee_contribution_rate$(); // never run, but here to "trick" calculang graph logic
 };
 ////////// end empee_contribution_rate memo-loader code //////////
+
+
+
+////////// start emper_contribution_rate memo-loader code //////////
+//const emper_contribution_rate$m = memoize(999999, isEqual)(emper_contribution_rate$);
+export const emper_contribution_rate$m = memoize(emper_contribution_rate$, JSON.stringify);
+export const emper_contribution_rate = (a) => {
+  return emper_contribution_rate$m(a);
+  // eslint-disable-next-line no-undef
+  emper_contribution_rate$(); // never run, but here to "trick" calculang graph logic
+};
+////////// end emper_contribution_rate memo-loader code //////////
 
 
 

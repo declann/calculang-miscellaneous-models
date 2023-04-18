@@ -12,7 +12,8 @@ export const unit_balance = () => {
   // timing = premium received at start of year and allocated immediately
 };
 
-export const unit_allocation = () => empee_contribution() / unit_price(); // todo emper contribution, AVCs?
+export const unit_allocation = () =>
+  (empee_contribution() + emper_contribution()) / unit_price(); // todo, AVCs?
 
 export const unit_price = () => {
   if (age() <= age_0()) return 1;
@@ -22,6 +23,11 @@ export const unit_price = () => {
 export const empee_contribution = () => {
   if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
   else return salary({ age_in: age() - 1 }) * empee_contribution_rate();
+};
+
+export const emper_contribution = () => {
+  if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
+  else return salary({ age_in: age() - 1 }) * emper_contribution_rate();
 };
 
 export const salary = () => {
@@ -45,7 +51,7 @@ export const retirement_age = () => retirement_age_in;
 export const salary_0 = () => salary_0_in;
 export const salary_inflation_rate = () => salary_inflation_rate_in;
 export const empee_contribution_rate = () => empee_contribution_rate_in;
-//export const emper_contribution_rate = () => (emper_contribution_rate_in) not modelling employer contributions yet
+export const emper_contribution_rate = () => emper_contribution_rate_in;
 
 export const unit_growth_rate = () => unit_growth_rate_in;
 
