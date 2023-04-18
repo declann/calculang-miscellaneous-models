@@ -1367,9 +1367,9 @@
           "index": 2715
         },
         "end": {
-          "line": 106,
+          "line": 110,
           "column": 4,
-          "index": 2940
+          "index": 3036
         }
       },
       "inputs": [
@@ -1386,14 +1386,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 108,
+          "line": 112,
           "column": 35,
-          "index": 2978
+          "index": 3074
         },
         "end": {
-          "line": 108,
+          "line": 112,
           "column": 55,
-          "index": 2998
+          "index": 3094
         }
       },
       "inputs": [
@@ -1407,14 +1407,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 110,
+          "line": 114,
           "column": 31,
-          "index": 3032
+          "index": 3128
         },
         "end": {
-          "line": 115,
+          "line": 119,
           "column": 3,
-          "index": 3169
+          "index": 3265
         }
       },
       "inputs": [
@@ -1429,14 +1429,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 117,
+          "line": 121,
           "column": 31,
-          "index": 3203
+          "index": 3299
         },
         "end": {
-          "line": 124,
+          "line": 128,
           "column": 3,
-          "index": 3411
+          "index": 3507
         }
       },
       "inputs": [
@@ -1450,14 +1450,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 126,
+          "line": 130,
           "column": 20,
-          "index": 3434
+          "index": 3530
         },
         "end": {
-          "line": 126,
+          "line": 130,
           "column": 72,
-          "index": 3486
+          "index": 3582
         }
       },
       "inputs": [
@@ -1472,14 +1472,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 128,
+          "line": 132,
           "column": 52,
-          "index": 3541
+          "index": 3637
         },
         "end": {
-          "line": 129,
+          "line": 133,
           "column": 39,
-          "index": 3586
+          "index": 3682
         }
       },
       "inputs": [
@@ -2243,6 +2243,15 @@
     {
       "to": "1_pension_contribution_tax_relief",
       "from": "1_paye",
+      "reason": "call",
+      "negs": [
+        "gross_salary_in",
+        "pension_contribution_in"
+      ]
+    },
+    {
+      "to": "1_pension_contribution_tax_relief",
+      "from": "1_gross_salary",
       "reason": "call",
       "negs": []
     },
