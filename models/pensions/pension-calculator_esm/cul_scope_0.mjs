@@ -3,7 +3,19 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, accumulated_empee_contributions_ as accumulated_empee_contributions$, emper_contribution_ as emper_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, emper_contribution_rate_ as emper_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+import { net_salary_ as net_salary$, fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, accumulated_empee_contributions_ as accumulated_empee_contributions$, empee_contribution_tax_relief_ as empee_contribution_tax_relief$, emper_contribution_ as emper_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, emper_contribution_rate_ as emper_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from "./cul_scope_1.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+
+
+////////// start net_salary memo-loader code //////////
+//const net_salary$m = memoize(999999, isEqual)(net_salary$);
+export const net_salary$m = memoize(net_salary$, JSON.stringify);
+export const net_salary = (a) => {
+  return net_salary$m(a);
+  // eslint-disable-next-line no-undef
+  net_salary$({ gross_salary_in, pension_contribution_in, tax_credits_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end net_salary memo-loader code //////////
 
 
 
@@ -76,6 +88,18 @@ export const accumulated_empee_contributions = (a) => {
   accumulated_empee_contributions$({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end accumulated_empee_contributions memo-loader code //////////
+
+
+
+////////// start empee_contribution_tax_relief memo-loader code //////////
+//const empee_contribution_tax_relief$m = memoize(999999, isEqual)(empee_contribution_tax_relief$);
+export const empee_contribution_tax_relief$m = memoize(empee_contribution_tax_relief$, JSON.stringify);
+export const empee_contribution_tax_relief = (a) => {
+  return empee_contribution_tax_relief$m(a);
+  // eslint-disable-next-line no-undef
+  empee_contribution_tax_relief$({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end empee_contribution_tax_relief memo-loader code //////////
 
 
 

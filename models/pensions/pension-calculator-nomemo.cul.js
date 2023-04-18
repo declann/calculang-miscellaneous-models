@@ -4,6 +4,8 @@
 
 // todo add timing comments
 
+import { net_salary } from "./simple-incometax.cul";
+
 export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
 
 export const unit_balance = () => {
@@ -34,6 +36,18 @@ export const accumulated_empee_contributions = () => {
     );
 };
 //_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
+
+export const empee_contribution_tax_relief = () =>
+  net_salary({
+    gross_salary_in: salary(),
+    tax_credits_in: 3000,
+    pension_contribution_in: 0,
+  }) -
+  net_salary({
+    gross_salary_in: salary(),
+    tax_credits_in: 3000,
+    pension_contribution_in: empee_contribution(),
+  });
 
 export const emper_contribution = () => {
   if (age() <= age_0() - 1 || age() == retirement_age()) return 0;
