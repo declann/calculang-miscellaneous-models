@@ -107,7 +107,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return empee_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions", function() { return accumulated_empee_contributions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_tax_relief", function() { return empee_contribution_tax_relief; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contribution_tax_relief", function() { return accumulated_empee_contribution_tax_relief; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return emper_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return projected_fund_value; });
@@ -175,14 +174,15 @@ Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPOR
   pension_contribution_in: empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) });
 
 
-const accumulated_empee_contribution_tax_relief = ({ age_in, age_0_in, gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
-  if (age({ age_in }) == age_0({ age_0_in }) - 1) return 0;else
-
-  return (
-    accumulated_empee_contribution_tax_relief({ age_0_in, gross_salary_in, pension_contribution_in, paye_band_id_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) +
-    empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }));
-
-};
+// affected by bug: depends on gross_salary_in, for some reason
+/*export const accumulated_empee_contribution_tax_relief = () => {
+  if (age() == age_0() - 1) return 0;
+  else
+    return (
+      accumulated_empee_contribution_tax_relief({ age_in: age() - 1 }) +
+      empee_contribution_tax_relief()
+    );
+};*/
 
 const emper_contribution = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in }) => {
   if (age({ age_in }) <= age_0({ age_0_in }) - 1 || age({ age_in }) == retirement_age({ retirement_age_in })) return 0;else
