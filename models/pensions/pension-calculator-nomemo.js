@@ -345,7 +345,15 @@ const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_ba
 
 const age_ = ({ age_in }) => age_in;
 
-const percentage_limit = ({ age_in }) => Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 30 ? 0.15 : 0.2;
+const percentage_limit = ({ age_in }) => {
+  if (Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 30) return 0.15;else
+  if (Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 40) return 0.2;else
+  if (Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 50) return 0.25;else
+  if (Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 55) return 0.3;else
+  if (Object(_pension_calculator_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 60) return 0.35;else
+  return 0.4;
+};
+//(age() < 30 ? 0.15 : 0.2);
 
 // pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
 // then use full gross_salary for paye_taxable_salary and create a deduction in summary

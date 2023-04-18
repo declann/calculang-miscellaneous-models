@@ -91,7 +91,15 @@ export const paye_rate = () => paye_table()[paye_band_id() - 1].rate;
 
 export const age = () => age_in;
 
-export const percentage_limit = () => (age() < 30 ? 0.15 : 0.2);
+export const percentage_limit = () => {
+  if (age() < 30) return 0.15;
+  else if (age() < 40) return 0.2;
+  else if (age() < 50) return 0.25;
+  else if (age() < 55) return 0.3;
+  else if (age() < 60) return 0.35;
+  else return 0.4;
+};
+//(age() < 30 ? 0.15 : 0.2);
 
 // pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
 // then use full gross_salary for paye_taxable_salary and create a deduction in summary
