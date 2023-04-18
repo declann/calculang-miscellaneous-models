@@ -108,7 +108,7 @@ export const percentage_limit = () => {
 export const paye_taxable_salary = () =>
   Math.max(
     0,
-    gross_salary() -
+    gross_salary() - // following is the tax relief. "The maximum amount of earnings taken into account for calculating tax relief is 115k per year". (?)for the limits only? See also 26.3 https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-26.pdf
       Math.min(
         pension_contribution(),
         percentage_limit() * Math.min(115000, gross_salary())
