@@ -110,8 +110,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return unit_price; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution$m", function() { return empee_contribution$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return empee_contribution; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "acc_empee_contributions$m", function() { return acc_empee_contributions$m; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "acc_empee_contributions", function() { return acc_empee_contributions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions$m", function() { return accumulated_empee_contributions$m; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions", function() { return accumulated_empee_contributions; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution$m", function() { return emper_contribution$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return emper_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary$m", function() { return salary$m; });
@@ -207,15 +207,15 @@ const empee_contribution = (a) => {
 
 
 
-////////// start acc_empee_contributions memo-loader code //////////
-//const acc_empee_contributions$m = memoize(999999, isEqual)(acc_empee_contributions$);
-const acc_empee_contributions$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* acc_empee_contributions_ */ "a"], JSON.stringify);
-const acc_empee_contributions = (a) => {
-  return acc_empee_contributions$m(a);
+////////// start accumulated_empee_contributions memo-loader code //////////
+//const accumulated_empee_contributions$m = memoize(999999, isEqual)(accumulated_empee_contributions$);
+const accumulated_empee_contributions$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize */ "a"])(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* accumulated_empee_contributions_ */ "a"], JSON.stringify);
+const accumulated_empee_contributions = (a) => {
+  return accumulated_empee_contributions$m(a);
   // eslint-disable-next-line no-undef
-  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* acc_empee_contributions_ */ "a"])({ age_0_in, retirement_age_in }); // never run, but here to "trick" calculang graph logic
+  Object(_pension_calculator_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* accumulated_empee_contributions_ */ "a"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }); // never run, but here to "trick" calculang graph logic
 };
-////////// end acc_empee_contributions memo-loader code //////////
+////////// end accumulated_empee_contributions memo-loader code //////////
 
 
 
@@ -442,7 +442,7 @@ var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return unit_allocation_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return unit_price_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return empee_contribution_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return acc_empee_contributions_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return accumulated_empee_contributions_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return emper_contribution_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return salary_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return projected_fund_value_; });
@@ -483,8 +483,15 @@ const empee_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in,
   return Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary"])({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) * Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ empee_contribution_rate_in });
 };
 
-const acc_empee_contributions_ = ({ age_0_in, retirement_age_in }) =>
-_.range(Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }), Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })).reduce((acc, val) => acc + val);
+const accumulated_empee_contributions_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+  if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) == Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1) return 0;else
+
+  return (
+    Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["accumulated_empee_contributions"])({ age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) - 1 }) +
+    Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution"])({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }));
+
+};
+//_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
 
 const emper_contribution_ = ({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, emper_contribution_rate_in }) => {
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) <= Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_0_in }) - 1 || Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) == Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ retirement_age_in })) return 0;else

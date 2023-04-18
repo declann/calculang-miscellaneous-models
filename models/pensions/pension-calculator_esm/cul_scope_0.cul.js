@@ -3,7 +3,7 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, acc_empee_contributions_ as acc_empee_contributions$, emper_contribution_ as emper_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, emper_contribution_rate_ as emper_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pension-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { fund_value_ as fund_value$, unit_balance_ as unit_balance$, unit_allocation_ as unit_allocation$, unit_price_ as unit_price$, empee_contribution_ as empee_contribution$, accumulated_empee_contributions_ as accumulated_empee_contributions$, emper_contribution_ as emper_contribution$, salary_ as salary$, projected_fund_value_ as projected_fund_value$, age_ as age$, age_0_ as age_0$, retirement_age_ as retirement_age$, salary_0_ as salary_0$, salary_inflation_rate_ as salary_inflation_rate$, empee_contribution_rate_ as empee_contribution_rate$, emper_contribution_rate_ as emper_contribution_rate$, unit_growth_rate_ as unit_growth_rate$, fund_value_0_ as fund_value_0$ } from './pension-calculator.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
 
@@ -67,15 +67,15 @@ export const empee_contribution = (a) => {
 
 
 
-////////// start acc_empee_contributions memo-loader code //////////
-//const acc_empee_contributions$m = memoize(999999, isEqual)(acc_empee_contributions$);
-export const acc_empee_contributions$m = memoize(acc_empee_contributions$, JSON.stringify);
-export const acc_empee_contributions = (a) => {
-  return acc_empee_contributions$m(a);
+////////// start accumulated_empee_contributions memo-loader code //////////
+//const accumulated_empee_contributions$m = memoize(999999, isEqual)(accumulated_empee_contributions$);
+export const accumulated_empee_contributions$m = memoize(accumulated_empee_contributions$, JSON.stringify);
+export const accumulated_empee_contributions = (a) => {
+  return accumulated_empee_contributions$m(a);
   // eslint-disable-next-line no-undef
-  acc_empee_contributions$(); // never run, but here to "trick" calculang graph logic
+  accumulated_empee_contributions$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end acc_empee_contributions memo-loader code //////////
+////////// end accumulated_empee_contributions memo-loader code //////////
 
 
 
