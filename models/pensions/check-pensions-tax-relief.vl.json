@@ -1,0 +1,15 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "a check on a work-in-progress and incorrect model; do not use",
+    "width": 300,
+    "height": 80,
+    "data": {"url": "./check-pensions-tax-relief.json"},
+    "mark": "text",
+    "encoding": {
+      "x": {"field": "salary_0_in", "type": "ordinal" ,"axis": {"format": ".1s"}},
+      "y": {"field": "contribution_amount", "type": "ordinal", "sort": "descending", "axis": {"format": ".1s"}, "title":"contribution"},
+      "row": {"field": "age_in"},
+      "text": {"field": "empee_contribution_tax_relief", "format": ".3s"},
+      "color": {"field": "empee_contribution_tax_relief", "type": "quantitative", "scale": {"scheme": "yelloworangered"}, "legend": null}
+    }
+  }
