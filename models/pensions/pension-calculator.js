@@ -247,6 +247,8 @@ const fund_value_0 = ({ fund_value_0_in }) => fund_value_0_in;
 /* unused harmony export age_ */
 /* unused harmony export percentage_limit */
 /* unused harmony export paye_taxable_salary */
+/* unused harmony export pension_tax_relief */
+/* unused harmony export pension_tax_relief_ratio */
 /* unused harmony export paye_by_band_id */
 /* unused harmony export paye_over_bands */
 /* unused harmony export paye */
@@ -353,21 +355,23 @@ const percentage_limit = ({ age_in }) => {
   if (Object(_pension_calculator_cul_js__WEBPACK_IMPORTED_MODULE_0__["age"])({ age_in }) < 60) return 0.35;else
   return 0.4;
 };
-//(age() < 30 ? 0.15 : 0.2);
 
 // pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
 // then use full gross_salary for paye_taxable_salary and create a deduction in summary
 // approach below is different, but I think result is the same, todo prove
 
 const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
-Math.max(
-0,
-gross_salary({ gross_salary_in }) - // following is the tax relief. "The maximum amount of earnings taken into account for calculating tax relief is 115k per year". (?)for the limits only? See also 26.3 https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-26.pdf
+Math.max(0, gross_salary({ gross_salary_in }) - pension_tax_relief({ pension_contribution_in, age_in, gross_salary_in }));
+
+const pension_tax_relief = ({ pension_contribution_in, age_in, gross_salary_in }) =>
+// following is the tax relief. "The maximum amount of earnings taken into account for calculating tax relief is 115k per year". (?)for the limits only? See also 26.3 https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-26.pdf
 Math.min(
 pension_contribution({ pension_contribution_in }),
-percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in }))));
+percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in })));
 
 
+const pension_tax_relief_ratio = ({ pension_contribution_in, age_in, gross_salary_in }) =>
+pension_tax_relief({ pension_contribution_in, age_in, gross_salary_in }) / pension_contribution({ pension_contribution_in });
 
 const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in, age_in }) =>
 paye_rate({ paye_band_id_in }) *
