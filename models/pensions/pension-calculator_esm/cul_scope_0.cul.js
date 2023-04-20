@@ -52,7 +52,7 @@ export const accumulated_empee_contributions = () => {
   });*/
 
 export const pension_tax_relief_ratio = () =>
-  empee_contribution_tax_relief() / pension_contribution();
+  empee_contribution_tax_relief() / empee_contribution();
 
 export const empee_contribution_tax_relief = () =>
   income_tax({

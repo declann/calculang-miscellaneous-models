@@ -172,8 +172,8 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
     pension_contribution_in: empee_contribution(),
   });*/
 
-const pension_tax_relief_ratio = ({ pension_contribution_in, age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
-empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* pension_contribution */ "b"])({ pension_contribution_in });
+const pension_tax_relief_ratio = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
+empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in });
 
 const empee_contribution_tax_relief = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 Object(_simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* income_tax */ "a"])({ age_in,
@@ -237,7 +237,7 @@ const fund_value_0 = ({ fund_value_0_in }) => fund_value_0_in;
 "use strict";
 /* unused harmony export gross_salary */
 /* unused harmony export tax_credits */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return pension_contribution; });
+/* unused harmony export pension_contribution */
 /* unused harmony export net_salary */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return income_tax; });
 /* unused harmony export effective_rate */
