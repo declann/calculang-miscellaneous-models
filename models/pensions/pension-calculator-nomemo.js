@@ -122,6 +122,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "income_tax", function() { return _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pension_tax_relief_ratio", function() { return _simple_incometax_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
+
 // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models
@@ -248,7 +250,7 @@ const fund_value_0 = ({ fund_value_0_in }) => fund_value_0_in;
 /* unused harmony export percentage_limit */
 /* unused harmony export paye_taxable_salary */
 /* unused harmony export pension_tax_relief */
-/* unused harmony export pension_tax_relief_ratio */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return pension_tax_relief_ratio; });
 /* unused harmony export paye_by_band_id */
 /* unused harmony export paye_over_bands */
 /* unused harmony export paye */
