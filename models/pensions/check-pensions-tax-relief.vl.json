@@ -2,7 +2,7 @@
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "description": "a check on a work-in-progress and incorrect model; do not use",
     "width": 300,
-    "height": 80,
+    "height": 120,
     "data": {"url": "./check-pensions-tax-relief.json"},
     "mark": "text",
     "encoding": {
