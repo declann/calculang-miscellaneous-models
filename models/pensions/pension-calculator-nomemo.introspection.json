@@ -13,16 +13,14 @@
         "tax_credits_in"
       ]
     },
-    "0_pension_tax_relief_ratio_": {
+    "0_pension_contribution": {
       "cul_scope_id": 0,
-      "name": "pension_tax_relief_ratio_",
-      "imported": "pension_tax_relief_ratio_",
+      "name": "pension_contribution",
+      "imported": "pension_contribution",
       "cul_source_scope_id": 1,
       "reason": "explicit import",
       "inputs": [
-        "pension_contribution_in",
-        "age_in",
-        "gross_salary_in"
+        "pension_contribution_in"
       ]
     },
     "0_fund_value": {
@@ -32,14 +30,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 13,
+          "line": 14,
           "column": 26,
-          "index": 541
+          "index": 567
         },
         "end": {
-          "line": 13,
+          "line": 14,
           "column": 61,
-          "index": 576
+          "index": 602
         }
       },
       "inputs": [
@@ -61,14 +59,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 15,
+          "line": 16,
           "column": 28,
-          "index": 646
+          "index": 672
         },
         "end": {
-          "line": 19,
+          "line": 20,
           "column": 1,
-          "index": 866
+          "index": 892
         }
       },
       "inputs": [
@@ -90,14 +88,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 21,
+          "line": 22,
           "column": 31,
-          "index": 900
+          "index": 926
         },
         "end": {
-          "line": 22,
+          "line": 23,
           "column": 62,
-          "index": 968
+          "index": 994
         }
       },
       "inputs": [
@@ -118,14 +116,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 24,
+          "line": 25,
           "column": 26,
-          "index": 1012
+          "index": 1038
         },
         "end": {
-          "line": 27,
+          "line": 28,
           "column": 1,
-          "index": 1131
+          "index": 1157
         }
       },
       "inputs": [
@@ -141,14 +139,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 29,
+          "line": 30,
           "column": 34,
-          "index": 1168
+          "index": 1194
         },
         "end": {
-          "line": 32,
+          "line": 33,
           "column": 1,
-          "index": 1317
+          "index": 1343
         }
       },
       "inputs": [
@@ -167,14 +165,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 34,
+          "line": 35,
           "column": 47,
-          "index": 1367
+          "index": 1393
         },
         "end": {
-          "line": 41,
+          "line": 42,
           "column": 1,
-          "index": 1531
+          "index": 1557
         }
       },
       "inputs": [
@@ -193,17 +191,18 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 46,
+          "line": 54,
           "column": 40,
-          "index": 1712
+          "index": 1954
         },
         "end": {
-          "line": 51,
-          "column": 4,
-          "index": 1881
+          "line": 55,
+          "column": 58,
+          "index": 2018
         }
       },
       "inputs": [
+        "pension_contribution_in",
         "age_in",
         "age_0_in",
         "salary_0_in",
@@ -219,14 +218,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 53,
+          "line": 57,
           "column": 45,
-          "index": 1929
+          "index": 2066
         },
         "end": {
-          "line": 63,
+          "line": 67,
           "column": 4,
-          "index": 2215
+          "index": 2352
         }
       },
       "inputs": [
@@ -245,14 +244,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 76,
+          "line": 80,
           "column": 34,
-          "index": 2579
+          "index": 2716
         },
         "end": {
-          "line": 79,
+          "line": 83,
           "column": 1,
-          "index": 2728
+          "index": 2865
         }
       },
       "inputs": [
@@ -271,14 +270,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 81,
+          "line": 85,
           "column": 22,
-          "index": 2753
+          "index": 2890
         },
         "end": {
-          "line": 86,
+          "line": 90,
           "column": 1,
-          "index": 3018
+          "index": 3155
         }
       },
       "inputs": [
@@ -296,14 +295,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 88,
+          "line": 92,
           "column": 36,
-          "index": 3057
+          "index": 3194
         },
         "end": {
-          "line": 90,
+          "line": 94,
           "column": 42,
-          "index": 3125
+          "index": 3262
         }
       },
       "inputs": [
@@ -324,14 +323,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 95,
+          "line": 99,
           "column": 19,
-          "index": 3252
+          "index": 3389
         },
         "end": {
-          "line": 95,
+          "line": 99,
           "column": 31,
-          "index": 3264
+          "index": 3401
         }
       },
       "inputs": [
@@ -354,14 +353,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 96,
+          "line": 100,
           "column": 21,
-          "index": 3296
+          "index": 3433
         },
         "end": {
-          "line": 96,
+          "line": 100,
           "column": 35,
-          "index": 3310
+          "index": 3447
         }
       },
       "inputs": [
@@ -384,14 +383,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 98,
+          "line": 102,
           "column": 30,
-          "index": 3343
+          "index": 3480
         },
         "end": {
-          "line": 98,
+          "line": 102,
           "column": 53,
-          "index": 3366
+          "index": 3503
         }
       },
       "inputs": [
@@ -414,14 +413,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 99,
+          "line": 103,
           "column": 24,
-          "index": 3392
+          "index": 3529
         },
         "end": {
-          "line": 99,
+          "line": 103,
           "column": 41,
-          "index": 3409
+          "index": 3546
         }
       },
       "inputs": [
@@ -444,14 +443,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 100,
+          "line": 104,
           "column": 37,
-          "index": 3448
+          "index": 3585
         },
         "end": {
-          "line": 100,
+          "line": 104,
           "column": 67,
-          "index": 3478
+          "index": 3615
         }
       },
       "inputs": [
@@ -474,14 +473,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 101,
+          "line": 105,
           "column": 39,
-          "index": 3519
+          "index": 3656
         },
         "end": {
-          "line": 101,
+          "line": 105,
           "column": 71,
-          "index": 3551
+          "index": 3688
         }
       },
       "inputs": [
@@ -504,14 +503,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 102,
+          "line": 106,
           "column": 39,
-          "index": 3592
+          "index": 3729
         },
         "end": {
-          "line": 102,
+          "line": 106,
           "column": 71,
-          "index": 3624
+          "index": 3761
         }
       },
       "inputs": [
@@ -534,14 +533,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 104,
+          "line": 108,
           "column": 32,
-          "index": 3659
+          "index": 3796
         },
         "end": {
-          "line": 104,
+          "line": 108,
           "column": 57,
-          "index": 3684
+          "index": 3821
         }
       },
       "inputs": [
@@ -564,14 +563,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 106,
+          "line": 110,
           "column": 28,
-          "index": 3715
+          "index": 3852
         },
         "end": {
-          "line": 106,
+          "line": 110,
           "column": 49,
-          "index": 3736
+          "index": 3873
         }
       },
       "inputs": [
@@ -682,6 +681,7 @@
       "cul_source_scope_id": 0,
       "reason": "implicit import",
       "inputs": [
+        "pension_contribution_in",
         "age_in",
         "age_0_in",
         "salary_0_in",
@@ -1436,29 +1436,6 @@
         "gross_salary_in"
       ]
     },
-    "1_pension_tax_relief_ratio_": {
-      "cul_scope_id": 1,
-      "name": "pension_tax_relief_ratio_",
-      "cul_source_scope_id": 1,
-      "reason": "definition (renamed)",
-      "loc": {
-        "start": {
-          "line": 117,
-          "column": 40,
-          "index": 3575
-        },
-        "end": {
-          "line": 118,
-          "column": 47,
-          "index": 3628
-        }
-      },
-      "inputs": [
-        "pension_contribution_in",
-        "age_in",
-        "gross_salary_in"
-      ]
-    },
     "1_paye_by_band_id": {
       "cul_scope_id": 1,
       "name": "paye_by_band_id",
@@ -1466,14 +1443,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 120,
+          "line": 121,
           "column": 31,
-          "index": 3662
+          "index": 3683
         },
         "end": {
-          "line": 125,
+          "line": 126,
           "column": 3,
-          "index": 3799
+          "index": 3820
         }
       },
       "inputs": [
@@ -1490,14 +1467,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 127,
+          "line": 128,
           "column": 31,
-          "index": 3833
+          "index": 3854
         },
         "end": {
-          "line": 134,
+          "line": 135,
           "column": 3,
-          "index": 4041
+          "index": 4062
         }
       },
       "inputs": [
@@ -1513,14 +1490,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 136,
+          "line": 137,
           "column": 20,
-          "index": 4064
+          "index": 4085
         },
         "end": {
-          "line": 136,
+          "line": 137,
           "column": 72,
-          "index": 4116
+          "index": 4137
         }
       },
       "inputs": [
@@ -1537,14 +1514,14 @@
       "reason": "definition",
       "loc": {
         "start": {
-          "line": 138,
+          "line": 139,
           "column": 52,
-          "index": 4171
+          "index": 4192
         },
         "end": {
-          "line": 139,
+          "line": 140,
           "column": 39,
-          "index": 4216
+          "index": 4237
         }
       },
       "inputs": [
@@ -1562,9 +1539,9 @@
       "reason": "explicit import"
     },
     {
-      "to": "0_pension_tax_relief_ratio_",
-      "from": "1_pension_tax_relief_ratio_",
-      "reason": "explicit import (renamed)"
+      "to": "0_pension_contribution",
+      "from": "1_pension_contribution",
+      "reason": "explicit import"
     },
     {
       "to": "0_fund_value",
@@ -1750,31 +1727,13 @@
     },
     {
       "to": "0_pension_tax_relief_ratio",
-      "from": "0_pension_tax_relief_ratio_",
-      "reason": "call",
-      "negs": [
-        "gross_salary_in",
-        "tax_credits_in",
-        "pension_contribution_in"
-      ]
-    },
-    {
-      "to": "0_pension_tax_relief_ratio",
-      "from": "0_salary",
-      "reason": "call",
-      "negs": [
-        "age_in"
-      ]
-    },
-    {
-      "to": "0_pension_tax_relief_ratio",
-      "from": "0_age",
+      "from": "0_empee_contribution_tax_relief",
       "reason": "call",
       "negs": []
     },
     {
       "to": "0_pension_tax_relief_ratio",
-      "from": "0_empee_contribution",
+      "from": "0_pension_contribution",
       "reason": "call",
       "negs": []
     },
@@ -2412,18 +2371,6 @@
       "negs": []
     },
     {
-      "to": "1_pension_tax_relief_ratio_",
-      "from": "1_pension_tax_relief",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "1_pension_tax_relief_ratio_",
-      "from": "1_pension_contribution",
-      "reason": "call",
-      "negs": []
-    },
-    {
       "to": "1_paye_by_band_id",
       "from": "1_paye_rate",
       "reason": "call",
@@ -2506,10 +2453,8 @@
       "age_in",
       "tax_credits_in"
     ],
-    "0_pension_tax_relief_ratio_": [
-      "pension_contribution_in",
-      "age_in",
-      "gross_salary_in"
+    "0_pension_contribution": [
+      "pension_contribution_in"
     ],
     "0_fund_value": [
       "age_in",
@@ -2565,6 +2510,7 @@
       "empee_contribution_rate_in"
     ],
     "0_pension_tax_relief_ratio": [
+      "pension_contribution_in",
       "age_in",
       "age_0_in",
       "salary_0_in",
@@ -2713,6 +2659,7 @@
       "empee_contribution_rate_in"
     ],
     "1_pension_tax_relief_ratio": [
+      "pension_contribution_in",
       "age_in",
       "age_0_in",
       "salary_0_in",
@@ -2884,11 +2831,6 @@
       "age_in",
       "gross_salary_in"
     ],
-    "1_pension_tax_relief_ratio_": [
-      "pension_contribution_in",
-      "age_in",
-      "gross_salary_in"
-    ],
     "1_paye_by_band_id": [
       "paye_band_id_in",
       "gross_salary_in",
@@ -2913,5 +2855,5 @@
       "tax_credits_in"
     ]
   },
-  "dot": "digraph {\n  \"0_income_tax\" [cul_scope_id=0,name=income_tax,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"0_income_tax inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"0_pension_tax_relief_ratio_\" [cul_scope_id=0,name=pension_tax_relief_ratio_,imported=pension_tax_relief_ratio_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"pension_contribution_in,age_in,gross_salary_in\",label=\"0_pension_tax_relief_ratio_ inputs: pension_contribution_in,age_in,gross_salary_in\"]\n  \"0_fund_value\" [cul_scope_id=0,name=fund_value,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_fund_value inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_unit_balance\" [cul_scope_id=0,name=unit_balance,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_unit_balance inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_unit_allocation\" [cul_scope_id=0,name=unit_allocation,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\",label=\"0_unit_allocation inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\"]\n  \"0_unit_price\" [cul_scope_id=0,name=unit_price,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,unit_growth_rate_in\",label=\"0_unit_price inputs: age_in,age_0_in,unit_growth_rate_in\"]\n  \"0_empee_contribution\" [cul_scope_id=0,name=empee_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_empee_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_accumulated_empee_contributions\" [cul_scope_id=0,name=accumulated_empee_contributions,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_accumulated_empee_contributions inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_pension_tax_relief_ratio\" [cul_scope_id=0,name=pension_tax_relief_ratio,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_pension_tax_relief_ratio inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_empee_contribution_tax_relief\" [cul_scope_id=0,name=empee_contribution_tax_relief,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_empee_contribution_tax_relief inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_emper_contribution\" [cul_scope_id=0,name=emper_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\",label=\"0_emper_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\"]\n  \"0_salary\" [cul_scope_id=0,name=salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\",label=\"0_salary inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\"]\n  \"0_projected_fund_value\" [cul_scope_id=0,name=projected_fund_value,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_projected_fund_value inputs: age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_age\" [cul_scope_id=0,name=age,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=age_in,label=\"0_age inputs: age_in\"]\n  \"0_age_in\" [cul_scope_id=0,name=age_in,cul_source_scope_id=0,reason=\"input definition\",inputs=age_in,label=\"0_age_in inputs: age_in\"]\n  \"0_age_0\" [cul_scope_id=0,name=age_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=age_0_in,label=\"0_age_0 inputs: age_0_in\"]\n  \"0_age_0_in\" [cul_scope_id=0,name=age_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=age_0_in,label=\"0_age_0_in inputs: age_0_in\"]\n  \"0_retirement_age\" [cul_scope_id=0,name=retirement_age,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=retirement_age_in,label=\"0_retirement_age inputs: retirement_age_in\"]\n  \"0_retirement_age_in\" [cul_scope_id=0,name=retirement_age_in,cul_source_scope_id=0,reason=\"input definition\",inputs=retirement_age_in,label=\"0_retirement_age_in inputs: retirement_age_in\"]\n  \"0_salary_0\" [cul_scope_id=0,name=salary_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=salary_0_in,label=\"0_salary_0 inputs: salary_0_in\"]\n  \"0_salary_0_in\" [cul_scope_id=0,name=salary_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_0_in,label=\"0_salary_0_in inputs: salary_0_in\"]\n  \"0_salary_inflation_rate\" [cul_scope_id=0,name=salary_inflation_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=salary_inflation_rate_in,label=\"0_salary_inflation_rate inputs: salary_inflation_rate_in\"]\n  \"0_salary_inflation_rate_in\" [cul_scope_id=0,name=salary_inflation_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_inflation_rate_in,label=\"0_salary_inflation_rate_in inputs: salary_inflation_rate_in\"]\n  \"0_empee_contribution_rate\" [cul_scope_id=0,name=empee_contribution_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=empee_contribution_rate_in,label=\"0_empee_contribution_rate inputs: empee_contribution_rate_in\"]\n  \"0_empee_contribution_rate_in\" [cul_scope_id=0,name=empee_contribution_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=empee_contribution_rate_in,label=\"0_empee_contribution_rate_in inputs: empee_contribution_rate_in\"]\n  \"0_emper_contribution_rate\" [cul_scope_id=0,name=emper_contribution_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emper_contribution_rate_in,label=\"0_emper_contribution_rate inputs: emper_contribution_rate_in\"]\n  \"0_emper_contribution_rate_in\" [cul_scope_id=0,name=emper_contribution_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=emper_contribution_rate_in,label=\"0_emper_contribution_rate_in inputs: emper_contribution_rate_in\"]\n  \"0_unit_growth_rate\" [cul_scope_id=0,name=unit_growth_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=unit_growth_rate_in,label=\"0_unit_growth_rate inputs: unit_growth_rate_in\"]\n  \"0_unit_growth_rate_in\" [cul_scope_id=0,name=unit_growth_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=unit_growth_rate_in,label=\"0_unit_growth_rate_in inputs: unit_growth_rate_in\"]\n  \"0_fund_value_0\" [cul_scope_id=0,name=fund_value_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fund_value_0_in,label=\"0_fund_value_0 inputs: fund_value_0_in\"]\n  \"0_fund_value_0_in\" [cul_scope_id=0,name=fund_value_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fund_value_0_in,label=\"0_fund_value_0_in inputs: fund_value_0_in\"]\n  \"1_fund_value\" [cul_scope_id=1,name=fund_value,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_fund_value inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_unit_balance\" [cul_scope_id=1,name=unit_balance,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_unit_balance inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_unit_allocation\" [cul_scope_id=1,name=unit_allocation,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\",label=\"1_unit_allocation inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\"]\n  \"1_unit_price\" [cul_scope_id=1,name=unit_price,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,unit_growth_rate_in\",label=\"1_unit_price inputs: age_in,age_0_in,unit_growth_rate_in\"]\n  \"1_empee_contribution\" [cul_scope_id=1,name=empee_contribution,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_empee_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_accumulated_empee_contributions\" [cul_scope_id=1,name=accumulated_empee_contributions,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_accumulated_empee_contributions inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_pension_tax_relief_ratio\" [cul_scope_id=1,name=pension_tax_relief_ratio,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_pension_tax_relief_ratio inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_empee_contribution_tax_relief\" [cul_scope_id=1,name=empee_contribution_tax_relief,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_empee_contribution_tax_relief inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_emper_contribution\" [cul_scope_id=1,name=emper_contribution,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\",label=\"1_emper_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\"]\n  \"1_salary\" [cul_scope_id=1,name=salary,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\",label=\"1_salary inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\"]\n  \"1_projected_fund_value\" [cul_scope_id=1,name=projected_fund_value,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_projected_fund_value inputs: age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_age\" [cul_scope_id=1,name=age,cul_source_scope_id=0,reason=\"implicit import\",inputs=age_in,label=\"1_age inputs: age_in\"]\n  \"1_age_0\" [cul_scope_id=1,name=age_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=age_0_in,label=\"1_age_0 inputs: age_0_in\"]\n  \"1_retirement_age\" [cul_scope_id=1,name=retirement_age,cul_source_scope_id=0,reason=\"implicit import\",inputs=retirement_age_in,label=\"1_retirement_age inputs: retirement_age_in\"]\n  \"1_salary_0\" [cul_scope_id=1,name=salary_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=salary_0_in,label=\"1_salary_0 inputs: salary_0_in\"]\n  \"1_salary_inflation_rate\" [cul_scope_id=1,name=salary_inflation_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=salary_inflation_rate_in,label=\"1_salary_inflation_rate inputs: salary_inflation_rate_in\"]\n  \"1_empee_contribution_rate\" [cul_scope_id=1,name=empee_contribution_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=empee_contribution_rate_in,label=\"1_empee_contribution_rate inputs: empee_contribution_rate_in\"]\n  \"1_emper_contribution_rate\" [cul_scope_id=1,name=emper_contribution_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=emper_contribution_rate_in,label=\"1_emper_contribution_rate inputs: emper_contribution_rate_in\"]\n  \"1_unit_growth_rate\" [cul_scope_id=1,name=unit_growth_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=unit_growth_rate_in,label=\"1_unit_growth_rate inputs: unit_growth_rate_in\"]\n  \"1_fund_value_0\" [cul_scope_id=1,name=fund_value_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=fund_value_0_in,label=\"1_fund_value_0 inputs: fund_value_0_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_gross_salary inputs: gross_salary_in\"]\n  \"1_gross_salary_in\" [cul_scope_id=1,name=gross_salary_in,cul_source_scope_id=1,reason=\"input definition\",inputs=gross_salary_in,label=\"1_gross_salary_in inputs: gross_salary_in\"]\n  \"1_tax_credits\" [cul_scope_id=1,name=tax_credits,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=tax_credits_in,label=\"1_tax_credits inputs: tax_credits_in\"]\n  \"1_tax_credits_in\" [cul_scope_id=1,name=tax_credits_in,cul_source_scope_id=1,reason=\"input definition\",inputs=tax_credits_in,label=\"1_tax_credits_in inputs: tax_credits_in\"]\n  \"1_pension_contribution\" [cul_scope_id=1,name=pension_contribution,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=pension_contribution_in,label=\"1_pension_contribution inputs: pension_contribution_in\"]\n  \"1_pension_contribution_in\" [cul_scope_id=1,name=pension_contribution_in,cul_source_scope_id=1,reason=\"input definition\",inputs=pension_contribution_in,label=\"1_pension_contribution_in inputs: pension_contribution_in\"]\n  \"1_net_salary\" [cul_scope_id=1,name=net_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_net_salary inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_income_tax inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_effective_rate\" [cul_scope_id=1,name=effective_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_effective_rate inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_prsi_taxable_salary\" [cul_scope_id=1,name=prsi_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_prsi_taxable_salary inputs: gross_salary_in\"]\n  \"1_prsi\" [cul_scope_id=1,name=prsi,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_prsi inputs: gross_salary_in\"]\n  \"1_prsi_rate\" [cul_scope_id=1,name=prsi_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_prsi_rate inputs: \"]\n  \"1_usc_table\" [cul_scope_id=1,name=usc_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_usc_table inputs: \"]\n  \"1_usc_band_id\" [cul_scope_id=1,name=usc_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_id inputs: usc_band_id_in\"]\n  \"1_usc_band_id_in\" [cul_scope_id=1,name=usc_band_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=usc_band_id_in,label=\"1_usc_band_id_in inputs: usc_band_id_in\"]\n  \"1_usc_band_end\" [cul_scope_id=1,name=usc_band_end,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_end inputs: usc_band_id_in\"]\n  \"1_usc_band_start\" [cul_scope_id=1,name=usc_band_start,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_start inputs: usc_band_id_in\"]\n  \"1_usc_rate\" [cul_scope_id=1,name=usc_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_rate inputs: usc_band_id_in\"]\n  \"1_usc_taxable_salary\" [cul_scope_id=1,name=usc_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_usc_taxable_salary inputs: gross_salary_in\"]\n  \"1_usc_by_band_id\" [cul_scope_id=1,name=usc_by_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,gross_salary_in\",label=\"1_usc_by_band_id inputs: usc_band_id_in,gross_salary_in\"]\n  \"1_usc\" [cul_scope_id=1,name=usc,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_usc inputs: gross_salary_in\"]\n  \"1_paye_table\" [cul_scope_id=1,name=paye_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_paye_table inputs: \"]\n  \"1_paye_band_id\" [cul_scope_id=1,name=paye_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_id inputs: paye_band_id_in\"]\n  \"1_paye_band_id_in\" [cul_scope_id=1,name=paye_band_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=paye_band_id_in,label=\"1_paye_band_id_in inputs: paye_band_id_in\"]\n  \"1_paye_band_end\" [cul_scope_id=1,name=paye_band_end,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_end inputs: paye_band_id_in\"]\n  \"1_paye_band_start\" [cul_scope_id=1,name=paye_band_start,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_start inputs: paye_band_id_in\"]\n  \"1_paye_rate\" [cul_scope_id=1,name=paye_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_rate inputs: paye_band_id_in\"]\n  \"1_age_\" [cul_scope_id=1,name=age_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=age_in,label=\"1_age_ inputs: age_in\"]\n  \"1_age_in\" [cul_scope_id=1,name=age_in,cul_source_scope_id=1,reason=\"input definition\",inputs=age_in,label=\"1_age_in inputs: age_in\"]\n  \"1_percentage_limit\" [cul_scope_id=1,name=percentage_limit,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=age_in,label=\"1_percentage_limit inputs: age_in\"]\n  \"1_paye_taxable_salary\" [cul_scope_id=1,name=paye_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_taxable_salary inputs: gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_pension_tax_relief\" [cul_scope_id=1,name=pension_tax_relief,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"pension_contribution_in,age_in,gross_salary_in\",label=\"1_pension_tax_relief inputs: pension_contribution_in,age_in,gross_salary_in\"]\n  \"1_pension_tax_relief_ratio_\" [cul_scope_id=1,name=pension_tax_relief_ratio_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"pension_contribution_in,age_in,gross_salary_in\",label=\"1_pension_tax_relief_ratio_ inputs: pension_contribution_in,age_in,gross_salary_in\"]\n  \"1_paye_by_band_id\" [cul_scope_id=1,name=paye_by_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_by_band_id inputs: paye_band_id_in,gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_paye_over_bands\" [cul_scope_id=1,name=paye_over_bands,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_over_bands inputs: gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_paye\" [cul_scope_id=1,name=paye,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_paye inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_net_salary_plus_pension_contribution\" [cul_scope_id=1,name=net_salary_plus_pension_contribution,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_net_salary_plus_pension_contribution inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_undefined\"\n  \"1_income_tax\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_pension_tax_relief_ratio_\" -> \"0_pension_tax_relief_ratio_\" [value=\"[object Object]\",label=\"explicit import (renamed)\"]\n  \"0_unit_balance\" -> \"0_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fund_value_0\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_balance\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_unit_allocation\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_emper_contribution\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_unit_growth_rate\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_empee_contribution_rate\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_accumulated_empee_contributions\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_empee_contribution\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pension_tax_relief_ratio_\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -gross_salary_in,tax_credits_in,pension_contribution_in\"]\n  \"0_salary\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_age\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -gross_salary_in,tax_credits_in,pension_contribution_in\"]\n  \"0_salary\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_age\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_emper_contribution_rate\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary_0\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_salary_inflation_rate\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fund_value\" -> \"0_projected_fund_value\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_retirement_age\" -> \"0_projected_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_in\" -> \"0_age\" [value=\"[object Object]\",label=\"input +age_in\"]\n  \"0_age_0_in\" -> \"0_age_0\" [value=\"[object Object]\",label=\"input +age_0_in\"]\n  \"0_retirement_age_in\" -> \"0_retirement_age\" [value=\"[object Object]\",label=\"input +retirement_age_in\"]\n  \"0_salary_0_in\" -> \"0_salary_0\" [value=\"[object Object]\",label=\"input +salary_0_in\"]\n  \"0_salary_inflation_rate_in\" -> \"0_salary_inflation_rate\" [value=\"[object Object]\",label=\"input +salary_inflation_rate_in\"]\n  \"0_empee_contribution_rate_in\" -> \"0_empee_contribution_rate\" [value=\"[object Object]\",label=\"input +empee_contribution_rate_in\"]\n  \"0_emper_contribution_rate_in\" -> \"0_emper_contribution_rate\" [value=\"[object Object]\",label=\"input +emper_contribution_rate_in\"]\n  \"0_unit_growth_rate_in\" -> \"0_unit_growth_rate\" [value=\"[object Object]\",label=\"input +unit_growth_rate_in\"]\n  \"0_fund_value_0_in\" -> \"0_fund_value_0\" [value=\"[object Object]\",label=\"input +fund_value_0_in\"]\n  \"0_fund_value\" -> \"1_fund_value\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_balance\" -> \"1_unit_balance\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_allocation\" -> \"1_unit_allocation\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_price\" -> \"1_unit_price\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution\" -> \"1_empee_contribution\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_accumulated_empee_contributions\" -> \"1_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_pension_tax_relief_ratio\" -> \"1_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution_tax_relief\" -> \"1_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_emper_contribution\" -> \"1_emper_contribution\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary\" -> \"1_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_projected_fund_value\" -> \"1_projected_fund_value\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_age\" -> \"1_age\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_age_0\" -> \"1_age_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_retirement_age\" -> \"1_retirement_age\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary_0\" -> \"1_salary_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary_inflation_rate\" -> \"1_salary_inflation_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution_rate\" -> \"1_empee_contribution_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_emper_contribution_rate\" -> \"1_emper_contribution_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_growth_rate\" -> \"1_unit_growth_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_fund_value_0\" -> \"1_fund_value_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary_in\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"1_tax_credits_in\" -> \"1_tax_credits\" [value=\"[object Object]\",label=\"input +tax_credits_in\"]\n  \"1_pension_contribution_in\" -> \"1_pension_contribution\" [value=\"[object Object]\",label=\"input +pension_contribution_in\"]\n  \"1_gross_salary\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_salary\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_prsi_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi_taxable_salary\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi_rate\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id_in\" -> \"1_usc_band_id\" [value=\"[object Object]\",label=\"input +usc_band_id_in\"]\n  \"1_usc_band_id\" -> \"1_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id\" -> \"1_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id\" -> \"1_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_usc_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_rate\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_end\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_start\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_taxable_salary\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_by_band_id\" -> \"1_usc\" [value=\"[object Object]\",label=\"call -usc_band_id_in\"]\n  \"1_gross_salary\" -> \"1_undefined\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id_in\" -> \"1_paye_band_id\" [value=\"[object Object]\",label=\"input +paye_band_id_in\"]\n  \"1_paye_band_id\" -> \"1_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id\" -> \"1_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id\" -> \"1_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_age_in\" -> \"1_age_\" [value=\"[object Object]\",label=\"input +age_in\"]\n  \"1_age\" -> \"1_percentage_limit\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_tax_relief\" -> \"1_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_percentage_limit\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_tax_relief\" -> \"1_pension_tax_relief_ratio_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_pension_tax_relief_ratio_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_rate\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_end\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_start\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_taxable_salary\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_over_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_by_band_id\" -> \"1_paye_over_bands\" [value=\"[object Object]\",label=\"call -paye_band_id_in\"]\n  \"1_paye_over_bands\" -> \"1_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_tax_credits\" -> \"1_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_salary\" -> \"1_net_salary_plus_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_net_salary_plus_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_income_tax\" [cul_scope_id=0,name=income_tax,imported=income_tax,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"0_income_tax inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"0_pension_contribution\" [cul_scope_id=0,name=pension_contribution,imported=pension_contribution,cul_source_scope_id=1,reason=\"explicit import\",inputs=pension_contribution_in,label=\"0_pension_contribution inputs: pension_contribution_in\"]\n  \"0_fund_value\" [cul_scope_id=0,name=fund_value,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_fund_value inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_unit_balance\" [cul_scope_id=0,name=unit_balance,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_unit_balance inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_unit_allocation\" [cul_scope_id=0,name=unit_allocation,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\",label=\"0_unit_allocation inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\"]\n  \"0_unit_price\" [cul_scope_id=0,name=unit_price,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,unit_growth_rate_in\",label=\"0_unit_price inputs: age_in,age_0_in,unit_growth_rate_in\"]\n  \"0_empee_contribution\" [cul_scope_id=0,name=empee_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_empee_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_accumulated_empee_contributions\" [cul_scope_id=0,name=accumulated_empee_contributions,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_accumulated_empee_contributions inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_pension_tax_relief_ratio\" [cul_scope_id=0,name=pension_tax_relief_ratio,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"pension_contribution_in,age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_pension_tax_relief_ratio inputs: pension_contribution_in,age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_empee_contribution_tax_relief\" [cul_scope_id=0,name=empee_contribution_tax_relief,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"0_empee_contribution_tax_relief inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"0_emper_contribution\" [cul_scope_id=0,name=emper_contribution,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\",label=\"0_emper_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\"]\n  \"0_salary\" [cul_scope_id=0,name=salary,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\",label=\"0_salary inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\"]\n  \"0_projected_fund_value\" [cul_scope_id=0,name=projected_fund_value,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"0_projected_fund_value inputs: age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"0_age\" [cul_scope_id=0,name=age,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=age_in,label=\"0_age inputs: age_in\"]\n  \"0_age_in\" [cul_scope_id=0,name=age_in,cul_source_scope_id=0,reason=\"input definition\",inputs=age_in,label=\"0_age_in inputs: age_in\"]\n  \"0_age_0\" [cul_scope_id=0,name=age_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=age_0_in,label=\"0_age_0 inputs: age_0_in\"]\n  \"0_age_0_in\" [cul_scope_id=0,name=age_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=age_0_in,label=\"0_age_0_in inputs: age_0_in\"]\n  \"0_retirement_age\" [cul_scope_id=0,name=retirement_age,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=retirement_age_in,label=\"0_retirement_age inputs: retirement_age_in\"]\n  \"0_retirement_age_in\" [cul_scope_id=0,name=retirement_age_in,cul_source_scope_id=0,reason=\"input definition\",inputs=retirement_age_in,label=\"0_retirement_age_in inputs: retirement_age_in\"]\n  \"0_salary_0\" [cul_scope_id=0,name=salary_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=salary_0_in,label=\"0_salary_0 inputs: salary_0_in\"]\n  \"0_salary_0_in\" [cul_scope_id=0,name=salary_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_0_in,label=\"0_salary_0_in inputs: salary_0_in\"]\n  \"0_salary_inflation_rate\" [cul_scope_id=0,name=salary_inflation_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=salary_inflation_rate_in,label=\"0_salary_inflation_rate inputs: salary_inflation_rate_in\"]\n  \"0_salary_inflation_rate_in\" [cul_scope_id=0,name=salary_inflation_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=salary_inflation_rate_in,label=\"0_salary_inflation_rate_in inputs: salary_inflation_rate_in\"]\n  \"0_empee_contribution_rate\" [cul_scope_id=0,name=empee_contribution_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=empee_contribution_rate_in,label=\"0_empee_contribution_rate inputs: empee_contribution_rate_in\"]\n  \"0_empee_contribution_rate_in\" [cul_scope_id=0,name=empee_contribution_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=empee_contribution_rate_in,label=\"0_empee_contribution_rate_in inputs: empee_contribution_rate_in\"]\n  \"0_emper_contribution_rate\" [cul_scope_id=0,name=emper_contribution_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emper_contribution_rate_in,label=\"0_emper_contribution_rate inputs: emper_contribution_rate_in\"]\n  \"0_emper_contribution_rate_in\" [cul_scope_id=0,name=emper_contribution_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=emper_contribution_rate_in,label=\"0_emper_contribution_rate_in inputs: emper_contribution_rate_in\"]\n  \"0_unit_growth_rate\" [cul_scope_id=0,name=unit_growth_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=unit_growth_rate_in,label=\"0_unit_growth_rate inputs: unit_growth_rate_in\"]\n  \"0_unit_growth_rate_in\" [cul_scope_id=0,name=unit_growth_rate_in,cul_source_scope_id=0,reason=\"input definition\",inputs=unit_growth_rate_in,label=\"0_unit_growth_rate_in inputs: unit_growth_rate_in\"]\n  \"0_fund_value_0\" [cul_scope_id=0,name=fund_value_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=fund_value_0_in,label=\"0_fund_value_0 inputs: fund_value_0_in\"]\n  \"0_fund_value_0_in\" [cul_scope_id=0,name=fund_value_0_in,cul_source_scope_id=0,reason=\"input definition\",inputs=fund_value_0_in,label=\"0_fund_value_0_in inputs: fund_value_0_in\"]\n  \"1_fund_value\" [cul_scope_id=1,name=fund_value,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_fund_value inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_unit_balance\" [cul_scope_id=1,name=unit_balance,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_unit_balance inputs: age_in,age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_unit_allocation\" [cul_scope_id=1,name=unit_allocation,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\",label=\"1_unit_allocation inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in,unit_growth_rate_in\"]\n  \"1_unit_price\" [cul_scope_id=1,name=unit_price,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,unit_growth_rate_in\",label=\"1_unit_price inputs: age_in,age_0_in,unit_growth_rate_in\"]\n  \"1_empee_contribution\" [cul_scope_id=1,name=empee_contribution,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_empee_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_accumulated_empee_contributions\" [cul_scope_id=1,name=accumulated_empee_contributions,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_accumulated_empee_contributions inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_pension_tax_relief_ratio\" [cul_scope_id=1,name=pension_tax_relief_ratio,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"pension_contribution_in,age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_pension_tax_relief_ratio inputs: pension_contribution_in,age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_empee_contribution_tax_relief\" [cul_scope_id=1,name=empee_contribution_tax_relief,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\",label=\"1_empee_contribution_tax_relief inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in,empee_contribution_rate_in\"]\n  \"1_emper_contribution\" [cul_scope_id=1,name=emper_contribution,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\",label=\"1_emper_contribution inputs: age_in,age_0_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,emper_contribution_rate_in\"]\n  \"1_salary\" [cul_scope_id=1,name=salary,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\",label=\"1_salary inputs: age_in,age_0_in,salary_0_in,retirement_age_in,salary_inflation_rate_in\"]\n  \"1_projected_fund_value\" [cul_scope_id=1,name=projected_fund_value,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\",label=\"1_projected_fund_value inputs: age_0_in,fund_value_0_in,unit_growth_rate_in,retirement_age_in,salary_0_in,salary_inflation_rate_in,empee_contribution_rate_in,emper_contribution_rate_in\"]\n  \"1_age\" [cul_scope_id=1,name=age,cul_source_scope_id=0,reason=\"implicit import\",inputs=age_in,label=\"1_age inputs: age_in\"]\n  \"1_age_0\" [cul_scope_id=1,name=age_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=age_0_in,label=\"1_age_0 inputs: age_0_in\"]\n  \"1_retirement_age\" [cul_scope_id=1,name=retirement_age,cul_source_scope_id=0,reason=\"implicit import\",inputs=retirement_age_in,label=\"1_retirement_age inputs: retirement_age_in\"]\n  \"1_salary_0\" [cul_scope_id=1,name=salary_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=salary_0_in,label=\"1_salary_0 inputs: salary_0_in\"]\n  \"1_salary_inflation_rate\" [cul_scope_id=1,name=salary_inflation_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=salary_inflation_rate_in,label=\"1_salary_inflation_rate inputs: salary_inflation_rate_in\"]\n  \"1_empee_contribution_rate\" [cul_scope_id=1,name=empee_contribution_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=empee_contribution_rate_in,label=\"1_empee_contribution_rate inputs: empee_contribution_rate_in\"]\n  \"1_emper_contribution_rate\" [cul_scope_id=1,name=emper_contribution_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=emper_contribution_rate_in,label=\"1_emper_contribution_rate inputs: emper_contribution_rate_in\"]\n  \"1_unit_growth_rate\" [cul_scope_id=1,name=unit_growth_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=unit_growth_rate_in,label=\"1_unit_growth_rate inputs: unit_growth_rate_in\"]\n  \"1_fund_value_0\" [cul_scope_id=1,name=fund_value_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=fund_value_0_in,label=\"1_fund_value_0 inputs: fund_value_0_in\"]\n  \"1_gross_salary\" [cul_scope_id=1,name=gross_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_gross_salary inputs: gross_salary_in\"]\n  \"1_gross_salary_in\" [cul_scope_id=1,name=gross_salary_in,cul_source_scope_id=1,reason=\"input definition\",inputs=gross_salary_in,label=\"1_gross_salary_in inputs: gross_salary_in\"]\n  \"1_tax_credits\" [cul_scope_id=1,name=tax_credits,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=tax_credits_in,label=\"1_tax_credits inputs: tax_credits_in\"]\n  \"1_tax_credits_in\" [cul_scope_id=1,name=tax_credits_in,cul_source_scope_id=1,reason=\"input definition\",inputs=tax_credits_in,label=\"1_tax_credits_in inputs: tax_credits_in\"]\n  \"1_pension_contribution\" [cul_scope_id=1,name=pension_contribution,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=pension_contribution_in,label=\"1_pension_contribution inputs: pension_contribution_in\"]\n  \"1_pension_contribution_in\" [cul_scope_id=1,name=pension_contribution_in,cul_source_scope_id=1,reason=\"input definition\",inputs=pension_contribution_in,label=\"1_pension_contribution_in inputs: pension_contribution_in\"]\n  \"1_net_salary\" [cul_scope_id=1,name=net_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_net_salary inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_income_tax\" [cul_scope_id=1,name=income_tax,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_income_tax inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_effective_rate\" [cul_scope_id=1,name=effective_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_effective_rate inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_prsi_taxable_salary\" [cul_scope_id=1,name=prsi_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_prsi_taxable_salary inputs: gross_salary_in\"]\n  \"1_prsi\" [cul_scope_id=1,name=prsi,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_prsi inputs: gross_salary_in\"]\n  \"1_prsi_rate\" [cul_scope_id=1,name=prsi_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_prsi_rate inputs: \"]\n  \"1_usc_table\" [cul_scope_id=1,name=usc_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_usc_table inputs: \"]\n  \"1_usc_band_id\" [cul_scope_id=1,name=usc_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_id inputs: usc_band_id_in\"]\n  \"1_usc_band_id_in\" [cul_scope_id=1,name=usc_band_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=usc_band_id_in,label=\"1_usc_band_id_in inputs: usc_band_id_in\"]\n  \"1_usc_band_end\" [cul_scope_id=1,name=usc_band_end,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_end inputs: usc_band_id_in\"]\n  \"1_usc_band_start\" [cul_scope_id=1,name=usc_band_start,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_band_start inputs: usc_band_id_in\"]\n  \"1_usc_rate\" [cul_scope_id=1,name=usc_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=usc_band_id_in,label=\"1_usc_rate inputs: usc_band_id_in\"]\n  \"1_usc_taxable_salary\" [cul_scope_id=1,name=usc_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_usc_taxable_salary inputs: gross_salary_in\"]\n  \"1_usc_by_band_id\" [cul_scope_id=1,name=usc_by_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"usc_band_id_in,gross_salary_in\",label=\"1_usc_by_band_id inputs: usc_band_id_in,gross_salary_in\"]\n  \"1_usc\" [cul_scope_id=1,name=usc,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=gross_salary_in,label=\"1_usc inputs: gross_salary_in\"]\n  \"1_paye_table\" [cul_scope_id=1,name=paye_table,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"1_paye_table inputs: \"]\n  \"1_paye_band_id\" [cul_scope_id=1,name=paye_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_id inputs: paye_band_id_in\"]\n  \"1_paye_band_id_in\" [cul_scope_id=1,name=paye_band_id_in,cul_source_scope_id=1,reason=\"input definition\",inputs=paye_band_id_in,label=\"1_paye_band_id_in inputs: paye_band_id_in\"]\n  \"1_paye_band_end\" [cul_scope_id=1,name=paye_band_end,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_end inputs: paye_band_id_in\"]\n  \"1_paye_band_start\" [cul_scope_id=1,name=paye_band_start,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_band_start inputs: paye_band_id_in\"]\n  \"1_paye_rate\" [cul_scope_id=1,name=paye_rate,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=paye_band_id_in,label=\"1_paye_rate inputs: paye_band_id_in\"]\n  \"1_age_\" [cul_scope_id=1,name=age_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=age_in,label=\"1_age_ inputs: age_in\"]\n  \"1_age_in\" [cul_scope_id=1,name=age_in,cul_source_scope_id=1,reason=\"input definition\",inputs=age_in,label=\"1_age_in inputs: age_in\"]\n  \"1_percentage_limit\" [cul_scope_id=1,name=percentage_limit,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=age_in,label=\"1_percentage_limit inputs: age_in\"]\n  \"1_paye_taxable_salary\" [cul_scope_id=1,name=paye_taxable_salary,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_taxable_salary inputs: gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_pension_tax_relief\" [cul_scope_id=1,name=pension_tax_relief,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"pension_contribution_in,age_in,gross_salary_in\",label=\"1_pension_tax_relief inputs: pension_contribution_in,age_in,gross_salary_in\"]\n  \"1_paye_by_band_id\" [cul_scope_id=1,name=paye_by_band_id,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"paye_band_id_in,gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_by_band_id inputs: paye_band_id_in,gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_paye_over_bands\" [cul_scope_id=1,name=paye_over_bands,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in\",label=\"1_paye_over_bands inputs: gross_salary_in,pension_contribution_in,age_in\"]\n  \"1_paye\" [cul_scope_id=1,name=paye,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_paye inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_net_salary_plus_pension_contribution\" [cul_scope_id=1,name=net_salary_plus_pension_contribution,cul_source_scope_id=1,reason=definition,loc=\"[object Object]\",inputs=\"gross_salary_in,pension_contribution_in,age_in,tax_credits_in\",label=\"1_net_salary_plus_pension_contribution inputs: gross_salary_in,pension_contribution_in,age_in,tax_credits_in\"]\n  \"1_undefined\"\n  \"1_income_tax\" -> \"0_income_tax\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_pension_contribution\" -> \"0_pension_contribution\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_unit_balance\" -> \"0_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fund_value_0\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_balance\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_unit_allocation\" -> \"0_unit_balance\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_emper_contribution\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_allocation\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_unit_price\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_unit_growth_rate\" -> \"0_unit_price\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_empee_contribution_rate\" -> \"0_empee_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_accumulated_empee_contributions\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_empee_contribution\" -> \"0_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution_tax_relief\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_pension_contribution\" -> \"0_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_income_tax\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -gross_salary_in,tax_credits_in,pension_contribution_in\"]\n  \"0_salary\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_age\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_empee_contribution\" -> \"0_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_emper_contribution_rate\" -> \"0_emper_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_0\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary_0\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_retirement_age\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_salary\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_salary_inflation_rate\" -> \"0_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_fund_value\" -> \"0_projected_fund_value\" [value=\"[object Object]\",label=\"call -age_in\"]\n  \"0_retirement_age\" -> \"0_projected_fund_value\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_age_in\" -> \"0_age\" [value=\"[object Object]\",label=\"input +age_in\"]\n  \"0_age_0_in\" -> \"0_age_0\" [value=\"[object Object]\",label=\"input +age_0_in\"]\n  \"0_retirement_age_in\" -> \"0_retirement_age\" [value=\"[object Object]\",label=\"input +retirement_age_in\"]\n  \"0_salary_0_in\" -> \"0_salary_0\" [value=\"[object Object]\",label=\"input +salary_0_in\"]\n  \"0_salary_inflation_rate_in\" -> \"0_salary_inflation_rate\" [value=\"[object Object]\",label=\"input +salary_inflation_rate_in\"]\n  \"0_empee_contribution_rate_in\" -> \"0_empee_contribution_rate\" [value=\"[object Object]\",label=\"input +empee_contribution_rate_in\"]\n  \"0_emper_contribution_rate_in\" -> \"0_emper_contribution_rate\" [value=\"[object Object]\",label=\"input +emper_contribution_rate_in\"]\n  \"0_unit_growth_rate_in\" -> \"0_unit_growth_rate\" [value=\"[object Object]\",label=\"input +unit_growth_rate_in\"]\n  \"0_fund_value_0_in\" -> \"0_fund_value_0\" [value=\"[object Object]\",label=\"input +fund_value_0_in\"]\n  \"0_fund_value\" -> \"1_fund_value\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_balance\" -> \"1_unit_balance\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_allocation\" -> \"1_unit_allocation\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_price\" -> \"1_unit_price\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution\" -> \"1_empee_contribution\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_accumulated_empee_contributions\" -> \"1_accumulated_empee_contributions\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_pension_tax_relief_ratio\" -> \"1_pension_tax_relief_ratio\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution_tax_relief\" -> \"1_empee_contribution_tax_relief\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_emper_contribution\" -> \"1_emper_contribution\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary\" -> \"1_salary\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_projected_fund_value\" -> \"1_projected_fund_value\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_age\" -> \"1_age\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_age_0\" -> \"1_age_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_retirement_age\" -> \"1_retirement_age\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary_0\" -> \"1_salary_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_salary_inflation_rate\" -> \"1_salary_inflation_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_empee_contribution_rate\" -> \"1_empee_contribution_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_emper_contribution_rate\" -> \"1_emper_contribution_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_unit_growth_rate\" -> \"1_unit_growth_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_fund_value_0\" -> \"1_fund_value_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_gross_salary_in\" -> \"1_gross_salary\" [value=\"[object Object]\",label=\"input +gross_salary_in\"]\n  \"1_tax_credits_in\" -> \"1_tax_credits\" [value=\"[object Object]\",label=\"input +tax_credits_in\"]\n  \"1_pension_contribution_in\" -> \"1_pension_contribution\" [value=\"[object Object]\",label=\"input +pension_contribution_in\"]\n  \"1_gross_salary\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_income_tax\" -> \"1_net_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc\" -> \"1_income_tax\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_salary\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_effective_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_prsi_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi_taxable_salary\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_prsi_rate\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_prsi\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id_in\" -> \"1_usc_band_id\" [value=\"[object Object]\",label=\"input +usc_band_id_in\"]\n  \"1_usc_band_id\" -> \"1_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id\" -> \"1_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_id\" -> \"1_usc_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_usc_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_rate\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_end\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_band_start\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_taxable_salary\" -> \"1_usc_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_table\" -> \"1_usc\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_usc_by_band_id\" -> \"1_usc\" [value=\"[object Object]\",label=\"call -usc_band_id_in\"]\n  \"1_gross_salary\" -> \"1_undefined\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id_in\" -> \"1_paye_band_id\" [value=\"[object Object]\",label=\"input +paye_band_id_in\"]\n  \"1_paye_band_id\" -> \"1_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_band_end\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id\" -> \"1_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_band_start\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_id\" -> \"1_paye_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_age_in\" -> \"1_age_\" [value=\"[object Object]\",label=\"input +age_in\"]\n  \"1_age\" -> \"1_percentage_limit\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_tax_relief\" -> \"1_paye_taxable_salary\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_percentage_limit\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_gross_salary\" -> \"1_pension_tax_relief\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_rate\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_end\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_band_start\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_taxable_salary\" -> \"1_paye_by_band_id\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_table\" -> \"1_paye_over_bands\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_paye_by_band_id\" -> \"1_paye_over_bands\" [value=\"[object Object]\",label=\"call -paye_band_id_in\"]\n  \"1_paye_over_bands\" -> \"1_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_tax_credits\" -> \"1_paye\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_salary\" -> \"1_net_salary_plus_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_pension_contribution\" -> \"1_net_salary_plus_pension_contribution\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

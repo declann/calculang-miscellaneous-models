@@ -114,8 +114,9 @@ export const pension_tax_relief = () =>
     percentage_limit() * Math.min(115000, gross_salary())
   );
 
-export const pension_tax_relief_ratio = () =>
-  pension_tax_relief() / pension_contribution();
+// this is wrong
+/*export const pension_tax_relief_ratio = () =>
+  pension_tax_relief() / pension_contribution();*/
 
 export const paye_by_band_id = () =>
   paye_rate() *

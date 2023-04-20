@@ -6,7 +6,8 @@
 
 import {
   income_tax,
-  pension_tax_relief_ratio as pension_tax_relief_ratio_,
+  pension_contribution,
+  //pension_tax_relief_ratio as pension_tax_relief_ratio_,
 } from "./simple-incometax.cul";
 export { income_tax };
 
@@ -43,12 +44,15 @@ export const accumulated_empee_contributions = () => {
 
 //export const gross_salary = () => salary({ age_in: age() - 1 });
 
-export const pension_tax_relief_ratio = () =>
+/*export const pension_tax_relief_ratio = () =>
   pension_tax_relief_ratio_({
     gross_salary_in: salary({ age_in: age() - 1 }),
     tax_credits_in: 3000,
     pension_contribution_in: empee_contribution(),
-  });
+  });*/
+
+export const pension_tax_relief_ratio = () =>
+  empee_contribution_tax_relief() / pension_contribution();
 
 export const empee_contribution_tax_relief = () =>
   income_tax({

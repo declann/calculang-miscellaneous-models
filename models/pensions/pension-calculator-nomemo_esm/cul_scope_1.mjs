@@ -114,8 +114,9 @@ pension_contribution({ pension_contribution_in }),
 percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in })));
 
 
-export const pension_tax_relief_ratio_ = ({ pension_contribution_in, age_in, gross_salary_in }) =>
-pension_tax_relief({ pension_contribution_in, age_in, gross_salary_in }) / pension_contribution({ pension_contribution_in });
+// this is wrong
+/*export const pension_tax_relief_ratio = () =>
+  pension_tax_relief() / pension_contribution();*/
 
 export const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in, age_in }) =>
 paye_rate({ paye_band_id_in }) *
