@@ -10,6 +10,6 @@
       "y": {"field": "contribution_amount", "type": "ordinal", "sort": "descending", "axis": {"format": ".1s"}, "title":"contribution"},
       "row": {"field": "age_in"},
       "text": {"field": "empee_contribution_tax_relief", "format": ".3s"},
-      "color": {"field": "empee_contribution_tax_relief", "type": "quantitative", "scale": {"scheme": "yelloworangered"}, "legend": null}
+    "color": {"field": "empee_contribution_tax_relief", "type": "quantitative", "scale": {"scheme": "yelloworangered"}, "legend": true}
     }
   }
