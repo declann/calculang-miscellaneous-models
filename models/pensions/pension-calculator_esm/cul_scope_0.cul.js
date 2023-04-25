@@ -20,7 +20,9 @@ export const unit_balance = () => {
 };
 
 export const unit_allocation = () =>
-  (empee_contribution() + emper_contribution()) / unit_price(); // todo, AVCs?
+  ((empee_contribution() + emper_contribution()) *
+    (1 - contribution_charge())) /
+  unit_price(); // todo, AVCs?
 
 export const unit_price = () => {
   if (age() <= age_0()) return 1;
@@ -108,3 +110,5 @@ export const emper_contribution_rate = () => emper_contribution_rate_in;
 export const unit_growth_rate = () => unit_growth_rate_in;
 
 export const fund_value_0 = () => fund_value_0_in;
+
+export const contribution_charge = () => contribution_charge_in;
