@@ -100,23 +100,17 @@ export const percentage_limit = ({ age_in }) => {
   return 0.4;
 };
 
-// pensions_tax_relief = impact of contribution on paye calc with 115k,gross salary limit
-// then use full gross_salary for paye_taxable_salary and create a deduction in summary
-// approach below is different, but I think result is the same, todo prove
-
-export const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
-Math.max(0, gross_salary({ gross_salary_in }) - pension_tax_relief({ pension_contribution_in, age_in, gross_salary_in }));
-
 export const pension_tax_relief = ({ pension_contribution_in, age_in, gross_salary_in }) =>
-// following is the tax relief. "The maximum amount of earnings taken into account for calculating tax relief is 115k per year". (?)for the limits only? See also 26.3 https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-26.pdf
+// "The maximum amount of earnings taken into account for calculating tax relief is 115k per year". See also 26.3 https://www.revenue.ie/en/tax-professionals/tdm/pensions/chapter-26.pdf
+// calcs/approach not particularly validated
+// but some results in ./check-pensions-tax-relief.png
 Math.min(
 pension_contribution({ pension_contribution_in }),
 percentage_limit({ age_in }) * Math.min(115000, gross_salary({ gross_salary_in })));
 
 
-// this is wrong
-/*export const pension_tax_relief_ratio = () =>
-  pension_tax_relief() / pension_contribution();*/
+export const paye_taxable_salary = ({ gross_salary_in, pension_contribution_in, age_in }) =>
+Math.max(0, gross_salary({ gross_salary_in }) - pension_tax_relief({ pension_contribution_in, age_in, gross_salary_in }));
 
 export const paye_by_band_id = ({ paye_band_id_in, gross_salary_in, pension_contribution_in, age_in }) =>
 paye_rate({ paye_band_id_in }) *
