@@ -26,10 +26,10 @@ export const prsi_rate = ({}) => 0.04;
 // issues: #11 #76
 export const usc_table = ({}) => [
 { band_id: 1, band_co: 12012, rate: 0.005 },
-{ band_id: 2, band_co: 21295, rate: 0.02 },
+{ band_id: 2, band_co: 22920, rate: 0.02 },
 {
   band_id: 3,
-  band_co: 70144,
+  band_co: 70044, // this was off by 100e in error for 2023!
   rate: 0.045
 },
 { band_id: 4, band_co: 0, rate: 0.08 }];
@@ -66,7 +66,7 @@ gross_salary({ gross_salary_in }) > 13000 ? 1 : 0);
 
 // PAYE, "
 export const paye_table = ({}) => [
-{ band_id: 1, band_co: 36800, rate: 0.2 },
+{ band_id: 1, band_co: 40000, rate: 0.2 },
 { band_id: 2, band_co: 100000, rate: 0.4 },
 {
   band_id: 3,

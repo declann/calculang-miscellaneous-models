@@ -4,11 +4,7 @@
 
 // todo add timing comments
 
-import {
-  income_tax,
-  pension_contribution,
-  //pension_tax_relief_ratio as pension_tax_relief_ratio_,
-} from "./simple-incometax.cul";
+import { income_tax } from "./simple-incometax.cul";
 export { income_tax };
 
 export const fund_value = () => unit_balance() * unit_price(); // not allowing for multiple funds now
