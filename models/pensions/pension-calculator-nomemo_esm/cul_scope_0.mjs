@@ -38,16 +38,6 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
     empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in }));
 
 };
-//_.range(age_0(), retirement_age()).reduce((acc, val) => acc + val);
-
-//export const gross_salary = () => salary({ age_in: age() - 1 });
-
-/*export const pension_tax_relief_ratio = () =>
-  pension_tax_relief_ratio_({
-    gross_salary_in: salary({ age_in: age() - 1 }),
-    tax_credits_in: 3000,
-    pension_contribution_in: empee_contribution(),
-  });*/
 
 export const pension_tax_relief_ratio = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in });
