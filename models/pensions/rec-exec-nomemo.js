@@ -177,7 +177,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fund_value_0_actual", function() { return fund_value_0_actual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retirement_age_actual", function() { return retirement_age_actual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary_0_actual", function() { return salary_0_actual; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution_rate_actual_actual", function() { return emper_contribution_rate_actual_actual; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution_rate_actual", function() { return emper_contribution_rate_actual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contribution_charge_actual", function() { return contribution_charge_actual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_opening", function() { return age_opening; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_closing", function() { return age_closing; });
@@ -263,7 +263,7 @@ const age_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(
 const fund_value_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].fund_value_0_in;
 const retirement_age_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].retirement_age_in;
 const salary_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].salary_0_in;
-const emper_contribution_rate_actual_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].emper_contribution_rate_in;
+const emper_contribution_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].emper_contribution_rate_in;
 const contribution_charge_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) - 30 + 1].contribution_charge_in;
 
 
@@ -353,10 +353,10 @@ const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_open
   return empee_contribution_rate_actual({ actuals_in, age_in });
 };
 
-const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
+const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["emper_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in });else
-  return emper_contribution_rate_actual();
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["emper_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
 const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {

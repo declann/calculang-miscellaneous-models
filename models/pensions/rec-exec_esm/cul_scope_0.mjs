@@ -26,7 +26,7 @@ export const age_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[
 export const fund_value_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].fund_value_0_in;
 export const retirement_age_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].retirement_age_in;
 export const salary_0_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].salary_0_in;
-export const emper_contribution_rate_actual_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].emper_contribution_rate_in;
+export const emper_contribution_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].emper_contribution_rate_in;
 export const contribution_charge_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].contribution_charge_in;
 
 export {
@@ -126,10 +126,10 @@ export const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, a
   return empee_contribution_rate_actual({ actuals_in, age_in });
 };
 
-export const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
+export const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (age({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return emper_contribution_rate_projected({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in });else
-  return emper_contribution_rate_actual();
+  return emper_contribution_rate_projected({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
 export const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
