@@ -7,10 +7,10 @@ retirement_age_ as retirement_age_projected,
 salary_0_ as salary_0_projected,
 salary_inflation_rate_ as salary_inflation_rate_projected,
 empee_contribution_rate_ as empee_contribution_rate_projected,
-emper_contribution_rate as emper_contribution_rate_projected,
+emper_contribution_rate_ as emper_contribution_rate_projected,
 unit_growth_rate_ as unit_growth_rate_projected,
 fund_value_0_ as fund_value_0_projected,
-contribution_charge as contribution_charge_projected // how come I didn't put _ here and it worked?
+contribution_charge_ as contribution_charge_projected // how come I didn't put _ here and it worked?
 } from "./cul_scope_1.mjs";
 
 
@@ -128,7 +128,7 @@ export const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, a
 
 export const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (age({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return emper_contribution_rate_projected({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  return emper_contribution_rate_projected({});else
   return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
@@ -146,7 +146,7 @@ export const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_
 
 export const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (age({ age_in }) > contribution_charge_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return contribution_charge_projected({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
+  return contribution_charge_projected({});else
   return contribution_charge_actual({ actuals_in, age_in });
 };;
 
