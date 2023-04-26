@@ -1,7 +1,7 @@
 export const age = () => age_in;
-export const age_0 = () => 20;
+export const age_0 = () => 30;
 export const retirement_age = () => 65;
-export const salary_0 = () => 30000;
+export const salary_0 = () => 50000;
 export const salary_inflation_rate = () => 0.02;
 export const empee_contribution_rate = () => 0.1;
 export const unit_growth_rate = () => 0.05;

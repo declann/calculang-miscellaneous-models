@@ -341,9 +341,9 @@ const rec_order = ['age_0', 'retirement_age', 'salary_0', 'salary_inflation_rate
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "l", function() { return _simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
 const age = ({ age_in }) => age_in;
-const age_0_ = ({}) => 20;
+const age_0_ = ({}) => 30;
 const retirement_age_ = ({}) => 65;
-const salary_0_ = ({}) => 30000;
+const salary_0_ = ({}) => 50000;
 const salary_inflation_rate_ = ({}) => 0.02;
 const empee_contribution_rate_ = ({}) => 0.1;
 const unit_growth_rate_ = ({}) => 0.05;
