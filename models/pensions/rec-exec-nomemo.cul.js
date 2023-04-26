@@ -98,55 +98,55 @@ export const contribution_charge_actual_co = () => {
 
 export const age_0 = () => {
   if(age() > age_0_actual_co())
-    return age_0_actual({age_in:age_opening()})//age_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return age_0_projected(); // Make it _0 vars?
   else return age_0_actual();
 };
 
 export const retirement_age = () => {
   if(age() > retirement_age_actual_co())
-    return retirement_age_actual({age_in:age_opening()})//retirement_age_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return retirement_age_projected(); // Make it _0 vars?
   else return retirement_age_actual();
 };
 
 export const salary_0 = () => {
   if(age() > salary_0_actual_co())
-    return salary_0_actual({age_in:age_opening()})//salary_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return salary_0_projected(); // Make it _0 vars?
   else return salary_0_actual();
 };
 
 export const salary_inflation_rate = () => {
   if(age() > salary_inflation_rate_actual_co())
-    return salary_inflation_rate_actual({age_in:age_opening()})//salary_inflation_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return salary_inflation_rate_projected(); // Make it _0 vars?
   else return salary_inflation_rate_actual();
 };
 
 export const empee_contribution_rate = () => {
   if(age() > empee_contribution_rate_actual_co())
-    return empee_contribution_rate_actual({age_in:age_opening()})//empee_contribution_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return empee_contribution_rate_projected(); // Make it _0 vars?
   else return empee_contribution_rate_actual();
 };
 
 export const emper_contribution_rate = () => {
   if(age() > emper_contribution_rate_actual_co())
-    return emper_contribution_rate_actual({age_in:age_opening()})//emper_contribution_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return emper_contribution_rate_projected(); // Make it _0 vars?
   else return emper_contribution_rate_actual();
 };
 
 export const unit_growth_rate = () => {
   if(age() > unit_growth_rate_actual_co())
-    return unit_growth_rate_actual({age_in:age_opening()})//unit_growth_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return unit_growth_rate_projected(); // Make it _0 vars?
   else return unit_growth_rate_actual();
 };
 
 export const fund_value_0 = () => {
   if(age() > fund_value_0_actual_co())
-    return fund_value_0_actual({age_in:age_opening()})//fund_value_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return fund_value_0_projected(); // Make it _0 vars?
   else return fund_value_0_actual();
 };
 
 export const contribution_charge = () => {
   if(age() > contribution_charge_actual_co())
-    return contribution_charge_actual({age_in:age_opening()})//contribution_charge_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+    return contribution_charge_projected(); // Make it _0 vars?
   else return contribution_charge_actual();
 };;
 

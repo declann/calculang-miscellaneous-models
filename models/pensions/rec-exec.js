@@ -256,55 +256,55 @@ const contribution_charge_actual_co = ({ rec_step_in, age_opening_in, age_openin
 
 const age_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > age_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return age_0_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //age_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age_0_ */ "c"])({}); // Make it _0 vars?
   else return age_0_actual({ actuals_in, age_in });
 };
 
 const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return retirement_age_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //retirement_age_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* retirement_age_ */ "o"])({}); // Make it _0 vars?
   else return retirement_age_actual({ actuals_in, age_in });
 };
 
 const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return salary_0_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //salary_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_0_ */ "q"])({}); // Make it _0 vars?
   else return salary_0_actual({ actuals_in, age_in });
 };
 
 const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return salary_inflation_rate_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //salary_inflation_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_inflation_rate_ */ "r"])({}); // Make it _0 vars?
   else return salary_inflation_rate_actual({ actuals_in, age_in });
 };
 
 const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return empee_contribution_rate_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //empee_contribution_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* empee_contribution_rate_ */ "f"])({}); // Make it _0 vars?
   else return empee_contribution_rate_actual({ actuals_in, age_in });
 };
 
 const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return emper_contribution_rate_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //emper_contribution_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* emper_contribution_rate_ */ "i"])({}); // Make it _0 vars?
   else return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
 const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > unit_growth_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return unit_growth_rate_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //unit_growth_rate_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* unit_growth_rate_ */ "u"])({}); // Make it _0 vars?
   else return unit_growth_rate_actual({ actuals_in, age_in });
 };
 
 const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > fund_value_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return fund_value_0_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //fund_value_0_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* fund_value_0_ */ "k"])({}); // Make it _0 vars?
   else return fund_value_0_actual({ actuals_in, age_in });
 };
 
 const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > contribution_charge_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return contribution_charge_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); //contribution_charge_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* contribution_charge_ */ "d"])({}); // Make it _0 vars?
   else return contribution_charge_actual({ actuals_in, age_in });
 };;
 
