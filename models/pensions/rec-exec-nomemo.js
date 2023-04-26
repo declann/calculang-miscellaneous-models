@@ -112,7 +112,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contribution_charge_actual", function() { return contribution_charge_actual; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_opening", function() { return age_opening; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_closing", function() { return age_closing; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_opening_closing_offset", function() { return age_opening_closing_offset; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rec_step", function() { return rec_step; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_0_actual_co", function() { return age_0_actual_co; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retirement_age_actual_co", function() { return retirement_age_actual_co; });
@@ -201,109 +200,108 @@ const contribution_charge_actual = ({ actuals_in, age_in }) => actuals({ actuals
 
 
 // TODO generalise
-const age_opening = ({ age_opening_in, age_opening_closing_offset_in }) => age_opening_in + age_opening_closing_offset({ age_opening_closing_offset_in }); // todo offset in terms of closing-opening?
-const age_closing = ({ age_closing_in, age_opening_closing_offset_in }) => age_closing_in + age_opening_closing_offset({ age_opening_closing_offset_in });
-const age_opening_closing_offset = ({ age_opening_closing_offset_in }) => age_opening_closing_offset_in;
+const age_opening = ({ age_opening_in }) => age_opening_in;
+const age_closing = ({ age_closing_in }) => age_closing_in;
 const rec_step = ({ rec_step_in }) => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
 
 
 // neater if I merge these 2 blocks together:
 
-const age_0_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 1) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const age_0_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 1) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const retirement_age_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 2) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const retirement_age_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 2) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const salary_0_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 3) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const salary_0_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 3) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const salary_inflation_rate_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 4) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const salary_inflation_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 4) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const empee_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 5) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const empee_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 5) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const emper_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 6) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const emper_contribution_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 6) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const unit_growth_rate_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 7) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const unit_growth_rate_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 7) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const fund_value_0_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 8) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const fund_value_0_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 8) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };
 
-const contribution_charge_actual_co = ({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) => {
-  if (rec_step({ rec_step_in }) >= 9) return age_opening({ age_opening_in, age_opening_closing_offset_in });else
-  return age_closing({ age_closing_in, age_opening_closing_offset_in });
+const contribution_charge_actual_co = ({ rec_step_in, age_opening_in, age_closing_in }) => {
+  if (rec_step({ rec_step_in }) >= 9) return age_opening({ age_opening_in });else
+  return age_closing({ age_closing_in });
 };;
 
-const age_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > age_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const age_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > age_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age_0_ */ "c"])({}); // Make it _0 vars?
   else return age_0_actual({ actuals_in, age_in });
 };
 
-const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return retirement_age_actual({ actuals_in, age_in: retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }) }); // Make it _0 vars?
+const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
+  return retirement_age_actual({ actuals_in, age_in: retirement_age_actual_co({ rec_step_in, age_opening_in, age_closing_in }) }); // Make it _0 vars?
   else return retirement_age_actual({ actuals_in, age_in });
 };
 
-const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_0_ */ "q"])({}); // Make it _0 vars?
   else return salary_0_actual({ actuals_in, age_in });
 };
 
-const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* salary_inflation_rate_ */ "r"])({}); // Make it _0 vars?
   else return salary_inflation_rate_actual({ actuals_in, age_in });
 };
 
-const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* empee_contribution_rate_ */ "f"])({}); // Make it _0 vars?
   else return empee_contribution_rate_actual({ actuals_in, age_in });
 };
 
-const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* emper_contribution_rate_ */ "i"])({}); // Make it _0 vars?
   else return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
-const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > unit_growth_rate_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > unit_growth_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* unit_growth_rate_ */ "u"])({}); // Make it _0 vars?
   else return unit_growth_rate_actual({ actuals_in, age_in });
 };
 
-const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > fund_value_0_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > fund_value_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* fund_value_0_ */ "k"])({}); // Make it _0 vars?
   else return fund_value_0_actual({ actuals_in, age_in });
 };
 
-const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > contribution_charge_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
+const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > contribution_charge_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
   return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* contribution_charge_ */ "d"])({}); // Make it _0 vars?
   else return contribution_charge_actual({ actuals_in, age_in });
 };;
@@ -360,51 +358,51 @@ const emper_contribution_rate_ = ({}) => 0.10;
 
 
 
-const fund_value = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => unit_balance({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) * unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }); // not allowing for multiple funds now
+const fund_value = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => unit_balance({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) * unit_price({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }); // not allowing for multiple funds now
 
-const unit_balance = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1) return Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) / unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
-  return unit_balance({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
+const unit_balance = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) - 1) return Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["fund_value_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) / unit_price({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });else
+  return unit_balance({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) + unit_allocation({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });
   // timing = premium received at start of year and allocated immediately
 };
 
-const unit_allocation = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) =>
-(empee_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) + emper_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) * (
-1 - Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["contribution_charge"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) /
-unit_price({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }); // todo, AVCs?
+const unit_allocation = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) =>
+(empee_contribution({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) + emper_contribution({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) * (
+1 - Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["contribution_charge"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) /
+unit_price({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }); // todo, AVCs?
 
-const unit_price = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 1;else
-  return unit_price({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_growth_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }));
+const unit_price = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) return 1;else
+  return unit_price({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["unit_growth_rate"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }));
 };
 
-const empee_contribution = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1 || age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
-  return salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
+const empee_contribution = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) - 1 || age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) return 0;else
+  return salary({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["empee_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });
 };
 
-const accumulated_empee_contributions = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1) return 0;else
+const accumulated_empee_contributions = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) - 1) return 0;else
 
   return (
-    accumulated_empee_contributions({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) +
-    empee_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }));
+    accumulated_empee_contributions({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) +
+    empee_contribution({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }));
 
 };
 
-const pension_tax_relief_ratio = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) =>
-empee_contribution_tax_relief({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) / empee_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
+const pension_tax_relief_ratio = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) =>
+empee_contribution_tax_relief({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) / empee_contribution({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });
 
-const empee_contribution_tax_relief = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) =>
+const empee_contribution_tax_relief = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) =>
 Object(_simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "a"])({ age_in,
-  gross_salary_in: salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }),
+  gross_salary_in: salary({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
   pension_contribution_in: 0 }) -
 
 Object(_simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "a"])({ age_in,
-  gross_salary_in: salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }),
+  gross_salary_in: salary({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }),
   tax_credits_in: 3000,
-  pension_contribution_in: empee_contribution({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) });
+  pension_contribution_in: empee_contribution({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) });
 
 
 // affected by bug: depends on gross_salary_in, for some reason
@@ -418,21 +416,21 @@ Object(_simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPOR
     );
 };*/
 
-const emper_contribution = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
-  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1 || age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
-  return salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["emper_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });
+const emper_contribution = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) - 1 || age({ age_in }) == Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) return 0;else
+  return salary({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["emper_contribution_rate"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });
 };
 
-const salary = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
+const salary = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
   // at end of year
-  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) - 1) return Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in });else
-  if (age({ age_in }) >= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })) return 0;else
-  return salary({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in })); // < age_0 = undefined, any way/use to capture this statically?
+  if (age({ age_in }) <= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["age_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) - 1) return Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_0"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in });else
+  if (age({ age_in }) >= Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })) return 0;else
+  return salary({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: age({ age_in }) - 1 }) * (1 + Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["salary_inflation_rate"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in })); // < age_0 = undefined, any way/use to capture this statically?
 };
 
-const projected_fund_value = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) =>
+const projected_fund_value = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) =>
 // at retirement:
-fund_value({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in, age_in: Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) });
+fund_value({ rec_step_in, age_opening_in, age_closing_in, actuals_in, age_in: Object(_rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age"])({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) });
 
 // explicit inputs ::
 

@@ -43,9 +43,8 @@ contribution_charge_projected
 };
 
 // TODO generalise
-export const age_opening = () => age_opening_in + age_opening_closing_offset(); // todo offset in terms of closing-opening?
-export const age_closing = () => age_closing_in + age_opening_closing_offset();
-export const age_opening_closing_offset = () => age_opening_closing_offset_in;
+export const age_opening = () => age_opening_in;
+export const age_closing = () => age_closing_in;
 export const rec_step = () => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
 
 
