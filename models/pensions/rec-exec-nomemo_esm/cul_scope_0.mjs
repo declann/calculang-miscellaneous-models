@@ -104,7 +104,7 @@ export const age_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing
 
 export const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (age({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return retirement_age_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); // Make it _0 vars?
+  return retirement_age_actual({ actuals_in, age_in: age_closing({ age_closing_in, age_opening_closing_offset_in }) }); // Make it _0 vars?
   else return retirement_age_actual({ actuals_in, age_in });
 };
 

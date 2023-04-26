@@ -262,7 +262,7 @@ const age_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset
 
 const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return retirement_age_actual({ actuals_in, age_in: age_opening({ age_opening_in, age_opening_closing_offset_in }) }); // Make it _0 vars?
+  return retirement_age_actual({ actuals_in, age_in: age_closing({ age_closing_in, age_opening_closing_offset_in }) }); // Make it _0 vars?
   else return retirement_age_actual({ actuals_in, age_in });
 };
 
