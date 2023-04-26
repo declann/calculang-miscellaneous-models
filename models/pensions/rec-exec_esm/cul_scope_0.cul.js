@@ -1,14 +1,16 @@
 
 import {
   //age, // important
-  fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,salary,projected_fund_value,age,
+  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,age,
   age_0 as age_0_projected,
 retirement_age as retirement_age_projected,
 salary_0 as salary_0_projected,
 salary_inflation_rate as salary_inflation_rate_projected,
 empee_contribution_rate as empee_contribution_rate_projected,
+emper_contribution_rate as emper_contribution_rate_projected,
 unit_growth_rate as unit_growth_rate_projected,
-fund_value_0 as fund_value_0_projected // how come I didn't put _ here and it worked?
+fund_value_0 as fund_value_0_projected,
+contribution_charge as contribution_charge_projected // how come I didn't put _ here and it worked?
 } from "./projected.cul";
 
 
@@ -26,14 +28,16 @@ export const retirement_age_actual = () => actuals()[age()-30+1].retirement_age_
 export const salary_0_actual = () => actuals()[age()-30+1].salary_0_in;
 
 export {
-  fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,salary,projected_fund_value,age,
+  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,age,
   age_0_projected,
 retirement_age_projected,
 salary_0_projected,
 salary_inflation_rate_projected,
 empee_contribution_rate_projected,
+emper_contribution_rate_projected,
 unit_growth_rate_projected,
-fund_value_0_projected
+fund_value_0_projected,
+contribution_charge_projected
 };
 
 // TODO generalise
@@ -70,13 +74,23 @@ export const empee_contribution_rate_actual_co = () => {
   else return age_closing();
 };
 
-export const unit_growth_rate_actual_co = () => {
+export const emper_contribution_rate_actual_co = () => {
   if (rec_step() >= 6) return age_opening();
   else return age_closing();
 };
 
-export const fund_value_0_actual_co = () => {
+export const unit_growth_rate_actual_co = () => {
   if (rec_step() >= 7) return age_opening();
+  else return age_closing();
+};
+
+export const fund_value_0_actual_co = () => {
+  if (rec_step() >= 8) return age_opening();
+  else return age_closing();
+};
+
+export const contribution_charge_actual_co = () => {
+  if (rec_step() >= 9) return age_opening();
   else return age_closing();
 };;
 
@@ -110,6 +124,12 @@ export const empee_contribution_rate = () => {
   else return empee_contribution_rate_actual();
 };
 
+export const emper_contribution_rate = () => {
+  if(age() > emper_contribution_rate_actual_co())
+    return emper_contribution_rate_projected()
+  else return emper_contribution_rate_actual();
+};
+
 export const unit_growth_rate = () => {
   if(age() > unit_growth_rate_actual_co())
     return unit_growth_rate_projected()
@@ -120,8 +140,14 @@ export const fund_value_0 = () => {
   if(age() > fund_value_0_actual_co())
     return fund_value_0_projected()
   else return fund_value_0_actual();
+};
+
+export const contribution_charge = () => {
+  if(age() > contribution_charge_actual_co())
+    return contribution_charge_projected()
+  else return contribution_charge_actual();
 };;
 
-export const rec_order = ['age_0','retirement_age','salary_0','salary_inflation_rate','empee_contribution_rate','unit_growth_rate','fund_value_0'];
+export const rec_order = ['age_0','retirement_age','salary_0','salary_inflation_rate','empee_contribution_rate','emper_contribution_rate','unit_growth_rate','fund_value_0','contribution_charge'];
 
 

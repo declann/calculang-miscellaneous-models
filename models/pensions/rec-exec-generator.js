@@ -3,8 +3,8 @@
 const introspection = require('./pension-calculator-nomemo.introspection.json');
 
 //let inputs = ['salary_inflation_rate_in', 'empee_contribution_rate_in', 'unit_growth_rate_in'
-let inputs = Object.values(introspection.cul_functions).filter(d => d.reason == 'input definition').map(d => d.name).filter(d => d != 'age_in'); // _ins
-let formulae_not_inputs = Object.values(introspection.cul_functions).filter(d => inputs.indexOf(d.name +'_in') == -1 && inputs.indexOf(d.name) == -1).map(d => d.name).filter(d => d!='age_in')//.join(',');
+let inputs = Object.values(introspection.cul_functions).filter(d => d.reason == 'input definition' && d.cul_scope_id == 0).map(d => d.name).filter(d => d != 'age_in'); // _ins
+let formulae_not_inputs = Object.values(introspection.cul_functions).filter(d => inputs.indexOf(d.name +'_in') == -1 && inputs.indexOf(d.name) == -1 && d.cul_scope_id == 0).map(d => d.name).filter(d => d!='age_in')//.join(',');
 
 //console.log(formulae_not_inputs);
 
