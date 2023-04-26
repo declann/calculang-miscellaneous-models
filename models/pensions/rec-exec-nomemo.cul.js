@@ -26,6 +26,8 @@ export const age_0_actual = () => actuals()[age()-30+1].age_0_in;
 export const fund_value_0_actual = () => actuals()[age()-30+1].fund_value_0_in;
 export const retirement_age_actual = () => actuals()[age()-30+1].retirement_age_in;
 export const salary_0_actual = () => actuals()[age()-30+1].salary_0_in;
+export const emper_contribution_rate_actual_actual = () => actuals()[age()-30+1].emper_contribution_rate_in;
+export const contribution_charge_actual = () => actuals()[age()-30+1].contribution_charge_in;
 
 export {
   income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,age,

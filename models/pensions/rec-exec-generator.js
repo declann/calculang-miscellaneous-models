@@ -30,6 +30,8 @@ export const age_0_actual = () => actuals()[age()-30+1].age_0_in;
 export const fund_value_0_actual = () => actuals()[age()-30+1].fund_value_0_in;
 export const retirement_age_actual = () => actuals()[age()-30+1].retirement_age_in;
 export const salary_0_actual = () => actuals()[age()-30+1].salary_0_in;
+export const emper_contribution_rate_actual_actual = () => actuals()[age()-30+1].emper_contribution_rate_in;
+export const contribution_charge_actual = () => actuals()[age()-30+1].contribution_charge_in;
 
 export {
   ${formulae_not_inputs.join(',')},
