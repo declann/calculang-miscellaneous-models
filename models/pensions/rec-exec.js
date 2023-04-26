@@ -262,7 +262,7 @@ const age_0 = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset
 
 const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in, actuals_in }) => {
   if (Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* age */ "b"])({ age_in }) > retirement_age_actual_co({ rec_step_in, age_opening_in, age_opening_closing_offset_in, age_closing_in }))
-  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* retirement_age_ */ "o"])({});else
+  return Object(_projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__[/* retirement_age_ */ "o"])({ actuals_in, age_in });else
   return retirement_age_actual({ actuals_in, age_in });
 };
 
@@ -342,7 +342,7 @@ const rec_order = ['age_0', 'retirement_age', 'salary_0', 'salary_inflation_rate
 
 const age = ({ age_in }) => age_in;
 const age_0_ = ({}) => 30;
-const retirement_age_ = ({}) => 65;
+const retirement_age_ = ({ actuals_in, age_in }) => Object(_rec_exec_cul_js__WEBPACK_IMPORTED_MODULE_0__["retirement_age_actual"])({ actuals_in, age_in });
 const salary_0_ = ({}) => 50000;
 const salary_inflation_rate_ = ({}) => 0.02;
 const empee_contribution_rate_ = ({}) => 0.1;
