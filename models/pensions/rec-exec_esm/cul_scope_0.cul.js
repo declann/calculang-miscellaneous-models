@@ -104,7 +104,7 @@ export const age_0 = () => {
 
 export const retirement_age = () => {
   if(age() > retirement_age_actual_co())
-    return retirement_age_projected(); // Make it _0 vars?
+    return retirement_age_actual({age_in:age_opening()}); // Make it _0 vars?
   else return retirement_age_actual();
 };
 

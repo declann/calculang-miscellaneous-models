@@ -54,7 +54,7 @@ ${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).map((d,i) => `export
 
 ${inputs.filter(d => d != 'age_in').map(d => d.slice(0, -3)).map(d => `export const ${d} = () => {
   if(age() > ${d}_actual_co())
-    return ${d}${d == 'retirement_age_in' ? '_actual({age_in:age_opening()})' : '_projected()'}; // Make it _0 vars?
+    return ${d}${d == 'retirement_age' ? '_actual({age_in:age_opening()})' : '_projected()'}; // Make it _0 vars?
   else return ${d}_actual();
 };`).join('\n\n')};
 
