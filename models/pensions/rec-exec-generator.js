@@ -54,7 +54,7 @@ ${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).map((d,i) => `export
 
 ${inputs.filter(d => d != 'age_in').map(d => d.slice(0, -3)).map(d => `export const ${d} = () => {
   if(age() > ${d}_actual_co())
-    return ${d}_projected()
+    return ${d}_actual({age_in:age_opening()})//${d}_projected() // can op. actual go in here?? NO. but for retirement age we want it to. data vs. assumption. Make it _0 vars?
   else return ${d}_actual();
 };`).join('\n\n')};
 
