@@ -202,8 +202,8 @@ const rec_step_inputs = ({ rec_step_inputs_in }) => rec_step_inputs_in;
 const age_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].age_0; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].age_0;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].age_0_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].age_0_in;
   } else {
 
     // lookup inputs using
@@ -212,8 +212,8 @@ const age_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
 const retirement_age_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].retirement_age; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].retirement_age;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].retirement_age_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].retirement_age_in;
   } else {
 
     // lookup inputs using
@@ -222,8 +222,8 @@ const retirement_age_projected = ({ rec_step_inputs_in, inputs_in, age_opening_i
 const salary_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_0; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].salary_0;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_0_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].salary_0_in;
   } else {
 
     // lookup inputs using
@@ -232,8 +232,8 @@ const salary_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) =
 const salary_inflation_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_inflation_rate; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].salary_inflation_rate;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_inflation_rate_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].salary_inflation_rate_in;
   } else {
 
     // lookup inputs using
@@ -242,8 +242,8 @@ const salary_inflation_rate_projected = ({ rec_step_inputs_in, inputs_in, age_op
 const empee_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].empee_contribution_rate; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].empee_contribution_rate;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].empee_contribution_rate_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].empee_contribution_rate_in;
   } else {
 
     // lookup inputs using
@@ -252,8 +252,8 @@ const empee_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_
 const emper_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].emper_contribution_rate; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].emper_contribution_rate;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].emper_contribution_rate_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].emper_contribution_rate_in;
   } else {
 
     // lookup inputs using
@@ -262,8 +262,8 @@ const emper_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_
 const unit_growth_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].unit_growth_rate; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].unit_growth_rate;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].unit_growth_rate_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].unit_growth_rate_in;
   } else {
 
     // lookup inputs using
@@ -272,8 +272,8 @@ const unit_growth_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening
 const fund_value_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].fund_value_0; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].fund_value_0;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].fund_value_0_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].fund_value_0_in;
   } else {
 
     // lookup inputs using
@@ -282,8 +282,8 @@ const fund_value_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in 
 const contribution_charge_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
   if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
     let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].contribution_charge; // abstract complete object in one todo
-    else return inputs({ inputs_in })[c].contribution_charge;
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].contribution_charge_in; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].contribution_charge_in;
   } else {
 
     // lookup inputs using

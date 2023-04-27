@@ -47,8 +47,8 @@ export const rec_step_inputs = () => rec_step_inputs_in;
 ${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).map((d,i) => `export const ${d}_projected = () => {
   if (rec_step_inputs() == 0) {
     let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
-    if (c == -1) return inputs()[inputs().length-1].${d}; // abstract complete object in one todo
-    else return inputs()[c].${d}
+    if (c == -1) return inputs()[inputs().length-1].${d}_in; // abstract complete object in one todo
+    else return inputs()[c].${d}_in
   } else { // lookup inputs using
 
   }
