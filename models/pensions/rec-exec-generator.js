@@ -4,7 +4,7 @@ const introspection = require('./pension-calculator-nomemo.introspection.json');
 
 //let inputs = ['salary_inflation_rate_in', 'empee_contribution_rate_in', 'unit_growth_rate_in'
 let inputs = Object.values(introspection.cul_functions).filter(d => d.reason == 'input definition' && d.cul_scope_id == 0).map(d => d.name).filter(d => d != 'age_in'); // _ins
-let formulae_not_inputs = Object.values(introspection.cul_functions).filter(d => inputs.indexOf(d.name +'_in') == -1 && inputs.indexOf(d.name) == -1 && d.cul_scope_id == 0).map(d => d.name).filter(d => d!='age_in')//.join(',');
+let formulae_not_inputs = Object.values(introspection.cul_functions).filter(d => inputs.indexOf(d.name +'_in') == -1 && inputs.indexOf(d.name) == -1 && d.cul_scope_id == 0).map(d => d.name).filter(d => d!='age_in' && d != 'age')//.join(',');
 
 //console.log(formulae_not_inputs);
 
@@ -14,13 +14,13 @@ console.log(`
 import {
   //age, // important
   ${formulae_not_inputs.join(',')},
-  ${inputs.map(d => d.slice(0, -3) + ' as ' + d.slice(0, -3) + '_projected').join(',\n')} // how come I didn't put _ here and it worked?
 } from "./projected.cul";
 
 
 // actual data todo add flexibility
 
 export const actuals = () => actuals_in;
+export const inputs = () => inputs_in;
 
 // TODO generalise
 export const salary_inflation_rate_actual = () => actuals()[age()-30+1].salary_inflation_rate_in;
@@ -34,14 +34,25 @@ export const emper_contribution_rate_actual = () => actuals()[age()-30+1].emper_
 export const contribution_charge_actual = () => actuals()[age()-30+1].contribution_charge_in;
 
 export {
-  ${formulae_not_inputs.join(',')},
-  ${inputs.map(d => d.slice(0, -3) + '_projected').join(',\n')}
+  ${formulae_not_inputs.join(',')}
 };
 
 // TODO generalise
 export const age_opening = () => age_opening_in;
 export const age_closing = () => age_closing_in;
 export const rec_step = () => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
+export const age = () => age_in;
+export const rec_step_inputs = () => rec_step_inputs_in;
+
+${inputs.filter(d => d != 'age_in').map(d => d.slice(0,-3)).map((d,i) => `export const ${d}_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].${d}; // abstract complete object in one todo
+    else return inputs()[c].${d}
+  } else { // lookup inputs using
+
+  }
+};`).join('\n\n')};
 
 
 // neater if I merge these 2 blocks together:

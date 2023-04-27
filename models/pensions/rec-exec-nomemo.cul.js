@@ -1,22 +1,14 @@
 
 import {
   //age, // important
-  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,age,
-  age_0 as age_0_projected,
-retirement_age as retirement_age_projected,
-salary_0 as salary_0_projected,
-salary_inflation_rate as salary_inflation_rate_projected,
-empee_contribution_rate as empee_contribution_rate_projected,
-emper_contribution_rate as emper_contribution_rate_projected,
-unit_growth_rate as unit_growth_rate_projected,
-fund_value_0 as fund_value_0_projected,
-contribution_charge as contribution_charge_projected // how come I didn't put _ here and it worked?
+  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,
 } from "./projected.cul";
 
 
 // actual data todo add flexibility
 
 export const actuals = () => actuals_in;
+export const inputs = () => inputs_in;
 
 // TODO generalise
 export const salary_inflation_rate_actual = () => actuals()[age()-30+1].salary_inflation_rate_in;
@@ -30,22 +22,105 @@ export const emper_contribution_rate_actual = () => actuals()[age()-30+1].emper_
 export const contribution_charge_actual = () => actuals()[age()-30+1].contribution_charge_in;
 
 export {
-  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,age,
-  age_0_projected,
-retirement_age_projected,
-salary_0_projected,
-salary_inflation_rate_projected,
-empee_contribution_rate_projected,
-emper_contribution_rate_projected,
-unit_growth_rate_projected,
-fund_value_0_projected,
-contribution_charge_projected
+  income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value
 };
 
 // TODO generalise
 export const age_opening = () => age_opening_in;
 export const age_closing = () => age_closing_in;
 export const rec_step = () => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
+export const age = () => age_in;
+export const rec_step_inputs = () => rec_step_inputs_in;
+
+export const age_0_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].age_0; // abstract complete object in one todo
+    else return inputs()[c].age_0
+  } else { // lookup inputs using
+
+  }
+};
+
+export const retirement_age_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].retirement_age; // abstract complete object in one todo
+    else return inputs()[c].retirement_age
+  } else { // lookup inputs using
+
+  }
+};
+
+export const salary_0_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].salary_0; // abstract complete object in one todo
+    else return inputs()[c].salary_0
+  } else { // lookup inputs using
+
+  }
+};
+
+export const salary_inflation_rate_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].salary_inflation_rate; // abstract complete object in one todo
+    else return inputs()[c].salary_inflation_rate
+  } else { // lookup inputs using
+
+  }
+};
+
+export const empee_contribution_rate_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].empee_contribution_rate; // abstract complete object in one todo
+    else return inputs()[c].empee_contribution_rate
+  } else { // lookup inputs using
+
+  }
+};
+
+export const emper_contribution_rate_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].emper_contribution_rate; // abstract complete object in one todo
+    else return inputs()[c].emper_contribution_rate
+  } else { // lookup inputs using
+
+  }
+};
+
+export const unit_growth_rate_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].unit_growth_rate; // abstract complete object in one todo
+    else return inputs()[c].unit_growth_rate
+  } else { // lookup inputs using
+
+  }
+};
+
+export const fund_value_0_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].fund_value_0; // abstract complete object in one todo
+    else return inputs()[c].fund_value_0
+  } else { // lookup inputs using
+
+  }
+};
+
+export const contribution_charge_projected = () => {
+  if (rec_step_inputs() == 0) {
+    let c = inputs().findIndex(d => d.age_in < age_opening()); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs()[inputs().length-1].contribution_charge; // abstract complete object in one todo
+    else return inputs()[c].contribution_charge
+  } else { // lookup inputs using
+
+  }
+};;
 
 
 // neater if I merge these 2 blocks together:

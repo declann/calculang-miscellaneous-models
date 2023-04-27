@@ -1,14 +1,3 @@
-export const age = () => age_in;
-export const age_0 = () => 30;
-export const retirement_age = () => 65 //retirement_age_actual();
-export const salary_0 = () => 50000;
-export const salary_inflation_rate = () => 0.02;
-export const empee_contribution_rate = () => 0.1;
-export const unit_growth_rate = () => 0.05;
-export const fund_value_0 = () => 0;
-export const contribution_charge = () => 0.04;
-export const emper_contribution_rate = () => 0.10;
-
 // disclaimer: This is a work-in-progress model released for some calculang/tooling demonstration purposes and numbers shouldn't be relied upon; there are known model issues.
 
 // this model should prob. be broken into some modular pieces, but it isn't because it definitely needs memoisation, which is currently only working for non-modular models

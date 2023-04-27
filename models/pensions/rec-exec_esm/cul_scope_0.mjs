@@ -1,22 +1,14 @@
 
 import {
 //age, // important
-income_tax, fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, accumulated_empee_contributions, pension_tax_relief_ratio, empee_contribution_tax_relief, emper_contribution, salary, projected_fund_value, age,
-age_0_ as age_0_projected,
-retirement_age_ as retirement_age_projected,
-salary_0_ as salary_0_projected,
-salary_inflation_rate_ as salary_inflation_rate_projected,
-empee_contribution_rate_ as empee_contribution_rate_projected,
-emper_contribution_rate_ as emper_contribution_rate_projected,
-unit_growth_rate_ as unit_growth_rate_projected,
-fund_value_0_ as fund_value_0_projected,
-contribution_charge_ as contribution_charge_projected // how come I didn't put _ here and it worked?
-} from "./cul_scope_1.mjs";
+income_tax, fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, accumulated_empee_contributions, pension_tax_relief_ratio, empee_contribution_tax_relief, emper_contribution, salary, projected_fund_value } from
+"./cul_scope_1.mjs";
 
 
 // actual data todo add flexibility
 
 export const actuals = ({ actuals_in }) => actuals_in;
+export const inputs = ({ inputs_in }) => inputs_in;
 
 // TODO generalise
 export const salary_inflation_rate_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].salary_inflation_rate_in;
@@ -30,23 +22,106 @@ export const emper_contribution_rate_actual = ({ actuals_in, age_in }) => actual
 export const contribution_charge_actual = ({ actuals_in, age_in }) => actuals({ actuals_in })[age({ age_in }) - 30 + 1].contribution_charge_in;
 
 export {
-income_tax, fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, accumulated_empee_contributions, pension_tax_relief_ratio, empee_contribution_tax_relief, emper_contribution, salary, projected_fund_value, age,
-age_0_projected,
-retirement_age_projected,
-salary_0_projected,
-salary_inflation_rate_projected,
-empee_contribution_rate_projected,
-emper_contribution_rate_projected,
-unit_growth_rate_projected,
-fund_value_0_projected,
-contribution_charge_projected };
+income_tax, fund_value, unit_balance, unit_allocation, unit_price, empee_contribution, accumulated_empee_contributions, pension_tax_relief_ratio, empee_contribution_tax_relief, emper_contribution, salary, projected_fund_value };
 
 
 // TODO generalise
 export const age_opening = ({ age_opening_in }) => age_opening_in;
 export const age_closing = ({ age_closing_in }) => age_closing_in;
 export const rec_step = ({ rec_step_in }) => rec_step_in; // wrong: 0 = AAA, 1 = E salary inflation, 2 = E empee contribution, 3 = E unit growth rate (=EEE)
+export const age = ({ age_in }) => age_in;
+export const rec_step_inputs = ({ rec_step_inputs_in }) => rec_step_inputs_in;
 
+export const age_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].age_0; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].age_0;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const retirement_age_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].retirement_age; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].retirement_age;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const salary_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_0; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].salary_0;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const salary_inflation_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].salary_inflation_rate; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].salary_inflation_rate;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const empee_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].empee_contribution_rate; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].empee_contribution_rate;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const emper_contribution_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].emper_contribution_rate; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].emper_contribution_rate;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const unit_growth_rate_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].unit_growth_rate; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].unit_growth_rate;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const fund_value_0_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].fund_value_0; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].fund_value_0;
+  } else {
+
+
+    // lookup inputs using
+  }};
+export const contribution_charge_projected = ({ rec_step_inputs_in, inputs_in, age_opening_in }) => {
+  if (rec_step_inputs({ rec_step_inputs_in }) == 0) {
+    let c = inputs({ inputs_in }).findIndex((d) => d.age_in < age_opening({ age_opening_in })); // think about timing // the constraint is on the Next record... (or End)
+    if (c == -1) return inputs({ inputs_in })[inputs({ inputs_in }).length - 1].contribution_charge; // abstract complete object in one todo
+    else return inputs({ inputs_in })[c].contribution_charge;
+  } else {
+
+
+    // lookup inputs using
+  }};;
 
 // neater if I merge these 2 blocks together:
 
@@ -95,9 +170,9 @@ export const contribution_charge_actual_co = ({ rec_step_in, age_opening_in, age
   return age_closing({ age_closing_in });
 };;
 
-export const age_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const age_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > age_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return age_0_projected({}); // Make it _0 vars?
+  return age_0_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return age_0_actual({ actuals_in, age_in });
 };
 
@@ -107,45 +182,45 @@ export const retirement_age = ({ age_in, rec_step_in, age_opening_in, age_closin
   else return retirement_age_actual({ actuals_in, age_in });
 };
 
-export const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const salary_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > salary_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return salary_0_projected({}); // Make it _0 vars?
+  return salary_0_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return salary_0_actual({ actuals_in, age_in });
 };
 
-export const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const salary_inflation_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > salary_inflation_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return salary_inflation_rate_projected({}); // Make it _0 vars?
+  return salary_inflation_rate_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return salary_inflation_rate_actual({ actuals_in, age_in });
 };
 
-export const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const empee_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > empee_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return empee_contribution_rate_projected({}); // Make it _0 vars?
+  return empee_contribution_rate_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return empee_contribution_rate_actual({ actuals_in, age_in });
 };
 
-export const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const emper_contribution_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > emper_contribution_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return emper_contribution_rate_projected({}); // Make it _0 vars?
+  return emper_contribution_rate_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return emper_contribution_rate_actual({ actuals_in, age_in });
 };
 
-export const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const unit_growth_rate = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > unit_growth_rate_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return unit_growth_rate_projected({}); // Make it _0 vars?
+  return unit_growth_rate_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return unit_growth_rate_actual({ actuals_in, age_in });
 };
 
-export const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const fund_value_0 = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > fund_value_0_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return fund_value_0_projected({}); // Make it _0 vars?
+  return fund_value_0_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return fund_value_0_actual({ actuals_in, age_in });
 };
 
-export const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) => {
+export const contribution_charge = ({ age_in, rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in }) => {
   if (age({ age_in }) > contribution_charge_actual_co({ rec_step_in, age_opening_in, age_closing_in }))
-  return contribution_charge_projected({}); // Make it _0 vars?
+  return contribution_charge_projected({ rec_step_inputs_in, inputs_in, age_opening_in }); // Make it _0 vars?
   else return contribution_charge_actual({ actuals_in, age_in });
 };;
 
