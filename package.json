@@ -86,7 +86,7 @@
     "@babel/cli": "^7.20.7",
     "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
-    "@calculang/calculang-js": "file:../calculang/packages/calculang-js",
+    "@calculang/calculang-js": "^0.1.0-alpha.6",
     "eslint": "^8.23.1",
     "lru-memoize": "^1.1.0",
     "source-map": "^0.6.1",
