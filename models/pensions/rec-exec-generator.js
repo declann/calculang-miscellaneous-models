@@ -14,7 +14,7 @@ console.log(`
 import {
   //age, // important
   ${formulae_not_inputs.join(',')},
-} from "./projected.cul";
+} from "./pension-calculator.cul";
 
 
 // actual data todo add flexibility

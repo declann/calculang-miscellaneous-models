@@ -144,30 +144,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "fund_value_0", function() { return fund_value_0; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "contribution_charge", function() { return contribution_charge; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rec_order", function() { return rec_order; });
-/* harmony import */ var _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "income_tax", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["f"]; });
+/* harmony import */ var _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "income_tax", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["f"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "fund_value", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["e"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "fund_value", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["e"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_balance", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["k"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_balance", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["k"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_allocation", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["j"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_allocation", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["j"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["l"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["l"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["b"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pension_tax_relief_ratio", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["g"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pension_tax_relief_ratio", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["g"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_tax_relief", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["c"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_tax_relief", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["c"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["d"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["d"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["i"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["i"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["h"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__["h"]; });
 
 
 
@@ -409,6 +409,16 @@ const rec_order = ['age_0', 'retirement_age', 'salary_0', 'salary_inflation_rate
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return emper_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return projected_fund_value; });
+/* unused harmony export age_ */
+/* unused harmony export age_0_ */
+/* unused harmony export retirement_age_ */
+/* unused harmony export salary_0_ */
+/* unused harmony export salary_inflation_rate_ */
+/* unused harmony export empee_contribution_rate_ */
+/* unused harmony export emper_contribution_rate_ */
+/* unused harmony export unit_growth_rate_ */
+/* unused harmony export fund_value_0_ */
+/* unused harmony export contribution_charge_ */
 /* harmony import */ var _rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _simple_incometax_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__["a"]; });
@@ -498,6 +508,22 @@ fund_value({ rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, in
 
 // explicit inputs ::
 
+// using age and age_0 (starting age) as inputs, rather than year/time and age_0.
+const age_ = ({ age_in }) => age_in; // input
+const age_0_ = ({ age_0_in }) => age_0_in;
+
+const retirement_age_ = ({ retirement_age_in }) => retirement_age_in;
+const salary_0_ = ({ salary_0_in }) => salary_0_in;
+const salary_inflation_rate_ = ({ salary_inflation_rate_in }) => salary_inflation_rate_in;
+const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contribution_rate_in;
+const emper_contribution_rate_ = ({ emper_contribution_rate_in }) => emper_contribution_rate_in;
+
+const unit_growth_rate_ = ({ unit_growth_rate_in }) => unit_growth_rate_in;
+
+const fund_value_0_ = ({ fund_value_0_in }) => fund_value_0_in;
+
+const contribution_charge_ = ({ contribution_charge_in }) => contribution_charge_in;
+
 /***/ }),
 /* 2 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -533,7 +559,7 @@ fund_value({ rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, in
 /* unused harmony export paye_over_bands */
 /* unused harmony export paye */
 /* unused harmony export net_salary_plus_pension_contribution */
-/* harmony import */ var _projected_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _pension_calculator_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _rec_exec_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations

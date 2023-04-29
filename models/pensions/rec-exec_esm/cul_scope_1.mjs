@@ -82,3 +82,19 @@ export const projected_fund_value = ({ age_in, rec_step_in, age_opening_in, age_
 fund_value({ rec_step_in, age_opening_in, age_closing_in, rec_step_inputs_in, inputs_in, actuals_in, age_in: retirement_age({ age_in, rec_step_in, age_opening_in, age_closing_in, actuals_in }) });
 
 // explicit inputs ::
+
+// using age and age_0 (starting age) as inputs, rather than year/time and age_0.
+export const age_ = ({ age_in }) => age_in; // input
+export const age_0_ = ({ age_0_in }) => age_0_in;
+
+export const retirement_age_ = ({ retirement_age_in }) => retirement_age_in;
+export const salary_0_ = ({ salary_0_in }) => salary_0_in;
+export const salary_inflation_rate_ = ({ salary_inflation_rate_in }) => salary_inflation_rate_in;
+export const empee_contribution_rate_ = ({ empee_contribution_rate_in }) => empee_contribution_rate_in;
+export const emper_contribution_rate_ = ({ emper_contribution_rate_in }) => emper_contribution_rate_in;
+
+export const unit_growth_rate_ = ({ unit_growth_rate_in }) => unit_growth_rate_in;
+
+export const fund_value_0_ = ({ fund_value_0_in }) => fund_value_0_in;
+
+export const contribution_charge_ = ({ contribution_charge_in }) => contribution_charge_in;

@@ -2,7 +2,7 @@
 import {
   //age, // important
   income_tax,fund_value,unit_balance,unit_allocation,unit_price,empee_contribution,accumulated_empee_contributions,pension_tax_relief_ratio,empee_contribution_tax_relief,emper_contribution,salary,projected_fund_value,
-} from "./projected.cul";
+} from "./pension-calculator.cul";
 
 
 // actual data todo add flexibility
