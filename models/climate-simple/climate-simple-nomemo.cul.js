@@ -1,4 +1,3 @@
-
 // minimise wip: just plan this on paper for now
 
 // todo: validate against what I've been told.
@@ -26,9 +25,11 @@ export const CO2_concentration = () => {
     );
 };
 
-export const net_carbon = () => emissions_rate() - absorption() - drawdown(); // can be negative because of drawdown
+export const net_carbon = () =>
+  /* _rate? */ emissions_rate() - absorption() - drawdown(); // can be negative because of drawdown
 
-export const CO2_concentration_delta = () => net_carbon() * 0.000001; // TODO put a real value here?
+export const CO2_concentration_delta = () =>
+  net_carbon({ year_in: year() - 1 }) * 0.000001; // TODO put a real value here?
 
 export const temperature = () =>
   temperature_0() + (concentration_factor() - 1) * climate_change_sensitivity();

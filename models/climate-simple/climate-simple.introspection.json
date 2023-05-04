@@ -576,14 +576,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 7,
+          "line": 6,
           "column": 30,
-          "index": 228
+          "index": 227
         },
         "end": {
-          "line": 7,
+          "line": 6,
           "column": 53,
-          "index": 251
+          "index": 250
         }
       },
       "inputs": [
@@ -606,14 +606,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 9,
+          "line": 8,
           "column": 22,
-          "index": 341
+          "index": 340
         },
         "end": {
-          "line": 9,
+          "line": 8,
           "column": 32,
-          "index": 351
+          "index": 350
         }
       },
       "inputs": []
@@ -625,14 +625,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 10,
+          "line": 9,
           "column": 29,
-          "index": 382
+          "index": 381
         },
         "end": {
-          "line": 10,
+          "line": 9,
           "column": 40,
-          "index": 393
+          "index": 392
         }
       },
       "inputs": []
@@ -644,14 +644,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 11,
+          "line": 10,
           "column": 35,
-          "index": 430
+          "index": 429
         },
         "end": {
-          "line": 11,
+          "line": 10,
           "column": 46,
-          "index": 441
+          "index": 440
         }
       },
       "inputs": []
@@ -663,14 +663,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 13,
+          "line": 12,
           "column": 42,
-          "index": 486
+          "index": 485
         },
         "end": {
-          "line": 13,
+          "line": 12,
           "column": 77,
-          "index": 521
+          "index": 520
         }
       },
       "inputs": [
@@ -693,14 +693,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 15,
+          "line": 14,
           "column": 20,
-          "index": 549
+          "index": 548
         },
         "end": {
-          "line": 15,
+          "line": 14,
           "column": 33,
-          "index": 562
+          "index": 561
         }
       },
       "inputs": [
@@ -723,14 +723,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 17,
+          "line": 16,
           "column": 26,
-          "index": 591
+          "index": 590
         },
         "end": {
-          "line": 17,
+          "line": 16,
           "column": 55,
-          "index": 620
+          "index": 619
         }
       },
       "inputs": [
@@ -744,14 +744,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 19,
+          "line": 18,
           "column": 24,
-          "index": 647
+          "index": 646
         },
         "end": {
-          "line": 19,
+          "line": 18,
           "column": 57,
-          "index": 680
+          "index": 679
         }
       },
       "inputs": [
@@ -766,14 +766,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 21,
+          "line": 20,
           "column": 33,
-          "index": 716
+          "index": 715
         },
         "end": {
-          "line": 27,
+          "line": 26,
           "column": 1,
-          "index": 885
+          "index": 884
         }
       },
       "inputs": [
@@ -788,14 +788,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 29,
+          "line": 28,
           "column": 26,
-          "index": 914
+          "index": 913
         },
         "end": {
           "line": 29,
-          "column": 76,
-          "index": 964
+          "column": 59,
+          "index": 978
         }
       },
       "inputs": [
@@ -812,12 +812,12 @@
         "start": {
           "line": 31,
           "column": 39,
-          "index": 1045
+          "index": 1059
         },
         "end": {
-          "line": 31,
-          "column": 68,
-          "index": 1074
+          "line": 32,
+          "column": 48,
+          "index": 1113
         }
       },
       "inputs": [
@@ -832,14 +832,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 33,
+          "line": 34,
           "column": 27,
-          "index": 1135
+          "index": 1174
         },
         "end": {
-          "line": 34,
+          "line": 35,
           "column": 79,
-          "index": 1220
+          "index": 1259
         }
       },
       "inputs": [
@@ -855,14 +855,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 36,
+          "line": 37,
           "column": 36,
-          "index": 1259
+          "index": 1298
         },
         "end": {
-          "line": 37,
+          "line": 38,
           "column": 45,
-          "index": 1310
+          "index": 1349
         }
       },
       "inputs": [
@@ -877,14 +877,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 39,
+          "line": 40,
           "column": 33,
-          "index": 1346
+          "index": 1385
         },
         "end": {
-          "line": 40,
+          "line": 41,
           "column": 78,
-          "index": 1430
+          "index": 1469
         }
       },
       "inputs": [
@@ -1206,6 +1206,14 @@
       "to": "1_CO2_concentration_delta_",
       "from": "1_net_carbon",
       "reason": "call",
+      "negs": [
+        "year_in"
+      ]
+    },
+    {
+      "to": "1_CO2_concentration_delta_",
+      "from": "1_year",
+      "reason": "call",
       "negs": []
     },
     {
@@ -1455,5 +1463,5 @@
       "climate_change_sensitivity_in"
     ]
   },
-  "dot": "digraph {\n  \"0_emissions_rate$\" [cul_scope_id=0,name=\"emissions_rate$\",imported=emissions_rate_,cul_source_scope_id=1,reason=\"explicit import\",inputs=emissions_rate_in,label=\"0_emissions_rate$ inputs: emissions_rate_in\"]\n  \"0_year_0$\" [cul_scope_id=0,name=\"year_0$\",imported=year_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_year_0$ inputs: \"]\n  \"0_temperature_0$\" [cul_scope_id=0,name=\"temperature_0$\",imported=temperature_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_temperature_0$ inputs: \"]\n  \"0_CO2_concentration_0$\" [cul_scope_id=0,name=\"CO2_concentration_0$\",imported=CO2_concentration_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_CO2_concentration_0$ inputs: \"]\n  \"0_climate_change_sensitivity$\" [cul_scope_id=0,name=\"climate_change_sensitivity$\",imported=climate_change_sensitivity_,cul_source_scope_id=1,reason=\"explicit import\",inputs=climate_change_sensitivity_in,label=\"0_climate_change_sensitivity$ inputs: climate_change_sensitivity_in\"]\n  \"0_year$\" [cul_scope_id=0,name=\"year$\",imported=year_,cul_source_scope_id=1,reason=\"explicit import\",inputs=year_in,label=\"0_year$ inputs: year_in\"]\n  \"0_absorption$\" [cul_scope_id=0,name=\"absorption$\",imported=absorption_,cul_source_scope_id=1,reason=\"explicit import\",inputs=emissions_rate_in,label=\"0_absorption$ inputs: emissions_rate_in\"]\n  \"0_drawdown$\" [cul_scope_id=0,name=\"drawdown$\",imported=drawdown_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_drawdown$ inputs: year_in,emissions_rate_in\"]\n  \"0_CO2_concentration$\" [cul_scope_id=0,name=\"CO2_concentration$\",imported=CO2_concentration_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_CO2_concentration$ inputs: year_in,emissions_rate_in\"]\n  \"0_net_carbon$\" [cul_scope_id=0,name=\"net_carbon$\",imported=net_carbon_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"emissions_rate_in,year_in\",label=\"0_net_carbon$ inputs: emissions_rate_in,year_in\"]\n  \"0_CO2_concentration_delta$\" [cul_scope_id=0,name=\"CO2_concentration_delta$\",imported=CO2_concentration_delta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"emissions_rate_in,year_in\",label=\"0_CO2_concentration_delta$ inputs: emissions_rate_in,year_in\"]\n  \"0_temperature$\" [cul_scope_id=0,name=\"temperature$\",imported=temperature_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature$ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_concentration_factor$\" [cul_scope_id=0,name=\"concentration_factor$\",imported=concentration_factor_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_concentration_factor$ inputs: year_in,emissions_rate_in\"]\n  \"0_temperature_delta$\" [cul_scope_id=0,name=\"temperature_delta$\",imported=temperature_delta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature_delta$ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_emissions_rate\" [cul_scope_id=0,name=emissions_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emissions_rate_in,label=\"0_emissions_rate inputs: emissions_rate_in\"]\n  \"0_year_0\" [cul_scope_id=0,name=year_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_year_0 inputs: \"]\n  \"0_temperature_0\" [cul_scope_id=0,name=temperature_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_temperature_0 inputs: \"]\n  \"0_CO2_concentration_0\" [cul_scope_id=0,name=CO2_concentration_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_CO2_concentration_0 inputs: \"]\n  \"0_climate_change_sensitivity\" [cul_scope_id=0,name=climate_change_sensitivity,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=climate_change_sensitivity_in,label=\"0_climate_change_sensitivity inputs: climate_change_sensitivity_in\"]\n  \"0_year\" [cul_scope_id=0,name=year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=year_in,label=\"0_year inputs: year_in\"]\n  \"0_absorption\" [cul_scope_id=0,name=absorption,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emissions_rate_in,label=\"0_absorption inputs: emissions_rate_in\"]\n  \"0_drawdown\" [cul_scope_id=0,name=drawdown,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_drawdown inputs: year_in,emissions_rate_in\"]\n  \"0_CO2_concentration\" [cul_scope_id=0,name=CO2_concentration,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_CO2_concentration inputs: year_in,emissions_rate_in\"]\n  \"0_net_carbon\" [cul_scope_id=0,name=net_carbon,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"0_net_carbon inputs: emissions_rate_in,year_in\"]\n  \"0_CO2_concentration_delta\" [cul_scope_id=0,name=CO2_concentration_delta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"0_CO2_concentration_delta inputs: emissions_rate_in,year_in\"]\n  \"0_temperature\" [cul_scope_id=0,name=temperature,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_concentration_factor\" [cul_scope_id=0,name=concentration_factor,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_concentration_factor inputs: year_in,emissions_rate_in\"]\n  \"0_temperature_delta\" [cul_scope_id=0,name=temperature_delta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature_delta inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate\" [cul_scope_id=1,name=emissions_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=emissions_rate_in,label=\"1_emissions_rate inputs: emissions_rate_in\"]\n  \"1_year_0\" [cul_scope_id=1,name=year_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_year_0 inputs: \"]\n  \"1_temperature_0\" [cul_scope_id=1,name=temperature_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_temperature_0 inputs: \"]\n  \"1_CO2_concentration_0\" [cul_scope_id=1,name=CO2_concentration_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_CO2_concentration_0 inputs: \"]\n  \"1_climate_change_sensitivity\" [cul_scope_id=1,name=climate_change_sensitivity,cul_source_scope_id=0,reason=\"implicit import\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity inputs: climate_change_sensitivity_in\"]\n  \"1_year\" [cul_scope_id=1,name=year,cul_source_scope_id=0,reason=\"implicit import\",inputs=year_in,label=\"1_year inputs: year_in\"]\n  \"1_absorption\" [cul_scope_id=1,name=absorption,cul_source_scope_id=0,reason=\"implicit import\",inputs=emissions_rate_in,label=\"1_absorption inputs: emissions_rate_in\"]\n  \"1_drawdown\" [cul_scope_id=1,name=drawdown,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_drawdown inputs: year_in,emissions_rate_in\"]\n  \"1_CO2_concentration\" [cul_scope_id=1,name=CO2_concentration,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_CO2_concentration inputs: year_in,emissions_rate_in\"]\n  \"1_net_carbon\" [cul_scope_id=1,name=net_carbon,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"emissions_rate_in,year_in\",label=\"1_net_carbon inputs: emissions_rate_in,year_in\"]\n  \"1_CO2_concentration_delta\" [cul_scope_id=1,name=CO2_concentration_delta,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"emissions_rate_in,year_in\",label=\"1_CO2_concentration_delta inputs: emissions_rate_in,year_in\"]\n  \"1_temperature\" [cul_scope_id=1,name=temperature,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_concentration_factor\" [cul_scope_id=1,name=concentration_factor,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_concentration_factor inputs: year_in,emissions_rate_in\"]\n  \"1_temperature_delta\" [cul_scope_id=1,name=temperature_delta,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_delta inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate_\" [cul_scope_id=1,name=emissions_rate_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=emissions_rate_in,label=\"1_emissions_rate_ inputs: emissions_rate_in\"]\n  \"1_emissions_rate_in\" [cul_scope_id=1,name=emissions_rate_in,cul_source_scope_id=1,reason=\"input definition\",inputs=emissions_rate_in,label=\"1_emissions_rate_in inputs: emissions_rate_in\"]\n  \"1_year_0_\" [cul_scope_id=1,name=year_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_year_0_ inputs: \"]\n  \"1_temperature_0_\" [cul_scope_id=1,name=temperature_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_temperature_0_ inputs: \"]\n  \"1_CO2_concentration_0_\" [cul_scope_id=1,name=CO2_concentration_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_CO2_concentration_0_ inputs: \"]\n  \"1_climate_change_sensitivity_\" [cul_scope_id=1,name=climate_change_sensitivity_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity_ inputs: climate_change_sensitivity_in\"]\n  \"1_climate_change_sensitivity_in\" [cul_scope_id=1,name=climate_change_sensitivity_in,cul_source_scope_id=1,reason=\"input definition\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity_in inputs: climate_change_sensitivity_in\"]\n  \"1_year_\" [cul_scope_id=1,name=year_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=year_in,label=\"1_year_ inputs: year_in\"]\n  \"1_year_in\" [cul_scope_id=1,name=year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=year_in,label=\"1_year_in inputs: year_in\"]\n  \"1_absorption_\" [cul_scope_id=1,name=absorption_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=emissions_rate_in,label=\"1_absorption_ inputs: emissions_rate_in\"]\n  \"1_drawdown_\" [cul_scope_id=1,name=drawdown_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_drawdown_ inputs: year_in,emissions_rate_in\"]\n  \"1_CO2_concentration_\" [cul_scope_id=1,name=CO2_concentration_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_CO2_concentration_ inputs: year_in,emissions_rate_in\"]\n  \"1_net_carbon_\" [cul_scope_id=1,name=net_carbon_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"1_net_carbon_ inputs: emissions_rate_in,year_in\"]\n  \"1_CO2_concentration_delta_\" [cul_scope_id=1,name=CO2_concentration_delta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"1_CO2_concentration_delta_ inputs: emissions_rate_in,year_in\"]\n  \"1_temperature_\" [cul_scope_id=1,name=temperature_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_concentration_factor_\" [cul_scope_id=1,name=concentration_factor_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_concentration_factor_ inputs: year_in,emissions_rate_in\"]\n  \"1_temperature_delta_\" [cul_scope_id=1,name=temperature_delta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_delta_ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate_\" -> \"0_emissions_rate$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_year_0_\" -> \"0_year_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_0_\" -> \"0_temperature_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_0_\" -> \"0_CO2_concentration_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_climate_change_sensitivity_\" -> \"0_climate_change_sensitivity$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_year_\" -> \"0_year$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_absorption_\" -> \"0_absorption$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_drawdown_\" -> \"0_drawdown$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_\" -> \"0_CO2_concentration$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_net_carbon_\" -> \"0_net_carbon$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_delta_\" -> \"0_CO2_concentration_delta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_\" -> \"0_temperature$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_concentration_factor_\" -> \"0_concentration_factor$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_delta_\" -> \"0_temperature_delta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_emissions_rate$\" -> \"0_emissions_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year_0$\" -> \"0_year_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature_0$\" -> \"0_temperature_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration_0$\" -> \"0_CO2_concentration_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_climate_change_sensitivity$\" -> \"0_climate_change_sensitivity\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year$\" -> \"0_year\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_absorption$\" -> \"0_absorption\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_drawdown$\" -> \"0_drawdown\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration$\" -> \"0_CO2_concentration\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_net_carbon$\" -> \"0_net_carbon\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration_delta$\" -> \"0_CO2_concentration_delta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature$\" -> \"0_temperature\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_concentration_factor$\" -> \"0_concentration_factor\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature_delta$\" -> \"0_temperature_delta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_emissions_rate\" -> \"1_emissions_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_year_0\" -> \"1_year_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature_0\" -> \"1_temperature_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration_0\" -> \"1_CO2_concentration_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_climate_change_sensitivity\" -> \"1_climate_change_sensitivity\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_year\" -> \"1_year\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_absorption\" -> \"1_absorption\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_drawdown\" -> \"1_drawdown\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration\" -> \"1_CO2_concentration\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_net_carbon\" -> \"1_net_carbon\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration_delta\" -> \"1_CO2_concentration_delta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature\" -> \"1_temperature\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_concentration_factor\" -> \"1_concentration_factor\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature_delta\" -> \"1_temperature_delta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_emissions_rate_in\" -> \"1_emissions_rate_\" [value=\"[object Object]\",label=\"input +emissions_rate_in\"]\n  \"1_climate_change_sensitivity_in\" -> \"1_climate_change_sensitivity_\" [value=\"[object Object]\",label=\"input +climate_change_sensitivity_in\"]\n  \"1_year_in\" -> \"1_year_\" [value=\"[object Object]\",label=\"input +year_in\"]\n  \"1_emissions_rate\" -> \"1_absorption_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_drawdown_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_year\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_year_0\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_CO2_concentration_delta\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_emissions_rate\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_absorption\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_drawdown\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_carbon\" -> \"1_CO2_concentration_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_temperature_0\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_concentration_factor\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_climate_change_sensitivity\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_concentration_factor_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_concentration_factor_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_climate_change_sensitivity\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+  "dot": "digraph {\n  \"0_emissions_rate$\" [cul_scope_id=0,name=\"emissions_rate$\",imported=emissions_rate_,cul_source_scope_id=1,reason=\"explicit import\",inputs=emissions_rate_in,label=\"0_emissions_rate$ inputs: emissions_rate_in\"]\n  \"0_year_0$\" [cul_scope_id=0,name=\"year_0$\",imported=year_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_year_0$ inputs: \"]\n  \"0_temperature_0$\" [cul_scope_id=0,name=\"temperature_0$\",imported=temperature_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_temperature_0$ inputs: \"]\n  \"0_CO2_concentration_0$\" [cul_scope_id=0,name=\"CO2_concentration_0$\",imported=CO2_concentration_0_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"\",label=\"0_CO2_concentration_0$ inputs: \"]\n  \"0_climate_change_sensitivity$\" [cul_scope_id=0,name=\"climate_change_sensitivity$\",imported=climate_change_sensitivity_,cul_source_scope_id=1,reason=\"explicit import\",inputs=climate_change_sensitivity_in,label=\"0_climate_change_sensitivity$ inputs: climate_change_sensitivity_in\"]\n  \"0_year$\" [cul_scope_id=0,name=\"year$\",imported=year_,cul_source_scope_id=1,reason=\"explicit import\",inputs=year_in,label=\"0_year$ inputs: year_in\"]\n  \"0_absorption$\" [cul_scope_id=0,name=\"absorption$\",imported=absorption_,cul_source_scope_id=1,reason=\"explicit import\",inputs=emissions_rate_in,label=\"0_absorption$ inputs: emissions_rate_in\"]\n  \"0_drawdown$\" [cul_scope_id=0,name=\"drawdown$\",imported=drawdown_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_drawdown$ inputs: year_in,emissions_rate_in\"]\n  \"0_CO2_concentration$\" [cul_scope_id=0,name=\"CO2_concentration$\",imported=CO2_concentration_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_CO2_concentration$ inputs: year_in,emissions_rate_in\"]\n  \"0_net_carbon$\" [cul_scope_id=0,name=\"net_carbon$\",imported=net_carbon_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"emissions_rate_in,year_in\",label=\"0_net_carbon$ inputs: emissions_rate_in,year_in\"]\n  \"0_CO2_concentration_delta$\" [cul_scope_id=0,name=\"CO2_concentration_delta$\",imported=CO2_concentration_delta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"emissions_rate_in,year_in\",label=\"0_CO2_concentration_delta$ inputs: emissions_rate_in,year_in\"]\n  \"0_temperature$\" [cul_scope_id=0,name=\"temperature$\",imported=temperature_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature$ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_concentration_factor$\" [cul_scope_id=0,name=\"concentration_factor$\",imported=concentration_factor_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in\",label=\"0_concentration_factor$ inputs: year_in,emissions_rate_in\"]\n  \"0_temperature_delta$\" [cul_scope_id=0,name=\"temperature_delta$\",imported=temperature_delta_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature_delta$ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_emissions_rate\" [cul_scope_id=0,name=emissions_rate,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emissions_rate_in,label=\"0_emissions_rate inputs: emissions_rate_in\"]\n  \"0_year_0\" [cul_scope_id=0,name=year_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_year_0 inputs: \"]\n  \"0_temperature_0\" [cul_scope_id=0,name=temperature_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_temperature_0 inputs: \"]\n  \"0_CO2_concentration_0\" [cul_scope_id=0,name=CO2_concentration_0,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"\",label=\"0_CO2_concentration_0 inputs: \"]\n  \"0_climate_change_sensitivity\" [cul_scope_id=0,name=climate_change_sensitivity,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=climate_change_sensitivity_in,label=\"0_climate_change_sensitivity inputs: climate_change_sensitivity_in\"]\n  \"0_year\" [cul_scope_id=0,name=year,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=year_in,label=\"0_year inputs: year_in\"]\n  \"0_absorption\" [cul_scope_id=0,name=absorption,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=emissions_rate_in,label=\"0_absorption inputs: emissions_rate_in\"]\n  \"0_drawdown\" [cul_scope_id=0,name=drawdown,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_drawdown inputs: year_in,emissions_rate_in\"]\n  \"0_CO2_concentration\" [cul_scope_id=0,name=CO2_concentration,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_CO2_concentration inputs: year_in,emissions_rate_in\"]\n  \"0_net_carbon\" [cul_scope_id=0,name=net_carbon,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"0_net_carbon inputs: emissions_rate_in,year_in\"]\n  \"0_CO2_concentration_delta\" [cul_scope_id=0,name=CO2_concentration_delta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"0_CO2_concentration_delta inputs: emissions_rate_in,year_in\"]\n  \"0_temperature\" [cul_scope_id=0,name=temperature,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"0_concentration_factor\" [cul_scope_id=0,name=concentration_factor,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"0_concentration_factor inputs: year_in,emissions_rate_in\"]\n  \"0_temperature_delta\" [cul_scope_id=0,name=temperature_delta,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"0_temperature_delta inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate\" [cul_scope_id=1,name=emissions_rate,cul_source_scope_id=0,reason=\"implicit import\",inputs=emissions_rate_in,label=\"1_emissions_rate inputs: emissions_rate_in\"]\n  \"1_year_0\" [cul_scope_id=1,name=year_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_year_0 inputs: \"]\n  \"1_temperature_0\" [cul_scope_id=1,name=temperature_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_temperature_0 inputs: \"]\n  \"1_CO2_concentration_0\" [cul_scope_id=1,name=CO2_concentration_0,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"\",label=\"1_CO2_concentration_0 inputs: \"]\n  \"1_climate_change_sensitivity\" [cul_scope_id=1,name=climate_change_sensitivity,cul_source_scope_id=0,reason=\"implicit import\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity inputs: climate_change_sensitivity_in\"]\n  \"1_year\" [cul_scope_id=1,name=year,cul_source_scope_id=0,reason=\"implicit import\",inputs=year_in,label=\"1_year inputs: year_in\"]\n  \"1_absorption\" [cul_scope_id=1,name=absorption,cul_source_scope_id=0,reason=\"implicit import\",inputs=emissions_rate_in,label=\"1_absorption inputs: emissions_rate_in\"]\n  \"1_drawdown\" [cul_scope_id=1,name=drawdown,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_drawdown inputs: year_in,emissions_rate_in\"]\n  \"1_CO2_concentration\" [cul_scope_id=1,name=CO2_concentration,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_CO2_concentration inputs: year_in,emissions_rate_in\"]\n  \"1_net_carbon\" [cul_scope_id=1,name=net_carbon,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"emissions_rate_in,year_in\",label=\"1_net_carbon inputs: emissions_rate_in,year_in\"]\n  \"1_CO2_concentration_delta\" [cul_scope_id=1,name=CO2_concentration_delta,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"emissions_rate_in,year_in\",label=\"1_CO2_concentration_delta inputs: emissions_rate_in,year_in\"]\n  \"1_temperature\" [cul_scope_id=1,name=temperature,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_concentration_factor\" [cul_scope_id=1,name=concentration_factor,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in\",label=\"1_concentration_factor inputs: year_in,emissions_rate_in\"]\n  \"1_temperature_delta\" [cul_scope_id=1,name=temperature_delta,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_delta inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate_\" [cul_scope_id=1,name=emissions_rate_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=emissions_rate_in,label=\"1_emissions_rate_ inputs: emissions_rate_in\"]\n  \"1_emissions_rate_in\" [cul_scope_id=1,name=emissions_rate_in,cul_source_scope_id=1,reason=\"input definition\",inputs=emissions_rate_in,label=\"1_emissions_rate_in inputs: emissions_rate_in\"]\n  \"1_year_0_\" [cul_scope_id=1,name=year_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_year_0_ inputs: \"]\n  \"1_temperature_0_\" [cul_scope_id=1,name=temperature_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_temperature_0_ inputs: \"]\n  \"1_CO2_concentration_0_\" [cul_scope_id=1,name=CO2_concentration_0_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"\",label=\"1_CO2_concentration_0_ inputs: \"]\n  \"1_climate_change_sensitivity_\" [cul_scope_id=1,name=climate_change_sensitivity_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity_ inputs: climate_change_sensitivity_in\"]\n  \"1_climate_change_sensitivity_in\" [cul_scope_id=1,name=climate_change_sensitivity_in,cul_source_scope_id=1,reason=\"input definition\",inputs=climate_change_sensitivity_in,label=\"1_climate_change_sensitivity_in inputs: climate_change_sensitivity_in\"]\n  \"1_year_\" [cul_scope_id=1,name=year_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=year_in,label=\"1_year_ inputs: year_in\"]\n  \"1_year_in\" [cul_scope_id=1,name=year_in,cul_source_scope_id=1,reason=\"input definition\",inputs=year_in,label=\"1_year_in inputs: year_in\"]\n  \"1_absorption_\" [cul_scope_id=1,name=absorption_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=emissions_rate_in,label=\"1_absorption_ inputs: emissions_rate_in\"]\n  \"1_drawdown_\" [cul_scope_id=1,name=drawdown_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_drawdown_ inputs: year_in,emissions_rate_in\"]\n  \"1_CO2_concentration_\" [cul_scope_id=1,name=CO2_concentration_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_CO2_concentration_ inputs: year_in,emissions_rate_in\"]\n  \"1_net_carbon_\" [cul_scope_id=1,name=net_carbon_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"1_net_carbon_ inputs: emissions_rate_in,year_in\"]\n  \"1_CO2_concentration_delta_\" [cul_scope_id=1,name=CO2_concentration_delta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"emissions_rate_in,year_in\",label=\"1_CO2_concentration_delta_ inputs: emissions_rate_in,year_in\"]\n  \"1_temperature_\" [cul_scope_id=1,name=temperature_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_concentration_factor_\" [cul_scope_id=1,name=concentration_factor_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in\",label=\"1_concentration_factor_ inputs: year_in,emissions_rate_in\"]\n  \"1_temperature_delta_\" [cul_scope_id=1,name=temperature_delta_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"year_in,emissions_rate_in,climate_change_sensitivity_in\",label=\"1_temperature_delta_ inputs: year_in,emissions_rate_in,climate_change_sensitivity_in\"]\n  \"1_emissions_rate_\" -> \"0_emissions_rate$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_year_0_\" -> \"0_year_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_0_\" -> \"0_temperature_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_0_\" -> \"0_CO2_concentration_0$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_climate_change_sensitivity_\" -> \"0_climate_change_sensitivity$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_year_\" -> \"0_year$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_absorption_\" -> \"0_absorption$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_drawdown_\" -> \"0_drawdown$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_\" -> \"0_CO2_concentration$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_net_carbon_\" -> \"0_net_carbon$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_CO2_concentration_delta_\" -> \"0_CO2_concentration_delta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_\" -> \"0_temperature$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_concentration_factor_\" -> \"0_concentration_factor$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_temperature_delta_\" -> \"0_temperature_delta$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_emissions_rate$\" -> \"0_emissions_rate\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year_0$\" -> \"0_year_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature_0$\" -> \"0_temperature_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration_0$\" -> \"0_CO2_concentration_0\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_climate_change_sensitivity$\" -> \"0_climate_change_sensitivity\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_year$\" -> \"0_year\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_absorption$\" -> \"0_absorption\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_drawdown$\" -> \"0_drawdown\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration$\" -> \"0_CO2_concentration\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_net_carbon$\" -> \"0_net_carbon\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_CO2_concentration_delta$\" -> \"0_CO2_concentration_delta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature$\" -> \"0_temperature\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_concentration_factor$\" -> \"0_concentration_factor\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_temperature_delta$\" -> \"0_temperature_delta\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_emissions_rate\" -> \"1_emissions_rate\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_year_0\" -> \"1_year_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature_0\" -> \"1_temperature_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration_0\" -> \"1_CO2_concentration_0\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_climate_change_sensitivity\" -> \"1_climate_change_sensitivity\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_year\" -> \"1_year\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_absorption\" -> \"1_absorption\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_drawdown\" -> \"1_drawdown\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration\" -> \"1_CO2_concentration\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_net_carbon\" -> \"1_net_carbon\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_CO2_concentration_delta\" -> \"1_CO2_concentration_delta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature\" -> \"1_temperature\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_concentration_factor\" -> \"1_concentration_factor\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_temperature_delta\" -> \"1_temperature_delta\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_emissions_rate_in\" -> \"1_emissions_rate_\" [value=\"[object Object]\",label=\"input +emissions_rate_in\"]\n  \"1_climate_change_sensitivity_in\" -> \"1_climate_change_sensitivity_\" [value=\"[object Object]\",label=\"input +climate_change_sensitivity_in\"]\n  \"1_year_in\" -> \"1_year_\" [value=\"[object Object]\",label=\"input +year_in\"]\n  \"1_emissions_rate\" -> \"1_absorption_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_drawdown_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_year\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_year_0\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_CO2_concentration_delta\" -> \"1_CO2_concentration_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_emissions_rate\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_absorption\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_drawdown\" -> \"1_net_carbon_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_net_carbon\" -> \"1_CO2_concentration_delta_\" [value=\"[object Object]\",label=\"call -year_in\"]\n  \"1_year\" -> \"1_CO2_concentration_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_temperature_0\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_concentration_factor\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_climate_change_sensitivity\" -> \"1_temperature_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_concentration_factor_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_concentration_factor_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_CO2_concentration_0\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_climate_change_sensitivity\" -> \"1_temperature_delta_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
 }

@@ -114,7 +114,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "temperature", function() { return temperature; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "concentration_factor", function() { return concentration_factor; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "temperature_delta", function() { return temperature_delta; });
-
 // minimise wip: just plan this on paper for now
 
 // todo: validate against what I've been told.
@@ -142,9 +141,11 @@ const CO2_concentration = ({ year_in, emissions_rate_in }) => {
 
 };
 
-const net_carbon = ({ emissions_rate_in, year_in }) => emissions_rate({ emissions_rate_in }) - absorption({ emissions_rate_in }) - drawdown({ year_in, emissions_rate_in }); // can be negative because of drawdown
+const net_carbon = ({ emissions_rate_in, year_in }) =>
+/* _rate? */emissions_rate({ emissions_rate_in }) - absorption({ emissions_rate_in }) - drawdown({ year_in, emissions_rate_in }); // can be negative because of drawdown
 
-const CO2_concentration_delta = ({ emissions_rate_in, year_in }) => net_carbon({ emissions_rate_in, year_in }) * 0.000001; // TODO put a real value here?
+const CO2_concentration_delta = ({ emissions_rate_in, year_in }) =>
+net_carbon({ emissions_rate_in, year_in: year({ year_in }) - 1 }) * 0.000001; // TODO put a real value here?
 
 const temperature = ({ year_in, emissions_rate_in, climate_change_sensitivity_in }) =>
 temperature_0({}) + (concentration_factor({ year_in, emissions_rate_in }) - 1) * climate_change_sensitivity({ climate_change_sensitivity_in });

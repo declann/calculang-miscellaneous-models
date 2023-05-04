@@ -1,4 +1,3 @@
-
 // minimise wip: just plan this on paper for now
 
 // todo: validate against what I've been told.
@@ -26,9 +25,11 @@ export const CO2_concentration = ({ year_in, emissions_rate_in }) => {
 
 };
 
-export const net_carbon = ({ emissions_rate_in, year_in }) => emissions_rate({ emissions_rate_in }) - absorption({ emissions_rate_in }) - drawdown({ year_in, emissions_rate_in }); // can be negative because of drawdown
+export const net_carbon = ({ emissions_rate_in, year_in }) =>
+/* _rate? */emissions_rate({ emissions_rate_in }) - absorption({ emissions_rate_in }) - drawdown({ year_in, emissions_rate_in }); // can be negative because of drawdown
 
-export const CO2_concentration_delta = ({ emissions_rate_in, year_in }) => net_carbon({ emissions_rate_in, year_in }) * 0.000001; // TODO put a real value here?
+export const CO2_concentration_delta = ({ emissions_rate_in, year_in }) =>
+net_carbon({ emissions_rate_in, year_in: year({ year_in }) - 1 }) * 0.000001; // TODO put a real value here?
 
 export const temperature = ({ year_in, emissions_rate_in, climate_change_sensitivity_in }) =>
 temperature_0({}) + (concentration_factor({ year_in, emissions_rate_in }) - 1) * climate_change_sensitivity({ climate_change_sensitivity_in });
