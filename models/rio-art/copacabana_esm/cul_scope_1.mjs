@@ -1,7 +1,5 @@
-import { color } from "./cul_scope_0.mjs";import { waveB } from "./cul_scope_0.mjs";import { waveA } from "./cul_scope_0.mjs";import { p } from "./cul_scope_0.mjs";import { y } from "./cul_scope_0.mjs";import { y1 } from "./cul_scope_0.mjs";import { x } from "./cul_scope_0.mjs";import { x1 } from "./cul_scope_0.mjs";export const x1_ = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0; // no random seed here
-export const x_ = ({ p_in }) => x1({ p_in }) / 1.5;
-export const y1_ = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0;
-export const y_ = ({ p_in }) => y1({ p_in }) / 1.5;
+import { color } from "./cul_scope_0.mjs";import { waveB } from "./cul_scope_0.mjs";import { waveA } from "./cul_scope_0.mjs";import { p } from "./cul_scope_0.mjs";import { y } from "./cul_scope_0.mjs";import { x } from "./cul_scope_0.mjs";export const x_ = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0; // no random seed here, => we need memo on for consistency
+export const y_ = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0;
 
 export const p_ = ({ p_in }) => p_in; // point
 

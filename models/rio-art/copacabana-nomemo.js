@@ -100,18 +100,14 @@ return /******/ (function(modules) { // webpackBootstrap
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x1", function() { return x1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return x; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y1", function() { return y1; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return y; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return p; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "waveA", function() { return waveA; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "waveB", function() { return waveB; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "color", function() { return color; });
-const x1 = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0; // no random seed here
-const x = ({ p_in }) => x1({ p_in }) / 1.5;
-const y1 = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0;
-const y = ({ p_in }) => y1({ p_in }) / 1.5;
+const x = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0; // no random seed here, => we need memo on for consistency
+const y = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0;
 
 const p = ({ p_in }) => p_in; // point
 

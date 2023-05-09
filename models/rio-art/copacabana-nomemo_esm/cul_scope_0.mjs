@@ -1,7 +1,5 @@
-export const x1 = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0; // no random seed here
-export const x = ({ p_in }) => x1({ p_in }) / 1.5;
-export const y1 = ({ p_in }) => Math.random() * 30 - 15 + p({ p_in }) * 0;
-export const y = ({ p_in }) => y1({ p_in }) / 1.5;
+export const x = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0; // no random seed here, => we need memo on for consistency
+export const y = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0;
 
 export const p = ({ p_in }) => p_in; // point
 

@@ -3,21 +3,9 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
-    import { x1_ as x1$, x_ as x$, y1_ as y1$, y_ as y$, p_ as p$, waveA_ as waveA$, waveB_ as waveB$, color_ as color$ } from './copacabana.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { x_ as x$, y_ as y$, p_ as p$, waveA_ as waveA$, waveB_ as waveB$, color_ as color$ } from './copacabana.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
     
     
-
-////////// start x1 memo-loader code //////////
-//const x1$m = memoize(999999, isEqual)(x1$);
-export const x1$m = memoize(x1$, JSON.stringify);
-export const x1 = (a) => {
-  return x1$m(a);
-  // eslint-disable-next-line no-undef
-  x1$(); // never run, but here to "trick" calculang graph logic
-};
-////////// end x1 memo-loader code //////////
-
-
 
 ////////// start x memo-loader code //////////
 //const x$m = memoize(999999, isEqual)(x$);
@@ -28,18 +16,6 @@ export const x = (a) => {
   x$(); // never run, but here to "trick" calculang graph logic
 };
 ////////// end x memo-loader code //////////
-
-
-
-////////// start y1 memo-loader code //////////
-//const y1$m = memoize(999999, isEqual)(y1$);
-export const y1$m = memoize(y1$, JSON.stringify);
-export const y1 = (a) => {
-  return y1$m(a);
-  // eslint-disable-next-line no-undef
-  y1$(); // never run, but here to "trick" calculang graph logic
-};
-////////// end y1 memo-loader code //////////
 
 
 
