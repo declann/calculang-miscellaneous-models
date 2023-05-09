@@ -1,0 +1,853 @@
+{
+  "cul_functions": {
+    "0_x1$": {
+      "cul_scope_id": 0,
+      "name": "x1$",
+      "imported": "x1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_x$": {
+      "cul_scope_id": 0,
+      "name": "x$",
+      "imported": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y1$": {
+      "cul_scope_id": 0,
+      "name": "y1$",
+      "imported": "y1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y$": {
+      "cul_scope_id": 0,
+      "name": "y$",
+      "imported": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_p$": {
+      "cul_scope_id": 0,
+      "name": "p$",
+      "imported": "p_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_waveA$": {
+      "cul_scope_id": 0,
+      "name": "waveA$",
+      "imported": "waveA_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_waveB$": {
+      "cul_scope_id": 0,
+      "name": "waveB$",
+      "imported": "waveB_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_color$": {
+      "cul_scope_id": 0,
+      "name": "color$",
+      "imported": "color_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_x1": {
+      "cul_scope_id": 0,
+      "name": "x1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 18,
+          "index": 718
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 850
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 17,
+          "index": 1057
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1187
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y1": {
+      "cul_scope_id": 0,
+      "name": "y1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 18,
+          "index": 1399
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1531
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 17,
+          "index": 1738
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 1868
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_p": {
+      "cul_scope_id": 0,
+      "name": "p",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 17,
+          "index": 2074
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2204
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_waveA": {
+      "cul_scope_id": 0,
+      "name": "waveA",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 21,
+          "index": 2434
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 2572
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_waveB": {
+      "cul_scope_id": 0,
+      "name": "waveB",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 21,
+          "index": 2806
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 2944
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "0_color": {
+      "cul_scope_id": 0,
+      "name": "color",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 21,
+          "index": 3178
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 3316
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x1": {
+      "cul_scope_id": 1,
+      "name": "x1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x": {
+      "cul_scope_id": 1,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y1": {
+      "cul_scope_id": 1,
+      "name": "y1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y": {
+      "cul_scope_id": 1,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p": {
+      "cul_scope_id": 1,
+      "name": "p",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_waveA": {
+      "cul_scope_id": 1,
+      "name": "waveA",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_waveB": {
+      "cul_scope_id": 1,
+      "name": "waveB",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_color": {
+      "cul_scope_id": 1,
+      "name": "color",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x1_": {
+      "cul_scope_id": 1,
+      "name": "x1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 1,
+          "column": 18,
+          "index": 18
+        },
+        "end": {
+          "line": 1,
+          "column": 57,
+          "index": 57
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_x_": {
+      "cul_scope_id": 1,
+      "name": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 2,
+          "column": 17,
+          "index": 99
+        },
+        "end": {
+          "line": 2,
+          "column": 33,
+          "index": 115
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y1_": {
+      "cul_scope_id": 1,
+      "name": "y1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 3,
+          "column": 18,
+          "index": 135
+        },
+        "end": {
+          "line": 3,
+          "column": 57,
+          "index": 174
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_y_": {
+      "cul_scope_id": 1,
+      "name": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 17,
+          "index": 193
+        },
+        "end": {
+          "line": 4,
+          "column": 33,
+          "index": 209
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p_": {
+      "cul_scope_id": 1,
+      "name": "p_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 17,
+          "index": 229
+        },
+        "end": {
+          "line": 6,
+          "column": 27,
+          "index": 239
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_p_in": {
+      "cul_scope_id": 1,
+      "name": "p_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_waveA_": {
+      "cul_scope_id": 1,
+      "name": "waveA_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 21,
+          "index": 272
+        },
+        "end": {
+          "line": 15,
+          "column": 3,
+          "index": 442
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_waveB_": {
+      "cul_scope_id": 1,
+      "name": "waveB_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 16,
+          "column": 21,
+          "index": 465
+        },
+        "end": {
+          "line": 23,
+          "column": 3,
+          "index": 635
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    },
+    "1_color_": {
+      "cul_scope_id": 1,
+      "name": "color_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 21,
+          "index": 659
+        },
+        "end": {
+          "line": 28,
+          "column": 1,
+          "index": 797
+        }
+      },
+      "inputs": [
+        "p_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_x1$",
+      "from": "1_x1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x$",
+      "from": "1_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y1$",
+      "from": "1_y1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y$",
+      "from": "1_y_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_p$",
+      "from": "1_p_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_waveA$",
+      "from": "1_waveA_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_waveB$",
+      "from": "1_waveB_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_color$",
+      "from": "1_color_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x1",
+      "from": "0_x1$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x",
+      "from": "0_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y1",
+      "from": "0_y1$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_y$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_p",
+      "from": "0_p$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_waveA",
+      "from": "0_waveA$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_waveB",
+      "from": "0_waveB$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_color",
+      "from": "0_color$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x1",
+      "from": "0_x1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x",
+      "from": "0_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y1",
+      "from": "0_y1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y",
+      "from": "0_y",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_p",
+      "from": "0_p",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_waveA",
+      "from": "0_waveA",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_waveB",
+      "from": "0_waveB",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_color",
+      "from": "0_color",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x1_",
+      "from": "1_undefined",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x1_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x_",
+      "from": "1_x1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y1_",
+      "from": "1_undefined",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y1_",
+      "from": "1_p",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y_",
+      "from": "1_y1",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_p_",
+      "from": "1_p_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_waveA_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveA_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveA_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveA_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveB_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveB_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveB_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_waveB_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_waveA",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_waveB",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_waveA",
+      "reason": "call",
+      "negs": []
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./copacabana.cul.js",
+    "1": "./copacabana.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./copacabana.cul.js?+memoed": "./copacabana.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_x1$": [
+      "p_in"
+    ],
+    "0_x$": [
+      "p_in"
+    ],
+    "0_y1$": [
+      "p_in"
+    ],
+    "0_y$": [
+      "p_in"
+    ],
+    "0_p$": [
+      "p_in"
+    ],
+    "0_waveA$": [
+      "p_in"
+    ],
+    "0_waveB$": [
+      "p_in"
+    ],
+    "0_color$": [
+      "p_in"
+    ],
+    "0_x1": [
+      "p_in"
+    ],
+    "0_x": [
+      "p_in"
+    ],
+    "0_y1": [
+      "p_in"
+    ],
+    "0_y": [
+      "p_in"
+    ],
+    "0_p": [
+      "p_in"
+    ],
+    "0_waveA": [
+      "p_in"
+    ],
+    "0_waveB": [
+      "p_in"
+    ],
+    "0_color": [
+      "p_in"
+    ],
+    "1_x1": [
+      "p_in"
+    ],
+    "1_x": [
+      "p_in"
+    ],
+    "1_y1": [
+      "p_in"
+    ],
+    "1_y": [
+      "p_in"
+    ],
+    "1_p": [
+      "p_in"
+    ],
+    "1_waveA": [
+      "p_in"
+    ],
+    "1_waveB": [
+      "p_in"
+    ],
+    "1_color": [
+      "p_in"
+    ],
+    "1_x1_": [
+      "p_in"
+    ],
+    "1_x_": [
+      "p_in"
+    ],
+    "1_y1_": [
+      "p_in"
+    ],
+    "1_y_": [
+      "p_in"
+    ],
+    "1_p_": [
+      "p_in"
+    ],
+    "1_p_in": [
+      "p_in"
+    ],
+    "1_waveA_": [
+      "p_in"
+    ],
+    "1_waveB_": [
+      "p_in"
+    ],
+    "1_color_": [
+      "p_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_x1$\" [cul_scope_id=0,name=\"x1$\",imported=x1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_x1$ inputs: p_in\"]\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_x$ inputs: p_in\"]\n  \"0_y1$\" [cul_scope_id=0,name=\"y1$\",imported=y1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_y1$ inputs: p_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_y$ inputs: p_in\"]\n  \"0_p$\" [cul_scope_id=0,name=\"p$\",imported=p_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_p$ inputs: p_in\"]\n  \"0_waveA$\" [cul_scope_id=0,name=\"waveA$\",imported=waveA_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_waveA$ inputs: p_in\"]\n  \"0_waveB$\" [cul_scope_id=0,name=\"waveB$\",imported=waveB_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_waveB$ inputs: p_in\"]\n  \"0_color$\" [cul_scope_id=0,name=\"color$\",imported=color_,cul_source_scope_id=1,reason=\"explicit import\",inputs=p_in,label=\"0_color$ inputs: p_in\"]\n  \"0_x1\" [cul_scope_id=0,name=x1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_x1 inputs: p_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_x inputs: p_in\"]\n  \"0_y1\" [cul_scope_id=0,name=y1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_y1 inputs: p_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_y inputs: p_in\"]\n  \"0_p\" [cul_scope_id=0,name=p,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_p inputs: p_in\"]\n  \"0_waveA\" [cul_scope_id=0,name=waveA,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_waveA inputs: p_in\"]\n  \"0_waveB\" [cul_scope_id=0,name=waveB,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_waveB inputs: p_in\"]\n  \"0_color\" [cul_scope_id=0,name=color,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=p_in,label=\"0_color inputs: p_in\"]\n  \"1_x1\" [cul_scope_id=1,name=x1,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_x1 inputs: p_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_x inputs: p_in\"]\n  \"1_y1\" [cul_scope_id=1,name=y1,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_y1 inputs: p_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_y inputs: p_in\"]\n  \"1_p\" [cul_scope_id=1,name=p,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_p inputs: p_in\"]\n  \"1_waveA\" [cul_scope_id=1,name=waveA,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_waveA inputs: p_in\"]\n  \"1_waveB\" [cul_scope_id=1,name=waveB,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_waveB inputs: p_in\"]\n  \"1_color\" [cul_scope_id=1,name=color,cul_source_scope_id=0,reason=\"implicit import\",inputs=p_in,label=\"1_color inputs: p_in\"]\n  \"1_x1_\" [cul_scope_id=1,name=x1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_x1_ inputs: p_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_x_ inputs: p_in\"]\n  \"1_y1_\" [cul_scope_id=1,name=y1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_y1_ inputs: p_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_y_ inputs: p_in\"]\n  \"1_p_\" [cul_scope_id=1,name=p_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_p_ inputs: p_in\"]\n  \"1_p_in\" [cul_scope_id=1,name=p_in,cul_source_scope_id=1,reason=\"input definition\",inputs=p_in,label=\"1_p_in inputs: p_in\"]\n  \"1_waveA_\" [cul_scope_id=1,name=waveA_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_waveA_ inputs: p_in\"]\n  \"1_waveB_\" [cul_scope_id=1,name=waveB_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_waveB_ inputs: p_in\"]\n  \"1_color_\" [cul_scope_id=1,name=color_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=p_in,label=\"1_color_ inputs: p_in\"]\n  \"1_x1_\" -> \"0_x1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y1_\" -> \"0_y1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_p_\" -> \"0_p$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_waveA_\" -> \"0_waveA$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_waveB_\" -> \"0_waveB$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_color_\" -> \"0_color$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_x1$\" -> \"0_x1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y1$\" -> \"0_y1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_p$\" -> \"0_p\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_waveA$\" -> \"0_waveA\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_waveB$\" -> \"0_waveB\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_color$\" -> \"0_color\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x1\" -> \"1_x1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y1\" -> \"1_y1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_p\" -> \"1_p\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_waveA\" -> \"1_waveA\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_waveB\" -> \"1_waveB\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_color\" -> \"1_color\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_p\" -> \"1_x1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x1\" -> \"1_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_p\" -> \"1_y1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y1\" -> \"1_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_p_in\" -> \"1_p_\" [value=\"[object Object]\",label=\"input +p_in\"]\n  \"1_x\" -> \"1_waveA_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_waveB_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_color_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_waveA\" -> \"1_color_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_waveB\" -> \"1_color_\" [value=\"[object Object]\",label=\"call -\"]\n}\n"
+}
