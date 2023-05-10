@@ -324,9 +324,9 @@
           "index": 236
         },
         "end": {
-          "line": 13,
-          "column": 3,
-          "index": 406
+          "line": 7,
+          "column": 79,
+          "index": 321
         }
       },
       "inputs": [
@@ -340,14 +340,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 14,
+          "line": 8,
           "column": 21,
-          "index": 429
+          "index": 344
         },
         "end": {
-          "line": 21,
-          "column": 3,
-          "index": 599
+          "line": 9,
+          "column": 79,
+          "index": 429
         }
       },
       "inputs": [
@@ -361,14 +361,14 @@
       "reason": "definition (renamed)",
       "loc": {
         "start": {
-          "line": 23,
+          "line": 11,
           "column": 21,
-          "index": 623
+          "index": 510
         },
         "end": {
-          "line": 26,
+          "line": 14,
           "column": 1,
-          "index": 761
+          "index": 648
         }
       },
       "inputs": [
@@ -516,18 +516,6 @@
     },
     {
       "to": "1_waveA_",
-      "from": "1_x",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "1_waveA_",
-      "from": "1_x",
-      "reason": "call",
-      "negs": []
-    },
-    {
-      "to": "1_waveB_",
       "from": "1_x",
       "reason": "call",
       "negs": []

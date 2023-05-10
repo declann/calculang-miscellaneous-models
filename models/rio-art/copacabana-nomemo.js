@@ -112,21 +112,9 @@ const y = ({ p_in }) => Math.random() * 40 - 20 + p({ p_in }) * 0;
 const p = ({ p_in }) => p_in; // point
 
 const waveA = ({ p_in }) =>
-(Math.sin(x({ p_in })) +
-(Math.floor(Math.abs(x({ p_in })) / Math.PI) % 2 == 1 ? 1 : 1) *
-Math.sin(x({ p_in })) *
-0.6 * (
-1 - Math.abs(Math.sin(x({ p_in }))))) *
-3 +
-0;
+(Math.sin(x({ p_in })) + Math.sin(x({ p_in })) * 0.6 * (1 - Math.abs(Math.sin(x({ p_in }))))) * 3 + 0;
 const waveB = ({ p_in }) =>
-(Math.sin(x({ p_in })) +
-(Math.floor(Math.abs(x({ p_in })) / Math.PI) % 2 == 1 ? 1 : 1) *
-Math.sin(x({ p_in })) *
-0.6 * (
-1 - Math.abs(Math.sin(x({ p_in }))))) *
-3 +
-4;
+(Math.sin(x({ p_in })) + Math.sin(x({ p_in })) * 0.6 * (1 - Math.abs(Math.sin(x({ p_in }))))) * 3 + 4; // same as waveA with a 4 offset.. (this isn't faithful)
 
 const color = ({ p_in }) => {
   //if (y() > 0 || 1) return y() > waveA() && y() < waveB() ? 1 : 0;

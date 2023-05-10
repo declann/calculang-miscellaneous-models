@@ -596,21 +596,9 @@ const y_ = ({ p_in }) => Math.random() * 40 - 20 + Object(_copacabana_cul_js__WE
 const p_ = ({ p_in }) => p_in; // point
 
 const waveA_ = ({ p_in }) =>
-(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) +
-(Math.floor(Math.abs(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) / Math.PI) % 2 == 1 ? 1 : 1) *
-Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) *
-0.6 * (
-1 - Math.abs(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in }))))) *
-3 +
-0;
+(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) + Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) * 0.6 * (1 - Math.abs(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in }))))) * 3 + 0;
 const waveB_ = ({ p_in }) =>
-(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) +
-(Math.floor(Math.abs(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) / Math.PI) % 2 == 1 ? 1 : 1) *
-Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) *
-0.6 * (
-1 - Math.abs(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in }))))) *
-3 +
-4;
+(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) + Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in })) * 0.6 * (1 - Math.abs(Math.sin(Object(_copacabana_cul_js__WEBPACK_IMPORTED_MODULE_0__["x"])({ p_in }))))) * 3 + 4; // same as waveA with a 4 offset.. (this isn't faithful)
 
 const color_ = ({ p_in }) => {
   //if (y() > 0 || 1) return y() > waveA() && y() < waveB() ? 1 : 0;
