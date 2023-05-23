@@ -4,7 +4,7 @@ import { range } from 'underscore';
 
 let ins = { waviness_in: 6, tallness_in: 0.95, arc_size_in: 25, pinchiness_in: 0.8 };
 
-let data = range(-Math.sqrt(ins.arc_size_in)-0.2, Math.sqrt(ins.arc_size_in)+0.2, 0.025).map((x_in) => ({
+let data = range(-Math.sqrt(ins.arc_size_in)-0.2, Math.sqrt(ins.arc_size_in)+0.2, 0.025).map((x_in, t_in) => ({ t_in, // for animation
   ...ins,
   x_in,
   trend: trend({ ...ins, x_in }),
