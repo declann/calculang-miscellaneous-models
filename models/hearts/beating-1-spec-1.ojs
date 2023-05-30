@@ -1,0 +1,72 @@
+
+viewof field = {}
+
+model = require('./beating.js');
+
+introspection = await FileAttachment('./beating.introspection.json').json({typed:true});
+
+cul_0 = await FileAttachment('./beating_esm/cul_scope_0.cul.js').text();
+esm_0 = await FileAttachment('./beating_esm/cul_scope_0.mjs').text();
+
+mutable spec = ({
+  mark: 'point',
+  height: 300,
+  channels: {
+    x: {'name': 'x_in', type:'quantitative'},
+    y: {'name': 'y', type:'quantitative'},
+    color: 'x_in'
+  }
+})
+
+domains = ({
+  x_in: _.range(-Math.sqrt(ui.arc_size_in)-0.2, Math.sqrt(ui.arc_size_in)+0.2, 0.025),
+})
+
+function spec_post_process (spec) {
+  let t = {...spec}
+    t["config"] ={"legend": {"disable": true}}
+  return t
+}
+
+inputs_default = [{pinchiness_in: 0.8, arc_size_in: 1, waviness_in: 0.8, tallness_in:0.0}]
+
+uis =({ // if not mapped  waviness_in: 6, tallness_in: 0.95, arc_size_in: 25, pinchiness_in: 0.8
+pinchiness_in: Inputs.range([0,2], {value:0.8, step:0.1, label:'pinchiness_in'}),
+        arc_size_in:Inputs.range([0,50], {value:25, step:1, label:'arc_size_in'}),
+        waviness_in:Inputs.range([0,10], {value:0.8, step:0.05, label:'waviness_in'}),
+        tallness_in:Inputs.range([0,0.8], {value:0.0, step:0.025, label:'tallness_in'}),
+})
+
+
+gemSpec = ({
+    })
+
+
+mutable inputs_history = [{dampener_in:0.9,dx_in:3,t_interval:[0,60]}] // broken first interaction if not set consistent with uis defaults!
+
+// how to make t interval changes not affect input_history (b/c affect everyhing)
+
+/////////////////////////////
+
+// must be here to permit dynamic domains
+viewof ui = {
+  let f = {};
+  Object.keys(uis).filter(d => d != "default").forEach(k => {
+    if (!mapped.includes(k)) // including all UIs except default, but this needs thought
+      f[k] = uis[k];
+  })
+  //f.field.onchange = () => {console.log('hi')}
+  let form = Inputs.form(f);
+  
+  let state = false;
+  form.oninput = () => {
+    //mutable spec.channels.y.name = "dx_in";
+    if (state == false) {if(mapped.includes('interaction')) mutable inputs_history = [...mutable inputs_history, form.value]; state = true}}
+  form.onchange = () => { state = false; mutable inputs_history[mutable inputs_history.length-1] = form.value  };
+  //if(mapped.includes('interaction')) mutable inputs_history = [...mutable inputs_history, form.value]
+  return form
+}
+
+mapped = [...new Set(Object.values(spec.channels).map(d => d.name??d))].filter(d => d != 'value')
+
+
