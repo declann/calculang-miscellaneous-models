@@ -1,0 +1,1008 @@
+{
+  "cul_functions": {
+    "0_x$": {
+      "cul_scope_id": 0,
+      "name": "x$",
+      "imported": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_y$": {
+      "cul_scope_id": 0,
+      "name": "y$",
+      "imported": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "0_block_x$": {
+      "cul_scope_id": 0,
+      "name": "block_x$",
+      "imported": "block_x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_section_x$": {
+      "cul_scope_id": 0,
+      "name": "section_x$",
+      "imported": "section_x_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_block_y$": {
+      "cul_scope_id": 0,
+      "name": "block_y$",
+      "imported": "block_y_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "0_color$": {
+      "cul_scope_id": 0,
+      "name": "color$",
+      "imported": "color_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "0_x1$": {
+      "cul_scope_id": 0,
+      "name": "x1$",
+      "imported": "x1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "y_in",
+        "skewness_in",
+        "x_in"
+      ]
+    },
+    "0_y1$": {
+      "cul_scope_id": 0,
+      "name": "y1$",
+      "imported": "y1_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "0_skewness$": {
+      "cul_scope_id": 0,
+      "name": "skewness$",
+      "imported": "skewness_",
+      "cul_source_scope_id": 1,
+      "reason": "explicit import",
+      "inputs": [
+        "skewness_in"
+      ]
+    },
+    "0_x": {
+      "cul_scope_id": 0,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 13,
+          "column": 17,
+          "index": 759
+        },
+        "end": {
+          "line": 17,
+          "column": 1,
+          "index": 889
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_y": {
+      "cul_scope_id": 0,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 17,
+          "index": 1095
+        },
+        "end": {
+          "line": 29,
+          "column": 1,
+          "index": 1225
+        }
+      },
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "0_block_x": {
+      "cul_scope_id": 0,
+      "name": "block_x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 37,
+          "column": 23,
+          "index": 1467
+        },
+        "end": {
+          "line": 41,
+          "column": 1,
+          "index": 1609
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_section_x": {
+      "cul_scope_id": 0,
+      "name": "section_x",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 49,
+          "column": 25,
+          "index": 1869
+        },
+        "end": {
+          "line": 53,
+          "column": 1,
+          "index": 2015
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "0_block_y": {
+      "cul_scope_id": 0,
+      "name": "block_y",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 61,
+          "column": 23,
+          "index": 2265
+        },
+        "end": {
+          "line": 65,
+          "column": 1,
+          "index": 2407
+        }
+      },
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "0_color": {
+      "cul_scope_id": 0,
+      "name": "color",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 73,
+          "column": 21,
+          "index": 2643
+        },
+        "end": {
+          "line": 77,
+          "column": 1,
+          "index": 2781
+        }
+      },
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "0_x1": {
+      "cul_scope_id": 0,
+      "name": "x1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 85,
+          "column": 18,
+          "index": 2997
+        },
+        "end": {
+          "line": 89,
+          "column": 1,
+          "index": 3129
+        }
+      },
+      "inputs": [
+        "y_in",
+        "skewness_in",
+        "x_in"
+      ]
+    },
+    "0_y1": {
+      "cul_scope_id": 0,
+      "name": "y1",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 97,
+          "column": 18,
+          "index": 3342
+        },
+        "end": {
+          "line": 101,
+          "column": 1,
+          "index": 3474
+        }
+      },
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "0_skewness": {
+      "cul_scope_id": 0,
+      "name": "skewness",
+      "cul_source_scope_id": 0,
+      "reason": "definition",
+      "loc": {
+        "start": {
+          "line": 109,
+          "column": 24,
+          "index": 3723
+        },
+        "end": {
+          "line": 113,
+          "column": 1,
+          "index": 3867
+        }
+      },
+      "inputs": [
+        "skewness_in"
+      ]
+    },
+    "1_x": {
+      "cul_scope_id": 1,
+      "name": "x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_y": {
+      "cul_scope_id": 1,
+      "name": "y",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "1_block_x": {
+      "cul_scope_id": 1,
+      "name": "block_x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_section_x": {
+      "cul_scope_id": 1,
+      "name": "section_x",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_block_y": {
+      "cul_scope_id": 1,
+      "name": "block_y",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "1_color": {
+      "cul_scope_id": 1,
+      "name": "color",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "1_x1": {
+      "cul_scope_id": 1,
+      "name": "x1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "y_in",
+        "skewness_in",
+        "x_in"
+      ]
+    },
+    "1_y1": {
+      "cul_scope_id": 1,
+      "name": "y1",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "1_skewness": {
+      "cul_scope_id": 1,
+      "name": "skewness",
+      "cul_source_scope_id": 0,
+      "reason": "implicit import",
+      "inputs": [
+        "skewness_in"
+      ]
+    },
+    "1_x_": {
+      "cul_scope_id": 1,
+      "name": "x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 4,
+          "column": 17,
+          "index": 161
+        },
+        "end": {
+          "line": 4,
+          "column": 27,
+          "index": 171
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_x_in": {
+      "cul_scope_id": 1,
+      "name": "x_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_y_": {
+      "cul_scope_id": 1,
+      "name": "y_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 6,
+          "column": 17,
+          "index": 191
+        },
+        "end": {
+          "line": 6,
+          "column": 27,
+          "index": 201
+        }
+      },
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "1_y_in": {
+      "cul_scope_id": 1,
+      "name": "y_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "1_block_x_": {
+      "cul_scope_id": 1,
+      "name": "block_x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 8,
+          "column": 23,
+          "index": 227
+        },
+        "end": {
+          "line": 8,
+          "column": 48,
+          "index": 252
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_section_x_": {
+      "cul_scope_id": 1,
+      "name": "section_x_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 10,
+          "column": 25,
+          "index": 280
+        },
+        "end": {
+          "line": 10,
+          "column": 50,
+          "index": 305
+        }
+      },
+      "inputs": [
+        "x_in"
+      ]
+    },
+    "1_block_y_": {
+      "cul_scope_id": 1,
+      "name": "block_y_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 12,
+          "column": 23,
+          "index": 342
+        },
+        "end": {
+          "line": 18,
+          "column": 1,
+          "index": 600
+        }
+      },
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "1_color_": {
+      "cul_scope_id": 1,
+      "name": "color_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 20,
+          "column": 21,
+          "index": 624
+        },
+        "end": {
+          "line": 20,
+          "column": 67,
+          "index": 670
+        }
+      },
+      "inputs": [
+        "x_in",
+        "y_in"
+      ]
+    },
+    "1_x1_": {
+      "cul_scope_id": 1,
+      "name": "x1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 22,
+          "column": 18,
+          "index": 691
+        },
+        "end": {
+          "line": 22,
+          "column": 46,
+          "index": 719
+        }
+      },
+      "inputs": [
+        "y_in",
+        "skewness_in",
+        "x_in"
+      ]
+    },
+    "1_y1_": {
+      "cul_scope_id": 1,
+      "name": "y1_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 23,
+          "column": 18,
+          "index": 739
+        },
+        "end": {
+          "line": 23,
+          "column": 27,
+          "index": 748
+        }
+      },
+      "inputs": [
+        "y_in"
+      ]
+    },
+    "1_skewness_": {
+      "cul_scope_id": 1,
+      "name": "skewness_",
+      "cul_source_scope_id": 1,
+      "reason": "definition (renamed)",
+      "loc": {
+        "start": {
+          "line": 25,
+          "column": 24,
+          "index": 775
+        },
+        "end": {
+          "line": 25,
+          "column": 41,
+          "index": 792
+        }
+      },
+      "inputs": [
+        "skewness_in"
+      ]
+    },
+    "1_skewness_in": {
+      "cul_scope_id": 1,
+      "name": "skewness_in",
+      "cul_source_scope_id": 1,
+      "reason": "input definition",
+      "inputs": [
+        "skewness_in"
+      ]
+    }
+  },
+  "cul_links": [
+    {
+      "to": "0_x$",
+      "from": "1_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y$",
+      "from": "1_y_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_block_x$",
+      "from": "1_block_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_section_x$",
+      "from": "1_section_x_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_block_y$",
+      "from": "1_block_y_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_color$",
+      "from": "1_color_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x1$",
+      "from": "1_x1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_y1$",
+      "from": "1_y1_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_skewness$",
+      "from": "1_skewness_",
+      "reason": "explicit import"
+    },
+    {
+      "to": "0_x",
+      "from": "0_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y",
+      "from": "0_y$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_block_x",
+      "from": "0_block_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_section_x",
+      "from": "0_section_x$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_block_y",
+      "from": "0_block_y$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_color",
+      "from": "0_color$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_x1",
+      "from": "0_x1$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_y1",
+      "from": "0_y1$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "0_skewness",
+      "from": "0_skewness$",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x",
+      "from": "0_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y",
+      "from": "0_y",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_block_x",
+      "from": "0_block_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_section_x",
+      "from": "0_section_x",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_block_y",
+      "from": "0_block_y",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_color",
+      "from": "0_color",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x1",
+      "from": "0_x1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_y1",
+      "from": "0_y1",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_skewness",
+      "from": "0_skewness",
+      "reason": "implicit import"
+    },
+    {
+      "to": "1_x_",
+      "from": "1_x_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_y_",
+      "from": "1_y_in",
+      "reason": "input"
+    },
+    {
+      "to": "1_block_x_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_section_x_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_section_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_section_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_section_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_block_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_section_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_block_y_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_block_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_block_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_color_",
+      "from": "1_block_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x1_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x1_",
+      "from": "1_skewness",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_x1_",
+      "from": "1_x",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_y1_",
+      "from": "1_y",
+      "reason": "call",
+      "negs": []
+    },
+    {
+      "to": "1_skewness_",
+      "from": "1_skewness_in",
+      "reason": "input"
+    }
+  ],
+  "cul_scope_ids_to_resource": {
+    "0": "./sp-padrao.cul.js",
+    "1": "./sp-padrao.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "import_sources_to_resource": {
+    "0_./sp-padrao.cul.js?+memoed": "./sp-padrao.cul.js?+memoed&cul_scope_id=1&cul_parent_scope_id=0"
+  },
+  "cul_input_map": {
+    "0_x$": [
+      "x_in"
+    ],
+    "0_y$": [
+      "y_in"
+    ],
+    "0_block_x$": [
+      "x_in"
+    ],
+    "0_section_x$": [
+      "x_in"
+    ],
+    "0_block_y$": [
+      "x_in",
+      "y_in"
+    ],
+    "0_color$": [
+      "x_in",
+      "y_in"
+    ],
+    "0_x1$": [
+      "y_in",
+      "skewness_in",
+      "x_in"
+    ],
+    "0_y1$": [
+      "y_in"
+    ],
+    "0_skewness$": [
+      "skewness_in"
+    ],
+    "0_x": [
+      "x_in"
+    ],
+    "0_y": [
+      "y_in"
+    ],
+    "0_block_x": [
+      "x_in"
+    ],
+    "0_section_x": [
+      "x_in"
+    ],
+    "0_block_y": [
+      "x_in",
+      "y_in"
+    ],
+    "0_color": [
+      "x_in",
+      "y_in"
+    ],
+    "0_x1": [
+      "y_in",
+      "skewness_in",
+      "x_in"
+    ],
+    "0_y1": [
+      "y_in"
+    ],
+    "0_skewness": [
+      "skewness_in"
+    ],
+    "1_x": [
+      "x_in"
+    ],
+    "1_y": [
+      "y_in"
+    ],
+    "1_block_x": [
+      "x_in"
+    ],
+    "1_section_x": [
+      "x_in"
+    ],
+    "1_block_y": [
+      "x_in",
+      "y_in"
+    ],
+    "1_color": [
+      "x_in",
+      "y_in"
+    ],
+    "1_x1": [
+      "y_in",
+      "skewness_in",
+      "x_in"
+    ],
+    "1_y1": [
+      "y_in"
+    ],
+    "1_skewness": [
+      "skewness_in"
+    ],
+    "1_x_": [
+      "x_in"
+    ],
+    "1_x_in": [
+      "x_in"
+    ],
+    "1_y_": [
+      "y_in"
+    ],
+    "1_y_in": [
+      "y_in"
+    ],
+    "1_block_x_": [
+      "x_in"
+    ],
+    "1_section_x_": [
+      "x_in"
+    ],
+    "1_block_y_": [
+      "x_in",
+      "y_in"
+    ],
+    "1_color_": [
+      "x_in",
+      "y_in"
+    ],
+    "1_x1_": [
+      "y_in",
+      "skewness_in",
+      "x_in"
+    ],
+    "1_y1_": [
+      "y_in"
+    ],
+    "1_skewness_": [
+      "skewness_in"
+    ],
+    "1_skewness_in": [
+      "skewness_in"
+    ]
+  },
+  "dot": "digraph {\n  \"0_x$\" [cul_scope_id=0,name=\"x$\",imported=x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=x_in,label=\"0_x$ inputs: x_in\"]\n  \"0_y$\" [cul_scope_id=0,name=\"y$\",imported=y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=y_in,label=\"0_y$ inputs: y_in\"]\n  \"0_block_x$\" [cul_scope_id=0,name=\"block_x$\",imported=block_x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=x_in,label=\"0_block_x$ inputs: x_in\"]\n  \"0_section_x$\" [cul_scope_id=0,name=\"section_x$\",imported=section_x_,cul_source_scope_id=1,reason=\"explicit import\",inputs=x_in,label=\"0_section_x$ inputs: x_in\"]\n  \"0_block_y$\" [cul_scope_id=0,name=\"block_y$\",imported=block_y_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"x_in,y_in\",label=\"0_block_y$ inputs: x_in,y_in\"]\n  \"0_color$\" [cul_scope_id=0,name=\"color$\",imported=color_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"x_in,y_in\",label=\"0_color$ inputs: x_in,y_in\"]\n  \"0_x1$\" [cul_scope_id=0,name=\"x1$\",imported=x1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=\"y_in,skewness_in,x_in\",label=\"0_x1$ inputs: y_in,skewness_in,x_in\"]\n  \"0_y1$\" [cul_scope_id=0,name=\"y1$\",imported=y1_,cul_source_scope_id=1,reason=\"explicit import\",inputs=y_in,label=\"0_y1$ inputs: y_in\"]\n  \"0_skewness$\" [cul_scope_id=0,name=\"skewness$\",imported=skewness_,cul_source_scope_id=1,reason=\"explicit import\",inputs=skewness_in,label=\"0_skewness$ inputs: skewness_in\"]\n  \"0_x\" [cul_scope_id=0,name=x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_x inputs: x_in\"]\n  \"0_y\" [cul_scope_id=0,name=y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=y_in,label=\"0_y inputs: y_in\"]\n  \"0_block_x\" [cul_scope_id=0,name=block_x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_block_x inputs: x_in\"]\n  \"0_section_x\" [cul_scope_id=0,name=section_x,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=x_in,label=\"0_section_x inputs: x_in\"]\n  \"0_block_y\" [cul_scope_id=0,name=block_y,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"x_in,y_in\",label=\"0_block_y inputs: x_in,y_in\"]\n  \"0_color\" [cul_scope_id=0,name=color,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"x_in,y_in\",label=\"0_color inputs: x_in,y_in\"]\n  \"0_x1\" [cul_scope_id=0,name=x1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=\"y_in,skewness_in,x_in\",label=\"0_x1 inputs: y_in,skewness_in,x_in\"]\n  \"0_y1\" [cul_scope_id=0,name=y1,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=y_in,label=\"0_y1 inputs: y_in\"]\n  \"0_skewness\" [cul_scope_id=0,name=skewness,cul_source_scope_id=0,reason=definition,loc=\"[object Object]\",inputs=skewness_in,label=\"0_skewness inputs: skewness_in\"]\n  \"1_x\" [cul_scope_id=1,name=x,cul_source_scope_id=0,reason=\"implicit import\",inputs=x_in,label=\"1_x inputs: x_in\"]\n  \"1_y\" [cul_scope_id=1,name=y,cul_source_scope_id=0,reason=\"implicit import\",inputs=y_in,label=\"1_y inputs: y_in\"]\n  \"1_block_x\" [cul_scope_id=1,name=block_x,cul_source_scope_id=0,reason=\"implicit import\",inputs=x_in,label=\"1_block_x inputs: x_in\"]\n  \"1_section_x\" [cul_scope_id=1,name=section_x,cul_source_scope_id=0,reason=\"implicit import\",inputs=x_in,label=\"1_section_x inputs: x_in\"]\n  \"1_block_y\" [cul_scope_id=1,name=block_y,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"x_in,y_in\",label=\"1_block_y inputs: x_in,y_in\"]\n  \"1_color\" [cul_scope_id=1,name=color,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"x_in,y_in\",label=\"1_color inputs: x_in,y_in\"]\n  \"1_x1\" [cul_scope_id=1,name=x1,cul_source_scope_id=0,reason=\"implicit import\",inputs=\"y_in,skewness_in,x_in\",label=\"1_x1 inputs: y_in,skewness_in,x_in\"]\n  \"1_y1\" [cul_scope_id=1,name=y1,cul_source_scope_id=0,reason=\"implicit import\",inputs=y_in,label=\"1_y1 inputs: y_in\"]\n  \"1_skewness\" [cul_scope_id=1,name=skewness,cul_source_scope_id=0,reason=\"implicit import\",inputs=skewness_in,label=\"1_skewness inputs: skewness_in\"]\n  \"1_x_\" [cul_scope_id=1,name=x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=x_in,label=\"1_x_ inputs: x_in\"]\n  \"1_x_in\" [cul_scope_id=1,name=x_in,cul_source_scope_id=1,reason=\"input definition\",inputs=x_in,label=\"1_x_in inputs: x_in\"]\n  \"1_y_\" [cul_scope_id=1,name=y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=y_in,label=\"1_y_ inputs: y_in\"]\n  \"1_y_in\" [cul_scope_id=1,name=y_in,cul_source_scope_id=1,reason=\"input definition\",inputs=y_in,label=\"1_y_in inputs: y_in\"]\n  \"1_block_x_\" [cul_scope_id=1,name=block_x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=x_in,label=\"1_block_x_ inputs: x_in\"]\n  \"1_section_x_\" [cul_scope_id=1,name=section_x_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=x_in,label=\"1_section_x_ inputs: x_in\"]\n  \"1_block_y_\" [cul_scope_id=1,name=block_y_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"x_in,y_in\",label=\"1_block_y_ inputs: x_in,y_in\"]\n  \"1_color_\" [cul_scope_id=1,name=color_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"x_in,y_in\",label=\"1_color_ inputs: x_in,y_in\"]\n  \"1_x1_\" [cul_scope_id=1,name=x1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=\"y_in,skewness_in,x_in\",label=\"1_x1_ inputs: y_in,skewness_in,x_in\"]\n  \"1_y1_\" [cul_scope_id=1,name=y1_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=y_in,label=\"1_y1_ inputs: y_in\"]\n  \"1_skewness_\" [cul_scope_id=1,name=skewness_,cul_source_scope_id=1,reason=\"definition (renamed)\",loc=\"[object Object]\",inputs=skewness_in,label=\"1_skewness_ inputs: skewness_in\"]\n  \"1_skewness_in\" [cul_scope_id=1,name=skewness_in,cul_source_scope_id=1,reason=\"input definition\",inputs=skewness_in,label=\"1_skewness_in inputs: skewness_in\"]\n  \"1_x_\" -> \"0_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y_\" -> \"0_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_block_x_\" -> \"0_block_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_section_x_\" -> \"0_section_x$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_block_y_\" -> \"0_block_y$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_color_\" -> \"0_color$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_x1_\" -> \"0_x1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_y1_\" -> \"0_y1$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"1_skewness_\" -> \"0_skewness$\" [value=\"[object Object]\",label=\"explicit import\"]\n  \"0_x$\" -> \"0_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y$\" -> \"0_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_block_x$\" -> \"0_block_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_section_x$\" -> \"0_section_x\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_block_y$\" -> \"0_block_y\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_color$\" -> \"0_color\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x1$\" -> \"0_x1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_y1$\" -> \"0_y1\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_skewness$\" -> \"0_skewness\" [value=\"[object Object]\",label=\"call -\"]\n  \"0_x\" -> \"1_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y\" -> \"1_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_block_x\" -> \"1_block_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_section_x\" -> \"1_section_x\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_block_y\" -> \"1_block_y\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_color\" -> \"1_color\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_x1\" -> \"1_x1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_y1\" -> \"1_y1\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"0_skewness\" -> \"1_skewness\" [value=\"[object Object]\",label=\"implicit import\"]\n  \"1_x_in\" -> \"1_x_\" [value=\"[object Object]\",label=\"input +x_in\"]\n  \"1_y_in\" -> \"1_y_\" [value=\"[object Object]\",label=\"input +y_in\"]\n  \"1_x\" -> \"1_block_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_section_x_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_section_x\" -> \"1_block_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_block_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_block_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_block_x\" -> \"1_block_y_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_block_x\" -> \"1_color_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_block_y\" -> \"1_color_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_x1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_skewness\" -> \"1_x1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_x\" -> \"1_x1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_y\" -> \"1_y1_\" [value=\"[object Object]\",label=\"call -\"]\n  \"1_skewness_in\" -> \"1_skewness_\" [value=\"[object Object]\",label=\"input +skewness_in\"]\n}\n"
+}

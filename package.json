@@ -9,6 +9,7 @@
     "directory": "packages/calculang-models"
   },
   "scripts": {
+    "build:sp-padrao": "cul-js compile --memo ./models/sp-art/sp-padrao.cul.js && cp ./models/sp-art/sp-padrao.cul.js ./models/sp-art/sp-padrao-nomemo.cul.js && cul-js compile ./models/sp-art/sp-padrao-nomemo.cul.js",
     "build:copacabana": "cul-js compile --memo ./models/rio-art/copacabana.cul.js && cp ./models/rio-art/copacabana.cul.js ./models/rio-art/copacabana-nomemo.cul.js && cul-js compile ./models/rio-art/copacabana-nomemo.cul.js",
     "build:simple-loan": "cul-js compile --memo ./models/loan-validator/simple-loan.cul.js",
     "build:pension-rec-nomemo": "cp ./models/pensions/rec.cul.js ./models/pensions/rec-nomemo.cul.js && cul-js compile ./models/pensions/rec-nomemo.cul.js",
