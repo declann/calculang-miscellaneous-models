@@ -111,6 +111,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return emper_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salary", function() { return salary; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "projected_fund_value", function() { return projected_fund_value; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "salaries_per_projected_fund", function() { return salaries_per_projected_fund; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age", function() { return age; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "age_0", function() { return age_0; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "retirement_age", function() { return retirement_age; });
@@ -206,6 +207,8 @@ const salary = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_infla
 const projected_fund_value = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) =>
 // at retirement:
 fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in, age_in: retirement_age({ retirement_age_in }) });
+
+const salaries_per_projected_fund = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) => projected_fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) / salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: retirement_age({ retirement_age_in }) - 1 });
 
 // explicit inputs ::
 

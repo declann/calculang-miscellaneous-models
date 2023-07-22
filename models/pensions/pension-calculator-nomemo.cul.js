@@ -81,6 +81,8 @@ export const projected_fund_value = () =>
   // at retirement:
   fund_value({ age_in: retirement_age() });
 
+export const salaries_per_projected_fund = () => projected_fund_value() / salary({age_in: retirement_age() - 1})
+
 // explicit inputs ::
 
 // using age and age_0 (starting age) as inputs, rather than year/time and age_0.
