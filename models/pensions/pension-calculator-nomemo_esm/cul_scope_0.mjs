@@ -39,6 +39,15 @@ export const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_a
 
 };
 
+export const accumulated_empee_contribution_tax_relief = ({ age_in, age_0_in, paye_band_id_in, gross_salary_in, pension_contribution_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+  if (age({ age_in }) == age_0({ age_0_in }) - 1) return 0;else
+
+  return (
+    accumulated_empee_contribution_tax_relief({ age_0_in, paye_band_id_in, gross_salary_in, pension_contribution_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) +
+    empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }));
+
+};
+
 export const pension_tax_relief_ratio = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in });
 
@@ -81,7 +90,8 @@ export const projected_fund_value = ({ age_0_in, fund_value_0_in, unit_growth_ra
 // at retirement:
 fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in, age_in: retirement_age({ retirement_age_in }) });
 
-export const salaries_per_projected_fund = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) => projected_fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) / salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: retirement_age({ retirement_age_in }) - 1 });
+export const salaries_per_projected_fund = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) =>
+projected_fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) / salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: retirement_age({ retirement_age_in }) - 1 });
 
 // explicit inputs ::
 

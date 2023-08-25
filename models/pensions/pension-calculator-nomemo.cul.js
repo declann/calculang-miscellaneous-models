@@ -39,6 +39,15 @@ export const accumulated_empee_contributions = () => {
     );
 };
 
+export const accumulated_empee_contribution_tax_relief = () => {
+  if (age() == age_0() - 1) return 0;
+  else
+    return (
+      accumulated_empee_contribution_tax_relief({ age_in: age() - 1 }) +
+      empee_contribution_tax_relief()
+    );
+};
+
 export const pension_tax_relief_ratio = () =>
   empee_contribution_tax_relief() / empee_contribution();
 
@@ -81,7 +90,8 @@ export const projected_fund_value = () =>
   // at retirement:
   fund_value({ age_in: retirement_age() });
 
-export const salaries_per_projected_fund = () => projected_fund_value() / salary({age_in: retirement_age() - 1})
+export const salaries_per_projected_fund = () =>
+  projected_fund_value() / salary({ age_in: retirement_age() - 1 });
 
 // explicit inputs ::
 

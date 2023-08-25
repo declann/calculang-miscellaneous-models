@@ -106,6 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unit_price", function() { return unit_price; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution", function() { return empee_contribution; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contributions", function() { return accumulated_empee_contributions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "accumulated_empee_contribution_tax_relief", function() { return accumulated_empee_contribution_tax_relief; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_tax_relief_ratio", function() { return pension_tax_relief_ratio; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "empee_contribution_tax_relief", function() { return empee_contribution_tax_relief; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "emper_contribution", function() { return emper_contribution; });
@@ -166,6 +167,15 @@ const accumulated_empee_contributions = ({ age_in, age_0_in, retirement_age_in, 
 
 };
 
+const accumulated_empee_contribution_tax_relief = ({ age_in, age_0_in, paye_band_id_in, gross_salary_in, pension_contribution_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) => {
+  if (age({ age_in }) == age_0({ age_0_in }) - 1) return 0;else
+
+  return (
+    accumulated_empee_contribution_tax_relief({ age_0_in, paye_band_id_in, gross_salary_in, pension_contribution_in, tax_credits_in, usc_band_id_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in, age_in: age({ age_in }) - 1 }) +
+    empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }));
+
+};
+
 const pension_tax_relief_ratio = ({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) =>
 empee_contribution_tax_relief({ age_in, age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, empee_contribution_rate_in }) / empee_contribution({ age_in, age_0_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in });
 
@@ -208,7 +218,8 @@ const projected_fund_value = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, 
 // at retirement:
 fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in, age_in: retirement_age({ retirement_age_in }) });
 
-const salaries_per_projected_fund = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) => projected_fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) / salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: retirement_age({ retirement_age_in }) - 1 });
+const salaries_per_projected_fund = ({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) =>
+projected_fund_value({ age_0_in, fund_value_0_in, unit_growth_rate_in, retirement_age_in, salary_0_in, salary_inflation_rate_in, empee_contribution_rate_in, emper_contribution_rate_in, contribution_charge_in }) / salary({ age_0_in, salary_0_in, retirement_age_in, salary_inflation_rate_in, age_in: retirement_age({ retirement_age_in }) - 1 });
 
 // explicit inputs ::
 
