@@ -26,6 +26,8 @@
     "babel:bounce-nomemo": "babel --retain-lines --source-maps --presets=@babel/preset-env ./models/bounce/bounce-nomemo_esm/cul_scope_0.mjs --out-file ./models/bounce/bounce-nomemo_esm/cul_scope_0-babeled.js",
     "webpack:bounce-nomemo": "cd ./models/bounce/bounce-nomemo_esm && webpack",
     "build:bounce": "cul-js compile --memo ./models/bounce/bounce.cul.js",
+    "babel:pension-calculator-nomemo": "babel --retain-lines --source-maps --presets=@babel/preset-env ./models/pensions/pension-calculator-nomemo_esm/cul_scope_0.mjs --out-file ./models/pensions/pension-calculator-nomemo_esm/cul_scope_0-babeled.js",
+    "webpack:pension-calculator-nomemo": "cd ./models/pensions/pension-calculator-nomemo_esm && webpack",
     "build:pension-calculator": "cul-js compile ./models/pensions/pension-calculator.cul.js && cp ./models/pensions/pension-calculator.cul.js ./models/pensions/pension-calculator-nomemo.cul.js && cul-js compile ./models/pensions/pension-calculator-nomemo.cul.js",
     "build:monte-carlo-pi": "cul-js compile --memo ./models/pi/monte-carlo-pi.cul.js",
     "build:nilakantha-series-bignumber": "cul-js compile ./models/pi/nilakantha-series-bignumber.cul.js",
