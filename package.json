@@ -56,7 +56,7 @@
     "build:lorenz-attractor": "cul-js compile --memo ./models/lorenz-attractor/lorenz-attractor.cul.js",
     "build:tax-revenues": "cul-js compile ./models/tax-revenues/tax-revenues.cul.js",
     "build:incometax-set": "cul-js compile ./models/tax-revenues/incometax-set.cul.js",
-    "build:incometax-impact": "cul-js compile ./models/tax-revenues/impact.cul.js",
+    "build:incometax-impact": "cul-js compile ./models/tax-revenues/impact.cul.js && cp ./models/tax-revenues/impact.cul.js ./models/tax-revenues/impact-nomemo.cul.js && cul-js compile ./models/tax-revenues/impact-nomemo.cul.js",
     "build:simple-incometax": "cul-js compile ./models/tax-revenues/simple-incometax.cul.js && cp ./models/tax-revenues/simple-incometax.cul.js ./models/tax-revenues/simple-incometax-nomemo.cul.js && cul-js compile ./models/tax-revenues/simple-incometax-nomemo.cul.js",
     "build:impact-simple": "cul-js compile ./models/tax-revenues/impact-simple.cul.js",
     "use:incometax-set": "node ./models/tax-revenues/use-incometax-set-esm.mjs",

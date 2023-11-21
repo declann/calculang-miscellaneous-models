@@ -7126,7 +7126,7 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./impact.cul.js",
+    "0": "./impact-nomemo.cul.js",
     "1": "./incometax-set.cul?cul_scope_id=1&cul_parent_scope_id=0",
     "2": "./proposed.cul?cul_scope_id=2&cul_parent_scope_id=0",
     "3": "./simple-incometax.cul?cul_scope_id=3&cul_parent_scope_id=1",

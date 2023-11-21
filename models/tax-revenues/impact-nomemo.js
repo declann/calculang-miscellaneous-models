@@ -112,7 +112,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_sum; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return usc_sum; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return prsi_sum; });
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _impact_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__["b"]; });
@@ -192,7 +192,7 @@ taxpayer_count({ taxpayer_count_in }),
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return usc_table; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_table; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return prsi_rate; });
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _impact_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var _incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__["e"]; });
@@ -376,7 +376,7 @@ const prsi_impact = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) => Obj
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return usc_sum; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return prsi_sum; });
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _impact_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "c", function() { return _simple_incometax_cul_cul_scope_id_5_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_3__["b"]; });
@@ -478,7 +478,7 @@ taxpayer_count({ taxpayer_count_in }),
 /* unused harmony export net_salary_plus_pension_contribution */
 /* harmony import */ var _incometax_set_cul_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
+/* harmony import */ var _impact_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
@@ -627,7 +627,7 @@ net_salary({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_ta
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return paye; });
 /* unused harmony export net_salary_plus_pension_contribution */
 /* harmony import */ var _incometax_set_cul_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _impact_nomemo_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _proposed_cul_cul_scope_id_2_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
@@ -746,4 +746,4 @@ net_salary({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, tax_cre
 /***/ })
 /******/ ]);
 });
-//# sourceMappingURL=impact.js.map
+//# sourceMappingURL=impact-nomemo.js.map
