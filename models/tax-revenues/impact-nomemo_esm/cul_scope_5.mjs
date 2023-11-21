@@ -1,18 +1,18 @@
-import { prsi_sum } from "./cul_scope_4.mjs";import { usc_sum } from "./cul_scope_4.mjs";import { paye_sum } from "./cul_scope_4.mjs";import { income_tax_sum } from "./cul_scope_4.mjs";import { prsi_by_taxpayer } from "./cul_scope_4.mjs";import { usc_by_taxpayer } from "./cul_scope_4.mjs";import { paye_by_taxpayer } from "./cul_scope_4.mjs";import { income_tax_by_taxpayer } from "./cul_scope_4.mjs";import { proportion } from "./cul_scope_4.mjs";import { gross_salary } from "./cul_scope_4.mjs";import { taxpayer_count } from "./cul_scope_4.mjs";import { taxpayer_table } from "./cul_scope_4.mjs";import { taxpayer_id } from "./cul_scope_4.mjs";import { prsi_rate } from "./cul_scope_2.mjs";import { paye_table } from "./cul_scope_2.mjs";import { usc_table } from "./cul_scope_2.mjs";import { band } from "./cul_scope_2.mjs";import { tax_credit } from "./cul_scope_2.mjs";import { tax_credit_proposed } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_1.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_1.mjs";import { usc_by_taxpayer_current } from "./cul_scope_1.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_1.mjs";import { prsi_current } from "./cul_scope_1.mjs";import { prsi_sum_current } from "./cul_scope_1.mjs";import { usc_current } from "./cul_scope_1.mjs";import { usc_sum_current } from "./cul_scope_1.mjs";import { paye_current } from "./cul_scope_1.mjs";import { paye_sum_current } from "./cul_scope_1.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs"; // heavily simplified incometax calculation for Irish incometax
+import { prsi_sum } from "./cul_scope_3.mjs";import { usc_sum } from "./cul_scope_3.mjs";import { paye_sum } from "./cul_scope_3.mjs";import { income_tax_sum } from "./cul_scope_3.mjs";import { prsi_by_taxpayer } from "./cul_scope_3.mjs";import { usc_by_taxpayer } from "./cul_scope_3.mjs";import { paye_by_taxpayer } from "./cul_scope_3.mjs";import { income_tax_by_taxpayer } from "./cul_scope_3.mjs";import { proportion } from "./cul_scope_3.mjs";import { gross_salary } from "./cul_scope_3.mjs";import { taxpayer_count } from "./cul_scope_3.mjs";import { taxpayer_table } from "./cul_scope_3.mjs";import { taxpayer_id } from "./cul_scope_3.mjs";import { prsi_rate } from "./cul_scope_2.mjs";import { paye_table } from "./cul_scope_2.mjs";import { usc_table } from "./cul_scope_2.mjs";import { band } from "./cul_scope_2.mjs";import { tax_credit_proposed } from "./cul_scope_2.mjs";import { tax_rate } from "./cul_scope_2.mjs";import { pension_contribution } from "./cul_scope_0.mjs";import { tax_credits } from "./cul_scope_0.mjs";import { tax_credit } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_1.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_1.mjs";import { usc_by_taxpayer_current } from "./cul_scope_1.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_1.mjs";import { prsi_current } from "./cul_scope_1.mjs";import { prsi_sum_current } from "./cul_scope_1.mjs";import { usc_current } from "./cul_scope_1.mjs";import { usc_sum_current } from "./cul_scope_1.mjs";import { paye_current } from "./cul_scope_1.mjs";import { paye_sum_current } from "./cul_scope_1.mjs";import { effective_rate_current } from "./cul_scope_1.mjs";import { income_tax_current } from "./cul_scope_1.mjs";import { income_tax_sum_current } from "./cul_scope_1.mjs"; // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
 
 // inputs:
 export const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
-export const tax_credits = ({ tax_credits_in }) => tax_credits_in;
-export const pension_contribution = ({ pension_contribution_in }) => pension_contribution_in;
+export const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
+export const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-export const net_salary = ({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_table_in, tax_credits_in, prsi_rate_in, usc_table_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({ pension_contribution_in }) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in, tax_credits_in, prsi_rate_in, usc_table_in });
+export const net_salary = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, prsi_rate_in, usc_table_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({}) - income_tax({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, prsi_rate_in, usc_table_in });
 
-export const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in, tax_credits_in, prsi_rate_in, usc_table_in }) => paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in, tax_credits_in }) + prsi({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in });
+export const income_tax = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, prsi_rate_in, usc_table_in }) => paye({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + prsi({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) + usc({ usc_table_in, taxpayer_table_in, taxpayer_id_in });
 
-export const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_table_in, tax_credits_in, prsi_rate_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_table_in, tax_credits_in, prsi_rate_in, usc_table_in }) / gross_salary({ taxpayer_table_in, taxpayer_id_in });
+export const effective_rate = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, prsi_rate_in, usc_table_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, prsi_rate_in, usc_table_in }) / gross_salary({ taxpayer_table_in, taxpayer_id_in });
 
 export const prsi_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in });
 
@@ -88,26 +88,26 @@ export const paye_band_start = ({ paye_band_id_in, paye_table_in }) => {
 
 export const paye_rate = ({ paye_table_in, paye_band_id_in }) => paye_table({ paye_table_in })[paye_band_id({ paye_band_id_in }) - 1].rate;
 
-export const paye_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in }) =>
-Math.max(0, gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({ pension_contribution_in }));
+export const paye_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) =>
+Math.max(0, gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({}));
 
-export const paye_by_band_id = ({ paye_table_in, paye_band_id_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in }) =>
+export const paye_by_band_id = ({ paye_table_in, paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
 paye_rate({ paye_table_in, paye_band_id_in }) *
 Math.min(
 paye_band_end({ paye_band_id_in, paye_table_in }) - paye_band_start({ paye_band_id_in, paye_table_in }),
-Math.max(paye_taxable_salary({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in }) - paye_band_start({ paye_band_id_in, paye_table_in }), 0));
+Math.max(paye_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in, paye_table_in }), 0));
 
 
-export const paye_over_bands = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in }) =>
+export const paye_over_bands = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) =>
 Math.max(
 0,
 paye_table({ paye_table_in }).reduce(
-(a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_band_id_in: v.band_id }),
+(a, v) => a + paye_by_band_id({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
 0)
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-export const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in, tax_credits_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in, pension_contribution_in }) - tax_credits({ tax_credits_in }), 0);
+export const paye = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(paye_over_bands({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - tax_credits({ tax_credit_in }), 0);
 
-export const net_salary_plus_pension_contribution = ({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_table_in, tax_credits_in, prsi_rate_in, usc_table_in }) =>
-net_salary({ taxpayer_table_in, taxpayer_id_in, pension_contribution_in, paye_table_in, tax_credits_in, prsi_rate_in, usc_table_in }) + pension_contribution({ pension_contribution_in });
+export const net_salary_plus_pension_contribution = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, prsi_rate_in, usc_table_in }) =>
+net_salary({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_in, prsi_rate_in, usc_table_in }) + pension_contribution({});
