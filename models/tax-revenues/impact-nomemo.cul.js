@@ -79,7 +79,5 @@ export const prsi_sum_impact = () => prsi_sum_proposed() - prsi_sum_current();
 
 export const prsi_impact = () => prsi_proposed() - prsi_current();
 
-// test mitigate refactor
-export const tax_credit = () => tax_credit_in;
-export const tax_credits = () => tax_credit();
+// test mitigate application refactor
 export const pension_contribution = () => 0;

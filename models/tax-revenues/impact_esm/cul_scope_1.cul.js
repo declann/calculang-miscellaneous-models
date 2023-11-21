@@ -59,3 +59,7 @@ export const prsi_sum = () =>
         taxpayer_count(),
     0
   );
+
+// test mitigate application refactor
+export const tax_credit = () => tax_credit_in;
+export const tax_credits = () => tax_credit();

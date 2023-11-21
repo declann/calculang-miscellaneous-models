@@ -1,10 +1,10 @@
-import { pension_contribution } from "./cul_scope_0.mjs";import { tax_credits } from "./cul_scope_0.mjs";import { tax_credit } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_proposed } from "./cul_scope_2.mjs";import { prsi_sum_proposed } from "./cul_scope_2.mjs";import { usc_proposed } from "./cul_scope_2.mjs";import { usc_sum_proposed } from "./cul_scope_2.mjs";import { paye_proposed } from "./cul_scope_2.mjs";import { paye_sum_proposed } from "./cul_scope_2.mjs";import { effective_rate_proposed } from "./cul_scope_2.mjs";import { income_tax_proposed } from "./cul_scope_2.mjs";import { income_tax_sum_proposed } from "./cul_scope_2.mjs";import {
+import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_proposed } from "./cul_scope_2.mjs";import { prsi_sum_proposed } from "./cul_scope_2.mjs";import { usc_proposed } from "./cul_scope_2.mjs";import { usc_sum_proposed } from "./cul_scope_2.mjs";import { paye_proposed } from "./cul_scope_2.mjs";import { paye_sum_proposed } from "./cul_scope_2.mjs";import { effective_rate_proposed } from "./cul_scope_2.mjs";import { income_tax_proposed } from "./cul_scope_2.mjs";import { income_tax_sum_proposed } from "./cul_scope_2.mjs";import {
 income_tax,
 effective_rate,
 usc,
 paye,
 prsi } from
-"./cul_scope_4.mjs";
+"./cul_scope_3.mjs";
 export { income_tax, effective_rate, usc, paye, prsi };
 
 export const taxpayer_id = ({ taxpayer_id_in }) => taxpayer_id_in;
@@ -58,3 +58,8 @@ prsi({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
 proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
 taxpayer_count({ taxpayer_count_in }),
 0);
+
+
+// test mitigate application refactor
+export const tax_credit = ({ tax_credit_in }) => tax_credit_in;
+export const tax_credits = ({ tax_credit_in }) => tax_credit({ tax_credit_in });
