@@ -1,65 +1,83 @@
-import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_2.mjs";import { prsi_proposed } from "./cul_scope_2.mjs";import { prsi_sum_proposed } from "./cul_scope_2.mjs";import { usc_proposed } from "./cul_scope_2.mjs";import { usc_sum_proposed } from "./cul_scope_2.mjs";import { paye_proposed } from "./cul_scope_2.mjs";import { paye_sum_proposed } from "./cul_scope_2.mjs";import { effective_rate_proposed } from "./cul_scope_2.mjs";import { income_tax_proposed } from "./cul_scope_2.mjs";import { income_tax_sum_proposed } from "./cul_scope_2.mjs";import {
-income_tax,
-effective_rate,
-usc,
-paye,
-prsi } from
+import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_proposed } from "./cul_scope_0.mjs";import { prsi_sum_proposed } from "./cul_scope_0.mjs";import { usc_proposed } from "./cul_scope_0.mjs";import { usc_sum_proposed } from "./cul_scope_0.mjs";import { paye_proposed } from "./cul_scope_0.mjs";import { paye_sum_proposed } from "./cul_scope_0.mjs";import { effective_rate_proposed } from "./cul_scope_0.mjs";import { income_tax_proposed } from "./cul_scope_0.mjs";import { income_tax_sum_proposed } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_0.mjs";import { usc_by_taxpayer_current } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_current } from "./cul_scope_0.mjs";import { prsi_sum_current } from "./cul_scope_0.mjs";import { usc_current } from "./cul_scope_0.mjs";import { usc_sum_current } from "./cul_scope_0.mjs";import { paye_current } from "./cul_scope_0.mjs";import { paye_sum_current } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_0.mjs";import { income_tax_current } from "./cul_scope_0.mjs";import { income_tax_sum_current } from "./cul_scope_0.mjs";import {
+income_tax_sum as income_tax_sum_current_,
+income_tax as income_tax_current_,
+effective_rate as effective_rate_current_,
+paye_sum as paye_sum_current_,
+paye as paye_current_,
+usc_sum as usc_sum_current_,
+usc as usc_current_,
+prsi_sum as prsi_sum_current_,
+prsi as prsi_current_,
+income_tax_by_taxpayer as income_tax_by_taxpayer_current_,
+usc_by_taxpayer as usc_by_taxpayer_current_,
+prsi_by_taxpayer as prsi_by_taxpayer_current_,
+paye_by_taxpayer as paye_by_taxpayer_current_ } from
+"./cul_scope_2.mjs";
+import {
+income_tax_sum as income_tax_sum_proposed_,
+income_tax as income_tax_proposed_,
+effective_rate as effective_rate_proposed_,
+paye_sum as paye_sum_proposed_,
+paye as paye_proposed_,
+usc_sum as usc_sum_proposed_,
+usc as usc_proposed_,
+prsi_sum as prsi_sum_proposed_,
+prsi as prsi_proposed_,
+income_tax_by_taxpayer as income_tax_by_taxpayer_proposed_,
+usc_by_taxpayer as usc_by_taxpayer_proposed_,
+prsi_by_taxpayer as prsi_by_taxpayer_proposed_,
+paye_by_taxpayer as paye_by_taxpayer_proposed_ } from
 "./cul_scope_3.mjs";
-export { income_tax, effective_rate, usc, paye, prsi };
 
-export const taxpayer_id = ({ taxpayer_id_in }) => taxpayer_id_in;
-export const taxpayer_table = ({ taxpayer_table_in }) => taxpayer_table_in;
-export const taxpayer_count = ({ taxpayer_count_in }) => taxpayer_count_in;
+export { income_tax_sum_current_, income_tax_sum_proposed_ };
+export { income_tax_current_, income_tax_proposed_ };
+export { usc_sum_current_, usc_sum_proposed_ };
+export { prsi_sum_current_, prsi_sum_proposed_ };
+export { usc_current_, usc_proposed_ };
+export { prsi_current_, prsi_proposed_ };
+export { paye_sum_current_, paye_sum_proposed_ };
+export { paye_current_, paye_proposed_ };
+export { effective_rate_current_, effective_rate_proposed_ };
+export {
+paye_by_taxpayer_proposed_,
+income_tax_by_taxpayer_proposed_,
+usc_by_taxpayer_proposed_,
+prsi_by_taxpayer_proposed_ };
 
-export const gross_salary = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].gross_salary;
-export const proportion = ({ taxpayer_table_in, taxpayer_id_in }) => taxpayer_table({ taxpayer_table_in })[taxpayer_id({ taxpayer_id_in })].proportion;
-
-export const income_tax_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in }) =>
-income_tax({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
-export const paye_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in }) => paye({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
-export const usc_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => usc({ taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
-export const prsi_by_taxpayer = ({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => prsi({ taxpayer_table_in, taxpayer_id_in }) * proportion({ taxpayer_table_in, taxpayer_id_in }) * taxpayer_count({ taxpayer_count_in });
-
-export const income_tax_sum = ({ taxpayer_table_in, tax_credit_in, taxpayer_count_in }) =>
-taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-income_tax({ taxpayer_table_in, tax_credit_in, taxpayer_id_in: val.taxpayer_id }) *
-proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * // this should be abstracted e.g. income_tax = income_tax * proportion * taxpayer_calc in sep. scaling model, for now creating _by_taxpayer variables
-taxpayer_count({ taxpayer_count_in }),
-0);
+export {
+paye_by_taxpayer_current_,
+income_tax_by_taxpayer_current_,
+usc_by_taxpayer_current_,
+prsi_by_taxpayer_current_ };
 
 
-export const paye_sum = ({ taxpayer_table_in, tax_credit_in, taxpayer_count_in }) =>
-taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-paye({ taxpayer_table_in, tax_credit_in, taxpayer_id_in: val.taxpayer_id }) *
-proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-taxpayer_count({ taxpayer_count_in }),
-0);
+export const income_tax_by_taxpayer_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
+income_tax_by_taxpayer_proposed({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - income_tax_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+export const usc_by_taxpayer_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
+usc_by_taxpayer_proposed({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - usc_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+export const paye_by_taxpayer_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) =>
+paye_by_taxpayer_proposed({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }) - paye_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+export const prsi_by_taxpayer_impact_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) =>
+prsi_by_taxpayer_proposed({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) - prsi_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 
 
-export const usc_sum = ({ taxpayer_table_in, taxpayer_count_in }) =>
-taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-usc({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-taxpayer_count({ taxpayer_count_in }),
-0);
+export const income_tax_sum_impact_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
+income_tax_sum_proposed({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - income_tax_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
+export const income_tax_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, tax_credit_in }) =>
+income_tax_proposed({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) - income_tax_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-export const prsi_sum = ({ taxpayer_table_in, taxpayer_count_in }) =>
-taxpayer_table({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-prsi({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-proportion({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-taxpayer_count({ taxpayer_count_in }),
-0);
+export const paye_sum_impact_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) => paye_sum_proposed({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }) - paye_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
+export const paye_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, tax_credit_in }) => paye_proposed({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) - paye_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+
+export const usc_sum_impact_ = ({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) => usc_sum_proposed({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) - usc_sum_current({ taxpayer_table_in, taxpayer_count_in });
+
+export const usc_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) => usc_proposed({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) - usc_current({ taxpayer_table_in, taxpayer_id_in });
+
+export const prsi_sum_impact_ = ({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) => prsi_sum_proposed({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) - prsi_sum_current({ taxpayer_table_in, taxpayer_count_in });
+
+export const prsi_impact_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) => prsi_proposed({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) - prsi_current({ taxpayer_table_in, taxpayer_id_in });
 
 // test mitigate application refactor
-export const tax_credit = ({ tax_credit_in }) => tax_credit_in;
-export const tax_credits = ({ tax_credit_in }) => tax_credit({ tax_credit_in });
+export const pension_contribution_ = ({}) => 0;
