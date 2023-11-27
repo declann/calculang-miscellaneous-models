@@ -1,4 +1,4 @@
-import { net_salary_plus_pension_contribution } from "./cul_scope_7.mjs";import { paye_over_bands } from "./cul_scope_7.mjs";import { paye_by_band_id } from "./cul_scope_7.mjs";import { paye_taxable_salary } from "./cul_scope_7.mjs";import { paye_rate } from "./cul_scope_7.mjs";import { paye_band_start } from "./cul_scope_7.mjs";import { paye_band_end } from "./cul_scope_7.mjs";import { paye_band_id } from "./cul_scope_7.mjs";import { usc_by_band_id } from "./cul_scope_7.mjs";import { usc_taxable_salary } from "./cul_scope_7.mjs";import { usc_rate } from "./cul_scope_7.mjs";import { usc_band_start } from "./cul_scope_7.mjs";import { usc_band_end } from "./cul_scope_7.mjs";import { usc_band_id } from "./cul_scope_7.mjs";import { prsi_taxable_salary } from "./cul_scope_7.mjs";import { net_salary } from "./cul_scope_7.mjs";import { tax_credits } from "./cul_scope_7.mjs";import { proportion } from "./cul_scope_7.mjs";import { gross_salary } from "./cul_scope_7.mjs";import { taxpayer_count } from "./cul_scope_7.mjs";import { taxpayer_table } from "./cul_scope_7.mjs";import { taxpayer_id } from "./cul_scope_7.mjs";import { prsi_rate } from "./cul_scope_3.mjs";import { paye_table } from "./cul_scope_3.mjs";import { usc_table } from "./cul_scope_3.mjs";import { band } from "./cul_scope_3.mjs";import { tax_credit } from "./cul_scope_3.mjs";import { tax_credit_proposed } from "./cul_scope_3.mjs";import { tax_rate } from "./cul_scope_3.mjs";import { paye_by_taxpayer } from "./cul_scope_3.mjs";import { prsi_by_taxpayer } from "./cul_scope_3.mjs";import { usc_by_taxpayer } from "./cul_scope_3.mjs";import { income_tax_by_taxpayer } from "./cul_scope_3.mjs";import { paye_sum } from "./cul_scope_3.mjs";import { prsi_sum } from "./cul_scope_3.mjs";import { usc_sum } from "./cul_scope_3.mjs";import { paye } from "./cul_scope_3.mjs";import { prsi } from "./cul_scope_3.mjs";import { usc } from "./cul_scope_3.mjs";import { effective_rate } from "./cul_scope_3.mjs";import { income_tax } from "./cul_scope_3.mjs";import { income_tax_sum } from "./cul_scope_3.mjs";import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_proposed } from "./cul_scope_0.mjs";import { prsi_sum_proposed } from "./cul_scope_0.mjs";import { usc_proposed } from "./cul_scope_0.mjs";import { usc_sum_proposed } from "./cul_scope_0.mjs";import { paye_proposed } from "./cul_scope_0.mjs";import { paye_sum_proposed } from "./cul_scope_0.mjs";import { effective_rate_proposed } from "./cul_scope_0.mjs";import { income_tax_proposed } from "./cul_scope_0.mjs";import { income_tax_sum_proposed } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_0.mjs";import { usc_by_taxpayer_current } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_current } from "./cul_scope_0.mjs";import { prsi_sum_current } from "./cul_scope_0.mjs";import { usc_current } from "./cul_scope_0.mjs";import { usc_sum_current } from "./cul_scope_0.mjs";import { paye_current } from "./cul_scope_0.mjs";import { paye_sum_current } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_0.mjs";import { income_tax_current } from "./cul_scope_0.mjs";import { income_tax_sum_current } from "./cul_scope_0.mjs";
+import { net_salary_plus_pension_contribution } from "./cul_scope_6.mjs";import { paye_over_bands } from "./cul_scope_6.mjs";import { paye_by_band_id } from "./cul_scope_6.mjs";import { paye_taxable_salary } from "./cul_scope_6.mjs";import { paye_rate } from "./cul_scope_6.mjs";import { paye_band_start } from "./cul_scope_6.mjs";import { paye_band_end } from "./cul_scope_6.mjs";import { paye_band_id } from "./cul_scope_6.mjs";import { usc_by_band_id } from "./cul_scope_6.mjs";import { usc_taxable_salary } from "./cul_scope_6.mjs";import { usc_rate } from "./cul_scope_6.mjs";import { usc_band_start } from "./cul_scope_6.mjs";import { usc_band_end } from "./cul_scope_6.mjs";import { usc_band_id } from "./cul_scope_6.mjs";import { prsi_taxable_salary } from "./cul_scope_6.mjs";import { net_salary } from "./cul_scope_6.mjs";import { prsi_rate } from "./cul_scope_4.mjs";import { paye_table } from "./cul_scope_4.mjs";import { usc_table } from "./cul_scope_4.mjs";import { band } from "./cul_scope_4.mjs";import { tax_credit_proposed } from "./cul_scope_4.mjs";import { tax_rate } from "./cul_scope_4.mjs";import { tax_credits } from "./cul_scope_3.mjs";import { tax_credit } from "./cul_scope_3.mjs";import { prsi_sum } from "./cul_scope_3.mjs";import { usc_sum } from "./cul_scope_3.mjs";import { paye_sum } from "./cul_scope_3.mjs";import { income_tax_sum } from "./cul_scope_3.mjs";import { prsi_by_taxpayer } from "./cul_scope_3.mjs";import { usc_by_taxpayer } from "./cul_scope_3.mjs";import { paye_by_taxpayer } from "./cul_scope_3.mjs";import { income_tax_by_taxpayer } from "./cul_scope_3.mjs";import { proportion } from "./cul_scope_3.mjs";import { gross_salary } from "./cul_scope_3.mjs";import { taxpayer_count } from "./cul_scope_3.mjs";import { taxpayer_table } from "./cul_scope_3.mjs";import { taxpayer_id } from "./cul_scope_3.mjs";import { prsi } from "./cul_scope_3.mjs";import { paye } from "./cul_scope_3.mjs";import { usc } from "./cul_scope_3.mjs";import { effective_rate } from "./cul_scope_3.mjs";import { income_tax } from "./cul_scope_3.mjs";import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_proposed } from "./cul_scope_0.mjs";import { prsi_sum_proposed } from "./cul_scope_0.mjs";import { usc_proposed } from "./cul_scope_0.mjs";import { usc_sum_proposed } from "./cul_scope_0.mjs";import { paye_proposed } from "./cul_scope_0.mjs";import { paye_sum_proposed } from "./cul_scope_0.mjs";import { effective_rate_proposed } from "./cul_scope_0.mjs";import { income_tax_proposed } from "./cul_scope_0.mjs";import { income_tax_sum_proposed } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_0.mjs";import { usc_by_taxpayer_current } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_current } from "./cul_scope_0.mjs";import { prsi_sum_current } from "./cul_scope_0.mjs";import { usc_current } from "./cul_scope_0.mjs";import { usc_sum_current } from "./cul_scope_0.mjs";import { paye_current } from "./cul_scope_0.mjs";import { paye_sum_current } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_0.mjs";import { income_tax_current } from "./cul_scope_0.mjs";import { income_tax_sum_current } from "./cul_scope_0.mjs";
 import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
@@ -577,7 +577,7 @@ export const net_salary$m = memoize(net_salary$, JSON.stringify);
 export const net_salary_ = (a) => {
   return net_salary$m(a);
   // eslint-disable-next-line no-undef
-  net_salary$({ taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  net_salary$({ prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end net_salary memo-loader code //////////
 
@@ -589,7 +589,7 @@ export const income_tax$m = memoize(income_tax$, JSON.stringify);
 export const income_tax_ = (a) => {
   return income_tax$m(a);
   // eslint-disable-next-line no-undef
-  income_tax$({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  income_tax$({ prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax memo-loader code //////////
 
@@ -601,7 +601,7 @@ export const effective_rate$m = memoize(effective_rate$, JSON.stringify);
 export const effective_rate_ = (a) => {
   return effective_rate$m(a);
   // eslint-disable-next-line no-undef
-  effective_rate$({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  effective_rate$({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end effective_rate memo-loader code //////////
 
@@ -613,7 +613,7 @@ export const prsi_taxable_salary$m = memoize(prsi_taxable_salary$, JSON.stringif
 export const prsi_taxable_salary_ = (a) => {
   return prsi_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
-  prsi_taxable_salary$({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  prsi_taxable_salary$({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_taxable_salary memo-loader code //////////
 
@@ -625,7 +625,7 @@ export const prsi$m = memoize(prsi$, JSON.stringify);
 export const prsi_ = (a) => {
   return prsi$m(a);
   // eslint-disable-next-line no-undef
-  prsi$({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  prsi$({ prsi_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi memo-loader code //////////
 
@@ -685,7 +685,7 @@ export const usc_taxable_salary$m = memoize(usc_taxable_salary$, JSON.stringify)
 export const usc_taxable_salary_ = (a) => {
   return usc_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
-  usc_taxable_salary$({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  usc_taxable_salary$({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_taxable_salary memo-loader code //////////
 
@@ -769,7 +769,7 @@ export const paye_taxable_salary$m = memoize(paye_taxable_salary$, JSON.stringif
 export const paye_taxable_salary_ = (a) => {
   return paye_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
-  paye_taxable_salary$({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  paye_taxable_salary$({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_taxable_salary memo-loader code //////////
 
@@ -805,7 +805,7 @@ export const paye$m = memoize(paye$, JSON.stringify);
 export const paye_ = (a) => {
   return paye$m(a);
   // eslint-disable-next-line no-undef
-  paye$({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+  paye$({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye memo-loader code //////////
 

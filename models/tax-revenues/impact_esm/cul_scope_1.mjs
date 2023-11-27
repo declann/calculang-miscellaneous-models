@@ -51,33 +51,33 @@ usc_by_taxpayer_current_,
 prsi_by_taxpayer_current_ };
 
 
-export const income_tax_by_taxpayer_impact_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
-income_tax_by_taxpayer_proposed({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) - income_tax_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+export const income_tax_by_taxpayer_impact_ = ({ prsi_rate_in, usc_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in }) =>
+income_tax_by_taxpayer_proposed({ prsi_rate_in, usc_table_in }) - income_tax_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
 export const usc_by_taxpayer_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
-usc_by_taxpayer_proposed({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - usc_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
-export const paye_by_taxpayer_impact_ = ({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in, tax_credit_in }) =>
-paye_by_taxpayer_proposed({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - paye_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+usc_by_taxpayer_proposed({ usc_table_in }) - usc_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+export const paye_by_taxpayer_impact_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in }) =>
+paye_by_taxpayer_proposed({}) - paye_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
 export const prsi_by_taxpayer_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
-prsi_by_taxpayer_proposed({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - prsi_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+prsi_by_taxpayer_proposed({ prsi_rate_in }) - prsi_by_taxpayer_current({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 
 
-export const income_tax_sum_impact_ = ({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
-income_tax_sum_proposed({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - income_tax_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
+export const income_tax_sum_impact_ = ({ prsi_rate_in, usc_table_in, taxpayer_table_in, tax_credit_in, taxpayer_count_in }) =>
+income_tax_sum_proposed({ prsi_rate_in, usc_table_in }) - income_tax_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
-export const income_tax_impact_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, tax_credit_in }) =>
-income_tax_proposed({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) - income_tax_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+export const income_tax_impact_ = ({ prsi_rate_in, usc_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
+income_tax_proposed({ prsi_rate_in, usc_table_in }) - income_tax_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-export const paye_sum_impact_ = ({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) => paye_sum_proposed({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }) - paye_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
+export const paye_sum_impact_ = ({ taxpayer_table_in, tax_credit_in, taxpayer_count_in }) => paye_sum_proposed({}) - paye_sum_current({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
-export const paye_impact_ = ({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => paye_proposed({ tax_credit_proposed_in }) - paye_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+export const paye_impact_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => paye_proposed({}) - paye_current({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-export const usc_sum_impact_ = ({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) => usc_sum_proposed({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) - usc_sum_current({ taxpayer_table_in, taxpayer_count_in });
+export const usc_sum_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_count_in }) => usc_sum_proposed({ usc_table_in }) - usc_sum_current({ taxpayer_table_in, taxpayer_count_in });
 
 export const usc_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) => usc_proposed({ usc_table_in }) - usc_current({ taxpayer_table_in, taxpayer_id_in });
 
-export const prsi_sum_impact_ = ({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) => prsi_sum_proposed({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) - prsi_sum_current({ taxpayer_table_in, taxpayer_count_in });
+export const prsi_sum_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_count_in }) => prsi_sum_proposed({ prsi_rate_in }) - prsi_sum_current({ taxpayer_table_in, taxpayer_count_in });
 
-export const prsi_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) => prsi_proposed({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) - prsi_current({ taxpayer_table_in, taxpayer_id_in });
+export const prsi_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) => prsi_proposed({ prsi_rate_in }) - prsi_current({ taxpayer_table_in, taxpayer_id_in });
 
 // test mitigate application refactor
 export const pension_contribution_ = ({}) => 0;
