@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution$m", function() { return pension_contribution$m; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pension_contribution", function() { return pension_contribution; });
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9);
+/* harmony import */ var _impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 
 
 //import memoize from 'lru-memoize';
@@ -351,7 +351,7 @@ const income_tax_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__
 const income_tax_sum_proposed = (a) => {
   return income_tax_sum_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum_proposed_ */ "k"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum_proposed_ */ "k"])({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_sum_proposed memo-loader code //////////
 
@@ -363,7 +363,7 @@ const income_tax_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* 
 const income_tax_proposed = (a) => {
   return income_tax_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_proposed_ */ "h"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_proposed_ */ "h"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_proposed memo-loader code //////////
 
@@ -375,7 +375,7 @@ const effective_rate_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__
 const effective_rate_proposed = (a) => {
   return effective_rate_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* effective_rate_proposed_ */ "b"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* effective_rate_proposed_ */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end effective_rate_proposed memo-loader code //////////
 
@@ -387,7 +387,7 @@ const paye_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* me
 const paye_sum_proposed = (a) => {
   return paye_sum_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_sum_proposed_ */ "t"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_sum_proposed_ */ "t"])({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_sum_proposed memo-loader code //////////
 
@@ -399,7 +399,7 @@ const paye_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoiz
 const paye_proposed = (a) => {
   return paye_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_proposed_ */ "q"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_proposed_ */ "q"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_proposed memo-loader code //////////
 
@@ -423,7 +423,7 @@ const usc_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize
 const usc_proposed = (a) => {
   return usc_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_proposed_ */ "J"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* usc_proposed_ */ "J"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_proposed memo-loader code //////////
 
@@ -447,7 +447,7 @@ const prsi_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoiz
 const prsi_proposed = (a) => {
   return prsi_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_proposed_ */ "A"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_proposed_ */ "A"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_proposed memo-loader code //////////
 
@@ -459,7 +459,7 @@ const income_tax_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MO
 const income_tax_by_taxpayer_proposed = (a) => {
   return income_tax_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer_proposed_ */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer_proposed_ */ "e"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_by_taxpayer_proposed memo-loader code //////////
 
@@ -483,7 +483,7 @@ const prsi_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0
 const prsi_by_taxpayer_proposed = (a) => {
   return prsi_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_by_taxpayer_proposed_ */ "x"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_by_taxpayer_proposed_ */ "x"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_by_taxpayer_proposed memo-loader code //////////
 
@@ -495,7 +495,7 @@ const paye_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0
 const paye_by_taxpayer_proposed = (a) => {
   return paye_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer_proposed_ */ "n"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer_proposed_ */ "n"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_taxpayer_proposed memo-loader code //////////
 
@@ -507,7 +507,7 @@ const income_tax_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODU
 const income_tax_by_taxpayer_impact = (a) => {
   return income_tax_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer_impact_ */ "d"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_by_taxpayer_impact_ */ "d"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_by_taxpayer_impact memo-loader code //////////
 
@@ -531,7 +531,7 @@ const paye_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__
 const paye_by_taxpayer_impact = (a) => {
   return paye_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer_impact_ */ "m"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_by_taxpayer_impact_ */ "m"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_taxpayer_impact memo-loader code //////////
 
@@ -543,7 +543,7 @@ const prsi_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__
 const prsi_by_taxpayer_impact = (a) => {
   return prsi_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_by_taxpayer_impact_ */ "w"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_by_taxpayer_impact_ */ "w"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_by_taxpayer_impact memo-loader code //////////
 
@@ -555,7 +555,7 @@ const income_tax_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/
 const income_tax_sum_impact = (a) => {
   return income_tax_sum_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum_impact_ */ "j"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_sum_impact_ */ "j"])({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_sum_impact memo-loader code //////////
 
@@ -567,7 +567,7 @@ const income_tax_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* me
 const income_tax_impact = (a) => {
   return income_tax_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_impact_ */ "g"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* income_tax_impact_ */ "g"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_impact memo-loader code //////////
 
@@ -579,7 +579,7 @@ const paye_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memo
 const paye_sum_impact = (a) => {
   return paye_sum_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_sum_impact_ */ "s"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_sum_impact_ */ "s"])({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_sum_impact memo-loader code //////////
 
@@ -591,7 +591,7 @@ const paye_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize 
 const paye_impact = (a) => {
   return paye_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_impact_ */ "p"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* paye_impact_ */ "p"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_impact memo-loader code //////////
 
@@ -639,7 +639,7 @@ const prsi_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_0__[/* memoize 
 const prsi_impact = (a) => {
   return prsi_impact$m(a);
   // eslint-disable-next-line no-undef
-  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_impact_ */ "z"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_impact_cul_js_memoed_cul_scope_id_1_cul_parent_scope_id_0__WEBPACK_IMPORTED_MODULE_1__[/* prsi_impact_ */ "z"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_impact memo-loader code //////////
 
@@ -783,7 +783,7 @@ const pension_contribution = (a) => {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return prsi_rate; });
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var _proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
+/* harmony import */ var _proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9);
 
 
 //import memoize from 'lru-memoize';
@@ -1111,7 +1111,7 @@ const income_tax_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoi
 const income_tax_sum = (a) => {
   return income_tax_sum$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_sum_ */ "j"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_sum_ */ "j"])({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_sum memo-loader code //////////
 
@@ -1123,7 +1123,7 @@ const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoize *
 const income_tax = (a) => {
   return income_tax$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_ */ "d"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_ */ "d"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax memo-loader code //////////
 
@@ -1135,7 +1135,7 @@ const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoi
 const effective_rate = (a) => {
   return effective_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end effective_rate memo-loader code //////////
 
@@ -1147,7 +1147,7 @@ const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoize */ "a"])
 const usc = (a) => {
   return usc$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* usc_ */ "K"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* usc_ */ "K"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc memo-loader code //////////
 
@@ -1159,7 +1159,7 @@ const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoize */ "a"]
 const prsi = (a) => {
   return prsi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* prsi_ */ "x"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* prsi_ */ "x"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi memo-loader code //////////
 
@@ -1171,7 +1171,7 @@ const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoize */ "a"]
 const paye = (a) => {
   return paye$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_ */ "m"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_ */ "m"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye memo-loader code //////////
 
@@ -1207,7 +1207,7 @@ const paye_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* memoize */ 
 const paye_sum = (a) => {
   return paye_sum$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_sum_ */ "s"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_sum_ */ "s"])({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_sum memo-loader code //////////
 
@@ -1219,7 +1219,7 @@ const income_tax_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[
 const income_tax_by_taxpayer = (a) => {
   return income_tax_by_taxpayer$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_by_taxpayer_ */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* income_tax_by_taxpayer_ */ "e"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_by_taxpayer memo-loader code //////////
 
@@ -1243,7 +1243,7 @@ const prsi_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* mem
 const prsi_by_taxpayer = (a) => {
   return prsi_by_taxpayer$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* prsi_by_taxpayer_ */ "y"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* prsi_by_taxpayer_ */ "y"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_by_taxpayer memo-loader code //////////
 
@@ -1255,7 +1255,7 @@ const paye_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_1__[/* mem
 const paye_by_taxpayer = (a) => {
   return paye_by_taxpayer$m(a);
   // eslint-disable-next-line no-undef
-  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_by_taxpayer_ */ "n"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  Object(_proposed_cul_js_memoed_cul_scope_id_5_cul_parent_scope_id_3__WEBPACK_IMPORTED_MODULE_2__[/* paye_by_taxpayer_ */ "n"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_taxpayer memo-loader code //////////
 
@@ -1348,6 +1348,932 @@ const prsi_rate = (a) => {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* unused harmony export income_tax_sum_proposed$m */
+/* unused harmony export income_tax_sum_proposed_ */
+/* unused harmony export income_tax_proposed$m */
+/* unused harmony export income_tax_proposed_ */
+/* unused harmony export effective_rate_proposed$m */
+/* unused harmony export effective_rate_proposed_ */
+/* unused harmony export paye_sum_proposed$m */
+/* unused harmony export paye_sum_proposed_ */
+/* unused harmony export paye_proposed$m */
+/* unused harmony export paye_proposed_ */
+/* unused harmony export usc_sum_proposed$m */
+/* unused harmony export usc_sum_proposed_ */
+/* unused harmony export usc_proposed$m */
+/* unused harmony export usc_proposed_ */
+/* unused harmony export prsi_sum_proposed$m */
+/* unused harmony export prsi_sum_proposed_ */
+/* unused harmony export prsi_proposed$m */
+/* unused harmony export prsi_proposed_ */
+/* unused harmony export income_tax_by_taxpayer_proposed$m */
+/* unused harmony export income_tax_by_taxpayer_proposed_ */
+/* unused harmony export usc_by_taxpayer_proposed$m */
+/* unused harmony export usc_by_taxpayer_proposed_ */
+/* unused harmony export prsi_by_taxpayer_proposed$m */
+/* unused harmony export prsi_by_taxpayer_proposed_ */
+/* unused harmony export paye_by_taxpayer_proposed$m */
+/* unused harmony export paye_by_taxpayer_proposed_ */
+/* unused harmony export income_tax_by_taxpayer_impact$m */
+/* unused harmony export income_tax_by_taxpayer_impact_ */
+/* unused harmony export usc_by_taxpayer_impact$m */
+/* unused harmony export usc_by_taxpayer_impact_ */
+/* unused harmony export paye_by_taxpayer_impact$m */
+/* unused harmony export paye_by_taxpayer_impact_ */
+/* unused harmony export prsi_by_taxpayer_impact$m */
+/* unused harmony export prsi_by_taxpayer_impact_ */
+/* unused harmony export income_tax_sum_impact$m */
+/* unused harmony export income_tax_sum_impact_ */
+/* unused harmony export income_tax_impact$m */
+/* unused harmony export income_tax_impact_ */
+/* unused harmony export paye_sum_impact$m */
+/* unused harmony export paye_sum_impact_ */
+/* unused harmony export paye_impact$m */
+/* unused harmony export paye_impact_ */
+/* unused harmony export usc_sum_impact$m */
+/* unused harmony export usc_sum_impact_ */
+/* unused harmony export usc_impact$m */
+/* unused harmony export usc_impact_ */
+/* unused harmony export prsi_sum_impact$m */
+/* unused harmony export prsi_sum_impact_ */
+/* unused harmony export prsi_impact$m */
+/* unused harmony export prsi_impact_ */
+/* unused harmony export pension_contribution$m */
+/* unused harmony export pension_contribution_ */
+/* unused harmony export taxpayer_id$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return taxpayer_id; });
+/* unused harmony export taxpayer_table$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return taxpayer_table; });
+/* unused harmony export taxpayer_count$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return taxpayer_count; });
+/* unused harmony export gross_salary$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return gross_salary; });
+/* unused harmony export proportion$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return proportion; });
+/* unused harmony export income_tax_by_taxpayer$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return income_tax_by_taxpayer_; });
+/* unused harmony export paye_by_taxpayer$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return paye_by_taxpayer_; });
+/* unused harmony export usc_by_taxpayer$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return usc_by_taxpayer_; });
+/* unused harmony export prsi_by_taxpayer$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return prsi_by_taxpayer_; });
+/* unused harmony export income_tax_sum$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return income_tax_sum_; });
+/* unused harmony export paye_sum$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return paye_sum_; });
+/* unused harmony export usc_sum$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return usc_sum_; });
+/* unused harmony export prsi_sum$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return prsi_sum_; });
+/* unused harmony export tax_credit$m */
+/* unused harmony export tax_credit_ */
+/* unused harmony export tax_credits$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return tax_credits; });
+/* unused harmony export net_salary$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return net_salary; });
+/* unused harmony export income_tax$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return income_tax_; });
+/* unused harmony export effective_rate$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate_; });
+/* unused harmony export prsi_taxable_salary$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return prsi_taxable_salary; });
+/* unused harmony export prsi$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return prsi_; });
+/* unused harmony export prsi_rate$m */
+/* unused harmony export prsi_rate_ */
+/* unused harmony export usc_table$m */
+/* unused harmony export usc_table_ */
+/* unused harmony export usc_band_id$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "B", function() { return usc_band_id; });
+/* unused harmony export usc_band_end$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return usc_band_end; });
+/* unused harmony export usc_band_start$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "C", function() { return usc_band_start; });
+/* unused harmony export usc_rate$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return usc_rate; });
+/* unused harmony export usc_taxable_salary$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return usc_taxable_salary; });
+/* unused harmony export usc_by_band_id$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return usc_by_band_id; });
+/* unused harmony export usc$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return usc_; });
+/* unused harmony export paye_table$m */
+/* unused harmony export paye_table_ */
+/* unused harmony export paye_band_id$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return paye_band_id; });
+/* unused harmony export paye_band_end$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_band_end; });
+/* unused harmony export paye_band_start$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return paye_band_start; });
+/* unused harmony export paye_rate$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return paye_rate; });
+/* unused harmony export paye_taxable_salary$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return paye_taxable_salary; });
+/* unused harmony export paye_by_band_id$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return paye_by_band_id; });
+/* unused harmony export paye_over_bands$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return paye_over_bands; });
+/* unused harmony export paye$m */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return paye_; });
+/* unused harmony export net_salary_plus_pension_contribution$m */
+/* unused harmony export net_salary_plus_pension_contribution */
+/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
+/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
+/* harmony import */ var _incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
+
+
+//import memoize from 'lru-memoize';
+//import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
+
+ // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+
+
+////////// start income_tax_sum_proposed memo-loader code //////////
+//const income_tax_sum_proposed$m = memoize(999999, isEqual)(income_tax_sum_proposed$);
+const income_tax_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_proposed_"], JSON.stringify);
+const income_tax_sum_proposed_ = (a) => {
+  return income_tax_sum_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_sum_proposed memo-loader code //////////
+
+
+
+////////// start income_tax_proposed memo-loader code //////////
+//const income_tax_proposed$m = memoize(999999, isEqual)(income_tax_proposed$);
+const income_tax_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_proposed_"], JSON.stringify);
+const income_tax_proposed_ = (a) => {
+  return income_tax_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_proposed memo-loader code //////////
+
+
+
+////////// start effective_rate_proposed memo-loader code //////////
+//const effective_rate_proposed$m = memoize(999999, isEqual)(effective_rate_proposed$);
+const effective_rate_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["effective_rate_proposed_"], JSON.stringify);
+const effective_rate_proposed_ = (a) => {
+  return effective_rate_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["effective_rate_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end effective_rate_proposed memo-loader code //////////
+
+
+
+////////// start paye_sum_proposed memo-loader code //////////
+//const paye_sum_proposed$m = memoize(999999, isEqual)(paye_sum_proposed$);
+const paye_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_proposed_"], JSON.stringify);
+const paye_sum_proposed_ = (a) => {
+  return paye_sum_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_sum_proposed memo-loader code //////////
+
+
+
+////////// start paye_proposed memo-loader code //////////
+//const paye_proposed$m = memoize(999999, isEqual)(paye_proposed$);
+const paye_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_proposed_"], JSON.stringify);
+const paye_proposed_ = (a) => {
+  return paye_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_proposed memo-loader code //////////
+
+
+
+////////// start usc_sum_proposed memo-loader code //////////
+//const usc_sum_proposed$m = memoize(999999, isEqual)(usc_sum_proposed$);
+const usc_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_proposed_"], JSON.stringify);
+const usc_sum_proposed_ = (a) => {
+  return usc_sum_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_sum_proposed memo-loader code //////////
+
+
+
+////////// start usc_proposed memo-loader code //////////
+//const usc_proposed$m = memoize(999999, isEqual)(usc_proposed$);
+const usc_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_proposed_"], JSON.stringify);
+const usc_proposed_ = (a) => {
+  return usc_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_proposed memo-loader code //////////
+
+
+
+////////// start prsi_sum_proposed memo-loader code //////////
+//const prsi_sum_proposed$m = memoize(999999, isEqual)(prsi_sum_proposed$);
+const prsi_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_proposed_"], JSON.stringify);
+const prsi_sum_proposed_ = (a) => {
+  return prsi_sum_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_sum_proposed memo-loader code //////////
+
+
+
+////////// start prsi_proposed memo-loader code //////////
+//const prsi_proposed$m = memoize(999999, isEqual)(prsi_proposed$);
+const prsi_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_proposed_"], JSON.stringify);
+const prsi_proposed_ = (a) => {
+  return prsi_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_proposed memo-loader code //////////
+
+
+
+////////// start income_tax_by_taxpayer_proposed memo-loader code //////////
+//const income_tax_by_taxpayer_proposed$m = memoize(999999, isEqual)(income_tax_by_taxpayer_proposed$);
+const income_tax_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_proposed_"], JSON.stringify);
+const income_tax_by_taxpayer_proposed_ = (a) => {
+  return income_tax_by_taxpayer_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_by_taxpayer_proposed memo-loader code //////////
+
+
+
+////////// start usc_by_taxpayer_proposed memo-loader code //////////
+//const usc_by_taxpayer_proposed$m = memoize(999999, isEqual)(usc_by_taxpayer_proposed$);
+const usc_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_proposed_"], JSON.stringify);
+const usc_by_taxpayer_proposed_ = (a) => {
+  return usc_by_taxpayer_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_by_taxpayer_proposed memo-loader code //////////
+
+
+
+////////// start prsi_by_taxpayer_proposed memo-loader code //////////
+//const prsi_by_taxpayer_proposed$m = memoize(999999, isEqual)(prsi_by_taxpayer_proposed$);
+const prsi_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_proposed_"], JSON.stringify);
+const prsi_by_taxpayer_proposed_ = (a) => {
+  return prsi_by_taxpayer_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_by_taxpayer_proposed memo-loader code //////////
+
+
+
+////////// start paye_by_taxpayer_proposed memo-loader code //////////
+//const paye_by_taxpayer_proposed$m = memoize(999999, isEqual)(paye_by_taxpayer_proposed$);
+const paye_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_proposed_"], JSON.stringify);
+const paye_by_taxpayer_proposed_ = (a) => {
+  return paye_by_taxpayer_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_by_taxpayer_proposed memo-loader code //////////
+
+
+
+////////// start income_tax_by_taxpayer_impact memo-loader code //////////
+//const income_tax_by_taxpayer_impact$m = memoize(999999, isEqual)(income_tax_by_taxpayer_impact$);
+const income_tax_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_impact_"], JSON.stringify);
+const income_tax_by_taxpayer_impact_ = (a) => {
+  return income_tax_by_taxpayer_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_by_taxpayer_impact memo-loader code //////////
+
+
+
+////////// start usc_by_taxpayer_impact memo-loader code //////////
+//const usc_by_taxpayer_impact$m = memoize(999999, isEqual)(usc_by_taxpayer_impact$);
+const usc_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_impact_"], JSON.stringify);
+const usc_by_taxpayer_impact_ = (a) => {
+  return usc_by_taxpayer_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_by_taxpayer_impact memo-loader code //////////
+
+
+
+////////// start paye_by_taxpayer_impact memo-loader code //////////
+//const paye_by_taxpayer_impact$m = memoize(999999, isEqual)(paye_by_taxpayer_impact$);
+const paye_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_impact_"], JSON.stringify);
+const paye_by_taxpayer_impact_ = (a) => {
+  return paye_by_taxpayer_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_by_taxpayer_impact memo-loader code //////////
+
+
+
+////////// start prsi_by_taxpayer_impact memo-loader code //////////
+//const prsi_by_taxpayer_impact$m = memoize(999999, isEqual)(prsi_by_taxpayer_impact$);
+const prsi_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_impact_"], JSON.stringify);
+const prsi_by_taxpayer_impact_ = (a) => {
+  return prsi_by_taxpayer_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_by_taxpayer_impact memo-loader code //////////
+
+
+
+////////// start income_tax_sum_impact memo-loader code //////////
+//const income_tax_sum_impact$m = memoize(999999, isEqual)(income_tax_sum_impact$);
+const income_tax_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_impact_"], JSON.stringify);
+const income_tax_sum_impact_ = (a) => {
+  return income_tax_sum_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_sum_impact memo-loader code //////////
+
+
+
+////////// start income_tax_impact memo-loader code //////////
+//const income_tax_impact$m = memoize(999999, isEqual)(income_tax_impact$);
+const income_tax_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_impact_"], JSON.stringify);
+const income_tax_impact_ = (a) => {
+  return income_tax_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_impact memo-loader code //////////
+
+
+
+////////// start paye_sum_impact memo-loader code //////////
+//const paye_sum_impact$m = memoize(999999, isEqual)(paye_sum_impact$);
+const paye_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_impact_"], JSON.stringify);
+const paye_sum_impact_ = (a) => {
+  return paye_sum_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_sum_impact memo-loader code //////////
+
+
+
+////////// start paye_impact memo-loader code //////////
+//const paye_impact$m = memoize(999999, isEqual)(paye_impact$);
+const paye_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_impact_"], JSON.stringify);
+const paye_impact_ = (a) => {
+  return paye_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_impact memo-loader code //////////
+
+
+
+////////// start usc_sum_impact memo-loader code //////////
+//const usc_sum_impact$m = memoize(999999, isEqual)(usc_sum_impact$);
+const usc_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_impact_"], JSON.stringify);
+const usc_sum_impact_ = (a) => {
+  return usc_sum_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_sum_impact memo-loader code //////////
+
+
+
+////////// start usc_impact memo-loader code //////////
+//const usc_impact$m = memoize(999999, isEqual)(usc_impact$);
+const usc_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_impact_"], JSON.stringify);
+const usc_impact_ = (a) => {
+  return usc_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_impact memo-loader code //////////
+
+
+
+////////// start prsi_sum_impact memo-loader code //////////
+//const prsi_sum_impact$m = memoize(999999, isEqual)(prsi_sum_impact$);
+const prsi_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_impact_"], JSON.stringify);
+const prsi_sum_impact_ = (a) => {
+  return prsi_sum_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_sum_impact memo-loader code //////////
+
+
+
+////////// start prsi_impact memo-loader code //////////
+//const prsi_impact$m = memoize(999999, isEqual)(prsi_impact$);
+const prsi_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_impact_"], JSON.stringify);
+const prsi_impact_ = (a) => {
+  return prsi_impact$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_impact_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_impact memo-loader code //////////
+
+
+
+////////// start pension_contribution memo-loader code //////////
+//const pension_contribution$m = memoize(999999, isEqual)(pension_contribution$);
+const pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["pension_contribution_"], JSON.stringify);
+const pension_contribution_ = (a) => {
+  return pension_contribution$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["pension_contribution_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end pension_contribution memo-loader code //////////
+
+
+
+////////// start taxpayer_id memo-loader code //////////
+//const taxpayer_id$m = memoize(999999, isEqual)(taxpayer_id$);
+const taxpayer_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_id_ */ "V"], JSON.stringify);
+const taxpayer_id = (a) => {
+  return taxpayer_id$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_id_ */ "V"])({ taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end taxpayer_id memo-loader code //////////
+
+
+
+////////// start taxpayer_table memo-loader code //////////
+//const taxpayer_table$m = memoize(999999, isEqual)(taxpayer_table$);
+const taxpayer_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_table_ */ "W"], JSON.stringify);
+const taxpayer_table = (a) => {
+  return taxpayer_table$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_table_ */ "W"])({ taxpayer_table_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end taxpayer_table memo-loader code //////////
+
+
+
+////////// start taxpayer_count memo-loader code //////////
+//const taxpayer_count$m = memoize(999999, isEqual)(taxpayer_count$);
+const taxpayer_count$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_count_ */ "U"], JSON.stringify);
+const taxpayer_count = (a) => {
+  return taxpayer_count$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_count_ */ "U"])({ taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end taxpayer_count memo-loader code //////////
+
+
+
+////////// start gross_salary memo-loader code //////////
+//const gross_salary$m = memoize(999999, isEqual)(gross_salary$);
+const gross_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "c"], JSON.stringify);
+const gross_salary = (a) => {
+  return gross_salary$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "c"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end gross_salary memo-loader code //////////
+
+
+
+////////// start proportion memo-loader code //////////
+//const proportion$m = memoize(999999, isEqual)(proportion$);
+const proportion$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* proportion_ */ "G"], JSON.stringify);
+const proportion = (a) => {
+  return proportion$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* proportion_ */ "G"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end proportion memo-loader code //////////
+
+
+
+////////// start income_tax_by_taxpayer memo-loader code //////////
+//const income_tax_by_taxpayer$m = memoize(999999, isEqual)(income_tax_by_taxpayer$);
+const income_tax_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_by_taxpayer_ */ "e"], JSON.stringify);
+const income_tax_by_taxpayer_ = (a) => {
+  return income_tax_by_taxpayer$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_by_taxpayer_ */ "e"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_by_taxpayer memo-loader code //////////
+
+
+
+////////// start paye_by_taxpayer memo-loader code //////////
+//const paye_by_taxpayer$m = memoize(999999, isEqual)(paye_by_taxpayer$);
+const paye_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_taxpayer_ */ "t"], JSON.stringify);
+const paye_by_taxpayer_ = (a) => {
+  return paye_by_taxpayer$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_taxpayer_ */ "t"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_by_taxpayer memo-loader code //////////
+
+
+
+////////// start usc_by_taxpayer memo-loader code //////////
+//const usc_by_taxpayer$m = memoize(999999, isEqual)(usc_by_taxpayer$);
+const usc_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_taxpayer_ */ "cb"], JSON.stringify);
+const usc_by_taxpayer_ = (a) => {
+  return usc_by_taxpayer$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_taxpayer_ */ "cb"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_by_taxpayer memo-loader code //////////
+
+
+
+////////// start prsi_by_taxpayer memo-loader code //////////
+//const prsi_by_taxpayer$m = memoize(999999, isEqual)(prsi_by_taxpayer$);
+const prsi_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_by_taxpayer_ */ "I"], JSON.stringify);
+const prsi_by_taxpayer_ = (a) => {
+  return prsi_by_taxpayer$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_by_taxpayer_ */ "I"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_by_taxpayer memo-loader code //////////
+
+
+
+////////// start income_tax_sum memo-loader code //////////
+//const income_tax_sum$m = memoize(999999, isEqual)(income_tax_sum$);
+const income_tax_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_sum_ */ "j"], JSON.stringify);
+const income_tax_sum_ = (a) => {
+  return income_tax_sum$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_sum_ */ "j"])({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax_sum memo-loader code //////////
+
+
+
+////////// start paye_sum memo-loader code //////////
+//const paye_sum$m = memoize(999999, isEqual)(paye_sum$);
+const paye_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_sum_ */ "A"], JSON.stringify);
+const paye_sum_ = (a) => {
+  return paye_sum$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_sum_ */ "A"])({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_sum memo-loader code //////////
+
+
+
+////////// start usc_sum memo-loader code //////////
+//const usc_sum$m = memoize(999999, isEqual)(usc_sum$);
+const usc_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_sum_ */ "ib"], JSON.stringify);
+const usc_sum_ = (a) => {
+  return usc_sum$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_sum_ */ "ib"])({ taxpayer_table_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_sum memo-loader code //////////
+
+
+
+////////// start prsi_sum memo-loader code //////////
+//const prsi_sum$m = memoize(999999, isEqual)(prsi_sum$);
+const prsi_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_sum_ */ "O"], JSON.stringify);
+const prsi_sum_ = (a) => {
+  return prsi_sum$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_sum_ */ "O"])({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_sum memo-loader code //////////
+
+
+
+////////// start tax_credit memo-loader code //////////
+//const tax_credit$m = memoize(999999, isEqual)(tax_credit$);
+const tax_credit$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credit_ */ "S"], JSON.stringify);
+const tax_credit_ = (a) => {
+  return tax_credit$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credit_ */ "S"])({ tax_credit_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credit memo-loader code //////////
+
+
+
+////////// start tax_credits memo-loader code //////////
+//const tax_credits$m = memoize(999999, isEqual)(tax_credits$);
+const tax_credits$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "T"], JSON.stringify);
+const tax_credits = (a) => {
+  return tax_credits$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "T"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credits memo-loader code //////////
+
+
+
+////////// start net_salary memo-loader code //////////
+//const net_salary$m = memoize(999999, isEqual)(net_salary$);
+const net_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["net_salary_"], JSON.stringify);
+const net_salary = (a) => {
+  return net_salary$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["net_salary_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end net_salary memo-loader code //////////
+
+
+
+////////// start income_tax memo-loader code //////////
+//const income_tax$m = memoize(999999, isEqual)(income_tax$);
+const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "d"], JSON.stringify);
+const income_tax_ = (a) => {
+  return income_tax$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "d"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax memo-loader code //////////
+
+
+
+////////// start effective_rate memo-loader code //////////
+//const effective_rate$m = memoize(999999, isEqual)(effective_rate$);
+const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "a"], JSON.stringify);
+const effective_rate_ = (a) => {
+  return effective_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "a"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end effective_rate memo-loader code //////////
+
+
+
+////////// start prsi_taxable_salary memo-loader code //////////
+//const prsi_taxable_salary$m = memoize(999999, isEqual)(prsi_taxable_salary$);
+const prsi_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_taxable_salary_"], JSON.stringify);
+const prsi_taxable_salary = (a) => {
+  return prsi_taxable_salary$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_taxable_salary_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_taxable_salary memo-loader code //////////
+
+
+
+////////// start prsi memo-loader code //////////
+//const prsi$m = memoize(999999, isEqual)(prsi$);
+const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "H"], JSON.stringify);
+const prsi_ = (a) => {
+  return prsi$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "H"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi memo-loader code //////////
+
+
+
+////////// start prsi_rate memo-loader code //////////
+//const prsi_rate$m = memoize(999999, isEqual)(prsi_rate$);
+const prsi_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_rate_"], JSON.stringify);
+const prsi_rate_ = (a) => {
+  return prsi_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_rate_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_rate memo-loader code //////////
+
+
+
+////////// start usc_table memo-loader code //////////
+//const usc_table$m = memoize(999999, isEqual)(usc_table$);
+const usc_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_table_"], JSON.stringify);
+const usc_table_ = (a) => {
+  return usc_table$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_table_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_table memo-loader code //////////
+
+
+
+////////// start usc_band_id memo-loader code //////////
+//const usc_band_id$m = memoize(999999, isEqual)(usc_band_id$);
+const usc_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_id_"], JSON.stringify);
+const usc_band_id = (a) => {
+  return usc_band_id$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_id_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_band_id memo-loader code //////////
+
+
+
+////////// start usc_band_end memo-loader code //////////
+//const usc_band_end$m = memoize(999999, isEqual)(usc_band_end$);
+const usc_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_end_"], JSON.stringify);
+const usc_band_end = (a) => {
+  return usc_band_end$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_end_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_band_end memo-loader code //////////
+
+
+
+////////// start usc_band_start memo-loader code //////////
+//const usc_band_start$m = memoize(999999, isEqual)(usc_band_start$);
+const usc_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_start_"], JSON.stringify);
+const usc_band_start = (a) => {
+  return usc_band_start$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_band_start_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_band_start memo-loader code //////////
+
+
+
+////////// start usc_rate memo-loader code //////////
+//const usc_rate$m = memoize(999999, isEqual)(usc_rate$);
+const usc_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_rate_"], JSON.stringify);
+const usc_rate = (a) => {
+  return usc_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_rate_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_rate memo-loader code //////////
+
+
+
+////////// start usc_taxable_salary memo-loader code //////////
+//const usc_taxable_salary$m = memoize(999999, isEqual)(usc_taxable_salary$);
+const usc_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_taxable_salary_"], JSON.stringify);
+const usc_taxable_salary = (a) => {
+  return usc_taxable_salary$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_taxable_salary_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_taxable_salary memo-loader code //////////
+
+
+
+////////// start usc_by_band_id memo-loader code //////////
+//const usc_by_band_id$m = memoize(999999, isEqual)(usc_by_band_id$);
+const usc_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_band_id_"], JSON.stringify);
+const usc_by_band_id = (a) => {
+  return usc_by_band_id$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_band_id_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_by_band_id memo-loader code //////////
+
+
+
+////////// start usc memo-loader code //////////
+//const usc$m = memoize(999999, isEqual)(usc$);
+const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "X"], JSON.stringify);
+const usc_ = (a) => {
+  return usc$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "X"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc memo-loader code //////////
+
+
+
+////////// start paye_table memo-loader code //////////
+//const paye_table$m = memoize(999999, isEqual)(paye_table$);
+const paye_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_table_"], JSON.stringify);
+const paye_table_ = (a) => {
+  return paye_table$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_table_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_table memo-loader code //////////
+
+
+
+////////// start paye_band_id memo-loader code //////////
+//const paye_band_id$m = memoize(999999, isEqual)(paye_band_id$);
+const paye_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_id_"], JSON.stringify);
+const paye_band_id = (a) => {
+  return paye_band_id$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_id_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_band_id memo-loader code //////////
+
+
+
+////////// start paye_band_end memo-loader code //////////
+//const paye_band_end$m = memoize(999999, isEqual)(paye_band_end$);
+const paye_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_end_"], JSON.stringify);
+const paye_band_end = (a) => {
+  return paye_band_end$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_end_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_band_end memo-loader code //////////
+
+
+
+////////// start paye_band_start memo-loader code //////////
+//const paye_band_start$m = memoize(999999, isEqual)(paye_band_start$);
+const paye_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_start_"], JSON.stringify);
+const paye_band_start = (a) => {
+  return paye_band_start$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_band_start_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_band_start memo-loader code //////////
+
+
+
+////////// start paye_rate memo-loader code //////////
+//const paye_rate$m = memoize(999999, isEqual)(paye_rate$);
+const paye_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_rate_"], JSON.stringify);
+const paye_rate = (a) => {
+  return paye_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_rate_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_rate memo-loader code //////////
+
+
+
+////////// start paye_taxable_salary memo-loader code //////////
+//const paye_taxable_salary$m = memoize(999999, isEqual)(paye_taxable_salary$);
+const paye_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_taxable_salary_"], JSON.stringify);
+const paye_taxable_salary = (a) => {
+  return paye_taxable_salary$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_taxable_salary_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_taxable_salary memo-loader code //////////
+
+
+
+////////// start paye_by_band_id memo-loader code //////////
+//const paye_by_band_id$m = memoize(999999, isEqual)(paye_by_band_id$);
+const paye_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_band_id_"], JSON.stringify);
+const paye_by_band_id = (a) => {
+  return paye_by_band_id$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_band_id_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_by_band_id memo-loader code //////////
+
+
+
+////////// start paye_over_bands memo-loader code //////////
+//const paye_over_bands$m = memoize(999999, isEqual)(paye_over_bands$);
+const paye_over_bands$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_over_bands_"], JSON.stringify);
+const paye_over_bands = (a) => {
+  return paye_over_bands$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_over_bands_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_over_bands memo-loader code //////////
+
+
+
+////////// start paye memo-loader code //////////
+//const paye$m = memoize(999999, isEqual)(paye$);
+const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "o"], JSON.stringify);
+const paye_ = (a) => {
+  return paye$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "o"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye memo-loader code //////////
+
+
+
+////////// start net_salary_plus_pension_contribution memo-loader code //////////
+//const net_salary_plus_pension_contribution$m = memoize(999999, isEqual)(net_salary_plus_pension_contribution$);
+const net_salary_plus_pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["net_salary_plus_pension_contribution_"], JSON.stringify);
+const net_salary_plus_pension_contribution = (a) => {
+  return net_salary_plus_pension_contribution$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["net_salary_plus_pension_contribution_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end net_salary_plus_pension_contribution memo-loader code //////////
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return gross_salary_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "V", function() { return tax_credits_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return pension_contribution_; });
@@ -1375,158 +2301,8 @@ const prsi_rate = (a) => {
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return paye_over_bands_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return paye_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return net_salary_plus_pension_contribution_; });
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
-/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
-/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2);
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(0);
- // heavily simplified incometax calculation for Irish incometax
-// set to 2022 parameters, single person. Many limitations
-// work in progress. See README.md
-
-// inputs:
-const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
-const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
-const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
-
-// functions:
-const net_salary_ = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_3__["pension_contribution"])({}) - Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in });
-
-const income_tax_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) + Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* prsi */ "i"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) + Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc */ "o"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in });
-
-const effective_rate_ = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) => 1 - Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "c"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) / Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
-
-const prsi_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
-
-const prsi_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* prsi_taxable_salary */ "m"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* prsi_rate */ "k"])({ prsi_rate_in }) * (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
-
-const prsi_rate_ = ({}) => 0.04;
-
-// USC, should be mostly abstracted to a table loader
-// issues: #11 #76
-const usc_table_ = ({}) => [
-{ band_id: 1, band_co: 12012, rate: 0.005 },
-{ band_id: 2, band_co: 21295, rate: 0.02 },
-{
-  band_id: 3,
-  band_co: 70144,
-  rate: 0.045
-},
-{ band_id: 4, band_co: 0, rate: 0.08 }];
-
-
-const usc_band_id_ = ({ usc_band_id_in }) => usc_band_id_in;
-
-const usc_band_end_ = ({ usc_band_id_in, usc_table_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "p"])({ usc_band_id_in }) == Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc_table */ "r"])({ usc_table_in }).length) return 999999999;
-  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc_table */ "r"])({ usc_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "p"])({ usc_band_id_in }) - 1].band_co;
-};
-
-const usc_band_start_ = ({ usc_band_id_in, usc_table_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "p"])({ usc_band_id_in }) == 1) return 0;
-  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc_table */ "r"])({ usc_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "p"])({ usc_band_id_in }) - 2].band_co;
-};
-
-const usc_rate_ = ({ usc_table_in, usc_band_id_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc_table */ "r"])({ usc_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "p"])({ usc_band_id_in }) - 1].rate;
-
-const usc_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
-
-const usc_by_band_id_ = ({ usc_table_in, usc_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_rate */ "s"])({ usc_table_in, usc_band_id_in }) *
-Math.min(
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_end */ "o"])({ usc_band_id_in, usc_table_in }) - Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "q"])({ usc_band_id_in, usc_table_in }),
-Math.max(Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_taxable_salary */ "t"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "q"])({ usc_band_id_in, usc_table_in }), 0));
-
-
-const usc_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) =>
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* usc_table */ "r"])({ usc_table_in }).reduce(
-(a, v) => a + Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* usc_by_band_id */ "r"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, usc_band_id_in: v.band_id }),
-0) * (
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
-
-// PAYE, "
-const paye_table_ = ({}) => [
-{ band_id: 1, band_co: 36800, rate: 0.2 },
-{ band_id: 2, band_co: 100000, rate: 0.4 },
-{
-  band_id: 3,
-  band_co: 0,
-  rate: 0.4
-}];
-
-
-const paye_band_id_ = ({ paye_band_id_in }) => paye_band_id_in;
-
-const paye_band_end_ = ({ paye_band_id_in, paye_table_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) == Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye_table */ "h"])({ paye_table_in }).length) return 999999999;
-  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye_table */ "h"])({ paye_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 1].band_co;
-};
-
-const paye_band_start_ = ({ paye_band_id_in, paye_table_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) == 1) return 0;
-  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye_table */ "h"])({ paye_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 2].band_co;
-};
-
-const paye_rate_ = ({ paye_table_in, paye_band_id_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye_table */ "h"])({ paye_table_in })[Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 1].rate;
-
-const paye_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Math.max(0, Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_3__["pension_contribution"])({}));
-
-const paye_by_band_id_ = ({ paye_table_in, paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_rate */ "j"])({ paye_table_in, paye_band_id_in }) *
-Math.min(
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_end */ "e"])({ paye_band_id_in, paye_table_in }) - Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "g"])({ paye_band_id_in, paye_table_in }),
-Math.max(Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_taxable_salary */ "k"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "g"])({ paye_band_id_in, paye_table_in }), 0));
-
-
-const paye_over_bands_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) =>
-Math.max(
-0,
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_2__[/* paye_table */ "h"])({ paye_table_in }).reduce(
-(a, v) => a + Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_by_band_id */ "h"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
-0)
-//- tax_credit() // input not working here => placed outside. Issue #95
-);
-
-const paye_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) => Math.max(Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* paye_over_bands */ "i"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in }) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_1__[/* tax_credits */ "m"])({ tax_credit_proposed_in }), 0);
-
-const net_salary_plus_pension_contribution_ = ({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "c"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) + Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_3__["pension_contribution"])({});
-
-/***/ }),
-/* 4 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return gross_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "T", function() { return tax_credits_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return pension_contribution_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return net_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return income_tax_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "R", function() { return prsi_taxable_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return prsi_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "N", function() { return prsi_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lb", function() { return usc_table_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Z", function() { return usc_band_id_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Y", function() { return usc_band_end_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ab", function() { return usc_band_start_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "hb", function() { return usc_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mb", function() { return usc_taxable_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bb", function() { return usc_by_band_id_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "X", function() { return usc_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return paye_table_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return paye_band_id_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return paye_band_end_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return paye_band_start_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return paye_rate_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "E", function() { return paye_taxable_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return paye_by_band_id_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return paye_over_bands_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return paye_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return net_salary_plus_pension_contribution_; });
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
-/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
  // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
@@ -1538,16 +2314,16 @@ const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
 const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-const net_salary_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}) - Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+const net_salary_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}) - Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in });
 
-const income_tax_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "f"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "j"])({ taxpayer_table_in, taxpayer_id_in }) + Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "r"])({ taxpayer_table_in, taxpayer_id_in });
+const income_tax_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "e"])({ tax_credit_proposed_in }) + Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "i"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) + Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "o"])({ usc_table_in });
 
-const effective_rate_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => 1 - Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "c"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) / Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const effective_rate_ = ({ taxpayer_table_in, taxpayer_id_in }) => 1 - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "f"])({}) / Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
-const prsi_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
+const prsi_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
-const prsi_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* prsi_taxable_salary */ "o"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* prsi_rate */ "n"])({}) * (Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
+const prsi_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* prsi_taxable_salary */ "u"])({}) * Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi_rate */ "k"])({ prsi_rate_in }) * (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
 const prsi_rate_ = ({}) => 0.04;
 
@@ -1566,32 +2342,32 @@ const usc_table_ = ({}) => [
 
 const usc_band_id_ = ({ usc_band_id_in }) => usc_band_id_in;
 
-const usc_band_end_ = ({ usc_band_id_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "r"])({ usc_band_id_in }) == Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "v"])({}).length) return 999999999;
-  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "v"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "r"])({ usc_band_id_in }) - 1].band_co;
+const usc_band_end_ = ({ usc_table_in }) => {
+  if (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "B"])({}) == Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "r"])({ usc_table_in }).length) return 999999999;
+  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "r"])({ usc_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "B"])({}) - 1].band_co;
 };
 
-const usc_band_start_ = ({ usc_band_id_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "r"])({ usc_band_id_in }) == 1) return 0;
-  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "v"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "r"])({ usc_band_id_in }) - 2].band_co;
+const usc_band_start_ = ({ usc_table_in }) => {
+  if (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "B"])({}) == 1) return 0;
+  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "r"])({ usc_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "B"])({}) - 2].band_co;
 };
 
-const usc_rate_ = ({ usc_band_id_in }) => Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "v"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "r"])({ usc_band_id_in }) - 1].rate;
+const usc_rate_ = ({ usc_table_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "r"])({ usc_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_id */ "B"])({}) - 1].rate;
 
-const usc_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
+const usc_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
 
-const usc_by_band_id_ = ({ usc_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_rate */ "u"])({ usc_band_id_in }) *
+const usc_by_band_id_ = ({}) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_rate */ "F"])({}) *
 Math.min(
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_end */ "q"])({ usc_band_id_in }) - Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "s"])({ usc_band_id_in }),
-Math.max(Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_taxable_salary */ "w"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "s"])({ usc_band_id_in }), 0));
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_end */ "A"])({}) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "C"])({}),
+Math.max(Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_taxable_salary */ "H"])({}) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_band_start */ "C"])({}), 0));
 
 
-const usc_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "v"])({}).reduce(
-(a, v) => a + Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_by_band_id */ "t"])({ taxpayer_table_in, taxpayer_id_in, usc_band_id_in: v.band_id }),
+const usc_ = ({ usc_table_in }) =>
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc_table */ "r"])({ usc_table_in }).reduce(
+(a, v) => a + Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* usc_by_band_id */ "D"])({ usc_band_id_in: v.band_id }),
 0) * (
-Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
 
 // PAYE, "
 const paye_table_ = ({}) => [
@@ -1606,44 +2382,138 @@ const paye_table_ = ({}) => [
 
 const paye_band_id_ = ({ paye_band_id_in }) => paye_band_id_in;
 
-const paye_band_end_ = ({ paye_band_id_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) == Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "k"])({}).length) return 999999999;
-  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "k"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 1].band_co;
+const paye_band_end_ = ({ paye_table_in }) => {
+  if (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "i"])({}) == Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).length) return 999999999;
+  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "i"])({}) - 1].band_co;
 };
 
-const paye_band_start_ = ({ paye_band_id_in }) => {
-  if (Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) == 1) return 0;
-  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "k"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 2].band_co;
+const paye_band_start_ = ({ paye_table_in }) => {
+  if (Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "i"])({}) == 1) return 0;
+  return Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "i"])({}) - 2].band_co;
 };
 
-const paye_rate_ = ({ paye_band_id_in }) => Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "k"])({})[Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "f"])({ paye_band_id_in }) - 1].rate;
+const paye_rate_ = ({ paye_table_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_id */ "i"])({}) - 1].rate;
 
 const paye_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
-Math.max(0, Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}));
+Math.max(0, Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}));
 
-const paye_by_band_id_ = ({ paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_rate */ "j"])({ paye_band_id_in }) *
+const paye_by_band_id_ = ({}) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_rate */ "n"])({}) *
 Math.min(
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_end */ "e"])({ paye_band_id_in }) - Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "g"])({ paye_band_id_in }),
-Math.max(Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_taxable_salary */ "l"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "g"])({ paye_band_id_in }), 0));
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_end */ "h"])({}) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "j"])({}),
+Math.max(Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_taxable_salary */ "p"])({}) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_band_start */ "j"])({}), 0));
 
 
-const paye_over_bands_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
+const paye_over_bands_ = ({ paye_table_in }) =>
 Math.max(
 0,
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "k"])({}).reduce(
-(a, v) => a + Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_by_band_id */ "h"])({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye_table */ "h"])({ paye_table_in }).reduce(
+(a, v) => a + Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_by_band_id */ "k"])({ paye_band_id_in: v.band_id }),
 0)
 //- tax_credit() // input not working here => placed outside. Issue #95
 );
 
-const paye_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_over_bands */ "i"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* tax_credits */ "n"])({ tax_credit_in }), 0);
+const paye_ = ({ tax_credit_proposed_in }) => Math.max(Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* paye_over_bands */ "m"])({}) - Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* tax_credits */ "v"])({ tax_credit_proposed_in }), 0);
 
-const net_salary_plus_pension_contribution_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
-Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "c"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({});
+const net_salary_plus_pension_contribution_ = ({}) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* net_salary */ "f"])({}) + Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({});
 
 /***/ }),
 /* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "V", function() { return taxpayer_id_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "W", function() { return taxpayer_table_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "U", function() { return taxpayer_count_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return gross_salary_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return proportion_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return income_tax_by_taxpayer_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return paye_by_taxpayer_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cb", function() { return usc_by_taxpayer_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "I", function() { return prsi_by_taxpayer_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return income_tax_sum_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return paye_sum_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ib", function() { return usc_sum_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "O", function() { return prsi_sum_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "S", function() { return tax_credit_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "T", function() { return tax_credits_; });
+/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(42);
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["b"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["a"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "X", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["e"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "o", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["c"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "H", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["d"]; });
+
+
+
+
+const taxpayer_id_ = ({ taxpayer_id_in }) => taxpayer_id_in;
+const taxpayer_table_ = ({ taxpayer_table_in }) => taxpayer_table_in;
+const taxpayer_count_ = ({ taxpayer_count_in }) => taxpayer_count_in;
+
+const gross_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_id */ "x"])({ taxpayer_id_in })].gross_salary;
+const proportion_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_id */ "x"])({ taxpayer_id_in })].proportion;
+
+const income_tax_by_taxpayer_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) =>
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in });
+const paye_by_taxpayer_ = ({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "e"])({ tax_credit_proposed_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in });
+const usc_by_taxpayer_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "o"])({ usc_table_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in });
+const prsi_by_taxpayer_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "i"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in });
+
+const income_tax_sum_ = ({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in }).reduce(
+(acc, val) =>
+acc +
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * // this should be abstracted e.g. income_tax = income_tax * proportion * taxpayer_calc in sep. scaling model, for now creating _by_taxpayer variables
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in }),
+0);
+
+
+const paye_sum_ = ({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in }).reduce(
+(acc, val) =>
+acc +
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "e"])({ tax_credit_proposed_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in }),
+0);
+
+
+const usc_sum_ = ({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in }).reduce(
+(acc, val) =>
+acc +
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "o"])({ usc_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in }),
+0);
+
+
+const prsi_sum_ = ({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) =>
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "y"])({ taxpayer_table_in }).reduce(
+(acc, val) =>
+acc +
+Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "i"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "q"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
+Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "w"])({ taxpayer_count_in }),
+0);
+
+
+// test mitigate application refactor
+const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
+const tax_credits_ = ({ tax_credit_proposed_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "m"])({ tax_credit_proposed_in });
+
+/***/ }),
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1741,7 +2611,7 @@ Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPOR
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return tax_credits; });
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1);
-/* harmony import */ var _incometax_set_cul_js_memoed_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7);
+/* harmony import */ var _incometax_set_cul_js_memoed_cul_scope_id_4_cul_parent_scope_id_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8);
 
 
 //import memoize from 'lru-memoize';
@@ -2302,101 +3172,156 @@ const tax_credits = (a) => {
 ////////// end tax_credits memo-loader code //////////
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "O", function() { return taxpayer_id_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "P", function() { return taxpayer_table_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "N", function() { return taxpayer_count_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return gross_salary_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "y", function() { return proportion_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return income_tax_by_taxpayer_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return paye_by_taxpayer_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "R", function() { return usc_by_taxpayer_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "A", function() { return prsi_by_taxpayer_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return income_tax_sum_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return paye_sum_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "W", function() { return usc_sum_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return prsi_sum_; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "J", function() { return tax_credit_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "L", function() { return tax_credits_; });
-/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
-/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "x", function() { return pension_contribution_; });
+/* unused harmony export net_salary */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return income_tax_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return effective_rate_; });
+/* unused harmony export prsi_taxable_salary */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return prsi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "F", function() { return prsi_rate_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Z", function() { return usc_table_; });
+/* unused harmony export usc_band_id */
+/* unused harmony export usc_band_end */
+/* unused harmony export usc_band_start */
+/* unused harmony export usc_rate */
+/* unused harmony export usc_taxable_salary */
+/* unused harmony export usc_by_band_id */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return usc_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return paye_table_; });
+/* unused harmony export paye_band_id */
+/* unused harmony export paye_band_end */
+/* unused harmony export paye_band_start */
+/* unused harmony export paye_rate */
+/* unused harmony export paye_taxable_salary */
+/* unused harmony export paye_by_band_id */
+/* unused harmony export paye_over_bands */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return paye_; });
+/* unused harmony export net_salary_plus_pension_contribution */
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["b"]; });
+ // heavily simplified incometax calculation for Irish incometax
+// set to 2022 parameters, single person. Many limitations
+// work in progress. See README.md
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["a"]; });
+// inputs:
+const gross_salary_ = ({ gross_salary_in }) => gross_salary_in;
+const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
+const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["n"]; });
+// functions:
+const net_salary = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}) - Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "c"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "n", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["d"]; });
+const income_tax_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "f"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "j"])({ taxpayer_table_in, taxpayer_id_in }) + Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "r"])({ taxpayer_table_in, taxpayer_id_in });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "z", function() { return _simple_incometax_cul_cul_scope_id_9_cul_parent_scope_id_8__WEBPACK_IMPORTED_MODULE_3__["l"]; });
+const effective_rate_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) / Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
+const prsi_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in });
 
+const prsi_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
+prsi_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) * Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* prsi_rate */ "f"])({}) * (Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
 
+const prsi_rate_ = ({}) => 0.04;
 
-const taxpayer_id_ = ({ taxpayer_id_in }) => taxpayer_id_in;
-const taxpayer_table_ = ({ taxpayer_table_in }) => taxpayer_table_in;
-const taxpayer_count_ = ({ taxpayer_count_in }) => taxpayer_count_in;
-
-const gross_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_id */ "o"])({ taxpayer_id_in })].gross_salary;
-const proportion_ = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in })[Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_id */ "o"])({ taxpayer_id_in })].proportion;
-
-const income_tax_by_taxpayer_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) =>
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in });
-const paye_by_taxpayer_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in });
-const usc_by_taxpayer_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "o"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in });
-const prsi_by_taxpayer_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "i"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in }) * Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in });
-
-const income_tax_sum_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) =>
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* income_tax */ "b"])({ paye_table_in, taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) * // this should be abstracted e.g. income_tax = income_tax * proportion * taxpayer_calc in sep. scaling model, for now creating _by_taxpayer variables
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in }),
-0);
-
-
-const paye_sum_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }) =>
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* paye */ "e"])({ paye_table_in, taxpayer_table_in, tax_credit_proposed_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in }),
-0);
+// USC, should be mostly abstracted to a table loader
+// issues: #11 #76
+const usc_table_ = ({}) => [
+{ band_id: 1, band_co: 12012, rate: 0.005 },
+{ band_id: 2, band_co: 21295, rate: 0.02 },
+{
+  band_id: 3,
+  band_co: 70144,
+  rate: 0.045
+},
+{ band_id: 4, band_co: 0, rate: 0.08 }];
 
 
-const usc_sum_ = ({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) =>
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* usc */ "o"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in }),
-0);
+const usc_band_id = ({ usc_band_id_in }) => usc_band_id_in;
+
+const usc_band_end = ({ usc_band_id_in }) => {
+  if (usc_band_id({ usc_band_id_in }) == Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "h"])({}).length) return 999999999;
+  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "h"])({})[usc_band_id({ usc_band_id_in }) - 1].band_co;
+};
+
+const usc_band_start = ({ usc_band_id_in }) => {
+  if (usc_band_id({ usc_band_id_in }) == 1) return 0;
+  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "h"])({})[usc_band_id({ usc_band_id_in }) - 2].band_co;
+};
+
+const usc_rate = ({ usc_band_id_in }) => Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "h"])({})[usc_band_id({ usc_band_id_in }) - 1].rate;
+
+const usc_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
+
+const usc_by_band_id = ({ usc_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
+usc_rate({ usc_band_id_in }) *
+Math.min(
+usc_band_end({ usc_band_id_in }) - usc_band_start({ usc_band_id_in }),
+Math.max(usc_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) - usc_band_start({ usc_band_id_in }), 0));
 
 
-const prsi_sum_ = ({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) =>
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_table */ "p"])({ taxpayer_table_in }).reduce(
-(acc, val) =>
-acc +
-Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* prsi */ "i"])({ taxpayer_table_in, prsi_rate_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* proportion */ "i"])({ taxpayer_table_in, taxpayer_id_in: val.taxpayer_id }) *
-Object(_incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__[/* taxpayer_count */ "n"])({ taxpayer_count_in }),
-0);
+const usc_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
+Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* usc_table */ "h"])({}).reduce(
+(a, v) => a + usc_by_band_id({ taxpayer_table_in, taxpayer_id_in, usc_band_id_in: v.band_id }),
+0) * (
+Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) > 13000 ? 1 : 0);
+
+// PAYE, "
+const paye_table_ = ({}) => [
+{ band_id: 1, band_co: 36800, rate: 0.2 },
+{ band_id: 2, band_co: 100000, rate: 0.4 },
+{
+  band_id: 3,
+  band_co: 0,
+  rate: 0.4
+}];
 
 
-// test mitigate application refactor
-const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
-const tax_credits_ = ({ tax_credit_proposed_in }) => Object(_proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* tax_credit */ "m"])({ tax_credit_proposed_in });
+const paye_band_id = ({ paye_band_id_in }) => paye_band_id_in;
+
+const paye_band_end = ({ paye_band_id_in }) => {
+  if (paye_band_id({ paye_band_id_in }) == Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "d"])({}).length) return 999999999;
+  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "d"])({})[paye_band_id({ paye_band_id_in }) - 1].band_co;
+};
+
+const paye_band_start = ({ paye_band_id_in }) => {
+  if (paye_band_id({ paye_band_id_in }) == 1) return 0;
+  return Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "d"])({})[paye_band_id({ paye_band_id_in }) - 2].band_co;
+};
+
+const paye_rate = ({ paye_band_id_in }) => Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "d"])({})[paye_band_id({ paye_band_id_in }) - 1].rate;
+
+const paye_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) =>
+Math.max(0, Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* gross_salary */ "b"])({ taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({}));
+
+const paye_by_band_id = ({ paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
+paye_rate({ paye_band_id_in }) *
+Math.min(
+paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
+Math.max(paye_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in }), 0));
+
+
+const paye_over_bands = ({ taxpayer_table_in, taxpayer_id_in }) =>
+Math.max(
+0,
+Object(_simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_0__[/* paye_table */ "d"])({}).reduce(
+(a, v) => a + paye_by_band_id({ taxpayer_table_in, taxpayer_id_in, paye_band_id_in: v.band_id }),
+0)
+//- tax_credit() // input not working here => placed outside. Issue #95
+);
+
+const paye_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(paye_over_bands({ taxpayer_table_in, taxpayer_id_in }) - Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__[/* tax_credits */ "n"])({ tax_credit_in }), 0);
+
+const net_salary_plus_pension_contribution = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
+net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_2__["pension_contribution"])({});
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2415,18 +3340,18 @@ const tax_credits_ = ({ tax_credit_proposed_in }) => Object(_proposed_cul_cul_sc
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return prsi_sum_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "G", function() { return tax_credit_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "H", function() { return tax_credits_; });
-/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(20);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["b"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "L", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["p"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "L", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["g"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "m", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["d"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "m", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["c"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "x", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["m"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "x", function() { return _simple_incometax_cul_cul_scope_id_6_cul_parent_scope_id_4__WEBPACK_IMPORTED_MODULE_2__["e"]; });
 
 
 
@@ -2489,7 +3414,7 @@ const tax_credit_ = ({ tax_credit_in }) => tax_credit_in;
 const tax_credits_ = ({ tax_credit_in }) => Object(_incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__[/* tax_credit */ "m"])({ tax_credit_in });
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2502,32 +3427,32 @@ const tax_credits_ = ({ tax_credit_in }) => Object(_incometax_set_cul_cul_scope_
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "D", function() { return prsi_rate_; });
 /* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(10);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "j", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["e"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "d", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["c"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "b", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "K", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["q"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "K", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["z"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "m", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["f"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "m", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["g"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "x", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["j"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "x", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["r"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["s"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Q", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["G"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "E", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["l"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "E", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["t"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "s", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["h"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "s", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["o"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "e", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["d"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "L", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["r"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "L", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["E"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "y", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["k"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "y", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["s"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "n", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["g"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "n", function() { return _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_2__["l"]; });
 
 
 
@@ -2549,7 +3474,7 @@ const paye_table_ = ({ paye_table_in }) => paye_table_in;
 const prsi_rate_ = ({ prsi_rate_in }) => prsi_rate_in;
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2567,7 +3492,7 @@ const prsi_rate_ = ({ prsi_rate_in }) => prsi_rate_in;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "z", function() { return prsi_impact_; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return pension_contribution_; });
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(0);
-/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "i", function() { return _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__["e"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__["c"]; });
@@ -2638,39 +3563,299 @@ const prsi_rate_ = ({ prsi_rate_in }) => prsi_rate_in;
 
 
 
-const income_tax_by_taxpayer_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
-Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_by_taxpayer_proposed"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+const income_tax_by_taxpayer_impact_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
+Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_by_taxpayer_proposed"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
 const usc_by_taxpayer_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
 Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_by_taxpayer_proposed"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
-const paye_by_taxpayer_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) =>
-Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_by_taxpayer_proposed"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
-const prsi_by_taxpayer_impact_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) =>
-Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_by_taxpayer_proposed"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
+const paye_by_taxpayer_impact_ = ({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in, tax_credit_in }) =>
+Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_by_taxpayer_proposed"])({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in, taxpayer_count_in });
+const prsi_by_taxpayer_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) =>
+Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_by_taxpayer_proposed"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_by_taxpayer_current"])({ taxpayer_table_in, taxpayer_id_in, taxpayer_count_in });
 
 
-const income_tax_sum_impact_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
-Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_sum_proposed"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_sum_current"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
+const income_tax_sum_impact_ = ({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }) =>
+Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_sum_proposed"])({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_sum_current"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
-const income_tax_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, tax_credit_in }) =>
-Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_proposed"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+const income_tax_impact_ = ({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, tax_credit_in }) =>
+Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_proposed"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["income_tax_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
-const paye_sum_impact_ = ({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_sum_proposed"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_sum_current"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
+const paye_sum_impact_ = ({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_sum_proposed"])({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_sum_current"])({ taxpayer_table_in, tax_credit_in, taxpayer_count_in });
 
-const paye_impact_ = ({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, tax_credit_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_proposed"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+const paye_impact_ = ({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_proposed"])({ tax_credit_proposed_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["paye_current"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
 const usc_sum_impact_ = ({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_sum_proposed"])({ taxpayer_table_in, usc_table_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_sum_current"])({ taxpayer_table_in, taxpayer_count_in });
 
-const usc_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_proposed"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_current"])({ taxpayer_table_in, taxpayer_id_in });
+const usc_impact_ = ({ usc_table_in, taxpayer_table_in, taxpayer_id_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_proposed"])({ usc_table_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["usc_current"])({ taxpayer_table_in, taxpayer_id_in });
 
 const prsi_sum_impact_ = ({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_sum_proposed"])({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_sum_current"])({ taxpayer_table_in, taxpayer_count_in });
 
-const prsi_impact_ = ({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_proposed"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_current"])({ taxpayer_table_in, taxpayer_id_in });
+const prsi_impact_ = ({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) => Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_proposed"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }) - Object(_impact_cul_js__WEBPACK_IMPORTED_MODULE_0__["prsi_current"])({ taxpayer_table_in, taxpayer_id_in });
 
 // test mitigate application refactor
 const pension_contribution_ = ({}) => 0;
 
 /***/ }),
-/* 10 */
+/* 11 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return VERSION; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return root; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArrayProto; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ObjProto; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SymbolProto; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return push; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return slice; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return toString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return hasOwnProperty; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return supportsArrayBuffer; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return supportsDataView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return nativeIsArray; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return nativeKeys; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return nativeCreate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return nativeIsView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return _isNaN; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _isFinite; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return hasEnumBug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return nonEnumerableProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MAX_ARRAY_INDEX; });
+// Current version.
+var VERSION = '1.13.2';
+
+// Establish the root object, `window` (`self`) in the browser, `global`
+// on the server, or `this` in some virtual machines. We use `self`
+// instead of `window` for `WebWorker` support.
+var root = typeof self == 'object' && self.self === self && self ||
+          typeof global == 'object' && global.global === global && global ||
+          Function('return this')() ||
+          {};
+
+// Save bytes in the minified (but not gzipped) version:
+var ArrayProto = Array.prototype, ObjProto = Object.prototype;
+var SymbolProto = typeof Symbol !== 'undefined' ? Symbol.prototype : null;
+
+// Create quick reference variables for speed access to core prototypes.
+var push = ArrayProto.push,
+    slice = ArrayProto.slice,
+    toString = ObjProto.toString,
+    hasOwnProperty = ObjProto.hasOwnProperty;
+
+// Modern feature detection.
+var supportsArrayBuffer = typeof ArrayBuffer !== 'undefined',
+    supportsDataView = typeof DataView !== 'undefined';
+
+// All **ECMAScript 5+** native function implementations that we hope to use
+// are declared here.
+var nativeIsArray = Array.isArray,
+    nativeKeys = Object.keys,
+    nativeCreate = Object.create,
+    nativeIsView = supportsArrayBuffer && ArrayBuffer.isView;
+
+// Create references to these builtin functions because we override them.
+var _isNaN = isNaN,
+    _isFinite = isFinite;
+
+// Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
+var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
+var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
+  'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
+
+// The largest integer that can be represented exactly.
+var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(173)))
+
+/***/ }),
+/* 12 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keys; });
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
+/* harmony import */ var _collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92);
+
+
+
+
+
+// Retrieve the names of an object's own properties.
+// Delegates to **ECMAScript 5**'s native `Object.keys`.
+function keys(obj) {
+  if (!Object(_isObject_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) return [];
+  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* nativeKeys */ "m"]) return Object(_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* nativeKeys */ "m"])(obj);
+  var keys = [];
+  for (var key in obj) if (Object(_has_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, key)) keys.push(key);
+  // Ahem, IE < 9.
+  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* hasEnumBug */ "h"]) Object(_collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(obj, keys);
+  return keys;
+}
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _; });
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+
+
+// If Underscore is called as a function, it returns a wrapped object that can
+// be used OO-style. This wrapper holds altered versions of all functions added
+// through `_.mixin`. Wrapped objects may be chained.
+function _(obj) {
+  if (obj instanceof _) return obj;
+  if (!(this instanceof _)) return new _(obj);
+  this._wrapped = obj;
+}
+
+_.VERSION = _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* VERSION */ "e"];
+
+// Extracts the result from a wrapped and chained object.
+_.prototype.value = function() {
+  return this._wrapped;
+};
+
+// Provide unwrapping proxies for some methods used in engine operations
+// such as arithmetic and JSON stringification.
+_.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
+
+_.prototype.toString = function() {
+  return String(this._wrapped);
+};
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return tagTester; });
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+
+
+// Internal function for creating a `toString`-based type tester.
+function tagTester(name) {
+  var tag = '[object ' + name + ']';
+  return function(obj) {
+    return _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* toString */ "t"].call(obj) === tag;
+  };
+}
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cb; });
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _baseIteratee_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94);
+/* harmony import */ var _iteratee_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(75);
+
+
+
+
+// The function we call internally to generate a callback. It invokes
+// `_.iteratee` if overridden, otherwise `baseIteratee`.
+function cb(value, context, argCount) {
+  if (_underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].iteratee !== _iteratee_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"]) return _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].iteratee(value, context);
+  return Object(_baseIteratee_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(value, context, argCount);
+}
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return restArguments; });
+// Some functions take a variable number of arguments, or a few expected
+// arguments at the beginning and then a variable number of values to operate
+// on. This helper accumulates all remaining arguments past the function’s
+// argument length (or an explicit `startIndex`), into an array that becomes
+// the last argument. Similar to ES6’s "rest parameter".
+function restArguments(func, startIndex) {
+  startIndex = startIndex == null ? func.length - 1 : +startIndex;
+  return function() {
+    var length = Math.max(arguments.length - startIndex, 0),
+        rest = Array(length),
+        index = 0;
+    for (; index < length; index++) {
+      rest[index] = arguments[index + startIndex];
+    }
+    switch (startIndex) {
+      case 0: return func.call(this, rest);
+      case 1: return func.call(this, arguments[0], rest);
+      case 2: return func.call(this, arguments[0], arguments[1], rest);
+    }
+    var args = Array(startIndex + 1);
+    for (index = 0; index < startIndex; index++) {
+      args[index] = arguments[index];
+    }
+    args[startIndex] = rest;
+    return func.apply(this, args);
+  };
+}
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+
+
+
+var isFunction = Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Function');
+
+// Optimize `isFunction` if appropriate. Work around some `typeof` bugs in old
+// v8, IE 11 (#1621), Safari 8 (#1929), and PhantomJS (#2236).
+var nodelist = _setup_js__WEBPACK_IMPORTED_MODULE_1__[/* root */ "p"].document && _setup_js__WEBPACK_IMPORTED_MODULE_1__[/* root */ "p"].document.childNodes;
+if ( true && typeof Int8Array != 'object' && typeof nodelist != 'function') {
+  isFunction = function(obj) {
+    return typeof obj == 'function' || false;
+  };
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (isFunction);
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(90);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
+
+
+
+// Internal helper for collection methods to determine whether a collection
+// should be iterated as an array or as an object.
+// Related: https://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
+// Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
+/* harmony default export */ __webpack_exports__["a"] = (Object(_createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_getLength_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91);
+
+
+// Internal helper to obtain the `length` property of an object.
+/* harmony default export */ __webpack_exports__["a"] = (Object(_shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('length'));
+
+
+/***/ }),
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2727,749 +3912,29 @@ const pension_contribution_ = ({}) => 0;
 /* unused harmony export pension_contribution$m */
 /* unused harmony export pension_contribution_ */
 /* unused harmony export tax_rate$m */
-/* unused harmony export tax_rate_ */
+/* unused harmony export tax_rate */
 /* unused harmony export tax_credit_proposed$m */
-/* unused harmony export tax_credit_proposed_ */
+/* unused harmony export tax_credit_proposed */
 /* unused harmony export tax_credit$m */
 /* unused harmony export tax_credit_ */
 /* unused harmony export band$m */
-/* unused harmony export band_ */
+/* unused harmony export band */
 /* unused harmony export usc_table$m */
-/* unused harmony export usc_table_ */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return usc_table; });
 /* unused harmony export paye_table$m */
-/* unused harmony export paye_table_ */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return paye_table; });
 /* unused harmony export prsi_rate$m */
-/* unused harmony export prsi_rate_ */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return prsi_rate; });
 /* unused harmony export income_tax$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return income_tax_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax_; });
 /* unused harmony export effective_rate$m */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate_; });
 /* unused harmony export usc$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return usc_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return usc_; });
 /* unused harmony export paye$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return paye_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return paye_; });
 /* unused harmony export prsi$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return prsi_; });
-/* unused harmony export taxpayer_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return taxpayer_id; });
-/* unused harmony export taxpayer_table$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return taxpayer_table; });
-/* unused harmony export taxpayer_count$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return taxpayer_count; });
-/* unused harmony export gross_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return gross_salary; });
-/* unused harmony export proportion$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return proportion; });
-/* unused harmony export income_tax_by_taxpayer$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return income_tax_by_taxpayer_; });
-/* unused harmony export paye_by_taxpayer$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return paye_by_taxpayer_; });
-/* unused harmony export usc_by_taxpayer$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return usc_by_taxpayer_; });
-/* unused harmony export prsi_by_taxpayer$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return prsi_by_taxpayer_; });
-/* unused harmony export income_tax_sum$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return income_tax_sum_; });
-/* unused harmony export paye_sum$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_sum_; });
-/* unused harmony export usc_sum$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return usc_sum_; });
-/* unused harmony export prsi_sum$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return prsi_sum_; });
-/* unused harmony export tax_credits$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return tax_credits; });
-/* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
-/* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6);
-
-
-//import memoize from 'lru-memoize';
-//import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
-
- // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
-
-
-
-////////// start income_tax_sum_current memo-loader code //////////
-//const income_tax_sum_current$m = memoize(999999, isEqual)(income_tax_sum_current$);
-const income_tax_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_current_"], JSON.stringify);
-const income_tax_sum_current_ = (a) => {
-  return income_tax_sum_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_sum_current memo-loader code //////////
-
-
-
-////////// start income_tax_current memo-loader code //////////
-//const income_tax_current$m = memoize(999999, isEqual)(income_tax_current$);
-const income_tax_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_current_"], JSON.stringify);
-const income_tax_current_ = (a) => {
-  return income_tax_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_current memo-loader code //////////
-
-
-
-////////// start effective_rate_current memo-loader code //////////
-//const effective_rate_current$m = memoize(999999, isEqual)(effective_rate_current$);
-const effective_rate_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["effective_rate_current_"], JSON.stringify);
-const effective_rate_current_ = (a) => {
-  return effective_rate_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["effective_rate_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end effective_rate_current memo-loader code //////////
-
-
-
-////////// start paye_sum_current memo-loader code //////////
-//const paye_sum_current$m = memoize(999999, isEqual)(paye_sum_current$);
-const paye_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_current_"], JSON.stringify);
-const paye_sum_current_ = (a) => {
-  return paye_sum_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_sum_current memo-loader code //////////
-
-
-
-////////// start paye_current memo-loader code //////////
-//const paye_current$m = memoize(999999, isEqual)(paye_current$);
-const paye_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_current_"], JSON.stringify);
-const paye_current_ = (a) => {
-  return paye_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_current memo-loader code //////////
-
-
-
-////////// start usc_sum_current memo-loader code //////////
-//const usc_sum_current$m = memoize(999999, isEqual)(usc_sum_current$);
-const usc_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_current_"], JSON.stringify);
-const usc_sum_current_ = (a) => {
-  return usc_sum_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_sum_current memo-loader code //////////
-
-
-
-////////// start usc_current memo-loader code //////////
-//const usc_current$m = memoize(999999, isEqual)(usc_current$);
-const usc_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_current_"], JSON.stringify);
-const usc_current_ = (a) => {
-  return usc_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_current memo-loader code //////////
-
-
-
-////////// start prsi_sum_current memo-loader code //////////
-//const prsi_sum_current$m = memoize(999999, isEqual)(prsi_sum_current$);
-const prsi_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_current_"], JSON.stringify);
-const prsi_sum_current_ = (a) => {
-  return prsi_sum_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_sum_current memo-loader code //////////
-
-
-
-////////// start prsi_current memo-loader code //////////
-//const prsi_current$m = memoize(999999, isEqual)(prsi_current$);
-const prsi_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_current_"], JSON.stringify);
-const prsi_current_ = (a) => {
-  return prsi_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_current memo-loader code //////////
-
-
-
-////////// start income_tax_by_taxpayer_current memo-loader code //////////
-//const income_tax_by_taxpayer_current$m = memoize(999999, isEqual)(income_tax_by_taxpayer_current$);
-const income_tax_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_current_"], JSON.stringify);
-const income_tax_by_taxpayer_current_ = (a) => {
-  return income_tax_by_taxpayer_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_by_taxpayer_current memo-loader code //////////
-
-
-
-////////// start usc_by_taxpayer_current memo-loader code //////////
-//const usc_by_taxpayer_current$m = memoize(999999, isEqual)(usc_by_taxpayer_current$);
-const usc_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_current_"], JSON.stringify);
-const usc_by_taxpayer_current_ = (a) => {
-  return usc_by_taxpayer_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_by_taxpayer_current memo-loader code //////////
-
-
-
-////////// start prsi_by_taxpayer_current memo-loader code //////////
-//const prsi_by_taxpayer_current$m = memoize(999999, isEqual)(prsi_by_taxpayer_current$);
-const prsi_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_current_"], JSON.stringify);
-const prsi_by_taxpayer_current_ = (a) => {
-  return prsi_by_taxpayer_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_by_taxpayer_current memo-loader code //////////
-
-
-
-////////// start paye_by_taxpayer_current memo-loader code //////////
-//const paye_by_taxpayer_current$m = memoize(999999, isEqual)(paye_by_taxpayer_current$);
-const paye_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_current_"], JSON.stringify);
-const paye_by_taxpayer_current_ = (a) => {
-  return paye_by_taxpayer_current$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_by_taxpayer_current memo-loader code //////////
-
-
-
-////////// start income_tax_by_taxpayer_impact memo-loader code //////////
-//const income_tax_by_taxpayer_impact$m = memoize(999999, isEqual)(income_tax_by_taxpayer_impact$);
-const income_tax_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_impact_"], JSON.stringify);
-const income_tax_by_taxpayer_impact_ = (a) => {
-  return income_tax_by_taxpayer_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_by_taxpayer_impact memo-loader code //////////
-
-
-
-////////// start usc_by_taxpayer_impact memo-loader code //////////
-//const usc_by_taxpayer_impact$m = memoize(999999, isEqual)(usc_by_taxpayer_impact$);
-const usc_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_impact_"], JSON.stringify);
-const usc_by_taxpayer_impact_ = (a) => {
-  return usc_by_taxpayer_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_by_taxpayer_impact memo-loader code //////////
-
-
-
-////////// start paye_by_taxpayer_impact memo-loader code //////////
-//const paye_by_taxpayer_impact$m = memoize(999999, isEqual)(paye_by_taxpayer_impact$);
-const paye_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_impact_"], JSON.stringify);
-const paye_by_taxpayer_impact_ = (a) => {
-  return paye_by_taxpayer_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_by_taxpayer_impact memo-loader code //////////
-
-
-
-////////// start prsi_by_taxpayer_impact memo-loader code //////////
-//const prsi_by_taxpayer_impact$m = memoize(999999, isEqual)(prsi_by_taxpayer_impact$);
-const prsi_by_taxpayer_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_impact_"], JSON.stringify);
-const prsi_by_taxpayer_impact_ = (a) => {
-  return prsi_by_taxpayer_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_by_taxpayer_impact memo-loader code //////////
-
-
-
-////////// start income_tax_sum_impact memo-loader code //////////
-//const income_tax_sum_impact$m = memoize(999999, isEqual)(income_tax_sum_impact$);
-const income_tax_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_impact_"], JSON.stringify);
-const income_tax_sum_impact_ = (a) => {
-  return income_tax_sum_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_sum_impact memo-loader code //////////
-
-
-
-////////// start income_tax_impact memo-loader code //////////
-//const income_tax_impact$m = memoize(999999, isEqual)(income_tax_impact$);
-const income_tax_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_impact_"], JSON.stringify);
-const income_tax_impact_ = (a) => {
-  return income_tax_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["income_tax_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_impact memo-loader code //////////
-
-
-
-////////// start paye_sum_impact memo-loader code //////////
-//const paye_sum_impact$m = memoize(999999, isEqual)(paye_sum_impact$);
-const paye_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_impact_"], JSON.stringify);
-const paye_sum_impact_ = (a) => {
-  return paye_sum_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_sum_impact memo-loader code //////////
-
-
-
-////////// start paye_impact memo-loader code //////////
-//const paye_impact$m = memoize(999999, isEqual)(paye_impact$);
-const paye_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_impact_"], JSON.stringify);
-const paye_impact_ = (a) => {
-  return paye_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_impact memo-loader code //////////
-
-
-
-////////// start usc_sum_impact memo-loader code //////////
-//const usc_sum_impact$m = memoize(999999, isEqual)(usc_sum_impact$);
-const usc_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_impact_"], JSON.stringify);
-const usc_sum_impact_ = (a) => {
-  return usc_sum_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_sum_impact memo-loader code //////////
-
-
-
-////////// start usc_impact memo-loader code //////////
-//const usc_impact$m = memoize(999999, isEqual)(usc_impact$);
-const usc_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_impact_"], JSON.stringify);
-const usc_impact_ = (a) => {
-  return usc_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_impact memo-loader code //////////
-
-
-
-////////// start prsi_sum_impact memo-loader code //////////
-//const prsi_sum_impact$m = memoize(999999, isEqual)(prsi_sum_impact$);
-const prsi_sum_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_impact_"], JSON.stringify);
-const prsi_sum_impact_ = (a) => {
-  return prsi_sum_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_sum_impact memo-loader code //////////
-
-
-
-////////// start prsi_impact memo-loader code //////////
-//const prsi_impact$m = memoize(999999, isEqual)(prsi_impact$);
-const prsi_impact$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_impact_"], JSON.stringify);
-const prsi_impact_ = (a) => {
-  return prsi_impact$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_impact_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_impact memo-loader code //////////
-
-
-
-////////// start pension_contribution memo-loader code //////////
-//const pension_contribution$m = memoize(999999, isEqual)(pension_contribution$);
-const pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["pension_contribution_"], JSON.stringify);
-const pension_contribution_ = (a) => {
-  return pension_contribution$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["pension_contribution_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end pension_contribution memo-loader code //////////
-
-
-
-////////// start tax_rate memo-loader code //////////
-//const tax_rate$m = memoize(999999, isEqual)(tax_rate$);
-const tax_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["tax_rate_"], JSON.stringify);
-const tax_rate_ = (a) => {
-  return tax_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["tax_rate_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end tax_rate memo-loader code //////////
-
-
-
-////////// start tax_credit_proposed memo-loader code //////////
-//const tax_credit_proposed$m = memoize(999999, isEqual)(tax_credit_proposed$);
-const tax_credit_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["tax_credit_proposed_"], JSON.stringify);
-const tax_credit_proposed_ = (a) => {
-  return tax_credit_proposed$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["tax_credit_proposed_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end tax_credit_proposed memo-loader code //////////
-
-
-
-////////// start tax_credit memo-loader code //////////
-//const tax_credit$m = memoize(999999, isEqual)(tax_credit$);
-const tax_credit$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credit_ */ "J"], JSON.stringify);
-const tax_credit_ = (a) => {
-  return tax_credit$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credit_ */ "J"])({ tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end tax_credit memo-loader code //////////
-
-
-
-////////// start band memo-loader code //////////
-//const band$m = memoize(999999, isEqual)(band$);
-const band$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["band_"], JSON.stringify);
-const band_ = (a) => {
-  return band$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["band_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end band memo-loader code //////////
-
-
-
-////////// start usc_table memo-loader code //////////
-//const usc_table$m = memoize(999999, isEqual)(usc_table$);
-const usc_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_table_"], JSON.stringify);
-const usc_table_ = (a) => {
-  return usc_table$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["usc_table_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_table memo-loader code //////////
-
-
-
-////////// start paye_table memo-loader code //////////
-//const paye_table$m = memoize(999999, isEqual)(paye_table$);
-const paye_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_table_"], JSON.stringify);
-const paye_table_ = (a) => {
-  return paye_table$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["paye_table_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_table memo-loader code //////////
-
-
-
-////////// start prsi_rate memo-loader code //////////
-//const prsi_rate$m = memoize(999999, isEqual)(prsi_rate$);
-const prsi_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_rate_"], JSON.stringify);
-const prsi_rate_ = (a) => {
-  return prsi_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__["prsi_rate_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_rate memo-loader code //////////
-
-
-
-////////// start income_tax memo-loader code //////////
-//const income_tax$m = memoize(999999, isEqual)(income_tax$);
-const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "e"], JSON.stringify);
-const income_tax_ = (a) => {
-  return income_tax$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax memo-loader code //////////
-
-
-
-////////// start effective_rate memo-loader code //////////
-//const effective_rate$m = memoize(999999, isEqual)(effective_rate$);
-const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "b"], JSON.stringify);
-const effective_rate_ = (a) => {
-  return effective_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end effective_rate memo-loader code //////////
-
-
-
-////////// start usc memo-loader code //////////
-//const usc$m = memoize(999999, isEqual)(usc$);
-const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "Q"], JSON.stringify);
-const usc_ = (a) => {
-  return usc$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "Q"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc memo-loader code //////////
-
-
-
-////////// start paye memo-loader code //////////
-//const paye$m = memoize(999999, isEqual)(paye$);
-const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "n"], JSON.stringify);
-const paye_ = (a) => {
-  return paye$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "n"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye memo-loader code //////////
-
-
-
-////////// start prsi memo-loader code //////////
-//const prsi$m = memoize(999999, isEqual)(prsi$);
-const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "z"], JSON.stringify);
-const prsi_ = (a) => {
-  return prsi$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "z"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi memo-loader code //////////
-
-
-
-////////// start taxpayer_id memo-loader code //////////
-//const taxpayer_id$m = memoize(999999, isEqual)(taxpayer_id$);
-const taxpayer_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_id_ */ "O"], JSON.stringify);
-const taxpayer_id = (a) => {
-  return taxpayer_id$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_id_ */ "O"])({ taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end taxpayer_id memo-loader code //////////
-
-
-
-////////// start taxpayer_table memo-loader code //////////
-//const taxpayer_table$m = memoize(999999, isEqual)(taxpayer_table$);
-const taxpayer_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_table_ */ "P"], JSON.stringify);
-const taxpayer_table = (a) => {
-  return taxpayer_table$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_table_ */ "P"])({ taxpayer_table_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end taxpayer_table memo-loader code //////////
-
-
-
-////////// start taxpayer_count memo-loader code //////////
-//const taxpayer_count$m = memoize(999999, isEqual)(taxpayer_count$);
-const taxpayer_count$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_count_ */ "N"], JSON.stringify);
-const taxpayer_count = (a) => {
-  return taxpayer_count$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* taxpayer_count_ */ "N"])({ taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end taxpayer_count memo-loader code //////////
-
-
-
-////////// start gross_salary memo-loader code //////////
-//const gross_salary$m = memoize(999999, isEqual)(gross_salary$);
-const gross_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "d"], JSON.stringify);
-const gross_salary = (a) => {
-  return gross_salary$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "d"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end gross_salary memo-loader code //////////
-
-
-
-////////// start proportion memo-loader code //////////
-//const proportion$m = memoize(999999, isEqual)(proportion$);
-const proportion$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* proportion_ */ "y"], JSON.stringify);
-const proportion = (a) => {
-  return proportion$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* proportion_ */ "y"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end proportion memo-loader code //////////
-
-
-
-////////// start income_tax_by_taxpayer memo-loader code //////////
-//const income_tax_by_taxpayer$m = memoize(999999, isEqual)(income_tax_by_taxpayer$);
-const income_tax_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_by_taxpayer_ */ "f"], JSON.stringify);
-const income_tax_by_taxpayer_ = (a) => {
-  return income_tax_by_taxpayer$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_by_taxpayer_ */ "f"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_by_taxpayer memo-loader code //////////
-
-
-
-////////// start paye_by_taxpayer memo-loader code //////////
-//const paye_by_taxpayer$m = memoize(999999, isEqual)(paye_by_taxpayer$);
-const paye_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_taxpayer_ */ "o"], JSON.stringify);
-const paye_by_taxpayer_ = (a) => {
-  return paye_by_taxpayer$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_taxpayer_ */ "o"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_by_taxpayer memo-loader code //////////
-
-
-
-////////// start usc_by_taxpayer memo-loader code //////////
-//const usc_by_taxpayer$m = memoize(999999, isEqual)(usc_by_taxpayer$);
-const usc_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_taxpayer_ */ "R"], JSON.stringify);
-const usc_by_taxpayer_ = (a) => {
-  return usc_by_taxpayer$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_taxpayer_ */ "R"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_by_taxpayer memo-loader code //////////
-
-
-
-////////// start prsi_by_taxpayer memo-loader code //////////
-//const prsi_by_taxpayer$m = memoize(999999, isEqual)(prsi_by_taxpayer$);
-const prsi_by_taxpayer$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_by_taxpayer_ */ "A"], JSON.stringify);
-const prsi_by_taxpayer_ = (a) => {
-  return prsi_by_taxpayer$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_by_taxpayer_ */ "A"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_by_taxpayer memo-loader code //////////
-
-
-
-////////// start income_tax_sum memo-loader code //////////
-//const income_tax_sum$m = memoize(999999, isEqual)(income_tax_sum$);
-const income_tax_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_sum_ */ "k"], JSON.stringify);
-const income_tax_sum_ = (a) => {
-  return income_tax_sum$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_sum_ */ "k"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax_sum memo-loader code //////////
-
-
-
-////////// start paye_sum memo-loader code //////////
-//const paye_sum$m = memoize(999999, isEqual)(paye_sum$);
-const paye_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_sum_ */ "t"], JSON.stringify);
-const paye_sum_ = (a) => {
-  return paye_sum$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* paye_sum_ */ "t"])({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_sum memo-loader code //////////
-
-
-
-////////// start usc_sum memo-loader code //////////
-//const usc_sum$m = memoize(999999, isEqual)(usc_sum$);
-const usc_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_sum_ */ "W"], JSON.stringify);
-const usc_sum_ = (a) => {
-  return usc_sum$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* usc_sum_ */ "W"])({ taxpayer_table_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_sum memo-loader code //////////
-
-
-
-////////// start prsi_sum memo-loader code //////////
-//const prsi_sum$m = memoize(999999, isEqual)(prsi_sum$);
-const prsi_sum$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_sum_ */ "G"], JSON.stringify);
-const prsi_sum_ = (a) => {
-  return prsi_sum$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* prsi_sum_ */ "G"])({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_sum memo-loader code //////////
-
-
-
-////////// start tax_credits memo-loader code //////////
-//const tax_credits$m = memoize(999999, isEqual)(tax_credits$);
-const tax_credits$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "L"], JSON.stringify);
-const tax_credits = (a) => {
-  return tax_credits$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_incometax_set_cul_js_memoed_cul_scope_id_8_cul_parent_scope_id_7__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "L"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end tax_credits memo-loader code //////////
-
-/***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* unused harmony export income_tax_sum_proposed$m */
-/* unused harmony export income_tax_sum_proposed_ */
-/* unused harmony export income_tax_proposed$m */
-/* unused harmony export income_tax_proposed_ */
-/* unused harmony export effective_rate_proposed$m */
-/* unused harmony export effective_rate_proposed_ */
-/* unused harmony export paye_sum_proposed$m */
-/* unused harmony export paye_sum_proposed_ */
-/* unused harmony export paye_proposed$m */
-/* unused harmony export paye_proposed_ */
-/* unused harmony export usc_sum_proposed$m */
-/* unused harmony export usc_sum_proposed_ */
-/* unused harmony export usc_proposed$m */
-/* unused harmony export usc_proposed_ */
-/* unused harmony export prsi_sum_proposed$m */
-/* unused harmony export prsi_sum_proposed_ */
-/* unused harmony export prsi_proposed$m */
-/* unused harmony export prsi_proposed_ */
-/* unused harmony export income_tax_by_taxpayer_proposed$m */
-/* unused harmony export income_tax_by_taxpayer_proposed_ */
-/* unused harmony export usc_by_taxpayer_proposed$m */
-/* unused harmony export usc_by_taxpayer_proposed_ */
-/* unused harmony export prsi_by_taxpayer_proposed$m */
-/* unused harmony export prsi_by_taxpayer_proposed_ */
-/* unused harmony export paye_by_taxpayer_proposed$m */
-/* unused harmony export paye_by_taxpayer_proposed_ */
-/* unused harmony export income_tax_by_taxpayer_impact$m */
-/* unused harmony export income_tax_by_taxpayer_impact_ */
-/* unused harmony export usc_by_taxpayer_impact$m */
-/* unused harmony export usc_by_taxpayer_impact_ */
-/* unused harmony export paye_by_taxpayer_impact$m */
-/* unused harmony export paye_by_taxpayer_impact_ */
-/* unused harmony export prsi_by_taxpayer_impact$m */
-/* unused harmony export prsi_by_taxpayer_impact_ */
-/* unused harmony export income_tax_sum_impact$m */
-/* unused harmony export income_tax_sum_impact_ */
-/* unused harmony export income_tax_impact$m */
-/* unused harmony export income_tax_impact_ */
-/* unused harmony export paye_sum_impact$m */
-/* unused harmony export paye_sum_impact_ */
-/* unused harmony export paye_impact$m */
-/* unused harmony export paye_impact_ */
-/* unused harmony export usc_sum_impact$m */
-/* unused harmony export usc_sum_impact_ */
-/* unused harmony export usc_impact$m */
-/* unused harmony export usc_impact_ */
-/* unused harmony export prsi_sum_impact$m */
-/* unused harmony export prsi_sum_impact_ */
-/* unused harmony export prsi_impact$m */
-/* unused harmony export prsi_impact_ */
-/* unused harmony export pension_contribution$m */
-/* unused harmony export pension_contribution_ */
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return prsi_; });
 /* unused harmony export taxpayer_id$m */
 /* unused harmony export taxpayer_id_ */
 /* unused harmony export taxpayer_table$m */
@@ -3496,62 +3961,12 @@ const tax_credits = (a) => {
 /* unused harmony export usc_sum_ */
 /* unused harmony export prsi_sum$m */
 /* unused harmony export prsi_sum_ */
-/* unused harmony export tax_credit$m */
-/* unused harmony export tax_credit_ */
 /* unused harmony export tax_credits$m */
 /* unused harmony export tax_credits_ */
-/* unused harmony export net_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return net_salary; });
-/* unused harmony export income_tax$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax_; });
-/* unused harmony export effective_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate_; });
-/* unused harmony export prsi_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return prsi_taxable_salary; });
-/* unused harmony export prsi$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return prsi_; });
-/* unused harmony export prsi_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return prsi_rate; });
-/* unused harmony export usc_table$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v", function() { return usc_table; });
-/* unused harmony export usc_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return usc_band_id; });
-/* unused harmony export usc_band_end$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return usc_band_end; });
-/* unused harmony export usc_band_start$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return usc_band_start; });
-/* unused harmony export usc_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "u", function() { return usc_rate; });
-/* unused harmony export usc_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "w", function() { return usc_taxable_salary; });
-/* unused harmony export usc_by_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return usc_by_band_id; });
-/* unused harmony export usc$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return usc_; });
-/* unused harmony export paye_table$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return paye_table; });
-/* unused harmony export paye_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return paye_band_id; });
-/* unused harmony export paye_band_end$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return paye_band_end; });
-/* unused harmony export paye_band_start$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return paye_band_start; });
-/* unused harmony export paye_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return paye_rate; });
-/* unused harmony export paye_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return paye_taxable_salary; });
-/* unused harmony export paye_by_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_by_band_id; });
-/* unused harmony export paye_over_bands$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return paye_over_bands; });
-/* unused harmony export paye$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return paye_; });
-/* unused harmony export net_salary_plus_pension_contribution$m */
-/* unused harmony export net_salary_plus_pension_contribution */
-/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5);
+/* harmony import */ var _incometax_set_cul_cul_scope_id_2_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(0);
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1);
-/* harmony import */ var _simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4);
+/* harmony import */ var _simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7);
 
 
 //import memoize from 'lru-memoize';
@@ -3561,159 +3976,159 @@ const tax_credits = (a) => {
 
 
 
-////////// start income_tax_sum_proposed memo-loader code //////////
-//const income_tax_sum_proposed$m = memoize(999999, isEqual)(income_tax_sum_proposed$);
-const income_tax_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_proposed_"], JSON.stringify);
-const income_tax_sum_proposed_ = (a) => {
-  return income_tax_sum_proposed$m(a);
+////////// start income_tax_sum_current memo-loader code //////////
+//const income_tax_sum_current$m = memoize(999999, isEqual)(income_tax_sum_current$);
+const income_tax_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_current_"], JSON.stringify);
+const income_tax_sum_current_ = (a) => {
+  return income_tax_sum_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end income_tax_sum_proposed memo-loader code //////////
+////////// end income_tax_sum_current memo-loader code //////////
 
 
 
-////////// start income_tax_proposed memo-loader code //////////
-//const income_tax_proposed$m = memoize(999999, isEqual)(income_tax_proposed$);
-const income_tax_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_proposed_"], JSON.stringify);
-const income_tax_proposed_ = (a) => {
-  return income_tax_proposed$m(a);
+////////// start income_tax_current memo-loader code //////////
+//const income_tax_current$m = memoize(999999, isEqual)(income_tax_current$);
+const income_tax_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_current_"], JSON.stringify);
+const income_tax_current_ = (a) => {
+  return income_tax_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end income_tax_proposed memo-loader code //////////
+////////// end income_tax_current memo-loader code //////////
 
 
 
-////////// start effective_rate_proposed memo-loader code //////////
-//const effective_rate_proposed$m = memoize(999999, isEqual)(effective_rate_proposed$);
-const effective_rate_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["effective_rate_proposed_"], JSON.stringify);
-const effective_rate_proposed_ = (a) => {
-  return effective_rate_proposed$m(a);
+////////// start effective_rate_current memo-loader code //////////
+//const effective_rate_current$m = memoize(999999, isEqual)(effective_rate_current$);
+const effective_rate_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["effective_rate_current_"], JSON.stringify);
+const effective_rate_current_ = (a) => {
+  return effective_rate_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["effective_rate_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["effective_rate_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end effective_rate_proposed memo-loader code //////////
+////////// end effective_rate_current memo-loader code //////////
 
 
 
-////////// start paye_sum_proposed memo-loader code //////////
-//const paye_sum_proposed$m = memoize(999999, isEqual)(paye_sum_proposed$);
-const paye_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_sum_proposed_"], JSON.stringify);
-const paye_sum_proposed_ = (a) => {
-  return paye_sum_proposed$m(a);
+////////// start paye_sum_current memo-loader code //////////
+//const paye_sum_current$m = memoize(999999, isEqual)(paye_sum_current$);
+const paye_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_sum_current_"], JSON.stringify);
+const paye_sum_current_ = (a) => {
+  return paye_sum_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end paye_sum_proposed memo-loader code //////////
+////////// end paye_sum_current memo-loader code //////////
 
 
 
-////////// start paye_proposed memo-loader code //////////
-//const paye_proposed$m = memoize(999999, isEqual)(paye_proposed$);
-const paye_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_proposed_"], JSON.stringify);
-const paye_proposed_ = (a) => {
-  return paye_proposed$m(a);
+////////// start paye_current memo-loader code //////////
+//const paye_current$m = memoize(999999, isEqual)(paye_current$);
+const paye_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_current_"], JSON.stringify);
+const paye_current_ = (a) => {
+  return paye_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end paye_proposed memo-loader code //////////
+////////// end paye_current memo-loader code //////////
 
 
 
-////////// start usc_sum_proposed memo-loader code //////////
-//const usc_sum_proposed$m = memoize(999999, isEqual)(usc_sum_proposed$);
-const usc_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_sum_proposed_"], JSON.stringify);
-const usc_sum_proposed_ = (a) => {
-  return usc_sum_proposed$m(a);
+////////// start usc_sum_current memo-loader code //////////
+//const usc_sum_current$m = memoize(999999, isEqual)(usc_sum_current$);
+const usc_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_sum_current_"], JSON.stringify);
+const usc_sum_current_ = (a) => {
+  return usc_sum_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end usc_sum_proposed memo-loader code //////////
+////////// end usc_sum_current memo-loader code //////////
 
 
 
-////////// start usc_proposed memo-loader code //////////
-//const usc_proposed$m = memoize(999999, isEqual)(usc_proposed$);
-const usc_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_proposed_"], JSON.stringify);
-const usc_proposed_ = (a) => {
-  return usc_proposed$m(a);
+////////// start usc_current memo-loader code //////////
+//const usc_current$m = memoize(999999, isEqual)(usc_current$);
+const usc_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_current_"], JSON.stringify);
+const usc_current_ = (a) => {
+  return usc_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end usc_proposed memo-loader code //////////
+////////// end usc_current memo-loader code //////////
 
 
 
-////////// start prsi_sum_proposed memo-loader code //////////
-//const prsi_sum_proposed$m = memoize(999999, isEqual)(prsi_sum_proposed$);
-const prsi_sum_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_proposed_"], JSON.stringify);
-const prsi_sum_proposed_ = (a) => {
-  return prsi_sum_proposed$m(a);
+////////// start prsi_sum_current memo-loader code //////////
+//const prsi_sum_current$m = memoize(999999, isEqual)(prsi_sum_current$);
+const prsi_sum_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_current_"], JSON.stringify);
+const prsi_sum_current_ = (a) => {
+  return prsi_sum_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_sum_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end prsi_sum_proposed memo-loader code //////////
+////////// end prsi_sum_current memo-loader code //////////
 
 
 
-////////// start prsi_proposed memo-loader code //////////
-//const prsi_proposed$m = memoize(999999, isEqual)(prsi_proposed$);
-const prsi_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_proposed_"], JSON.stringify);
-const prsi_proposed_ = (a) => {
-  return prsi_proposed$m(a);
+////////// start prsi_current memo-loader code //////////
+//const prsi_current$m = memoize(999999, isEqual)(prsi_current$);
+const prsi_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_current_"], JSON.stringify);
+const prsi_current_ = (a) => {
+  return prsi_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end prsi_proposed memo-loader code //////////
+////////// end prsi_current memo-loader code //////////
 
 
 
-////////// start income_tax_by_taxpayer_proposed memo-loader code //////////
-//const income_tax_by_taxpayer_proposed$m = memoize(999999, isEqual)(income_tax_by_taxpayer_proposed$);
-const income_tax_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_proposed_"], JSON.stringify);
-const income_tax_by_taxpayer_proposed_ = (a) => {
-  return income_tax_by_taxpayer_proposed$m(a);
+////////// start income_tax_by_taxpayer_current memo-loader code //////////
+//const income_tax_by_taxpayer_current$m = memoize(999999, isEqual)(income_tax_by_taxpayer_current$);
+const income_tax_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_current_"], JSON.stringify);
+const income_tax_by_taxpayer_current_ = (a) => {
+  return income_tax_by_taxpayer_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["income_tax_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end income_tax_by_taxpayer_proposed memo-loader code //////////
+////////// end income_tax_by_taxpayer_current memo-loader code //////////
 
 
 
-////////// start usc_by_taxpayer_proposed memo-loader code //////////
-//const usc_by_taxpayer_proposed$m = memoize(999999, isEqual)(usc_by_taxpayer_proposed$);
-const usc_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_proposed_"], JSON.stringify);
-const usc_by_taxpayer_proposed_ = (a) => {
-  return usc_by_taxpayer_proposed$m(a);
+////////// start usc_by_taxpayer_current memo-loader code //////////
+//const usc_by_taxpayer_current$m = memoize(999999, isEqual)(usc_by_taxpayer_current$);
+const usc_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_current_"], JSON.stringify);
+const usc_by_taxpayer_current_ = (a) => {
+  return usc_by_taxpayer_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["usc_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end usc_by_taxpayer_proposed memo-loader code //////////
+////////// end usc_by_taxpayer_current memo-loader code //////////
 
 
 
-////////// start prsi_by_taxpayer_proposed memo-loader code //////////
-//const prsi_by_taxpayer_proposed$m = memoize(999999, isEqual)(prsi_by_taxpayer_proposed$);
-const prsi_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_proposed_"], JSON.stringify);
-const prsi_by_taxpayer_proposed_ = (a) => {
-  return prsi_by_taxpayer_proposed$m(a);
+////////// start prsi_by_taxpayer_current memo-loader code //////////
+//const prsi_by_taxpayer_current$m = memoize(999999, isEqual)(prsi_by_taxpayer_current$);
+const prsi_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_current_"], JSON.stringify);
+const prsi_by_taxpayer_current_ = (a) => {
+  return prsi_by_taxpayer_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["prsi_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end prsi_by_taxpayer_proposed memo-loader code //////////
+////////// end prsi_by_taxpayer_current memo-loader code //////////
 
 
 
-////////// start paye_by_taxpayer_proposed memo-loader code //////////
-//const paye_by_taxpayer_proposed$m = memoize(999999, isEqual)(paye_by_taxpayer_proposed$);
-const paye_by_taxpayer_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_proposed_"], JSON.stringify);
-const paye_by_taxpayer_proposed_ = (a) => {
-  return paye_by_taxpayer_proposed$m(a);
+////////// start paye_by_taxpayer_current memo-loader code //////////
+//const paye_by_taxpayer_current$m = memoize(999999, isEqual)(paye_by_taxpayer_current$);
+const paye_by_taxpayer_current$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_current_"], JSON.stringify);
+const paye_by_taxpayer_current_ = (a) => {
+  return paye_by_taxpayer_current$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["paye_by_taxpayer_current_"])({}); // never run, but here to "trick" calculang graph logic
 };
-////////// end paye_by_taxpayer_proposed memo-loader code //////////
+////////// end paye_by_taxpayer_current memo-loader code //////////
 
 
 
@@ -3863,13 +4278,157 @@ const prsi_impact_ = (a) => {
 
 ////////// start pension_contribution memo-loader code //////////
 //const pension_contribution$m = memoize(999999, isEqual)(pension_contribution$);
-const pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* pension_contribution_ */ "F"], JSON.stringify);
+const pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* pension_contribution_ */ "x"], JSON.stringify);
 const pension_contribution_ = (a) => {
   return pension_contribution$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* pension_contribution_ */ "F"])({ pension_contribution_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* pension_contribution_ */ "x"])({ pension_contribution_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end pension_contribution memo-loader code //////////
+
+
+
+////////// start tax_rate memo-loader code //////////
+//const tax_rate$m = memoize(999999, isEqual)(tax_rate$);
+const tax_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_rate_"], JSON.stringify);
+const tax_rate = (a) => {
+  return tax_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_rate_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_rate memo-loader code //////////
+
+
+
+////////// start tax_credit_proposed memo-loader code //////////
+//const tax_credit_proposed$m = memoize(999999, isEqual)(tax_credit_proposed$);
+const tax_credit_proposed$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_proposed_"], JSON.stringify);
+const tax_credit_proposed = (a) => {
+  return tax_credit_proposed$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_proposed_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credit_proposed memo-loader code //////////
+
+
+
+////////// start tax_credit memo-loader code //////////
+//const tax_credit$m = memoize(999999, isEqual)(tax_credit$);
+const tax_credit$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_"], JSON.stringify);
+const tax_credit_ = (a) => {
+  return tax_credit$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credit memo-loader code //////////
+
+
+
+////////// start band memo-loader code //////////
+//const band$m = memoize(999999, isEqual)(band$);
+const band$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["band_"], JSON.stringify);
+const band = (a) => {
+  return band$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["band_"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end band memo-loader code //////////
+
+
+
+////////// start usc_table memo-loader code //////////
+//const usc_table$m = memoize(999999, isEqual)(usc_table$);
+const usc_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_table_ */ "Z"], JSON.stringify);
+const usc_table = (a) => {
+  return usc_table$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_table_ */ "Z"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_table memo-loader code //////////
+
+
+
+////////// start paye_table memo-loader code //////////
+//const paye_table$m = memoize(999999, isEqual)(paye_table$);
+const paye_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_table_ */ "w"], JSON.stringify);
+const paye_table = (a) => {
+  return paye_table$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_table_ */ "w"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_table memo-loader code //////////
+
+
+
+////////// start prsi_rate memo-loader code //////////
+//const prsi_rate$m = memoize(999999, isEqual)(prsi_rate$);
+const prsi_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_rate_ */ "F"], JSON.stringify);
+const prsi_rate = (a) => {
+  return prsi_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_rate_ */ "F"])({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_rate memo-loader code //////////
+
+
+
+////////// start income_tax memo-loader code //////////
+//const income_tax$m = memoize(999999, isEqual)(income_tax$);
+const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "e"], JSON.stringify);
+const income_tax_ = (a) => {
+  return income_tax$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "e"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end income_tax memo-loader code //////////
+
+
+
+////////// start effective_rate memo-loader code //////////
+//const effective_rate$m = memoize(999999, isEqual)(effective_rate$);
+const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "b"], JSON.stringify);
+const effective_rate_ = (a) => {
+  return effective_rate$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end effective_rate memo-loader code //////////
+
+
+
+////////// start usc memo-loader code //////////
+//const usc$m = memoize(999999, isEqual)(usc$);
+const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "Q"], JSON.stringify);
+const usc_ = (a) => {
+  return usc$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "Q"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc memo-loader code //////////
+
+
+
+////////// start paye memo-loader code //////////
+//const paye$m = memoize(999999, isEqual)(paye$);
+const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "n"], JSON.stringify);
+const paye_ = (a) => {
+  return paye$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "n"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye memo-loader code //////////
+
+
+
+////////// start prsi memo-loader code //////////
+//const prsi$m = memoize(999999, isEqual)(prsi$);
+const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "z"], JSON.stringify);
+const prsi_ = (a) => {
+  return prsi$m(a);
+  // eslint-disable-next-line no-undef
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "z"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi memo-loader code //////////
 
 
 
@@ -3911,11 +4470,11 @@ const taxpayer_count_ = (a) => {
 
 ////////// start gross_salary memo-loader code //////////
 //const gross_salary$m = memoize(999999, isEqual)(gross_salary$);
-const gross_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "c"], JSON.stringify);
+const gross_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "d"], JSON.stringify);
 const gross_salary_ = (a) => {
   return gross_salary$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "c"])({ gross_salary_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* gross_salary_ */ "d"])({ gross_salary_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end gross_salary memo-loader code //////////
 
@@ -4029,389 +4588,516 @@ const prsi_sum_ = (a) => {
 
 
 
-////////// start tax_credit memo-loader code //////////
-//const tax_credit$m = memoize(999999, isEqual)(tax_credit$);
-const tax_credit$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_"], JSON.stringify);
-const tax_credit_ = (a) => {
-  return tax_credit$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__["tax_credit_"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end tax_credit memo-loader code //////////
-
-
-
 ////////// start tax_credits memo-loader code //////////
 //const tax_credits$m = memoize(999999, isEqual)(tax_credits$);
-const tax_credits$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "T"], JSON.stringify);
+const tax_credits$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "L"], JSON.stringify);
 const tax_credits_ = (a) => {
   return tax_credits$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "T"])({ tax_credits_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* tax_credits_ */ "L"])({ tax_credits_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end tax_credits memo-loader code //////////
 
-
-
-////////// start net_salary memo-loader code //////////
-//const net_salary$m = memoize(999999, isEqual)(net_salary$);
-const net_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* net_salary_ */ "m"], JSON.stringify);
-const net_salary = (a) => {
-  return net_salary$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* net_salary_ */ "m"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end net_salary memo-loader code //////////
-
-
-
-////////// start income_tax memo-loader code //////////
-//const income_tax$m = memoize(999999, isEqual)(income_tax$);
-const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "d"], JSON.stringify);
-const income_tax_ = (a) => {
-  return income_tax$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* income_tax_ */ "d"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end income_tax memo-loader code //////////
-
-
-
-////////// start effective_rate memo-loader code //////////
-//const effective_rate$m = memoize(999999, isEqual)(effective_rate$);
-const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "a"], JSON.stringify);
-const effective_rate_ = (a) => {
-  return effective_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* effective_rate_ */ "a"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end effective_rate memo-loader code //////////
-
-
-
-////////// start prsi_taxable_salary memo-loader code //////////
-//const prsi_taxable_salary$m = memoize(999999, isEqual)(prsi_taxable_salary$);
-const prsi_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_taxable_salary_ */ "R"], JSON.stringify);
-const prsi_taxable_salary = (a) => {
-  return prsi_taxable_salary$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_taxable_salary_ */ "R"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_taxable_salary memo-loader code //////////
-
-
-
-////////// start prsi memo-loader code //////////
-//const prsi$m = memoize(999999, isEqual)(prsi$);
-const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "H"], JSON.stringify);
-const prsi_ = (a) => {
-  return prsi$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_ */ "H"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi memo-loader code //////////
-
-
-
-////////// start prsi_rate memo-loader code //////////
-//const prsi_rate$m = memoize(999999, isEqual)(prsi_rate$);
-const prsi_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_rate_ */ "N"], JSON.stringify);
-const prsi_rate = (a) => {
-  return prsi_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* prsi_rate_ */ "N"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end prsi_rate memo-loader code //////////
-
-
-
-////////// start usc_table memo-loader code //////////
-//const usc_table$m = memoize(999999, isEqual)(usc_table$);
-const usc_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_table_ */ "lb"], JSON.stringify);
-const usc_table = (a) => {
-  return usc_table$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_table_ */ "lb"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_table memo-loader code //////////
-
-
-
-////////// start usc_band_id memo-loader code //////////
-//const usc_band_id$m = memoize(999999, isEqual)(usc_band_id$);
-const usc_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_id_ */ "Z"], JSON.stringify);
-const usc_band_id = (a) => {
-  return usc_band_id$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_id_ */ "Z"])({ usc_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_band_id memo-loader code //////////
-
-
-
-////////// start usc_band_end memo-loader code //////////
-//const usc_band_end$m = memoize(999999, isEqual)(usc_band_end$);
-const usc_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_end_ */ "Y"], JSON.stringify);
-const usc_band_end = (a) => {
-  return usc_band_end$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_end_ */ "Y"])({ usc_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_band_end memo-loader code //////////
-
-
-
-////////// start usc_band_start memo-loader code //////////
-//const usc_band_start$m = memoize(999999, isEqual)(usc_band_start$);
-const usc_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_start_ */ "ab"], JSON.stringify);
-const usc_band_start = (a) => {
-  return usc_band_start$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_band_start_ */ "ab"])({ usc_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_band_start memo-loader code //////////
-
-
-
-////////// start usc_rate memo-loader code //////////
-//const usc_rate$m = memoize(999999, isEqual)(usc_rate$);
-const usc_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_rate_ */ "hb"], JSON.stringify);
-const usc_rate = (a) => {
-  return usc_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_rate_ */ "hb"])({ usc_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_rate memo-loader code //////////
-
-
-
-////////// start usc_taxable_salary memo-loader code //////////
-//const usc_taxable_salary$m = memoize(999999, isEqual)(usc_taxable_salary$);
-const usc_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_taxable_salary_ */ "mb"], JSON.stringify);
-const usc_taxable_salary = (a) => {
-  return usc_taxable_salary$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_taxable_salary_ */ "mb"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_taxable_salary memo-loader code //////////
-
-
-
-////////// start usc_by_band_id memo-loader code //////////
-//const usc_by_band_id$m = memoize(999999, isEqual)(usc_by_band_id$);
-const usc_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_band_id_ */ "bb"], JSON.stringify);
-const usc_by_band_id = (a) => {
-  return usc_by_band_id$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_by_band_id_ */ "bb"])({ usc_band_id_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc_by_band_id memo-loader code //////////
-
-
-
-////////// start usc memo-loader code //////////
-//const usc$m = memoize(999999, isEqual)(usc$);
-const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "X"], JSON.stringify);
-const usc_ = (a) => {
-  return usc$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* usc_ */ "X"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end usc memo-loader code //////////
-
-
-
-////////// start paye_table memo-loader code //////////
-//const paye_table$m = memoize(999999, isEqual)(paye_table$);
-const paye_table$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_table_ */ "D"], JSON.stringify);
-const paye_table = (a) => {
-  return paye_table$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_table_ */ "D"])({}); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_table memo-loader code //////////
-
-
-
-////////// start paye_band_id memo-loader code //////////
-//const paye_band_id$m = memoize(999999, isEqual)(paye_band_id$);
-const paye_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_id_ */ "q"], JSON.stringify);
-const paye_band_id = (a) => {
-  return paye_band_id$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_id_ */ "q"])({ paye_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_band_id memo-loader code //////////
-
-
-
-////////// start paye_band_end memo-loader code //////////
-//const paye_band_end$m = memoize(999999, isEqual)(paye_band_end$);
-const paye_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_end_ */ "p"], JSON.stringify);
-const paye_band_end = (a) => {
-  return paye_band_end$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_end_ */ "p"])({ paye_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_band_end memo-loader code //////////
-
-
-
-////////// start paye_band_start memo-loader code //////////
-//const paye_band_start$m = memoize(999999, isEqual)(paye_band_start$);
-const paye_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_start_ */ "r"], JSON.stringify);
-const paye_band_start = (a) => {
-  return paye_band_start$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_band_start_ */ "r"])({ paye_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_band_start memo-loader code //////////
-
-
-
-////////// start paye_rate memo-loader code //////////
-//const paye_rate$m = memoize(999999, isEqual)(paye_rate$);
-const paye_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_rate_ */ "z"], JSON.stringify);
-const paye_rate = (a) => {
-  return paye_rate$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_rate_ */ "z"])({ paye_band_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_rate memo-loader code //////////
-
-
-
-////////// start paye_taxable_salary memo-loader code //////////
-//const paye_taxable_salary$m = memoize(999999, isEqual)(paye_taxable_salary$);
-const paye_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_taxable_salary_ */ "E"], JSON.stringify);
-const paye_taxable_salary = (a) => {
-  return paye_taxable_salary$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_taxable_salary_ */ "E"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_taxable_salary memo-loader code //////////
-
-
-
-////////// start paye_by_band_id memo-loader code //////////
-//const paye_by_band_id$m = memoize(999999, isEqual)(paye_by_band_id$);
-const paye_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_band_id_ */ "s"], JSON.stringify);
-const paye_by_band_id = (a) => {
-  return paye_by_band_id$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_by_band_id_ */ "s"])({ paye_band_id_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_by_band_id memo-loader code //////////
-
-
-
-////////// start paye_over_bands memo-loader code //////////
-//const paye_over_bands$m = memoize(999999, isEqual)(paye_over_bands$);
-const paye_over_bands$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_over_bands_ */ "x"], JSON.stringify);
-const paye_over_bands = (a) => {
-  return paye_over_bands$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_over_bands_ */ "x"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye_over_bands memo-loader code //////////
-
-
-
-////////// start paye memo-loader code //////////
-//const paye$m = memoize(999999, isEqual)(paye$);
-const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "o"], JSON.stringify);
-const paye_ = (a) => {
-  return paye$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* paye_ */ "o"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end paye memo-loader code //////////
-
-
-
-////////// start net_salary_plus_pension_contribution memo-loader code //////////
-//const net_salary_plus_pension_contribution$m = memoize(999999, isEqual)(net_salary_plus_pension_contribution$);
-const net_salary_plus_pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_2__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* net_salary_plus_pension_contribution_ */ "n"], JSON.stringify);
-const net_salary_plus_pension_contribution = (a) => {
-  return net_salary_plus_pension_contribution$m(a);
-  // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_10_cul_parent_scope_id_6__WEBPACK_IMPORTED_MODULE_3__[/* net_salary_plus_pension_contribution_ */ "n"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
-};
-////////// end net_salary_plus_pension_contribution memo-loader code //////////
-
 /***/ }),
-/* 12 */
+/* 21 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return VERSION; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return root; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArrayProto; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return ObjProto; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return SymbolProto; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return push; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return slice; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return toString; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return hasOwnProperty; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return supportsArrayBuffer; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return supportsDataView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return nativeIsArray; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return nativeKeys; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return nativeCreate; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return nativeIsView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return _isNaN; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return _isFinite; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return hasEnumBug; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return nonEnumerableProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return MAX_ARRAY_INDEX; });
-// Current version.
-var VERSION = '1.13.2';
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return each; });
+/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
-// Establish the root object, `window` (`self`) in the browser, `global`
-// on the server, or `this` in some virtual machines. We use `self`
-// instead of `window` for `WebWorker` support.
-var root = typeof self == 'object' && self.self === self && self ||
-          typeof global == 'object' && global.global === global && global ||
-          Function('return this')() ||
-          {};
 
-// Save bytes in the minified (but not gzipped) version:
-var ArrayProto = Array.prototype, ObjProto = Object.prototype;
-var SymbolProto = typeof Symbol !== 'undefined' ? Symbol.prototype : null;
 
-// Create quick reference variables for speed access to core prototypes.
-var push = ArrayProto.push,
-    slice = ArrayProto.slice,
-    toString = ObjProto.toString,
-    hasOwnProperty = ObjProto.hasOwnProperty;
 
-// Modern feature detection.
-var supportsArrayBuffer = typeof ArrayBuffer !== 'undefined',
-    supportsDataView = typeof DataView !== 'undefined';
+// The cornerstone for collection functions, an `each`
+// implementation, aka `forEach`.
+// Handles raw objects in addition to array-likes. Treats all
+// sparse array-likes as if they were dense.
+function each(obj, iteratee, context) {
+  iteratee = Object(_optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
+  var i, length;
+  if (Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj)) {
+    for (i = 0, length = obj.length; i < length; i++) {
+      iteratee(obj[i], i, obj);
+    }
+  } else {
+    var _keys = Object(_keys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj);
+    for (i = 0, length = _keys.length; i < length; i++) {
+      iteratee(obj[_keys[i]], _keys[i], obj);
+    }
+  }
+  return obj;
+}
 
-// All **ECMAScript 5+** native function implementations that we hope to use
-// are declared here.
-var nativeIsArray = Array.isArray,
-    nativeKeys = Object.keys,
-    nativeCreate = Object.create,
-    nativeIsView = supportsArrayBuffer && ArrayBuffer.isView;
-
-// Create references to these builtin functions because we override them.
-var _isNaN = isNaN,
-    _isFinite = isFinite;
-
-// Keys in IE < 9 that won't be iterated by `for key in ...` and thus missed.
-var hasEnumBug = !{toString: null}.propertyIsEnumerable('toString');
-var nonEnumerableProps = ['valueOf', 'isPrototypeOf', 'toString',
-  'propertyIsEnumerable', 'hasOwnProperty', 'toLocaleString'];
-
-// The largest integer that can be represented exactly.
-var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
-
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(173)))
 
 /***/ }),
-/* 13 */
+/* 22 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return has; });
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+
+
+// Internal function to check whether `key` is an own property name of `obj`.
+function has(obj, key) {
+  return obj != null && _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* hasOwnProperty */ "i"].call(obj, key);
+}
+
+
+/***/ }),
+/* 23 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isObject; });
+// Is a given variable an object?
+function isObject(obj) {
+  var type = typeof obj;
+  return type === 'function' || type === 'object' && !!obj;
+}
+
+
+/***/ }),
+/* 24 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+
+
+
+// Is a given value an array?
+// Delegates to ECMA5's native `Array.isArray`.
+/* harmony default export */ __webpack_exports__["a"] = (_setup_js__WEBPACK_IMPORTED_MODULE_0__[/* nativeIsArray */ "k"] || Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])('Array'));
+
+
+/***/ }),
+/* 25 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return contains; });
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var _indexOf_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83);
+
+
+
+
+// Determine if the array or object contains a given item (using `===`).
+function contains(obj, item, fromIndex, guard) {
+  if (!Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) obj = Object(_values_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj);
+  if (typeof fromIndex != 'number' || guard) fromIndex = 0;
+  return Object(_indexOf_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, item, fromIndex) >= 0;
+}
+
+
+/***/ }),
+/* 26 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return map; });
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+
+
+
+
+// Return the results of applying the iteratee to each element.
+function map(obj, iteratee, context) {
+  iteratee = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
+  var _keys = !Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj) && Object(_keys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj),
+      length = (_keys || obj).length,
+      results = Array(length);
+  for (var index = 0; index < length; index++) {
+    var currentKey = _keys ? _keys[index] : index;
+    results[index] = iteratee(obj[currentKey], currentKey, obj);
+  }
+  return results;
+}
+
+
+/***/ }),
+/* 27 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return values; });
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+
+
+// Retrieve the values of an object's properties.
+function values(obj) {
+  var _keys = Object(_keys_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj);
+  var length = _keys.length;
+  var values = Array(length);
+  for (var i = 0; i < length; i++) {
+    values[i] = obj[_keys[i]];
+  }
+  return values;
+}
+
+
+/***/ }),
+/* 28 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return flatten; });
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
+/* harmony import */ var _isArguments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(46);
+
+
+
+
+
+// Internal implementation of a recursive `flatten` function.
+function flatten(input, depth, strict, output) {
+  output = output || [];
+  if (!depth && depth !== 0) {
+    depth = Infinity;
+  } else if (depth <= 0) {
+    return output.concat(input);
+  }
+  var idx = output.length;
+  for (var i = 0, length = Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(input); i < length; i++) {
+    var value = input[i];
+    if (Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(value) && (Object(_isArray_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(value) || Object(_isArguments_js__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(value))) {
+      // Flatten current level of array or arguments object.
+      if (depth > 1) {
+        flatten(value, depth - 1, strict, output);
+        idx = output.length;
+      } else {
+        var j = 0, len = value.length;
+        while (j < len) output[idx++] = value[j++];
+      }
+    } else if (!strict) {
+      output[idx++] = value;
+    }
+  }
+  return output;
+}
+
+
+/***/ }),
+/* 29 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return filter; });
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+
+
+
+// Return all the elements that pass a truth test.
+function filter(obj, predicate, context) {
+  var results = [];
+  predicate = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(predicate, context);
+  Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, function(value, index, list) {
+    if (predicate(value, index, list)) results.push(value);
+  });
+  return results;
+}
+
+
+/***/ }),
+/* 30 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return allKeys; });
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(92);
+
+
+
+
+// Retrieve all the enumerable property names of an object.
+function allKeys(obj) {
+  if (!Object(_isObject_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) return [];
+  var keys = [];
+  for (var key in obj) keys.push(key);
+  // Ahem, IE < 9.
+  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* hasEnumBug */ "h"]) Object(_collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, keys);
+  return keys;
+}
+
+
+/***/ }),
+/* 31 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return hasStringTagBug; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return isIE11; });
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+/* harmony import */ var _hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(106);
+
+
+
+// In IE 10 - Edge 13, `DataView` has string tag `'[object Object]'`.
+// In IE 11, the most common among them, this problem also applies to
+// `Map`, `WeakMap` and `Set`.
+var hasStringTagBug = (
+      _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* supportsDataView */ "s"] && Object(_hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(new DataView(new ArrayBuffer(8)))
+    ),
+    isIE11 = (typeof Map !== 'undefined' && Object(_hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(new Map));
+
+
+/***/ }),
+/* 32 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toPath; });
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(101);
+
+
+
+// Internal wrapper for `_.toPath` to enable minification.
+// Similar to `cb` for `_.iteratee`.
+function toPath(path) {
+  return _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].toPath(path);
+}
+
+
+/***/ }),
+/* 33 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return optimizeCb; });
+// Internal function that returns an efficient (for current engines) version
+// of the passed-in callback, to be repeatedly applied in other Underscore
+// functions.
+function optimizeCb(func, context, argCount) {
+  if (context === void 0) return func;
+  switch (argCount == null ? 3 : argCount) {
+    case 1: return function(value) {
+      return func.call(context, value);
+    };
+    // The 2-argument case is omitted because we’re not using it.
+    case 3: return function(value, index, collection) {
+      return func.call(context, value, index, collection);
+    };
+    case 4: return function(accumulator, value, index, collection) {
+      return func.call(context, accumulator, value, index, collection);
+    };
+  }
+  return function() {
+    return func.apply(context, arguments);
+  };
+}
+
+
+/***/ }),
+/* 34 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return matcher; });
+/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
+/* harmony import */ var _isMatch_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(70);
+
+
+
+// Returns a predicate for checking whether an object has a given set of
+// `key:value` pairs.
+function matcher(attrs) {
+  attrs = Object(_extendOwn_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, attrs);
+  return function(obj) {
+    return Object(_isMatch_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, attrs);
+  };
+}
+
+
+/***/ }),
+/* 35 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ie11fingerprint; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mapMethods; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return weakMapMethods; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return setMethods; });
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
+
+
+
+
+// Since the regular `Object.prototype.toString` type tests don't work for
+// some types in IE 11, we use a fingerprinting heuristic instead, based
+// on the methods. It's not great, but it's the best we got.
+// The fingerprint method lists are defined below.
+function ie11fingerprint(methods) {
+  var length = Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(methods);
+  return function(obj) {
+    if (obj == null) return false;
+    // `Map`, `WeakMap` and `Set` have no enumerable keys.
+    var keys = Object(_allKeys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj);
+    if (Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(keys)) return false;
+    for (var i = 0; i < length; i++) {
+      if (!Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj[methods[i]])) return false;
+    }
+    // If we are testing against `WeakMap`, we need to ensure that
+    // `obj` doesn't have a `forEach` method in order to distinguish
+    // it from a regular `Map`.
+    return methods !== weakMapMethods || !Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj[forEachName]);
+  };
+}
+
+// In the interest of compact minification, we write
+// each string in the fingerprints only once.
+var forEachName = 'forEach',
+    hasName = 'has',
+    commonInit = ['clear', 'delete'],
+    mapTail = ['get', hasName, 'set'];
+
+// `Map`, `WeakMap` and `Set` each have slightly different
+// combinations of the above sublists.
+var mapMethods = commonInit.concat(forEachName, mapTail),
+    weakMapMethods = commonInit.concat(mapTail),
+    setMethods = ['add'].concat(commonInit, forEachName, hasName);
+
+
+/***/ }),
+/* 36 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _executeBound_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
+
+
+
+
+// Partially apply a function by creating a version that has had some of its
+// arguments pre-filled, without changing its dynamic `this` context. `_` acts
+// as a placeholder by default, allowing any combination of arguments to be
+// pre-filled. Set `_.partial.placeholder` for a custom placeholder argument.
+var partial = Object(_restArguments_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(function(func, boundArgs) {
+  var placeholder = partial.placeholder;
+  var bound = function() {
+    var position = 0, length = boundArgs.length;
+    var args = Array(length);
+    for (var i = 0; i < length; i++) {
+      args[i] = boundArgs[i] === placeholder ? arguments[position++] : boundArgs[i];
+    }
+    while (position < arguments.length) args.push(arguments[position++]);
+    return Object(_executeBound_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(func, bound, this, this, args);
+  };
+  return bound;
+});
+
+partial.placeholder = _underscore_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"];
+/* harmony default export */ __webpack_exports__["a"] = (partial);
+
+
+/***/ }),
+/* 37 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// A (possibly faster) way to get the current timestamp as an integer.
+/* harmony default export */ __webpack_exports__["a"] = (Date.now || function() {
+  return new Date().getTime();
+});
+
+
+/***/ }),
+/* 38 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return group; });
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+
+
+
+// An internal function used for aggregate "group by" operations.
+function group(behavior, partition) {
+  return function(obj, iteratee, context) {
+    var result = partition ? [[], []] : {};
+    iteratee = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
+    Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, function(value, index) {
+      var key = iteratee(value, index, obj);
+      behavior(result, value, key);
+    });
+    return result;
+  };
+}
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _createAssigner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(52);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+
+
+
+// Assigns a given object with all the own properties in the passed-in
+// object(s).
+// (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+/* harmony default export */ __webpack_exports__["a"] = (Object(_createAssigner_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_keys_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(66);
+/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+
+
+
+
+
+var isDataView = Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('DataView');
+
+// In IE 10 - Edge 13, we need a different heuristic
+// to determine whether an object is a `DataView`.
+function ie10IsDataView(obj) {
+  return obj != null && Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj.getInt8) && Object(_isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj.buffer);
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (_stringTagBug_js__WEBPACK_IMPORTED_MODULE_3__[/* hasStringTagBug */ "a"] ? ie10IsDataView : isDataView);
+
+
+/***/ }),
+/* 41 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91);
+
+
+// Internal helper to obtain the `byteLength` property of an object.
+/* harmony default export */ __webpack_exports__["a"] = (Object(_shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('byteLength'));
+
+
+/***/ }),
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4510,52 +5196,52 @@ var MAX_ARRAY_INDEX = Math.pow(2, 53) - 1;
 /* unused harmony export tax_credits$m */
 /* unused harmony export tax_credits_ */
 /* unused harmony export net_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return net_salary; });
+/* unused harmony export net_salary_ */
 /* unused harmony export income_tax$m */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return income_tax_; });
 /* unused harmony export effective_rate$m */
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return effective_rate_; });
 /* unused harmony export prsi_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "m", function() { return prsi_taxable_salary; });
+/* unused harmony export prsi_taxable_salary_ */
 /* unused harmony export prsi$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "l", function() { return prsi_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return prsi_; });
 /* unused harmony export usc_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "p", function() { return usc_band_id; });
+/* unused harmony export usc_band_id_ */
 /* unused harmony export usc_band_end$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "o", function() { return usc_band_end; });
+/* unused harmony export usc_band_end_ */
 /* unused harmony export usc_band_start$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "q", function() { return usc_band_start; });
+/* unused harmony export usc_band_start_ */
 /* unused harmony export usc_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "s", function() { return usc_rate; });
+/* unused harmony export usc_rate_ */
 /* unused harmony export usc_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "t", function() { return usc_taxable_salary; });
+/* unused harmony export usc_taxable_salary_ */
 /* unused harmony export usc_by_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "r", function() { return usc_by_band_id; });
+/* unused harmony export usc_by_band_id_ */
 /* unused harmony export usc$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "n", function() { return usc_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return usc_; });
 /* unused harmony export paye_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return paye_band_id; });
+/* unused harmony export paye_band_id_ */
 /* unused harmony export paye_band_end$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return paye_band_end; });
+/* unused harmony export paye_band_end_ */
 /* unused harmony export paye_band_start$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return paye_band_start; });
+/* unused harmony export paye_band_start_ */
 /* unused harmony export paye_rate$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "j", function() { return paye_rate; });
+/* unused harmony export paye_rate_ */
 /* unused harmony export paye_taxable_salary$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "k", function() { return paye_taxable_salary; });
+/* unused harmony export paye_taxable_salary_ */
 /* unused harmony export paye_by_band_id$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h", function() { return paye_by_band_id; });
+/* unused harmony export paye_by_band_id_ */
 /* unused harmony export paye_over_bands$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "i", function() { return paye_over_bands; });
+/* unused harmony export paye_over_bands_ */
 /* unused harmony export paye$m */
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return paye_; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return paye_; });
 /* unused harmony export net_salary_plus_pension_contribution$m */
-/* unused harmony export net_salary_plus_pension_contribution */
-/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(10);
+/* unused harmony export net_salary_plus_pension_contribution_ */
+/* harmony import */ var _incometax_set_cul_cul_scope_id_7_cul_parent_scope_id_5__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
 /* harmony import */ var _proposed_cul_cul_scope_id_3_cul_parent_scope_id_1__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
 /* harmony import */ var _impact_cul_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(0);
 /* harmony import */ var underscore__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1);
-/* harmony import */ var _simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3);
+/* harmony import */ var _simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(4);
 
 
 //import memoize from 'lru-memoize';
@@ -5132,10 +5818,10 @@ const tax_credits_ = (a) => {
 ////////// start net_salary memo-loader code //////////
 //const net_salary$m = memoize(999999, isEqual)(net_salary$);
 const net_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_ */ "n"], JSON.stringify);
-const net_salary = (a) => {
+const net_salary_ = (a) => {
   return net_salary$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_ */ "n"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_ */ "n"])({ taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end net_salary memo-loader code //////////
 
@@ -5147,7 +5833,7 @@ const income_tax$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize *
 const income_tax_ = (a) => {
   return income_tax$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* income_tax_ */ "e"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* income_tax_ */ "e"])({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax memo-loader code //////////
 
@@ -5159,7 +5845,7 @@ const effective_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoi
 const effective_rate_ = (a) => {
   return effective_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* effective_rate_ */ "b"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end effective_rate memo-loader code //////////
 
@@ -5168,7 +5854,7 @@ const effective_rate_ = (a) => {
 ////////// start prsi_taxable_salary memo-loader code //////////
 //const prsi_taxable_salary$m = memoize(999999, isEqual)(prsi_taxable_salary$);
 const prsi_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* prsi_taxable_salary_ */ "S"], JSON.stringify);
-const prsi_taxable_salary = (a) => {
+const prsi_taxable_salary_ = (a) => {
   return prsi_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
   Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* prsi_taxable_salary_ */ "S"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
@@ -5183,7 +5869,7 @@ const prsi$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"]
 const prsi_ = (a) => {
   return prsi$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* prsi_ */ "I"])({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* prsi_ */ "I"])({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi memo-loader code //////////
 
@@ -5192,7 +5878,7 @@ const prsi_ = (a) => {
 ////////// start usc_band_id memo-loader code //////////
 //const usc_band_id$m = memoize(999999, isEqual)(usc_band_id$);
 const usc_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_id_ */ "cb"], JSON.stringify);
-const usc_band_id = (a) => {
+const usc_band_id_ = (a) => {
   return usc_band_id$m(a);
   // eslint-disable-next-line no-undef
   Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_id_ */ "cb"])({ usc_band_id_in }); // never run, but here to "trick" calculang graph logic
@@ -5204,10 +5890,10 @@ const usc_band_id = (a) => {
 ////////// start usc_band_end memo-loader code //////////
 //const usc_band_end$m = memoize(999999, isEqual)(usc_band_end$);
 const usc_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_end_ */ "bb"], JSON.stringify);
-const usc_band_end = (a) => {
+const usc_band_end_ = (a) => {
   return usc_band_end$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_end_ */ "bb"])({ usc_band_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_end_ */ "bb"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_band_end memo-loader code //////////
 
@@ -5216,10 +5902,10 @@ const usc_band_end = (a) => {
 ////////// start usc_band_start memo-loader code //////////
 //const usc_band_start$m = memoize(999999, isEqual)(usc_band_start$);
 const usc_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_start_ */ "db"], JSON.stringify);
-const usc_band_start = (a) => {
+const usc_band_start_ = (a) => {
   return usc_band_start$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_start_ */ "db"])({ usc_band_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_band_start_ */ "db"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_band_start memo-loader code //////////
 
@@ -5228,10 +5914,10 @@ const usc_band_start = (a) => {
 ////////// start usc_rate memo-loader code //////////
 //const usc_rate$m = memoize(999999, isEqual)(usc_rate$);
 const usc_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_rate_ */ "kb"], JSON.stringify);
-const usc_rate = (a) => {
+const usc_rate_ = (a) => {
   return usc_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_rate_ */ "kb"])({ usc_table_in, usc_band_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_rate_ */ "kb"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_rate memo-loader code //////////
 
@@ -5240,7 +5926,7 @@ const usc_rate = (a) => {
 ////////// start usc_taxable_salary memo-loader code //////////
 //const usc_taxable_salary$m = memoize(999999, isEqual)(usc_taxable_salary$);
 const usc_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_taxable_salary_ */ "pb"], JSON.stringify);
-const usc_taxable_salary = (a) => {
+const usc_taxable_salary_ = (a) => {
   return usc_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
   Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_taxable_salary_ */ "pb"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
@@ -5252,10 +5938,10 @@ const usc_taxable_salary = (a) => {
 ////////// start usc_by_band_id memo-loader code //////////
 //const usc_by_band_id$m = memoize(999999, isEqual)(usc_by_band_id$);
 const usc_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_by_band_id_ */ "eb"], JSON.stringify);
-const usc_by_band_id = (a) => {
+const usc_by_band_id_ = (a) => {
   return usc_by_band_id$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_by_band_id_ */ "eb"])({ usc_table_in, usc_band_id_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_by_band_id_ */ "eb"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_by_band_id memo-loader code //////////
 
@@ -5267,7 +5953,7 @@ const usc$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])
 const usc_ = (a) => {
   return usc$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_ */ "ab"])({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* usc_ */ "ab"])({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc memo-loader code //////////
 
@@ -5276,7 +5962,7 @@ const usc_ = (a) => {
 ////////// start paye_band_id memo-loader code //////////
 //const paye_band_id$m = memoize(999999, isEqual)(paye_band_id$);
 const paye_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_id_ */ "r"], JSON.stringify);
-const paye_band_id = (a) => {
+const paye_band_id_ = (a) => {
   return paye_band_id$m(a);
   // eslint-disable-next-line no-undef
   Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_id_ */ "r"])({ paye_band_id_in }); // never run, but here to "trick" calculang graph logic
@@ -5288,10 +5974,10 @@ const paye_band_id = (a) => {
 ////////// start paye_band_end memo-loader code //////////
 //const paye_band_end$m = memoize(999999, isEqual)(paye_band_end$);
 const paye_band_end$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_end_ */ "q"], JSON.stringify);
-const paye_band_end = (a) => {
+const paye_band_end_ = (a) => {
   return paye_band_end$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_end_ */ "q"])({ paye_band_id_in, paye_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_end_ */ "q"])({ paye_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_band_end memo-loader code //////////
 
@@ -5300,10 +5986,10 @@ const paye_band_end = (a) => {
 ////////// start paye_band_start memo-loader code //////////
 //const paye_band_start$m = memoize(999999, isEqual)(paye_band_start$);
 const paye_band_start$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_start_ */ "s"], JSON.stringify);
-const paye_band_start = (a) => {
+const paye_band_start_ = (a) => {
   return paye_band_start$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_start_ */ "s"])({ paye_band_id_in, paye_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_band_start_ */ "s"])({ paye_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_band_start memo-loader code //////////
 
@@ -5312,10 +5998,10 @@ const paye_band_start = (a) => {
 ////////// start paye_rate memo-loader code //////////
 //const paye_rate$m = memoize(999999, isEqual)(paye_rate$);
 const paye_rate$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_rate_ */ "A"], JSON.stringify);
-const paye_rate = (a) => {
+const paye_rate_ = (a) => {
   return paye_rate$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_rate_ */ "A"])({ paye_table_in, paye_band_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_rate_ */ "A"])({ paye_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_rate memo-loader code //////////
 
@@ -5324,7 +6010,7 @@ const paye_rate = (a) => {
 ////////// start paye_taxable_salary memo-loader code //////////
 //const paye_taxable_salary$m = memoize(999999, isEqual)(paye_taxable_salary$);
 const paye_taxable_salary$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_taxable_salary_ */ "F"], JSON.stringify);
-const paye_taxable_salary = (a) => {
+const paye_taxable_salary_ = (a) => {
   return paye_taxable_salary$m(a);
   // eslint-disable-next-line no-undef
   Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_taxable_salary_ */ "F"])({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
@@ -5336,10 +6022,10 @@ const paye_taxable_salary = (a) => {
 ////////// start paye_by_band_id memo-loader code //////////
 //const paye_by_band_id$m = memoize(999999, isEqual)(paye_by_band_id$);
 const paye_by_band_id$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_by_band_id_ */ "t"], JSON.stringify);
-const paye_by_band_id = (a) => {
+const paye_by_band_id_ = (a) => {
   return paye_by_band_id$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_by_band_id_ */ "t"])({ paye_table_in, paye_band_id_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_by_band_id_ */ "t"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_band_id memo-loader code //////////
 
@@ -5348,10 +6034,10 @@ const paye_by_band_id = (a) => {
 ////////// start paye_over_bands memo-loader code //////////
 //const paye_over_bands$m = memoize(999999, isEqual)(paye_over_bands$);
 const paye_over_bands$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_over_bands_ */ "z"], JSON.stringify);
-const paye_over_bands = (a) => {
+const paye_over_bands_ = (a) => {
   return paye_over_bands$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_over_bands_ */ "z"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_over_bands_ */ "z"])({ paye_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_over_bands memo-loader code //////////
 
@@ -5363,7 +6049,7 @@ const paye$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"]
 const paye_ = (a) => {
   return paye$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_ */ "p"])({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* paye_ */ "p"])({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye memo-loader code //////////
 
@@ -5372,699 +6058,12 @@ const paye_ = (a) => {
 ////////// start net_salary_plus_pension_contribution memo-loader code //////////
 //const net_salary_plus_pension_contribution$m = memoize(999999, isEqual)(net_salary_plus_pension_contribution$);
 const net_salary_plus_pension_contribution$m = Object(underscore__WEBPACK_IMPORTED_MODULE_3__[/* memoize */ "a"])(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_plus_pension_contribution_ */ "o"], JSON.stringify);
-const net_salary_plus_pension_contribution = (a) => {
+const net_salary_plus_pension_contribution_ = (a) => {
   return net_salary_plus_pension_contribution$m(a);
   // eslint-disable-next-line no-undef
-  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_plus_pension_contribution_ */ "o"])({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  Object(_simple_incometax_cul_js_memoed_cul_scope_id_11_cul_parent_scope_id_9__WEBPACK_IMPORTED_MODULE_4__[/* net_salary_plus_pension_contribution_ */ "o"])({}); // never run, but here to "trick" calculang graph logic
 };
 ////////// end net_salary_plus_pension_contribution memo-loader code //////////
-
-/***/ }),
-/* 14 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return keys; });
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
-/* harmony import */ var _collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(92);
-
-
-
-
-
-// Retrieve the names of an object's own properties.
-// Delegates to **ECMAScript 5**'s native `Object.keys`.
-function keys(obj) {
-  if (!Object(_isObject_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) return [];
-  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* nativeKeys */ "m"]) return Object(_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* nativeKeys */ "m"])(obj);
-  var keys = [];
-  for (var key in obj) if (Object(_has_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, key)) keys.push(key);
-  // Ahem, IE < 9.
-  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* hasEnumBug */ "h"]) Object(_collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(obj, keys);
-  return keys;
-}
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return _; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-
-
-// If Underscore is called as a function, it returns a wrapped object that can
-// be used OO-style. This wrapper holds altered versions of all functions added
-// through `_.mixin`. Wrapped objects may be chained.
-function _(obj) {
-  if (obj instanceof _) return obj;
-  if (!(this instanceof _)) return new _(obj);
-  this._wrapped = obj;
-}
-
-_.VERSION = _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* VERSION */ "e"];
-
-// Extracts the result from a wrapped and chained object.
-_.prototype.value = function() {
-  return this._wrapped;
-};
-
-// Provide unwrapping proxies for some methods used in engine operations
-// such as arithmetic and JSON stringification.
-_.prototype.valueOf = _.prototype.toJSON = _.prototype.value;
-
-_.prototype.toString = function() {
-  return String(this._wrapped);
-};
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return tagTester; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-
-
-// Internal function for creating a `toString`-based type tester.
-function tagTester(name) {
-  var tag = '[object ' + name + ']';
-  return function(obj) {
-    return _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* toString */ "t"].call(obj) === tag;
-  };
-}
-
-
-/***/ }),
-/* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return cb; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _baseIteratee_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94);
-/* harmony import */ var _iteratee_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(75);
-
-
-
-
-// The function we call internally to generate a callback. It invokes
-// `_.iteratee` if overridden, otherwise `baseIteratee`.
-function cb(value, context, argCount) {
-  if (_underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].iteratee !== _iteratee_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"]) return _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].iteratee(value, context);
-  return Object(_baseIteratee_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(value, context, argCount);
-}
-
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return restArguments; });
-// Some functions take a variable number of arguments, or a few expected
-// arguments at the beginning and then a variable number of values to operate
-// on. This helper accumulates all remaining arguments past the function’s
-// argument length (or an explicit `startIndex`), into an array that becomes
-// the last argument. Similar to ES6’s "rest parameter".
-function restArguments(func, startIndex) {
-  startIndex = startIndex == null ? func.length - 1 : +startIndex;
-  return function() {
-    var length = Math.max(arguments.length - startIndex, 0),
-        rest = Array(length),
-        index = 0;
-    for (; index < length; index++) {
-      rest[index] = arguments[index + startIndex];
-    }
-    switch (startIndex) {
-      case 0: return func.call(this, rest);
-      case 1: return func.call(this, arguments[0], rest);
-      case 2: return func.call(this, arguments[0], arguments[1], rest);
-    }
-    var args = Array(startIndex + 1);
-    for (index = 0; index < startIndex; index++) {
-      args[index] = arguments[index];
-    }
-    args[startIndex] = rest;
-    return func.apply(this, args);
-  };
-}
-
-
-/***/ }),
-/* 19 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-
-
-
-var isFunction = Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Function');
-
-// Optimize `isFunction` if appropriate. Work around some `typeof` bugs in old
-// v8, IE 11 (#1621), Safari 8 (#1929), and PhantomJS (#2236).
-var nodelist = _setup_js__WEBPACK_IMPORTED_MODULE_1__[/* root */ "p"].document && _setup_js__WEBPACK_IMPORTED_MODULE_1__[/* root */ "p"].document.childNodes;
-if ( true && typeof Int8Array != 'object' && typeof nodelist != 'function') {
-  isFunction = function(obj) {
-    return typeof obj == 'function' || false;
-  };
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (isFunction);
-
-
-/***/ }),
-/* 20 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(90);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
-
-
-
-// Internal helper for collection methods to determine whether a collection
-// should be iterated as an array or as an object.
-// Related: https://people.mozilla.org/~jorendorff/es6-draft.html#sec-tolength
-// Avoids a very nasty iOS 8 JIT bug on ARM-64. #2094
-/* harmony default export */ __webpack_exports__["a"] = (Object(_createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_getLength_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
-
-
-/***/ }),
-/* 21 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91);
-
-
-// Internal helper to obtain the `length` property of an object.
-/* harmony default export */ __webpack_exports__["a"] = (Object(_shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('length'));
-
-
-/***/ }),
-/* 22 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return each; });
-/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
-
-
-
-
-// The cornerstone for collection functions, an `each`
-// implementation, aka `forEach`.
-// Handles raw objects in addition to array-likes. Treats all
-// sparse array-likes as if they were dense.
-function each(obj, iteratee, context) {
-  iteratee = Object(_optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
-  var i, length;
-  if (Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj)) {
-    for (i = 0, length = obj.length; i < length; i++) {
-      iteratee(obj[i], i, obj);
-    }
-  } else {
-    var _keys = Object(_keys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj);
-    for (i = 0, length = _keys.length; i < length; i++) {
-      iteratee(obj[_keys[i]], _keys[i], obj);
-    }
-  }
-  return obj;
-}
-
-
-/***/ }),
-/* 23 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return has; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-
-
-// Internal function to check whether `key` is an own property name of `obj`.
-function has(obj, key) {
-  return obj != null && _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* hasOwnProperty */ "i"].call(obj, key);
-}
-
-
-/***/ }),
-/* 24 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isObject; });
-// Is a given variable an object?
-function isObject(obj) {
-  var type = typeof obj;
-  return type === 'function' || type === 'object' && !!obj;
-}
-
-
-/***/ }),
-/* 25 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
-
-
-
-// Is a given value an array?
-// Delegates to ECMA5's native `Array.isArray`.
-/* harmony default export */ __webpack_exports__["a"] = (_setup_js__WEBPACK_IMPORTED_MODULE_0__[/* nativeIsArray */ "k"] || Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])('Array'));
-
-
-/***/ }),
-/* 26 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return contains; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
-/* harmony import */ var _indexOf_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(83);
-
-
-
-
-// Determine if the array or object contains a given item (using `===`).
-function contains(obj, item, fromIndex, guard) {
-  if (!Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) obj = Object(_values_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj);
-  if (typeof fromIndex != 'number' || guard) fromIndex = 0;
-  return Object(_indexOf_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, item, fromIndex) >= 0;
-}
-
-
-/***/ }),
-/* 27 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return map; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
-
-
-
-
-// Return the results of applying the iteratee to each element.
-function map(obj, iteratee, context) {
-  iteratee = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
-  var _keys = !Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj) && Object(_keys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj),
-      length = (_keys || obj).length,
-      results = Array(length);
-  for (var index = 0; index < length; index++) {
-    var currentKey = _keys ? _keys[index] : index;
-    results[index] = iteratee(obj[currentKey], currentKey, obj);
-  }
-  return results;
-}
-
-
-/***/ }),
-/* 28 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return values; });
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
-
-
-// Retrieve the values of an object's properties.
-function values(obj) {
-  var _keys = Object(_keys_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj);
-  var length = _keys.length;
-  var values = Array(length);
-  for (var i = 0; i < length; i++) {
-    values[i] = obj[_keys[i]];
-  }
-  return values;
-}
-
-
-/***/ }),
-/* 29 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return flatten; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(25);
-/* harmony import */ var _isArguments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(46);
-
-
-
-
-
-// Internal implementation of a recursive `flatten` function.
-function flatten(input, depth, strict, output) {
-  output = output || [];
-  if (!depth && depth !== 0) {
-    depth = Infinity;
-  } else if (depth <= 0) {
-    return output.concat(input);
-  }
-  var idx = output.length;
-  for (var i = 0, length = Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(input); i < length; i++) {
-    var value = input[i];
-    if (Object(_isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(value) && (Object(_isArray_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(value) || Object(_isArguments_js__WEBPACK_IMPORTED_MODULE_3__[/* default */ "a"])(value))) {
-      // Flatten current level of array or arguments object.
-      if (depth > 1) {
-        flatten(value, depth - 1, strict, output);
-        idx = output.length;
-      } else {
-        var j = 0, len = value.length;
-        while (j < len) output[idx++] = value[j++];
-      }
-    } else if (!strict) {
-      output[idx++] = value;
-    }
-  }
-  return output;
-}
-
-
-/***/ }),
-/* 30 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return filter; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
-
-
-
-// Return all the elements that pass a truth test.
-function filter(obj, predicate, context) {
-  var results = [];
-  predicate = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(predicate, context);
-  Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, function(value, index, list) {
-    if (predicate(value, index, list)) results.push(value);
-  });
-  return results;
-}
-
-
-/***/ }),
-/* 31 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return allKeys; });
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-/* harmony import */ var _collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(92);
-
-
-
-
-// Retrieve all the enumerable property names of an object.
-function allKeys(obj) {
-  if (!Object(_isObject_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(obj)) return [];
-  var keys = [];
-  for (var key in obj) keys.push(key);
-  // Ahem, IE < 9.
-  if (_setup_js__WEBPACK_IMPORTED_MODULE_1__[/* hasEnumBug */ "h"]) Object(_collectNonEnumProps_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj, keys);
-  return keys;
-}
-
-
-/***/ }),
-/* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return hasStringTagBug; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return isIE11; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-/* harmony import */ var _hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(106);
-
-
-
-// In IE 10 - Edge 13, `DataView` has string tag `'[object Object]'`.
-// In IE 11, the most common among them, this problem also applies to
-// `Map`, `WeakMap` and `Set`.
-var hasStringTagBug = (
-      _setup_js__WEBPACK_IMPORTED_MODULE_0__[/* supportsDataView */ "s"] && Object(_hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(new DataView(new ArrayBuffer(8)))
-    ),
-    isIE11 = (typeof Map !== 'undefined' && Object(_hasObjectTag_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(new Map));
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toPath; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(101);
-
-
-
-// Internal wrapper for `_.toPath` to enable minification.
-// Similar to `cb` for `_.iteratee`.
-function toPath(path) {
-  return _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].toPath(path);
-}
-
-
-/***/ }),
-/* 34 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return optimizeCb; });
-// Internal function that returns an efficient (for current engines) version
-// of the passed-in callback, to be repeatedly applied in other Underscore
-// functions.
-function optimizeCb(func, context, argCount) {
-  if (context === void 0) return func;
-  switch (argCount == null ? 3 : argCount) {
-    case 1: return function(value) {
-      return func.call(context, value);
-    };
-    // The 2-argument case is omitted because we’re not using it.
-    case 3: return function(value, index, collection) {
-      return func.call(context, value, index, collection);
-    };
-    case 4: return function(accumulator, value, index, collection) {
-      return func.call(context, accumulator, value, index, collection);
-    };
-  }
-  return function() {
-    return func.apply(context, arguments);
-  };
-}
-
-
-/***/ }),
-/* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return matcher; });
-/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(40);
-/* harmony import */ var _isMatch_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(70);
-
-
-
-// Returns a predicate for checking whether an object has a given set of
-// `key:value` pairs.
-function matcher(attrs) {
-  attrs = Object(_extendOwn_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])({}, attrs);
-  return function(obj) {
-    return Object(_isMatch_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, attrs);
-  };
-}
-
-
-/***/ }),
-/* 36 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ie11fingerprint; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "b", function() { return mapMethods; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "d", function() { return weakMapMethods; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return setMethods; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(31);
-
-
-
-
-// Since the regular `Object.prototype.toString` type tests don't work for
-// some types in IE 11, we use a fingerprinting heuristic instead, based
-// on the methods. It's not great, but it's the best we got.
-// The fingerprint method lists are defined below.
-function ie11fingerprint(methods) {
-  var length = Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(methods);
-  return function(obj) {
-    if (obj == null) return false;
-    // `Map`, `WeakMap` and `Set` have no enumerable keys.
-    var keys = Object(_allKeys_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj);
-    if (Object(_getLength_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(keys)) return false;
-    for (var i = 0; i < length; i++) {
-      if (!Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj[methods[i]])) return false;
-    }
-    // If we are testing against `WeakMap`, we need to ensure that
-    // `obj` doesn't have a `forEach` method in order to distinguish
-    // it from a regular `Map`.
-    return methods !== weakMapMethods || !Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj[forEachName]);
-  };
-}
-
-// In the interest of compact minification, we write
-// each string in the fingerprints only once.
-var forEachName = 'forEach',
-    hasName = 'has',
-    commonInit = ['clear', 'delete'],
-    mapTail = ['get', hasName, 'set'];
-
-// `Map`, `WeakMap` and `Set` each have slightly different
-// combinations of the above sublists.
-var mapMethods = commonInit.concat(forEachName, mapTail),
-    weakMapMethods = commonInit.concat(mapTail),
-    setMethods = ['add'].concat(commonInit, forEachName, hasName);
-
-
-/***/ }),
-/* 37 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _executeBound_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(97);
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
-
-
-
-
-// Partially apply a function by creating a version that has had some of its
-// arguments pre-filled, without changing its dynamic `this` context. `_` acts
-// as a placeholder by default, allowing any combination of arguments to be
-// pre-filled. Set `_.partial.placeholder` for a custom placeholder argument.
-var partial = Object(_restArguments_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(function(func, boundArgs) {
-  var placeholder = partial.placeholder;
-  var bound = function() {
-    var position = 0, length = boundArgs.length;
-    var args = Array(length);
-    for (var i = 0; i < length; i++) {
-      args[i] = boundArgs[i] === placeholder ? arguments[position++] : boundArgs[i];
-    }
-    while (position < arguments.length) args.push(arguments[position++]);
-    return Object(_executeBound_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(func, bound, this, this, args);
-  };
-  return bound;
-});
-
-partial.placeholder = _underscore_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"];
-/* harmony default export */ __webpack_exports__["a"] = (partial);
-
-
-/***/ }),
-/* 38 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-// A (possibly faster) way to get the current timestamp as an integer.
-/* harmony default export */ __webpack_exports__["a"] = (Date.now || function() {
-  return new Date().getTime();
-});
-
-
-/***/ }),
-/* 39 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return group; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
-
-
-
-// An internal function used for aggregate "group by" operations.
-function group(behavior, partition) {
-  return function(obj, iteratee, context) {
-    var result = partition ? [[], []] : {};
-    iteratee = Object(_cb_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(iteratee, context);
-    Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj, function(value, index) {
-      var key = iteratee(value, index, obj);
-      behavior(result, value, key);
-    });
-    return result;
-  };
-}
-
-
-/***/ }),
-/* 40 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _createAssigner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(52);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-
-
-
-// Assigns a given object with all the own properties in the passed-in
-// object(s).
-// (https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-/* harmony default export */ __webpack_exports__["a"] = (Object(_createAssigner_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])(_keys_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"]));
-
-
-/***/ }),
-/* 41 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(66);
-/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(32);
-
-
-
-
-
-var isDataView = Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('DataView');
-
-// In IE 10 - Edge 13, we need a different heuristic
-// to determine whether an object is a `DataView`.
-function ie10IsDataView(obj) {
-  return obj != null && Object(_isFunction_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(obj.getInt8) && Object(_isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_2__[/* default */ "a"])(obj.buffer);
-}
-
-/* harmony default export */ __webpack_exports__["a"] = (_stringTagBug_js__WEBPACK_IMPORTED_MODULE_3__[/* hasStringTagBug */ "a"] ? ie10IsDataView : isDataView);
-
-
-/***/ }),
-/* 42 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var _shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(91);
-
-
-// Internal helper to obtain the `byteLength` property of an object.
-/* harmony default export */ __webpack_exports__["a"] = (Object(_shallowProperty_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('byteLength'));
-
 
 /***/ }),
 /* 43 */
@@ -6072,7 +6071,7 @@ function ie10IsDataView(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return rest; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 
 
 // Returns everything but the first entry of the `array`. Especially useful on
@@ -6089,13 +6088,13 @@ function rest(array, n, guard) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "VERSION", function() { return _setup_js__WEBPACK_IMPORTED_MODULE_0__["e"]; });
 
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(16);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "restArguments", function() { return _restArguments_js__WEBPACK_IMPORTED_MODULE_1__["a"]; });
 
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isObject", function() { return _isObject_js__WEBPACK_IMPORTED_MODULE_2__["a"]; });
 
 /* harmony import */ var _isNull_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(109);
@@ -6131,13 +6130,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(66);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isArrayBuffer", function() { return _isArrayBuffer_js__WEBPACK_IMPORTED_MODULE_13__["a"]; });
 
-/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(41);
+/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(40);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isDataView", function() { return _isDataView_js__WEBPACK_IMPORTED_MODULE_14__["a"]; });
 
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(25);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(24);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isArray", function() { return _isArray_js__WEBPACK_IMPORTED_MODULE_15__["a"]; });
 
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(19);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(17);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isFunction", function() { return _isFunction_js__WEBPACK_IMPORTED_MODULE_16__["a"]; });
 
 /* harmony import */ var _isArguments_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(46);
@@ -6173,13 +6172,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _isWeakSet_js__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(120);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "isWeakSet", function() { return _isWeakSet_js__WEBPACK_IMPORTED_MODULE_27__["a"]; });
 
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(12);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "keys", function() { return _keys_js__WEBPACK_IMPORTED_MODULE_28__["a"]; });
 
-/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(31);
+/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(30);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "allKeys", function() { return _allKeys_js__WEBPACK_IMPORTED_MODULE_29__["a"]; });
 
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(28);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(27);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "values", function() { return _values_js__WEBPACK_IMPORTED_MODULE_30__["a"]; });
 
 /* harmony import */ var _pairs_js__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(121);
@@ -6196,7 +6195,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _extend_js__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(72);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "extend", function() { return _extend_js__WEBPACK_IMPORTED_MODULE_34__["a"]; });
 
-/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(40);
+/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(39);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "extendOwn", function() { return _extendOwn_js__WEBPACK_IMPORTED_MODULE_35__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "assign", function() { return _extendOwn_js__WEBPACK_IMPORTED_MODULE_35__["a"]; });
@@ -6240,7 +6239,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _propertyOf_js__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(127);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "propertyOf", function() { return _propertyOf_js__WEBPACK_IMPORTED_MODULE_48__["a"]; });
 
-/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(35);
+/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(34);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "matcher", function() { return _matcher_js__WEBPACK_IMPORTED_MODULE_49__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "matches", function() { return _matcher_js__WEBPACK_IMPORTED_MODULE_49__["a"]; });
@@ -6251,7 +6250,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _random_js__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(58);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "random", function() { return _random_js__WEBPACK_IMPORTED_MODULE_51__["a"]; });
 
-/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(38);
+/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(37);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "now", function() { return _now_js__WEBPACK_IMPORTED_MODULE_52__["a"]; });
 
 /* harmony import */ var _escape_js__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(129);
@@ -6278,7 +6277,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _iteratee_js__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(75);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "iteratee", function() { return _iteratee_js__WEBPACK_IMPORTED_MODULE_60__["a"]; });
 
-/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(37);
+/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(36);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "partial", function() { return _partial_js__WEBPACK_IMPORTED_MODULE_61__["a"]; });
 
 /* harmony import */ var _bind_js__WEBPACK_IMPORTED_MODULE_62__ = __webpack_require__(77);
@@ -6346,12 +6345,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _findWhere_js__WEBPACK_IMPORTED_MODULE_82__ = __webpack_require__(145);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "findWhere", function() { return _findWhere_js__WEBPACK_IMPORTED_MODULE_82__["a"]; });
 
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(22);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_83__ = __webpack_require__(21);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "each", function() { return _each_js__WEBPACK_IMPORTED_MODULE_83__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "forEach", function() { return _each_js__WEBPACK_IMPORTED_MODULE_83__["a"]; });
 
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(27);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_84__ = __webpack_require__(26);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "map", function() { return _map_js__WEBPACK_IMPORTED_MODULE_84__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "collect", function() { return _map_js__WEBPACK_IMPORTED_MODULE_84__["a"]; });
@@ -6368,7 +6367,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "foldr", function() { return _reduceRight_js__WEBPACK_IMPORTED_MODULE_86__["a"]; });
 
-/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(30);
+/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_87__ = __webpack_require__(29);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "filter", function() { return _filter_js__WEBPACK_IMPORTED_MODULE_87__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "select", function() { return _filter_js__WEBPACK_IMPORTED_MODULE_87__["a"]; });
@@ -6386,7 +6385,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "any", function() { return _some_js__WEBPACK_IMPORTED_MODULE_90__["a"]; });
 
-/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(26);
+/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_91__ = __webpack_require__(25);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "contains", function() { return _contains_js__WEBPACK_IMPORTED_MODULE_91__["a"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "includes", function() { return _contains_js__WEBPACK_IMPORTED_MODULE_91__["a"]; });
@@ -6694,7 +6693,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('String'));
@@ -6705,8 +6704,8 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 
 
 
@@ -6744,7 +6743,7 @@ function identity(value) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return property; });
 /* harmony import */ var _deepGet_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(53);
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
 
 
 
@@ -6790,7 +6789,7 @@ function negate(predicate) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return pluck; });
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(27);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(26);
 /* harmony import */ var _property_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(48);
 
 
@@ -6850,7 +6849,7 @@ function deepGet(obj, path) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return functions; });
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
 
 
 // Return a sorted list of the function names available on the object.
@@ -6869,7 +6868,7 @@ function functions(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return find; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
 /* harmony import */ var _findIndex_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(50);
 /* harmony import */ var _findKey_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(80);
 
@@ -6891,9 +6890,9 @@ function find(obj, predicate, context) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return uniq; });
 /* harmony import */ var _isBoolean_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(63);
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
-/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
+/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25);
 
 
 
@@ -6939,7 +6938,7 @@ function uniq(array, isSorted, iteratee, context) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return unzip; });
 /* harmony import */ var _max_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(84);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 /* harmony import */ var _pluck_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(51);
 
 
@@ -6980,7 +6979,7 @@ function random(min, max) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return chainResult; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 
 
 // Helper function to continue chaining intermediate results.
@@ -7038,7 +7037,7 @@ function isUndefined(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isBoolean; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 
 
 // Is a given value a boolean?
@@ -7052,7 +7051,7 @@ function isBoolean(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Number'));
@@ -7063,7 +7062,7 @@ function isBoolean(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Symbol'));
@@ -7074,7 +7073,7 @@ function isBoolean(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('ArrayBuffer'));
@@ -7086,7 +7085,7 @@ function isBoolean(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isNaN; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var _isNumber_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(64);
 
 
@@ -7102,8 +7101,8 @@ function isNaN(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(41);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
 /* harmony import */ var _constant_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(69);
 /* harmony import */ var _isBufferLike_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(170);
 
@@ -7143,7 +7142,7 @@ function constant(value) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isMatch; });
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 
 
 // Returns whether an object has a given set of `key:value` pairs.
@@ -7165,7 +7164,7 @@ function isMatch(object, attrs) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return invert; });
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 
 
 // Invert the keys and values of an object. The values must be serializable.
@@ -7185,7 +7184,7 @@ function invert(obj) {
 
 "use strict";
 /* harmony import */ var _createAssigner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(52);
-/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30);
 
 
 
@@ -7199,7 +7198,7 @@ function invert(obj) {
 
 "use strict";
 /* harmony import */ var _createAssigner_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(52);
-/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(30);
 
 
 
@@ -7213,7 +7212,7 @@ function invert(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return get; });
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(32);
 /* harmony import */ var _deepGet_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(53);
 /* harmony import */ var _isUndefined_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(62);
 
@@ -7236,7 +7235,7 @@ function get(object, path, defaultValue) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return iteratee; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 /* harmony import */ var _baseIteratee_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(94);
 
 
@@ -7265,8 +7264,8 @@ function noop(){}
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
 /* harmony import */ var _executeBound_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(97);
 
 
@@ -7288,7 +7287,7 @@ function noop(){}
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 
 
 // Delays a function for the given number of milliseconds, and then calls
@@ -7326,8 +7325,8 @@ function before(times, func) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return findKey; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 
 
 
@@ -7360,8 +7359,8 @@ function findKey(obj, predicate, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return sortedIndex; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 
 
 
@@ -7404,10 +7403,10 @@ function sortedIndex(array, obj, iteratee, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return max; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
 
 
 
@@ -7445,9 +7444,9 @@ function max(obj, iteratee, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return sample; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(21);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(19);
 /* harmony import */ var _random_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(58);
 /* harmony import */ var _toArray_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(86);
 
@@ -7485,13 +7484,13 @@ function sample(obj, n, guard) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toArray; });
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(25);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _isString_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(45);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(20);
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(27);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(18);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(26);
 /* harmony import */ var _identity_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(47);
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(28);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(27);
 
 
 
@@ -7519,12 +7518,12 @@ function toArray(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34);
-/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(31);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33);
+/* harmony import */ var _allKeys_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(30);
 /* harmony import */ var _keyInObj_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(172);
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(29);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(28);
 
 
 
@@ -7559,7 +7558,7 @@ function toArray(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return initial; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 
 
 // Returns everything but the last entry of the array. Especially useful on
@@ -7575,10 +7574,10 @@ function initial(array, n, guard) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
-/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(30);
-/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
+/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
+/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25);
 
 
 
@@ -7600,7 +7599,7 @@ function initial(array, n, guard) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createSizePropertyCheck; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 
 
 // Common internal logic for `isArrayLike` and `isBufferLike`.
@@ -7632,9 +7631,9 @@ function shallowProperty(key) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return collectNonEnumProps; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(22);
 
 
 
@@ -7683,8 +7682,8 @@ function collectNonEnumProps(obj, keys) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseCreate; });
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 
 
 
@@ -7712,12 +7711,12 @@ function baseCreate(prototype) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return baseIteratee; });
 /* harmony import */ var _identity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(47);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(24);
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(25);
-/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(35);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(23);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(24);
+/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(34);
 /* harmony import */ var _property_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(48);
-/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(34);
+/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(33);
 
 
 
@@ -7743,7 +7742,7 @@ function baseIteratee(value, context, argCount) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createEscaper; });
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 
 
 // Internal helper to generate functions for escaping and unescaping strings
@@ -7786,7 +7785,7 @@ function createEscaper(map) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return executeBound; });
 /* harmony import */ var _baseCreate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(93);
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24);
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
 
 
 
@@ -7808,8 +7807,8 @@ function executeBound(sourceFunc, boundFunc, context, callingContext, args) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createPredicateIndexFinder; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
 
 
 
@@ -7833,8 +7832,8 @@ function createPredicateIndexFinder(dir) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createIndexFinder; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _isNaN_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(67);
 
 
@@ -7872,9 +7871,9 @@ function createIndexFinder(dir, predicateFind, sortedIndex) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return createReduce; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
-/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(34);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
+/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(33);
 
 
 
@@ -7911,8 +7910,8 @@ function createReduce(dir) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toPath; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24);
 
 
 
@@ -7929,7 +7928,7 @@ _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].toPath = toPath;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 
 
 // By default, Underscore uses ERB-style template delimiters. Change the
@@ -7959,9 +7958,9 @@ _underscore_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"].toPath = toPath;
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return every; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
 
@@ -7985,9 +7984,9 @@ function every(obj, predicate, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return some; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
 
 
 
@@ -8010,7 +8009,7 @@ function some(obj, predicate, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Object'));
@@ -8022,7 +8021,7 @@ function some(obj, predicate, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return toBufferView; });
-/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(42);
+/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(41);
 
 
 // Internal function to wrap or shallow-copy an ArrayBuffer,
@@ -8100,7 +8099,7 @@ function isElement(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Date'));
@@ -8111,7 +8110,7 @@ function isElement(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('RegExp'));
@@ -8122,7 +8121,7 @@ function isElement(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('Error'));
@@ -8134,7 +8133,7 @@ function isElement(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isFinite; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 /* harmony import */ var _isSymbol_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(65);
 
 
@@ -8151,11 +8150,11 @@ function isFinite(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isEmpty; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24);
 /* harmony import */ var _isString_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(45);
 /* harmony import */ var _isArguments_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(46);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(12);
 
 
 
@@ -8182,15 +8181,15 @@ function isEmpty(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return isEqual; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
-/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(42);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(41);
 /* harmony import */ var _isTypedArray_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(68);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(19);
-/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(32);
-/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(41);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(14);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(23);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(17);
+/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(31);
+/* harmony import */ var _isDataView_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(40);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(12);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(22);
 /* harmony import */ var _toBufferView_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(107);
 
 
@@ -8337,9 +8336,9 @@ function isEqual(a, b) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
-/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(35);
 
 
 
@@ -8352,9 +8351,9 @@ function isEqual(a, b) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
-/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(35);
 
 
 
@@ -8367,9 +8366,9 @@ function isEqual(a, b) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
-/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
-/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(36);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _stringTagBug_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(31);
+/* harmony import */ var _methodFingerprint_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(35);
 
 
 
@@ -8382,7 +8381,7 @@ function isEqual(a, b) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _tagTester_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
 
 
 /* harmony default export */ __webpack_exports__["a"] = (Object(_tagTester_js__WEBPACK_IMPORTED_MODULE_0__[/* default */ "a"])('WeakSet'));
@@ -8394,7 +8393,7 @@ function isEqual(a, b) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return pairs; });
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
 
 
 // Convert an object into a list of `[key, value]` pairs.
@@ -8417,7 +8416,7 @@ function pairs(obj) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return create; });
 /* harmony import */ var _baseCreate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(93);
-/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(40);
+/* harmony import */ var _extendOwn_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(39);
 
 
 
@@ -8437,8 +8436,8 @@ function create(prototype, props) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return clone; });
-/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(24);
-/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
+/* harmony import */ var _isObject_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _isArray_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(24);
 /* harmony import */ var _extend_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(72);
 
 
@@ -8472,8 +8471,8 @@ function tap(obj, interceptor) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return has; });
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
 
 
 
@@ -8498,8 +8497,8 @@ function has(obj, path) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return mapObject; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 
 
 
@@ -8544,7 +8543,7 @@ function propertyOf(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return times; });
-/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(34);
+/* harmony import */ var _optimizeCb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(33);
 
 
 // Run a function **n** times.
@@ -8591,7 +8590,7 @@ function times(n, iteratee, context) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return template; });
 /* harmony import */ var _defaults_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(73);
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
 /* harmony import */ var _templateSettings_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(102);
 
 
@@ -8702,8 +8701,8 @@ function template(text, settings, oldSettings) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return result; });
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(33);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(32);
 
 
 
@@ -8749,7 +8748,7 @@ function uniqueId(prefix) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return chain; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
 
 
 // Start chaining a wrapped Underscore object.
@@ -8765,8 +8764,8 @@ function chain(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(29);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
 /* harmony import */ var _bind_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(77);
 
 
@@ -8793,7 +8792,7 @@ function chain(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return memoize; });
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(23);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(22);
 
 
 // Memoize an expensive function by storing its results.
@@ -8814,9 +8813,9 @@ function memoize(func, hasher) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
+/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
 /* harmony import */ var _delay_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(78);
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(13);
 
 
 
@@ -8832,7 +8831,7 @@ function memoize(func, hasher) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return throttle; });
-/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
 
 
 // Returns a function, that, when invoked, will only be triggered at most once
@@ -8888,8 +8887,8 @@ function throttle(func, wait, options) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return debounce; });
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(38);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _now_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(37);
 
 
 
@@ -8938,7 +8937,7 @@ function debounce(func, wait, immediate) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return wrap; });
-/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
+/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
 
 
 // Returns the first function passed as an argument to the second,
@@ -8990,7 +8989,7 @@ function after(times, func) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(37);
+/* harmony import */ var _partial_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(36);
 /* harmony import */ var _before_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(79);
 
 
@@ -9022,7 +9021,7 @@ function after(times, func) {
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return findWhere; });
 /* harmony import */ var _find_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(55);
-/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35);
+/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
 
 
 
@@ -9039,9 +9038,9 @@ function findWhere(obj, attrs) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return reject; });
-/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
+/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
 /* harmony import */ var _negate_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(49);
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
 
 
 
@@ -9057,11 +9056,11 @@ function reject(obj, predicate, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26);
 /* harmony import */ var _deepGet_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(53);
-/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(33);
+/* harmony import */ var _toPath_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(32);
 
 
 
@@ -9098,8 +9097,8 @@ function reject(obj, predicate, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return where; });
-/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
-/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(35);
+/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
+/* harmony import */ var _matcher_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(34);
 
 
 
@@ -9116,10 +9115,10 @@ function where(obj, attrs) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return min; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(28);
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(17);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(22);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _values_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(27);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(21);
 
 
 
@@ -9172,9 +9171,9 @@ function shuffle(obj) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return sortBy; });
-/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(17);
+/* harmony import */ var _cb_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
 /* harmony import */ var _pluck_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(51);
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(27);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(26);
 
 
 
@@ -9206,8 +9205,8 @@ function sortBy(obj, iteratee, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
+/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 
 
 
@@ -9223,7 +9222,7 @@ function sortBy(obj, iteratee, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
+/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
 
 
 // Indexes the object's values by a criterion, similar to `_.groupBy`, but for
@@ -9238,8 +9237,8 @@ function sortBy(obj, iteratee, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
-/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(23);
+/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
+/* harmony import */ var _has_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
 
 
 
@@ -9256,7 +9255,7 @@ function sortBy(obj, iteratee, context) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(39);
+/* harmony import */ var _group_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(38);
 
 
 // Split a collection into two arrays: one whose elements all pass the given
@@ -9272,8 +9271,8 @@ function sortBy(obj, iteratee, context) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return size; });
-/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(20);
-/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(14);
+/* harmony import */ var _isArrayLike_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _keys_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(12);
 
 
 
@@ -9289,12 +9288,12 @@ function size(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
-/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(19);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+/* harmony import */ var _isFunction_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(17);
 /* harmony import */ var _negate_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(49);
-/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(27);
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(29);
-/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(26);
+/* harmony import */ var _map_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(26);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(28);
+/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(25);
 /* harmony import */ var _pick_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(87);
 
 
@@ -9344,7 +9343,7 @@ function last(array, n, guard) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return compact; });
-/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(30);
+/* harmony import */ var _filter_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
 
 
 // Trim out all falsy values from an array.
@@ -9359,7 +9358,7 @@ function compact(array) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return flatten; });
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(29);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(28);
 
 
 // Flatten out an array, either recursively (by default), or up to `depth`.
@@ -9374,7 +9373,7 @@ function flatten(array, depth) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 /* harmony import */ var _difference_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(89);
 
 
@@ -9390,9 +9389,9 @@ function flatten(array, depth) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 /* harmony import */ var _uniq_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(56);
-/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(29);
+/* harmony import */ var _flatten_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(28);
 
 
 
@@ -9410,8 +9409,8 @@ function flatten(array, depth) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return intersection; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
-/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(26);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
+/* harmony import */ var _contains_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(25);
 
 
 
@@ -9438,7 +9437,7 @@ function intersection(array) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(18);
+/* harmony import */ var _restArguments_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
 /* harmony import */ var _unzip_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(57);
 
 
@@ -9454,7 +9453,7 @@ function intersection(array) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return object; });
-/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(21);
+/* harmony import */ var _getLength_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(19);
 
 
 // Converts lists into objects. Pass either a single array of `[key, value]`
@@ -9508,7 +9507,7 @@ function range(start, stop, step) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return chunk; });
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(11);
 
 
 // Chunk a single array into multiple arrays, each containing `count` or fewer
@@ -9530,10 +9529,10 @@ function chunk(array, count) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return mixin; });
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
 /* harmony import */ var _functions_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(54);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(11);
 /* harmony import */ var _chainResult_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(59);
 
 
@@ -9560,9 +9559,9 @@ function mixin(obj) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(15);
-/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(22);
-/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _underscore_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(13);
+/* harmony import */ var _each_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(21);
+/* harmony import */ var _setup_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
 /* harmony import */ var _chainResult_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(59);
 
 
@@ -9603,7 +9602,7 @@ Object(_each_js__WEBPACK_IMPORTED_MODULE_1__[/* default */ "a"])(['concat', 'joi
 
 "use strict";
 /* harmony import */ var _createSizePropertyCheck_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(90);
-/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(42);
+/* harmony import */ var _getByteLength_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(41);
 
 
 

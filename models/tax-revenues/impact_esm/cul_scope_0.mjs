@@ -169,7 +169,7 @@ export const income_tax_sum_proposed$m = memoize(income_tax_sum_proposed$, JSON.
 export const income_tax_sum_proposed = (a) => {
   return income_tax_sum_proposed$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_sum_proposed$({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_sum_proposed$({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_sum_proposed memo-loader code //////////
 
@@ -181,7 +181,7 @@ export const income_tax_proposed$m = memoize(income_tax_proposed$, JSON.stringif
 export const income_tax_proposed = (a) => {
   return income_tax_proposed$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_proposed$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_proposed$({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_proposed memo-loader code //////////
 
@@ -193,7 +193,7 @@ export const effective_rate_proposed$m = memoize(effective_rate_proposed$, JSON.
 export const effective_rate_proposed = (a) => {
   return effective_rate_proposed$m(a);
   // eslint-disable-next-line no-undef
-  effective_rate_proposed$({ taxpayer_table_in, taxpayer_id_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in }); // never run, but here to "trick" calculang graph logic
+  effective_rate_proposed$({ taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end effective_rate_proposed memo-loader code //////////
 
@@ -205,7 +205,7 @@ export const paye_sum_proposed$m = memoize(paye_sum_proposed$, JSON.stringify);
 export const paye_sum_proposed = (a) => {
   return paye_sum_proposed$m(a);
   // eslint-disable-next-line no-undef
-  paye_sum_proposed$({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  paye_sum_proposed$({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_sum_proposed memo-loader code //////////
 
@@ -217,7 +217,7 @@ export const paye_proposed$m = memoize(paye_proposed$, JSON.stringify);
 export const paye_proposed = (a) => {
   return paye_proposed$m(a);
   // eslint-disable-next-line no-undef
-  paye_proposed$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
+  paye_proposed$({ tax_credit_proposed_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_proposed memo-loader code //////////
 
@@ -241,7 +241,7 @@ export const usc_proposed$m = memoize(usc_proposed$, JSON.stringify);
 export const usc_proposed = (a) => {
   return usc_proposed$m(a);
   // eslint-disable-next-line no-undef
-  usc_proposed$({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
+  usc_proposed$({ usc_table_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc_proposed memo-loader code //////////
 
@@ -265,7 +265,7 @@ export const prsi_proposed$m = memoize(prsi_proposed$, JSON.stringify);
 export const prsi_proposed = (a) => {
   return prsi_proposed$m(a);
   // eslint-disable-next-line no-undef
-  prsi_proposed$({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  prsi_proposed$({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_proposed memo-loader code //////////
 
@@ -277,7 +277,7 @@ export const income_tax_by_taxpayer_proposed$m = memoize(income_tax_by_taxpayer_
 export const income_tax_by_taxpayer_proposed = (a) => {
   return income_tax_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_by_taxpayer_proposed$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_by_taxpayer_proposed$({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_by_taxpayer_proposed memo-loader code //////////
 
@@ -301,7 +301,7 @@ export const prsi_by_taxpayer_proposed$m = memoize(prsi_by_taxpayer_proposed$, J
 export const prsi_by_taxpayer_proposed = (a) => {
   return prsi_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  prsi_by_taxpayer_proposed$({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  prsi_by_taxpayer_proposed$({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_by_taxpayer_proposed memo-loader code //////////
 
@@ -313,7 +313,7 @@ export const paye_by_taxpayer_proposed$m = memoize(paye_by_taxpayer_proposed$, J
 export const paye_by_taxpayer_proposed = (a) => {
   return paye_by_taxpayer_proposed$m(a);
   // eslint-disable-next-line no-undef
-  paye_by_taxpayer_proposed$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  paye_by_taxpayer_proposed$({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_taxpayer_proposed memo-loader code //////////
 
@@ -325,7 +325,7 @@ export const income_tax_by_taxpayer_impact$m = memoize(income_tax_by_taxpayer_im
 export const income_tax_by_taxpayer_impact = (a) => {
   return income_tax_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_by_taxpayer_impact$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_by_taxpayer_impact$({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_by_taxpayer_impact memo-loader code //////////
 
@@ -349,7 +349,7 @@ export const paye_by_taxpayer_impact$m = memoize(paye_by_taxpayer_impact$, JSON.
 export const paye_by_taxpayer_impact = (a) => {
   return paye_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  paye_by_taxpayer_impact$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  paye_by_taxpayer_impact$({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_by_taxpayer_impact memo-loader code //////////
 
@@ -361,7 +361,7 @@ export const prsi_by_taxpayer_impact$m = memoize(prsi_by_taxpayer_impact$, JSON.
 export const prsi_by_taxpayer_impact = (a) => {
   return prsi_by_taxpayer_impact$m(a);
   // eslint-disable-next-line no-undef
-  prsi_by_taxpayer_impact$({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
+  prsi_by_taxpayer_impact$({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_by_taxpayer_impact memo-loader code //////////
 
@@ -373,7 +373,7 @@ export const income_tax_sum_impact$m = memoize(income_tax_sum_impact$, JSON.stri
 export const income_tax_sum_impact = (a) => {
   return income_tax_sum_impact$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_sum_impact$({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_sum_impact$({ taxpayer_table_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_sum_impact memo-loader code //////////
 
@@ -385,7 +385,7 @@ export const income_tax_impact$m = memoize(income_tax_impact$, JSON.stringify);
 export const income_tax_impact = (a) => {
   return income_tax_impact$m(a);
   // eslint-disable-next-line no-undef
-  income_tax_impact$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, prsi_rate_in, usc_table_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  income_tax_impact$({ tax_credit_proposed_in, prsi_rate_in, taxpayer_table_in, taxpayer_id_in, usc_table_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end income_tax_impact memo-loader code //////////
 
@@ -397,7 +397,7 @@ export const paye_sum_impact$m = memoize(paye_sum_impact$, JSON.stringify);
 export const paye_sum_impact = (a) => {
   return paye_sum_impact$m(a);
   // eslint-disable-next-line no-undef
-  paye_sum_impact$({ taxpayer_table_in, paye_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  paye_sum_impact$({ taxpayer_table_in, tax_credit_proposed_in, taxpayer_count_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_sum_impact memo-loader code //////////
 
@@ -409,7 +409,7 @@ export const paye_impact$m = memoize(paye_impact$, JSON.stringify);
 export const paye_impact = (a) => {
   return paye_impact$m(a);
   // eslint-disable-next-line no-undef
-  paye_impact$({ paye_table_in, taxpayer_table_in, taxpayer_id_in, tax_credit_proposed_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
+  paye_impact$({ tax_credit_proposed_in, taxpayer_table_in, taxpayer_id_in, tax_credit_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end paye_impact memo-loader code //////////
 
@@ -457,7 +457,7 @@ export const prsi_impact$m = memoize(prsi_impact$, JSON.stringify);
 export const prsi_impact = (a) => {
   return prsi_impact$m(a);
   // eslint-disable-next-line no-undef
-  prsi_impact$({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
+  prsi_impact$({ prsi_rate_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_impact memo-loader code //////////
 
