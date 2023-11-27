@@ -4,7 +4,7 @@ import {
   usc,
   paye,
   prsi,
-} from './simple-incometax.cul';
+} from './simple-incometax.cul.js';
 export { income_tax, effective_rate, usc, paye, prsi };
 
 export const taxpayer_id = () => taxpayer_id_in;

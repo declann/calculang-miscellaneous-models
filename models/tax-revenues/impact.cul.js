@@ -12,7 +12,7 @@ import {
   usc_by_taxpayer as usc_by_taxpayer_current,
   prsi_by_taxpayer as prsi_by_taxpayer_current,
   paye_by_taxpayer as paye_by_taxpayer_current,
-} from './incometax-set.cul';
+} from './incometax-set.cul.js';
 import {
   income_tax_sum as income_tax_sum_proposed,
   income_tax as income_tax_proposed,
@@ -27,7 +27,7 @@ import {
   usc_by_taxpayer as usc_by_taxpayer_proposed,
   prsi_by_taxpayer as prsi_by_taxpayer_proposed,
   paye_by_taxpayer as paye_by_taxpayer_proposed,
-} from './proposed.cul';
+} from './proposed.cul.js';
 
 export { income_tax_sum_current, income_tax_sum_proposed };
 export { income_tax_current, income_tax_proposed };

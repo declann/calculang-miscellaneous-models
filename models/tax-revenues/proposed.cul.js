@@ -12,7 +12,7 @@ import {
   usc_by_taxpayer,
   prsi_by_taxpayer,
   paye_by_taxpayer,
-} from './incometax-set.cul';
+} from './incometax-set.cul.js';
 export {
   income_tax_sum,
   income_tax,
