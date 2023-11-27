@@ -42,7 +42,7 @@
     "use:triple": "node ./models/exponential-growth/use-triple.js",
     "build:suncalc-seek-sunsets": "cul-js compile --memo ./models/heavens/suncalc-seek-sunsets.cul.js",
     "build:suncalc": "cul-js compile ./models/heavens/suncalc.cul.js",
-    "build:payroll": "cul-js compile ./models/payroll-playground/payroll.cul.js",
+    "build:payroll": "cul-js compile --memo ./models/payroll-playground/payroll.cul.js",
     "webpack:saas-expected-fondued": "cd ./models/saas-ea/expected_esm && webpack",
     "babel:saas-expected": "babel --retain-lines --source-maps --presets=@babel/preset-env ./models/saas-ea/expected_esm/cul_scope_0.mjs --out-file ./models/saas-ea/expected_esm/cul_scope_0-babeled.js",
     "build:saas-ea": "cul-js compile ./models/saas-ea/rec.cul.js",
