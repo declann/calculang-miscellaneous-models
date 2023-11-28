@@ -1,4 +1,4 @@
-import { prsi_rate } from "./cul_scope_5.mjs";import { paye_table } from "./cul_scope_5.mjs";import { usc_table } from "./cul_scope_5.mjs";import { band } from "./cul_scope_5.mjs";import { tax_credit_proposed } from "./cul_scope_5.mjs";import { tax_rate } from "./cul_scope_5.mjs";import { tax_credits } from "./cul_scope_2.mjs";import { tax_credit } from "./cul_scope_2.mjs";import { prsi_sum } from "./cul_scope_2.mjs";import { usc_sum } from "./cul_scope_2.mjs";import { paye_sum } from "./cul_scope_2.mjs";import { income_tax_sum } from "./cul_scope_2.mjs";import { prsi_by_taxpayer } from "./cul_scope_2.mjs";import { usc_by_taxpayer } from "./cul_scope_2.mjs";import { paye_by_taxpayer } from "./cul_scope_2.mjs";import { income_tax_by_taxpayer } from "./cul_scope_2.mjs";import { proportion } from "./cul_scope_2.mjs";import { gross_salary } from "./cul_scope_2.mjs";import { taxpayer_count } from "./cul_scope_2.mjs";import { taxpayer_table } from "./cul_scope_2.mjs";import { taxpayer_id } from "./cul_scope_2.mjs";import { prsi } from "./cul_scope_2.mjs";import { paye } from "./cul_scope_2.mjs";import { usc } from "./cul_scope_2.mjs";import { effective_rate } from "./cul_scope_2.mjs";import { income_tax } from "./cul_scope_2.mjs";import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_proposed } from "./cul_scope_0.mjs";import { prsi_sum_proposed } from "./cul_scope_0.mjs";import { usc_proposed } from "./cul_scope_0.mjs";import { usc_sum_proposed } from "./cul_scope_0.mjs";import { paye_proposed } from "./cul_scope_0.mjs";import { paye_sum_proposed } from "./cul_scope_0.mjs";import { effective_rate_proposed } from "./cul_scope_0.mjs";import { income_tax_proposed } from "./cul_scope_0.mjs";import { income_tax_sum_proposed } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_0.mjs";import { usc_by_taxpayer_current } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_current } from "./cul_scope_0.mjs";import { prsi_sum_current } from "./cul_scope_0.mjs";import { usc_current } from "./cul_scope_0.mjs";import { usc_sum_current } from "./cul_scope_0.mjs";import { paye_current } from "./cul_scope_0.mjs";import { paye_sum_current } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_0.mjs";import { income_tax_current } from "./cul_scope_0.mjs";import { income_tax_sum_current } from "./cul_scope_0.mjs"; // heavily simplified incometax calculation for Irish incometax
+import { net_salary_plus_pension_contribution } from "./cul_scope_5.mjs";import { paye_over_bands } from "./cul_scope_5.mjs";import { paye_by_band_id } from "./cul_scope_5.mjs";import { paye_taxable_salary } from "./cul_scope_5.mjs";import { paye_rate } from "./cul_scope_5.mjs";import { paye_band_start } from "./cul_scope_5.mjs";import { paye_band_end } from "./cul_scope_5.mjs";import { paye_band_id } from "./cul_scope_5.mjs";import { paye_table } from "./cul_scope_5.mjs";import { usc_by_band_id } from "./cul_scope_5.mjs";import { usc_taxable_salary } from "./cul_scope_5.mjs";import { usc_rate } from "./cul_scope_5.mjs";import { usc_band_start } from "./cul_scope_5.mjs";import { usc_band_end } from "./cul_scope_5.mjs";import { usc_band_id } from "./cul_scope_5.mjs";import { usc_table } from "./cul_scope_5.mjs";import { prsi_rate } from "./cul_scope_5.mjs";import { prsi_taxable_salary } from "./cul_scope_5.mjs";import { net_salary } from "./cul_scope_5.mjs";import { tax_credits } from "./cul_scope_2.mjs";import { tax_credit } from "./cul_scope_2.mjs";import { prsi_sum } from "./cul_scope_2.mjs";import { usc_sum } from "./cul_scope_2.mjs";import { paye_sum } from "./cul_scope_2.mjs";import { income_tax_sum } from "./cul_scope_2.mjs";import { prsi_by_taxpayer } from "./cul_scope_2.mjs";import { usc_by_taxpayer } from "./cul_scope_2.mjs";import { paye_by_taxpayer } from "./cul_scope_2.mjs";import { income_tax_by_taxpayer } from "./cul_scope_2.mjs";import { proportion } from "./cul_scope_2.mjs";import { gross_salary } from "./cul_scope_2.mjs";import { taxpayer_count } from "./cul_scope_2.mjs";import { taxpayer_table } from "./cul_scope_2.mjs";import { taxpayer_id } from "./cul_scope_2.mjs";import { prsi } from "./cul_scope_2.mjs";import { paye } from "./cul_scope_2.mjs";import { usc } from "./cul_scope_2.mjs";import { effective_rate } from "./cul_scope_2.mjs";import { income_tax } from "./cul_scope_2.mjs";import { pension_contribution } from "./cul_scope_0.mjs";import { prsi_impact } from "./cul_scope_0.mjs";import { prsi_sum_impact } from "./cul_scope_0.mjs";import { usc_impact } from "./cul_scope_0.mjs";import { usc_sum_impact } from "./cul_scope_0.mjs";import { paye_impact } from "./cul_scope_0.mjs";import { paye_sum_impact } from "./cul_scope_0.mjs";import { income_tax_impact } from "./cul_scope_0.mjs";import { income_tax_sum_impact } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_impact } from "./cul_scope_0.mjs";import { usc_by_taxpayer_impact } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_impact } from "./cul_scope_0.mjs";import { paye_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { usc_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_proposed } from "./cul_scope_0.mjs";import { prsi_proposed } from "./cul_scope_0.mjs";import { prsi_sum_proposed } from "./cul_scope_0.mjs";import { usc_proposed } from "./cul_scope_0.mjs";import { usc_sum_proposed } from "./cul_scope_0.mjs";import { paye_proposed } from "./cul_scope_0.mjs";import { paye_sum_proposed } from "./cul_scope_0.mjs";import { effective_rate_proposed } from "./cul_scope_0.mjs";import { income_tax_proposed } from "./cul_scope_0.mjs";import { income_tax_sum_proposed } from "./cul_scope_0.mjs";import { paye_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_by_taxpayer_current } from "./cul_scope_0.mjs";import { usc_by_taxpayer_current } from "./cul_scope_0.mjs";import { income_tax_by_taxpayer_current } from "./cul_scope_0.mjs";import { prsi_current } from "./cul_scope_0.mjs";import { prsi_sum_current } from "./cul_scope_0.mjs";import { usc_current } from "./cul_scope_0.mjs";import { usc_sum_current } from "./cul_scope_0.mjs";import { paye_current } from "./cul_scope_0.mjs";import { paye_sum_current } from "./cul_scope_0.mjs";import { effective_rate_current } from "./cul_scope_0.mjs";import { income_tax_current } from "./cul_scope_0.mjs";import { income_tax_sum_current } from "./cul_scope_0.mjs"; // heavily simplified incometax calculation for Irish incometax
 // set to 2022 parameters, single person. Many limitations
 // work in progress. See README.md
 
@@ -8,13 +8,13 @@ export const tax_credits_ = ({ tax_credits_in }) => tax_credits_in;
 export const pension_contribution_ = ({ pension_contribution_in }) => pension_contribution_in;
 
 // functions:
-export const net_salary = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({}) - income_tax({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
+export const net_salary_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({}) - income_tax({ taxpayer_table_in, taxpayer_id_in, tax_credit_in });
 
 export const income_tax_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => paye({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + prsi({ taxpayer_table_in, taxpayer_id_in }) + usc({ taxpayer_table_in, taxpayer_id_in });
 
 export const effective_rate_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => 1 - net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) / gross_salary({ taxpayer_table_in, taxpayer_id_in });
 
-export const prsi_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in });
+export const prsi_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in });
 
 export const prsi_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
 prsi_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) * prsi_rate({}) * (gross_salary({ taxpayer_table_in, taxpayer_id_in }) > 352 * 52 ? 1 : 0); // todo feature flag RE threshold
@@ -34,23 +34,23 @@ export const usc_table_ = ({}) => [
 { band_id: 4, band_co: 0, rate: 0.08 }];
 
 
-export const usc_band_id = ({ usc_band_id_in }) => usc_band_id_in;
+export const usc_band_id_ = ({ usc_band_id_in }) => usc_band_id_in;
 
-export const usc_band_end = ({ usc_band_id_in }) => {
+export const usc_band_end_ = ({ usc_band_id_in }) => {
   if (usc_band_id({ usc_band_id_in }) == usc_table({}).length) return 999999999;
   return usc_table({})[usc_band_id({ usc_band_id_in }) - 1].band_co;
 };
 
-export const usc_band_start = ({ usc_band_id_in }) => {
+export const usc_band_start_ = ({ usc_band_id_in }) => {
   if (usc_band_id({ usc_band_id_in }) == 1) return 0;
   return usc_table({})[usc_band_id({ usc_band_id_in }) - 2].band_co;
 };
 
-export const usc_rate = ({ usc_band_id_in }) => usc_table({})[usc_band_id({ usc_band_id_in }) - 1].rate;
+export const usc_rate_ = ({ usc_band_id_in }) => usc_table({})[usc_band_id({ usc_band_id_in }) - 1].rate;
 
-export const usc_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
+export const usc_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) => gross_salary({ taxpayer_table_in, taxpayer_id_in }); // pay usc on pension contribution
 
-export const usc_by_band_id = ({ usc_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
+export const usc_by_band_id_ = ({ usc_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
 usc_rate({ usc_band_id_in }) *
 Math.min(
 usc_band_end({ usc_band_id_in }) - usc_band_start({ usc_band_id_in }),
@@ -74,31 +74,31 @@ export const paye_table_ = ({}) => [
 }];
 
 
-export const paye_band_id = ({ paye_band_id_in }) => paye_band_id_in;
+export const paye_band_id_ = ({ paye_band_id_in }) => paye_band_id_in;
 
-export const paye_band_end = ({ paye_band_id_in }) => {
+export const paye_band_end_ = ({ paye_band_id_in }) => {
   if (paye_band_id({ paye_band_id_in }) == paye_table({}).length) return 999999999;
   return paye_table({})[paye_band_id({ paye_band_id_in }) - 1].band_co;
 };
 
-export const paye_band_start = ({ paye_band_id_in }) => {
+export const paye_band_start_ = ({ paye_band_id_in }) => {
   if (paye_band_id({ paye_band_id_in }) == 1) return 0;
   return paye_table({})[paye_band_id({ paye_band_id_in }) - 2].band_co;
 };
 
-export const paye_rate = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
+export const paye_rate_ = ({ paye_band_id_in }) => paye_table({})[paye_band_id({ paye_band_id_in }) - 1].rate;
 
-export const paye_taxable_salary = ({ taxpayer_table_in, taxpayer_id_in }) =>
+export const paye_taxable_salary_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
 Math.max(0, gross_salary({ taxpayer_table_in, taxpayer_id_in }) - pension_contribution({}));
 
-export const paye_by_band_id = ({ paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
+export const paye_by_band_id_ = ({ paye_band_id_in, taxpayer_table_in, taxpayer_id_in }) =>
 paye_rate({ paye_band_id_in }) *
 Math.min(
 paye_band_end({ paye_band_id_in }) - paye_band_start({ paye_band_id_in }),
 Math.max(paye_taxable_salary({ taxpayer_table_in, taxpayer_id_in }) - paye_band_start({ paye_band_id_in }), 0));
 
 
-export const paye_over_bands = ({ taxpayer_table_in, taxpayer_id_in }) =>
+export const paye_over_bands_ = ({ taxpayer_table_in, taxpayer_id_in }) =>
 Math.max(
 0,
 paye_table({}).reduce(
@@ -109,5 +109,5 @@ paye_table({}).reduce(
 
 export const paye_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) => Math.max(paye_over_bands({ taxpayer_table_in, taxpayer_id_in }) - tax_credits({ tax_credit_in }), 0);
 
-export const net_salary_plus_pension_contribution = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
+export const net_salary_plus_pension_contribution_ = ({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) =>
 net_salary({ taxpayer_table_in, taxpayer_id_in, tax_credit_in }) + pension_contribution({});
