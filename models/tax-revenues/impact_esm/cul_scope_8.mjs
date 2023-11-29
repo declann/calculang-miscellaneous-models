@@ -3,7 +3,11 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { income_tax_ as income_tax$, effective_rate_ as effective_rate$, usc_ as usc$, paye_ as paye$, prsi_ as prsi$, taxpayer_id_ as taxpayer_id$, taxpayer_table_ as taxpayer_table$, taxpayer_count_ as taxpayer_count$, gross_salary_ as gross_salary$, proportion_ as proportion$, income_tax_by_taxpayer_ as income_tax_by_taxpayer$, paye_by_taxpayer_ as paye_by_taxpayer$, usc_by_taxpayer_ as usc_by_taxpayer$, prsi_by_taxpayer_ as prsi_by_taxpayer$, income_tax_sum_ as income_tax_sum$, paye_sum_ as paye_sum$, usc_sum_ as usc_sum$, prsi_sum_ as prsi_sum$, tax_credits_ as tax_credits$ } from "./cul_scope_9.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+// import/export non-to memo?
+
+import { income_tax_ as income_tax$, effective_rate_ as effective_rate$, usc_ as usc$, paye_ as paye$, prsi_ as prsi$, taxpayer_id_ as taxpayer_id$, taxpayer_table_ as taxpayer_table$, taxpayer_count_ as taxpayer_count$, gross_salary_ as gross_salary$, proportion_ as proportion$, income_tax_by_taxpayer_ as income_tax_by_taxpayer$, paye_by_taxpayer_ as paye_by_taxpayer$, usc_by_taxpayer_ as usc_by_taxpayer$, prsi_by_taxpayer_ as prsi_by_taxpayer$, income_tax_sum_ as income_tax_sum$, paye_sum_ as paye_sum$, usc_sum_ as usc_sum$, prsi_sum_ as prsi_sum$, tax_credit__ as tax_credit_$, tax_credits_ as tax_credits$ } from "./cul_scope_9.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+
 
 
 
@@ -220,6 +224,18 @@ export const prsi_sum_ = (a) => {
   prsi_sum$({ taxpayer_table_in, prsi_rate_in, taxpayer_count_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi_sum memo-loader code //////////
+
+
+
+////////// start tax_credit_ memo-loader code //////////
+//const tax_credit_$m = memoize(999999, isEqual)(tax_credit_$);
+export const tax_credit_$m = memoize(tax_credit_$, JSON.stringify);
+export const tax_credit_ = (a) => {
+  return tax_credit_$m(a);
+  // eslint-disable-next-line no-undef
+  tax_credit_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credit_ memo-loader code //////////
 
 
 

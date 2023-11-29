@@ -3,7 +3,11 @@
     //import memoize from 'lru-memoize';
     //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
     
+    // import/export non-to memo?
+
     import { income_tax_sum_current_ as income_tax_sum_current$, income_tax_current_ as income_tax_current$, effective_rate_current_ as effective_rate_current$, paye_sum_current_ as paye_sum_current$, paye_current_ as paye_current$, usc_sum_current_ as usc_sum_current$, usc_current_ as usc_current$, prsi_sum_current_ as prsi_sum_current$, prsi_current_ as prsi_current$, income_tax_by_taxpayer_current_ as income_tax_by_taxpayer_current$, usc_by_taxpayer_current_ as usc_by_taxpayer_current$, prsi_by_taxpayer_current_ as prsi_by_taxpayer_current$, paye_by_taxpayer_current_ as paye_by_taxpayer_current$, income_tax_sum_proposed_ as income_tax_sum_proposed$, income_tax_proposed_ as income_tax_proposed$, effective_rate_proposed_ as effective_rate_proposed$, paye_sum_proposed_ as paye_sum_proposed$, paye_proposed_ as paye_proposed$, usc_sum_proposed_ as usc_sum_proposed$, usc_proposed_ as usc_proposed$, prsi_sum_proposed_ as prsi_sum_proposed$, prsi_proposed_ as prsi_proposed$, income_tax_by_taxpayer_proposed_ as income_tax_by_taxpayer_proposed$, usc_by_taxpayer_proposed_ as usc_by_taxpayer_proposed$, prsi_by_taxpayer_proposed_ as prsi_by_taxpayer_proposed$, paye_by_taxpayer_proposed_ as paye_by_taxpayer_proposed$, income_tax_by_taxpayer_impact_ as income_tax_by_taxpayer_impact$, usc_by_taxpayer_impact_ as usc_by_taxpayer_impact$, paye_by_taxpayer_impact_ as paye_by_taxpayer_impact$, prsi_by_taxpayer_impact_ as prsi_by_taxpayer_impact$, income_tax_sum_impact_ as income_tax_sum_impact$, income_tax_impact_ as income_tax_impact$, paye_sum_impact_ as paye_sum_impact$, paye_impact_ as paye_impact$, usc_sum_impact_ as usc_sum_impact$, usc_impact_ as usc_impact$, prsi_sum_impact_ as prsi_sum_impact$, prsi_impact_ as prsi_impact$, pension_contribution_ as pension_contribution$ } from './impact.cul.js?+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+    
     
     
 

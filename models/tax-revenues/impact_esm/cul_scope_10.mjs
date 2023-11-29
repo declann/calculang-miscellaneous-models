@@ -3,7 +3,47 @@ import { memoize } from 'underscore';
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
-import { net_salary_ as net_salary$, income_tax_ as income_tax$, effective_rate_ as effective_rate$, prsi_taxable_salary_ as prsi_taxable_salary$, prsi_ as prsi$, usc_band_id_ as usc_band_id$, usc_band_end_ as usc_band_end$, usc_band_start_ as usc_band_start$, usc_rate_ as usc_rate$, usc_taxable_salary_ as usc_taxable_salary$, usc_by_band_id_ as usc_by_band_id$, usc_ as usc$, paye_band_id_ as paye_band_id$, paye_band_end_ as paye_band_end$, paye_band_start_ as paye_band_start$, paye_rate_ as paye_rate$, paye_taxable_salary_ as paye_taxable_salary$, paye_by_band_id_ as paye_by_band_id$, paye_over_bands_ as paye_over_bands$, paye_ as paye$, net_salary_plus_pension_contribution_ as net_salary_plus_pension_contribution$ } from "./cul_scope_11.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+// import/export non-to memo?
+
+import { gross_salary__ as gross_salary_$, tax_credits__ as tax_credits_$, pension_contribution__ as pension_contribution_$, net_salary_ as net_salary$, income_tax_ as income_tax$, effective_rate_ as effective_rate$, prsi_taxable_salary_ as prsi_taxable_salary$, prsi_ as prsi$, prsi_rate__ as prsi_rate_$, usc_table__ as usc_table_$, usc_band_id_ as usc_band_id$, usc_band_end_ as usc_band_end$, usc_band_start_ as usc_band_start$, usc_rate_ as usc_rate$, usc_taxable_salary_ as usc_taxable_salary$, usc_by_band_id_ as usc_by_band_id$, usc_ as usc$, paye_table__ as paye_table_$, paye_band_id_ as paye_band_id$, paye_band_end_ as paye_band_end$, paye_band_start_ as paye_band_start$, paye_rate_ as paye_rate$, paye_taxable_salary_ as paye_taxable_salary$, paye_by_band_id_ as paye_by_band_id$, paye_over_bands_ as paye_over_bands$, paye_ as paye$, net_salary_plus_pension_contribution_ as net_salary_plus_pension_contribution$ } from "./cul_scope_11.mjs"; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+
+
+
+
+////////// start gross_salary_ memo-loader code //////////
+//const gross_salary_$m = memoize(999999, isEqual)(gross_salary_$);
+export const gross_salary_$m = memoize(gross_salary_$, JSON.stringify);
+export const gross_salary_ = (a) => {
+  return gross_salary_$m(a);
+  // eslint-disable-next-line no-undef
+  gross_salary_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end gross_salary_ memo-loader code //////////
+
+
+
+////////// start tax_credits_ memo-loader code //////////
+//const tax_credits_$m = memoize(999999, isEqual)(tax_credits_$);
+export const tax_credits_$m = memoize(tax_credits_$, JSON.stringify);
+export const tax_credits_ = (a) => {
+  return tax_credits_$m(a);
+  // eslint-disable-next-line no-undef
+  tax_credits_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end tax_credits_ memo-loader code //////////
+
+
+
+////////// start pension_contribution_ memo-loader code //////////
+//const pension_contribution_$m = memoize(999999, isEqual)(pension_contribution_$);
+export const pension_contribution_$m = memoize(pension_contribution_$, JSON.stringify);
+export const pension_contribution_ = (a) => {
+  return pension_contribution_$m(a);
+  // eslint-disable-next-line no-undef
+  pension_contribution_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end pension_contribution_ memo-loader code //////////
 
 
 
@@ -64,6 +104,30 @@ export const prsi_ = (a) => {
   prsi$({ taxpayer_table_in, taxpayer_id_in, prsi_rate_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end prsi memo-loader code //////////
+
+
+
+////////// start prsi_rate_ memo-loader code //////////
+//const prsi_rate_$m = memoize(999999, isEqual)(prsi_rate_$);
+export const prsi_rate_$m = memoize(prsi_rate_$, JSON.stringify);
+export const prsi_rate_ = (a) => {
+  return prsi_rate_$m(a);
+  // eslint-disable-next-line no-undef
+  prsi_rate_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end prsi_rate_ memo-loader code //////////
+
+
+
+////////// start usc_table_ memo-loader code //////////
+//const usc_table_$m = memoize(999999, isEqual)(usc_table_$);
+export const usc_table_$m = memoize(usc_table_$, JSON.stringify);
+export const usc_table_ = (a) => {
+  return usc_table_$m(a);
+  // eslint-disable-next-line no-undef
+  usc_table_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end usc_table_ memo-loader code //////////
 
 
 
@@ -148,6 +212,18 @@ export const usc_ = (a) => {
   usc$({ usc_table_in, taxpayer_table_in, taxpayer_id_in }); // never run, but here to "trick" calculang graph logic
 };
 ////////// end usc memo-loader code //////////
+
+
+
+////////// start paye_table_ memo-loader code //////////
+//const paye_table_$m = memoize(999999, isEqual)(paye_table_$);
+export const paye_table_$m = memoize(paye_table_$, JSON.stringify);
+export const paye_table_ = (a) => {
+  return paye_table_$m(a);
+  // eslint-disable-next-line no-undef
+  paye_table_$({}); // never run, but here to "trick" calculang graph logic
+};
+////////// end paye_table_ memo-loader code //////////
 
 
 
