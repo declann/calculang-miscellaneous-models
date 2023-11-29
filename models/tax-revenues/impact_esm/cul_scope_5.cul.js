@@ -5,45 +5,45 @@
     
     // import/export non-to memo?
 
-    import { gross_salary__ as gross_salary_$, tax_credits__ as tax_credits_$, pension_contribution__ as pension_contribution_$, net_salary_ as net_salary$, income_tax_ as income_tax$, effective_rate_ as effective_rate$, prsi_taxable_salary_ as prsi_taxable_salary$, prsi_ as prsi$, prsi_rate_ as prsi_rate$, usc_table_ as usc_table$, usc_band_id_ as usc_band_id$, usc_band_end_ as usc_band_end$, usc_band_start_ as usc_band_start$, usc_rate_ as usc_rate$, usc_taxable_salary_ as usc_taxable_salary$, usc_by_band_id_ as usc_by_band_id$, usc_ as usc$, paye_table_ as paye_table$, paye_band_id_ as paye_band_id$, paye_band_end_ as paye_band_end$, paye_band_start_ as paye_band_start$, paye_rate_ as paye_rate$, paye_taxable_salary_ as paye_taxable_salary$, paye_by_band_id_ as paye_by_band_id$, paye_over_bands_ as paye_over_bands$, paye_ as paye$, net_salary_plus_pension_contribution_ as net_salary_plus_pension_contribution$ } from './simple-incometax.cul.js?&+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+    import { gross_salary_ as gross_salary$, tax_credits_ as tax_credits$, pension_contribution_ as pension_contribution$, net_salary_ as net_salary$, income_tax_ as income_tax$, effective_rate_ as effective_rate$, prsi_taxable_salary_ as prsi_taxable_salary$, prsi_ as prsi$, prsi_rate_ as prsi_rate$, usc_table_ as usc_table$, usc_band_id_ as usc_band_id$, usc_band_end_ as usc_band_end$, usc_band_start_ as usc_band_start$, usc_rate_ as usc_rate$, usc_taxable_salary_ as usc_taxable_salary$, usc_by_band_id_ as usc_by_band_id$, usc_ as usc$, paye_table_ as paye_table$, paye_band_id_ as paye_band_id$, paye_band_end_ as paye_band_end$, paye_band_start_ as paye_band_start$, paye_rate_ as paye_rate$, paye_taxable_salary_ as paye_taxable_salary$, paye_by_band_id_ as paye_by_band_id$, paye_over_bands_ as paye_over_bands$, paye_ as paye$, net_salary_plus_pension_contribution_ as net_salary_plus_pension_contribution$ } from './simple-incometax.cul.js?&+memoed'; // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
 
     
     
     
 
-////////// start gross_salary_ memo-loader code //////////
-//const gross_salary_$m = memoize(999999, isEqual)(gross_salary_$);
-export const gross_salary_$m = memoize(gross_salary_$, JSON.stringify);
-export const gross_salary_ = (a) => {
-  return gross_salary_$m(a);
+////////// start gross_salary memo-loader code //////////
+//const gross_salary$m = memoize(999999, isEqual)(gross_salary$);
+export const gross_salary$m = memoize(gross_salary$, JSON.stringify);
+export const gross_salary = (a) => {
+  return gross_salary$m(a);
   // eslint-disable-next-line no-undef
-  gross_salary_$(); // never run, but here to "trick" calculang graph logic
+  gross_salary$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end gross_salary_ memo-loader code //////////
+////////// end gross_salary memo-loader code //////////
 
 
 
-////////// start tax_credits_ memo-loader code //////////
-//const tax_credits_$m = memoize(999999, isEqual)(tax_credits_$);
-export const tax_credits_$m = memoize(tax_credits_$, JSON.stringify);
-export const tax_credits_ = (a) => {
-  return tax_credits_$m(a);
+////////// start tax_credits memo-loader code //////////
+//const tax_credits$m = memoize(999999, isEqual)(tax_credits$);
+export const tax_credits$m = memoize(tax_credits$, JSON.stringify);
+export const tax_credits = (a) => {
+  return tax_credits$m(a);
   // eslint-disable-next-line no-undef
-  tax_credits_$(); // never run, but here to "trick" calculang graph logic
+  tax_credits$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end tax_credits_ memo-loader code //////////
+////////// end tax_credits memo-loader code //////////
 
 
 
-////////// start pension_contribution_ memo-loader code //////////
-//const pension_contribution_$m = memoize(999999, isEqual)(pension_contribution_$);
-export const pension_contribution_$m = memoize(pension_contribution_$, JSON.stringify);
-export const pension_contribution_ = (a) => {
-  return pension_contribution_$m(a);
+////////// start pension_contribution memo-loader code //////////
+//const pension_contribution$m = memoize(999999, isEqual)(pension_contribution$);
+export const pension_contribution$m = memoize(pension_contribution$, JSON.stringify);
+export const pension_contribution = (a) => {
+  return pension_contribution$m(a);
   // eslint-disable-next-line no-undef
-  pension_contribution_$(); // never run, but here to "trick" calculang graph logic
+  pension_contribution$(); // never run, but here to "trick" calculang graph logic
 };
-////////// end pension_contribution_ memo-loader code //////////
+////////// end pension_contribution memo-loader code //////////
 
 
 
