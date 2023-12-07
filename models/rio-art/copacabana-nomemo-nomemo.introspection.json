@@ -228,7 +228,7 @@
     }
   ],
   "cul_scope_ids_to_resource": {
-    "0": "./copacabana-nomemo.cul.js"
+    "0": "./copacabana-nomemo-nomemo.cul.js"
   },
   "import_sources_to_resource": {},
   "cul_input_map": {
