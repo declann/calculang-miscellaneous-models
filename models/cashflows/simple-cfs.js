@@ -214,7 +214,11 @@ __webpack_require__.r(__webpack_exports__);
 //import memoize from 'lru-memoize';
 //import { isEqual } from 'underscore'; // TODO poor tree shaking support, or why is this impact so massive? Move to lodash/lodash-es?
 
+// import/export non-to memo?
+
  // there is already-culed stuff in here, why? imports to memo loader include cul_scope_id, what logic should it apply RE passing forward? eliminate? Probably!
+
+
 
 
 
@@ -490,7 +494,7 @@ const npv_ = ({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, vc_1_in
 
 };
 
-// inputs
+// inputs:
 const mrr_ = ({ mrr_in }) => mrr_in;
 const month_ = ({ month_in }) => month_in;
 const mrr_growth_ = ({ mrr_growth_in }) => mrr_growth_in;

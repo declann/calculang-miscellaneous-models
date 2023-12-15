@@ -32,7 +32,7 @@ export const npv = () => {
   );
 };
 
-// inputs
+// inputs:
 export const mrr = () => mrr_in;
 export const month = () => month_in;
 export const mrr_growth = () => mrr_growth_in;
