@@ -32,7 +32,7 @@ export const npv_ = ({ month_in, last_month_in, mrr_in, mrr_growth_in, rent_in, 
 
 };
 
-// inputs
+// inputs:
 export const mrr_ = ({ mrr_in }) => mrr_in;
 export const month_ = ({ month_in }) => month_in;
 export const mrr_growth_ = ({ mrr_growth_in }) => mrr_growth_in;
